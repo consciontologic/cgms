@@ -1,0 +1,9 @@
+{
+  "provenance": "synthetic hand-authored hidden-card and remote binding fixture; GAME_RULES 2.13, F08, N07; public identity history retention with independent hidden-return/shuffle noninterference assertions",
+  "canonical": "cgms-canonical-v1",
+  "seat_hashes": [
+    "08a1c08f2e3f3cf6ca412c5699a1003b89ad4c7c8c640be3f6b56435d66da7a0",
+    "d76419eac11d4dc13041ba17e7f51d188e91dcca8ec98595da8ee2c76de13b13",
+    "28d7621a75298bc1ecdb61ad14e91a6d6d1b6b9ee010963b065a5b7b35b9f0de"
+  ]
+}

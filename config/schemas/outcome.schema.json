@@ -1,0 +1,286 @@
+{
+  "$defs": {
+    "Amount": {
+      "additionalProperties": false,
+      "description": "Reduced exact rational; canonicality and domain sign validated by Go.",
+      "properties": {
+        "denominator": {
+          "pattern": "^[1-9][0-9]*$",
+          "type": "string"
+        },
+        "numerator": {
+          "pattern": "^(0|-[1-9][0-9]*|[1-9][0-9]*)$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "numerator",
+        "denominator"
+      ],
+      "type": "object"
+    },
+    "FinancialDebt": {
+      "additionalProperties": false,
+      "properties": {
+        "charge_id": {
+          "type": "string"
+        },
+        "creditor": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "debtor": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "game_id": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "remaining": {
+          "$ref": "#/$defs/Amount"
+        },
+        "sequence": {
+          "maximum": 9007199254740991,
+          "minimum": 0,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "charge_id",
+        "game_id",
+        "debtor",
+        "creditor",
+        "remaining",
+        "sequence"
+      ],
+      "type": "object"
+    },
+    "FinancialResult": {
+      "additionalProperties": false,
+      "properties": {
+        "game_id": {
+          "type": "string"
+        },
+        "scores": {
+          "items": {
+            "$ref": "#/$defs/Amount"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "game_id",
+        "scores"
+      ],
+      "type": "object"
+    },
+    "Outcome": {
+      "additionalProperties": false,
+      "properties": {
+        "block": {
+          "type": "string"
+        },
+        "board_ended_games": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "cash": {
+          "items": {
+            "$ref": "#/$defs/Amount"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "debts": {
+          "items": {
+            "$ref": "#/$defs/FinancialDebt"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "exit_code": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "finalized_games": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "game_complete": {
+          "type": "boolean"
+        },
+        "game_id": {
+          "type": "string"
+        },
+        "game_results": {
+          "items": {
+            "$ref": "#/$defs/FinancialResult"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "index": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "match_complete": {
+          "type": "boolean"
+        },
+        "match_ranks": {
+          "items": {
+            "maximum": 9007199254740991,
+            "minimum": -9007199254740991,
+            "type": "integer"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "not_started_game_slots": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "observer": {
+          "type": "string"
+        },
+        "planned_game_slots": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "population": {
+          "enum": [
+            3,
+            4
+          ]
+        },
+        "privacy": {
+          "type": "string"
+        },
+        "reason": {
+          "type": "string"
+        },
+        "redeals": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "rotation": {
+          "type": "string"
+        },
+        "scenario_status": {
+          "type": "string"
+        },
+        "schema_version": {
+          "const": "cgms-outcome-v1"
+        },
+        "scores": {
+          "items": {
+            "$ref": "#/$defs/Amount"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "seats": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "started_games": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "started_instances": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "status": {
+          "type": "string"
+        },
+        "steps": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "treatment": {
+          "type": "string"
+        },
+        "voided_games": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "planned_game_slots",
+        "not_started_game_slots",
+        "schema_version",
+        "index",
+        "population",
+        "block",
+        "rotation",
+        "seats",
+        "treatment",
+        "game_id",
+        "scenario_status",
+        "game_complete",
+        "match_complete",
+        "status",
+        "exit_code",
+        "reason",
+        "scores",
+        "cash",
+        "debts",
+        "steps",
+        "redeals",
+        "observer",
+        "privacy"
+      ],
+      "type": "object"
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "allOf": [
+    {
+      "$ref": "#/$defs/Outcome"
+    }
+  ],
+  "description": "Closed offline runtime shape. Go additionally validates physical conservation, lineage, compatibility and exact rational canonicality.",
+  "title": "CGMS outcome v1"
+}

@@ -1,0 +1,506 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "cgms-experiment-v1"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]{0,63}$"
+    },
+    "kind": {
+      "const": "experiment"
+    },
+    "purpose": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 256
+    },
+    "population": {
+      "enum": [
+        3,
+        4
+      ]
+    },
+    "phase": {
+      "enum": [
+        "development-pilot",
+        "held-out"
+      ]
+    },
+    "claim_scope": {
+      "enum": [
+        "partial-scenario-only",
+        "accepted-gameplay"
+      ]
+    },
+    "rules_profile": {
+      "const": "accepted-game-rules"
+    },
+    "interpretation_replacements": {
+      "type": "array",
+      "maxItems": 0
+    },
+    "engine_version": {
+      "enum": [
+        "cgms-engine-v1",
+        "cgms-engine-v2"
+      ]
+    },
+    "required_coverage": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "S04",
+          "S05",
+          "S06",
+          "S07",
+          "D01",
+          "D02",
+          "D03",
+          "D04",
+          "D08-domain",
+          "D09-domain"
+        ]
+      },
+      "minItems": 1,
+      "maxItems": 4
+    },
+    "pairing_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]{0,63}$"
+    },
+    "root_seed": {
+      "type": "string",
+      "pattern": "^(0|[1-9][0-9]*)$",
+      "maxLength": 78
+    },
+    "block_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9][a-z0-9-]{0,63}$"
+      },
+      "minItems": 1,
+      "maxItems": 10000,
+      "uniqueItems": true
+    },
+    "games_per_match": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 100000
+    },
+    "match_index": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9007199254740991
+    },
+    "bots": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/bot"
+      },
+      "minItems": 3,
+      "maxItems": 4
+    },
+    "candidate": {
+      "$ref": "#/$defs/bot"
+    },
+    "rotation_policy": {
+      "enum": [
+        "complete-cyclic",
+        "full-permutation"
+      ]
+    },
+    "rotations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9-]{0,63}$"
+          },
+          "seats": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9-]{0,63}$"
+            },
+            "minItems": 3,
+            "maxItems": 4
+          }
+        },
+        "required": [
+          "id",
+          "seats"
+        ]
+      },
+      "minItems": 3,
+      "maxItems": 24
+    },
+    "grid": {
+      "type": "array",
+      "maxItems": 7,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "parameter",
+          "values"
+        ],
+        "properties": {
+          "parameter": {
+            "enum": [
+              "bot.immediate-score",
+              "bot.exposed-holdings",
+              "bot.protection",
+              "bot.known-debt",
+              "bot.legal-declaration",
+              "budget.bot-operations",
+              "budget.transitions"
+            ]
+          },
+          "values": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 10000,
+            "items": {
+              "type": "integer",
+              "minimum": -10000,
+              "maximum": 1000000
+            }
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "parameter": {
+                  "pattern": "^budget\\."
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "values": {
+                  "items": {
+                    "minimum": 1,
+                    "maximum": 1000000
+                  }
+                }
+              }
+            },
+            "else": {
+              "properties": {
+                "values": {
+                  "items": {
+                    "minimum": -10000,
+                    "maximum": 10000
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "budgets": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "workers": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 256
+        },
+        "max_matches": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 1000000
+        },
+        "max_transitions_per_match": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10000000
+        },
+        "max_settlement_steps_per_match": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10000000
+        },
+        "max_menu_operations_per_decision": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 10000000,
+          "description": "Zero or omission selects the historical 100000 operation menu cap. Explicit positive caps are experimental budgets."
+        },
+        "max_bot_operations_per_decision": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10000000
+        },
+        "max_output_bytes": {
+          "type": "integer",
+          "minimum": 1024,
+          "maximum": 1073741824
+        },
+        "max_input_bytes": {
+          "type": "integer",
+          "minimum": 1024,
+          "maximum": 4194304
+        },
+        "max_input_rational_digits": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 256
+        },
+        "wall_watchdog_seconds": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 86400
+        },
+        "max_gameplay_transcript_bytes": {
+          "type": "integer",
+          "enum": [
+            0,
+            4194304,
+            33554432
+          ],
+          "description": "Explicit gameplay artifact budget: omitted or zero retains 4MiB; 32MiB selects cgms-gameplay-artifact-32mib-v1."
+        }
+      },
+      "required": [
+        "workers",
+        "max_matches",
+        "max_transitions_per_match",
+        "max_settlement_steps_per_match",
+        "max_bot_operations_per_decision",
+        "max_output_bytes",
+        "max_input_bytes",
+        "max_input_rational_digits",
+        "wall_watchdog_seconds"
+      ]
+    },
+    "analysis": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "version": {
+          "const": "cgms-analysis-v1"
+        },
+        "root_seed": {
+          "type": "string",
+          "pattern": "^(0|[1-9][0-9]*)$",
+          "maxLength": 78
+        },
+        "primary_metric": {
+          "const": "paired-final-match-score"
+        },
+        "resamples": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 100000
+        },
+        "confidence_percent": {
+          "const": 95
+        },
+        "cluster": {
+          "const": "seed-block"
+        },
+        "incomplete_policy": {
+          "const": "report-all-complete-pairs-only"
+        }
+      },
+      "required": [
+        "version",
+        "root_seed",
+        "primary_metric",
+        "resamples",
+        "confidence_percent",
+        "cluster",
+        "incomplete_policy"
+      ]
+    },
+    "output": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "root": {
+          "const": "sims/artifacts"
+        },
+        "private_replay": {
+          "const": true
+        },
+        "report_observer": {
+          "const": "public"
+        },
+        "omniscient_comparison": {
+          "const": false
+        }
+      },
+      "required": [
+        "root",
+        "private_replay",
+        "report_observer",
+        "omniscient_comparison"
+      ]
+    },
+    "retention": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "days": {
+          "const": 30
+        },
+        "review_hold": {
+          "type": "boolean"
+        },
+        "prune": {
+          "const": "preview-before-delete"
+        }
+      },
+      "required": [
+        "days",
+        "review_hold",
+        "prune"
+      ]
+    },
+    "development_block_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9][a-z0-9-]{0,63}$"
+      },
+      "minItems": 1,
+      "maxItems": 10000,
+      "uniqueItems": true
+    }
+  },
+  "required": [
+    "schema_version",
+    "id",
+    "kind",
+    "purpose",
+    "population",
+    "phase",
+    "claim_scope",
+    "rules_profile",
+    "interpretation_replacements",
+    "engine_version",
+    "required_coverage",
+    "pairing_id",
+    "root_seed",
+    "block_ids",
+    "games_per_match",
+    "match_index",
+    "bots",
+    "candidate",
+    "rotation_policy",
+    "rotations",
+    "grid",
+    "budgets",
+    "analysis",
+    "output",
+    "retention"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CGMS runtime experiment v1",
+  "$defs": {
+    "bot": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "participant_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9-]{0,63}$"
+        },
+        "policy": {
+          "enum": [
+            "legal-random",
+            "heuristic",
+            "economic",
+            "pressure",
+            "gameplay-random",
+            "opportunity",
+            "opportunity-no-retain",
+            "opportunity-no-finance",
+            "bargaining"
+          ]
+        },
+        "version": {
+          "enum": [
+            "v1",
+            "v2"
+          ]
+        },
+        "information": {
+          "const": "seat-projection"
+        },
+        "features": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "immediate-score",
+              "exposed-holdings",
+              "protection",
+              "known-debt",
+              "legal-declaration"
+            ]
+          },
+          "minItems": 0,
+          "maxItems": 20
+        },
+        "weights": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": -10000,
+            "maximum": 10000
+          },
+          "minItems": 0,
+          "maxItems": 20
+        }
+      },
+      "required": [
+        "participant_id",
+        "policy",
+        "version",
+        "information",
+        "features",
+        "weights"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "version": {
+                "const": "v2"
+              }
+            },
+            "required": [
+              "version"
+            ]
+          },
+          "then": {
+            "properties": {
+              "policy": {
+                "enum": [
+                  "gameplay-random",
+                  "economic",
+                  "pressure",
+                  "opportunity",
+                  "opportunity-no-retain",
+                  "opportunity-no-finance",
+                  "bargaining"
+                ]
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

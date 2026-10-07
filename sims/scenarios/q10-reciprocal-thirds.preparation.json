@@ -1,0 +1,125 @@
+{
+  "status": "preparation-only",
+  "runtime_validated": false,
+  "schema_version": "cgms-preparation-v1",
+  "id": "q10-reciprocal-thirds",
+  "kind": "scenario",
+  "purpose": "Synthetic accounting-only oracle for reciprocal debts; not a three-player Ponzi or completed game.",
+  "fixture_type": "accounting-only",
+  "rule_refs": [
+    "GAME_RULES §4.2",
+    "Q10",
+    "S07"
+  ],
+  "players": 3,
+  "initial_ledgers": [
+    {
+      "seat": 1,
+      "score": {
+        "numerator": "-1",
+        "denominator": "1"
+      },
+      "available": {
+        "numerator": "0",
+        "denominator": "1"
+      }
+    },
+    {
+      "seat": 2,
+      "score": {
+        "numerator": "-1",
+        "denominator": "1"
+      },
+      "available": {
+        "numerator": "0",
+        "denominator": "1"
+      }
+    },
+    {
+      "seat": 3,
+      "score": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "available": {
+        "numerator": "0",
+        "denominator": "1"
+      }
+    }
+  ],
+  "debts": [
+    {
+      "id": "debt-a",
+      "sequence": 0,
+      "debtor": 1,
+      "creditor": 2,
+      "amount": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "charge_id": "charge-a"
+    },
+    {
+      "id": "debt-b",
+      "sequence": 1,
+      "debtor": 2,
+      "creditor": 1,
+      "amount": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "charge_id": "charge-b"
+    }
+  ],
+  "receipts": [
+    {
+      "id": "receipt-a",
+      "seat": 1,
+      "amount": {
+        "numerator": "1",
+        "denominator": "3"
+      }
+    }
+  ],
+  "expected": {
+    "ledgers": [
+      {
+        "seat": 1,
+        "score": {
+          "numerator": "1",
+          "denominator": "3"
+        },
+        "available": {
+          "numerator": "1",
+          "denominator": "3"
+        }
+      },
+      {
+        "seat": 2,
+        "score": {
+          "numerator": "0",
+          "denominator": "1"
+        },
+        "available": {
+          "numerator": "0",
+          "denominator": "1"
+        }
+      },
+      {
+        "seat": 3,
+        "score": {
+          "numerator": "0",
+          "denominator": "1"
+        },
+        "available": {
+          "numerator": "0",
+          "denominator": "1"
+        }
+      }
+    ],
+    "remaining_debts": [],
+    "reference_payment_count": 6,
+    "scenario_status": "scenario-complete",
+    "game_complete": false
+  }
+}

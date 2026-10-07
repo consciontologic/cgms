@@ -1,0 +1,78 @@
+{
+  "compensation": [
+    {
+      "boundary": "initial",
+      "state": "4f5bdaf876cfbc23c4c2adcbabce273fd3c7702081e23ffe0921c1af9356ae67",
+      "events": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+    },
+    {
+      "boundary": "queue",
+      "state": "2798385856b335c685735146da38455d5d1d91cd3fc0616712c45c3caf20ba5a",
+      "events": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+    },
+    {
+      "boundary": "seat-two-draw",
+      "state": "8cbbb09ddbea231d3a50e5363982e75c74528e28e04a11b9d85909005768c22d",
+      "events": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+    },
+    {
+      "boundary": "seat-three-exhausted",
+      "state": "b21f1047f196981c7a5849803f3a12f974dbd729f8c87d580437f27f2689d903",
+      "events": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+    }
+  ],
+  "fate": [
+    {
+      "boundary": "initial",
+      "state": "208c681d9cffb89d1f28e7c82d3f46f517c0e9296d8cbd676904fac7289c0762",
+      "events": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+    },
+    {
+      "boundary": "fate",
+      "state": "2c43b9d45fa3da4d71e4540d1e75db2f00a426c0a2b601eb79ce52c26f97ead7",
+      "events": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+    },
+    {
+      "boundary": "pass",
+      "state": "2d3d97e71d8d9b76c9b0efcb72ca376f724c1884e30b2cc4bfb1f6cd4ddd6d74",
+      "events": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+    },
+    {
+      "boundary": "pass",
+      "state": "aad51e250b0998f388dedbbc54533c4b9c8f82dea26c51989b58e5bb27e0f562",
+      "events": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+    },
+    {
+      "boundary": "ability-outcome",
+      "state": "7d72d5392c29ccf694897f54dc60232d12ca86340d54d4673828632e9a2d2095",
+      "events": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    }
+  ],
+  "purchase": [
+    {
+      "boundary": "initial",
+      "state": "3c69aaf4ace5012942e5d09db10728693e5eda37a317f61b5dcbbf28daf3cf97",
+      "events": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+    },
+    {
+      "boundary": "purchase",
+      "state": "96c66746247d4d93c3cac8d9e6546a7b711293f9a7bf4c5d6537f59e8e106f7e",
+      "events": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+    },
+    {
+      "boundary": "pass",
+      "state": "cd20f505e59b9651e05ee58d3c2196bccc0dc5b181d77a1daeafe5eebc30a147",
+      "events": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+    },
+    {
+      "boundary": "pass",
+      "state": "93da23896ef3df993d192eb291059454dd0bd3b0d18b6bcc78e11efd736e9eb8",
+      "events": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+    },
+    {
+      "boundary": "purchase-outcome",
+      "state": "93d37c64760144a5b6562bfb626f5a71850e6df6720790b7acd043284f627616",
+      "events": "e9188c7d0d2768e196ffce13697d378de22df0564175c2205c3c8eb79bf47e12"
+    }
+  ]
+}

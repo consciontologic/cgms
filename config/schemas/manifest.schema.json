@@ -1,0 +1,258 @@
+{
+  "$defs": {
+    "Artifact": {
+      "additionalProperties": false,
+      "properties": {
+        "bytes": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "path": {
+          "type": "string"
+        },
+        "privacy": {
+          "type": "string"
+        },
+        "sha256": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "path",
+        "sha256",
+        "bytes",
+        "privacy"
+      ],
+      "type": "object"
+    },
+    "Manifest": {
+      "additionalProperties": false,
+      "properties": {
+        "argv": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "artifacts": {
+          "items": {
+            "$ref": "#/$defs/Artifact"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "canceled": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "command": {
+          "type": "string"
+        },
+        "config_hash": {
+          "type": "string"
+        },
+        "coverage": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "created": {
+          "type": "string"
+        },
+        "cwd": {
+          "type": "string"
+        },
+        "exclusions": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "exit_code": {
+          "enum": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            130
+          ]
+        },
+        "expires": {
+          "type": "string"
+        },
+        "finalized": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "interpretation": {
+          "type": "string"
+        },
+        "not_started": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "parent": {
+          "type": "string"
+        },
+        "planned": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "privacy": {
+          "const": "restricted"
+        },
+        "provenance": {
+          "$ref": "#/$defs/Provenance"
+        },
+        "review_hold": {
+          "type": "boolean"
+        },
+        "root_seed": {
+          "type": "string"
+        },
+        "schema_version": {
+          "const": "cgms-manifest-v1"
+        },
+        "started": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "status": {
+          "type": "string"
+        },
+        "workers": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "schema_version",
+        "status",
+        "exit_code",
+        "command",
+        "argv",
+        "cwd",
+        "root_seed",
+        "config_hash",
+        "interpretation",
+        "coverage",
+        "exclusions",
+        "provenance",
+        "artifacts",
+        "workers",
+        "planned",
+        "started",
+        "finalized",
+        "canceled",
+        "not_started",
+        "parent",
+        "created",
+        "expires",
+        "review_hold",
+        "privacy"
+      ],
+      "type": "object"
+    },
+    "Provenance": {
+      "additionalProperties": false,
+      "properties": {
+        "binary_sha256": {
+          "type": "string"
+        },
+        "build_info": {
+          "type": "string"
+        },
+        "dependency_hash": {
+          "type": "string"
+        },
+        "dirty_patch_hash": {
+          "type": "string"
+        },
+        "engine": {
+          "type": "string"
+        },
+        "go_version": {
+          "type": "string"
+        },
+        "legal_menu": {
+          "type": "string"
+        },
+        "platform": {
+          "type": "string"
+        },
+        "prng": {
+          "type": "string"
+        },
+        "rule_source_revision": {
+          "type": "string"
+        },
+        "rule_source_sha256": {
+          "type": "string"
+        },
+        "sampler": {
+          "type": "string"
+        },
+        "seed_derivation": {
+          "type": "string"
+        },
+        "shuffle": {
+          "type": "string"
+        },
+        "source_revision": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "prng",
+        "seed_derivation",
+        "sampler",
+        "shuffle",
+        "legal_menu",
+        "engine",
+        "source_revision",
+        "dirty_patch_hash",
+        "binary_sha256",
+        "go_version",
+        "platform",
+        "build_info",
+        "dependency_hash",
+        "rule_source_sha256",
+        "rule_source_revision"
+      ],
+      "type": "object"
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "allOf": [
+    {
+      "$ref": "#/$defs/Manifest"
+    }
+  ],
+  "description": "Closed offline runtime shape. Go additionally validates physical conservation, lineage, compatibility and exact rational canonicality.",
+  "title": "CGMS manifest v1"
+}

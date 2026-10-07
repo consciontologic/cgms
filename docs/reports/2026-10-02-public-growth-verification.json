@@ -1,0 +1,5436 @@
+{
+  "schema": "cgms-public-growth-verification-v1",
+  "run_id": "public-growth-20261002",
+  "status": "passed",
+  "scope": "Public square and painted card growth with actual available width, preserving equal quadrants and adjacent hand. Presentation-only follow-up.",
+  "finalMainSha256": "3a25b7a5e052fbfd9f26694a8a26d18dd08243fe83c149c43a9be5c022777811",
+  "sourceChecks": {
+    "hostTests": {
+      "count": 271,
+      "runs": [
+        {
+          "log": "/tmp/agent-runs/public-growth-host-final--20261002T171739Z-1977425.log",
+          "sha256": "da20e6958f3a1e14b66deba8bc82b072b02f418f13d28447cec3eb7b6efc13f0",
+          "exit": 0
+        }
+      ]
+    },
+    "packageTests": {
+      "count": 76,
+      "runs": [
+        {
+          "log": "/tmp/agent-runs/public-growth-package--20261002T171545Z-1973060.log",
+          "sha256": "c77c6b3a17627886d80b00da984ff2131f0e01629fecd986bc0c305d65750920",
+          "exit": 0
+        }
+      ]
+    },
+    "nodeSupportTests": {
+      "count": 31,
+      "runs": [
+        {
+          "log": "/tmp/agent-runs/public-growth-node-support--20261002T171903Z-1980612.log",
+          "sha256": "759bd2a76ef55dc39edf1db41894401a93aee1649970ea7715d743797b585ce6",
+          "exit": 0
+        }
+      ]
+    },
+    "hostAnalyzer": {
+      "runs": [
+        {
+          "log": "/tmp/agent-runs/public-growth-host-analyze-final--20261002T171739Z-1977459.log",
+          "sha256": "42e749c96a8aec8d738d97aae0079b899ec262f5ef3fdf8ff545f3d7ea2d4aab",
+          "exit": 0
+        }
+      ]
+    },
+    "packageAnalyzer": {
+      "runs": [
+        {
+          "log": "/tmp/agent-runs/public-growth-package-analyze--20261002T171610Z-1974205.log",
+          "sha256": "da15b85e82a8ad0dbd26d608dd6bc633102fcf77330e3593abfe380d1fb5e97f",
+          "exit": 0
+        }
+      ]
+    },
+    "format": {
+      "runs": [
+        {
+          "log": "/tmp/agent-runs/public-growth-format-final--20261002T171738Z-1977340.log",
+          "sha256": "11fa9bef8d8fc7afff8e4deace774cc0112b0c233c7459d267f4bde20fde2361",
+          "exit": 0
+        }
+      ]
+    },
+    "webBuild": {
+      "runs": [
+        {
+          "log": "/tmp/agent-runs/public-growth-build--20261002T171937Z-1981726.log",
+          "sha256": "844d9b91941a2b00e9e0428542efd5543e1bc5cd679afd04c4ddbaea19f873c5",
+          "exit": 0
+        }
+      ]
+    }
+  },
+  "browserChecks": {
+    "total": 351,
+    "suites": [
+      {
+        "host": "normal",
+        "engine": "chromium",
+        "version": "153.0.8010.12",
+        "reportAtCapture": "client/.browser-tools/artifacts/public-growth-final-normal-chromium/report.json",
+        "reportSha256": "049c91caccdd2d936c6e4e28a831e5cbfaa9f0de253f9eceae4e4c885386c1c2",
+        "assets": {
+          "main.dart.js": "3a25b7a5e052fbfd9f26694a8a26d18dd08243fe83c149c43a9be5c022777811",
+          "index.html": "0cb17fca2f4289e6b33ac9c7e847cdfa8a763169f841d6a7140cb6f83a595c50",
+          "keyboard_bridge.js": "1a244bc7bc3e3f3802e715315bc6e4d0f36809a4d99754ac28ee54227583c261",
+          "flutter_bootstrap.js": "296c7f1058ee874c18daf4e1619bb32f6386430b643865b47fda9badd45df1eb"
+        },
+        "caseCount": 103,
+        "cases": [
+          {
+            "case": "trusted-native-tab-bridge-handled-reverse-outside-and-exit",
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 390,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 821,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 821,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 1440,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 821,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 821,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 390,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "live-public-square-and-preview-composition-grow-at-fixed-height",
+            "navigations": 0,
+            "commandPosts": 0,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "narrow-public-chooser-and-actions-preserve-visible-hand",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 320,
+            "height": 568,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 320,
+            "height": 568,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 320,
+            "height": 568,
+            "pass": true
+          },
+          {
+            "case": "narrow-public-chooser-and-actions-preserve-visible-hand",
+            "width": 320,
+            "height": 568,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "fresh-normal-entry",
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 768,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 1200,
+            "pass": true
+          },
+          {
+            "case": "uniform-hand-cards-in-horizontal-suit-stacks",
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "horizontal-suit-scroll-preserves-selection",
+            "width": 390,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 320,
+            "height": 568,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 360,
+            "height": 800,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 599,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 600,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 599,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 600,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1049,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1050,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1049,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1050,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1280,
+            "height": 720,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1280,
+            "height": 600,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1024,
+            "height": 768,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-keyboard-inspect-and-escape",
+            "pass": true
+          },
+          {
+            "case": "suit-stack-physical-card-touch-and-keyboard",
+            "pass": true
+          },
+          {
+            "case": "suit-stack-physical-card-touch-and-keyboard",
+            "pass": true
+          },
+          {
+            "case": "suit-stack-physical-card-touch-and-keyboard",
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-text200-touch-navigation",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-text200-touch-navigation",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-text200-touch-navigation",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-text200-touch-navigation",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "offscreen-card-after-pointer-short-text200-and-modal-reverse-tab",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "hand-interactions-without-command-posts",
+            "commandPosts": 0,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "fresh-normal-entry",
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 768,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 1200,
+            "pass": true
+          },
+          {
+            "case": "uniform-hand-cards-in-horizontal-suit-stacks",
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "horizontal-suit-scroll-preserves-selection",
+            "width": 390,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-keyboard-inspect-and-escape",
+            "pass": true
+          },
+          {
+            "case": "suit-stack-physical-card-touch-and-keyboard",
+            "pass": true
+          },
+          {
+            "case": "suit-stack-physical-card-touch-and-keyboard",
+            "pass": true
+          },
+          {
+            "case": "suit-stack-physical-card-touch-and-keyboard",
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-text200-touch-navigation",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-text200-touch-navigation",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-text200-touch-navigation",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-text200-touch-navigation",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "hand-interactions-without-command-posts",
+            "commandPosts": 0,
+            "pass": true
+          }
+        ],
+        "growthMeasurements": [
+          {
+            "width": 319,
+            "height": 948,
+            "square": {
+              "x": 8,
+              "y": 48,
+              "width": 303,
+              "height": 303
+            },
+            "cells": [
+              {
+                "x": 8,
+                "y": 48,
+                "width": 151.5,
+                "height": 151.5,
+                "top": 48,
+                "right": 159.5,
+                "bottom": 199.5,
+                "left": 8
+              },
+              {
+                "x": 159.5,
+                "y": 48,
+                "width": 151.5,
+                "height": 151.5,
+                "top": 48,
+                "right": 311,
+                "bottom": 199.5,
+                "left": 159.5
+              },
+              {
+                "x": 8,
+                "y": 199.5,
+                "width": 151.5,
+                "height": 151.5,
+                "top": 199.5,
+                "right": 159.5,
+                "bottom": 351,
+                "left": 8
+              },
+              {
+                "x": 159.5,
+                "y": 199.5,
+                "width": 151.5,
+                "height": 151.5,
+                "top": 199.5,
+                "right": 311,
+                "bottom": 351,
+                "left": 159.5
+              }
+            ],
+            "hand": {
+              "x": 8,
+              "y": 355,
+              "width": 303,
+              "height": 545
+            },
+            "footer": [
+              {
+                "x": 8,
+                "y": 900,
+                "width": 120.65625,
+                "height": 48
+              },
+              {
+                "x": 140.66818237304688,
+                "y": 900,
+                "width": 96.421875,
+                "height": 48
+              }
+            ]
+          },
+          {
+            "width": 390,
+            "height": 948,
+            "square": {
+              "x": 24.360000610351562,
+              "y": 48,
+              "width": 341.26560974121094,
+              "height": 341.265625
+            },
+            "cells": [
+              {
+                "x": 24.360000610351562,
+                "y": 48,
+                "width": 170.625,
+                "height": 170.625,
+                "top": 48,
+                "right": 194.98500061035156,
+                "bottom": 218.625,
+                "left": 24.360000610351562
+              },
+              {
+                "x": 195,
+                "y": 48,
+                "width": 170.625,
+                "height": 170.625,
+                "top": 48,
+                "right": 365.625,
+                "bottom": 218.625,
+                "left": 195
+              },
+              {
+                "x": 24.360000610351562,
+                "y": 218.63999938964844,
+                "width": 170.625,
+                "height": 170.62501525878906,
+                "top": 218.63999938964844,
+                "right": 194.98500061035156,
+                "bottom": 389.2650146484375,
+                "left": 24.360000610351562
+              },
+              {
+                "x": 195,
+                "y": 218.63999938964844,
+                "width": 170.625,
+                "height": 170.62501525878906,
+                "top": 218.63999938964844,
+                "right": 365.625,
+                "bottom": 389.2650146484375,
+                "left": 195
+              }
+            ],
+            "hand": {
+              "x": 8,
+              "y": 393.2799987792969,
+              "width": 374,
+              "height": 506.7187805175781
+            },
+            "footer": [
+              {
+                "x": 8,
+                "y": 900,
+                "width": 120.65625,
+                "height": 48
+              },
+              {
+                "x": 140.66818237304688,
+                "y": 900,
+                "width": 96.421875,
+                "height": 48
+              }
+            ]
+          },
+          {
+            "width": 821,
+            "height": 948,
+            "square": {
+              "x": 208.7294921875,
+              "y": 53,
+              "width": 403.53125,
+              "height": 403.53125
+            },
+            "cells": [
+              {
+                "x": 208.7294921875,
+                "y": 53,
+                "width": 201.765625,
+                "height": 201.765625,
+                "top": 53,
+                "right": 410.4951171875,
+                "bottom": 254.765625,
+                "left": 208.7294921875
+              },
+              {
+                "x": 410.5,
+                "y": 53,
+                "width": 201.765625,
+                "height": 201.765625,
+                "top": 53,
+                "right": 612.265625,
+                "bottom": 254.765625,
+                "left": 410.5
+              },
+              {
+                "x": 208.7294921875,
+                "y": 254.7705078125,
+                "width": 201.765625,
+                "height": 201.765625,
+                "top": 254.7705078125,
+                "right": 410.4951171875,
+                "bottom": 456.5361328125,
+                "left": 208.7294921875
+              },
+              {
+                "x": 410.5,
+                "y": 254.7705078125,
+                "width": 201.765625,
+                "height": 201.765625,
+                "top": 254.7705078125,
+                "right": 612.265625,
+                "bottom": 456.5361328125,
+                "left": 410.5
+              }
+            ],
+            "hand": {
+              "x": 8,
+              "y": 460.541015625,
+              "width": 805,
+              "height": 439.453125
+            },
+            "footer": [
+              {
+                "x": 8,
+                "y": 900,
+                "width": 151.609375,
+                "height": 48
+              },
+              {
+                "x": 171.62387084960938,
+                "y": 900,
+                "width": 118.921875,
+                "height": 48
+              }
+            ]
+          },
+          {
+            "width": 1440,
+            "height": 948,
+            "square": {
+              "x": 473.5199890136719,
+              "y": 53,
+              "width": 492.9531555175781,
+              "height": 492.953125
+            },
+            "cells": [
+              {
+                "x": 473.5199890136719,
+                "y": 53,
+                "width": 246.46878051757812,
+                "height": 246.46875,
+                "top": 53,
+                "right": 719.98876953125,
+                "bottom": 299.46875,
+                "left": 473.5199890136719
+              },
+              {
+                "x": 720,
+                "y": 53,
+                "width": 246.46875,
+                "height": 246.46875,
+                "top": 53,
+                "right": 966.46875,
+                "bottom": 299.46875,
+                "left": 720
+              },
+              {
+                "x": 473.5199890136719,
+                "y": 299.47998046875,
+                "width": 246.46878051757812,
+                "height": 246.46875,
+                "top": 299.47998046875,
+                "right": 719.98876953125,
+                "bottom": 545.94873046875,
+                "left": 473.5199890136719
+              },
+              {
+                "x": 720,
+                "y": 299.47998046875,
+                "width": 246.46875,
+                "height": 246.46875,
+                "top": 299.47998046875,
+                "right": 966.46875,
+                "bottom": 545.94873046875,
+                "left": 720
+              }
+            ],
+            "hand": {
+              "x": 8,
+              "y": 549.9600219726562,
+              "width": 1424,
+              "height": 350.03125
+            },
+            "footer": [
+              {
+                "x": 8,
+                "y": 900,
+                "width": 151.609375,
+                "height": 48
+              },
+              {
+                "x": 171.62387084960938,
+                "y": 900,
+                "width": 118.921875,
+                "height": 48
+              }
+            ]
+          },
+          {
+            "width": 821,
+            "height": 948,
+            "square": {
+              "x": 208.7294921875,
+              "y": 53,
+              "width": 403.53125,
+              "height": 403.53125
+            },
+            "cells": [
+              {
+                "x": 208.7294921875,
+                "y": 53,
+                "width": 201.765625,
+                "height": 201.765625,
+                "top": 53,
+                "right": 410.4951171875,
+                "bottom": 254.765625,
+                "left": 208.7294921875
+              },
+              {
+                "x": 410.5,
+                "y": 53,
+                "width": 201.765625,
+                "height": 201.765625,
+                "top": 53,
+                "right": 612.265625,
+                "bottom": 254.765625,
+                "left": 410.5
+              },
+              {
+                "x": 208.7294921875,
+                "y": 254.7705078125,
+                "width": 201.765625,
+                "height": 201.765625,
+                "top": 254.7705078125,
+                "right": 410.4951171875,
+                "bottom": 456.5361328125,
+                "left": 208.7294921875
+              },
+              {
+                "x": 410.5,
+                "y": 254.7705078125,
+                "width": 201.765625,
+                "height": 201.765625,
+                "top": 254.7705078125,
+                "right": 612.265625,
+                "bottom": 456.5361328125,
+                "left": 410.5
+              }
+            ],
+            "hand": {
+              "x": 8,
+              "y": 460.541015625,
+              "width": 805,
+              "height": 439.453125
+            },
+            "footer": [
+              {
+                "x": 8,
+                "y": 900,
+                "width": 151.609375,
+                "height": 48
+              },
+              {
+                "x": 171.62387084960938,
+                "y": 900,
+                "width": 118.921875,
+                "height": 48
+              }
+            ]
+          },
+          {
+            "width": 390,
+            "height": 948,
+            "square": {
+              "x": 24.360000610351562,
+              "y": 48,
+              "width": 341.26560974121094,
+              "height": 341.265625
+            },
+            "cells": [
+              {
+                "x": 24.360000610351562,
+                "y": 48,
+                "width": 170.625,
+                "height": 170.625,
+                "top": 48,
+                "right": 194.98500061035156,
+                "bottom": 218.625,
+                "left": 24.360000610351562
+              },
+              {
+                "x": 195,
+                "y": 48,
+                "width": 170.625,
+                "height": 170.625,
+                "top": 48,
+                "right": 365.625,
+                "bottom": 218.625,
+                "left": 195
+              },
+              {
+                "x": 24.360000610351562,
+                "y": 218.63999938964844,
+                "width": 170.625,
+                "height": 170.62501525878906,
+                "top": 218.63999938964844,
+                "right": 194.98500061035156,
+                "bottom": 389.2650146484375,
+                "left": 24.360000610351562
+              },
+              {
+                "x": 195,
+                "y": 218.63999938964844,
+                "width": 170.625,
+                "height": 170.62501525878906,
+                "top": 218.63999938964844,
+                "right": 365.625,
+                "bottom": 389.2650146484375,
+                "left": 195
+              }
+            ],
+            "hand": {
+              "x": 8,
+              "y": 393.2799987792969,
+              "width": 374,
+              "height": 506.7187805175781
+            },
+            "footer": [
+              {
+                "x": 8,
+                "y": 900,
+                "width": 120.65625,
+                "height": 48
+              },
+              {
+                "x": 140.66818237304688,
+                "y": 900,
+                "width": 96.421875,
+                "height": 48
+              }
+            ]
+          },
+          {
+            "width": 319,
+            "height": 948,
+            "square": {
+              "x": 8,
+              "y": 48,
+              "width": 303,
+              "height": 303
+            },
+            "cells": [
+              {
+                "x": 8,
+                "y": 48,
+                "width": 151.5,
+                "height": 151.5,
+                "top": 48,
+                "right": 159.5,
+                "bottom": 199.5,
+                "left": 8
+              },
+              {
+                "x": 159.5,
+                "y": 48,
+                "width": 151.5,
+                "height": 151.5,
+                "top": 48,
+                "right": 311,
+                "bottom": 199.5,
+                "left": 159.5
+              },
+              {
+                "x": 8,
+                "y": 199.5,
+                "width": 151.5,
+                "height": 151.5,
+                "top": 199.5,
+                "right": 159.5,
+                "bottom": 351,
+                "left": 8
+              },
+              {
+                "x": 159.5,
+                "y": 199.5,
+                "width": 151.5,
+                "height": 151.5,
+                "top": 199.5,
+                "right": 311,
+                "bottom": 351,
+                "left": 159.5
+              }
+            ],
+            "hand": {
+              "x": 8,
+              "y": 355,
+              "width": 303,
+              "height": 545
+            },
+            "footer": [
+              {
+                "x": 8,
+                "y": 900,
+                "width": 120.65625,
+                "height": 48
+              },
+              {
+                "x": 140.66818237304688,
+                "y": 900,
+                "width": 96.421875,
+                "height": 48
+              }
+            ]
+          }
+        ],
+        "unexpectedErrors": [],
+        "expectedAuthenticationChallenges": [],
+        "safeRun": [
+          {
+            "log": "/tmp/agent-runs/public-growth-normal-chromium--20261002T172106Z-1986543.log",
+            "sha256": "5e08b98311e2c0cda06f7e9cbd81d340039459f4b4b2e8e49d33dec5c1b53ff0",
+            "exit": 0
+          }
+        ]
+      },
+      {
+        "host": "online",
+        "engine": "chromium",
+        "version": "153.0.8010.12",
+        "reportAtCapture": "client/.browser-tools/artifacts/public-growth-accepted-online-chromium/chromium-quadrants-report.json",
+        "reportSha256": "489069806c4e920e29fda5a3c07153642309c5148c292138b2f253b189901dee",
+        "assets": {
+          "index.html": "0cb17fca2f4289e6b33ac9c7e847cdfa8a763169f841d6a7140cb6f83a595c50",
+          "keyboard_bridge.js": "1a244bc7bc3e3f3802e715315bc6e4d0f36809a4d99754ac28ee54227583c261",
+          "flutter_bootstrap.js": "296c7f1058ee874c18daf4e1619bb32f6386430b643865b47fda9badd45df1eb",
+          "main.dart.js": "3a25b7a5e052fbfd9f26694a8a26d18dd08243fe83c149c43a9be5c022777811"
+        },
+        "caseCount": 14,
+        "cases": [
+          {
+            "case": "online-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "normal",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "online-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "normal",
+            "width": 320,
+            "height": 568,
+            "pass": true
+          },
+          {
+            "case": "online-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "normal",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "online-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "normal",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "online-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "normal",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "online-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "normal",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "online-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "rtl-text200",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "online-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "rtl-text200",
+            "width": 320,
+            "height": 568,
+            "pass": true
+          },
+          {
+            "case": "online-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "rtl-text200",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "online-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "rtl-text200",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "online-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "rtl-text200",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "online-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "rtl-text200",
+            "width": 1440,
+            "height": 1200,
+            "pass": true
+          },
+          {
+            "case": "online-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "rtl-text200",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "online-live-public-square-and-preview-composition-grow-at-fixed-height",
+            "navigations": 0,
+            "commandPosts": 0,
+            "beforeVersion": 0,
+            "afterVersion": 0,
+            "pass": true
+          }
+        ],
+        "growthMeasurements": [
+          {
+            "width": 319,
+            "height": 948,
+            "board": {
+              "x": 8,
+              "y": 56,
+              "width": 303,
+              "height": 892
+            },
+            "hand": {
+              "x": 8,
+              "y": 411,
+              "width": 303,
+              "height": 489
+            },
+            "initiallyVisibleCards": [
+              {
+                "label": "A of Hearts, copy 1 concealed-ace",
+                "width": 72,
+                "height": 90
+              },
+              {
+                "label": "Q of Hearts, copy 1 hand",
+                "width": 72,
+                "height": 90
+              }
+            ],
+            "footer": [
+              {
+                "label": "Trade cards",
+                "width": 120.65625,
+                "height": 48
+              },
+              {
+                "label": "End Turn",
+                "width": 99.15625,
+                "height": 48
+              }
+            ],
+            "square": {
+              "x": 8,
+              "y": 104,
+              "width": 303,
+              "height": 303
+            },
+            "quadrants": [
+              {
+                "x": 8,
+                "y": 104,
+                "width": 151.5,
+                "height": 151.5
+              },
+              {
+                "x": 159.5,
+                "y": 104,
+                "width": 151.5,
+                "height": 151.5
+              },
+              {
+                "x": 8,
+                "y": 255.5,
+                "width": 151.5,
+                "height": 151.5
+              },
+              {
+                "x": 159.5,
+                "y": 255.5,
+                "width": 151.5,
+                "height": 151.5
+              }
+            ]
+          },
+          {
+            "width": 390,
+            "height": 948,
+            "board": {
+              "x": 8,
+              "y": 56,
+              "width": 374,
+              "height": 892
+            },
+            "hand": {
+              "x": 8,
+              "y": 429.1199951171875,
+              "width": 374,
+              "height": 470.875
+            },
+            "initiallyVisibleCards": [
+              {
+                "label": "A of Hearts, copy 1 concealed-ace",
+                "width": 72,
+                "height": 90
+              },
+              {
+                "label": "Q of Hearts, copy 1 hand",
+                "width": 72,
+                "height": 90
+              }
+            ],
+            "footer": [
+              {
+                "label": "Trade cards",
+                "width": 120.65625,
+                "height": 48
+              },
+              {
+                "label": "End Turn",
+                "width": 99.15625,
+                "height": 48
+              }
+            ],
+            "square": {
+              "x": 34.44000244140625,
+              "y": 104,
+              "width": 321.109375,
+              "height": 321.109375
+            },
+            "quadrants": [
+              {
+                "x": 34.44000244140625,
+                "y": 104,
+                "width": 160.546875,
+                "height": 160.546875
+              },
+              {
+                "x": 195,
+                "y": 104,
+                "width": 160.546875,
+                "height": 160.546875
+              },
+              {
+                "x": 34.44000244140625,
+                "y": 264.55999755859375,
+                "width": 160.546875,
+                "height": 160.546875
+              },
+              {
+                "x": 195,
+                "y": 264.55999755859375,
+                "width": 160.546875,
+                "height": 160.546875
+              }
+            ]
+          },
+          {
+            "width": 821,
+            "height": 948,
+            "board": {
+              "x": 8,
+              "y": 56,
+              "width": 805,
+              "height": 892
+            },
+            "hand": {
+              "x": 8,
+              "y": 487.7031555175781,
+              "width": 805,
+              "height": 412.2812194824219
+            },
+            "initiallyVisibleCards": [
+              {
+                "label": "A of Hearts, copy 1 concealed-ace",
+                "width": 91.734375,
+                "height": 114.671875
+              },
+              {
+                "label": "Q of Hearts, copy 1 hand",
+                "width": 91.734375,
+                "height": 114.671875
+              }
+            ],
+            "footer": [
+              {
+                "label": "Trade cards",
+                "width": 144.609375,
+                "height": 48
+              },
+              {
+                "label": "End Turn",
+                "width": 117.3125,
+                "height": 48
+              }
+            ],
+            "square": {
+              "x": 220.64842224121094,
+              "y": 104,
+              "width": 379.70314025878906,
+              "height": 379.703125
+            },
+            "quadrants": [
+              {
+                "x": 220.64842224121094,
+                "y": 104,
+                "width": 189.84376525878906,
+                "height": 189.84375
+              },
+              {
+                "x": 410.5,
+                "y": 104,
+                "width": 189.84375,
+                "height": 189.84375
+              },
+              {
+                "x": 220.64842224121094,
+                "y": 293.8515625,
+                "width": 189.84376525878906,
+                "height": 189.84375
+              },
+              {
+                "x": 410.5,
+                "y": 293.8515625,
+                "width": 189.84375,
+                "height": 189.84375
+              }
+            ]
+          },
+          {
+            "width": 1440,
+            "height": 948,
+            "board": {
+              "x": 8,
+              "y": 56,
+              "width": 1424,
+              "height": 892
+            },
+            "hand": {
+              "x": 8,
+              "y": 571.8400268554688,
+              "width": 1424,
+              "height": 328.15625
+            },
+            "initiallyVisibleCards": [
+              {
+                "label": "A of Hearts, copy 1 concealed-ace",
+                "width": 91.734375,
+                "height": 114.671875
+              },
+              {
+                "label": "Q of Hearts, copy 1 hand",
+                "width": 91.734375,
+                "height": 114.671875
+              }
+            ],
+            "footer": [
+              {
+                "label": "Trade cards",
+                "width": 144.609375,
+                "height": 48
+              },
+              {
+                "label": "End Turn",
+                "width": 117.3125,
+                "height": 48
+              }
+            ],
+            "square": {
+              "x": 488.0799865722656,
+              "y": 104,
+              "width": 463.8280944824219,
+              "height": 463.828125
+            },
+            "quadrants": [
+              {
+                "x": 488.0799865722656,
+                "y": 104,
+                "width": 231.90621948242188,
+                "height": 231.90625
+              },
+              {
+                "x": 720,
+                "y": 104,
+                "width": 231.90625,
+                "height": 231.90625
+              },
+              {
+                "x": 488.0799865722656,
+                "y": 335.91998291015625,
+                "width": 231.90621948242188,
+                "height": 231.90625
+              },
+              {
+                "x": 720,
+                "y": 335.91998291015625,
+                "width": 231.90625,
+                "height": 231.90625
+              }
+            ]
+          },
+          {
+            "width": 821,
+            "height": 948,
+            "board": {
+              "x": 8,
+              "y": 56,
+              "width": 805,
+              "height": 892
+            },
+            "hand": {
+              "x": 8,
+              "y": 487.7031555175781,
+              "width": 805,
+              "height": 412.2812194824219
+            },
+            "initiallyVisibleCards": [
+              {
+                "label": "A of Hearts, copy 1 concealed-ace",
+                "width": 91.734375,
+                "height": 114.671875
+              },
+              {
+                "label": "Q of Hearts, copy 1 hand",
+                "width": 91.734375,
+                "height": 114.671875
+              }
+            ],
+            "footer": [
+              {
+                "label": "Trade cards",
+                "width": 144.609375,
+                "height": 48
+              },
+              {
+                "label": "End Turn",
+                "width": 117.3125,
+                "height": 48
+              }
+            ],
+            "square": {
+              "x": 220.64842224121094,
+              "y": 104,
+              "width": 379.70314025878906,
+              "height": 379.703125
+            },
+            "quadrants": [
+              {
+                "x": 220.64842224121094,
+                "y": 104,
+                "width": 189.84376525878906,
+                "height": 189.84375
+              },
+              {
+                "x": 410.5,
+                "y": 104,
+                "width": 189.84375,
+                "height": 189.84375
+              },
+              {
+                "x": 220.64842224121094,
+                "y": 293.8515625,
+                "width": 189.84376525878906,
+                "height": 189.84375
+              },
+              {
+                "x": 410.5,
+                "y": 293.8515625,
+                "width": 189.84375,
+                "height": 189.84375
+              }
+            ]
+          },
+          {
+            "width": 390,
+            "height": 948,
+            "board": {
+              "x": 8,
+              "y": 56,
+              "width": 374,
+              "height": 892
+            },
+            "hand": {
+              "x": 8,
+              "y": 429.1199951171875,
+              "width": 374,
+              "height": 470.875
+            },
+            "initiallyVisibleCards": [
+              {
+                "label": "A of Hearts, copy 1 concealed-ace",
+                "width": 72,
+                "height": 90
+              },
+              {
+                "label": "Q of Hearts, copy 1 hand",
+                "width": 72,
+                "height": 90
+              }
+            ],
+            "footer": [
+              {
+                "label": "Trade cards",
+                "width": 120.65625,
+                "height": 48
+              },
+              {
+                "label": "End Turn",
+                "width": 99.15625,
+                "height": 48
+              }
+            ],
+            "square": {
+              "x": 34.44000244140625,
+              "y": 104,
+              "width": 321.109375,
+              "height": 321.109375
+            },
+            "quadrants": [
+              {
+                "x": 34.44000244140625,
+                "y": 104,
+                "width": 160.546875,
+                "height": 160.546875
+              },
+              {
+                "x": 195,
+                "y": 104,
+                "width": 160.546875,
+                "height": 160.546875
+              },
+              {
+                "x": 34.44000244140625,
+                "y": 264.55999755859375,
+                "width": 160.546875,
+                "height": 160.546875
+              },
+              {
+                "x": 195,
+                "y": 264.55999755859375,
+                "width": 160.546875,
+                "height": 160.546875
+              }
+            ]
+          },
+          {
+            "width": 319,
+            "height": 948,
+            "board": {
+              "x": 8,
+              "y": 56,
+              "width": 303,
+              "height": 892
+            },
+            "hand": {
+              "x": 8,
+              "y": 411,
+              "width": 303,
+              "height": 489
+            },
+            "initiallyVisibleCards": [
+              {
+                "label": "A of Hearts, copy 1 concealed-ace",
+                "width": 72,
+                "height": 90
+              },
+              {
+                "label": "Q of Hearts, copy 1 hand",
+                "width": 72,
+                "height": 90
+              }
+            ],
+            "footer": [
+              {
+                "label": "Trade cards",
+                "width": 120.65625,
+                "height": 48
+              },
+              {
+                "label": "End Turn",
+                "width": 99.15625,
+                "height": 48
+              }
+            ],
+            "square": {
+              "x": 8,
+              "y": 104,
+              "width": 303,
+              "height": 303
+            },
+            "quadrants": [
+              {
+                "x": 8,
+                "y": 104,
+                "width": 151.5,
+                "height": 151.5
+              },
+              {
+                "x": 159.5,
+                "y": 104,
+                "width": 151.5,
+                "height": 151.5
+              },
+              {
+                "x": 8,
+                "y": 255.5,
+                "width": 151.5,
+                "height": 151.5
+              },
+              {
+                "x": 159.5,
+                "y": 255.5,
+                "width": 151.5,
+                "height": 151.5
+              }
+            ]
+          }
+        ],
+        "unexpectedErrors": [],
+        "expectedAuthenticationChallenges": [],
+        "safeRun": [
+          {
+            "log": "/tmp/agent-runs/public-growth-online-chromium-accepted--20261002T172425Z-1995269.log",
+            "sha256": "b58515d42cfd9861e0780b992940b025c00281b6d7c61a5d8e069995a4c856e3",
+            "exit": 0
+          }
+        ]
+      },
+      {
+        "host": "normal",
+        "engine": "firefox",
+        "version": "155.0",
+        "reportAtCapture": "client/.browser-tools/artifacts/public-growth-final-normal-firefox/report.json",
+        "reportSha256": "8014abd423380abc1e4ec6417e44f5fef32623f2a0c7098f0e46a69d6f647a9d",
+        "assets": {
+          "main.dart.js": "3a25b7a5e052fbfd9f26694a8a26d18dd08243fe83c149c43a9be5c022777811",
+          "index.html": "0cb17fca2f4289e6b33ac9c7e847cdfa8a763169f841d6a7140cb6f83a595c50",
+          "keyboard_bridge.js": "1a244bc7bc3e3f3802e715315bc6e4d0f36809a4d99754ac28ee54227583c261",
+          "flutter_bootstrap.js": "296c7f1058ee874c18daf4e1619bb32f6386430b643865b47fda9badd45df1eb"
+        },
+        "caseCount": 103,
+        "cases": [
+          {
+            "case": "trusted-native-tab-bridge-handled-reverse-outside-and-exit",
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 390,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 821,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 821,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 1440,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 821,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 821,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 390,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "live-public-square-and-preview-composition-grow-at-fixed-height",
+            "navigations": 0,
+            "commandPosts": 0,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "narrow-public-chooser-and-actions-preserve-visible-hand",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 320,
+            "height": 568,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 320,
+            "height": 568,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 320,
+            "height": 568,
+            "pass": true
+          },
+          {
+            "case": "narrow-public-chooser-and-actions-preserve-visible-hand",
+            "width": 320,
+            "height": 568,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "fresh-normal-entry",
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 768,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 1200,
+            "pass": true
+          },
+          {
+            "case": "uniform-hand-cards-in-horizontal-suit-stacks",
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "horizontal-suit-scroll-preserves-selection",
+            "width": 390,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 320,
+            "height": 568,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 360,
+            "height": 800,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 599,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 600,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 599,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 600,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1049,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1050,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1049,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1050,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1280,
+            "height": 720,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1280,
+            "height": 600,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1024,
+            "height": 768,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-keyboard-inspect-and-escape",
+            "pass": true
+          },
+          {
+            "case": "suit-stack-physical-card-touch-and-keyboard",
+            "pass": true
+          },
+          {
+            "case": "suit-stack-physical-card-touch-and-keyboard",
+            "pass": true
+          },
+          {
+            "case": "suit-stack-physical-card-touch-and-keyboard",
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-text200-touch-navigation",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-text200-touch-navigation",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-text200-touch-navigation",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-text200-touch-navigation",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "offscreen-card-after-pointer-short-text200-and-modal-reverse-tab",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "hand-interactions-without-command-posts",
+            "commandPosts": 0,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "fresh-normal-entry",
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 768,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 1200,
+            "pass": true
+          },
+          {
+            "case": "uniform-hand-cards-in-horizontal-suit-stacks",
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "horizontal-suit-scroll-preserves-selection",
+            "width": 390,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-keyboard-inspect-and-escape",
+            "pass": true
+          },
+          {
+            "case": "suit-stack-physical-card-touch-and-keyboard",
+            "pass": true
+          },
+          {
+            "case": "suit-stack-physical-card-touch-and-keyboard",
+            "pass": true
+          },
+          {
+            "case": "suit-stack-physical-card-touch-and-keyboard",
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-text200-touch-navigation",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-text200-touch-navigation",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-text200-touch-navigation",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-text200-touch-navigation",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "hand-interactions-without-command-posts",
+            "commandPosts": 0,
+            "pass": true
+          }
+        ],
+        "growthMeasurements": [
+          {
+            "width": 319,
+            "height": 948,
+            "square": {
+              "x": 8,
+              "y": 48,
+              "width": 303,
+              "height": 303
+            },
+            "cells": [
+              {
+                "x": 8,
+                "y": 48,
+                "width": 151.5,
+                "height": 151.5,
+                "top": 48,
+                "right": 159.5,
+                "bottom": 199.5,
+                "left": 8
+              },
+              {
+                "x": 159.5,
+                "y": 48,
+                "width": 151.5,
+                "height": 151.5,
+                "top": 48,
+                "right": 311,
+                "bottom": 199.5,
+                "left": 159.5
+              },
+              {
+                "x": 8,
+                "y": 199.5,
+                "width": 151.5,
+                "height": 151.5,
+                "top": 199.5,
+                "right": 159.5,
+                "bottom": 351,
+                "left": 8
+              },
+              {
+                "x": 159.5,
+                "y": 199.5,
+                "width": 151.5,
+                "height": 151.5,
+                "top": 199.5,
+                "right": 311,
+                "bottom": 351,
+                "left": 159.5
+              }
+            ],
+            "hand": {
+              "x": 8,
+              "y": 355,
+              "width": 303,
+              "height": 545
+            },
+            "footer": [
+              {
+                "x": 8,
+                "y": 900,
+                "width": 120.66665649414062,
+                "height": 48
+              },
+              {
+                "x": 140.66818237304688,
+                "y": 900,
+                "width": 96.43333435058594,
+                "height": 48
+              }
+            ]
+          },
+          {
+            "width": 390,
+            "height": 948,
+            "square": {
+              "x": 24.360000610351562,
+              "y": 48,
+              "width": 341.28330993652344,
+              "height": 341.2833251953125
+            },
+            "cells": [
+              {
+                "x": 24.366668701171875,
+                "y": 48,
+                "width": 170.63333129882812,
+                "height": 170.63333129882812,
+                "top": 48,
+                "right": 195,
+                "bottom": 218.63333129882812,
+                "left": 24.366668701171875
+              },
+              {
+                "x": 195,
+                "y": 48,
+                "width": 170.63333129882812,
+                "height": 170.63333129882812,
+                "top": 48,
+                "right": 365.6333312988281,
+                "bottom": 218.63333129882812,
+                "left": 195
+              },
+              {
+                "x": 24.366668701171875,
+                "y": 218.63333129882812,
+                "width": 170.63333129882812,
+                "height": 170.63333129882812,
+                "top": 218.63333129882812,
+                "right": 195,
+                "bottom": 389.26666259765625,
+                "left": 24.366668701171875
+              },
+              {
+                "x": 195,
+                "y": 218.63333129882812,
+                "width": 170.63333129882812,
+                "height": 170.63333129882812,
+                "top": 218.63333129882812,
+                "right": 365.6333312988281,
+                "bottom": 389.26666259765625,
+                "left": 195
+              }
+            ],
+            "hand": {
+              "x": 8,
+              "y": 393.2799987792969,
+              "width": 374,
+              "height": 506.7167053222656
+            },
+            "footer": [
+              {
+                "x": 8,
+                "y": 900,
+                "width": 120.66665649414062,
+                "height": 48
+              },
+              {
+                "x": 140.66818237304688,
+                "y": 900,
+                "width": 96.43333435058594,
+                "height": 48
+              }
+            ]
+          },
+          {
+            "width": 821,
+            "height": 948,
+            "square": {
+              "x": 208.7294921875,
+              "y": 53,
+              "width": 403.5333251953125,
+              "height": 403.5333251953125
+            },
+            "cells": [
+              {
+                "x": 208.73333740234375,
+                "y": 53,
+                "width": 201.76666259765625,
+                "height": 201.76666259765625,
+                "top": 53,
+                "right": 410.5,
+                "bottom": 254.76666259765625,
+                "left": 208.73333740234375
+              },
+              {
+                "x": 410.5,
+                "y": 53,
+                "width": 201.76666259765625,
+                "height": 201.76666259765625,
+                "top": 53,
+                "right": 612.2666625976562,
+                "bottom": 254.76666259765625,
+                "left": 410.5
+              },
+              {
+                "x": 208.73333740234375,
+                "y": 254.76666259765625,
+                "width": 201.76666259765625,
+                "height": 201.7666778564453,
+                "top": 254.76666259765625,
+                "right": 410.5,
+                "bottom": 456.53334045410156,
+                "left": 208.73333740234375
+              },
+              {
+                "x": 410.5,
+                "y": 254.76666259765625,
+                "width": 201.76666259765625,
+                "height": 201.7666778564453,
+                "top": 254.76666259765625,
+                "right": 612.2666625976562,
+                "bottom": 456.53334045410156,
+                "left": 410.5
+              }
+            ],
+            "hand": {
+              "x": 8,
+              "y": 460.541015625,
+              "width": 805,
+              "height": 439.4666748046875
+            },
+            "footer": [
+              {
+                "x": 8,
+                "y": 900,
+                "width": 151.61666870117188,
+                "height": 48
+              },
+              {
+                "x": 171.62387084960938,
+                "y": 900,
+                "width": 118.93331909179688,
+                "height": 48
+              }
+            ]
+          },
+          {
+            "width": 1440,
+            "height": 948,
+            "square": {
+              "x": 473.5199890136719,
+              "y": 53,
+              "width": 492.9667053222656,
+              "height": 492.9666748046875
+            },
+            "cells": [
+              {
+                "x": 473.51666259765625,
+                "y": 53,
+                "width": 246.48333740234375,
+                "height": 246.48333740234375,
+                "top": 53,
+                "right": 720,
+                "bottom": 299.48333740234375,
+                "left": 473.51666259765625
+              },
+              {
+                "x": 720,
+                "y": 53,
+                "width": 246.48333740234375,
+                "height": 246.48333740234375,
+                "top": 53,
+                "right": 966.4833374023438,
+                "bottom": 299.48333740234375,
+                "left": 720
+              },
+              {
+                "x": 473.51666259765625,
+                "y": 299.48333740234375,
+                "width": 246.48333740234375,
+                "height": 246.4833221435547,
+                "top": 299.48333740234375,
+                "right": 720,
+                "bottom": 545.9666595458984,
+                "left": 473.51666259765625
+              },
+              {
+                "x": 720,
+                "y": 299.48333740234375,
+                "width": 246.48333740234375,
+                "height": 246.4833221435547,
+                "top": 299.48333740234375,
+                "right": 966.4833374023438,
+                "bottom": 545.9666595458984,
+                "left": 720
+              }
+            ],
+            "hand": {
+              "x": 8,
+              "y": 549.9600219726562,
+              "width": 1424,
+              "height": 350.0333251953125
+            },
+            "footer": [
+              {
+                "x": 8,
+                "y": 900,
+                "width": 151.61666870117188,
+                "height": 48
+              },
+              {
+                "x": 171.62387084960938,
+                "y": 900,
+                "width": 118.93331909179688,
+                "height": 48
+              }
+            ]
+          },
+          {
+            "width": 821,
+            "height": 948,
+            "square": {
+              "x": 208.7294921875,
+              "y": 53,
+              "width": 403.5333251953125,
+              "height": 403.5333251953125
+            },
+            "cells": [
+              {
+                "x": 208.73333740234375,
+                "y": 53,
+                "width": 201.76666259765625,
+                "height": 201.76666259765625,
+                "top": 53,
+                "right": 410.5,
+                "bottom": 254.76666259765625,
+                "left": 208.73333740234375
+              },
+              {
+                "x": 410.5,
+                "y": 53,
+                "width": 201.76666259765625,
+                "height": 201.76666259765625,
+                "top": 53,
+                "right": 612.2666625976562,
+                "bottom": 254.76666259765625,
+                "left": 410.5
+              },
+              {
+                "x": 208.73333740234375,
+                "y": 254.76666259765625,
+                "width": 201.76666259765625,
+                "height": 201.7666778564453,
+                "top": 254.76666259765625,
+                "right": 410.5,
+                "bottom": 456.53334045410156,
+                "left": 208.73333740234375
+              },
+              {
+                "x": 410.5,
+                "y": 254.76666259765625,
+                "width": 201.76666259765625,
+                "height": 201.7666778564453,
+                "top": 254.76666259765625,
+                "right": 612.2666625976562,
+                "bottom": 456.53334045410156,
+                "left": 410.5
+              }
+            ],
+            "hand": {
+              "x": 8,
+              "y": 460.541015625,
+              "width": 805,
+              "height": 439.4666748046875
+            },
+            "footer": [
+              {
+                "x": 8,
+                "y": 900,
+                "width": 151.61666870117188,
+                "height": 48
+              },
+              {
+                "x": 171.62387084960938,
+                "y": 900,
+                "width": 118.93331909179688,
+                "height": 48
+              }
+            ]
+          },
+          {
+            "width": 390,
+            "height": 948,
+            "square": {
+              "x": 24.360000610351562,
+              "y": 48,
+              "width": 341.28330993652344,
+              "height": 341.2833251953125
+            },
+            "cells": [
+              {
+                "x": 24.366668701171875,
+                "y": 48,
+                "width": 170.63333129882812,
+                "height": 170.63333129882812,
+                "top": 48,
+                "right": 195,
+                "bottom": 218.63333129882812,
+                "left": 24.366668701171875
+              },
+              {
+                "x": 195,
+                "y": 48,
+                "width": 170.63333129882812,
+                "height": 170.63333129882812,
+                "top": 48,
+                "right": 365.6333312988281,
+                "bottom": 218.63333129882812,
+                "left": 195
+              },
+              {
+                "x": 24.366668701171875,
+                "y": 218.63333129882812,
+                "width": 170.63333129882812,
+                "height": 170.63333129882812,
+                "top": 218.63333129882812,
+                "right": 195,
+                "bottom": 389.26666259765625,
+                "left": 24.366668701171875
+              },
+              {
+                "x": 195,
+                "y": 218.63333129882812,
+                "width": 170.63333129882812,
+                "height": 170.63333129882812,
+                "top": 218.63333129882812,
+                "right": 365.6333312988281,
+                "bottom": 389.26666259765625,
+                "left": 195
+              }
+            ],
+            "hand": {
+              "x": 8,
+              "y": 393.2799987792969,
+              "width": 374,
+              "height": 506.7167053222656
+            },
+            "footer": [
+              {
+                "x": 8,
+                "y": 900,
+                "width": 120.66665649414062,
+                "height": 48
+              },
+              {
+                "x": 140.66818237304688,
+                "y": 900,
+                "width": 96.43333435058594,
+                "height": 48
+              }
+            ]
+          },
+          {
+            "width": 319,
+            "height": 948,
+            "square": {
+              "x": 8,
+              "y": 48,
+              "width": 303,
+              "height": 303
+            },
+            "cells": [
+              {
+                "x": 8,
+                "y": 48,
+                "width": 151.5,
+                "height": 151.5,
+                "top": 48,
+                "right": 159.5,
+                "bottom": 199.5,
+                "left": 8
+              },
+              {
+                "x": 159.5,
+                "y": 48,
+                "width": 151.5,
+                "height": 151.5,
+                "top": 48,
+                "right": 311,
+                "bottom": 199.5,
+                "left": 159.5
+              },
+              {
+                "x": 8,
+                "y": 199.5,
+                "width": 151.5,
+                "height": 151.5,
+                "top": 199.5,
+                "right": 159.5,
+                "bottom": 351,
+                "left": 8
+              },
+              {
+                "x": 159.5,
+                "y": 199.5,
+                "width": 151.5,
+                "height": 151.5,
+                "top": 199.5,
+                "right": 311,
+                "bottom": 351,
+                "left": 159.5
+              }
+            ],
+            "hand": {
+              "x": 8,
+              "y": 355,
+              "width": 303,
+              "height": 545
+            },
+            "footer": [
+              {
+                "x": 8,
+                "y": 900,
+                "width": 120.66665649414062,
+                "height": 48
+              },
+              {
+                "x": 140.66818237304688,
+                "y": 900,
+                "width": 96.43333435058594,
+                "height": 48
+              }
+            ]
+          }
+        ],
+        "unexpectedErrors": [],
+        "expectedAuthenticationChallenges": [],
+        "safeRun": [
+          {
+            "log": "/tmp/agent-runs/public-growth-normal-firefox--20261002T172106Z-1986516.log",
+            "sha256": "9b710f71c9e17046c4fcf22f81c2403e8ede9c01d52a36d696d01d4623a10403",
+            "exit": 0
+          }
+        ]
+      },
+      {
+        "host": "online",
+        "engine": "firefox",
+        "version": "155.0",
+        "reportAtCapture": "client/.browser-tools/artifacts/public-growth-accepted-online-firefox/firefox-quadrants-report.json",
+        "reportSha256": "97ea5cf8425023c88e95833185640c69f606789852a2d28f7a4c2dc04bcc26b6",
+        "assets": {
+          "index.html": "0cb17fca2f4289e6b33ac9c7e847cdfa8a763169f841d6a7140cb6f83a595c50",
+          "keyboard_bridge.js": "1a244bc7bc3e3f3802e715315bc6e4d0f36809a4d99754ac28ee54227583c261",
+          "flutter_bootstrap.js": "296c7f1058ee874c18daf4e1619bb32f6386430b643865b47fda9badd45df1eb",
+          "main.dart.js": "3a25b7a5e052fbfd9f26694a8a26d18dd08243fe83c149c43a9be5c022777811"
+        },
+        "caseCount": 14,
+        "cases": [
+          {
+            "case": "online-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "normal",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "online-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "normal",
+            "width": 320,
+            "height": 568,
+            "pass": true
+          },
+          {
+            "case": "online-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "normal",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "online-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "normal",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "online-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "normal",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "online-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "normal",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "online-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "rtl-text200",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "online-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "rtl-text200",
+            "width": 320,
+            "height": 568,
+            "pass": true
+          },
+          {
+            "case": "online-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "rtl-text200",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "online-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "rtl-text200",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "online-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "rtl-text200",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "online-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "rtl-text200",
+            "width": 1440,
+            "height": 1200,
+            "pass": true
+          },
+          {
+            "case": "online-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "rtl-text200",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "online-live-public-square-and-preview-composition-grow-at-fixed-height",
+            "navigations": 0,
+            "commandPosts": 0,
+            "beforeVersion": 0,
+            "afterVersion": 0,
+            "pass": true
+          }
+        ],
+        "growthMeasurements": [
+          {
+            "width": 319,
+            "height": 948,
+            "board": {
+              "x": 8,
+              "y": 56,
+              "width": 303,
+              "height": 892
+            },
+            "hand": {
+              "x": 8,
+              "y": 411,
+              "width": 303,
+              "height": 489
+            },
+            "initiallyVisibleCards": [
+              {
+                "label": "A of Hearts, copy 1 concealed-ace",
+                "width": 72,
+                "height": 90
+              },
+              {
+                "label": "Q of Hearts, copy 1 hand",
+                "width": 72,
+                "height": 90
+              }
+            ],
+            "footer": [
+              {
+                "label": "Trade cards",
+                "width": 120.66667175292969,
+                "height": 48
+              },
+              {
+                "label": "End Turn",
+                "width": 99.16665649414062,
+                "height": 48
+              }
+            ],
+            "square": {
+              "x": 8,
+              "y": 104,
+              "width": 303,
+              "height": 303
+            },
+            "quadrants": [
+              {
+                "x": 8,
+                "y": 104,
+                "width": 151.5,
+                "height": 151.5
+              },
+              {
+                "x": 159.5,
+                "y": 104,
+                "width": 151.5,
+                "height": 151.5
+              },
+              {
+                "x": 8,
+                "y": 255.5,
+                "width": 151.5,
+                "height": 151.5
+              },
+              {
+                "x": 159.5,
+                "y": 255.5,
+                "width": 151.5,
+                "height": 151.5
+              }
+            ]
+          },
+          {
+            "width": 390,
+            "height": 948,
+            "board": {
+              "x": 8,
+              "y": 56,
+              "width": 374,
+              "height": 892
+            },
+            "hand": {
+              "x": 8,
+              "y": 429.1199951171875,
+              "width": 374,
+              "height": 470.88330078125
+            },
+            "initiallyVisibleCards": [
+              {
+                "label": "A of Hearts, copy 1 concealed-ace",
+                "width": 72,
+                "height": 90
+              },
+              {
+                "label": "Q of Hearts, copy 1 hand",
+                "width": 72,
+                "height": 90
+              }
+            ],
+            "footer": [
+              {
+                "label": "Trade cards",
+                "width": 120.66667175292969,
+                "height": 48
+              },
+              {
+                "label": "End Turn",
+                "width": 99.16665649414062,
+                "height": 48
+              }
+            ],
+            "square": {
+              "x": 34.44000244140625,
+              "y": 104,
+              "width": 321.1166687011719,
+              "height": 321.1166687011719
+            },
+            "quadrants": [
+              {
+                "x": 34.44000244140625,
+                "y": 104,
+                "width": 160.56666564941406,
+                "height": 160.566650390625
+              },
+              {
+                "x": 195,
+                "y": 104,
+                "width": 160.566650390625,
+                "height": 160.566650390625
+              },
+              {
+                "x": 34.44000244140625,
+                "y": 264.55999755859375,
+                "width": 160.56666564941406,
+                "height": 160.566650390625
+              },
+              {
+                "x": 195,
+                "y": 264.55999755859375,
+                "width": 160.566650390625,
+                "height": 160.566650390625
+              }
+            ]
+          },
+          {
+            "width": 821,
+            "height": 948,
+            "board": {
+              "x": 8,
+              "y": 56,
+              "width": 805,
+              "height": 892
+            },
+            "hand": {
+              "x": 8,
+              "y": 487.7031555175781,
+              "width": 805,
+              "height": 412.3000183105469
+            },
+            "initiallyVisibleCards": [
+              {
+                "label": "A of Hearts, copy 1 concealed-ace",
+                "width": 91.75,
+                "height": 114.68333435058594
+              },
+              {
+                "label": "Q of Hearts, copy 1 hand",
+                "width": 91.75,
+                "height": 114.68333435058594
+              }
+            ],
+            "footer": [
+              {
+                "label": "Trade cards",
+                "width": 144.61666870117188,
+                "height": 48
+              },
+              {
+                "label": "End Turn",
+                "width": 117.31666564941406,
+                "height": 48
+              }
+            ],
+            "square": {
+              "x": 220.64842224121094,
+              "y": 104,
+              "width": 379.7000274658203,
+              "height": 379.70001220703125
+            },
+            "quadrants": [
+              {
+                "x": 220.64842224121094,
+                "y": 104,
+                "width": 189.84999084472656,
+                "height": 189.85000610351562
+              },
+              {
+                "x": 410.5,
+                "y": 104,
+                "width": 189.8499755859375,
+                "height": 189.85000610351562
+              },
+              {
+                "x": 220.64842224121094,
+                "y": 293.8515625,
+                "width": 189.84999084472656,
+                "height": 189.85000610351562
+              },
+              {
+                "x": 410.5,
+                "y": 293.8515625,
+                "width": 189.8499755859375,
+                "height": 189.85000610351562
+              }
+            ]
+          },
+          {
+            "width": 1440,
+            "height": 948,
+            "board": {
+              "x": 8,
+              "y": 56,
+              "width": 1424,
+              "height": 892
+            },
+            "hand": {
+              "x": 8,
+              "y": 571.8400268554688,
+              "width": 1424,
+              "height": 328.16668701171875
+            },
+            "initiallyVisibleCards": [
+              {
+                "label": "A of Hearts, copy 1 concealed-ace",
+                "width": 91.75,
+                "height": 114.68333435058594
+              },
+              {
+                "label": "Q of Hearts, copy 1 hand",
+                "width": 91.75,
+                "height": 114.68333435058594
+              }
+            ],
+            "footer": [
+              {
+                "label": "Trade cards",
+                "width": 144.61666870117188,
+                "height": 48
+              },
+              {
+                "label": "End Turn",
+                "width": 117.31666564941406,
+                "height": 48
+              }
+            ],
+            "square": {
+              "x": 488.0799865722656,
+              "y": 104,
+              "width": 463.8333435058594,
+              "height": 463.8333740234375
+            },
+            "quadrants": [
+              {
+                "x": 488.0799865722656,
+                "y": 104,
+                "width": 231.91665649414062,
+                "height": 231.91668701171875
+              },
+              {
+                "x": 720,
+                "y": 104,
+                "width": 231.91668701171875,
+                "height": 231.91668701171875
+              },
+              {
+                "x": 488.0799865722656,
+                "y": 335.91998291015625,
+                "width": 231.91665649414062,
+                "height": 231.91668701171875
+              },
+              {
+                "x": 720,
+                "y": 335.91998291015625,
+                "width": 231.91668701171875,
+                "height": 231.91668701171875
+              }
+            ]
+          },
+          {
+            "width": 821,
+            "height": 948,
+            "board": {
+              "x": 8,
+              "y": 56,
+              "width": 805,
+              "height": 892
+            },
+            "hand": {
+              "x": 8,
+              "y": 487.7031555175781,
+              "width": 805,
+              "height": 412.3000183105469
+            },
+            "initiallyVisibleCards": [
+              {
+                "label": "A of Hearts, copy 1 concealed-ace",
+                "width": 91.75,
+                "height": 114.68333435058594
+              },
+              {
+                "label": "Q of Hearts, copy 1 hand",
+                "width": 91.75,
+                "height": 114.68333435058594
+              }
+            ],
+            "footer": [
+              {
+                "label": "Trade cards",
+                "width": 144.61666870117188,
+                "height": 48
+              },
+              {
+                "label": "End Turn",
+                "width": 117.31666564941406,
+                "height": 48
+              }
+            ],
+            "square": {
+              "x": 220.64842224121094,
+              "y": 104,
+              "width": 379.7000274658203,
+              "height": 379.70001220703125
+            },
+            "quadrants": [
+              {
+                "x": 220.64842224121094,
+                "y": 104,
+                "width": 189.84999084472656,
+                "height": 189.85000610351562
+              },
+              {
+                "x": 410.5,
+                "y": 104,
+                "width": 189.8499755859375,
+                "height": 189.85000610351562
+              },
+              {
+                "x": 220.64842224121094,
+                "y": 293.8515625,
+                "width": 189.84999084472656,
+                "height": 189.85000610351562
+              },
+              {
+                "x": 410.5,
+                "y": 293.8515625,
+                "width": 189.8499755859375,
+                "height": 189.85000610351562
+              }
+            ]
+          },
+          {
+            "width": 390,
+            "height": 948,
+            "board": {
+              "x": 8,
+              "y": 56,
+              "width": 374,
+              "height": 892
+            },
+            "hand": {
+              "x": 8,
+              "y": 429.1199951171875,
+              "width": 374,
+              "height": 470.88330078125
+            },
+            "initiallyVisibleCards": [
+              {
+                "label": "A of Hearts, copy 1 concealed-ace",
+                "width": 72,
+                "height": 90
+              },
+              {
+                "label": "Q of Hearts, copy 1 hand",
+                "width": 72,
+                "height": 90
+              }
+            ],
+            "footer": [
+              {
+                "label": "Trade cards",
+                "width": 120.66667175292969,
+                "height": 48
+              },
+              {
+                "label": "End Turn",
+                "width": 99.16665649414062,
+                "height": 48
+              }
+            ],
+            "square": {
+              "x": 34.44000244140625,
+              "y": 104,
+              "width": 321.1166687011719,
+              "height": 321.1166687011719
+            },
+            "quadrants": [
+              {
+                "x": 34.44000244140625,
+                "y": 104,
+                "width": 160.56666564941406,
+                "height": 160.566650390625
+              },
+              {
+                "x": 195,
+                "y": 104,
+                "width": 160.566650390625,
+                "height": 160.566650390625
+              },
+              {
+                "x": 34.44000244140625,
+                "y": 264.55999755859375,
+                "width": 160.56666564941406,
+                "height": 160.566650390625
+              },
+              {
+                "x": 195,
+                "y": 264.55999755859375,
+                "width": 160.566650390625,
+                "height": 160.566650390625
+              }
+            ]
+          },
+          {
+            "width": 319,
+            "height": 948,
+            "board": {
+              "x": 8,
+              "y": 56,
+              "width": 303,
+              "height": 892
+            },
+            "hand": {
+              "x": 8,
+              "y": 411,
+              "width": 303,
+              "height": 489
+            },
+            "initiallyVisibleCards": [
+              {
+                "label": "A of Hearts, copy 1 concealed-ace",
+                "width": 72,
+                "height": 90
+              },
+              {
+                "label": "Q of Hearts, copy 1 hand",
+                "width": 72,
+                "height": 90
+              }
+            ],
+            "footer": [
+              {
+                "label": "Trade cards",
+                "width": 120.66667175292969,
+                "height": 48
+              },
+              {
+                "label": "End Turn",
+                "width": 99.16665649414062,
+                "height": 48
+              }
+            ],
+            "square": {
+              "x": 8,
+              "y": 104,
+              "width": 303,
+              "height": 303
+            },
+            "quadrants": [
+              {
+                "x": 8,
+                "y": 104,
+                "width": 151.5,
+                "height": 151.5
+              },
+              {
+                "x": 159.5,
+                "y": 104,
+                "width": 151.5,
+                "height": 151.5
+              },
+              {
+                "x": 8,
+                "y": 255.5,
+                "width": 151.5,
+                "height": 151.5
+              },
+              {
+                "x": 159.5,
+                "y": 255.5,
+                "width": 151.5,
+                "height": 151.5
+              }
+            ]
+          }
+        ],
+        "unexpectedErrors": [],
+        "expectedAuthenticationChallenges": [],
+        "safeRun": [
+          {
+            "log": "/tmp/agent-runs/public-growth-online-firefox-accepted--20261002T172649Z-2001259.log",
+            "sha256": "1ff70e3a1d917a2599c1296766af66286709a523197ad510d2f0df13bc5ce1d6",
+            "exit": 0
+          }
+        ]
+      },
+      {
+        "host": "normal",
+        "engine": "webkit",
+        "version": "26.6",
+        "reportAtCapture": "client/.browser-tools/artifacts/public-growth-final-normal-webkit/report.json",
+        "reportSha256": "c1047a96693096f9f144f5dcdfe32f785c5592fc9398633081b7e017c4c23ef0",
+        "assets": {
+          "main.dart.js": "3a25b7a5e052fbfd9f26694a8a26d18dd08243fe83c149c43a9be5c022777811",
+          "index.html": "0cb17fca2f4289e6b33ac9c7e847cdfa8a763169f841d6a7140cb6f83a595c50",
+          "keyboard_bridge.js": "1a244bc7bc3e3f3802e715315bc6e4d0f36809a4d99754ac28ee54227583c261",
+          "flutter_bootstrap.js": "296c7f1058ee874c18daf4e1619bb32f6386430b643865b47fda9badd45df1eb"
+        },
+        "caseCount": 103,
+        "cases": [
+          {
+            "case": "trusted-native-tab-bridge-handled-reverse-outside-and-exit",
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 390,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 821,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 821,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 1440,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 821,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 821,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 390,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "live-public-square-and-preview-composition-grow-at-fixed-height",
+            "navigations": 0,
+            "commandPosts": 0,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "narrow-public-chooser-and-actions-preserve-visible-hand",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 320,
+            "height": 568,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 320,
+            "height": 568,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 320,
+            "height": 568,
+            "pass": true
+          },
+          {
+            "case": "narrow-public-chooser-and-actions-preserve-visible-hand",
+            "width": 320,
+            "height": 568,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "fresh-normal-entry",
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 768,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 1200,
+            "pass": true
+          },
+          {
+            "case": "uniform-hand-cards-in-horizontal-suit-stacks",
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "horizontal-suit-scroll-preserves-selection",
+            "width": 390,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 320,
+            "height": 568,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 360,
+            "height": 800,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 599,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 600,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 599,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 600,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1049,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1050,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1049,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1050,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1280,
+            "height": 720,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1280,
+            "height": 600,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1024,
+            "height": 768,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-keyboard-inspect-and-escape",
+            "pass": true
+          },
+          {
+            "case": "suit-stack-physical-card-touch-and-keyboard",
+            "pass": true
+          },
+          {
+            "case": "suit-stack-physical-card-touch-and-keyboard",
+            "pass": true
+          },
+          {
+            "case": "suit-stack-physical-card-touch-and-keyboard",
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-text200-touch-navigation",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-text200-touch-navigation",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-text200-touch-navigation",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-text200-touch-navigation",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "offscreen-card-after-pointer-short-text200-and-modal-reverse-tab",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "hand-interactions-without-command-posts",
+            "commandPosts": 0,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "fresh-normal-entry",
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 768,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 1200,
+            "pass": true
+          },
+          {
+            "case": "uniform-hand-cards-in-horizontal-suit-stacks",
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "horizontal-suit-scroll-preserves-selection",
+            "width": 390,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-keyboard-inspect-and-escape",
+            "pass": true
+          },
+          {
+            "case": "suit-stack-physical-card-touch-and-keyboard",
+            "pass": true
+          },
+          {
+            "case": "suit-stack-physical-card-touch-and-keyboard",
+            "pass": true
+          },
+          {
+            "case": "suit-stack-physical-card-touch-and-keyboard",
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-text200-touch-navigation",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-text200-touch-navigation",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-text200-touch-navigation",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-text200-touch-navigation",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "hand-interactions-without-command-posts",
+            "commandPosts": 0,
+            "pass": true
+          }
+        ],
+        "growthMeasurements": [
+          {
+            "width": 319,
+            "height": 948,
+            "square": {
+              "x": 8,
+              "y": 48,
+              "width": 303,
+              "height": 303
+            },
+            "cells": [
+              {
+                "x": 8,
+                "y": 48,
+                "width": 151.5,
+                "height": 151.5,
+                "top": 48,
+                "right": 159.5,
+                "bottom": 199.5,
+                "left": 8
+              },
+              {
+                "x": 159.5,
+                "y": 48,
+                "width": 151.5,
+                "height": 151.5,
+                "top": 48,
+                "right": 311,
+                "bottom": 199.5,
+                "left": 159.5
+              },
+              {
+                "x": 8,
+                "y": 199.5,
+                "width": 151.5,
+                "height": 151.5,
+                "top": 199.5,
+                "right": 159.5,
+                "bottom": 351,
+                "left": 8
+              },
+              {
+                "x": 159.5,
+                "y": 199.5,
+                "width": 151.5,
+                "height": 151.5,
+                "top": 199.5,
+                "right": 311,
+                "bottom": 351,
+                "left": 159.5
+              }
+            ],
+            "hand": {
+              "x": 8,
+              "y": 355,
+              "width": 303,
+              "height": 545
+            },
+            "footer": [
+              {
+                "x": 8,
+                "y": 900,
+                "width": 120.65625,
+                "height": 48
+              },
+              {
+                "x": 140.66818237304688,
+                "y": 900,
+                "width": 96.421875,
+                "height": 48
+              }
+            ]
+          },
+          {
+            "width": 390,
+            "height": 948,
+            "square": {
+              "x": 24.360000610351562,
+              "y": 48,
+              "width": 341.26560974121094,
+              "height": 341.265625
+            },
+            "cells": [
+              {
+                "x": 24.360000610351562,
+                "y": 48,
+                "width": 170.625,
+                "height": 170.625,
+                "top": 48,
+                "right": 194.98500061035156,
+                "bottom": 218.625,
+                "left": 24.360000610351562
+              },
+              {
+                "x": 195,
+                "y": 48,
+                "width": 170.625,
+                "height": 170.625,
+                "top": 48,
+                "right": 365.625,
+                "bottom": 218.625,
+                "left": 195
+              },
+              {
+                "x": 24.360000610351562,
+                "y": 218.63999938964844,
+                "width": 170.625,
+                "height": 170.62501525878906,
+                "top": 218.63999938964844,
+                "right": 194.98500061035156,
+                "bottom": 389.2650146484375,
+                "left": 24.360000610351562
+              },
+              {
+                "x": 195,
+                "y": 218.63999938964844,
+                "width": 170.625,
+                "height": 170.62501525878906,
+                "top": 218.63999938964844,
+                "right": 365.625,
+                "bottom": 389.2650146484375,
+                "left": 195
+              }
+            ],
+            "hand": {
+              "x": 8,
+              "y": 393.2799987792969,
+              "width": 374,
+              "height": 506.7187805175781
+            },
+            "footer": [
+              {
+                "x": 8,
+                "y": 900,
+                "width": 120.65625,
+                "height": 48
+              },
+              {
+                "x": 140.66818237304688,
+                "y": 900,
+                "width": 96.421875,
+                "height": 48
+              }
+            ]
+          },
+          {
+            "width": 821,
+            "height": 948,
+            "square": {
+              "x": 208.7294921875,
+              "y": 53,
+              "width": 403.53125,
+              "height": 403.53125
+            },
+            "cells": [
+              {
+                "x": 208.7294921875,
+                "y": 53,
+                "width": 201.765625,
+                "height": 201.765625,
+                "top": 53,
+                "right": 410.4951171875,
+                "bottom": 254.765625,
+                "left": 208.7294921875
+              },
+              {
+                "x": 410.5,
+                "y": 53,
+                "width": 201.765625,
+                "height": 201.765625,
+                "top": 53,
+                "right": 612.265625,
+                "bottom": 254.765625,
+                "left": 410.5
+              },
+              {
+                "x": 208.7294921875,
+                "y": 254.7705078125,
+                "width": 201.765625,
+                "height": 201.765625,
+                "top": 254.7705078125,
+                "right": 410.4951171875,
+                "bottom": 456.5361328125,
+                "left": 208.7294921875
+              },
+              {
+                "x": 410.5,
+                "y": 254.7705078125,
+                "width": 201.765625,
+                "height": 201.765625,
+                "top": 254.7705078125,
+                "right": 612.265625,
+                "bottom": 456.5361328125,
+                "left": 410.5
+              }
+            ],
+            "hand": {
+              "x": 8,
+              "y": 460.541015625,
+              "width": 805,
+              "height": 439.453125
+            },
+            "footer": [
+              {
+                "x": 8,
+                "y": 900,
+                "width": 151.609375,
+                "height": 48
+              },
+              {
+                "x": 171.62387084960938,
+                "y": 900,
+                "width": 118.921875,
+                "height": 48
+              }
+            ]
+          },
+          {
+            "width": 1440,
+            "height": 948,
+            "square": {
+              "x": 473.5199890136719,
+              "y": 53,
+              "width": 492.9531555175781,
+              "height": 492.953125
+            },
+            "cells": [
+              {
+                "x": 473.5199890136719,
+                "y": 53,
+                "width": 246.46878051757812,
+                "height": 246.46875,
+                "top": 53,
+                "right": 719.98876953125,
+                "bottom": 299.46875,
+                "left": 473.5199890136719
+              },
+              {
+                "x": 720,
+                "y": 53,
+                "width": 246.46875,
+                "height": 246.46875,
+                "top": 53,
+                "right": 966.46875,
+                "bottom": 299.46875,
+                "left": 720
+              },
+              {
+                "x": 473.5199890136719,
+                "y": 299.47998046875,
+                "width": 246.46878051757812,
+                "height": 246.46875,
+                "top": 299.47998046875,
+                "right": 719.98876953125,
+                "bottom": 545.94873046875,
+                "left": 473.5199890136719
+              },
+              {
+                "x": 720,
+                "y": 299.47998046875,
+                "width": 246.46875,
+                "height": 246.46875,
+                "top": 299.47998046875,
+                "right": 966.46875,
+                "bottom": 545.94873046875,
+                "left": 720
+              }
+            ],
+            "hand": {
+              "x": 8,
+              "y": 549.9600219726562,
+              "width": 1424,
+              "height": 350.03125
+            },
+            "footer": [
+              {
+                "x": 8,
+                "y": 900,
+                "width": 151.609375,
+                "height": 48
+              },
+              {
+                "x": 171.62387084960938,
+                "y": 900,
+                "width": 118.921875,
+                "height": 48
+              }
+            ]
+          },
+          {
+            "width": 821,
+            "height": 948,
+            "square": {
+              "x": 208.7294921875,
+              "y": 53,
+              "width": 403.53125,
+              "height": 403.53125
+            },
+            "cells": [
+              {
+                "x": 208.7294921875,
+                "y": 53,
+                "width": 201.765625,
+                "height": 201.765625,
+                "top": 53,
+                "right": 410.4951171875,
+                "bottom": 254.765625,
+                "left": 208.7294921875
+              },
+              {
+                "x": 410.5,
+                "y": 53,
+                "width": 201.765625,
+                "height": 201.765625,
+                "top": 53,
+                "right": 612.265625,
+                "bottom": 254.765625,
+                "left": 410.5
+              },
+              {
+                "x": 208.7294921875,
+                "y": 254.7705078125,
+                "width": 201.765625,
+                "height": 201.765625,
+                "top": 254.7705078125,
+                "right": 410.4951171875,
+                "bottom": 456.5361328125,
+                "left": 208.7294921875
+              },
+              {
+                "x": 410.5,
+                "y": 254.7705078125,
+                "width": 201.765625,
+                "height": 201.765625,
+                "top": 254.7705078125,
+                "right": 612.265625,
+                "bottom": 456.5361328125,
+                "left": 410.5
+              }
+            ],
+            "hand": {
+              "x": 8,
+              "y": 460.541015625,
+              "width": 805,
+              "height": 439.453125
+            },
+            "footer": [
+              {
+                "x": 8,
+                "y": 900,
+                "width": 151.609375,
+                "height": 48
+              },
+              {
+                "x": 171.62387084960938,
+                "y": 900,
+                "width": 118.921875,
+                "height": 48
+              }
+            ]
+          },
+          {
+            "width": 390,
+            "height": 948,
+            "square": {
+              "x": 24.360000610351562,
+              "y": 48,
+              "width": 341.26560974121094,
+              "height": 341.265625
+            },
+            "cells": [
+              {
+                "x": 24.360000610351562,
+                "y": 48,
+                "width": 170.625,
+                "height": 170.625,
+                "top": 48,
+                "right": 194.98500061035156,
+                "bottom": 218.625,
+                "left": 24.360000610351562
+              },
+              {
+                "x": 195,
+                "y": 48,
+                "width": 170.625,
+                "height": 170.625,
+                "top": 48,
+                "right": 365.625,
+                "bottom": 218.625,
+                "left": 195
+              },
+              {
+                "x": 24.360000610351562,
+                "y": 218.63999938964844,
+                "width": 170.625,
+                "height": 170.62501525878906,
+                "top": 218.63999938964844,
+                "right": 194.98500061035156,
+                "bottom": 389.2650146484375,
+                "left": 24.360000610351562
+              },
+              {
+                "x": 195,
+                "y": 218.63999938964844,
+                "width": 170.625,
+                "height": 170.62501525878906,
+                "top": 218.63999938964844,
+                "right": 365.625,
+                "bottom": 389.2650146484375,
+                "left": 195
+              }
+            ],
+            "hand": {
+              "x": 8,
+              "y": 393.2799987792969,
+              "width": 374,
+              "height": 506.7187805175781
+            },
+            "footer": [
+              {
+                "x": 8,
+                "y": 900,
+                "width": 120.65625,
+                "height": 48
+              },
+              {
+                "x": 140.66818237304688,
+                "y": 900,
+                "width": 96.421875,
+                "height": 48
+              }
+            ]
+          },
+          {
+            "width": 319,
+            "height": 948,
+            "square": {
+              "x": 8,
+              "y": 48,
+              "width": 303,
+              "height": 303
+            },
+            "cells": [
+              {
+                "x": 8,
+                "y": 48,
+                "width": 151.5,
+                "height": 151.5,
+                "top": 48,
+                "right": 159.5,
+                "bottom": 199.5,
+                "left": 8
+              },
+              {
+                "x": 159.5,
+                "y": 48,
+                "width": 151.5,
+                "height": 151.5,
+                "top": 48,
+                "right": 311,
+                "bottom": 199.5,
+                "left": 159.5
+              },
+              {
+                "x": 8,
+                "y": 199.5,
+                "width": 151.5,
+                "height": 151.5,
+                "top": 199.5,
+                "right": 159.5,
+                "bottom": 351,
+                "left": 8
+              },
+              {
+                "x": 159.5,
+                "y": 199.5,
+                "width": 151.5,
+                "height": 151.5,
+                "top": 199.5,
+                "right": 311,
+                "bottom": 351,
+                "left": 159.5
+              }
+            ],
+            "hand": {
+              "x": 8,
+              "y": 355,
+              "width": 303,
+              "height": 545
+            },
+            "footer": [
+              {
+                "x": 8,
+                "y": 900,
+                "width": 120.65625,
+                "height": 48
+              },
+              {
+                "x": 140.66818237304688,
+                "y": 900,
+                "width": 96.421875,
+                "height": 48
+              }
+            ]
+          }
+        ],
+        "unexpectedErrors": [],
+        "expectedAuthenticationChallenges": [],
+        "safeRun": [
+          {
+            "log": "/tmp/agent-runs/public-growth-normal-webkit--20261002T172106Z-1986493.log",
+            "sha256": "5ba2cad8564342761ab1424efb86a49f345143a0dcc08f6617e1a74cdc249709",
+            "exit": 0
+          }
+        ]
+      },
+      {
+        "host": "online",
+        "engine": "webkit",
+        "version": "26.6",
+        "reportAtCapture": "client/.browser-tools/artifacts/public-growth-accepted-online-webkit/webkit-quadrants-report.json",
+        "reportSha256": "a233deb7d028d2e9300776156a924385b60d70350c1035961fa75a10e9f3f5e1",
+        "assets": {
+          "index.html": "0cb17fca2f4289e6b33ac9c7e847cdfa8a763169f841d6a7140cb6f83a595c50",
+          "keyboard_bridge.js": "1a244bc7bc3e3f3802e715315bc6e4d0f36809a4d99754ac28ee54227583c261",
+          "flutter_bootstrap.js": "296c7f1058ee874c18daf4e1619bb32f6386430b643865b47fda9badd45df1eb",
+          "main.dart.js": "3a25b7a5e052fbfd9f26694a8a26d18dd08243fe83c149c43a9be5c022777811"
+        },
+        "caseCount": 14,
+        "cases": [
+          {
+            "case": "online-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "normal",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "online-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "normal",
+            "width": 320,
+            "height": 568,
+            "pass": true
+          },
+          {
+            "case": "online-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "normal",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "online-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "normal",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "online-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "normal",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "online-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "normal",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "online-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "rtl-text200",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "online-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "rtl-text200",
+            "width": 320,
+            "height": 568,
+            "pass": true
+          },
+          {
+            "case": "online-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "rtl-text200",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "online-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "rtl-text200",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "online-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "rtl-text200",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "online-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "rtl-text200",
+            "width": 1440,
+            "height": 1200,
+            "pass": true
+          },
+          {
+            "case": "online-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "rtl-text200",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "online-live-public-square-and-preview-composition-grow-at-fixed-height",
+            "navigations": 0,
+            "commandPosts": 0,
+            "beforeVersion": 0,
+            "afterVersion": 0,
+            "pass": true
+          }
+        ],
+        "growthMeasurements": [
+          {
+            "width": 319,
+            "height": 948,
+            "board": {
+              "x": 8,
+              "y": 56,
+              "width": 303,
+              "height": 892
+            },
+            "hand": {
+              "x": 8,
+              "y": 411,
+              "width": 303,
+              "height": 489
+            },
+            "initiallyVisibleCards": [
+              {
+                "label": "A of Hearts, copy 1 concealed-ace",
+                "width": 72,
+                "height": 90
+              },
+              {
+                "label": "Q of Hearts, copy 1 hand",
+                "width": 72,
+                "height": 90
+              }
+            ],
+            "footer": [
+              {
+                "label": "Trade cards",
+                "width": 120.65625,
+                "height": 48
+              },
+              {
+                "label": "End Turn",
+                "width": 99.15625,
+                "height": 48
+              }
+            ],
+            "square": {
+              "x": 8,
+              "y": 104,
+              "width": 303,
+              "height": 303
+            },
+            "quadrants": [
+              {
+                "x": 8,
+                "y": 104,
+                "width": 151.5,
+                "height": 151.5
+              },
+              {
+                "x": 159.5,
+                "y": 104,
+                "width": 151.5,
+                "height": 151.5
+              },
+              {
+                "x": 8,
+                "y": 255.5,
+                "width": 151.5,
+                "height": 151.5
+              },
+              {
+                "x": 159.5,
+                "y": 255.5,
+                "width": 151.5,
+                "height": 151.5
+              }
+            ]
+          },
+          {
+            "width": 390,
+            "height": 948,
+            "board": {
+              "x": 8,
+              "y": 56,
+              "width": 374,
+              "height": 892
+            },
+            "hand": {
+              "x": 8,
+              "y": 429.1199951171875,
+              "width": 374,
+              "height": 470.875
+            },
+            "initiallyVisibleCards": [
+              {
+                "label": "A of Hearts, copy 1 concealed-ace",
+                "width": 72,
+                "height": 90
+              },
+              {
+                "label": "Q of Hearts, copy 1 hand",
+                "width": 72,
+                "height": 90
+              }
+            ],
+            "footer": [
+              {
+                "label": "Trade cards",
+                "width": 120.65625,
+                "height": 48
+              },
+              {
+                "label": "End Turn",
+                "width": 99.15625,
+                "height": 48
+              }
+            ],
+            "square": {
+              "x": 34.44000244140625,
+              "y": 104,
+              "width": 321.109375,
+              "height": 321.109375
+            },
+            "quadrants": [
+              {
+                "x": 34.44000244140625,
+                "y": 104,
+                "width": 160.546875,
+                "height": 160.546875
+              },
+              {
+                "x": 195,
+                "y": 104,
+                "width": 160.546875,
+                "height": 160.546875
+              },
+              {
+                "x": 34.44000244140625,
+                "y": 264.55999755859375,
+                "width": 160.546875,
+                "height": 160.546875
+              },
+              {
+                "x": 195,
+                "y": 264.55999755859375,
+                "width": 160.546875,
+                "height": 160.546875
+              }
+            ]
+          },
+          {
+            "width": 821,
+            "height": 948,
+            "board": {
+              "x": 8,
+              "y": 56,
+              "width": 805,
+              "height": 892
+            },
+            "hand": {
+              "x": 8,
+              "y": 487.7031555175781,
+              "width": 805,
+              "height": 412.2812194824219
+            },
+            "initiallyVisibleCards": [
+              {
+                "label": "A of Hearts, copy 1 concealed-ace",
+                "width": 91.734375,
+                "height": 114.671875
+              },
+              {
+                "label": "Q of Hearts, copy 1 hand",
+                "width": 91.734375,
+                "height": 114.671875
+              }
+            ],
+            "footer": [
+              {
+                "label": "Trade cards",
+                "width": 144.609375,
+                "height": 48
+              },
+              {
+                "label": "End Turn",
+                "width": 117.3125,
+                "height": 48
+              }
+            ],
+            "square": {
+              "x": 220.64842224121094,
+              "y": 104,
+              "width": 379.70314025878906,
+              "height": 379.703125
+            },
+            "quadrants": [
+              {
+                "x": 220.64842224121094,
+                "y": 104,
+                "width": 189.84376525878906,
+                "height": 189.84375
+              },
+              {
+                "x": 410.5,
+                "y": 104,
+                "width": 189.84375,
+                "height": 189.84375
+              },
+              {
+                "x": 220.64842224121094,
+                "y": 293.8515625,
+                "width": 189.84376525878906,
+                "height": 189.84375
+              },
+              {
+                "x": 410.5,
+                "y": 293.8515625,
+                "width": 189.84375,
+                "height": 189.84375
+              }
+            ]
+          },
+          {
+            "width": 1440,
+            "height": 948,
+            "board": {
+              "x": 8,
+              "y": 56,
+              "width": 1424,
+              "height": 892
+            },
+            "hand": {
+              "x": 8,
+              "y": 571.8400268554688,
+              "width": 1424,
+              "height": 328.15625
+            },
+            "initiallyVisibleCards": [
+              {
+                "label": "A of Hearts, copy 1 concealed-ace",
+                "width": 91.734375,
+                "height": 114.671875
+              },
+              {
+                "label": "Q of Hearts, copy 1 hand",
+                "width": 91.734375,
+                "height": 114.671875
+              }
+            ],
+            "footer": [
+              {
+                "label": "Trade cards",
+                "width": 144.609375,
+                "height": 48
+              },
+              {
+                "label": "End Turn",
+                "width": 117.3125,
+                "height": 48
+              }
+            ],
+            "square": {
+              "x": 488.0799865722656,
+              "y": 104,
+              "width": 463.8280944824219,
+              "height": 463.828125
+            },
+            "quadrants": [
+              {
+                "x": 488.0799865722656,
+                "y": 104,
+                "width": 231.90621948242188,
+                "height": 231.90625
+              },
+              {
+                "x": 720,
+                "y": 104,
+                "width": 231.90625,
+                "height": 231.90625
+              },
+              {
+                "x": 488.0799865722656,
+                "y": 335.91998291015625,
+                "width": 231.90621948242188,
+                "height": 231.90625
+              },
+              {
+                "x": 720,
+                "y": 335.91998291015625,
+                "width": 231.90625,
+                "height": 231.90625
+              }
+            ]
+          },
+          {
+            "width": 821,
+            "height": 948,
+            "board": {
+              "x": 8,
+              "y": 56,
+              "width": 805,
+              "height": 892
+            },
+            "hand": {
+              "x": 8,
+              "y": 487.7031555175781,
+              "width": 805,
+              "height": 412.2812194824219
+            },
+            "initiallyVisibleCards": [
+              {
+                "label": "A of Hearts, copy 1 concealed-ace",
+                "width": 91.734375,
+                "height": 114.671875
+              },
+              {
+                "label": "Q of Hearts, copy 1 hand",
+                "width": 91.734375,
+                "height": 114.671875
+              }
+            ],
+            "footer": [
+              {
+                "label": "Trade cards",
+                "width": 144.609375,
+                "height": 48
+              },
+              {
+                "label": "End Turn",
+                "width": 117.3125,
+                "height": 48
+              }
+            ],
+            "square": {
+              "x": 220.64842224121094,
+              "y": 104,
+              "width": 379.70314025878906,
+              "height": 379.703125
+            },
+            "quadrants": [
+              {
+                "x": 220.64842224121094,
+                "y": 104,
+                "width": 189.84376525878906,
+                "height": 189.84375
+              },
+              {
+                "x": 410.5,
+                "y": 104,
+                "width": 189.84375,
+                "height": 189.84375
+              },
+              {
+                "x": 220.64842224121094,
+                "y": 293.8515625,
+                "width": 189.84376525878906,
+                "height": 189.84375
+              },
+              {
+                "x": 410.5,
+                "y": 293.8515625,
+                "width": 189.84375,
+                "height": 189.84375
+              }
+            ]
+          },
+          {
+            "width": 390,
+            "height": 948,
+            "board": {
+              "x": 8,
+              "y": 56,
+              "width": 374,
+              "height": 892
+            },
+            "hand": {
+              "x": 8,
+              "y": 429.1199951171875,
+              "width": 374,
+              "height": 470.875
+            },
+            "initiallyVisibleCards": [
+              {
+                "label": "A of Hearts, copy 1 concealed-ace",
+                "width": 72,
+                "height": 90
+              },
+              {
+                "label": "Q of Hearts, copy 1 hand",
+                "width": 72,
+                "height": 90
+              }
+            ],
+            "footer": [
+              {
+                "label": "Trade cards",
+                "width": 120.65625,
+                "height": 48
+              },
+              {
+                "label": "End Turn",
+                "width": 99.15625,
+                "height": 48
+              }
+            ],
+            "square": {
+              "x": 34.44000244140625,
+              "y": 104,
+              "width": 321.109375,
+              "height": 321.109375
+            },
+            "quadrants": [
+              {
+                "x": 34.44000244140625,
+                "y": 104,
+                "width": 160.546875,
+                "height": 160.546875
+              },
+              {
+                "x": 195,
+                "y": 104,
+                "width": 160.546875,
+                "height": 160.546875
+              },
+              {
+                "x": 34.44000244140625,
+                "y": 264.55999755859375,
+                "width": 160.546875,
+                "height": 160.546875
+              },
+              {
+                "x": 195,
+                "y": 264.55999755859375,
+                "width": 160.546875,
+                "height": 160.546875
+              }
+            ]
+          },
+          {
+            "width": 319,
+            "height": 948,
+            "board": {
+              "x": 8,
+              "y": 56,
+              "width": 303,
+              "height": 892
+            },
+            "hand": {
+              "x": 8,
+              "y": 411,
+              "width": 303,
+              "height": 489
+            },
+            "initiallyVisibleCards": [
+              {
+                "label": "A of Hearts, copy 1 concealed-ace",
+                "width": 72,
+                "height": 90
+              },
+              {
+                "label": "Q of Hearts, copy 1 hand",
+                "width": 72,
+                "height": 90
+              }
+            ],
+            "footer": [
+              {
+                "label": "Trade cards",
+                "width": 120.65625,
+                "height": 48
+              },
+              {
+                "label": "End Turn",
+                "width": 99.15625,
+                "height": 48
+              }
+            ],
+            "square": {
+              "x": 8,
+              "y": 104,
+              "width": 303,
+              "height": 303
+            },
+            "quadrants": [
+              {
+                "x": 8,
+                "y": 104,
+                "width": 151.5,
+                "height": 151.5
+              },
+              {
+                "x": 159.5,
+                "y": 104,
+                "width": 151.5,
+                "height": 151.5
+              },
+              {
+                "x": 8,
+                "y": 255.5,
+                "width": 151.5,
+                "height": 151.5
+              },
+              {
+                "x": 159.5,
+                "y": 255.5,
+                "width": 151.5,
+                "height": 151.5
+              }
+            ]
+          }
+        ],
+        "unexpectedErrors": [],
+        "expectedAuthenticationChallenges": [],
+        "safeRun": [
+          {
+            "log": "/tmp/agent-runs/public-growth-online-webkit-accepted--20261002T172855Z-2006263.log",
+            "sha256": "4314749aff050bd9f95f86459835359ffdd70c611cf167e550310b7d697ecf43",
+            "exit": 0
+          }
+        ]
+      }
+    ],
+    "conditions": "Normal port8080 default Auto with18 hand cards; online port8081 authoritative synthetic opening/card-style fixtures and56px host toolbar. Constant948px height with widths319\u2192390\u2192821\u21921440 and reverse, plus existing breakpoint, rotation, short-height, RTL/200%, keyboard and touch gates. Chromium and Firefox on host; WebKit in the existing official Playwright Docker image. Online lanes run serially.",
+    "measurementBoundary": "Browser DOM measures square/seat bounds; widget tests measure transformed painted card bounds with artwork on/off and RTL200. Final normal821/1440 and online1440 captures visually inspected, as was live577x948 in-app preview.",
+    "liveGrowth": "All engines preserve identities, document timeOrigin/URL, zero navigations and command POSTs; online authority version and game remain unchanged."
+  },
+  "inspectedFailures": [
+    {
+      "diagnosis": "Regression before fix: public square did not grow above390px. The passing regression also measures transformed painted-card bounds.",
+      "runs": [
+        {
+          "log": "/tmp/agent-runs/public-growth-red--20261002T171337Z-1966624.log",
+          "sha256": "52390ccad52f16e30d1d381bbc2ced13cc24f7d96313e9e9a6b390f8d93ee3de",
+          "exit": 1
+        }
+      ]
+    },
+    {
+      "diagnosis": "Regression before fix: old69e8d529 build retained341.27px public square at390,821and1440widths.",
+      "runs": [
+        {
+          "log": "/tmp/agent-runs/public-growth-red-normal--20261002T171426Z-1969876.log",
+          "sha256": "4cf792d5ec83b3d403cf8899aecc38aac015c194e76f8c719147d1a778236fcf",
+          "exit": 1
+        }
+      ]
+    },
+    {
+      "diagnosis": "Equal-cell global Rect.size subtraction introduced floating-point noise; now compare exact layout Size, preserving single-distinct-size assertion.",
+      "runs": [
+        {
+          "log": "/tmp/agent-runs/public-growth-host--20261002T171544Z-1972969.log",
+          "sha256": "78de55b8eb3e63d9303eed623015b6dcf55de9d8b190d4a6235e5ec9ee0ec932",
+          "exit": 1
+        }
+      ]
+    },
+    {
+      "diagnosis": "Removed unnecessary rendering import; material already exports required MatrixUtils.",
+      "runs": [
+        {
+          "log": "/tmp/agent-runs/public-growth-host-analyze--20261002T171610Z-1974207.log",
+          "sha256": "a67c2a51ec54139f5c76fa4c1e9198b900845f915758e3c8d4794dab405790c5",
+          "exit": 1
+        }
+      ]
+    },
+    {
+      "diagnosis": "New fixture expectation incorrectly omitted the viewer own concealedAce; require exact ownA/Q Hearts and exclude opponentsA/Q Clubs,Spades,Diamonds. No production change or error allowlist expansion.",
+      "runs": [
+        {
+          "log": "/tmp/agent-runs/public-growth-online-chromium--20261002T172106Z-1986482.log",
+          "sha256": "9e69c0ed59086dda5fa734aa30711bb769059b93c97b3132fa74697ac11903e7",
+          "exit": 1
+        }
+      ]
+    }
+  ],
+  "cleanup": {
+    "removedCaptures": 248,
+    "removedBytes": 61526125,
+    "plan": "/tmp/agent-runs/public-growth-capture-removal-plan.json",
+    "planSha256": "6e8ed190840242c11857950871c84c5dcab5e6ef87021fc0fa9d80cda1ed6c5f",
+    "inventory": "docs/reports/2026-10-02-screenshot-inventory.csv",
+    "inventoryRows": 5327,
+    "protectedOutsideHashes": 1248,
+    "remainingCapturesInArtifacts": 0,
+    "soleScreenshot": "client/screenshots/cgmsart-phone.png",
+    "phoneBytes": 273544,
+    "phoneSha256": "2c116c49cc67e707d7dd6d45e12aa2063aa014c5edc3aa3416a8a36eea18bc8b"
+  },
+  "qaShutdown": {
+    "gracefulChildSIGTERM": 1982424,
+    "fixtureLog": "/tmp/agent-runs/public-growth-fixture--20261002T171937Z-1981738.log",
+    "fixtureExit": 0,
+    "remainingDisposableContainers": [],
+    "remainingDisposableVolumes": [],
+    "remainingDisposableNetworks": [],
+    "port8081": "closed",
+    "ordinaryServices": {
+      "web": "healthy",
+      "backend": "healthy",
+      "postgres": "healthy",
+      "redis": "healthy"
+    },
+    "port8080MainSha256": "3a25b7a5e052fbfd9f26694a8a26d18dd08243fe83c149c43a9be5c022777811"
+  },
+  "review": "Independent production, widget, browser and documentation review found no issues. Parent reviewed the follow-up diff and prospective staging set; pre-existing work preserved.",
+  "limits": [
+    "Earlier backend, cold-launch, reconnect, artwork-hash and full-gameplay results remain evidence for their recorded builds and were not rerun for this presentation-only change.",
+    "Native devices and screen readers are not certified by these web checks.",
+    "Reported Git push obstacle remains unconfirmed; historical screenshot blobs remain. No push or history rewrite attempted."
+  ],
+  "commit": "not attempted",
+  "push": "not attempted",
+  "sourceHashes": {
+    "client/packages/cgms_ui/lib/src/adaptive_table.dart": "43e2174f5e64f85cbbac1fc5bc74666dd8390cb0d7b668783e85432d266cc63b",
+    "client/test/adaptive_table_test.dart": "869df668f48d965626c5376f2975913635b55cc2472697ddf88fb5aa4f843e35",
+    "client/test/approved_flow_test.dart": "149e4fc81b8b87fc648f076bae00e8fa56f9592121a7b5cb5f99249600a841a5",
+    "client/tool/adaptive_entry_browser_acceptance.cjs": "734fa00e96a3ffb5f8679e418d344d4ef4a85cfb6ea65f128b824ed92e24462a",
+    "client/tool/browser_acceptance.cjs": "56e95d2a7f23f9552c250a16950281260c2117899e295c6a2e9372fbf4d323d7"
+  },
+  "finalReview": {
+    "log": "/tmp/agent-runs/public-growth-final-review--20261002T173422Z-2018994.log",
+    "sha256": "aa34287e9806489707fad64afb70ca035e2bc7e3021004f6ea8474ea0a13e238",
+    "followupPathsBeforeTracking": 14,
+    "prospectiveStagedPaths": 2171,
+    "changedMarkdownLinksChecked": 132,
+    "sourceHashesVerified": 5,
+    "secretPatternScan": "All prospective added textual lines, including preserved prior work; no matches.",
+    "findings": []
+  }
+}

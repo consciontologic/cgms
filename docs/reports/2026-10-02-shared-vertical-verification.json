@@ -1,0 +1,3003 @@
+{
+  "schema": "cgms-shared-vertical-verification-v1",
+  "run_id": "vertical-board-20261002",
+  "status": "passed",
+  "mainSha256": "6f0c164d19ef4d9c693fef07adba2041024b6fd2ee29b763bcaf3fa951391e57",
+  "servedAssets": {
+    "8080": {
+      "index.html": "0cb17fca2f4289e6b33ac9c7e847cdfa8a763169f841d6a7140cb6f83a595c50",
+      "keyboard_bridge.js": "1a244bc7bc3e3f3802e715315bc6e4d0f36809a4d99754ac28ee54227583c261",
+      "flutter_bootstrap.js": "296c7f1058ee874c18daf4e1619bb32f6386430b643865b47fda9badd45df1eb",
+      "main.dart.js": "6f0c164d19ef4d9c693fef07adba2041024b6fd2ee29b763bcaf3fa951391e57"
+    },
+    "8081": {
+      "index.html": "0cb17fca2f4289e6b33ac9c7e847cdfa8a763169f841d6a7140cb6f83a595c50",
+      "keyboard_bridge.js": "1a244bc7bc3e3f3802e715315bc6e4d0f36809a4d99754ac28ee54227583c261",
+      "flutter_bootstrap.js": "296c7f1058ee874c18daf4e1619bb32f6386430b643865b47fda9badd45df1eb",
+      "main.dart.js": "6f0c164d19ef4d9c693fef07adba2041024b6fd2ee29b763bcaf3fa951391e57"
+    }
+  },
+  "reference": {
+    "path": "client/screenshots/cgmsart-phone.png",
+    "bytes": 273544,
+    "sha256": "2c116c49cc67e707d7dd6d45e12aa2063aa014c5edc3aa3416a8a36eea18bc8b"
+  },
+  "composition": "One vertical public/action/private-hand/footer board; wider logical-pixel classes enlarge items",
+  "breakpoints": {
+    "phone": "<600",
+    "tablet": "600-1049",
+    "desktop": ">=1050"
+  },
+  "sourceChecks": {
+    "hostTests": 258,
+    "sharedPackageTests": 75,
+    "browserSupportTests": 29,
+    "analyzers": "passed",
+    "formatFilesUnchanged": 48,
+    "artworkHashesAndDimensions": 208,
+    "logs": [
+      "vertical-closed-full-host--20261002T054417Z-673900",
+      "reference-focus-package--20261002T051253Z-597610",
+      "vertical-closed-host-analyze--20261002T054441Z-676023",
+      "reference-focus-package-analyze--20261002T051324Z-599554",
+      "vertical-closed-format-check--20261002T054429Z-674583",
+      "vertical-final-js-gate--20261002T055035Z-698027",
+      "vertical-assets--20261002T050451Z-571475",
+      "vertical-closed-build--20261002T054342Z-672137"
+    ]
+  },
+  "browserCaseTotal": 401,
+  "browserReports": [
+    {
+      "source": "client/.browser-tools/artifacts/vertical-final-entry/report.json",
+      "sourceSha256": "3909216cd06c9f4d7fa7e1fd24e58bd87b524504534724c2a547408f3e189101",
+      "status": "passed",
+      "engine": "chromium",
+      "version": "153.0.8010.12",
+      "caseCount": 64,
+      "unexpectedErrors": 0,
+      "expectedFaultCount": 0,
+      "expectedAnonymous401Count": 0,
+      "harnessSha256": null,
+      "cases": [
+        {
+          "case": "trusted-native-tab-bridge-handled-reverse-outside-and-exit",
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "fresh-normal-entry",
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 768,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "same-six-column-hand-with-larger-tablet-desktop-cards",
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 360,
+          "height": 800,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 599,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 600,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 599,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 600,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1049,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1050,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1049,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1050,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1280,
+          "height": 720,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1280,
+          "height": 600,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 844,
+          "height": 390,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 768,
+          "height": 1024,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1024,
+          "height": 768,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 768,
+          "height": 1024,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-keyboard-inspect-and-escape",
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-text200-touch-navigation",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 768,
+          "height": 1024,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-text200-touch-navigation",
+          "width": 768,
+          "height": 1024,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-text200-touch-navigation",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 844,
+          "height": 390,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-text200-touch-navigation",
+          "width": 844,
+          "height": 390,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 844,
+          "height": 390,
+          "pass": true
+        },
+        {
+          "case": "offscreen-card-after-pointer-short-text200-and-modal-reverse-tab",
+          "width": 844,
+          "height": 390,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "fresh-normal-entry",
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 768,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "same-six-column-hand-with-larger-tablet-desktop-cards",
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 768,
+          "height": 1024,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-keyboard-inspect-and-escape",
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-text200-touch-navigation",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 768,
+          "height": 1024,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-text200-touch-navigation",
+          "width": 768,
+          "height": 1024,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-text200-touch-navigation",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 844,
+          "height": 390,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-text200-touch-navigation",
+          "width": 844,
+          "height": 390,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "source": "client/.browser-tools/artifacts/vertical-final-entry-firefox/report.json",
+      "sourceSha256": "4d2215d57d52955c618bbe40de7524d8236f52fe90ec48ece973b5a8b66560a1",
+      "status": "passed",
+      "engine": "firefox",
+      "version": "155.0",
+      "caseCount": 64,
+      "unexpectedErrors": 0,
+      "expectedFaultCount": 0,
+      "expectedAnonymous401Count": 0,
+      "harnessSha256": null,
+      "cases": [
+        {
+          "case": "trusted-native-tab-bridge-handled-reverse-outside-and-exit",
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "fresh-normal-entry",
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 768,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "same-six-column-hand-with-larger-tablet-desktop-cards",
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 360,
+          "height": 800,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 599,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 600,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 599,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 600,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1049,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1050,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1049,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1050,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1280,
+          "height": 720,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1280,
+          "height": 600,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 844,
+          "height": 390,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 768,
+          "height": 1024,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1024,
+          "height": 768,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 768,
+          "height": 1024,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-keyboard-inspect-and-escape",
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-text200-touch-navigation",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 768,
+          "height": 1024,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-text200-touch-navigation",
+          "width": 768,
+          "height": 1024,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-text200-touch-navigation",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 844,
+          "height": 390,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-text200-touch-navigation",
+          "width": 844,
+          "height": 390,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 844,
+          "height": 390,
+          "pass": true
+        },
+        {
+          "case": "offscreen-card-after-pointer-short-text200-and-modal-reverse-tab",
+          "width": 844,
+          "height": 390,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "fresh-normal-entry",
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 768,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "same-six-column-hand-with-larger-tablet-desktop-cards",
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 768,
+          "height": 1024,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-keyboard-inspect-and-escape",
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-text200-touch-navigation",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 768,
+          "height": 1024,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-text200-touch-navigation",
+          "width": 768,
+          "height": 1024,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-text200-touch-navigation",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 844,
+          "height": 390,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-text200-touch-navigation",
+          "width": 844,
+          "height": 390,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "source": "client/.browser-tools/artifacts/vertical-final-entry-webkit/report.json",
+      "sourceSha256": "fafc123411daf1c75e6d8a7ccc2775c87973a17c29fb67fa8e77ab71e127080e",
+      "status": "passed",
+      "engine": "webkit",
+      "version": "26.6",
+      "caseCount": 64,
+      "unexpectedErrors": 0,
+      "expectedFaultCount": 0,
+      "expectedAnonymous401Count": 0,
+      "harnessSha256": null,
+      "cases": [
+        {
+          "case": "trusted-native-tab-bridge-handled-reverse-outside-and-exit",
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "fresh-normal-entry",
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 768,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "same-six-column-hand-with-larger-tablet-desktop-cards",
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 360,
+          "height": 800,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 599,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 600,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 599,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 600,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1049,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1050,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1049,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1050,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1280,
+          "height": 720,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1280,
+          "height": 600,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 844,
+          "height": 390,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 768,
+          "height": 1024,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1024,
+          "height": 768,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 768,
+          "height": 1024,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-keyboard-inspect-and-escape",
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-text200-touch-navigation",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 768,
+          "height": 1024,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-text200-touch-navigation",
+          "width": 768,
+          "height": 1024,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-text200-touch-navigation",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 844,
+          "height": 390,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-text200-touch-navigation",
+          "width": 844,
+          "height": 390,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 844,
+          "height": 390,
+          "pass": true
+        },
+        {
+          "case": "offscreen-card-after-pointer-short-text200-and-modal-reverse-tab",
+          "width": 844,
+          "height": 390,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "fresh-normal-entry",
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 768,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "same-six-column-hand-with-larger-tablet-desktop-cards",
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 768,
+          "height": 1024,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-keyboard-inspect-and-escape",
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-text200-touch-navigation",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 768,
+          "height": 1024,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-text200-touch-navigation",
+          "width": 768,
+          "height": 1024,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-text200-touch-navigation",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 844,
+          "height": 390,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-text200-touch-navigation",
+          "width": 844,
+          "height": 390,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "source": "client/.browser-tools/artifacts/vertical-final-complete/chromium-390-report.json",
+      "sourceSha256": "4c704cc3cc33f3cc67c7e8a55fbc26d638d90748f0b2ae15d2c3732afff7b42d",
+      "status": "passed",
+      "engine": "chromium",
+      "version": "153.0.8010.12",
+      "caseCount": 68,
+      "unexpectedErrors": 0,
+      "expectedFaultCount": 6,
+      "expectedAnonymous401Count": 4,
+      "harnessSha256": {
+        "browser_acceptance.cjs": "159cf8a1ee6ed04d18eb98965a7daa1af8f7723c1d85c780fb3b7096e4ca492f",
+        "browser_faults.cjs": "334439124fbdf5a2ba5056adb3655b53ffaa256797ffa7c6c9bccd705f5ea479"
+      },
+      "cases": [
+        {
+          "case": "selected-opening-cost-and-timing-guidance",
+          "pass": true
+        },
+        {
+          "case": "action-switch-routes-cards-to-visible-selection",
+          "pass": true
+        },
+        {
+          "case": "keyboard-card-inspection-preserves-selection",
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 360,
+          "height": 800,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 599,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 600,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 768,
+          "height": 1024,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 1024,
+          "height": 768,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 1049,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 1050,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 1280,
+          "height": 720,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 1280,
+          "height": 600,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 599,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 600,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 599,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 1049,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 1050,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 1049,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 844,
+          "height": 390,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 768,
+          "height": 1024,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 1024,
+          "height": 768,
+          "pass": true
+        },
+        {
+          "case": "rtl-200-placeholder-selection",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "rtl-200-placeholder-selection",
+          "width": 768,
+          "height": 1024,
+          "pass": true
+        },
+        {
+          "case": "rtl-200-placeholder-selection",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "browser-back-forward-retains-match-and-draft",
+          "pass": true
+        },
+        {
+          "case": "keyboard-tab-traversal",
+          "pass": true,
+          "distinctStops": 12
+        },
+        {
+          "case": "primary-touch-targets-at-least-48",
+          "pass": true,
+          "count": 12,
+          "minimumWidth": 48,
+          "minimumHeight": 48
+        },
+        {
+          "case": "keyboard-dropdown-scrolls-into-view-after-wheel-history-and-resize",
+          "pass": true
+        },
+        {
+          "case": "ordinary-action-disabled-during-response",
+          "pass": true
+        },
+        {
+          "case": "opening-ordered-responses",
+          "pass": true
+        },
+        {
+          "case": "purchase-explicit-quantity-payment-responses",
+          "pass": true
+        },
+        {
+          "case": "focused-draft-editing-selection-survives-boundary",
+          "width": 599,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "focused-draft-editing-selection-survives-boundary",
+          "width": 600,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "focused-draft-editing-selection-survives-boundary",
+          "width": 1049,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "focused-draft-editing-selection-survives-boundary",
+          "width": 1050,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "focused-draft-editing-selection-survives-boundary",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "focused-draft-editing-selection-survives-boundary",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "private-offer-semantics-boundary",
+          "pass": true
+        },
+        {
+          "case": "private-trade-acceptance",
+          "pass": true
+        },
+        {
+          "case": "pending-original-operation-retained-across-boundary",
+          "width": 599,
+          "height": 900,
+          "pass": true,
+          "initialIdenticalAttempts": 2,
+          "additionalCommandPosts": 0
+        },
+        {
+          "case": "pending-original-operation-retained-across-boundary",
+          "width": 600,
+          "height": 900,
+          "pass": true,
+          "initialIdenticalAttempts": 2,
+          "additionalCommandPosts": 0
+        },
+        {
+          "case": "pending-original-operation-retained-across-boundary",
+          "width": 1049,
+          "height": 900,
+          "pass": true,
+          "initialIdenticalAttempts": 2,
+          "additionalCommandPosts": 0
+        },
+        {
+          "case": "pending-original-operation-retained-across-boundary",
+          "width": 1050,
+          "height": 900,
+          "pass": true,
+          "initialIdenticalAttempts": 2,
+          "additionalCommandPosts": 0
+        },
+        {
+          "case": "pending-original-operation-retained-across-boundary",
+          "width": 1049,
+          "height": 900,
+          "pass": true,
+          "initialIdenticalAttempts": 2,
+          "additionalCommandPosts": 0
+        },
+        {
+          "case": "pending-original-operation-retained-across-boundary",
+          "width": 599,
+          "height": 900,
+          "pass": true,
+          "initialIdenticalAttempts": 2,
+          "additionalCommandPosts": 0
+        },
+        {
+          "case": "short-rotated-large-text-recovery-control",
+          "pass": true,
+          "viewport": {
+            "width": 844,
+            "height": 390
+          },
+          "textScale": 2
+        },
+        {
+          "case": "lost-reply-reload-original-operation-reconciliation",
+          "pass": true
+        },
+        {
+          "case": "intact-loan-alliance-underground",
+          "pass": true
+        },
+        {
+          "case": "selected-attack-declaration-cancellation-and-resolution-costs",
+          "pass": true
+        },
+        {
+          "case": "physical-attack-ordered-response-exchange",
+          "pass": true
+        },
+        {
+          "case": "compensation-return-shuffle-two-recipients-resume",
+          "pass": true
+        },
+        {
+          "case": "confinement-cancels-hostile-action",
+          "pass": true
+        },
+        {
+          "case": "effect-input-is-not-response-pass",
+          "pass": true
+        },
+        {
+          "case": "justice-staged-distinct-card-selections",
+          "pass": true
+        },
+        {
+          "case": "immediate-coup",
+          "pass": true
+        },
+        {
+          "case": "promise-payment-settlement-next-game-reload",
+          "pass": true
+        },
+        {
+          "case": "final-match-shared-ranks",
+          "pass": true
+        },
+        {
+          "case": "owner-lobby-reload-restores-authorized-room",
+          "pass": true
+        },
+        {
+          "case": "clipboard-denial-retains-code-and-specific-recovery-guidance",
+          "pass": true
+        },
+        {
+          "case": "member-lobby-reload-preserves-role-without-invitation",
+          "pass": true
+        },
+        {
+          "case": "room-capacity-and-owner-affordances",
+          "pass": true
+        },
+        {
+          "case": "accessible-static-room-invitation-and-copy-feedback",
+          "pass": true
+        },
+        {
+          "case": "lost-start-reply-lobby-original-operation-recovery",
+          "pass": true
+        },
+        {
+          "case": "normal-guest-room-deal-entry-reload",
+          "pass": true
+        }
+      ],
+      "startedAt": "2026-10-02T05:48:18.332Z"
+    },
+    {
+      "source": "client/.browser-tools/artifacts/vertical-final-firefox/firefox-matrix-report.json",
+      "sourceSha256": "f18388c93df7451b60838287b58c6680ee0e9fcaf0996e63bd8fb066e67bebf6",
+      "status": "passed",
+      "engine": "firefox",
+      "version": "155.0",
+      "caseCount": 34,
+      "unexpectedErrors": 0,
+      "expectedFaultCount": 0,
+      "expectedAnonymous401Count": 0,
+      "harnessSha256": {
+        "browser_acceptance.cjs": "5f045929d97c1bfea9ab4c81500f03378307bc9eaab959a940f3b83d1c5613b3",
+        "browser_faults.cjs": "334439124fbdf5a2ba5056adb3655b53ffaa256797ffa7c6c9bccd705f5ea479"
+      },
+      "cases": [
+        {
+          "case": "selected-opening-cost-and-timing-guidance",
+          "pass": true
+        },
+        {
+          "case": "action-switch-routes-cards-to-visible-selection",
+          "pass": true
+        },
+        {
+          "case": "keyboard-card-inspection-preserves-selection",
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 360,
+          "height": 800,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 599,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 600,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 768,
+          "height": 1024,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 1024,
+          "height": 768,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 1049,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 1050,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 1280,
+          "height": 720,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 1280,
+          "height": 600,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 599,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 600,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 599,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 1049,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 1050,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 1049,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 844,
+          "height": 390,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 768,
+          "height": 1024,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 1024,
+          "height": 768,
+          "pass": true
+        },
+        {
+          "case": "rtl-200-placeholder-selection",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "rtl-200-placeholder-selection",
+          "width": 768,
+          "height": 1024,
+          "pass": true
+        },
+        {
+          "case": "rtl-200-placeholder-selection",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "browser-back-forward-retains-match-and-draft",
+          "pass": true
+        },
+        {
+          "case": "keyboard-tab-traversal",
+          "pass": true,
+          "distinctStops": 12
+        },
+        {
+          "case": "primary-touch-targets-at-least-48",
+          "pass": true,
+          "count": 12,
+          "minimumWidth": 48,
+          "minimumHeight": 48
+        },
+        {
+          "case": "keyboard-dropdown-scrolls-into-view-after-wheel-history-and-resize",
+          "pass": true
+        },
+        {
+          "case": "ordinary-action-disabled-during-response",
+          "pass": true
+        },
+        {
+          "case": "opening-ordered-responses",
+          "pass": true
+        }
+      ],
+      "startedAt": "2026-10-02T05:47:33.247Z"
+    },
+    {
+      "source": "client/.browser-tools/artifacts/vertical-final-webkit/webkit-matrix-report.json",
+      "sourceSha256": "374a81466dcb0982cc8691120827b2c999ee9e1c2444d86e3a29741f4b379efc",
+      "status": "passed",
+      "engine": "webkit",
+      "version": "26.6",
+      "caseCount": 34,
+      "unexpectedErrors": 0,
+      "expectedFaultCount": 0,
+      "expectedAnonymous401Count": 0,
+      "harnessSha256": {
+        "browser_acceptance.cjs": "159cf8a1ee6ed04d18eb98965a7daa1af8f7723c1d85c780fb3b7096e4ca492f",
+        "browser_faults.cjs": "334439124fbdf5a2ba5056adb3655b53ffaa256797ffa7c6c9bccd705f5ea479"
+      },
+      "cases": [
+        {
+          "case": "selected-opening-cost-and-timing-guidance",
+          "pass": true
+        },
+        {
+          "case": "action-switch-routes-cards-to-visible-selection",
+          "pass": true
+        },
+        {
+          "case": "keyboard-card-inspection-preserves-selection",
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 360,
+          "height": 800,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 599,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 600,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 768,
+          "height": 1024,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 1024,
+          "height": 768,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 1049,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 1050,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 1280,
+          "height": 720,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 1280,
+          "height": 600,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 599,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 600,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 599,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 1049,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 1050,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 1049,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 844,
+          "height": 390,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 768,
+          "height": 1024,
+          "pass": true
+        },
+        {
+          "case": "adaptive-selection",
+          "width": 1024,
+          "height": 768,
+          "pass": true
+        },
+        {
+          "case": "rtl-200-placeholder-selection",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "rtl-200-placeholder-selection",
+          "width": 768,
+          "height": 1024,
+          "pass": true
+        },
+        {
+          "case": "rtl-200-placeholder-selection",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "browser-back-forward-retains-match-and-draft",
+          "pass": true
+        },
+        {
+          "case": "keyboard-tab-traversal",
+          "pass": true,
+          "distinctStops": 12
+        },
+        {
+          "case": "primary-touch-targets-at-least-48",
+          "pass": true,
+          "count": 12,
+          "minimumWidth": 48,
+          "minimumHeight": 48
+        },
+        {
+          "case": "keyboard-dropdown-scrolls-into-view-after-wheel-history-and-resize",
+          "pass": true
+        },
+        {
+          "case": "ordinary-action-disabled-during-response",
+          "pass": true
+        },
+        {
+          "case": "opening-ordered-responses",
+          "pass": true
+        }
+      ],
+      "startedAt": "2026-10-02T05:49:06.644Z"
+    },
+    {
+      "source": "client/.browser-tools/artifacts/vertical-final-keyboard/firefox-390-report.json",
+      "sourceSha256": "d1c8270c2feb43af503668265da123ae2d73616acae08d5612ffefaf79857dcb",
+      "status": "passed",
+      "engine": "firefox",
+      "version": "155.0",
+      "caseCount": 48,
+      "unexpectedErrors": 0,
+      "expectedFaultCount": 0,
+      "expectedAnonymous401Count": 0,
+      "harnessSha256": {
+        "browser_acceptance.cjs": "253e6c27346c8d87a7ed182c0582cec5ba17cfb92b75a4301e0e4121d1e7b1cf",
+        "browser_faults.cjs": "334439124fbdf5a2ba5056adb3655b53ffaa256797ffa7c6c9bccd705f5ea479"
+      },
+      "cases": [
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "normal",
+          "width": 320,
+          "height": 800,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "normal",
+          "width": 360,
+          "height": 800,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "normal",
+          "width": 390,
+          "height": 844,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "normal",
+          "width": 599,
+          "height": 900,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "normal",
+          "width": 600,
+          "height": 900,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "normal",
+          "width": 768,
+          "height": 1024,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "normal",
+          "width": 1049,
+          "height": 900,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "normal",
+          "width": 1050,
+          "height": 900,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "normal",
+          "width": 1440,
+          "height": 900,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "normal",
+          "width": 844,
+          "height": 390,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "text200",
+          "width": 320,
+          "height": 800,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "text200",
+          "width": 390,
+          "height": 844,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "text200",
+          "width": 768,
+          "height": 1024,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "text200",
+          "width": 1440,
+          "height": 1200,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "rtl",
+          "width": 320,
+          "height": 800,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "rtl",
+          "width": 360,
+          "height": 800,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "rtl",
+          "width": 390,
+          "height": 844,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "rtl",
+          "width": 599,
+          "height": 900,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "rtl",
+          "width": 600,
+          "height": 900,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "rtl",
+          "width": 768,
+          "height": 1024,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "rtl",
+          "width": 1049,
+          "height": 900,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "rtl",
+          "width": 1050,
+          "height": 900,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "rtl",
+          "width": 1440,
+          "height": 900,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "rtl",
+          "width": 844,
+          "height": 390,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Table",
+          "mode": "normal",
+          "width": 320,
+          "height": 800,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Table",
+          "mode": "normal",
+          "width": 360,
+          "height": 800,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Table",
+          "mode": "normal",
+          "width": 390,
+          "height": 844,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Table",
+          "mode": "normal",
+          "width": 599,
+          "height": 900,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Table",
+          "mode": "normal",
+          "width": 600,
+          "height": 900,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Table",
+          "mode": "normal",
+          "width": 768,
+          "height": 1024,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Table",
+          "mode": "normal",
+          "width": 1049,
+          "height": 900,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Table",
+          "mode": "normal",
+          "width": 1050,
+          "height": 900,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Table",
+          "mode": "normal",
+          "width": 1440,
+          "height": 900,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Table",
+          "mode": "normal",
+          "width": 844,
+          "height": 390,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Table",
+          "mode": "text200",
+          "width": 320,
+          "height": 800,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Table",
+          "mode": "text200",
+          "width": 390,
+          "height": 844,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Table",
+          "mode": "text200",
+          "width": 768,
+          "height": 1024,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Table",
+          "mode": "text200",
+          "width": 1440,
+          "height": 1200,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Table",
+          "mode": "rtl",
+          "width": 320,
+          "height": 800,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Table",
+          "mode": "rtl",
+          "width": 360,
+          "height": 800,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Table",
+          "mode": "rtl",
+          "width": 390,
+          "height": 844,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Table",
+          "mode": "rtl",
+          "width": 599,
+          "height": 900,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Table",
+          "mode": "rtl",
+          "width": 600,
+          "height": 900,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Table",
+          "mode": "rtl",
+          "width": 768,
+          "height": 1024,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Table",
+          "mode": "rtl",
+          "width": 1049,
+          "height": 900,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Table",
+          "mode": "rtl",
+          "width": 1050,
+          "height": 900,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Table",
+          "mode": "rtl",
+          "width": 1440,
+          "height": 900,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Table",
+          "mode": "rtl",
+          "width": 844,
+          "height": 390,
+          "pass": true,
+          "commandPosts": 0
+        }
+      ],
+      "startedAt": "2026-10-02T05:45:50.274Z"
+    },
+    {
+      "source": "client/.browser-tools/artifacts/vertical-final-card-geometry/chromium-card-sizes-report.json",
+      "sourceSha256": "a42a8b9f02e1408f6c96c4552328668633b3f89049040309a8c3923b68e03f81",
+      "status": "passed",
+      "engine": "chromium",
+      "version": "153.0.8010.12",
+      "caseCount": 12,
+      "unexpectedErrors": 0,
+      "expectedFaultCount": 0,
+      "expectedAnonymous401Count": 0,
+      "harnessSha256": {
+        "browser_acceptance.cjs": "5f045929d97c1bfea9ab4c81500f03378307bc9eaab959a940f3b83d1c5613b3",
+        "browser_faults.cjs": "334439124fbdf5a2ba5056adb3655b53ffaa256797ffa7c6c9bccd705f5ea479"
+      },
+      "cases": [
+        {
+          "case": "reference-card-selection-double-tap-and-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "normal",
+          "width": 320,
+          "height": 800,
+          "pass": true,
+          "face": {
+            "width": 57.59375,
+            "height": 71.734375
+          },
+          "corner": null,
+          "selectionRetained": true,
+          "keyboardI": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "reference-card-selection-double-tap-and-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "normal",
+          "width": 390,
+          "height": 844,
+          "pass": true,
+          "face": {
+            "width": 59,
+            "height": 73.484375
+          },
+          "corner": null,
+          "selectionRetained": true,
+          "keyboardI": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "reference-card-selection-double-tap-and-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "normal",
+          "width": 768,
+          "height": 1024,
+          "pass": true,
+          "face": {
+            "width": 119.40625,
+            "height": 148.734375
+          },
+          "corner": null,
+          "selectionRetained": true,
+          "keyboardI": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "reference-card-selection-double-tap-and-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "normal",
+          "width": 1440,
+          "height": 900,
+          "pass": true,
+          "face": {
+            "width": 230.265625,
+            "height": 286.8125
+          },
+          "corner": null,
+          "selectionRetained": true,
+          "keyboardI": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "reference-card-selection-double-tap-and-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "text200",
+          "width": 390,
+          "height": 844,
+          "pass": true,
+          "face": {
+            "width": 122,
+            "height": 151.953125
+          },
+          "corner": null,
+          "selectionRetained": true,
+          "keyboardI": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "reference-card-selection-double-tap-and-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "rtl",
+          "width": 390,
+          "height": 844,
+          "pass": true,
+          "face": {
+            "width": 59,
+            "height": 73.484375
+          },
+          "corner": null,
+          "selectionRetained": true,
+          "keyboardI": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "reference-card-selection-double-tap-and-keyboard-inspection",
+          "surface": "Table",
+          "mode": "normal",
+          "width": 320,
+          "height": 800,
+          "pass": true,
+          "face": {
+            "width": 120,
+            "height": 177.6875
+          },
+          "corner": {
+            "width": 48,
+            "height": 48
+          },
+          "selectionRetained": true,
+          "keyboardI": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "reference-card-selection-double-tap-and-keyboard-inspection",
+          "surface": "Table",
+          "mode": "normal",
+          "width": 390,
+          "height": 844,
+          "pass": true,
+          "face": {
+            "width": 120,
+            "height": 177.6875
+          },
+          "corner": {
+            "width": 48,
+            "height": 48
+          },
+          "selectionRetained": true,
+          "keyboardI": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "reference-card-selection-double-tap-and-keyboard-inspection",
+          "surface": "Table",
+          "mode": "normal",
+          "width": 768,
+          "height": 1024,
+          "pass": true,
+          "face": {
+            "width": 120,
+            "height": 177.68746948242188
+          },
+          "corner": {
+            "width": 48,
+            "height": 48
+          },
+          "selectionRetained": true,
+          "keyboardI": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "reference-card-selection-double-tap-and-keyboard-inspection",
+          "surface": "Table",
+          "mode": "normal",
+          "width": 1440,
+          "height": 900,
+          "pass": true,
+          "face": {
+            "width": 120,
+            "height": 177.68746948242188
+          },
+          "corner": {
+            "width": 48,
+            "height": 48
+          },
+          "selectionRetained": true,
+          "keyboardI": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "reference-card-selection-double-tap-and-keyboard-inspection",
+          "surface": "Table",
+          "mode": "text200",
+          "width": 390,
+          "height": 844,
+          "pass": true,
+          "face": {
+            "width": 120,
+            "height": 197.6875
+          },
+          "corner": {
+            "width": 48,
+            "height": 47.999969482421875
+          },
+          "selectionRetained": true,
+          "keyboardI": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "reference-card-selection-double-tap-and-keyboard-inspection",
+          "surface": "Table",
+          "mode": "rtl",
+          "width": 390,
+          "height": 844,
+          "pass": true,
+          "face": {
+            "width": 120,
+            "height": 177.6875
+          },
+          "corner": {
+            "width": 48,
+            "height": 48
+          },
+          "selectionRetained": true,
+          "keyboardI": true,
+          "commandPosts": 0
+        }
+      ],
+      "startedAt": "2026-10-02T05:46:54.406Z"
+    },
+    {
+      "source": "client/.browser-tools/artifacts/vertical-final-startup/startup-browser-report.json",
+      "sourceSha256": "5a80cd0854d34b3a1ec4946c9056d1d17f3525c1ae4d34d3d5d38ff1c1cd9e3b",
+      "status": "passed",
+      "engine": "chromium",
+      "version": "153.0.8010.12",
+      "caseCount": 8,
+      "unexpectedErrors": 0,
+      "expectedFaultCount": 0,
+      "expectedAnonymous401Count": 0,
+      "harnessSha256": null,
+      "cases": [
+        {
+          "case": "cold-launch-1",
+          "pass": true,
+          "serviceCommandMs": 16834,
+          "healthReadyMs": 11754,
+          "normalEntryMs": 822,
+          "onlineUsableMs": 1388,
+          "guestPosts": 1
+        },
+        {
+          "case": "cold-launch-2",
+          "pass": true,
+          "serviceCommandMs": 15716,
+          "healthReadyMs": 10504,
+          "normalEntryMs": 812,
+          "onlineUsableMs": 1300,
+          "guestPosts": 1
+        },
+        {
+          "case": "cold-launch-3",
+          "pass": true,
+          "serviceCommandMs": 15829,
+          "healthReadyMs": 10618,
+          "normalEntryMs": 823,
+          "onlineUsableMs": 1267,
+          "guestPosts": 1
+        },
+        {
+          "case": "delayed-backend-session-readiness",
+          "pass": true,
+          "failedAtMs": 2367,
+          "readyAtMs": 3415,
+          "usableAtMs": 3742,
+          "automaticReadAttempts": 2
+        },
+        {
+          "case": "reload-during-backend-outage",
+          "pass": true,
+          "failedAtMs": 532,
+          "readyAtMs": 1369,
+          "usableAtMs": 2387,
+          "automaticReadAttempts": 5
+        },
+        {
+          "case": "established-match-reconnect-without-refresh-or-replayed-command",
+          "pass": true,
+          "readyAtMs": 1265,
+          "usableAtMs": 1526,
+          "persistedGamePreserved": true,
+          "commandPosts": 0,
+          "successfulSocketHandshakes": 2
+        },
+        {
+          "case": "503-html-proxy-response-recovers",
+          "pass": true,
+          "reads": 2
+        },
+        {
+          "case": "malformed-200-response-is-terminal",
+          "pass": true,
+          "reads": 1
+        }
+      ],
+      "startedAt": "2026-10-02T05:44:36.171Z",
+      "finishedAt": "2026-10-02T05:45:47.119Z",
+      "conditions": "Local Compose, retained PostgreSQL volume, fresh Chromium contexts; stopped backend for delayed readiness and established-stream recovery. No cache deletion, manual reload recovery or restart recovery by user.",
+      "persistentVolumeUnchanged": true,
+      "persistentVolume": "cgms_postgres_data 2026-09-30T22:58:54+03:00",
+      "serviceLogs": {
+        "status": "reviewed",
+        "logs": [
+          {
+            "tag": "startup-cold-1-stop",
+            "sha256": "11086f89120723709016b05a5484e588aa6e19cdd51728e8a326c935dab806b5",
+            "lines": 1,
+            "diagnosticLines": 0
+          },
+          {
+            "tag": "startup-cold-1-up",
+            "sha256": "844d9b91941a2b00e9e0428542efd5543e1bc5cd679afd04c4ddbaea19f873c5",
+            "lines": 1,
+            "diagnosticLines": 0
+          },
+          {
+            "tag": "cold-1-services",
+            "sha256": "f7498091af92cfba75cb720d59940f237efc8ea94d451c29fff06a749c7c2465",
+            "lines": 15000,
+            "diagnosticLines": 1
+          },
+          {
+            "tag": "startup-cold-2-stop",
+            "sha256": "11086f89120723709016b05a5484e588aa6e19cdd51728e8a326c935dab806b5",
+            "lines": 1,
+            "diagnosticLines": 0
+          },
+          {
+            "tag": "startup-cold-2-up",
+            "sha256": "844d9b91941a2b00e9e0428542efd5543e1bc5cd679afd04c4ddbaea19f873c5",
+            "lines": 1,
+            "diagnosticLines": 0
+          },
+          {
+            "tag": "cold-2-services",
+            "sha256": "1fbd2604b307664f32065b3923516834ab951d427c177941815cc37300fbca62",
+            "lines": 15138,
+            "diagnosticLines": 1
+          },
+          {
+            "tag": "startup-cold-3-stop",
+            "sha256": "11086f89120723709016b05a5484e588aa6e19cdd51728e8a326c935dab806b5",
+            "lines": 1,
+            "diagnosticLines": 0
+          },
+          {
+            "tag": "startup-cold-3-up",
+            "sha256": "844d9b91941a2b00e9e0428542efd5543e1bc5cd679afd04c4ddbaea19f873c5",
+            "lines": 1,
+            "diagnosticLines": 0
+          },
+          {
+            "tag": "cold-3-services",
+            "sha256": "0faec45dd500c0b979d4ed15bdb0383f5a8cb351d7ae041e91ae03a6d9b3b672",
+            "lines": 15109,
+            "diagnosticLines": 1
+          },
+          {
+            "tag": "session-outage-stop",
+            "sha256": "b934e98120e9803222af8e1579cc039613c08a0b03886928c84beab2a9df8bd2",
+            "lines": 2,
+            "diagnosticLines": 0
+          },
+          {
+            "tag": "session-outage-start",
+            "sha256": "06050489a498ca31fb39e71a9ac76fb8a9da3a4459a5b6a6c8e44658fb492440",
+            "lines": 4,
+            "diagnosticLines": 0
+          },
+          {
+            "tag": "reload-outage-stop",
+            "sha256": "b934e98120e9803222af8e1579cc039613c08a0b03886928c84beab2a9df8bd2",
+            "lines": 2,
+            "diagnosticLines": 0
+          },
+          {
+            "tag": "reload-outage-start",
+            "sha256": "06050489a498ca31fb39e71a9ac76fb8a9da3a4459a5b6a6c8e44658fb492440",
+            "lines": 4,
+            "diagnosticLines": 0
+          },
+          {
+            "tag": "stream-outage-stop",
+            "sha256": "b934e98120e9803222af8e1579cc039613c08a0b03886928c84beab2a9df8bd2",
+            "lines": 2,
+            "diagnosticLines": 0
+          },
+          {
+            "tag": "stream-outage-start",
+            "sha256": "06050489a498ca31fb39e71a9ac76fb8a9da3a4459a5b6a6c8e44658fb492440",
+            "lines": 4,
+            "diagnosticLines": 0
+          }
+        ]
+      }
+    },
+    {
+      "source": "client/.browser-tools/artifacts/vertical-final-reconnect/chromium-reconnect-report.json",
+      "sourceSha256": "29fafd41f33452c262e87ea4927025204928763a7e52d49e3491cc0d470b6834",
+      "status": "passed",
+      "engine": "chromium",
+      "version": "153.0.8010.12",
+      "caseCount": 2,
+      "unexpectedErrors": 0,
+      "expectedFaultCount": 18,
+      "expectedAnonymous401Count": 0,
+      "harnessSha256": {
+        "reconnect_browser_acceptance.cjs": "ec172e58965d9ef17a43c8f7e014fe64d21aa05a6e6df26940902a598ffb28e1",
+        "browser_faults.cjs": "334439124fbdf5a2ba5056adb3655b53ffaa256797ffa7c6c9bccd705f5ea479"
+      },
+      "cases": [
+        {
+          "case": "opening-bounded-offline-retry-restores-draft-selection-and-authority-scope",
+          "automaticReadLimit": 8,
+          "explicitOfflineRefreshes": 1,
+          "restoredTransportRefreshes": 0,
+          "pass": true,
+          "beforeVersion": 0,
+          "afterVersion": 0,
+          "realStreamConnections": 2,
+          "pagePosts": 0
+        },
+        {
+          "case": "justice-bounded-offline-retry-restores-draft-selection-and-authority-scope",
+          "automaticReadLimit": 8,
+          "explicitOfflineRefreshes": 1,
+          "restoredTransportRefreshes": 0,
+          "pass": true,
+          "beforeVersion": 0,
+          "afterVersion": 0,
+          "realStreamConnections": 2,
+          "pagePosts": 0
+        }
+      ],
+      "startedAt": "2026-10-02T05:49:06.501Z",
+      "finishedAt": "2026-10-02T05:50:09.700Z",
+      "draftQuantity": 3,
+      "physicalSelection": "original aria-current retained",
+      "authorityScope": "game, turn, decision and styles retained; no POST"
+    },
+    {
+      "source": "client/.browser-tools/artifacts/vertical-final-styles/chromium-card-styles-report.json",
+      "sourceSha256": "686fb8097f32df3b909ad6d56d408d5732345422893aa08220b522b411fa1f04",
+      "status": "passed",
+      "engine": "chromium",
+      "version": "153.0.8010.12",
+      "caseCount": 3,
+      "unexpectedErrors": 0,
+      "expectedFaultCount": 0,
+      "expectedAnonymous401Count": 0,
+      "harnessSha256": "8aa0acc6ca0d784271b3694f26c1a166189c8312c2593ffdd46de50559110d0a",
+      "cases": [
+        {
+          "case": "distinct-shared-styles-capture-identity-privacy-refresh-reload",
+          "label": "phone",
+          "players": 3,
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "pass": true
+        },
+        {
+          "case": "distinct-shared-styles-capture-identity-privacy-refresh-reload",
+          "label": "tablet",
+          "players": 4,
+          "viewport": {
+            "width": 768,
+            "height": 1024
+          },
+          "pass": true
+        },
+        {
+          "case": "distinct-shared-styles-capture-identity-privacy-refresh-reload",
+          "label": "desktop",
+          "players": 4,
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "pass": true
+        }
+      ]
+    }
+  ],
+  "visualReview": [
+    "fresh phone390 and desktop1440 Auto",
+    "tablet768 public vertical board",
+    "phone public-card inspector",
+    "finalized standings with disabledEndTurn",
+    "tablet shared-style capture"
+  ],
+  "screenshotDisposition": "Verified: every screenshot except the unchanged phone reference removed; captures reviewed before deletion and compact evidence retained.",
+  "resolvedFindings": [
+    "Separate layouts replaced with owner-selected vertical composition",
+    "ExpansionTile bool and TextField double PageStorage collision isolated",
+    "Hidden/collapsed focus and chooser authorization/lifetime guarded",
+    "Keyboard dropdown physically revealed after wheel/resize",
+    "Closed-board status, settlement and standings revealed; EndTurn gated to play",
+    "Offscreen automation DOM autoscroll replaced with real wheel/touch or Tab/Space; selection and no-command assertions retained",
+    "Merged Flutter action-group accessible names tested with scoped role locators",
+    "Bounded reconnect tested against actual eight-read contract with exact failed-request diagnostics"
+  ],
+  "limits": [
+    "Browser logical widths and application 200 percent text scaling; no native-device or actual screen-reader certification",
+    "Historical Git screenshot blobs remain; available evidence does not establish a push-size rejection; no commit, push or history rewrite",
+    "The full economy/account72-case suite is prior evidence; current three-size shared-style capture and reload were rerun",
+    "Prior backend test/vet evidence is preserved in adaptive-startup verification; this follow-up changes frontend only"
+  ],
+  "warnings": [
+    "Existing Redis memory-overcommit warning; no host sysctl changed",
+    "Existing unused CupertinoIcons release-build warning"
+  ],
+  "qaFixtures": "Two standard fixture sessions and one economy fixture stopped gracefully with exit0; ordinary services retained",
+  "qaServiceStatus": {
+    "services": [
+      "cgms-web-1 Up 11 minutes (healthy)",
+      "cgms-backend-1 Up 11 minutes (healthy)",
+      "cgms-postgres-1 Up 11 minutes (healthy)",
+      "cgms-redis-1 Up 11 minutes (healthy)"
+    ],
+    "mainSha256": "6f0c164d19ef4d9c693fef07adba2041024b6fd2ee29b763bcaf3fa951391e57",
+    "ownedQaFixturesStopped": true
+  },
+  "screenshotVerification": {
+    "remaining_screenshots": [
+      "client/screenshots/cgmsart-phone.png"
+    ],
+    "phone_bytes": 273544,
+    "phone_sha256": "2c116c49cc67e707d7dd6d45e12aa2063aa014c5edc3aa3416a8a36eea18bc8b",
+    "protected_files_identical": 1907,
+    "inventory_paths": 3610,
+    "removed_screenshots": 3609,
+    "removed_recorded_bytes": 487153597,
+    "removed_unknown_byte_sizes": 808,
+    "markdown_files_scanned": 158,
+    "screenshot_links_valid": 7,
+    "ignore_assertions": 22,
+    "no_screenshot_images_elsewhere": true,
+    "run_id": "screenshot-owner-final-verify-repaired--20261002T055648Z-711758"
+  }
+}

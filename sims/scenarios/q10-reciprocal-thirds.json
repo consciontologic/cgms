@@ -1,0 +1,129 @@
+{
+  "schema_version": "cgms-scenario-v1",
+  "id": "q10-reciprocal-thirds",
+  "kind": "accounting-only",
+  "purpose": "Q10 exact reciprocal third receipt; accounting only, no complete game claim.",
+  "players": 3,
+  "rule_refs": [
+    "GAME_RULES \u00a74.2",
+    "Q10",
+    "S07"
+  ],
+  "ledger": {
+    "game_id": "q10-fixture-game",
+    "phase": "playing",
+    "scores": [
+      {
+        "numerator": "-1",
+        "denominator": "1"
+      },
+      {
+        "numerator": "-1",
+        "denominator": "1"
+      },
+      {
+        "numerator": "0",
+        "denominator": "1"
+      }
+    ],
+    "cash": [
+      {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      {
+        "numerator": "0",
+        "denominator": "1"
+      }
+    ],
+    "debts": [
+      {
+        "id": "debt-0",
+        "charge_id": "debt-0",
+        "game_id": "q10-fixture-game",
+        "debtor": 0,
+        "creditor": 1,
+        "remaining": {
+          "numerator": "1",
+          "denominator": "1"
+        },
+        "sequence": 1
+      },
+      {
+        "id": "debt-1",
+        "charge_id": "debt-1",
+        "game_id": "q10-fixture-game",
+        "debtor": 1,
+        "creditor": 0,
+        "remaining": {
+          "numerator": "1",
+          "denominator": "1"
+        },
+        "sequence": 2
+      }
+    ],
+    "charges": [
+      {
+        "id": "debt-0",
+        "game_id": "q10-fixture-game",
+        "debtor": 0,
+        "creditor": 1,
+        "amount": {
+          "numerator": "1",
+          "denominator": "1"
+        }
+      },
+      {
+        "id": "debt-1",
+        "game_id": "q10-fixture-game",
+        "debtor": 1,
+        "creditor": 0,
+        "amount": {
+          "numerator": "1",
+          "denominator": "1"
+        }
+      }
+    ],
+    "corrections": null,
+    "completed": null,
+    "departed": [
+      false,
+      false,
+      false
+    ],
+    "finished": [
+      false,
+      false,
+      false
+    ],
+    "operations": null,
+    "next_sequence": 2
+  },
+  "receipts": [
+    {
+      "seat": 0,
+      "amount": {
+        "numerator": "1",
+        "denominator": "3"
+      }
+    }
+  ],
+  "expected_scores": [
+    {
+      "numerator": "1",
+      "denominator": "3"
+    },
+    {
+      "numerator": "0",
+      "denominator": "1"
+    },
+    {
+      "numerator": "0",
+      "denominator": "1"
+    }
+  ]
+}

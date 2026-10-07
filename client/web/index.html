@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A local interactive CGMS cgmsart game demonstration.">
+  <meta name="theme-color" content="#101322">
+  <title>CGMS · cgmsart</title>
+  <style>
+    html,body{background:#101322;color:#F5F1EA;margin:0;height:100%;font-family:system-ui,sans-serif}
+    #loading{box-sizing:border-box;min-height:100%;display:grid;place-content:center;padding:32px;gap:12px}
+    #loading h1{letter-spacing:.2em;font-size:24px}#loading p{color:#BAC4D6}
+    #retry{background:#FF795E;color:#101322;border:0;padding:16px;font:inherit;cursor:pointer}
+    #retry:focus-visible{outline:3px solid #D6EB83;outline-offset:4px}
+    /* Flutter's transparent leaf-button labels must not intercept adjacent
+       controls when their text overflows the semantic hit box (notably RTL).
+       Keep the accessible name intact and leave containers/descendants alone. */
+    flt-semantics[role="button"][flt-tappable]:not(:has(flt-semantics)){overflow:clip!important}
+  </style>
+</head>
+<body>
+  <div id="loading" role="status" aria-live="polite"><h1>CGMS / cgmsart</h1><p id="stage">Loading the game…</p><button id="retry" hidden>Retry loading</button></div>
+  <script src="keyboard_bridge.js"></script>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+name: cgms_ui
+description: Portable cgmsart presentation components and feature views for CGMS.
+version: 0.1.0
+publish_to: none
+environment:
+  sdk: '>=3.10.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: any
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+flutter:
+  uses-material-design: true
+  generate: true
+  assets:
+    - assets/art/
+    - assets/art/rain-glaze/
+    - assets/art/ember-glaze/
+    - assets/art/drypoint/
+    - assets/back.png
+    - assets/manifest.json
+    - assets/fonts/Barlow-OFL.txt
+    - assets/fonts/AtkinsonHyperlegibleNext-OFL.txt
+    - assets/fonts/NotoSansSymbols2-OFL.txt
+  fonts:
+    - family: Barlow Condensed
+      fonts:
+        - asset: assets/fonts/BarlowCondensed-Bold.ttf
+          weight: 700
+    - family: Atkinson Hyperlegible Next
+      fonts:
+        - asset: assets/fonts/AtkinsonHyperlegibleNext-Regular.ttf
+        - asset: assets/fonts/AtkinsonHyperlegibleNext-Bold.ttf
+          weight: 700
+    - family: Noto Sans Symbols2
+      fonts:
+        - asset: assets/fonts/NotoSansSymbols2-Regular.ttf

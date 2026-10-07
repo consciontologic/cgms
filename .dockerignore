@@ -1,0 +1,7 @@
+**
+!.local/
+!.local/bin/
+!.local/bin/server
+!deploy/
+!deploy/containers/
+!deploy/containers/backend.Dockerfile

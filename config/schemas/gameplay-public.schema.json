@@ -1,0 +1,295 @@
+{
+  "$defs": {
+    "Amount": {
+      "additionalProperties": false,
+      "description": "Reduced exact rational; canonicality and domain sign validated by Go.",
+      "properties": {
+        "denominator": {
+          "pattern": "^[1-9][0-9]*$",
+          "type": "string"
+        },
+        "numerator": {
+          "pattern": "^(0|-[1-9][0-9]*|[1-9][0-9]*)$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "numerator",
+        "denominator"
+      ],
+      "type": "object"
+    },
+    "GameplayPublicCounter": {
+      "additionalProperties": false,
+      "properties": {
+        "count": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "count"
+      ],
+      "type": "object"
+    },
+    "GameplayPublicGame": {
+      "additionalProperties": false,
+      "properties": {
+        "board_ended": {
+          "type": "boolean"
+        },
+        "declarer": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "ending": {
+          "type": "string"
+        },
+        "final_round": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "financially_finalized": {
+          "type": "boolean"
+        },
+        "instance": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "redeals": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "score_leaders": {
+          "items": {
+            "maximum": 9007199254740991,
+            "minimum": -9007199254740991,
+            "type": "integer"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "scores": {
+          "items": {
+            "$ref": "#/$defs/Amount"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "slot": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "transitions": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "turns_started": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "voided": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "instance",
+        "voided",
+        "slot",
+        "board_ended",
+        "financially_finalized",
+        "ending",
+        "declarer",
+        "final_round",
+        "turns_started",
+        "transitions",
+        "redeals",
+        "scores",
+        "score_leaders"
+      ],
+      "type": "object"
+    },
+    "GameplayPublicStats": {
+      "additionalProperties": false,
+      "properties": {
+        "action_usage": {
+          "items": {
+            "$ref": "#/$defs/GameplayPublicCounter"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "board_ended_games": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "finalized_matches": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "financially_finalized_games": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "games": {
+          "items": {
+            "$ref": "#/$defs/GameplayPublicGame"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "incomplete_reason": {
+          "type": "string"
+        },
+        "match_ranks": {
+          "items": {
+            "maximum": 9007199254740991,
+            "minimum": -9007199254740991,
+            "type": "integer"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "match_scores": {
+          "items": {
+            "$ref": "#/$defs/Amount"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "narrative": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "never_started_games": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "planned_games": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "policy_calls": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "policy_operations": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "population": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "public_formation_opportunities": {
+          "items": {
+            "$ref": "#/$defs/GameplayPublicCounter"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "schema": {
+          "const": "cgms-gameplay-public-v2"
+        },
+        "started_games": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "started_instances": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "transitions": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "voided_games": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "started_instances",
+        "voided_games",
+        "schema",
+        "population",
+        "planned_games",
+        "started_games",
+        "board_ended_games",
+        "financially_finalized_games",
+        "finalized_matches",
+        "never_started_games",
+        "incomplete_reason",
+        "transitions",
+        "policy_calls",
+        "policy_operations",
+        "match_scores",
+        "match_ranks",
+        "games",
+        "action_usage",
+        "public_formation_opportunities",
+        "narrative"
+      ],
+      "type": "object"
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "allOf": [
+    {
+      "$ref": "#/$defs/GameplayPublicStats"
+    }
+  ],
+  "description": "Closed offline runtime shape. Go additionally validates physical conservation, lineage, compatibility and exact rational canonicality.",
+  "title": "CGMS gameplay-public v1"
+}

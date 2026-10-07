@@ -1,0 +1,5 @@
+# Preserve the original upstream font notices.
+packages/cgms_ui/assets/fonts/*.txt whitespace=-blank-at-eol
+
+# Preserve captured terminal evidence, including progress output and trailing spaces.
+screenshots/design-partner-20261001/**/*.log -text whitespace=-blank-at-eol,-blank-at-eof

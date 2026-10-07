@@ -1,0 +1,5476 @@
+{
+  "schema": "cgms-public-width-verification-v1",
+  "run_id": "public-width-20261002",
+  "status": "passed",
+  "ownerDirection": "Make the public table as wide as the hand, with four equal rectangular quadrants on larger screens. Supersedes square-only geometry.",
+  "rootCauses": [
+    "Independent narrow public square did not align to full-width hand.",
+    "Fixed 144\u00d7144 player drawings and nested pile fits reduced three-group public faces to 65.26px versus the 97.51px hand."
+  ],
+  "fix": "Full-width 2\u00d72 public rectangles with independently bounded height preserve the adjacent hand. Actual-width seat drawings share the 72px base card scale, native artwork ratios and a maximum total fan depth of 16px.",
+  "finalMainSha256": "0f3908b52ecf21f4e232b7d538164bb61a8774c44ddf3a5603ea4a71aca6fe1e",
+  "sourceChecks": {
+    "hostTests": {
+      "count": 272,
+      "runs": [
+        {
+          "log": "/tmp/agent-runs/fullwidth-host-tests--20261002T175252Z-2056310.log",
+          "sha256": "dcc4b446d4e5d64aef3215bc417efe23dac017a166e4ec013f017a0d6e1bce71",
+          "exit": 0
+        }
+      ]
+    },
+    "packageTests": {
+      "count": 76,
+      "runs": [
+        {
+          "log": "/tmp/agent-runs/fullwidth-package--20261002T175249Z-2055403.log",
+          "sha256": "326f7bdbf6d396b6e912179a1ec23af5ae6feddb874d4e2644d958faa6fb99b3",
+          "exit": 0
+        }
+      ]
+    },
+    "nodeSupportTests": {
+      "count": 31,
+      "runs": [
+        {
+          "log": "/tmp/agent-runs/fullwidth-node-support--20261002T175442Z-2063397.log",
+          "sha256": "6716ad29bb9c973eea4f85adbc8798280adf1aa5cbdcbf51b442fed1ac631616",
+          "exit": 0
+        }
+      ]
+    },
+    "hostAnalyzer": {
+      "runs": [
+        {
+          "log": "/tmp/agent-runs/fullwidth-host-analyze--20261002T175252Z-2056342.log",
+          "sha256": "6fd4be1d41851df0fa5d9c4cec662622482428f1ab411dc7f7a562197198e649",
+          "exit": 0
+        }
+      ]
+    },
+    "packageAnalyzer": {
+      "runs": [
+        {
+          "log": "/tmp/agent-runs/fullwidth-package-analyze--20261002T175348Z-2059702.log",
+          "sha256": "4fce04daf2e444338c752b68e39ea429b1a34bf083c5eb18adb12d31fdd8d693",
+          "exit": 0
+        }
+      ]
+    },
+    "format": {
+      "runs": [
+        {
+          "log": "/tmp/agent-runs/fullwidth-format-final--20261002T175759Z-2070658.log",
+          "sha256": "11fa9bef8d8fc7afff8e4deace774cc0112b0c233c7459d267f4bde20fde2361",
+          "exit": 0
+        }
+      ]
+    },
+    "webBuild": {
+      "runs": [
+        {
+          "log": "/tmp/agent-runs/fullwidth-build--20261002T175249Z-2055496.log",
+          "sha256": "844d9b91941a2b00e9e0428542efd5543e1bc5cd679afd04c4ddbaea19f873c5",
+          "exit": 0
+        }
+      ]
+    }
+  },
+  "paintedCardRegression": "Dense eleven Diamonds, one Club and five Kings: every public face retains 90\u2013100% of hand width in roomy 821/1440 views, native aspect ratio and full cell containment; artwork on/off, RTL/LTR, live reverse resizing and stable mounted State.",
+  "browserChecks": {
+    "total": 351,
+    "suites": [
+      {
+        "host": "normal",
+        "engine": "chromium",
+        "version": "153.0.8010.12",
+        "reportAtCapture": "client/.browser-tools/artifacts/fullwidth-final-normal-chromium/report.json",
+        "reportSha256": "8faef322bcd8de331b9d0c894ef7049ed9a76835206c7272c7d773e81e1d3b43",
+        "assets": {
+          "main.dart.js": "0f3908b52ecf21f4e232b7d538164bb61a8774c44ddf3a5603ea4a71aca6fe1e",
+          "index.html": "0cb17fca2f4289e6b33ac9c7e847cdfa8a763169f841d6a7140cb6f83a595c50",
+          "keyboard_bridge.js": "1a244bc7bc3e3f3802e715315bc6e4d0f36809a4d99754ac28ee54227583c261",
+          "flutter_bootstrap.js": "296c7f1058ee874c18daf4e1619bb32f6386430b643865b47fda9badd45df1eb"
+        },
+        "caseCount": 103,
+        "cases": [
+          {
+            "case": "trusted-native-tab-bridge-handled-reverse-outside-and-exit",
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 390,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 821,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 821,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 1440,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 821,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 821,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 390,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "live-full-width-public-table-and-preview-composition-grow-at-fixed-height",
+            "navigations": 0,
+            "commandPosts": 0,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "narrow-public-chooser-and-actions-preserve-visible-hand",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 320,
+            "height": 568,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 320,
+            "height": 568,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 320,
+            "height": 568,
+            "pass": true
+          },
+          {
+            "case": "narrow-public-chooser-and-actions-preserve-visible-hand",
+            "width": 320,
+            "height": 568,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "fresh-normal-entry",
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 768,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 1200,
+            "pass": true
+          },
+          {
+            "case": "uniform-hand-cards-in-horizontal-suit-stacks",
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "horizontal-suit-scroll-preserves-selection",
+            "width": 390,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 320,
+            "height": 568,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 360,
+            "height": 800,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 599,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 600,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 599,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 600,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1049,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1050,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1049,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1050,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1280,
+            "height": 720,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1280,
+            "height": 600,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1024,
+            "height": 768,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-keyboard-inspect-and-escape",
+            "pass": true
+          },
+          {
+            "case": "suit-stack-physical-card-touch-and-keyboard",
+            "pass": true
+          },
+          {
+            "case": "suit-stack-physical-card-touch-and-keyboard",
+            "pass": true
+          },
+          {
+            "case": "suit-stack-physical-card-touch-and-keyboard",
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-text200-touch-navigation",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-text200-touch-navigation",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-text200-touch-navigation",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-text200-touch-navigation",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "offscreen-card-after-pointer-short-text200-and-modal-reverse-tab",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "hand-interactions-without-command-posts",
+            "commandPosts": 0,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "fresh-normal-entry",
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 768,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 1200,
+            "pass": true
+          },
+          {
+            "case": "uniform-hand-cards-in-horizontal-suit-stacks",
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "horizontal-suit-scroll-preserves-selection",
+            "width": 390,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-keyboard-inspect-and-escape",
+            "pass": true
+          },
+          {
+            "case": "suit-stack-physical-card-touch-and-keyboard",
+            "pass": true
+          },
+          {
+            "case": "suit-stack-physical-card-touch-and-keyboard",
+            "pass": true
+          },
+          {
+            "case": "suit-stack-physical-card-touch-and-keyboard",
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-text200-touch-navigation",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-text200-touch-navigation",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-text200-touch-navigation",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-text200-touch-navigation",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "hand-interactions-without-command-posts",
+            "commandPosts": 0,
+            "pass": true
+          }
+        ],
+        "growthMeasurements": [
+          {
+            "width": 319,
+            "height": 948,
+            "table": {
+              "x": 8,
+              "y": 48,
+              "width": 303,
+              "height": 303
+            },
+            "cells": [
+              {
+                "x": 8,
+                "y": 48,
+                "width": 151.5,
+                "height": 151.5,
+                "top": 48,
+                "right": 159.5,
+                "bottom": 199.5,
+                "left": 8
+              },
+              {
+                "x": 159.5,
+                "y": 48,
+                "width": 151.5,
+                "height": 151.5,
+                "top": 48,
+                "right": 311,
+                "bottom": 199.5,
+                "left": 159.5
+              },
+              {
+                "x": 8,
+                "y": 199.5,
+                "width": 151.5,
+                "height": 151.5,
+                "top": 199.5,
+                "right": 159.5,
+                "bottom": 351,
+                "left": 8
+              },
+              {
+                "x": 159.5,
+                "y": 199.5,
+                "width": 151.5,
+                "height": 151.5,
+                "top": 199.5,
+                "right": 311,
+                "bottom": 351,
+                "left": 159.5
+              }
+            ],
+            "hand": {
+              "x": 8,
+              "y": 355,
+              "width": 303,
+              "height": 545
+            },
+            "footer": [
+              {
+                "x": 8,
+                "y": 900,
+                "width": 120.65625,
+                "height": 48
+              },
+              {
+                "x": 140.66818237304688,
+                "y": 900,
+                "width": 96.421875,
+                "height": 48
+              }
+            ]
+          },
+          {
+            "width": 390,
+            "height": 948,
+            "table": {
+              "x": 8,
+              "y": 48,
+              "width": 374,
+              "height": 372
+            },
+            "cells": [
+              {
+                "x": 8,
+                "y": 48,
+                "width": 187,
+                "height": 186,
+                "top": 48,
+                "right": 195,
+                "bottom": 234,
+                "left": 8
+              },
+              {
+                "x": 195,
+                "y": 48,
+                "width": 187,
+                "height": 186,
+                "top": 48,
+                "right": 382,
+                "bottom": 234,
+                "left": 195
+              },
+              {
+                "x": 8,
+                "y": 234,
+                "width": 187,
+                "height": 186,
+                "top": 234,
+                "right": 195,
+                "bottom": 420,
+                "left": 8
+              },
+              {
+                "x": 195,
+                "y": 234,
+                "width": 187,
+                "height": 186,
+                "top": 234,
+                "right": 382,
+                "bottom": 420,
+                "left": 195
+              }
+            ],
+            "hand": {
+              "x": 8,
+              "y": 424,
+              "width": 374,
+              "height": 476
+            },
+            "footer": [
+              {
+                "x": 8,
+                "y": 900,
+                "width": 120.65625,
+                "height": 48
+              },
+              {
+                "x": 140.66818237304688,
+                "y": 900,
+                "width": 96.421875,
+                "height": 48
+              }
+            ]
+          },
+          {
+            "width": 821,
+            "height": 948,
+            "table": {
+              "x": 8,
+              "y": 53,
+              "width": 805,
+              "height": 499.53125
+            },
+            "cells": [
+              {
+                "x": 8,
+                "y": 53,
+                "width": 402.5,
+                "height": 249.765625,
+                "top": 53,
+                "right": 410.5,
+                "bottom": 302.765625,
+                "left": 8
+              },
+              {
+                "x": 410.5,
+                "y": 53,
+                "width": 402.5,
+                "height": 249.765625,
+                "top": 53,
+                "right": 813,
+                "bottom": 302.765625,
+                "left": 410.5
+              },
+              {
+                "x": 8,
+                "y": 302.77142333984375,
+                "width": 402.5,
+                "height": 249.765625,
+                "top": 302.77142333984375,
+                "right": 410.5,
+                "bottom": 552.5370483398438,
+                "left": 8
+              },
+              {
+                "x": 410.5,
+                "y": 302.77142333984375,
+                "width": 402.5,
+                "height": 249.765625,
+                "top": 302.77142333984375,
+                "right": 813,
+                "bottom": 552.5370483398438,
+                "left": 410.5
+              }
+            ],
+            "hand": {
+              "x": 8,
+              "y": 556.5428466796875,
+              "width": 805,
+              "height": 343.453125
+            },
+            "footer": [
+              {
+                "x": 8,
+                "y": 900,
+                "width": 151.609375,
+                "height": 48
+              },
+              {
+                "x": 171.62387084960938,
+                "y": 900,
+                "width": 118.921875,
+                "height": 48
+              }
+            ]
+          },
+          {
+            "width": 1440,
+            "height": 948,
+            "table": {
+              "x": 8,
+              "y": 53,
+              "width": 1424,
+              "height": 499.53125
+            },
+            "cells": [
+              {
+                "x": 8,
+                "y": 53,
+                "width": 712,
+                "height": 249.765625,
+                "top": 53,
+                "right": 720,
+                "bottom": 302.765625,
+                "left": 8
+              },
+              {
+                "x": 720,
+                "y": 53,
+                "width": 712,
+                "height": 249.765625,
+                "top": 53,
+                "right": 1432,
+                "bottom": 302.765625,
+                "left": 720
+              },
+              {
+                "x": 8,
+                "y": 302.77142333984375,
+                "width": 712,
+                "height": 249.765625,
+                "top": 302.77142333984375,
+                "right": 720,
+                "bottom": 552.5370483398438,
+                "left": 8
+              },
+              {
+                "x": 720,
+                "y": 302.77142333984375,
+                "width": 712,
+                "height": 249.765625,
+                "top": 302.77142333984375,
+                "right": 1432,
+                "bottom": 552.5370483398438,
+                "left": 720
+              }
+            ],
+            "hand": {
+              "x": 8,
+              "y": 556.5428466796875,
+              "width": 1424,
+              "height": 343.453125
+            },
+            "footer": [
+              {
+                "x": 8,
+                "y": 900,
+                "width": 151.609375,
+                "height": 48
+              },
+              {
+                "x": 171.62387084960938,
+                "y": 900,
+                "width": 118.921875,
+                "height": 48
+              }
+            ]
+          },
+          {
+            "width": 821,
+            "height": 948,
+            "table": {
+              "x": 8,
+              "y": 53,
+              "width": 805,
+              "height": 499.53125
+            },
+            "cells": [
+              {
+                "x": 8,
+                "y": 53,
+                "width": 402.5,
+                "height": 249.765625,
+                "top": 53,
+                "right": 410.5,
+                "bottom": 302.765625,
+                "left": 8
+              },
+              {
+                "x": 410.5,
+                "y": 53,
+                "width": 402.5,
+                "height": 249.765625,
+                "top": 53,
+                "right": 813,
+                "bottom": 302.765625,
+                "left": 410.5
+              },
+              {
+                "x": 8,
+                "y": 302.77142333984375,
+                "width": 402.5,
+                "height": 249.765625,
+                "top": 302.77142333984375,
+                "right": 410.5,
+                "bottom": 552.5370483398438,
+                "left": 8
+              },
+              {
+                "x": 410.5,
+                "y": 302.77142333984375,
+                "width": 402.5,
+                "height": 249.765625,
+                "top": 302.77142333984375,
+                "right": 813,
+                "bottom": 552.5370483398438,
+                "left": 410.5
+              }
+            ],
+            "hand": {
+              "x": 8,
+              "y": 556.5428466796875,
+              "width": 805,
+              "height": 343.453125
+            },
+            "footer": [
+              {
+                "x": 8,
+                "y": 900,
+                "width": 151.609375,
+                "height": 48
+              },
+              {
+                "x": 171.62387084960938,
+                "y": 900,
+                "width": 118.921875,
+                "height": 48
+              }
+            ]
+          },
+          {
+            "width": 390,
+            "height": 948,
+            "table": {
+              "x": 8,
+              "y": 48,
+              "width": 374,
+              "height": 372
+            },
+            "cells": [
+              {
+                "x": 8,
+                "y": 48,
+                "width": 187,
+                "height": 186,
+                "top": 48,
+                "right": 195,
+                "bottom": 234,
+                "left": 8
+              },
+              {
+                "x": 195,
+                "y": 48,
+                "width": 187,
+                "height": 186,
+                "top": 48,
+                "right": 382,
+                "bottom": 234,
+                "left": 195
+              },
+              {
+                "x": 8,
+                "y": 234,
+                "width": 187,
+                "height": 186,
+                "top": 234,
+                "right": 195,
+                "bottom": 420,
+                "left": 8
+              },
+              {
+                "x": 195,
+                "y": 234,
+                "width": 187,
+                "height": 186,
+                "top": 234,
+                "right": 382,
+                "bottom": 420,
+                "left": 195
+              }
+            ],
+            "hand": {
+              "x": 8,
+              "y": 424,
+              "width": 374,
+              "height": 476
+            },
+            "footer": [
+              {
+                "x": 8,
+                "y": 900,
+                "width": 120.65625,
+                "height": 48
+              },
+              {
+                "x": 140.66818237304688,
+                "y": 900,
+                "width": 96.421875,
+                "height": 48
+              }
+            ]
+          },
+          {
+            "width": 319,
+            "height": 948,
+            "table": {
+              "x": 8,
+              "y": 48,
+              "width": 303,
+              "height": 303
+            },
+            "cells": [
+              {
+                "x": 8,
+                "y": 48,
+                "width": 151.5,
+                "height": 151.5,
+                "top": 48,
+                "right": 159.5,
+                "bottom": 199.5,
+                "left": 8
+              },
+              {
+                "x": 159.5,
+                "y": 48,
+                "width": 151.5,
+                "height": 151.5,
+                "top": 48,
+                "right": 311,
+                "bottom": 199.5,
+                "left": 159.5
+              },
+              {
+                "x": 8,
+                "y": 199.5,
+                "width": 151.5,
+                "height": 151.5,
+                "top": 199.5,
+                "right": 159.5,
+                "bottom": 351,
+                "left": 8
+              },
+              {
+                "x": 159.5,
+                "y": 199.5,
+                "width": 151.5,
+                "height": 151.5,
+                "top": 199.5,
+                "right": 311,
+                "bottom": 351,
+                "left": 159.5
+              }
+            ],
+            "hand": {
+              "x": 8,
+              "y": 355,
+              "width": 303,
+              "height": 545
+            },
+            "footer": [
+              {
+                "x": 8,
+                "y": 900,
+                "width": 120.65625,
+                "height": 48
+              },
+              {
+                "x": 140.66818237304688,
+                "y": 900,
+                "width": 96.421875,
+                "height": 48
+              }
+            ]
+          }
+        ],
+        "unexpectedErrors": [],
+        "expectedAuthenticationChallenges": [],
+        "runs": [
+          {
+            "log": "/tmp/agent-runs/fullwidth-normal-chromium--20261002T175427Z-2061395.log",
+            "sha256": "707069b3a907c72064274cb52440a8774a12353edf55ae4cf22680ef75023c7a",
+            "exit": 0
+          }
+        ]
+      },
+      {
+        "host": "online",
+        "engine": "chromium",
+        "version": "153.0.8010.12",
+        "reportAtCapture": "client/.browser-tools/artifacts/fullwidth-final-online-chromium/chromium-quadrants-report.json",
+        "reportSha256": "626a9d63ed81b67b04049d7a85867e96dfcdddf2016e9244aa9f69e136bdc5a4",
+        "assets": {
+          "index.html": "0cb17fca2f4289e6b33ac9c7e847cdfa8a763169f841d6a7140cb6f83a595c50",
+          "keyboard_bridge.js": "1a244bc7bc3e3f3802e715315bc6e4d0f36809a4d99754ac28ee54227583c261",
+          "flutter_bootstrap.js": "296c7f1058ee874c18daf4e1619bb32f6386430b643865b47fda9badd45df1eb",
+          "main.dart.js": "0f3908b52ecf21f4e232b7d538164bb61a8774c44ddf3a5603ea4a71aca6fe1e"
+        },
+        "caseCount": 14,
+        "cases": [
+          {
+            "case": "online-full-width-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "normal",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "online-full-width-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "normal",
+            "width": 320,
+            "height": 568,
+            "pass": true
+          },
+          {
+            "case": "online-full-width-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "normal",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "online-full-width-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "normal",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "online-full-width-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "normal",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "online-full-width-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "normal",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "online-full-width-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "rtl-text200",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "online-full-width-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "rtl-text200",
+            "width": 320,
+            "height": 568,
+            "pass": true
+          },
+          {
+            "case": "online-full-width-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "rtl-text200",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "online-full-width-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "rtl-text200",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "online-full-width-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "rtl-text200",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "online-full-width-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "rtl-text200",
+            "width": 1440,
+            "height": 1200,
+            "pass": true
+          },
+          {
+            "case": "online-full-width-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "rtl-text200",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "online-live-full-width-public-table-and-preview-composition-grow-at-fixed-height",
+            "navigations": 0,
+            "commandPosts": 0,
+            "beforeVersion": 0,
+            "afterVersion": 0,
+            "pass": true
+          }
+        ],
+        "growthMeasurements": [
+          {
+            "width": 319,
+            "height": 948,
+            "board": {
+              "x": 8,
+              "y": 56,
+              "width": 303,
+              "height": 892
+            },
+            "hand": {
+              "x": 8,
+              "y": 411,
+              "width": 303,
+              "height": 489
+            },
+            "initiallyVisibleCards": [
+              {
+                "label": "A of Hearts, copy 1 concealed-ace",
+                "width": 72,
+                "height": 90
+              },
+              {
+                "label": "Q of Hearts, copy 1 hand",
+                "width": 72,
+                "height": 90
+              }
+            ],
+            "footer": [
+              {
+                "label": "Trade cards",
+                "width": 120.65625,
+                "height": 48
+              },
+              {
+                "label": "End Turn",
+                "width": 99.15625,
+                "height": 48
+              }
+            ],
+            "table": {
+              "x": 8,
+              "y": 104,
+              "width": 303,
+              "height": 303
+            },
+            "quadrants": [
+              {
+                "x": 8,
+                "y": 104,
+                "width": 151.5,
+                "height": 151.5
+              },
+              {
+                "x": 159.5,
+                "y": 104,
+                "width": 151.5,
+                "height": 151.5
+              },
+              {
+                "x": 8,
+                "y": 255.5,
+                "width": 151.5,
+                "height": 151.5
+              },
+              {
+                "x": 159.5,
+                "y": 255.5,
+                "width": 151.5,
+                "height": 151.5
+              }
+            ]
+          },
+          {
+            "width": 390,
+            "height": 948,
+            "board": {
+              "x": 8,
+              "y": 56,
+              "width": 374,
+              "height": 892
+            },
+            "hand": {
+              "x": 8,
+              "y": 480,
+              "width": 374,
+              "height": 420
+            },
+            "initiallyVisibleCards": [
+              {
+                "label": "A of Hearts, copy 1 concealed-ace",
+                "width": 72,
+                "height": 90
+              },
+              {
+                "label": "Q of Hearts, copy 1 hand",
+                "width": 72,
+                "height": 90
+              }
+            ],
+            "footer": [
+              {
+                "label": "Trade cards",
+                "width": 120.65625,
+                "height": 48
+              },
+              {
+                "label": "End Turn",
+                "width": 99.15625,
+                "height": 48
+              }
+            ],
+            "table": {
+              "x": 8,
+              "y": 104,
+              "width": 374,
+              "height": 372
+            },
+            "quadrants": [
+              {
+                "x": 8,
+                "y": 104,
+                "width": 187,
+                "height": 186
+              },
+              {
+                "x": 195,
+                "y": 104,
+                "width": 187,
+                "height": 186
+              },
+              {
+                "x": 8,
+                "y": 290,
+                "width": 187,
+                "height": 186
+              },
+              {
+                "x": 195,
+                "y": 290,
+                "width": 187,
+                "height": 186
+              }
+            ]
+          },
+          {
+            "width": 821,
+            "height": 948,
+            "board": {
+              "x": 8,
+              "y": 56,
+              "width": 805,
+              "height": 892
+            },
+            "hand": {
+              "x": 8,
+              "y": 578.7428588867188,
+              "width": 805,
+              "height": 321.25
+            },
+            "initiallyVisibleCards": [
+              {
+                "label": "A of Hearts, copy 1 concealed-ace",
+                "width": 91.734375,
+                "height": 114.671875
+              },
+              {
+                "label": "Q of Hearts, copy 1 hand",
+                "width": 91.734375,
+                "height": 114.671875
+              }
+            ],
+            "footer": [
+              {
+                "label": "Trade cards",
+                "width": 144.609375,
+                "height": 48
+              },
+              {
+                "label": "End Turn",
+                "width": 117.3125,
+                "height": 48
+              }
+            ],
+            "table": {
+              "x": 8,
+              "y": 104,
+              "width": 805,
+              "height": 470.734375
+            },
+            "quadrants": [
+              {
+                "x": 8,
+                "y": 104,
+                "width": 402.5,
+                "height": 235.359375
+              },
+              {
+                "x": 410.5,
+                "y": 104,
+                "width": 402.5,
+                "height": 235.359375
+              },
+              {
+                "x": 8,
+                "y": 339.3714294433594,
+                "width": 402.5,
+                "height": 235.35940551757812
+              },
+              {
+                "x": 410.5,
+                "y": 339.3714294433594,
+                "width": 402.5,
+                "height": 235.35940551757812
+              }
+            ]
+          },
+          {
+            "width": 1440,
+            "height": 948,
+            "board": {
+              "x": 8,
+              "y": 56,
+              "width": 1424,
+              "height": 892
+            },
+            "hand": {
+              "x": 8,
+              "y": 578.7428588867188,
+              "width": 1424,
+              "height": 321.25
+            },
+            "initiallyVisibleCards": [
+              {
+                "label": "A of Hearts, copy 1 concealed-ace",
+                "width": 91.734375,
+                "height": 114.671875
+              },
+              {
+                "label": "Q of Hearts, copy 1 hand",
+                "width": 91.734375,
+                "height": 114.671875
+              }
+            ],
+            "footer": [
+              {
+                "label": "Trade cards",
+                "width": 144.609375,
+                "height": 48
+              },
+              {
+                "label": "End Turn",
+                "width": 117.3125,
+                "height": 48
+              }
+            ],
+            "table": {
+              "x": 8,
+              "y": 104,
+              "width": 1424,
+              "height": 470.734375
+            },
+            "quadrants": [
+              {
+                "x": 8,
+                "y": 104,
+                "width": 712,
+                "height": 235.359375
+              },
+              {
+                "x": 720,
+                "y": 104,
+                "width": 712,
+                "height": 235.359375
+              },
+              {
+                "x": 8,
+                "y": 339.3714294433594,
+                "width": 712,
+                "height": 235.35940551757812
+              },
+              {
+                "x": 720,
+                "y": 339.3714294433594,
+                "width": 712,
+                "height": 235.35940551757812
+              }
+            ]
+          },
+          {
+            "width": 821,
+            "height": 948,
+            "board": {
+              "x": 8,
+              "y": 56,
+              "width": 805,
+              "height": 892
+            },
+            "hand": {
+              "x": 8,
+              "y": 578.7428588867188,
+              "width": 805,
+              "height": 321.25
+            },
+            "initiallyVisibleCards": [
+              {
+                "label": "A of Hearts, copy 1 concealed-ace",
+                "width": 91.734375,
+                "height": 114.671875
+              },
+              {
+                "label": "Q of Hearts, copy 1 hand",
+                "width": 91.734375,
+                "height": 114.671875
+              }
+            ],
+            "footer": [
+              {
+                "label": "Trade cards",
+                "width": 144.609375,
+                "height": 48
+              },
+              {
+                "label": "End Turn",
+                "width": 117.3125,
+                "height": 48
+              }
+            ],
+            "table": {
+              "x": 8,
+              "y": 104,
+              "width": 805,
+              "height": 470.734375
+            },
+            "quadrants": [
+              {
+                "x": 8,
+                "y": 104,
+                "width": 402.5,
+                "height": 235.359375
+              },
+              {
+                "x": 410.5,
+                "y": 104,
+                "width": 402.5,
+                "height": 235.359375
+              },
+              {
+                "x": 8,
+                "y": 339.3714294433594,
+                "width": 402.5,
+                "height": 235.35940551757812
+              },
+              {
+                "x": 410.5,
+                "y": 339.3714294433594,
+                "width": 402.5,
+                "height": 235.35940551757812
+              }
+            ]
+          },
+          {
+            "width": 390,
+            "height": 948,
+            "board": {
+              "x": 8,
+              "y": 56,
+              "width": 374,
+              "height": 892
+            },
+            "hand": {
+              "x": 8,
+              "y": 480,
+              "width": 374,
+              "height": 420
+            },
+            "initiallyVisibleCards": [
+              {
+                "label": "A of Hearts, copy 1 concealed-ace",
+                "width": 72,
+                "height": 90
+              },
+              {
+                "label": "Q of Hearts, copy 1 hand",
+                "width": 72,
+                "height": 90
+              }
+            ],
+            "footer": [
+              {
+                "label": "Trade cards",
+                "width": 120.65625,
+                "height": 48
+              },
+              {
+                "label": "End Turn",
+                "width": 99.15625,
+                "height": 48
+              }
+            ],
+            "table": {
+              "x": 8,
+              "y": 104,
+              "width": 374,
+              "height": 372
+            },
+            "quadrants": [
+              {
+                "x": 8,
+                "y": 104,
+                "width": 187,
+                "height": 186
+              },
+              {
+                "x": 195,
+                "y": 104,
+                "width": 187,
+                "height": 186
+              },
+              {
+                "x": 8,
+                "y": 290,
+                "width": 187,
+                "height": 186
+              },
+              {
+                "x": 195,
+                "y": 290,
+                "width": 187,
+                "height": 186
+              }
+            ]
+          },
+          {
+            "width": 319,
+            "height": 948,
+            "board": {
+              "x": 8,
+              "y": 56,
+              "width": 303,
+              "height": 892
+            },
+            "hand": {
+              "x": 8,
+              "y": 411,
+              "width": 303,
+              "height": 489
+            },
+            "initiallyVisibleCards": [
+              {
+                "label": "A of Hearts, copy 1 concealed-ace",
+                "width": 72,
+                "height": 90
+              },
+              {
+                "label": "Q of Hearts, copy 1 hand",
+                "width": 72,
+                "height": 90
+              }
+            ],
+            "footer": [
+              {
+                "label": "Trade cards",
+                "width": 120.65625,
+                "height": 48
+              },
+              {
+                "label": "End Turn",
+                "width": 99.15625,
+                "height": 48
+              }
+            ],
+            "table": {
+              "x": 8,
+              "y": 104,
+              "width": 303,
+              "height": 303
+            },
+            "quadrants": [
+              {
+                "x": 8,
+                "y": 104,
+                "width": 151.5,
+                "height": 151.5
+              },
+              {
+                "x": 159.5,
+                "y": 104,
+                "width": 151.5,
+                "height": 151.5
+              },
+              {
+                "x": 8,
+                "y": 255.5,
+                "width": 151.5,
+                "height": 151.5
+              },
+              {
+                "x": 159.5,
+                "y": 255.5,
+                "width": 151.5,
+                "height": 151.5
+              }
+            ]
+          }
+        ],
+        "unexpectedErrors": [],
+        "expectedAuthenticationChallenges": [],
+        "runs": [
+          {
+            "log": "/tmp/agent-runs/fullwidth-online-chromium--20261002T175427Z-2061412.log",
+            "sha256": "b531f360c429d39761293c087672d2c3c6f5d652a285a813ce7a9c41dd02fa3f",
+            "exit": 0
+          }
+        ],
+        "harnessSha256": {
+          "browser_acceptance.cjs": "855d1ca7bd0f78bfa4025c5d7ecbfd43822b44a7562cf62a322959843cfd4d9a",
+          "browser_faults.cjs": "334439124fbdf5a2ba5056adb3655b53ffaa256797ffa7c6c9bccd705f5ea479"
+        }
+      },
+      {
+        "host": "normal",
+        "engine": "firefox",
+        "version": "155.0",
+        "reportAtCapture": "client/.browser-tools/artifacts/fullwidth-accepted-normal-firefox/report.json",
+        "reportSha256": "63240dc5c74ae88d6173c38bb57bb87f57a83d2f12d2a187d5e85c1654254f26",
+        "assets": {
+          "main.dart.js": "0f3908b52ecf21f4e232b7d538164bb61a8774c44ddf3a5603ea4a71aca6fe1e",
+          "index.html": "0cb17fca2f4289e6b33ac9c7e847cdfa8a763169f841d6a7140cb6f83a595c50",
+          "keyboard_bridge.js": "1a244bc7bc3e3f3802e715315bc6e4d0f36809a4d99754ac28ee54227583c261",
+          "flutter_bootstrap.js": "296c7f1058ee874c18daf4e1619bb32f6386430b643865b47fda9badd45df1eb"
+        },
+        "caseCount": 103,
+        "cases": [
+          {
+            "case": "trusted-native-tab-bridge-handled-reverse-outside-and-exit",
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 390,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 821,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 821,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 1440,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 821,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 821,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 390,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "live-full-width-public-table-and-preview-composition-grow-at-fixed-height",
+            "navigations": 0,
+            "commandPosts": 0,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "narrow-public-chooser-and-actions-preserve-visible-hand",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 320,
+            "height": 568,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 320,
+            "height": 568,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 320,
+            "height": 568,
+            "pass": true
+          },
+          {
+            "case": "narrow-public-chooser-and-actions-preserve-visible-hand",
+            "width": 320,
+            "height": 568,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "fresh-normal-entry",
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 768,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 1200,
+            "pass": true
+          },
+          {
+            "case": "uniform-hand-cards-in-horizontal-suit-stacks",
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "horizontal-suit-scroll-preserves-selection",
+            "width": 390,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 320,
+            "height": 568,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 360,
+            "height": 800,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 599,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 600,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 599,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 600,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1049,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1050,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1049,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1050,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1280,
+            "height": 720,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1280,
+            "height": 600,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1024,
+            "height": 768,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-keyboard-inspect-and-escape",
+            "pass": true
+          },
+          {
+            "case": "suit-stack-physical-card-touch-and-keyboard",
+            "pass": true
+          },
+          {
+            "case": "suit-stack-physical-card-touch-and-keyboard",
+            "pass": true
+          },
+          {
+            "case": "suit-stack-physical-card-touch-and-keyboard",
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-text200-touch-navigation",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-text200-touch-navigation",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-text200-touch-navigation",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-text200-touch-navigation",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "offscreen-card-after-pointer-short-text200-and-modal-reverse-tab",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "hand-interactions-without-command-posts",
+            "commandPosts": 0,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "fresh-normal-entry",
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 768,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 1200,
+            "pass": true
+          },
+          {
+            "case": "uniform-hand-cards-in-horizontal-suit-stacks",
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "horizontal-suit-scroll-preserves-selection",
+            "width": 390,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-keyboard-inspect-and-escape",
+            "pass": true
+          },
+          {
+            "case": "suit-stack-physical-card-touch-and-keyboard",
+            "pass": true
+          },
+          {
+            "case": "suit-stack-physical-card-touch-and-keyboard",
+            "pass": true
+          },
+          {
+            "case": "suit-stack-physical-card-touch-and-keyboard",
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-text200-touch-navigation",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-text200-touch-navigation",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-text200-touch-navigation",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-text200-touch-navigation",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "hand-interactions-without-command-posts",
+            "commandPosts": 0,
+            "pass": true
+          }
+        ],
+        "growthMeasurements": [
+          {
+            "width": 319,
+            "height": 948,
+            "table": {
+              "x": 8,
+              "y": 48,
+              "width": 303,
+              "height": 303
+            },
+            "cells": [
+              {
+                "x": 8,
+                "y": 48,
+                "width": 151.5,
+                "height": 151.5,
+                "top": 48,
+                "right": 159.5,
+                "bottom": 199.5,
+                "left": 8
+              },
+              {
+                "x": 159.5,
+                "y": 48,
+                "width": 151.5,
+                "height": 151.5,
+                "top": 48,
+                "right": 311,
+                "bottom": 199.5,
+                "left": 159.5
+              },
+              {
+                "x": 8,
+                "y": 199.5,
+                "width": 151.5,
+                "height": 151.5,
+                "top": 199.5,
+                "right": 159.5,
+                "bottom": 351,
+                "left": 8
+              },
+              {
+                "x": 159.5,
+                "y": 199.5,
+                "width": 151.5,
+                "height": 151.5,
+                "top": 199.5,
+                "right": 311,
+                "bottom": 351,
+                "left": 159.5
+              }
+            ],
+            "hand": {
+              "x": 8,
+              "y": 355,
+              "width": 303,
+              "height": 545
+            },
+            "footer": [
+              {
+                "x": 8,
+                "y": 900,
+                "width": 120.66665649414062,
+                "height": 48
+              },
+              {
+                "x": 140.66818237304688,
+                "y": 900,
+                "width": 96.43333435058594,
+                "height": 48
+              }
+            ]
+          },
+          {
+            "width": 390,
+            "height": 948,
+            "table": {
+              "x": 8,
+              "y": 48,
+              "width": 374,
+              "height": 372
+            },
+            "cells": [
+              {
+                "x": 8,
+                "y": 48,
+                "width": 187,
+                "height": 186,
+                "top": 48,
+                "right": 195,
+                "bottom": 234,
+                "left": 8
+              },
+              {
+                "x": 195,
+                "y": 48,
+                "width": 187,
+                "height": 186,
+                "top": 48,
+                "right": 382,
+                "bottom": 234,
+                "left": 195
+              },
+              {
+                "x": 8,
+                "y": 234,
+                "width": 187,
+                "height": 186,
+                "top": 234,
+                "right": 195,
+                "bottom": 420,
+                "left": 8
+              },
+              {
+                "x": 195,
+                "y": 234,
+                "width": 187,
+                "height": 186,
+                "top": 234,
+                "right": 382,
+                "bottom": 420,
+                "left": 195
+              }
+            ],
+            "hand": {
+              "x": 8,
+              "y": 424,
+              "width": 374,
+              "height": 476
+            },
+            "footer": [
+              {
+                "x": 8,
+                "y": 900,
+                "width": 120.66665649414062,
+                "height": 48
+              },
+              {
+                "x": 140.66818237304688,
+                "y": 900,
+                "width": 96.43333435058594,
+                "height": 48
+              }
+            ]
+          },
+          {
+            "width": 821,
+            "height": 948,
+            "table": {
+              "x": 8,
+              "y": 53,
+              "width": 805,
+              "height": 499.54998779296875
+            },
+            "cells": [
+              {
+                "x": 8,
+                "y": 53,
+                "width": 402.5,
+                "height": 249.76666259765625,
+                "top": 53,
+                "right": 410.5,
+                "bottom": 302.76666259765625,
+                "left": 8
+              },
+              {
+                "x": 410.5,
+                "y": 53,
+                "width": 402.5,
+                "height": 249.76666259765625,
+                "top": 53,
+                "right": 813,
+                "bottom": 302.76666259765625,
+                "left": 410.5
+              },
+              {
+                "x": 8,
+                "y": 302.76666259765625,
+                "width": 402.5,
+                "height": 249.7666778564453,
+                "top": 302.76666259765625,
+                "right": 410.5,
+                "bottom": 552.5333404541016,
+                "left": 8
+              },
+              {
+                "x": 410.5,
+                "y": 302.76666259765625,
+                "width": 402.5,
+                "height": 249.7666778564453,
+                "top": 302.76666259765625,
+                "right": 813,
+                "bottom": 552.5333404541016,
+                "left": 410.5
+              }
+            ],
+            "hand": {
+              "x": 8,
+              "y": 556.5428466796875,
+              "width": 805,
+              "height": 343.45001220703125
+            },
+            "footer": [
+              {
+                "x": 8,
+                "y": 900,
+                "width": 151.61666870117188,
+                "height": 48
+              },
+              {
+                "x": 171.62387084960938,
+                "y": 900,
+                "width": 118.93331909179688,
+                "height": 48
+              }
+            ]
+          },
+          {
+            "width": 1440,
+            "height": 948,
+            "table": {
+              "x": 8,
+              "y": 53,
+              "width": 1424,
+              "height": 499.54998779296875
+            },
+            "cells": [
+              {
+                "x": 8,
+                "y": 53,
+                "width": 712,
+                "height": 249.76666259765625,
+                "top": 53,
+                "right": 720,
+                "bottom": 302.76666259765625,
+                "left": 8
+              },
+              {
+                "x": 720,
+                "y": 53,
+                "width": 712,
+                "height": 249.76666259765625,
+                "top": 53,
+                "right": 1432,
+                "bottom": 302.76666259765625,
+                "left": 720
+              },
+              {
+                "x": 8,
+                "y": 302.76666259765625,
+                "width": 712,
+                "height": 249.7666778564453,
+                "top": 302.76666259765625,
+                "right": 720,
+                "bottom": 552.5333404541016,
+                "left": 8
+              },
+              {
+                "x": 720,
+                "y": 302.76666259765625,
+                "width": 712,
+                "height": 249.7666778564453,
+                "top": 302.76666259765625,
+                "right": 1432,
+                "bottom": 552.5333404541016,
+                "left": 720
+              }
+            ],
+            "hand": {
+              "x": 8,
+              "y": 556.5428466796875,
+              "width": 1424,
+              "height": 343.45001220703125
+            },
+            "footer": [
+              {
+                "x": 8,
+                "y": 900,
+                "width": 151.61666870117188,
+                "height": 48
+              },
+              {
+                "x": 171.62387084960938,
+                "y": 900,
+                "width": 118.93331909179688,
+                "height": 48
+              }
+            ]
+          },
+          {
+            "width": 821,
+            "height": 948,
+            "table": {
+              "x": 8,
+              "y": 53,
+              "width": 805,
+              "height": 499.54998779296875
+            },
+            "cells": [
+              {
+                "x": 8,
+                "y": 53,
+                "width": 402.5,
+                "height": 249.76666259765625,
+                "top": 53,
+                "right": 410.5,
+                "bottom": 302.76666259765625,
+                "left": 8
+              },
+              {
+                "x": 410.5,
+                "y": 53,
+                "width": 402.5,
+                "height": 249.76666259765625,
+                "top": 53,
+                "right": 813,
+                "bottom": 302.76666259765625,
+                "left": 410.5
+              },
+              {
+                "x": 8,
+                "y": 302.76666259765625,
+                "width": 402.5,
+                "height": 249.7666778564453,
+                "top": 302.76666259765625,
+                "right": 410.5,
+                "bottom": 552.5333404541016,
+                "left": 8
+              },
+              {
+                "x": 410.5,
+                "y": 302.76666259765625,
+                "width": 402.5,
+                "height": 249.7666778564453,
+                "top": 302.76666259765625,
+                "right": 813,
+                "bottom": 552.5333404541016,
+                "left": 410.5
+              }
+            ],
+            "hand": {
+              "x": 8,
+              "y": 556.5428466796875,
+              "width": 805,
+              "height": 343.45001220703125
+            },
+            "footer": [
+              {
+                "x": 8,
+                "y": 900,
+                "width": 151.61666870117188,
+                "height": 48
+              },
+              {
+                "x": 171.62387084960938,
+                "y": 900,
+                "width": 118.93331909179688,
+                "height": 48
+              }
+            ]
+          },
+          {
+            "width": 390,
+            "height": 948,
+            "table": {
+              "x": 8,
+              "y": 48,
+              "width": 374,
+              "height": 372
+            },
+            "cells": [
+              {
+                "x": 8,
+                "y": 48,
+                "width": 187,
+                "height": 186,
+                "top": 48,
+                "right": 195,
+                "bottom": 234,
+                "left": 8
+              },
+              {
+                "x": 195,
+                "y": 48,
+                "width": 187,
+                "height": 186,
+                "top": 48,
+                "right": 382,
+                "bottom": 234,
+                "left": 195
+              },
+              {
+                "x": 8,
+                "y": 234,
+                "width": 187,
+                "height": 186,
+                "top": 234,
+                "right": 195,
+                "bottom": 420,
+                "left": 8
+              },
+              {
+                "x": 195,
+                "y": 234,
+                "width": 187,
+                "height": 186,
+                "top": 234,
+                "right": 382,
+                "bottom": 420,
+                "left": 195
+              }
+            ],
+            "hand": {
+              "x": 8,
+              "y": 424,
+              "width": 374,
+              "height": 476
+            },
+            "footer": [
+              {
+                "x": 8,
+                "y": 900,
+                "width": 120.66665649414062,
+                "height": 48
+              },
+              {
+                "x": 140.66818237304688,
+                "y": 900,
+                "width": 96.43333435058594,
+                "height": 48
+              }
+            ]
+          },
+          {
+            "width": 319,
+            "height": 948,
+            "table": {
+              "x": 8,
+              "y": 48,
+              "width": 303,
+              "height": 303
+            },
+            "cells": [
+              {
+                "x": 8,
+                "y": 48,
+                "width": 151.5,
+                "height": 151.5,
+                "top": 48,
+                "right": 159.5,
+                "bottom": 199.5,
+                "left": 8
+              },
+              {
+                "x": 159.5,
+                "y": 48,
+                "width": 151.5,
+                "height": 151.5,
+                "top": 48,
+                "right": 311,
+                "bottom": 199.5,
+                "left": 159.5
+              },
+              {
+                "x": 8,
+                "y": 199.5,
+                "width": 151.5,
+                "height": 151.5,
+                "top": 199.5,
+                "right": 159.5,
+                "bottom": 351,
+                "left": 8
+              },
+              {
+                "x": 159.5,
+                "y": 199.5,
+                "width": 151.5,
+                "height": 151.5,
+                "top": 199.5,
+                "right": 311,
+                "bottom": 351,
+                "left": 159.5
+              }
+            ],
+            "hand": {
+              "x": 8,
+              "y": 355,
+              "width": 303,
+              "height": 545
+            },
+            "footer": [
+              {
+                "x": 8,
+                "y": 900,
+                "width": 120.66665649414062,
+                "height": 48
+              },
+              {
+                "x": 140.66818237304688,
+                "y": 900,
+                "width": 96.43333435058594,
+                "height": 48
+              }
+            ]
+          }
+        ],
+        "unexpectedErrors": [],
+        "expectedAuthenticationChallenges": [],
+        "runs": [
+          {
+            "log": "/tmp/agent-runs/fullwidth-normal-firefox-accepted--20261002T175836Z-2071969.log",
+            "sha256": "ea3ba2c2c0bcf9841e98fecf33cae4abd4ff6fa3608604e2f408e7533aaa0433",
+            "exit": 0
+          }
+        ],
+        "cellContainmentToleranceCssPx": 0.016727701822916666
+      },
+      {
+        "host": "online",
+        "engine": "firefox",
+        "version": "155.0",
+        "reportAtCapture": "client/.browser-tools/artifacts/fullwidth-final-online-firefox/firefox-quadrants-report.json",
+        "reportSha256": "33c975bb5ea857b535cfa573e00e393b0ee1ee80941987e534558cd7c6f9a545",
+        "assets": {
+          "index.html": "0cb17fca2f4289e6b33ac9c7e847cdfa8a763169f841d6a7140cb6f83a595c50",
+          "keyboard_bridge.js": "1a244bc7bc3e3f3802e715315bc6e4d0f36809a4d99754ac28ee54227583c261",
+          "flutter_bootstrap.js": "296c7f1058ee874c18daf4e1619bb32f6386430b643865b47fda9badd45df1eb",
+          "main.dart.js": "0f3908b52ecf21f4e232b7d538164bb61a8774c44ddf3a5603ea4a71aca6fe1e"
+        },
+        "caseCount": 14,
+        "cases": [
+          {
+            "case": "online-full-width-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "normal",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "online-full-width-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "normal",
+            "width": 320,
+            "height": 568,
+            "pass": true
+          },
+          {
+            "case": "online-full-width-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "normal",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "online-full-width-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "normal",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "online-full-width-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "normal",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "online-full-width-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "normal",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "online-full-width-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "rtl-text200",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "online-full-width-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "rtl-text200",
+            "width": 320,
+            "height": 568,
+            "pass": true
+          },
+          {
+            "case": "online-full-width-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "rtl-text200",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "online-full-width-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "rtl-text200",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "online-full-width-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "rtl-text200",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "online-full-width-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "rtl-text200",
+            "width": 1440,
+            "height": 1200,
+            "pass": true
+          },
+          {
+            "case": "online-full-width-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "rtl-text200",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "online-live-full-width-public-table-and-preview-composition-grow-at-fixed-height",
+            "navigations": 0,
+            "commandPosts": 0,
+            "beforeVersion": 0,
+            "afterVersion": 0,
+            "pass": true
+          }
+        ],
+        "growthMeasurements": [
+          {
+            "width": 319,
+            "height": 948,
+            "board": {
+              "x": 8,
+              "y": 56,
+              "width": 303,
+              "height": 892
+            },
+            "hand": {
+              "x": 8,
+              "y": 411,
+              "width": 303,
+              "height": 489
+            },
+            "initiallyVisibleCards": [
+              {
+                "label": "A of Hearts, copy 1 concealed-ace",
+                "width": 72,
+                "height": 90
+              },
+              {
+                "label": "Q of Hearts, copy 1 hand",
+                "width": 72,
+                "height": 90
+              }
+            ],
+            "footer": [
+              {
+                "label": "Trade cards",
+                "width": 120.66667175292969,
+                "height": 48
+              },
+              {
+                "label": "End Turn",
+                "width": 99.16665649414062,
+                "height": 48
+              }
+            ],
+            "table": {
+              "x": 8,
+              "y": 104,
+              "width": 303,
+              "height": 303
+            },
+            "quadrants": [
+              {
+                "x": 8,
+                "y": 104,
+                "width": 151.5,
+                "height": 151.5
+              },
+              {
+                "x": 159.5,
+                "y": 104,
+                "width": 151.5,
+                "height": 151.5
+              },
+              {
+                "x": 8,
+                "y": 255.5,
+                "width": 151.5,
+                "height": 151.5
+              },
+              {
+                "x": 159.5,
+                "y": 255.5,
+                "width": 151.5,
+                "height": 151.5
+              }
+            ]
+          },
+          {
+            "width": 390,
+            "height": 948,
+            "board": {
+              "x": 8,
+              "y": 56,
+              "width": 374,
+              "height": 892
+            },
+            "hand": {
+              "x": 8,
+              "y": 480,
+              "width": 374,
+              "height": 420
+            },
+            "initiallyVisibleCards": [
+              {
+                "label": "A of Hearts, copy 1 concealed-ace",
+                "width": 72,
+                "height": 90
+              },
+              {
+                "label": "Q of Hearts, copy 1 hand",
+                "width": 72,
+                "height": 90
+              }
+            ],
+            "footer": [
+              {
+                "label": "Trade cards",
+                "width": 120.66667175292969,
+                "height": 48
+              },
+              {
+                "label": "End Turn",
+                "width": 99.16665649414062,
+                "height": 48
+              }
+            ],
+            "table": {
+              "x": 8,
+              "y": 104,
+              "width": 374,
+              "height": 372
+            },
+            "quadrants": [
+              {
+                "x": 8,
+                "y": 104,
+                "width": 187,
+                "height": 186
+              },
+              {
+                "x": 195,
+                "y": 104,
+                "width": 187,
+                "height": 186
+              },
+              {
+                "x": 8,
+                "y": 290,
+                "width": 187,
+                "height": 186
+              },
+              {
+                "x": 195,
+                "y": 290,
+                "width": 187,
+                "height": 186
+              }
+            ]
+          },
+          {
+            "width": 821,
+            "height": 948,
+            "board": {
+              "x": 8,
+              "y": 56,
+              "width": 805,
+              "height": 892
+            },
+            "hand": {
+              "x": 8,
+              "y": 578.7428588867188,
+              "width": 805,
+              "height": 321.25
+            },
+            "initiallyVisibleCards": [
+              {
+                "label": "A of Hearts, copy 1 concealed-ace",
+                "width": 91.75,
+                "height": 114.68333435058594
+              },
+              {
+                "label": "Q of Hearts, copy 1 hand",
+                "width": 91.75,
+                "height": 114.68333435058594
+              }
+            ],
+            "footer": [
+              {
+                "label": "Trade cards",
+                "width": 144.61666870117188,
+                "height": 48
+              },
+              {
+                "label": "End Turn",
+                "width": 117.31666564941406,
+                "height": 48
+              }
+            ],
+            "table": {
+              "x": 8,
+              "y": 104,
+              "width": 805,
+              "height": 470.75
+            },
+            "quadrants": [
+              {
+                "x": 8,
+                "y": 104,
+                "width": 402.5,
+                "height": 235.36666870117188
+              },
+              {
+                "x": 410.5,
+                "y": 104,
+                "width": 402.5,
+                "height": 235.36666870117188
+              },
+              {
+                "x": 8,
+                "y": 339.3714294433594,
+                "width": 402.5,
+                "height": 235.36666870117188
+              },
+              {
+                "x": 410.5,
+                "y": 339.3714294433594,
+                "width": 402.5,
+                "height": 235.36666870117188
+              }
+            ]
+          },
+          {
+            "width": 1440,
+            "height": 948,
+            "board": {
+              "x": 8,
+              "y": 56,
+              "width": 1424,
+              "height": 892
+            },
+            "hand": {
+              "x": 8,
+              "y": 578.7428588867188,
+              "width": 1424,
+              "height": 321.25
+            },
+            "initiallyVisibleCards": [
+              {
+                "label": "A of Hearts, copy 1 concealed-ace",
+                "width": 91.75,
+                "height": 114.68333435058594
+              },
+              {
+                "label": "Q of Hearts, copy 1 hand",
+                "width": 91.75,
+                "height": 114.68333435058594
+              }
+            ],
+            "footer": [
+              {
+                "label": "Trade cards",
+                "width": 144.61666870117188,
+                "height": 48
+              },
+              {
+                "label": "End Turn",
+                "width": 117.31666564941406,
+                "height": 48
+              }
+            ],
+            "table": {
+              "x": 8,
+              "y": 104,
+              "width": 1424,
+              "height": 470.75
+            },
+            "quadrants": [
+              {
+                "x": 8,
+                "y": 104,
+                "width": 712,
+                "height": 235.36666870117188
+              },
+              {
+                "x": 720,
+                "y": 104,
+                "width": 712,
+                "height": 235.36666870117188
+              },
+              {
+                "x": 8,
+                "y": 339.3714294433594,
+                "width": 712,
+                "height": 235.36666870117188
+              },
+              {
+                "x": 720,
+                "y": 339.3714294433594,
+                "width": 712,
+                "height": 235.36666870117188
+              }
+            ]
+          },
+          {
+            "width": 821,
+            "height": 948,
+            "board": {
+              "x": 8,
+              "y": 56,
+              "width": 805,
+              "height": 892
+            },
+            "hand": {
+              "x": 8,
+              "y": 578.7428588867188,
+              "width": 805,
+              "height": 321.25
+            },
+            "initiallyVisibleCards": [
+              {
+                "label": "A of Hearts, copy 1 concealed-ace",
+                "width": 91.75,
+                "height": 114.68333435058594
+              },
+              {
+                "label": "Q of Hearts, copy 1 hand",
+                "width": 91.75,
+                "height": 114.68333435058594
+              }
+            ],
+            "footer": [
+              {
+                "label": "Trade cards",
+                "width": 144.61666870117188,
+                "height": 48
+              },
+              {
+                "label": "End Turn",
+                "width": 117.31666564941406,
+                "height": 48
+              }
+            ],
+            "table": {
+              "x": 8,
+              "y": 104,
+              "width": 805,
+              "height": 470.75
+            },
+            "quadrants": [
+              {
+                "x": 8,
+                "y": 104,
+                "width": 402.5,
+                "height": 235.36666870117188
+              },
+              {
+                "x": 410.5,
+                "y": 104,
+                "width": 402.5,
+                "height": 235.36666870117188
+              },
+              {
+                "x": 8,
+                "y": 339.3714294433594,
+                "width": 402.5,
+                "height": 235.36666870117188
+              },
+              {
+                "x": 410.5,
+                "y": 339.3714294433594,
+                "width": 402.5,
+                "height": 235.36666870117188
+              }
+            ]
+          },
+          {
+            "width": 390,
+            "height": 948,
+            "board": {
+              "x": 8,
+              "y": 56,
+              "width": 374,
+              "height": 892
+            },
+            "hand": {
+              "x": 8,
+              "y": 480,
+              "width": 374,
+              "height": 420
+            },
+            "initiallyVisibleCards": [
+              {
+                "label": "A of Hearts, copy 1 concealed-ace",
+                "width": 72,
+                "height": 90
+              },
+              {
+                "label": "Q of Hearts, copy 1 hand",
+                "width": 72,
+                "height": 90
+              }
+            ],
+            "footer": [
+              {
+                "label": "Trade cards",
+                "width": 120.66667175292969,
+                "height": 48
+              },
+              {
+                "label": "End Turn",
+                "width": 99.16665649414062,
+                "height": 48
+              }
+            ],
+            "table": {
+              "x": 8,
+              "y": 104,
+              "width": 374,
+              "height": 372
+            },
+            "quadrants": [
+              {
+                "x": 8,
+                "y": 104,
+                "width": 187,
+                "height": 186
+              },
+              {
+                "x": 195,
+                "y": 104,
+                "width": 187,
+                "height": 186
+              },
+              {
+                "x": 8,
+                "y": 290,
+                "width": 187,
+                "height": 186
+              },
+              {
+                "x": 195,
+                "y": 290,
+                "width": 187,
+                "height": 186
+              }
+            ]
+          },
+          {
+            "width": 319,
+            "height": 948,
+            "board": {
+              "x": 8,
+              "y": 56,
+              "width": 303,
+              "height": 892
+            },
+            "hand": {
+              "x": 8,
+              "y": 411,
+              "width": 303,
+              "height": 489
+            },
+            "initiallyVisibleCards": [
+              {
+                "label": "A of Hearts, copy 1 concealed-ace",
+                "width": 72,
+                "height": 90
+              },
+              {
+                "label": "Q of Hearts, copy 1 hand",
+                "width": 72,
+                "height": 90
+              }
+            ],
+            "footer": [
+              {
+                "label": "Trade cards",
+                "width": 120.66667175292969,
+                "height": 48
+              },
+              {
+                "label": "End Turn",
+                "width": 99.16665649414062,
+                "height": 48
+              }
+            ],
+            "table": {
+              "x": 8,
+              "y": 104,
+              "width": 303,
+              "height": 303
+            },
+            "quadrants": [
+              {
+                "x": 8,
+                "y": 104,
+                "width": 151.5,
+                "height": 151.5
+              },
+              {
+                "x": 159.5,
+                "y": 104,
+                "width": 151.5,
+                "height": 151.5
+              },
+              {
+                "x": 8,
+                "y": 255.5,
+                "width": 151.5,
+                "height": 151.5
+              },
+              {
+                "x": 159.5,
+                "y": 255.5,
+                "width": 151.5,
+                "height": 151.5
+              }
+            ]
+          }
+        ],
+        "unexpectedErrors": [],
+        "expectedAuthenticationChallenges": [],
+        "runs": [
+          {
+            "log": "/tmp/agent-runs/fullwidth-online-firefox--20261002T175836Z-2071982.log",
+            "sha256": "45652c748d920952b16ff8d291c7680c72daa772abf9ebc358809458f81651aa",
+            "exit": 0
+          }
+        ],
+        "cellContainmentToleranceCssPx": 0.016727701822916666,
+        "harnessSha256": {
+          "browser_acceptance.cjs": "8f34ec9295ed3e43d317eeec2ce5990010332e05313aa8be1839fa5233f57f63",
+          "browser_faults.cjs": "334439124fbdf5a2ba5056adb3655b53ffaa256797ffa7c6c9bccd705f5ea479"
+        }
+      },
+      {
+        "host": "normal",
+        "engine": "webkit",
+        "version": "26.6",
+        "reportAtCapture": "client/.browser-tools/artifacts/fullwidth-final-normal-webkit/report.json",
+        "reportSha256": "b3c583f7fb2d2b7ced35013014896b240424d8b111e9b0aaf63138dd7eff168f",
+        "assets": {
+          "main.dart.js": "0f3908b52ecf21f4e232b7d538164bb61a8774c44ddf3a5603ea4a71aca6fe1e",
+          "index.html": "0cb17fca2f4289e6b33ac9c7e847cdfa8a763169f841d6a7140cb6f83a595c50",
+          "keyboard_bridge.js": "1a244bc7bc3e3f3802e715315bc6e4d0f36809a4d99754ac28ee54227583c261",
+          "flutter_bootstrap.js": "296c7f1058ee874c18daf4e1619bb32f6386430b643865b47fda9badd45df1eb"
+        },
+        "caseCount": 103,
+        "cases": [
+          {
+            "case": "trusted-native-tab-bridge-handled-reverse-outside-and-exit",
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 390,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 821,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 821,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 1440,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 821,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 821,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 390,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "live-full-width-public-table-and-preview-composition-grow-at-fixed-height",
+            "navigations": 0,
+            "commandPosts": 0,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "narrow-public-chooser-and-actions-preserve-visible-hand",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 320,
+            "height": 568,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 320,
+            "height": 568,
+            "pass": true
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "width": 320,
+            "height": 568,
+            "pass": true
+          },
+          {
+            "case": "narrow-public-chooser-and-actions-preserve-visible-hand",
+            "width": 320,
+            "height": 568,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "fresh-normal-entry",
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 768,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 1200,
+            "pass": true
+          },
+          {
+            "case": "uniform-hand-cards-in-horizontal-suit-stacks",
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "horizontal-suit-scroll-preserves-selection",
+            "width": 390,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 320,
+            "height": 568,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 360,
+            "height": 800,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 599,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 600,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 599,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 600,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1049,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1050,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1049,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1050,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1280,
+            "height": 720,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1280,
+            "height": 600,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1024,
+            "height": 768,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-keyboard-inspect-and-escape",
+            "pass": true
+          },
+          {
+            "case": "suit-stack-physical-card-touch-and-keyboard",
+            "pass": true
+          },
+          {
+            "case": "suit-stack-physical-card-touch-and-keyboard",
+            "pass": true
+          },
+          {
+            "case": "suit-stack-physical-card-touch-and-keyboard",
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-text200-touch-navigation",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-text200-touch-navigation",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-text200-touch-navigation",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-text200-touch-navigation",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "offscreen-card-after-pointer-short-text200-and-modal-reverse-tab",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "hand-interactions-without-command-posts",
+            "commandPosts": 0,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "fresh-normal-entry",
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 768,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 1200,
+            "pass": true
+          },
+          {
+            "case": "uniform-hand-cards-in-horizontal-suit-stacks",
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "horizontal-suit-scroll-preserves-selection",
+            "width": 390,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-keyboard-inspect-and-escape",
+            "pass": true
+          },
+          {
+            "case": "suit-stack-physical-card-touch-and-keyboard",
+            "pass": true
+          },
+          {
+            "case": "suit-stack-physical-card-touch-and-keyboard",
+            "pass": true
+          },
+          {
+            "case": "suit-stack-physical-card-touch-and-keyboard",
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-text200-touch-navigation",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-text200-touch-navigation",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-text200-touch-navigation",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "normal-entry-text200-touch-navigation",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "hand-interactions-without-command-posts",
+            "commandPosts": 0,
+            "pass": true
+          }
+        ],
+        "growthMeasurements": [
+          {
+            "width": 319,
+            "height": 948,
+            "table": {
+              "x": 8,
+              "y": 48,
+              "width": 303,
+              "height": 303
+            },
+            "cells": [
+              {
+                "x": 8,
+                "y": 48,
+                "width": 151.5,
+                "height": 151.5,
+                "top": 48,
+                "right": 159.5,
+                "bottom": 199.5,
+                "left": 8
+              },
+              {
+                "x": 159.5,
+                "y": 48,
+                "width": 151.5,
+                "height": 151.5,
+                "top": 48,
+                "right": 311,
+                "bottom": 199.5,
+                "left": 159.5
+              },
+              {
+                "x": 8,
+                "y": 199.5,
+                "width": 151.5,
+                "height": 151.5,
+                "top": 199.5,
+                "right": 159.5,
+                "bottom": 351,
+                "left": 8
+              },
+              {
+                "x": 159.5,
+                "y": 199.5,
+                "width": 151.5,
+                "height": 151.5,
+                "top": 199.5,
+                "right": 311,
+                "bottom": 351,
+                "left": 159.5
+              }
+            ],
+            "hand": {
+              "x": 8,
+              "y": 355,
+              "width": 303,
+              "height": 545
+            },
+            "footer": [
+              {
+                "x": 8,
+                "y": 900,
+                "width": 120.65625,
+                "height": 48
+              },
+              {
+                "x": 140.66818237304688,
+                "y": 900,
+                "width": 96.421875,
+                "height": 48
+              }
+            ]
+          },
+          {
+            "width": 390,
+            "height": 948,
+            "table": {
+              "x": 8,
+              "y": 48,
+              "width": 374,
+              "height": 372
+            },
+            "cells": [
+              {
+                "x": 8,
+                "y": 48,
+                "width": 187,
+                "height": 186,
+                "top": 48,
+                "right": 195,
+                "bottom": 234,
+                "left": 8
+              },
+              {
+                "x": 195,
+                "y": 48,
+                "width": 187,
+                "height": 186,
+                "top": 48,
+                "right": 382,
+                "bottom": 234,
+                "left": 195
+              },
+              {
+                "x": 8,
+                "y": 234,
+                "width": 187,
+                "height": 186,
+                "top": 234,
+                "right": 195,
+                "bottom": 420,
+                "left": 8
+              },
+              {
+                "x": 195,
+                "y": 234,
+                "width": 187,
+                "height": 186,
+                "top": 234,
+                "right": 382,
+                "bottom": 420,
+                "left": 195
+              }
+            ],
+            "hand": {
+              "x": 8,
+              "y": 424,
+              "width": 374,
+              "height": 476
+            },
+            "footer": [
+              {
+                "x": 8,
+                "y": 900,
+                "width": 120.65625,
+                "height": 48
+              },
+              {
+                "x": 140.66818237304688,
+                "y": 900,
+                "width": 96.421875,
+                "height": 48
+              }
+            ]
+          },
+          {
+            "width": 821,
+            "height": 948,
+            "table": {
+              "x": 8,
+              "y": 53,
+              "width": 805,
+              "height": 499.53125
+            },
+            "cells": [
+              {
+                "x": 8,
+                "y": 53,
+                "width": 402.5,
+                "height": 249.765625,
+                "top": 53,
+                "right": 410.5,
+                "bottom": 302.765625,
+                "left": 8
+              },
+              {
+                "x": 410.5,
+                "y": 53,
+                "width": 402.5,
+                "height": 249.765625,
+                "top": 53,
+                "right": 813,
+                "bottom": 302.765625,
+                "left": 410.5
+              },
+              {
+                "x": 8,
+                "y": 302.77142333984375,
+                "width": 402.5,
+                "height": 249.765625,
+                "top": 302.77142333984375,
+                "right": 410.5,
+                "bottom": 552.5370483398438,
+                "left": 8
+              },
+              {
+                "x": 410.5,
+                "y": 302.77142333984375,
+                "width": 402.5,
+                "height": 249.765625,
+                "top": 302.77142333984375,
+                "right": 813,
+                "bottom": 552.5370483398438,
+                "left": 410.5
+              }
+            ],
+            "hand": {
+              "x": 8,
+              "y": 556.5428466796875,
+              "width": 805,
+              "height": 343.453125
+            },
+            "footer": [
+              {
+                "x": 8,
+                "y": 900,
+                "width": 151.609375,
+                "height": 48
+              },
+              {
+                "x": 171.62387084960938,
+                "y": 900,
+                "width": 118.921875,
+                "height": 48
+              }
+            ]
+          },
+          {
+            "width": 1440,
+            "height": 948,
+            "table": {
+              "x": 8,
+              "y": 53,
+              "width": 1424,
+              "height": 499.53125
+            },
+            "cells": [
+              {
+                "x": 8,
+                "y": 53,
+                "width": 712,
+                "height": 249.765625,
+                "top": 53,
+                "right": 720,
+                "bottom": 302.765625,
+                "left": 8
+              },
+              {
+                "x": 720,
+                "y": 53,
+                "width": 712,
+                "height": 249.765625,
+                "top": 53,
+                "right": 1432,
+                "bottom": 302.765625,
+                "left": 720
+              },
+              {
+                "x": 8,
+                "y": 302.77142333984375,
+                "width": 712,
+                "height": 249.765625,
+                "top": 302.77142333984375,
+                "right": 720,
+                "bottom": 552.5370483398438,
+                "left": 8
+              },
+              {
+                "x": 720,
+                "y": 302.77142333984375,
+                "width": 712,
+                "height": 249.765625,
+                "top": 302.77142333984375,
+                "right": 1432,
+                "bottom": 552.5370483398438,
+                "left": 720
+              }
+            ],
+            "hand": {
+              "x": 8,
+              "y": 556.5428466796875,
+              "width": 1424,
+              "height": 343.453125
+            },
+            "footer": [
+              {
+                "x": 8,
+                "y": 900,
+                "width": 151.609375,
+                "height": 48
+              },
+              {
+                "x": 171.62387084960938,
+                "y": 900,
+                "width": 118.921875,
+                "height": 48
+              }
+            ]
+          },
+          {
+            "width": 821,
+            "height": 948,
+            "table": {
+              "x": 8,
+              "y": 53,
+              "width": 805,
+              "height": 499.53125
+            },
+            "cells": [
+              {
+                "x": 8,
+                "y": 53,
+                "width": 402.5,
+                "height": 249.765625,
+                "top": 53,
+                "right": 410.5,
+                "bottom": 302.765625,
+                "left": 8
+              },
+              {
+                "x": 410.5,
+                "y": 53,
+                "width": 402.5,
+                "height": 249.765625,
+                "top": 53,
+                "right": 813,
+                "bottom": 302.765625,
+                "left": 410.5
+              },
+              {
+                "x": 8,
+                "y": 302.77142333984375,
+                "width": 402.5,
+                "height": 249.765625,
+                "top": 302.77142333984375,
+                "right": 410.5,
+                "bottom": 552.5370483398438,
+                "left": 8
+              },
+              {
+                "x": 410.5,
+                "y": 302.77142333984375,
+                "width": 402.5,
+                "height": 249.765625,
+                "top": 302.77142333984375,
+                "right": 813,
+                "bottom": 552.5370483398438,
+                "left": 410.5
+              }
+            ],
+            "hand": {
+              "x": 8,
+              "y": 556.5428466796875,
+              "width": 805,
+              "height": 343.453125
+            },
+            "footer": [
+              {
+                "x": 8,
+                "y": 900,
+                "width": 151.609375,
+                "height": 48
+              },
+              {
+                "x": 171.62387084960938,
+                "y": 900,
+                "width": 118.921875,
+                "height": 48
+              }
+            ]
+          },
+          {
+            "width": 390,
+            "height": 948,
+            "table": {
+              "x": 8,
+              "y": 48,
+              "width": 374,
+              "height": 372
+            },
+            "cells": [
+              {
+                "x": 8,
+                "y": 48,
+                "width": 187,
+                "height": 186,
+                "top": 48,
+                "right": 195,
+                "bottom": 234,
+                "left": 8
+              },
+              {
+                "x": 195,
+                "y": 48,
+                "width": 187,
+                "height": 186,
+                "top": 48,
+                "right": 382,
+                "bottom": 234,
+                "left": 195
+              },
+              {
+                "x": 8,
+                "y": 234,
+                "width": 187,
+                "height": 186,
+                "top": 234,
+                "right": 195,
+                "bottom": 420,
+                "left": 8
+              },
+              {
+                "x": 195,
+                "y": 234,
+                "width": 187,
+                "height": 186,
+                "top": 234,
+                "right": 382,
+                "bottom": 420,
+                "left": 195
+              }
+            ],
+            "hand": {
+              "x": 8,
+              "y": 424,
+              "width": 374,
+              "height": 476
+            },
+            "footer": [
+              {
+                "x": 8,
+                "y": 900,
+                "width": 120.65625,
+                "height": 48
+              },
+              {
+                "x": 140.66818237304688,
+                "y": 900,
+                "width": 96.421875,
+                "height": 48
+              }
+            ]
+          },
+          {
+            "width": 319,
+            "height": 948,
+            "table": {
+              "x": 8,
+              "y": 48,
+              "width": 303,
+              "height": 303
+            },
+            "cells": [
+              {
+                "x": 8,
+                "y": 48,
+                "width": 151.5,
+                "height": 151.5,
+                "top": 48,
+                "right": 159.5,
+                "bottom": 199.5,
+                "left": 8
+              },
+              {
+                "x": 159.5,
+                "y": 48,
+                "width": 151.5,
+                "height": 151.5,
+                "top": 48,
+                "right": 311,
+                "bottom": 199.5,
+                "left": 159.5
+              },
+              {
+                "x": 8,
+                "y": 199.5,
+                "width": 151.5,
+                "height": 151.5,
+                "top": 199.5,
+                "right": 159.5,
+                "bottom": 351,
+                "left": 8
+              },
+              {
+                "x": 159.5,
+                "y": 199.5,
+                "width": 151.5,
+                "height": 151.5,
+                "top": 199.5,
+                "right": 311,
+                "bottom": 351,
+                "left": 159.5
+              }
+            ],
+            "hand": {
+              "x": 8,
+              "y": 355,
+              "width": 303,
+              "height": 545
+            },
+            "footer": [
+              {
+                "x": 8,
+                "y": 900,
+                "width": 120.65625,
+                "height": 48
+              },
+              {
+                "x": 140.66818237304688,
+                "y": 900,
+                "width": 96.421875,
+                "height": 48
+              }
+            ]
+          }
+        ],
+        "unexpectedErrors": [],
+        "expectedAuthenticationChallenges": [],
+        "runs": [
+          {
+            "log": "/tmp/agent-runs/fullwidth-normal-webkit--20261002T175427Z-2061433.log",
+            "sha256": "77f9c66581c3852bc810c68365e91a16ce976f58aa42eff2e4b349fdb0020148",
+            "exit": 0
+          }
+        ]
+      },
+      {
+        "host": "online",
+        "engine": "webkit",
+        "version": "26.6",
+        "reportAtCapture": "client/.browser-tools/artifacts/fullwidth-final-online-webkit/webkit-quadrants-report.json",
+        "reportSha256": "9de3fe006ed4a096f3534956016aded635ab1d75ce77686d5703a2229336c4c1",
+        "assets": {
+          "index.html": "0cb17fca2f4289e6b33ac9c7e847cdfa8a763169f841d6a7140cb6f83a595c50",
+          "keyboard_bridge.js": "1a244bc7bc3e3f3802e715315bc6e4d0f36809a4d99754ac28ee54227583c261",
+          "flutter_bootstrap.js": "296c7f1058ee874c18daf4e1619bb32f6386430b643865b47fda9badd45df1eb",
+          "main.dart.js": "0f3908b52ecf21f4e232b7d538164bb61a8774c44ddf3a5603ea4a71aca6fe1e"
+        },
+        "caseCount": 14,
+        "cases": [
+          {
+            "case": "online-full-width-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "normal",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "online-full-width-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "normal",
+            "width": 320,
+            "height": 568,
+            "pass": true
+          },
+          {
+            "case": "online-full-width-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "normal",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "online-full-width-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "normal",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "online-full-width-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "normal",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "online-full-width-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "normal",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "online-full-width-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "rtl-text200",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "online-full-width-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "rtl-text200",
+            "width": 320,
+            "height": 568,
+            "pass": true
+          },
+          {
+            "case": "online-full-width-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "rtl-text200",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "online-full-width-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "rtl-text200",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "online-full-width-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "rtl-text200",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "online-full-width-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "rtl-text200",
+            "width": 1440,
+            "height": 1200,
+            "pass": true
+          },
+          {
+            "case": "online-full-width-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "mode": "rtl-text200",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "online-live-full-width-public-table-and-preview-composition-grow-at-fixed-height",
+            "navigations": 0,
+            "commandPosts": 0,
+            "beforeVersion": 0,
+            "afterVersion": 0,
+            "pass": true
+          }
+        ],
+        "growthMeasurements": [
+          {
+            "width": 319,
+            "height": 948,
+            "board": {
+              "x": 8,
+              "y": 56,
+              "width": 303,
+              "height": 892
+            },
+            "hand": {
+              "x": 8,
+              "y": 411,
+              "width": 303,
+              "height": 489
+            },
+            "initiallyVisibleCards": [
+              {
+                "label": "A of Hearts, copy 1 concealed-ace",
+                "width": 72,
+                "height": 90
+              },
+              {
+                "label": "Q of Hearts, copy 1 hand",
+                "width": 72,
+                "height": 90
+              }
+            ],
+            "footer": [
+              {
+                "label": "Trade cards",
+                "width": 120.65625,
+                "height": 48
+              },
+              {
+                "label": "End Turn",
+                "width": 99.15625,
+                "height": 48
+              }
+            ],
+            "table": {
+              "x": 8,
+              "y": 104,
+              "width": 303,
+              "height": 303
+            },
+            "quadrants": [
+              {
+                "x": 8,
+                "y": 104,
+                "width": 151.5,
+                "height": 151.5
+              },
+              {
+                "x": 159.5,
+                "y": 104,
+                "width": 151.5,
+                "height": 151.5
+              },
+              {
+                "x": 8,
+                "y": 255.5,
+                "width": 151.5,
+                "height": 151.5
+              },
+              {
+                "x": 159.5,
+                "y": 255.5,
+                "width": 151.5,
+                "height": 151.5
+              }
+            ]
+          },
+          {
+            "width": 390,
+            "height": 948,
+            "board": {
+              "x": 8,
+              "y": 56,
+              "width": 374,
+              "height": 892
+            },
+            "hand": {
+              "x": 8,
+              "y": 480,
+              "width": 374,
+              "height": 420
+            },
+            "initiallyVisibleCards": [
+              {
+                "label": "A of Hearts, copy 1 concealed-ace",
+                "width": 72,
+                "height": 90
+              },
+              {
+                "label": "Q of Hearts, copy 1 hand",
+                "width": 72,
+                "height": 90
+              }
+            ],
+            "footer": [
+              {
+                "label": "Trade cards",
+                "width": 120.65625,
+                "height": 48
+              },
+              {
+                "label": "End Turn",
+                "width": 99.15625,
+                "height": 48
+              }
+            ],
+            "table": {
+              "x": 8,
+              "y": 104,
+              "width": 374,
+              "height": 372
+            },
+            "quadrants": [
+              {
+                "x": 8,
+                "y": 104,
+                "width": 187,
+                "height": 186
+              },
+              {
+                "x": 195,
+                "y": 104,
+                "width": 187,
+                "height": 186
+              },
+              {
+                "x": 8,
+                "y": 290,
+                "width": 187,
+                "height": 186
+              },
+              {
+                "x": 195,
+                "y": 290,
+                "width": 187,
+                "height": 186
+              }
+            ]
+          },
+          {
+            "width": 821,
+            "height": 948,
+            "board": {
+              "x": 8,
+              "y": 56,
+              "width": 805,
+              "height": 892
+            },
+            "hand": {
+              "x": 8,
+              "y": 578.7428588867188,
+              "width": 805,
+              "height": 321.25
+            },
+            "initiallyVisibleCards": [
+              {
+                "label": "A of Hearts, copy 1 concealed-ace",
+                "width": 91.734375,
+                "height": 114.671875
+              },
+              {
+                "label": "Q of Hearts, copy 1 hand",
+                "width": 91.734375,
+                "height": 114.671875
+              }
+            ],
+            "footer": [
+              {
+                "label": "Trade cards",
+                "width": 144.609375,
+                "height": 48
+              },
+              {
+                "label": "End Turn",
+                "width": 117.3125,
+                "height": 48
+              }
+            ],
+            "table": {
+              "x": 8,
+              "y": 104,
+              "width": 805,
+              "height": 470.734375
+            },
+            "quadrants": [
+              {
+                "x": 8,
+                "y": 104,
+                "width": 402.5,
+                "height": 235.359375
+              },
+              {
+                "x": 410.5,
+                "y": 104,
+                "width": 402.5,
+                "height": 235.359375
+              },
+              {
+                "x": 8,
+                "y": 339.3714294433594,
+                "width": 402.5,
+                "height": 235.35940551757812
+              },
+              {
+                "x": 410.5,
+                "y": 339.3714294433594,
+                "width": 402.5,
+                "height": 235.35940551757812
+              }
+            ]
+          },
+          {
+            "width": 1440,
+            "height": 948,
+            "board": {
+              "x": 8,
+              "y": 56,
+              "width": 1424,
+              "height": 892
+            },
+            "hand": {
+              "x": 8,
+              "y": 578.7428588867188,
+              "width": 1424,
+              "height": 321.25
+            },
+            "initiallyVisibleCards": [
+              {
+                "label": "A of Hearts, copy 1 concealed-ace",
+                "width": 91.734375,
+                "height": 114.671875
+              },
+              {
+                "label": "Q of Hearts, copy 1 hand",
+                "width": 91.734375,
+                "height": 114.671875
+              }
+            ],
+            "footer": [
+              {
+                "label": "Trade cards",
+                "width": 144.609375,
+                "height": 48
+              },
+              {
+                "label": "End Turn",
+                "width": 117.3125,
+                "height": 48
+              }
+            ],
+            "table": {
+              "x": 8,
+              "y": 104,
+              "width": 1424,
+              "height": 470.734375
+            },
+            "quadrants": [
+              {
+                "x": 8,
+                "y": 104,
+                "width": 712,
+                "height": 235.359375
+              },
+              {
+                "x": 720,
+                "y": 104,
+                "width": 712,
+                "height": 235.359375
+              },
+              {
+                "x": 8,
+                "y": 339.3714294433594,
+                "width": 712,
+                "height": 235.35940551757812
+              },
+              {
+                "x": 720,
+                "y": 339.3714294433594,
+                "width": 712,
+                "height": 235.35940551757812
+              }
+            ]
+          },
+          {
+            "width": 821,
+            "height": 948,
+            "board": {
+              "x": 8,
+              "y": 56,
+              "width": 805,
+              "height": 892
+            },
+            "hand": {
+              "x": 8,
+              "y": 578.7428588867188,
+              "width": 805,
+              "height": 321.25
+            },
+            "initiallyVisibleCards": [
+              {
+                "label": "A of Hearts, copy 1 concealed-ace",
+                "width": 91.734375,
+                "height": 114.671875
+              },
+              {
+                "label": "Q of Hearts, copy 1 hand",
+                "width": 91.734375,
+                "height": 114.671875
+              }
+            ],
+            "footer": [
+              {
+                "label": "Trade cards",
+                "width": 144.609375,
+                "height": 48
+              },
+              {
+                "label": "End Turn",
+                "width": 117.3125,
+                "height": 48
+              }
+            ],
+            "table": {
+              "x": 8,
+              "y": 104,
+              "width": 805,
+              "height": 470.734375
+            },
+            "quadrants": [
+              {
+                "x": 8,
+                "y": 104,
+                "width": 402.5,
+                "height": 235.359375
+              },
+              {
+                "x": 410.5,
+                "y": 104,
+                "width": 402.5,
+                "height": 235.359375
+              },
+              {
+                "x": 8,
+                "y": 339.3714294433594,
+                "width": 402.5,
+                "height": 235.35940551757812
+              },
+              {
+                "x": 410.5,
+                "y": 339.3714294433594,
+                "width": 402.5,
+                "height": 235.35940551757812
+              }
+            ]
+          },
+          {
+            "width": 390,
+            "height": 948,
+            "board": {
+              "x": 8,
+              "y": 56,
+              "width": 374,
+              "height": 892
+            },
+            "hand": {
+              "x": 8,
+              "y": 480,
+              "width": 374,
+              "height": 420
+            },
+            "initiallyVisibleCards": [
+              {
+                "label": "A of Hearts, copy 1 concealed-ace",
+                "width": 72,
+                "height": 90
+              },
+              {
+                "label": "Q of Hearts, copy 1 hand",
+                "width": 72,
+                "height": 90
+              }
+            ],
+            "footer": [
+              {
+                "label": "Trade cards",
+                "width": 120.65625,
+                "height": 48
+              },
+              {
+                "label": "End Turn",
+                "width": 99.15625,
+                "height": 48
+              }
+            ],
+            "table": {
+              "x": 8,
+              "y": 104,
+              "width": 374,
+              "height": 372
+            },
+            "quadrants": [
+              {
+                "x": 8,
+                "y": 104,
+                "width": 187,
+                "height": 186
+              },
+              {
+                "x": 195,
+                "y": 104,
+                "width": 187,
+                "height": 186
+              },
+              {
+                "x": 8,
+                "y": 290,
+                "width": 187,
+                "height": 186
+              },
+              {
+                "x": 195,
+                "y": 290,
+                "width": 187,
+                "height": 186
+              }
+            ]
+          },
+          {
+            "width": 319,
+            "height": 948,
+            "board": {
+              "x": 8,
+              "y": 56,
+              "width": 303,
+              "height": 892
+            },
+            "hand": {
+              "x": 8,
+              "y": 411,
+              "width": 303,
+              "height": 489
+            },
+            "initiallyVisibleCards": [
+              {
+                "label": "A of Hearts, copy 1 concealed-ace",
+                "width": 72,
+                "height": 90
+              },
+              {
+                "label": "Q of Hearts, copy 1 hand",
+                "width": 72,
+                "height": 90
+              }
+            ],
+            "footer": [
+              {
+                "label": "Trade cards",
+                "width": 120.65625,
+                "height": 48
+              },
+              {
+                "label": "End Turn",
+                "width": 99.15625,
+                "height": 48
+              }
+            ],
+            "table": {
+              "x": 8,
+              "y": 104,
+              "width": 303,
+              "height": 303
+            },
+            "quadrants": [
+              {
+                "x": 8,
+                "y": 104,
+                "width": 151.5,
+                "height": 151.5
+              },
+              {
+                "x": 159.5,
+                "y": 104,
+                "width": 151.5,
+                "height": 151.5
+              },
+              {
+                "x": 8,
+                "y": 255.5,
+                "width": 151.5,
+                "height": 151.5
+              },
+              {
+                "x": 159.5,
+                "y": 255.5,
+                "width": 151.5,
+                "height": 151.5
+              }
+            ]
+          }
+        ],
+        "unexpectedErrors": [],
+        "expectedAuthenticationChallenges": [],
+        "runs": [
+          {
+            "log": "/tmp/agent-runs/fullwidth-online-webkit--20261002T180220Z-2080448.log",
+            "sha256": "d02388af5ec24b22cb093d35363dcdb63870d9addc243976705ac34362d32a44",
+            "exit": 0
+          }
+        ],
+        "cellContainmentToleranceCssPx": 0.015625,
+        "harnessSha256": {
+          "browser_acceptance.cjs": "8f34ec9295ed3e43d317eeec2ce5990010332e05313aa8be1839fa5233f57f63",
+          "browser_faults.cjs": "334439124fbdf5a2ba5056adb3655b53ffaa256797ffa7c6c9bccd705f5ea479"
+        }
+      }
+    ],
+    "conditions": "Normal port 8080 default Auto and 18-card hand; online port 8081 authoritative synthetic opening/card-style fixtures. Live 319\u2192390\u2192821\u21921440 and reverse at 948px height: exact full-width alignment, equal half-width/half-height cells, restored table and hand bounds, breakpoint, rotation, short viewport, RTL, 200% text, keyboard and touch checks. Chromium and Firefox on host; WebKit in existing official Playwright Docker image; online lanes serial.",
+    "measurementBoundary": "Browser checks measure actual table/seat/hand DOM bounds and interactions; widget checks measure transformed painted card bounds. Parent visually reviewed final normal821/1440 and in-app1280x720; public faces match hand scale and table fills its width.",
+    "harnessRevisionBoundary": "Normal Chromium/WebKit and online Chromium ran before the Firefox-only numerical containment correction. Their 1/64px branches were unchanged. Accepted Firefox and final online WebKit ran with the final harness hashes; earlier report hashes remain unmodified."
+  },
+  "inspectedFailures": [
+    {
+      "diagnosis": "Before fix: host table left15px differs from hand left8px at390width.",
+      "runs": [
+        {
+          "log": "/tmp/agent-runs/full-width-approved-red--20261002T174546Z-2040786.log",
+          "sha256": "34e30f988de6d153e52e9f7e91469ae72f7b0ec5d244b645fbd5d5a08026acce",
+          "exit": 1
+        }
+      ]
+    },
+    {
+      "diagnosis": "Before fix: at390x948 table x24.36,width341.27 differs from hand x8,width374; captured old3a25 bundle.",
+      "runs": [
+        {
+          "log": "/tmp/agent-runs/fullwidth-red-normal--20261002T174647Z-2042982.log",
+          "sha256": "63cd7dda6f4c7939177a8105d8a2339aceea103cb2799bf1c8cb80fe1308cb74",
+          "exit": 1
+        }
+      ]
+    },
+    {
+      "diagnosis": "Invocation ran Flutter at repository root with no pubspec. Log inspected; command corrected toclient project directory.",
+      "runs": [
+        {
+          "log": "/tmp/agent-runs/fullwidth-painted-red--20261002T174855Z-2047188.log",
+          "sha256": "0ca5215c0e0b1152008d37f2ee10f67fae9d794a5bbaff83df4c7fdc8dbc407b",
+          "exit": 1
+        }
+      ]
+    },
+    {
+      "diagnosis": "Before fix: three public groups shrink a painted card to65.2568px versus required87.7577px minimum from hand width97.5086px.",
+      "runs": [
+        {
+          "log": "/tmp/agent-runs/fullwidth-painted-red-cwd--20261002T174910Z-2047790.log",
+          "sha256": "bfad91c95e6105444ebf92385ade6775814ce6a6e7a5aadb26c226e60db6038b",
+          "exit": 1
+        }
+      ]
+    },
+    {
+      "diagnosis": "Firefox independently rounds parent and two child heights in1/60px units. Observed child bottom exceeds parent by0.016677856px, narrowly beyond1/64. Only Firefox cell-edge containment accounts for1/60+1/16384 float margin, still rejecting0.02px; all48px and other alignment/equality/hand/state checks unchanged. Probe and independent review support numerical correction; production unchanged.",
+      "runs": [
+        {
+          "log": "/tmp/agent-runs/fullwidth-normal-firefox--20261002T175426Z-2061378.log",
+          "sha256": "ca41d970a72b5a0ac616ce50a79f6af915c8466f94b4e2014804a463f0253e48",
+          "exit": 1
+        }
+      ]
+    },
+    {
+      "diagnosis": "The temporary audit-helper writer used conflicting triple-quoted strings, so no helper file was created. The captured missing-file failure was inspected; the helper was written with a literal heredoc and all audit assertions then passed. Application source and tests were unaffected.",
+      "runs": [
+        {
+          "log": "/tmp/agent-runs/fullwidth-final-audit--20261002T181137Z-2099357.log",
+          "sha256": "66d0bb273e9c948907851f24dc345e821ff73b2d7c8ddd7b47de6576f56f7d75",
+          "exit": 2
+        }
+      ],
+      "resolvedBy": "/tmp/agent-runs/fullwidth-final-audit-fixed--20261002T181241Z-2101227.log"
+    }
+  ],
+  "firefoxProbe": [
+    {
+      "log": "/tmp/agent-runs/fullwidth-firefox-geometry-probe--20261002T175537Z-2065621.log",
+      "sha256": "fbdbd7e5f9285d249dd0648151be54c086dac963ab05897cbd95da6c6caffc3b",
+      "exit": 0
+    }
+  ],
+  "cleanup": {
+    "removedCaptures": 226,
+    "removedBytes": 67513510,
+    "plan": "/tmp/agent-runs/fullwidth-capture-removal-plan.json",
+    "planSha256": "69f5085dce87db98c5bf192fbc6ff594f37020b7b8eeb98c0cdf633d48f7a567",
+    "inventory": "docs/reports/2026-10-02-screenshot-inventory.csv",
+    "inventoryRows": 5553,
+    "protectedOutsideHashes": 1248,
+    "remainingCapturesInArtifacts": 0,
+    "soleScreenshot": "client/screenshots/cgmsart-phone.png",
+    "phoneBytes": 273544,
+    "phoneSha256": "2c116c49cc67e707d7dd6d45e12aa2063aa014c5edc3aa3416a8a36eea18bc8b"
+  },
+  "qaShutdown": {
+    "gracefulChildSIGTERM": 2056281,
+    "fixtureLog": "/tmp/agent-runs/fullwidth-fixture--20261002T175249Z-2055453.log",
+    "fixtureExit": 0,
+    "remainingDisposableContainers": [],
+    "remainingDisposableVolumes": [],
+    "remainingDisposableNetworks": [],
+    "port8081": "closed",
+    "ordinaryServices": {
+      "web": "healthy",
+      "backend": "healthy",
+      "postgres": "healthy",
+      "redis": "healthy"
+    },
+    "port8080MainSha256": "0f3908b52ecf21f4e232b7d538164bb61a8774c44ddf3a5603ea4a71aca6fe1e"
+  },
+  "sourceHashes": {
+    "client/packages/cgms_ui/lib/src/adaptive_table.dart": "36948ad2d6650612b6371c65c978a1819ffb78b3a2f5cb7154aa6e19ce28f1c2",
+    "client/test/adaptive_table_test.dart": "0e46cd43a48ecdf1c9d78f298853a384da2098ff76f8714672e37fb9acd83413",
+    "client/test/approved_flow_test.dart": "3e51df072bba120d2fd3e4dc55df6fd4dfcae181725ec16d3f9dc0e821918794",
+    "client/tool/adaptive_entry_browser_acceptance.cjs": "021392c82511983eef5c3349ece4951f42f79cdcec2db19454e4b73237881c52",
+    "client/tool/browser_acceptance.cjs": "8f34ec9295ed3e43d317eeec2ce5990010332e05313aa8be1839fa5233f57f63"
+  },
+  "review": "Independent final production, widget, browser harness and documentation review found no material findings. The Firefox numerical discrepancy was independently reviewed. Parent final staging audit is recorded separately below.",
+  "limits": [
+    "Backend, cold-launch, reconnect and full-gameplay results in earlier reports remain evidence for their recorded builds; not rerun for this presentation-only change.",
+    "Native devices and screen readers remain separate acceptance gates.",
+    "Reported push obstacle remains unconfirmed; historical screenshot blobs remain. No push or history rewrite."
+  ],
+  "commit": "not attempted",
+  "push": "not attempted",
+  "finalAudit": {
+    "status": "passed",
+    "followupPathsBeforeTracking": 17,
+    "prospectiveStagedPaths": 2172,
+    "changedMarkdownLinksChecked": 168,
+    "secretPatternScan": "all prospective added textual lines",
+    "inventoryRows": 5553,
+    "sourceHashesVerified": 5,
+    "preExistingStagingPreserved": true,
+    "independentReview": "no material findings"
+  }
+}

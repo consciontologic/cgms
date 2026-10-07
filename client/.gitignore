@@ -1,0 +1,13 @@
+.dart_tool/
+.packages
+.flutter-plugins*
+build/
+coverage/
+**/.dart_tool/
+**/build/
+**/.flutter-plugins*
+.browser-tools/
+
+# This directory is reserved for the owner's exact phone reference.
+/screenshots/*
+!/screenshots/cgmsart-phone.png

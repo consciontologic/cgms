@@ -1,0 +1,16 @@
+{
+  "provenance": "synthetic hand-authored ordinary combat fixture; GAME_RULES 2.5, 2.9, 2.13; no real player data; public identity history retention with independent hidden-return/shuffle noninterference assertions",
+  "engine": "cgms-engine-v1",
+  "canonical": "cgms-canonical-v1",
+  "state_hashes": [
+    "b67a59354666b37f68a9a0f2343df72e70806f1b0bfc88ef0f66ee858d701183",
+    "83aeec6c16f504775efbd312fbbe5625d414a48261e4d208e5f8ec827d274322",
+    "6eaf23306eda6870b42424b024fa97a5fa46490b93b70126f18dae979a90b757",
+    "97f7ca952bca7ae45a9ada80131b15b9f56344e5b926cd485c04e509642801dc"
+  ],
+  "event_hashes": [
+    "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+    "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+    "f703ac26c805beec00cd55d7202cd52b07bccb3dfca8042a3dc6accc0bf0ac6f"
+  ]
+}

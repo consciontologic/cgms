@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "listen": "0.0.0.0:8080",
+  "origin": "https://localhost:8443",
+  "insecure_local": false,
+  "rules_file": "/app/config/rules/game-rules.json",
+  "database_url_file": "/run/secrets/database_url",
+  "observability": {
+    "enabled": false,
+    "endpoint": "http://collector:4318"
+  },
+  "redis_url_file": "/run/secrets/redis_url",
+  "proxy_client_ip": true
+}

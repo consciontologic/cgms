@@ -1,0 +1,1361 @@
+{
+  "@@locale": "en",
+  "concealedCard": "Concealed card",
+  "drawPile": "Draw pile",
+  "magnifyCard": "Magnify card",
+  "inspectCard": "Inspect {card}",
+  "@inspectCard": {
+    "placeholders": {
+      "card": {
+        "type": "String"
+      }
+    }
+  },
+  "copyNumber": "Copy {number}",
+  "@copyNumber": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "cardIdentity": "{rank} of {suit}, copy {copy}",
+  "@cardIdentity": {
+    "placeholders": {
+      "rank": {
+        "type": "String"
+      },
+      "suit": {
+        "type": "String"
+      },
+      "copy": {
+        "type": "int"
+      }
+    }
+  },
+  "selected": "Selected",
+  "hearts": "Hearts",
+  "diamonds": "Diamonds",
+  "clubs": "Clubs",
+  "spades": "Spades",
+  "startMatch": "Start match",
+  "nextGame": "Your next game",
+  "setupNotice": "Choose a display name and the number of games in your match.",
+  "setupEyebrow": "A GAME OF PUBLIC POWER & PRIVATE DOUBT",
+  "takeYourSeat": "TAKE YOUR SEAT.",
+  "setupTagline": "Build influence. Read the table.\nLeave nothing to chance.",
+  "editionName": "cgmsart / FIRST LIGHT",
+  "setupFormTitle": "A place at the table",
+  "setupDeckDescription": "Four seats. Two decks. Every physical card matters.",
+  "yourName": "Your name",
+  "nameHint": "Enter a display name",
+  "nameRequired": "Enter a name to take your seat.",
+  "matchGameCount": "Games in the match",
+  "oneGame": "1 game",
+  "threeGames": "3 games",
+  "yourMove": "YOUR MOVE.",
+  "atTheTable": "AT THE TABLE.",
+  "loadingTable": "Loading the table",
+  "tableLoadError": "The table could not be loaded",
+  "disconnectedActionsPaused": "Disconnected · actions paused",
+  "connectionExplanation": "Your last known cards and pending decisions stay here. Actions remain paused until the connection is restored.",
+  "retryConnection": "Retry connection",
+  "restoreConnection": "Restore connection",
+  "publicTable": "The public table",
+  "readTheirPosition": "READ THEIR POSITION",
+  "scoresAndDebt": "Scores & debt",
+  "yourPublicPosition": "YOUR PUBLIC POSITION",
+  "yourHand": "Your hand",
+  "privateHandEyebrow": "ONLY YOU CAN SEE THESE",
+  "emptyHandTitle": "Your hand is empty",
+  "emptyHandMessage": "Public cards and scores remain available. There are no private cards to inspect.",
+  "tradeCards": "Trade cards",
+  "endTurnAndScore": "End turn & score",
+  "finishResponsesFirst": "Finish the response window before ending your turn.",
+  "tableJournal": "Table journal",
+  "eventEyebrow": "YOUR VIEW OF EVENTS",
+  "noEvents": "No events yet.",
+  "acceptOffer": "Accept offer",
+  "declineOffer": "Decline offer",
+  "tradeEyebrow": "A VOLUNTARY EXCHANGE",
+  "makeADeal": "MAKE A DEAL.",
+  "youGive": "YOU GIVE",
+  "youReceive": "YOU RECEIVE",
+  "tradeExplanation": "Private offer terms · visible to the two parties.\nProposing reserves no cards. Acceptance opens responses; only resolution transfers the cards.",
+  "proposeTrade": "Propose trade",
+  "withdrawOffer": "Withdraw offer",
+  "resultRecorded": "THE RESULT IS RECORDED",
+  "pointsHaveHistory": "EVERY POINT HAS A HISTORY",
+  "matchScore": "MATCH SCORE",
+  "thisGame": "THIS GAME",
+  "availablePoints": "AVAILABLE",
+  "debt": "DEBT",
+  "scoreNoticeTitle": "Score is not spending money",
+  "scoreNoticeMessage": "Receipts repay the oldest outstanding debt first. Repayment does not deduct your score twice. At financial finalization, unspent current-game points close; recorded scores remain.",
+  "finishSettlement": "Finish settlement",
+  "artworkCosmetic": "Artwork is cosmetic. Rank, suit and availability come from the supplied player view.",
+  "closeInspection": "Close inspection",
+  "roundPhase": "ROUND {round} / {total}  ·  {phase}",
+  "@roundPhase": {
+    "placeholders": {
+      "round": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      },
+      "phase": {
+        "type": "String"
+      }
+    }
+  },
+  "exposedCardsOf": "{name} · exposed cards",
+  "@exposedCardsOf": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "cardCount": "{count, plural, one{1 card} other{{count} cards}}",
+  "@cardCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "concealedCounts": "{hand} in hand · {aces} concealed aces",
+  "@concealedCounts": {
+    "placeholders": {
+      "hand": {
+        "type": "int"
+      },
+      "aces": {
+        "type": "int"
+      }
+    }
+  },
+  "physicalCopy": "Physical copy {copy} of 2",
+  "@physicalCopy": {
+    "placeholders": {
+      "copy": {
+        "type": "int"
+      }
+    }
+  },
+  "allCards": "All",
+  "inspectSelection": "Inspect selection",
+  "clearSelection": "Clear selection",
+  "selectionOutsideFilter": "Your selection is outside this filter.",
+  "handSelectionHint": "Tap to select; double-tap to magnify. Review the action before playing.",
+  "noMatchingCards": "No cards match this filter.",
+  "changeHandFilter": "Choose another suit or All to see your hand.",
+  "yourExposedCards": "Your exposed cards",
+  "jumpToCards": "Jump to cards",
+  "suitFilter": "{suit} ({count})",
+  "@suitFilter": {
+    "placeholders": {
+      "suit": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "showingCards": "Showing {visible} of {total} cards",
+  "@showingCards": {
+    "placeholders": {
+      "visible": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "selectedCard": "Selected: {card}",
+  "@selectedCard": {
+    "placeholders": {
+      "card": {
+        "type": "String"
+      }
+    }
+  },
+  "suitGroup": "{suit} · {count, plural, one{1 card} other{{count} cards}}",
+  "@suitGroup": {
+    "placeholders": {
+      "suit": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "scrollPublicTable": "Scroll to compare all public positions",
+  "inspectReviewedCard": "Inspect card",
+  "inspectCombo": "Inspect {name}",
+  "@inspectCombo": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "handPatterns": "Patterns in your hand",
+  "actionBoardPublic": "TABLE · ALL OPEN CARDS",
+  "actionBoardYou": "You",
+  "actionBoardRound": "Round {round} / {total}",
+  "@actionBoardRound": {
+    "placeholders": {
+      "round": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "actionBoardCounts": "Hand {hand} · Aces {aces}",
+  "@actionBoardCounts": {
+    "placeholders": {
+      "hand": {
+        "type": "int"
+      },
+      "aces": {
+        "type": "int"
+      }
+    }
+  },
+  "actionBoardPrivate": "Private",
+  "actionBoardEndTurn": "End turn",
+  "actionBoardReviewPile": "Review every card in this stack",
+  "actionBoardInspectHint": "Double-tap, use the magnifier, or press I to magnify",
+  "actionBoardSelect": "Select card",
+  "actionBoardAces": "Aces · {count}",
+  "@actionBoardAces": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "touchTable": "Table",
+  "touchHand": "Hand",
+  "touchActivity": "Activity",
+  "touchNoPlayers": "No players at the table",
+  "touchNoPlayersDetail": "Player positions appear when a table is available.",
+  "touchNoPublicCards": "No exposed cards yet",
+  "touchNoPublicCardsDetail": "This player's concealed cards stay private.",
+  "touchSeatSummary": "{cards} exposed · {combos, plural, one{1 combo} other{{combos} combos}}",
+  "touchMoveDetails": "Move details",
+  "touchResponsePassed": "Passed",
+  "touchResponseAwaiting": "Awaiting response",
+  "touchResponseWaiting": "Waiting",
+  "@touchSeatSummary": {
+    "placeholders": {
+      "cards": {
+        "type": "int"
+      },
+      "combos": {
+        "type": "int"
+      }
+    }
+  },
+  "adaptiveTable": "Table",
+  "adaptiveHand": "Hand",
+  "adaptiveDecisions": "Decisions",
+  "adaptiveCoup": "Declare Coup now",
+  "adaptiveFinances": "Score {score} · Cash {cash} · Debt {debt}",
+  "@adaptiveFinances": {
+    "placeholders": {
+      "score": {
+        "type": "String"
+      },
+      "cash": {
+        "type": "String"
+      },
+      "debt": {
+        "type": "String"
+      }
+    }
+  },
+  "onlineCGMSOnline": "CGMS · Online",
+  "onlineArtwork": "Artwork",
+  "onlineRightToLeft": "Right to left",
+  "online200Text": "200% text",
+  "onlineCheckOperation": "Check operation",
+  "onlineRetryOriginalOperation": "Retry original operation",
+  "onlineContinueAsGuest": "Continue as guest",
+  "onlineRecoverRoomOperation": "Recover room operation",
+  "onlineCreateRoom": "Create room",
+  "onlineJoinRoom": "Join room",
+  "onlineRefreshSeats": "Refresh seats",
+  "onlineCreateInvitation": "Create invitation",
+  "onlineExactSettlementIsProgressingOrdinaryActionsWait": "Exact settlement is progressing. Ordinary actions wait.",
+  "onlineReturnToDecisions": "Return to decisions",
+  "onlineClearSelection": "Clear selection",
+  "onlinePassResponse": "Pass response",
+  "onlineLoanIntactFormation": "Loan this intact formation",
+  "onlineDoppelgangerSubstitution": "Doppelganger substitution",
+  "onlineProtectASeriesOrFormation": "Protect a series or formation",
+  "online": " / ",
+  "onlineUsername": "Username",
+  "onlinePassword": "Password",
+  "onlinePlayers": "Players",
+  "onlineGamesPerMatch": "Games per match",
+  "onlineRoomCode": "Room code",
+  "onlineInvitation": "Invitation",
+  "onlineAction": "Action",
+  "onlineSuit": "Suit",
+  "onlineFormation": "Formation",
+  "onlineSubstitutedRank": "Substituted rank",
+  "onlineSubstitutedSuit": "Substituted suit",
+  "onlineProtectedSeries": "Protected series",
+  "onlineAccept": "Accept",
+  "onlineAcceptOffer": "Accept Offer",
+  "onlineAce": "Ace",
+  "onlineAdvancementDefense": "Advancement Defense",
+  "onlineAmount": "Amount",
+  "onlineArray": "Array",
+  "onlineAttach": "Attach",
+  "onlineAttack": "Attack",
+  "onlineAwardId": "Award Id",
+  "onlineBaronAttack": "Baron Attack",
+  "onlineBaronBombAttack": "Baron Bomb Attack",
+  "onlineBarricadeSacrifice": "Barricade Sacrifice",
+  "onlineBombAttack": "Bomb Attack",
+  "onlineBoolean": "Boolean",
+  "onlineCode": "Code",
+  "onlineCompensation": "Compensation",
+  "onlineCompensationResponse": "Compensation Response",
+  "onlineCondition": "Condition",
+  "onlineConfinement": "Confinement",
+  "onlineConst": "Const",
+  "onlineCoup": "Coup",
+  "onlineDebtId": "Debt Id",
+  "onlineDecision": "Decision",
+  "onlineDecisionClosed": "Decision Closed",
+  "onlineDecisionId": "Decision Id",
+  "onlineDeclareOrdinary": "Declare Ordinary",
+  "onlineDeclineOffer": "Decline Offer",
+  "onlineDepartureChoice": "Departure Choice",
+  "onlineDexterAssassination": "Dexter Assassination",
+  "onlineEndTurn": "End Turn",
+  "onlineExile": "Exile",
+  "onlineExposeUnusedAce": "Expose Unused Ace",
+  "onlineFate": "Fate",
+  "onlineFinishSettlement": "Finish Settlement",
+  "onlineForgive": "Forgive",
+  "onlineFormationId": "Formation Id",
+  "onlineInfiltrator": "Infiltrator",
+  "onlineInfiltratorAttack": "Infiltrator Attack",
+  "onlineInflation": "Inflation",
+  "onlineInteger": "Integer",
+  "onlineItems": "Items",
+  "onlineJustice": "Justice",
+  "onlineKidnapper": "Kidnapper",
+  "onlineKidnapperOutcome": "Kidnapper Outcome",
+  "onlineMainInflation": "Main Inflation",
+  "onlineMode": "Mode",
+  "onlineNegotiate": "Negotiate",
+  "onlineNullify": "Nullify",
+  "onlineNumericalDefense": "Numerical Defense",
+  "onlineObject": "Object",
+  "onlineOffer": "Offer",
+  "onlineOfferId": "Offer Id",
+  "onlineOpenFormation": "Open Formation",
+  "onlineOpenSeries": "Open Series",
+  "onlinePass": "Pass",
+  "onlinePayment": "Payment",
+  "onlinePendingActionId": "Pending Action Id",
+  "onlinePonzi": "Ponzi",
+  "onlinePrice": "Price",
+  "onlinePromiseAccept": "Promise Accept",
+  "onlinePromiseFinalAnswer": "Promise Final Answer",
+  "onlinePromiseFinalOffer": "Promise Final Offer",
+  "onlinePromiseOffer": "Promise Offer",
+  "onlinePromisePay": "Promise Pay",
+  "onlinePromiseRefuse": "Promise Refuse",
+  "onlinePromiseId": "Promise Id",
+  "onlineProperties": "Properties",
+  "onlinePurchase": "Purchase",
+  "onlineQuantity": "Quantity",
+  "onlineRecipient": "Recipient",
+  "onlineRequired": "Required",
+  "onlineReturnLoan": "Return Loan",
+  "onlineRevision": "Revision",
+  "onlineRicherSacrifice": "Richer Sacrifice",
+  "onlineRingleader": "Ringleader",
+  "onlineSelection": "Selection",
+  "onlineString": "String",
+  "onlineTakeBack": "Take Back",
+  "onlineTargetSeat": "Target Seat",
+  "onlineTargets": "Targets",
+  "onlineTerms": "Terms",
+  "onlineThreshold": "Threshold",
+  "onlineType": "Type",
+  "onlineValue": "Value",
+  "onlineVoluntaryTransfer": "Voluntary Transfer",
+  "onlineWithdrawOffer": "Withdraw Offer",
+  "onlineQuotaStatus": "{ability} quota: {status}",
+  "onlineQuotaUsed": "used",
+  "onlineQuotaAvailable": "available",
+  "@onlineQuotaStatus": {
+    "placeholders": {
+      "ability": {
+        "type": "String"
+      },
+      "status": {
+        "type": "String"
+      }
+    }
+  },
+  "onlineRefreshConnection": "Refresh connection",
+  "onlineDisplaySettings": "Display settings",
+  "onlineOutcomeUnknownKeepThisPageOpenWhileReconciling": "Outcome unknown. Keep this page open while reconciling.",
+  "onlineSignInOrContinueAsAGuest": "Sign in or continue as a guest.",
+  "onlineTheTableChangedReviewYourSelectionBeforeSubmittingAgain": "The table changed. Review your selection before submitting again.",
+  "onlineYourActionMayHaveSucceededCheckTheOriginalOperation": "Your action may have succeeded. Check the original operation before continuing.",
+  "onlineThisActionIsNotPermittedWithTheseChoicesReview": "This action is not permitted with these choices. Review the rules and current turn.",
+  "onlineThisSessionCannotAccessThatRoomOrMatch": "This session cannot access that room or match.",
+  "onlineTheRoomCouldNotAcceptThisRequestCheckIts": "The room could not accept this request. Check its seats and invitation.",
+  "onlineConnectionUnavailableRetryWhenTheAuthorityIsReachable": "Connection unavailable. Retry when the authority is reachable.",
+  "onlineCreateAThreeOrFourPlayerRoomMatchLength": "Create a three- or four-player room. Match length is fixed before play.",
+  "onlineEnterMatch": "Enter match",
+  "onlineTheGameOrDecisionChangedClearThisDraftBefore": "The game or decision changed. Clear this draft before choosing a new action.",
+  "onlineTheAuthorityValidatesYourChoicesAnOfferReservesNo": "The authority validates your choices. An offer reserves no cards; acceptance begins ordered responses.",
+  "onlineChooseAPositiveQuantityPaymentResolvesAfterResponsesExcess": "Choose a positive quantity. Payment resolves after responses; excess is not returned as change.",
+  "onlineSacrificedQueen": "Sacrificed Queen",
+  "onlineNone": "None",
+  "onlineRecipientSeat": "Recipient seat",
+  "onlineProtectedFormation": "Protected formation",
+  "onlineAmountNumerator": "Amount numerator",
+  "onlineDenominator": "Denominator",
+  "onlineAcceptPromise": "Accept promise",
+  "onlineAcceptFinalOffer": "Accept final offer",
+  "onlineRejectFinalOffer": "Reject final offer",
+  "onlinePayPromise": "Pay promise",
+  "onlineRefusePromise": "Refuse promise",
+  "onlineProposeFinalAmount": "Propose final amount",
+  "onlineForgiveDebt": "Forgive debt",
+  "onlineYouOwe": "You owe",
+  "onlineOwedToYou": "Owed to you",
+  "onlineYouGive": "You give",
+  "onlineYouReceive": "You receive",
+  "onlineUsedThisTurn": "used this turn",
+  "onlineUsedThisRound": "used this round",
+  "onlineSelectCardsOnTableOrHand": "select cards on table or hand",
+  "onlineConditionTheNamedAwardOccursForYouInThis": "Condition: the named award occurs for you in this game.",
+  "onlineRoomIdentity": "Room {value1}",
+  "@onlineRoomIdentity": {
+    "placeholders": {
+      "value1": {
+        "type": "String"
+      }
+    }
+  },
+  "onlineRoomConfiguration": "{value1} games · {value2} seats",
+  "@onlineRoomConfiguration": {
+    "placeholders": {
+      "value1": {
+        "type": "String"
+      },
+      "value2": {
+        "type": "String"
+      }
+    }
+  },
+  "onlineSeatNumber": "Seat {value1}",
+  "@onlineSeatNumber": {
+    "placeholders": {
+      "value1": {
+        "type": "String"
+      }
+    }
+  },
+  "onlineGameProgress": "Game {value1} of {value2}",
+  "@onlineGameProgress": {
+    "placeholders": {
+      "value1": {
+        "type": "String"
+      },
+      "value2": {
+        "type": "String"
+      }
+    }
+  },
+  "onlineOwnMatchScore": "Your match score: {value1}",
+  "@onlineOwnMatchScore": {
+    "placeholders": {
+      "value1": {
+        "type": "String"
+      }
+    }
+  },
+  "onlineSubmitAction": "Submit {value1}",
+  "@onlineSubmitAction": {
+    "placeholders": {
+      "value1": {
+        "type": "String"
+      }
+    }
+  },
+  "onlineOriginGame": "Origin game {value1}",
+  "@onlineOriginGame": {
+    "placeholders": {
+      "value1": {
+        "type": "String"
+      }
+    }
+  },
+  "onlineRanksBySeat": "Match ranks by seat: {value1}",
+  "@onlineRanksBySeat": {
+    "placeholders": {
+      "value1": {
+        "type": "String"
+      }
+    }
+  },
+  "onlinePrivateOfferStatus": "Private offer · revision {value1} · {value2}",
+  "@onlinePrivateOfferStatus": {
+    "placeholders": {
+      "value1": {
+        "type": "String"
+      },
+      "value2": {
+        "type": "String"
+      }
+    }
+  },
+  "onlineConnectionLost": "Connection lost · last confirmed table · actions paused",
+  "onlineUnrevealedCard": "Unrevealed card",
+  "onlineDecisionOwner": "Decision owner: seat {value1} · {value2} · {value3}",
+  "@onlineDecisionOwner": {
+    "placeholders": {
+      "value1": {
+        "type": "String"
+      },
+      "value2": {
+        "type": "String"
+      },
+      "value3": {
+        "type": "String"
+      }
+    }
+  },
+  "onlineEnding": "Ending: {ending}",
+  "@onlineEnding": {
+    "placeholders": {
+      "ending": {
+        "type": "String"
+      }
+    }
+  },
+  "onlineEndingDeclarer": "Ending: {value1} · Declarer: seat {value2}",
+  "@onlineEndingDeclarer": {
+    "placeholders": {
+      "value1": {
+        "type": "String"
+      },
+      "value2": {
+        "type": "String"
+      }
+    }
+  },
+  "onlinePurchaseCalculation": "Unit price {value1} · Quantity {value2} · Effective payment {value3} · Cost {value4} · Excess {value5}",
+  "@onlinePurchaseCalculation": {
+    "placeholders": {
+      "value1": {
+        "type": "String"
+      },
+      "value2": {
+        "type": "String"
+      },
+      "value3": {
+        "type": "String"
+      },
+      "value4": {
+        "type": "String"
+      },
+      "value5": {
+        "type": "String"
+      }
+    }
+  },
+  "onlineCombatCalculation": "Attack {value1} + {value2} = {value3} · Defense {value4} + {value5} = {value6} · {value7}",
+  "@onlineCombatCalculation": {
+    "placeholders": {
+      "value1": {
+        "type": "String"
+      },
+      "value2": {
+        "type": "String"
+      },
+      "value3": {
+        "type": "String"
+      },
+      "value4": {
+        "type": "String"
+      },
+      "value5": {
+        "type": "String"
+      },
+      "value6": {
+        "type": "String"
+      },
+      "value7": {
+        "type": "String"
+      }
+    }
+  },
+  "onlinePromiseParties": "Promise from seat {value1} to seat {value2} · {value3}",
+  "@onlinePromiseParties": {
+    "placeholders": {
+      "value1": {
+        "type": "String"
+      },
+      "value2": {
+        "type": "String"
+      },
+      "value3": {
+        "type": "String"
+      }
+    }
+  },
+  "onlinePromiseTerms": "{value1} {value2} · Award {value3}",
+  "@onlinePromiseTerms": {
+    "placeholders": {
+      "value1": {
+        "type": "String"
+      },
+      "value2": {
+        "type": "String"
+      },
+      "value3": {
+        "type": "String"
+      }
+    }
+  },
+  "onlinePromiseSettlement": "Promised {value1} · Paid {value2} · Final offer {value3}",
+  "@onlinePromiseSettlement": {
+    "placeholders": {
+      "value1": {
+        "type": "String"
+      },
+      "value2": {
+        "type": "String"
+      },
+      "value3": {
+        "type": "String"
+      }
+    }
+  },
+  "onlineDebtParties": "{value1} {value2} · Debtor seat {value3} · Creditor seat {value4}",
+  "@onlineDebtParties": {
+    "placeholders": {
+      "value1": {
+        "type": "String"
+      },
+      "value2": {
+        "type": "String"
+      },
+      "value3": {
+        "type": "String"
+      },
+      "value4": {
+        "type": "String"
+      }
+    }
+  },
+  "onlineOfferParties": "From seat {value1} to seat {value2} · {value3}",
+  "@onlineOfferParties": {
+    "placeholders": {
+      "value1": {
+        "type": "String"
+      },
+      "value2": {
+        "type": "String"
+      },
+      "value3": {
+        "type": "String"
+      }
+    }
+  },
+  "onlineLastingEffect": "{value1} · owner {value2} · target {value3} · custodian {value4} · {value5}",
+  "@onlineLastingEffect": {
+    "placeholders": {
+      "value1": {
+        "type": "String"
+      },
+      "value2": {
+        "type": "String"
+      },
+      "value3": {
+        "type": "String"
+      },
+      "value4": {
+        "type": "String"
+      },
+      "value5": {
+        "type": "String"
+      }
+    }
+  },
+  "onlineCompensationDraw": "Compensation draw · seat {value1} · {value2} remaining",
+  "@onlineCompensationDraw": {
+    "placeholders": {
+      "value1": {
+        "type": "String"
+      },
+      "value2": {
+        "type": "String"
+      }
+    }
+  },
+  "onlineMatchCorrection": "Nonspendable match correction · {value1} · origin {value2}",
+  "@onlineMatchCorrection": {
+    "placeholders": {
+      "value1": {
+        "type": "String"
+      },
+      "value2": {
+        "type": "String"
+      }
+    }
+  },
+  "onlineKnownOfferCard": "{value1} of {value2} · offer card {value3}",
+  "@onlineKnownOfferCard": {
+    "placeholders": {
+      "value1": {
+        "type": "String"
+      },
+      "value2": {
+        "type": "String"
+      },
+      "value3": {
+        "type": "String"
+      }
+    }
+  },
+  "onlineMatchComplete": "Match complete",
+  "onlineAvailable": "available",
+  "onlineUsed": "used",
+  "onlineHeld": "held",
+  "onlineAbsent": "none",
+  "onlineChoose": "choose",
+  "onlineOpeningAceStatus": "Opening: {opening} · Ace: {ace}",
+  "@onlineOpeningAceStatus": {
+    "placeholders": {
+      "opening": {
+        "type": "String"
+      },
+      "ace": {
+        "type": "String"
+      }
+    }
+  },
+  "onlinePrivilegesStatus": "Compensation: {compensation} · Underground privilege: {underground}",
+  "@onlinePrivilegesStatus": {
+    "placeholders": {
+      "compensation": {
+        "type": "String"
+      },
+      "underground": {
+        "type": "String"
+      }
+    }
+  },
+  "onlineSelectedCards": "{label}: {count} cards · {instruction}",
+  "@onlineSelectedCards": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      },
+      "count": {
+        "type": "String"
+      },
+      "instruction": {
+        "type": "String"
+      }
+    }
+  },
+  "onlineTransferCards": "{label}: {count} · select visible cards",
+  "@onlineTransferCards": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      },
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "onlineFormationCards": "Formation cards: {count}",
+  "@onlineFormationCards": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "onlineSubstituteKings": "Substitute kings: {count} of 2",
+  "@onlineSubstituteKings": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "onlineCompletedGame": "Completed game · {scores}",
+  "@onlineCompletedGame": {
+    "placeholders": {
+      "scores": {
+        "type": "String"
+      }
+    }
+  },
+  "onlineSeatScore": "Seat {seat}: {score}",
+  "@onlineSeatScore": {
+    "placeholders": {
+      "seat": {
+        "type": "String"
+      },
+      "score": {
+        "type": "String"
+      }
+    }
+  },
+  "onlineJack": "Jack",
+  "onlineQueen": "Queen",
+  "onlineKing": "King",
+  "onlineRoomOwnerStarts": "The room owner starts the match when everyone has joined.",
+  "onlineRoomWaiting": "Waiting for {count} more players.",
+  "@onlineRoomWaiting": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "onlineTimingOwnTurn": "This action is available on your turn.",
+  "onlineTimingPending": "Wait for the current response or decision before an ordinary action.",
+  "onlineTimingResponder": "Seat {seat} must respond first.",
+  "@onlineTimingResponder": {
+    "placeholders": {
+      "seat": {
+        "type": "String"
+      }
+    }
+  },
+  "onlineTimingEffect": "Complete the current effect decision; this is not a response window.",
+  "onlineTimingNoResponse": "There is no response window for this action.",
+  "onlineTimingNoDecision": "There is no effect decision for you to complete.",
+  "economyTitle": "Allowance and dirt",
+  "economyDisabled": "Online allowances are not enabled on this server.",
+  "economyUnavailable": "Could not refresh your allowance. Try again.",
+  "economyRefresh": "Refresh allowance",
+  "economyDirt": "{amount} dirt",
+  "@economyDirt": {
+    "placeholders": {
+      "amount": {
+        "type": "int"
+      }
+    }
+  },
+  "economyStarts": "{count} free online starts remaining today",
+  "@economyStarts": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "economyReset": "Free starts reset at {time} UTC.",
+  "@economyReset": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "economyReward": "Earn {amount} dirt once per finalized online game. Offline play earns no dirt; unfinished games do not refund starts.",
+  "@economyReward": {
+    "placeholders": {
+      "amount": {
+        "type": "int"
+      }
+    }
+  },
+  "economyUnlimited": "Unlimited online starts",
+  "economyPassUntil": "Pass expiry: {time} UTC",
+  "@economyPassUntil": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "economyPremiumUntil": "Premium expiry: {time} UTC",
+  "@economyPremiumUntil": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "economyDays": "Earned access",
+  "economyDaysValue": "{days} day(s)",
+  "@economyDaysValue": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "economySpend": "Spend {cost} dirt",
+  "@economySpend": {
+    "placeholders": {
+      "cost": {
+        "type": "int"
+      }
+    }
+  },
+  "economyPassHelp": "Earned Daily and Weekly access allow unlimited online starts and keep ads unless separate ad-free access is active. Time extends from now or your current pass expiry, whichever is later.",
+  "economyDaily": "Daily · 1 day",
+  "economyWeekly": "Weekly · 7 days",
+  "economyNoAds": "Ad-free access active",
+  "economyAdFreeUntil": "Ad-free expiry: {time} UTC",
+  "@economyAdFreeUntil": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "economyAdsActive": "Ads remain active",
+  "economyProductUnavailable": "That pass is no longer offered. No dirt was spent. Choose Daily or Weekly access.",
+  "economyPaidUnavailable": "Paid Ad-free, Daily, Weekly, Monthly and Yearly products are not available in this build.",
+  "economyAdFreeTerms": "Ad-free: 30 days without ads. The 3 free online starts per day still apply unless you also have unlimited access.",
+  "economyPaidDailyTerms": "Paid Daily: 24 hours of unlimited online starts and no ads from confirmed purchase. Does not renew automatically.",
+  "economyPaidLongerTerms": "Paid Weekly, Monthly and Yearly: unlimited online starts and no ads.",
+  "economyUnknown": "Your pass purchase has an unknown result. Recover it before buying another pass.",
+  "economyRecover": "Recover pass purchase",
+  "economyInsufficient": "Not enough dirt for this pass.",
+  "economyConfirmed": "Pass confirmed · {cost} dirt · expires {time} UTC",
+  "@economyConfirmed": {
+    "placeholders": {
+      "cost": {
+        "type": "int"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "economyRecoveryUnavailable": "Recovery storage is unavailable. Restore access before trying another purchase.",
+  "economyAdmissionWaiting": "The next game is waiting for every player’s online access. Check your allowance; a player may need a pass, the UTC reset, or account access.",
+  "onlineNextGamePending": "Game settled. Waiting for the next game.",
+  "onlineCopyCode": "Copy {label}",
+  "@onlineCopyCode": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "onlineCodeCopied": "{label} copied",
+  "@onlineCodeCopied": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "onlineCodeValue": "{label}: {value}",
+  "@onlineCodeValue": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      },
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "onlineClipboardUnavailable": "Clipboard access is unavailable. The code remains visible; check your browser permissions and try Copy again.",
+  "onlineClubUsedThisTurn": "Used this turn",
+  "onlineDropCopyLegend": "Copy numbers in brackets.",
+  "onlineDropCostsOpeningNew": "Uses this turn’s opening allowance.",
+  "onlineDropCostsOpeningExisting": "No opening allowance spent.",
+  "onlineDropCostsFormation": "Opening allowance unless earned Underground. No cards consumed.",
+  "onlineDropCostsAttach": "No opening allowance. Royal needs its supported series.",
+  "onlineDropCostsRicher": "Round allowance. On resolution discard King; draw up to two.",
+  "onlineDropCostsRingleader": "Once per game. On resolution discard King; gain 10.",
+  "onlineDropCostsConfinement": "Shared Ace round allowance. Discard Ace after resolution.",
+  "onlineDropCostsCompensation": "Shared Ace round and game allowance. Ace becomes persistent effect.",
+  "onlineDropCostsInflation": "Shared Ace round allowance. Ace becomes persistent effect; prevention discards it.",
+  "onlineDropCostsCombatResponse": "Shared Ace round allowance. Reveal/discard Ace after combat, even if canceled.",
+  "onlineDropCostsPurchase": "On resolution return exact payment and draw chosen quantity; canceled costs nothing.",
+  "onlineDropCostsReturnLoan": "Return these borrowed cards. Alliance and earned privileges remain.",
+  "onlineDropCostsFate": "Turn-cycle allowance. Return chosen King before reset shuffle.",
+  "onlineDropCostsJustice": "Turn-cycle allowance. Return chosen Queen after resolution.",
+  "onlineDropCostsKidnapper": "Own-turn allowance. Special Doppelganger theft returns all members on resolution.",
+  "onlineDropCostsPonzi": "Turn-cycle allowance. Return all four Jacks after resolution.",
+  "onlineDropCostsDexter": "Shared round allowance. On resolution return Diamond; discard target royal.",
+  "onlineDropCostsBarricade": "Turn-cycle allowance. On resolution discard Queen; return five; draw up to five restricted cards.",
+  "onlineDropCostsNegotiator": "Round allowance. Final commitment uses added Clubs, transfers Spades, and returns Jack.",
+  "onlineDropCostsTakeBack": "Return formation cards; ability allowances remain spent.",
+  "onlineDropCostsAttack": "Attacking Clubs become used at declaration, even if canceled.",
+  "onlineDropCostsBaron": "Baron round allowance; no Baron card consumed.",
+  "onlineDropCostsBomb": "On success discard Bomb; return Clubs only for ordinary Bomb attack.",
+  "onlineDropCostsInfiltrator": "Return Jack at declaration; spend turn-cycle allowance.",
+  "onlineDropCostsExile": "Spend Exile round allowance; no card consumed.",
+  "onlineDropCostsCombatAce": "Shared Ace round allowance; reveal/discard Ace after combat, even if canceled.",
+  "onlineCostsTitle": "Costs and timing",
+  "onlineCostsGeneral": "Illegal declarations spend nothing. Accepted allowances stay spent after cancellation; support is checked again before unresolved effects commit.",
+  "onlineCostsAttack": "Own turn; choose unused exposed Clubs and a legal target. Physical Clubs become used at legal declaration, including if the attack is canceled. Exchange costs apply only after successful resolution.",
+  "onlineCostsCombatAce": "If using a numerical or Advancement Ace, its shared round allowance is spent at declaration and the Ace is revealed and discarded after combat, including cancellation.",
+  "onlineCostsBaron": "Baron also spends its round allowance at declaration. No Baron card is consumed; cancellation keeps the round allowance and Club usage spent.",
+  "onlineCostsBomb": "Successful ordinary Bomb destruction returns the attacking Clubs and discards the Bomb. Baron discards the Bomb without returning Clubs. Cancellation removes neither.",
+  "onlineCostsInfiltrator": "Return the Infiltrator jack at legal declaration; cancellation does not return it or its turn-cycle allowance.",
+  "onlineCostsExile": "Exile spends its round allowance at the accepted Barricade bypass. It has no card cost; cancellation does not refund the allowance.",
+  "onlineCostsOpening": "Own turn: normally open one new number series or open/reconfigure one combo. Earned Underground permits unlimited combo openings/reconfigurations; it does not waive Ace or attack prerequisites.",
+  "onlineCostsFormation": "Opening moves the selected cards into a formation; it consumes no cards. Passive abilities need their support. Doppelganger pairs and replacement slots stay bound when support is lost.",
+  "onlineCostsTakeBack": "Own turn: combos may be taken back. Number series and attachments cannot be taken back. Taking back cards never refreshes an ability allowance.",
+  "onlineCostsAttach": "Own turn: add to an existing series or restore a historically opened suit without a new opening allowance. Attached royals need their supporting number series to function.",
+  "onlineCostsFate": "Own turn; turn-cycle allowance spent at activation. Return one chosen Fate king immediately before the reset shuffle. Cancellation before resolution keeps the king but spends the allowance.",
+  "onlineCostsCoup": "Any eligible boundary, including pending decisions and while confined. Requires historical Clubs, both physical Hearts queens and both physical Diamonds queens, all unrestricted, and no alliance. No allowance or consumable cost; no response window. Earlier committed effects remain.",
+  "onlineCostsJustice": "Own turn; turn-cycle allowance spent at activation. Return one chosen Justice queen after the selection sequence, even with zero captures. Cancellation before resolution keeps the queen but spends the allowance.",
+  "onlineCostsCode": "Own turn; turn-cycle allowance spent at activation, with no card payment. Resolution replaces the governing Code and settings. Cancellation keeps the old Code and spends the allowance.",
+  "onlineCostsKidnapper": "Own turn; one activation per own turn, committed at acceptance. Normal theft consumes no combo cards. Special Doppelganger theft returns the entire Kidnapper formation on resolution. Cancellation keeps those cards but spends the allowance.",
+  "onlineCostsPonzi": "Any idle boundary; turn-cycle allowance spent at activation, with no card payment yet. Return all four jacks after resolution, even when nothing is stolen. Cancellation keeps the jacks but spends the turn-cycle allowance.",
+  "onlineCostsRingleader": "Own turn; once per game, spent at activation. Discard the supported king and award 10 together on resolution. Cancellation keeps the king but spends the game allowance.",
+  "onlineCostsRicher": "Own turn; round allowance spent at activation. Discard the supported king and draw up to two on resolution. Cancellation keeps the king but spends the allowance.",
+  "onlineCostsBarricade": "Own turn; turn-cycle allowance spent at activation. On resolution discard the supported queen, return five other selected cards and draw up to five; those draws are restricted until next round. Cancellation keeps all selected cards.",
+  "onlineCostsNegotiator": "Incoming club-attack response; round allowance spent only on a legal activation. At the final decision, added Clubs become used, selected Spades transfer, the jack returns and the attack is canceled together. Abort before commitment keeps those costs unpaid; the accepted allowance and original Club usage stay spent.",
+  "onlineCostsDexter": "Own turn; supported Dexter and prepayment Diamond total at least 20. Spends the round allowance shared with prevention. Return the selected number Diamond and discard the target royal together on resolution. Cancellation keeps both cards but spends the allowance.",
+  "onlineCostsDexterPrevention": "Inside hostile Ace resolution; supported Dexter and prepayment Diamond total 1–10. A legal payable prevention spends the shared round allowance. Return the chosen Diamond and prevent the effect together; the hostile Ace is discarded and its allowance stays spent.",
+  "onlineCostsConfinement": "Authorized response to the pending actor; spends the shared Ace round allowance at acceptance. Discard the Ace when resolution finishes, including Dexter prevention. Coup cannot be stopped.",
+  "onlineCostsCombatResponse": "Incoming-combat response; spends the shared Ace round allowance and commits its modifier. Reveal and discard the Ace after combat resolves or is canceled. Dexter prevention removes the modifier, not its usage or discard.",
+  "onlineCostsInflation": "Own main action or authorized incoming-attack response; spends the shared Ace round allowance. A duplicate active target is illegal and spends nothing. Resolution puts the Ace in its public effect zone; Dexter prevention discards it. Earlier cancellation keeps the Ace but spends the allowance.",
+  "onlineCostsCompensation": "Own main action or authorized incoming-attack response before losses; spends both the shared Ace round allowance and game activation at acceptance. Resolution puts the Ace in its public effect zone. Cancellation keeps the Ace but spends both allowances.",
+  "onlineCostsPurchase": "Own idle boundary; no separate purchase allowance and no card payment at acceptance. Revalidate exact payment, quantity and supply after responses, then return, shuffle and draw together. Cancellation keeps every payment card and draws nothing.",
+  "onlineCostsOffer": "A proposal reserves no cards or allowances and does not block play. Acceptance names its exact revision in the originating turn. Transfers and any loan alliance happen together only after successful resolution; an accepted Ace transfer spends its supplier’s round allowance even if canceled.",
+  "onlineCostsReturnLoan": "The recipient voluntarily returns only borrowed cards they still control. An intact formation returns intact; surviving individual cards return exposed and unassigned without rebuilding it. The game-long alliance and previously earned privileges remain.",
+  "onlineCostsDecision": "Complete only the current authorized effect input. Earlier committed costs and allowances remain spent; unresolved payments and movement commit only with the completed effect.",
+  "onlineCostsPass": "Passing uses this response opportunity without playing a card. Navigation, disconnection and silence never submit a pass.",
+  "onlineWelcomeTitle": "A table worth turning.",
+  "onlineWelcomeBody": "Build your hand. Make your move. Every deal changes the table.",
+  "onlineWelcomeCards": "Illustrated CGMS cards",
+  "onlineEntryTitle": "Take your seat",
+  "onlineEntryBody": "Continue as a guest, or sign in to your account.",
+  "onlineAccountSignIn": "Sign in or register",
+  "onlineYourRoom": "Your room",
+  "onlineRoomJoined": "Joined",
+  "onlineRoomEmptySeat": "Waiting for a player",
+  "onlineSetupTitle": "Gather your table",
+  "onlineSetupBody": "Play against bots, create a room for your group, or join with a private invitation.",
+  "onlineJoinHelp": "Use the room code and invitation shared by the room owner.",
+  "onlineActionFamilyPlay": "Open & build",
+  "onlineActionFamilyAttack": "Attack & defend",
+  "onlineActionFamilyAbilities": "Abilities",
+  "onlineActionFamilyDeals": "Trades & loans",
+  "onlineActionFamilyFinance": "Points & settlement",
+  "onlineActionFamilyTurn": "Turn & decisions",
+  "onlineActionPrepare": "Prepare your action",
+  "onlineReconnectHelp": "Your last confirmed table is still visible. Reconnecting automatically; no action is passed or resent.",
+  "onlineSessionConnecting": "Connecting to the table… attempt {attempt} of {limit}",
+  "@onlineSessionConnecting": {
+    "placeholders": {
+      "attempt": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "onlineRecoveryExhausted": "Connection is still unavailable after bounded recovery. Use Refresh connection to try again.",
+  "onlineInvalidResponse": "The server returned an unreadable response. Use Refresh connection to try again.",
+  "onlineReconnectStopped": "Your last confirmed table is still visible. Use Refresh connection to retry; no action is passed or resent.",
+  "onlinePlayAgainstBots": "Play against bots",
+  "onlineBotDifficulty": "Bot difficulty",
+  "onlineBotBeginner": "Beginner",
+  "onlineBotStandard": "Standard",
+  "onlineBotAdvanced": "Advanced",
+  "onlineBot": "Bot",
+  "onlineServerProgress": "Preparing the next move…",
+  "onlineBotSetupHelp": "Bots fill the other seats. Choose a difficulty, then start the match from your room.",
+  "onlineBotSeat": "Bot · {difficulty}",
+  "@onlineBotSeat": {
+    "placeholders": {
+      "difficulty": {
+        "type": "String"
+      }
+    }
+  },
+  "onlineRoomGamesRange": "Enter a whole number of games from 1 to 100.",
+  "onlineRoundDeparture": "Round complete · Choose whether to stay",
+  "onlineRoundWaiting": "Round complete · Waiting for players",
+  "onlineRoundChoiceHelp": "Choose whether to stay for the next round. Leaving ends this game for you and removes positive current-game score and available points; debts remain. You can rejoin the next game.",
+  "onlineDepartureRecorded": "Your choice is saved. Waiting for other players.",
+  "onlineStayInGame": "Stay in game",
+  "onlineLeaveGame": "Leave game",
+  "activateCard": "Card actions",
+  "cardRoleSource": "Source card",
+  "cardRoleTarget": "Target card",
+  "cardRolePayment": "Payment card",
+  "cardRoleModifier": "Modifier card",
+  "cardGestureHint": "Tap or Space to select. Double tap or Enter for card actions. I to inspect.",
+  "chooseDestination": "Choose destination",
+  "inspectPublicCards": "Inspect public cards",
+  "inspectSelectedCards": "Inspect selected cards",
+  "onlineCardUnavailable": "Card no longer available",
+  "onlineGameOptions": "Game options",
+  "onlineRecords": "Offers, promises & scores",
+  "onlineCardGestures": "Card gestures",
+  "onlinePendingDecision": "Pending decision",
+  "onlineResultsSettlement": "Results & settlement",
+  "onlineCardInvisible": "Card no longer visible",
+  "onlineChooseMove": "Choose a move",
+  "onlineCloseCardContext": "Close card context",
+  "onlineNoMoveDestination": "No move at this destination. Select other cards or a destination on the board.",
+  "onlineCoupCardConfirmation": "Declare Coup with both Hearts Queens and both Diamond Queens.",
+  "onlineChooseBoard": "Select cards or a destination",
+  "onlineNoCardResponse": "No card response is available. Pass to continue.",
+  "onlineCardResponseHelp": "Double tap a matching card to respond, or choose Pass response.",
+  "onlineKidnapperExposedChoice": "Choose an exposed royal for Kidnapper",
+  "onlineResolveAuthorizedStage": "Resolve only this authorized decision stage.",
+  "onlineContinueWithoutCard": "Continue without spending a card",
+  "onlineJusticeRecordedOutcome": "Request the recorded concealed outcome. No hidden candidate is selected.",
+  "onlineJusticeConcealedChoice": "Choose concealed Justice outcome",
+  "onlineConsumedQueen": "Consumed Queen",
+  "onlineModifier": "Modifier",
+  "onlineDiamondPayment": "Diamond payment",
+  "onlineBarricadeOrder": "Queen first, then five returned cards",
+  "onlineDoppelgangerPair": "Doppelganger pair",
+  "onlineComboMembers": "Combo members",
+  "onlineDoppelgangerFormation": "Doppelganger formation",
+  "onlineReplacementRank": "Replacement rank",
+  "onlineReplacementSuit": "Replacement suit",
+  "onlineChoosePublicTarget": "Choose your public target",
+  "onlineInfiltratorCommit": "Infiltrator · return the attached Jack at declaration",
+  "onlineExileCommit": "Exile · spend this round’s bypass",
+  "onlinePrivateTrade": "Private card trade",
+  "onlineProposalRevision": "Proposal revision",
+  "onlineNewOffer": "New offer",
+  "onlinePrivateOfferTerms": "Only named parties see these terms. Offering reserves no cards. Acceptance uses this exact revision.",
+  "onlineVictoryThreshold": "Victory threshold",
+  "onlineNumberDiamondThreshold": "13 number Diamonds",
+  "onlineRoyalThreshold": "15 Royals",
+  "onlineAceCombatValue": "Ace combat value",
+  "onlineAdvancementValue": "Advancement · +10",
+  "onlineDiamondBonusRange": "Diamond bonus (1–10)",
+  "onlinePurchasePriceRange": "Purchase price (5–10)",
+  "onlineJackRank": "Jack",
+  "onlineQueenRank": "Queen",
+  "onlineKingRank": "King",
+  "onlineCardGestureHelp": "Tap to select exact cards; tap additional cards to build a bundle. Double tap or use keyboard activation for the selected card action. Drag to preview the exact move, costs and destination; release a complete legal move to submit it once. Choices appear only for missing parameters or ambiguity. Inspect cards independently. Escape cancels an unsubmitted selection.",
+  "onlineReviewBeforeConfirm": "Review {action} before confirming.",
+  "@onlineReviewBeforeConfirm": {
+    "placeholders": {
+      "action": {
+        "type": "String"
+      }
+    }
+  },
+  "onlineChooseRoleBoard": "Choose {role}",
+  "@onlineChooseRoleBoard": {
+    "placeholders": {
+      "role": {
+        "type": "String"
+      }
+    }
+  },
+  "onlineResolveKind": "Choose how to resolve {kind}",
+  "@onlineResolveKind": {
+    "placeholders": {
+      "kind": {
+        "type": "String"
+      }
+    }
+  },
+  "onlineSourceCards": "Source cards · {cards}",
+  "@onlineSourceCards": {
+    "placeholders": {
+      "cards": {
+        "type": "String"
+      }
+    }
+  },
+  "onlineFormationSummary": "Formation · {formation}",
+  "@onlineFormationSummary": {
+    "placeholders": {
+      "formation": {
+        "type": "String"
+      }
+    }
+  },
+  "onlineConfirmAction": "Confirm {action}",
+  "@onlineConfirmAction": {
+    "placeholders": {
+      "action": {
+        "type": "String"
+      }
+    }
+  },
+  "onlineSeriesSummary": "Series · {suit}",
+  "@onlineSeriesSummary": {
+    "placeholders": {
+      "suit": {
+        "type": "String"
+      }
+    }
+  },
+  "onlineComboSummary": "Combo · {combo}",
+  "@onlineComboSummary": {
+    "placeholders": {
+      "combo": {
+        "type": "String"
+      }
+    }
+  },
+  "onlineProtectionSummary": "Protection · {target}",
+  "@onlineProtectionSummary": {
+    "placeholders": {
+      "target": {
+        "type": "String"
+      }
+    }
+  },
+  "onlineAttachTo": "Attach to {suit}",
+  "@onlineAttachTo": {
+    "placeholders": {
+      "suit": {
+        "type": "String"
+      }
+    }
+  },
+  "onlineOfferReplacement": "Replace offer to seat {seat} · revision {revision}",
+  "@onlineOfferReplacement": {
+    "placeholders": {
+      "seat": {
+        "type": "String"
+      },
+      "revision": {
+        "type": "String"
+      }
+    }
+  },
+  "onlineCommittedClubs": "Committed Clubs · {cards}",
+  "@onlineCommittedClubs": {
+    "placeholders": {
+      "cards": {
+        "type": "String"
+      }
+    }
+  },
+  "onlineFrozenTargets": "Frozen targets · {cards}",
+  "@onlineFrozenTargets": {
+    "placeholders": {
+      "cards": {
+        "type": "String"
+      }
+    }
+  },
+  "onlineCombatSeats": "Seat {attacker} attacks seat {defender}",
+  "@onlineCombatSeats": {
+    "placeholders": {
+      "attacker": {
+        "type": "String"
+      },
+      "defender": {
+        "type": "String"
+      }
+    }
+  },
+  "onlinePendingSeatAction": "Seat {actor} · {action}",
+  "@onlinePendingSeatAction": {
+    "placeholders": {
+      "actor": {
+        "type": "String"
+      },
+      "action": {
+        "type": "String"
+      }
+    }
+  },
+  "onlinePendingSeatTarget": "Seat {actor} · {action} → Seat {target}",
+  "@onlinePendingSeatTarget": {
+    "placeholders": {
+      "actor": {
+        "type": "String"
+      },
+      "action": {
+        "type": "String"
+      },
+      "target": {
+        "type": "String"
+      }
+    }
+  },
+  "onlineCardRoleSummary": "{role} · {cards}",
+  "@onlineCardRoleSummary": {
+    "placeholders": {
+      "role": {
+        "type": "String"
+      },
+      "cards": {
+        "type": "String"
+      }
+    }
+  },
+  "onlineChooseSupportedSeries": "Choose a supported series",
+  "onlineChooseTargetCard": "Choose the target card",
+  "onlineChooseDiamondPayment": "Select a Diamond payment",
+  "onlineChooseAttackingClubs": "Select attacking Clubs",
+  "onlineChooseAce": "Select an Ace modifier",
+  "onlineChooseProtection": "Choose a protection target",
+  "onlineChoosePayment": "Select Spade payment cards",
+  "onlineChooseFormationMembers": "Select exact combo members",
+  "onlineChooseKings": "Select the two Doppelganger kings",
+  "onlineChooseRequestedCards": "Choose requested cards",
+  "onlineReleaseMove": "Release to submit {action}",
+  "@onlineReleaseMove": {
+    "placeholders": {
+      "action": {
+        "type": "String"
+      }
+    }
+  },
+  "onlineReleaseChoice": "Release to choose {action}",
+  "@onlineReleaseChoice": {
+    "placeholders": {
+      "action": {
+        "type": "String"
+      }
+    }
+  },
+  "onlineDropSeat": "Seat {seat}",
+  "@onlineDropSeat": {
+    "placeholders": {
+      "seat": {
+        "type": "int"
+      }
+    }
+  },
+  "onlineLoanDropTerms": "No cards requested. Exact revision acceptance and successful responses resolve the loan and exclusive alliance together.",
+  "turnDrawToHand": "Turn draw: one card added to your hand.",
+  "turnDrawToConcealedAce": "Turn draw: one card added to your concealed Ace area.",
+  "turnDrawBySeat": "Seat {seat} drew one card.",
+  "@turnDrawBySeat": {
+    "placeholders": {
+      "seat": {
+        "type": "int"
+      }
+    }
+  }
+}

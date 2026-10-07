@@ -1,0 +1,1713 @@
+{
+  "schema": "cgms-direct-drop-verification-v1",
+  "run_id": "direct-drop-revision-20261004",
+  "status": "passed",
+  "recordedAt": "2026-10-04T19:50:22.968302+00:00",
+  "ownerRevision": "Complete legal drops submit after exact preview; scheduled draw feedback; intact formation loan gesture",
+  "preview": "http://localhost:8080/#/online",
+  "finalMainSha256": "b051251fd6c280c29e6b2bb20821b2f74fe15b015482cd48b7f5e6e7b8156baa",
+  "servedAssets": {
+    "index.html": "0cb17fca2f4289e6b33ac9c7e847cdfa8a763169f841d6a7140cb6f83a595c50",
+    "keyboard_bridge.js": "1a244bc7bc3e3f3802e715315bc6e4d0f36809a4d99754ac28ee54227583c261",
+    "flutter_bootstrap.js": "19b719bd1d7d66199e311d25aced68e53628d137c5858caafd0acba17989afbe",
+    "main.dart.js": "b051251fd6c280c29e6b2bb20821b2f74fe15b015482cd48b7f5e6e7b8156baa"
+  },
+  "sourceSha256": {
+    "backend/cmd/webfixture/main.go": "8f962d04e72d52295e5c57376362a3d7c904350e324f948b7b3e622759f842fb",
+    "backend/cmd/webfixture/main_test.go": "d7797437062ac01be46c8a60f59efc5ca55ed606e533acbc03cff6aa176ecc7f",
+    "backend/internal/game/binding_projection_test.go": "34995bb75cfa6f8975c9f51c18677f36d233a808a93b3a0947489583059ea308",
+    "backend/internal/game/projection.go": "ddb917d9799204efa56a632bf371c4f6fd52447b5f560bc4574a6506cea2d0d6",
+    "backend/internal/matchstore/journal.go": "11e685fcf644084d05165e89cd508df1db7e19f1f9c8f6464d62222a2d749aea",
+    "backend/internal/matchstore/online_projection.go": "aea54095577d4562711057d769bb4f83d5ce86a5e40dc782ac668d6056769893",
+    "backend/internal/matchstore/online_projection_test.go": "66ea9e5f7e34c6184519629d4d5ac27b3a29f59fee0acce52153ceb973e9461b",
+    "backend/internal/wire/codec.go": "0defca2b80c7e8214b1da7c345a0f4ef37ffd65254605578f9fca7962924c4c0",
+    "backend/internal/wire/codec_test.go": "1fd72f39aef27b3ee4b3ae9da24edee6afef6c0b05571a665d8633ea496ff327",
+    "client/lib/online/card_intents.dart": "3831eaea3f8e3d4fe7b6047afdec1ba51c5ab23dadcd99eeb4e95b2343c8c4f8",
+    "client/lib/online/online_client.dart": "3973bde7f6305a58fa583e54b751c95d3678ed0bd465dcab5951e4e60d573e2e",
+    "client/lib/online/online_screen.dart": "ff9667f3b17f182c9b77b6491f2bf1d4d169aa87bcd60310000471a10c1172ab",
+    "client/packages/cgms_ui/lib/cgms_ui.dart": "301a7bab15c4dda53b4c2a0828de07ec6b5367847f3088bf5e3260d7c15e4f52",
+    "client/packages/cgms_ui/lib/src/adaptive_table.dart": "a2e02426983983fe33433cda8f2d3c8d0b90c875fabf8598d6a5573a70694128",
+    "client/packages/cgms_ui/lib/src/draw_feedback.dart": "1982b14371e170226f23bc3d45581bb687e0b4a0992aba0c501665f23026a555",
+    "client/packages/cgms_ui/lib/src/l10n/cgms_en.arb": "5fc65e9cda962796be5cc9f1830b6c8297a9542a1f0a3bd4be486973c7a2a8ba",
+    "client/packages/cgms_ui/lib/src/l10n/cgms_localizations.dart": "30df296a78084ce8ee6bfa25e766dcbcf7828ca2b222117e9847f5cf74c4bfa2",
+    "client/packages/cgms_ui/lib/src/l10n/cgms_localizations_en.dart": "fc49997872e34d5354731f165266d80bc3031d7ff6924731bb57a76e8cfefcad",
+    "client/packages/cgms_ui/lib/src/models.dart": "3c98ee080be216fbd60402175b7bc798882f7ccfbfdb994aac79d505296821ad",
+    "client/packages/cgms_ui/test/draw_feedback_test.dart": "b06e040b7901b76e01abe6992c67e7187f6c5855b385ba4cbb28269405e874aa",
+    "client/test/adaptive_table_test.dart": "08eab06250d84602d845493d3720577bda9a83f8edf1f6df275a5df3ab3568b1",
+    "client/test/card_intents_test.dart": "724312d44be563fbd9f076595ddb051e661795c0da483a4baef12d6bd714bcc8",
+    "client/test/card_play_screen_test.dart": "024730d46c76b99f929c9c3aff8f3ed1c7e1868b6fa142733734c5b2bcc6a53e",
+    "client/test/online/online_client_test.dart": "624f02dbf0cb4595d1855593bf0a072f5d6d723372a1cf7d11f267c97ff3d6f8",
+    "client/test/online_screen_test.dart": "3d0836fc38a8013c8279993b76576ec8519bb6d9c74a72d5a9436cbaed036a29",
+    "client/tool/browser_acceptance.cjs": "c8bcc60c2efedd66d6403b6328b8e23f200181666927b9f7834edb0845b26def",
+    "docs/api/online.openapi.json": "b0f9aa898226a3e51e3cc5884aec33e485e5ac759b0127fa5f0b09fe41e93fed",
+    "client/tool/bot_browser_acceptance.cjs": "59021e1520916ae02df613cb372281fa3f9dcd7275feda6cce3838b0d43d2e4d",
+    "client/tool/reconnect_browser_acceptance.cjs": "56ad0f877d7061711f61e38a8962862ef0e2e4e09d6592d7573a22c0f130bbf2",
+    "client/tool/reconnect_browser_acceptance.test.cjs": "1ddb6076c5614094619842f2e7a177740f59e2445ebd34e8062a302a50b912ca"
+  },
+  "sourceChecks": {
+    "hostTests": 475,
+    "sharedTests": 79,
+    "browserSupportTests": 49,
+    "analyzers": "host and shared passed",
+    "authorityRacePackages": [
+      "internal/game",
+      "internal/wire",
+      "internal/matchstore",
+      "cmd/webfixture"
+    ],
+    "postgresRecoveryPrivacyReceiptCases": 6,
+    "artworkInventory": 208
+  },
+  "sourceLogs": [
+    "/tmp/agent-runs/direct-drop-final-authority-race--20261004T185428Z-155457.log",
+    "/tmp/agent-runs/direct-drop-final-persistence--20261004T185512Z-157854.log",
+    "/tmp/agent-runs/direct-drop-art-assets--20261004T184627Z-132763.log",
+    "/tmp/agent-runs/direct-drop-release-build--20261004T192019Z-212572.log",
+    "/tmp/agent-runs/owner-refreshed-host-tests--20261004T192027Z-212922.log",
+    "/tmp/agent-runs/owner-refreshed-shared-tests--20261004T192027Z-212954.log",
+    "/tmp/agent-runs/owner-refreshed-host-analyze--20261004T192046Z-214316.log",
+    "/tmp/agent-runs/owner-refreshed-shared-analyze--20261004T192046Z-214293.log",
+    "/tmp/agent-runs/direct-drop-verified-browser-support--20261004T193501Z-245111.log"
+  ],
+  "preservedPreexistingChanges": {
+    "client/pubspec.lock": "b20bfbe8a6891e1c37084cab3e932532869cdf9d1b0027639018553af6285b6f"
+  },
+  "toolchain": {
+    "flutter": "3.47.5",
+    "dart": "3.13.4",
+    "dependencyResolution": "Pinned SDK package cache prepared before no-pub tests/build; pre-existing older-SDK lockfile preserved byte-for-byte."
+  },
+  "review": "Independent complete prospective staging review and final harness-only review found no blockers. Exact-preview glyph and report commitment wording were corrected; the pre-existing Results wording issue is separately noted.",
+  "browserChecks": [
+    {
+      "report": "client/.browser-tools/artifacts/direct-drop-verified-interactions/chromium-390-report.json",
+      "reportSha256": "49ac6e1213428b42dd9ebcf653d1df76547a6040e9656849dfb1e9f56d1add16",
+      "status": "passed",
+      "engine": "chromium",
+      "version": "153.0.8010.12",
+      "startedAt": "2026-10-04T19:35:00.490Z",
+      "assetSha256": "b051251fd6c280c29e6b2bb20821b2f74fe15b015482cd48b7f5e6e7b8156baa",
+      "harnessSha256": {
+        "browser_acceptance.cjs": "c8bcc60c2efedd66d6403b6328b8e23f200181666927b9f7834edb0845b26def",
+        "browser_faults.cjs": "334439124fbdf5a2ba5056adb3655b53ffaa256797ffa7c6c9bccd705f5ea479",
+        "reconnect_browser_acceptance.cjs": "56ad0f877d7061711f61e38a8962862ef0e2e4e09d6592d7573a22c0f130bbf2"
+      },
+      "passedCases": 6,
+      "cases": [
+        {
+          "case": "single-tap-toggle-double-tap-Escape-and-direct-opening-drop",
+          "pass": true,
+          "commandPosts": 1
+        },
+        {
+          "case": "Ace-drop-rejects-wrong-actor-and-confines-exact-pending-actor",
+          "pass": true,
+          "commandPosts": 1
+        },
+        {
+          "case": "intact-formation-drop-private-loan-exact-acceptance-responses-atomic-alliance",
+          "pass": true,
+          "commandPosts": 1
+        },
+        {
+          "case": "full-18-card-first-opening-exact-preview-text200-cancel",
+          "width": 390,
+          "height": 844,
+          "rtl": false,
+          "pass": true
+        },
+        {
+          "case": "full-18-card-first-opening-exact-preview-text200-cancel",
+          "width": 844,
+          "height": 390,
+          "rtl": false,
+          "pass": true
+        },
+        {
+          "case": "full-18-card-first-opening-exact-preview-text200-cancel",
+          "width": 1041,
+          "height": 948,
+          "rtl": true,
+          "pass": true
+        }
+      ],
+      "errors": 0,
+      "expectedFaults": 0,
+      "expectedAuthenticationChallenges": 0
+    },
+    {
+      "report": "client/.browser-tools/artifacts/direct-drop-verified-journeys/chromium-390-report.json",
+      "reportSha256": "67310a4d95571cd40b84c02eb98d669559fa8356dc2329397e136ed8361c1b41",
+      "status": "passed",
+      "engine": "chromium",
+      "version": "153.0.8010.12",
+      "startedAt": "2026-10-04T19:42:32.900Z",
+      "assetSha256": "b051251fd6c280c29e6b2bb20821b2f74fe15b015482cd48b7f5e6e7b8156baa",
+      "harnessSha256": {
+        "browser_acceptance.cjs": "c8bcc60c2efedd66d6403b6328b8e23f200181666927b9f7834edb0845b26def",
+        "browser_faults.cjs": "334439124fbdf5a2ba5056adb3655b53ffaa256797ffa7c6c9bccd705f5ea479",
+        "reconnect_browser_acceptance.cjs": "56ad0f877d7061711f61e38a8962862ef0e2e4e09d6592d7573a22c0f130bbf2"
+      },
+      "passedCases": 44,
+      "cases": [
+        {
+          "case": "action-switch-routes-cards-to-visible-selection",
+          "pass": true
+        },
+        {
+          "case": "keyboard-card-inspection-preserves-selection",
+          "pass": true
+        },
+        {
+          "case": "browser-back-forward-retains-match-and-draft",
+          "pass": true
+        },
+        {
+          "case": "keyboard-tab-traversal",
+          "pass": true
+        },
+        {
+          "case": "primary-touch-targets-at-least-48",
+          "pass": true,
+          "minimumWidth": 47.99999237060547,
+          "minimumHeight": 48
+        },
+        {
+          "case": "selected-opening-cost-and-timing-guidance",
+          "pass": true
+        },
+        {
+          "case": "physical-opening-preserves-exact-suit-and-all-held-card-cost",
+          "pass": true
+        },
+        {
+          "case": "ordinary-action-disabled-during-response",
+          "pass": true
+        },
+        {
+          "case": "opening-ordered-responses",
+          "pass": true
+        },
+        {
+          "case": "actual-double-tap-pointer-drag-invalid-drop-Escape-and-equivalent-tap-destination",
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "purchase-explicit-quantity-payment-responses",
+          "pass": true
+        },
+        {
+          "case": "focused-physical-trade-draft-survives-boundary",
+          "width": 599,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "focused-physical-trade-draft-survives-boundary",
+          "width": 600,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "focused-physical-trade-draft-survives-boundary",
+          "width": 1049,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "focused-physical-trade-draft-survives-boundary",
+          "width": 1050,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "focused-physical-trade-draft-survives-boundary",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "focused-physical-trade-draft-survives-boundary",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "private-offer-semantics-boundary",
+          "pass": true
+        },
+        {
+          "case": "private-trade-acceptance",
+          "pass": true
+        },
+        {
+          "case": "pending-original-operation-retained-across-boundary",
+          "width": 599,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "pending-original-operation-retained-across-boundary",
+          "width": 600,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "pending-original-operation-retained-across-boundary",
+          "width": 1049,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "pending-original-operation-retained-across-boundary",
+          "width": 1050,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "pending-original-operation-retained-across-boundary",
+          "width": 1049,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "pending-original-operation-retained-across-boundary",
+          "width": 599,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "short-rotated-large-text-recovery-control",
+          "pass": true
+        },
+        {
+          "case": "lost-reply-reload-original-operation-reconciliation",
+          "pass": true
+        },
+        {
+          "case": "intact-loan-alliance-underground",
+          "pass": true
+        },
+        {
+          "case": "selected-attack-declaration-cancellation-and-resolution-costs",
+          "pass": true
+        },
+        {
+          "case": "physical-attack-ordered-response-exchange",
+          "pass": true
+        },
+        {
+          "case": "compensation-return-shuffle-two-recipients-resume",
+          "pass": true
+        },
+        {
+          "case": "confinement-cancels-hostile-action",
+          "pass": true
+        },
+        {
+          "case": "effect-input-is-not-response-pass",
+          "pass": true
+        },
+        {
+          "case": "justice-staged-distinct-card-selections",
+          "pass": true
+        },
+        {
+          "case": "immediate-coup",
+          "pass": true
+        },
+        {
+          "case": "promise-payment-settlement-next-game-reload",
+          "pass": true
+        },
+        {
+          "case": "final-match-shared-ranks",
+          "pass": true
+        },
+        {
+          "case": "owner-lobby-reload-restores-authorized-room",
+          "pass": true
+        },
+        {
+          "case": "clipboard-denial-retains-code-and-specific-recovery-guidance",
+          "pass": true
+        },
+        {
+          "case": "member-lobby-reload-preserves-role-without-invitation",
+          "pass": true
+        },
+        {
+          "case": "room-capacity-and-owner-affordances",
+          "pass": true
+        },
+        {
+          "case": "accessible-static-room-invitation-and-copy-feedback",
+          "pass": true
+        },
+        {
+          "case": "lost-start-reply-lobby-original-operation-recovery",
+          "pass": true
+        },
+        {
+          "case": "normal-guest-room-deal-entry-reload",
+          "pass": true
+        }
+      ],
+      "errors": 0,
+      "expectedFaults": 6,
+      "expectedAuthenticationChallenges": 4
+    },
+    {
+      "report": "client/.browser-tools/artifacts/direct-drop-verified-bots/chromium-bots-report.json",
+      "reportSha256": "bf7f48fcb1294ea116b1188be2d3b09abb9a04543427cda4eaf418aa2fd9302c",
+      "status": "passed",
+      "engine": "chromium",
+      "version": "153.0.8010.12",
+      "startedAt": "2026-10-04T19:35:38.792Z",
+      "assetSha256": "b051251fd6c280c29e6b2bb20821b2f74fe15b015482cd48b7f5e6e7b8156baa",
+      "harnessSha256": {
+        "bot_browser_acceptance.cjs": "59021e1520916ae02df613cb372281fa3f9dcd7275feda6cce3838b0d43d2e4d",
+        "browser_faults.cjs": "334439124fbdf5a2ba5056adb3655b53ffaa256797ffa7c6c9bccd705f5ea479",
+        "reconnect_browser_acceptance.cjs": "56ad0f877d7061711f61e38a8962862ef0e2e4e09d6592d7573a22c0f130bbf2"
+      },
+      "passedCases": 11,
+      "cases": [
+        {
+          "case": "beginner-live-boundaries-and-stream-reconnect-retain-draft-selection-and-private-hand",
+          "pass": true
+        },
+        {
+          "case": "beginner-4p-human-opening-and-automatic-bot-responses",
+          "pass": true
+        },
+        {
+          "case": "beginner-4p-bots-play-return-control-and-privacy",
+          "pass": true
+        },
+        {
+          "case": "beginner-authoritative-early-ending-settles-and-shows-standings",
+          "pass": true,
+          "ending": "round-limit"
+        },
+        {
+          "case": "one-human-three-bots-natural-board-closure-and-complete-settlement",
+          "pass": true,
+          "turnsEnded": 12,
+          "ending": "round-limit",
+          "completedGames": 1,
+          "finalVersion": 711
+        },
+        {
+          "case": "standard-live-boundaries-and-stream-reconnect-retain-draft-selection-and-private-hand",
+          "pass": true
+        },
+        {
+          "case": "standard-4p-human-opening-and-automatic-bot-responses",
+          "pass": true
+        },
+        {
+          "case": "standard-4p-bots-play-return-control-and-privacy",
+          "pass": true
+        },
+        {
+          "case": "advanced-live-boundaries-and-stream-reconnect-retain-draft-selection-and-private-hand",
+          "pass": true
+        },
+        {
+          "case": "advanced-4p-human-opening-and-automatic-bot-responses",
+          "pass": true
+        },
+        {
+          "case": "advanced-4p-bots-play-return-control-and-privacy",
+          "pass": true
+        }
+      ],
+      "errors": 0,
+      "expectedFaults": 0,
+      "expectedAuthenticationChallenges": 3
+    },
+    {
+      "report": "client/.browser-tools/artifacts/direct-drop-verified-geometry/chromium-390-report.json",
+      "reportSha256": "aa88cd3036633ae0f507e38d62e681066081c608599c48ce2c3dcdea7e545de8",
+      "status": "passed",
+      "engine": "chromium",
+      "version": "153.0.8010.12",
+      "startedAt": "2026-10-04T19:45:17.027Z",
+      "assetSha256": "b051251fd6c280c29e6b2bb20821b2f74fe15b015482cd48b7f5e6e7b8156baa",
+      "harnessSha256": {
+        "browser_acceptance.cjs": "c8bcc60c2efedd66d6403b6328b8e23f200181666927b9f7834edb0845b26def",
+        "browser_faults.cjs": "334439124fbdf5a2ba5056adb3655b53ffaa256797ffa7c6c9bccd705f5ea479",
+        "reconnect_browser_acceptance.cjs": "56ad0f877d7061711f61e38a8962862ef0e2e4e09d6592d7573a22c0f130bbf2"
+      },
+      "passedCases": 17,
+      "cases": [
+        {
+          "case": "draw-pile-safe-spacing-and-hit-test",
+          "width": 1041,
+          "height": 948,
+          "pass": true
+        },
+        {
+          "case": "draw-pile-safe-spacing-and-hit-test",
+          "width": 319,
+          "height": 948,
+          "pass": true
+        },
+        {
+          "case": "draw-pile-safe-spacing-and-hit-test",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "draw-pile-safe-spacing-and-hit-test",
+          "width": 599,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "draw-pile-safe-spacing-and-hit-test",
+          "width": 600,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "draw-pile-safe-spacing-and-hit-test",
+          "width": 599,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "draw-pile-safe-spacing-and-hit-test",
+          "width": 1049,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "draw-pile-safe-spacing-and-hit-test",
+          "width": 1050,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "draw-pile-safe-spacing-and-hit-test",
+          "width": 1049,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "draw-pile-safe-spacing-and-hit-test",
+          "width": 768,
+          "height": 1024,
+          "pass": true
+        },
+        {
+          "case": "draw-pile-safe-spacing-and-hit-test",
+          "width": 1024,
+          "height": 768,
+          "pass": true
+        },
+        {
+          "case": "draw-pile-safe-spacing-and-hit-test",
+          "width": 844,
+          "height": 390,
+          "pass": true
+        },
+        {
+          "case": "draw-pile-safe-spacing-and-hit-test",
+          "width": 1280,
+          "height": 600,
+          "pass": true
+        },
+        {
+          "case": "draw-pile-safe-spacing-and-hit-test",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "draw-pile-safe-spacing-rtl-text200",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "draw-pile-safe-spacing-rtl-text200",
+          "width": 1041,
+          "height": 948,
+          "pass": true
+        },
+        {
+          "case": "draw-pile-safe-spacing-rtl-text200",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        }
+      ],
+      "errors": 0,
+      "expectedFaults": 0,
+      "expectedAuthenticationChallenges": 0
+    },
+    {
+      "report": "client/.browser-tools/artifacts/direct-drop-verified-draw/chromium-390-report.json",
+      "reportSha256": "a94115ef5c1b077923687c1f810a16f77a9631e787259d90d44aaad817df1295",
+      "status": "passed",
+      "engine": "chromium",
+      "version": "153.0.8010.12",
+      "startedAt": "2026-10-04T19:45:25.427Z",
+      "assetSha256": "b051251fd6c280c29e6b2bb20821b2f74fe15b015482cd48b7f5e6e7b8156baa",
+      "harnessSha256": {
+        "browser_acceptance.cjs": "c8bcc60c2efedd66d6403b6328b8e23f200181666927b9f7834edb0845b26def",
+        "browser_faults.cjs": "334439124fbdf5a2ba5056adb3655b53ffaa256797ffa7c6c9bccd705f5ea479",
+        "reconnect_browser_acceptance.cjs": "56ad0f877d7061711f61e38a8962862ef0e2e4e09d6592d7573a22c0f130bbf2"
+      },
+      "passedCases": 2,
+      "cases": [
+        {
+          "case": "scheduled-authoritative-draw-once-private-destination-refresh-resize-reconnect",
+          "scenario": "turn-draw-ace",
+          "zone": "concealed-ace",
+          "reducedMotion": false,
+          "commandPosts": 1,
+          "pass": true
+        },
+        {
+          "case": "scheduled-authoritative-draw-once-private-destination-refresh-resize-reconnect",
+          "scenario": "turn-draw-diamond",
+          "zone": "hand",
+          "reducedMotion": true,
+          "commandPosts": 1,
+          "pass": true
+        }
+      ],
+      "errors": 0,
+      "expectedFaults": 0,
+      "expectedAuthenticationChallenges": 0
+    },
+    {
+      "report": "client/.browser-tools/artifacts/direct-drop-verified-reconnect/chromium-reconnect-report.json",
+      "reportSha256": "0ab135df5f239bc84e19fb2645ef9be7c9c8d58b1749e99f6f0d430b09ab1ed0",
+      "status": "passed",
+      "engine": "chromium",
+      "version": "153.0.8010.12",
+      "startedAt": "2026-10-04T19:45:51.089Z",
+      "assetSha256": "b051251fd6c280c29e6b2bb20821b2f74fe15b015482cd48b7f5e6e7b8156baa",
+      "harnessSha256": {
+        "reconnect_browser_acceptance.cjs": "56ad0f877d7061711f61e38a8962862ef0e2e4e09d6592d7573a22c0f130bbf2",
+        "browser_faults.cjs": "334439124fbdf5a2ba5056adb3655b53ffaa256797ffa7c6c9bccd705f5ea479"
+      },
+      "passedCases": 2,
+      "cases": [
+        {
+          "case": "purchase-bounded-offline-retry-restores-draft-selection-and-authority-scope",
+          "automaticReadLimit": 8,
+          "pass": true,
+          "beforeVersion": 0,
+          "afterVersion": 0
+        },
+        {
+          "case": "justice-bounded-offline-retry-restores-draft-selection-and-authority-scope",
+          "automaticReadLimit": 8,
+          "pass": true,
+          "beforeVersion": 0,
+          "afterVersion": 0
+        }
+      ],
+      "errors": 0,
+      "expectedFaults": 18,
+      "expectedAuthenticationChallenges": 0
+    },
+    {
+      "report": "client/.browser-tools/artifacts/direct-drop-verified-rtl/chromium-390-report.json",
+      "reportSha256": "d4237b61160d4939e9869375424460c7ad80223ab84aa22a162f570d762840b7",
+      "status": "passed",
+      "engine": "chromium",
+      "version": "153.0.8010.12",
+      "startedAt": "2026-10-04T19:46:43.097Z",
+      "assetSha256": "b051251fd6c280c29e6b2bb20821b2f74fe15b015482cd48b7f5e6e7b8156baa",
+      "harnessSha256": {
+        "browser_acceptance.cjs": "c8bcc60c2efedd66d6403b6328b8e23f200181666927b9f7834edb0845b26def",
+        "browser_faults.cjs": "334439124fbdf5a2ba5056adb3655b53ffaa256797ffa7c6c9bccd705f5ea479",
+        "reconnect_browser_acceptance.cjs": "56ad0f877d7061711f61e38a8962862ef0e2e4e09d6592d7573a22c0f130bbf2"
+      },
+      "passedCases": 12,
+      "cases": [
+        {
+          "case": "rtl-overlapping-suit-copies-remain-independently-usable",
+          "mode": "rtl",
+          "width": 390,
+          "height": 844,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "rtl-overlapping-suit-copies-remain-independently-usable",
+          "mode": "rtl",
+          "width": 599,
+          "height": 900,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "rtl-overlapping-suit-copies-remain-independently-usable",
+          "mode": "rtl",
+          "width": 600,
+          "height": 900,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "rtl-overlapping-suit-copies-remain-independently-usable",
+          "mode": "rtl",
+          "width": 768,
+          "height": 1024,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "rtl-overlapping-suit-copies-remain-independently-usable",
+          "mode": "rtl",
+          "width": 1049,
+          "height": 900,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "rtl-overlapping-suit-copies-remain-independently-usable",
+          "mode": "rtl",
+          "width": 1050,
+          "height": 900,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "rtl-overlapping-suit-copies-remain-independently-usable",
+          "mode": "rtl",
+          "width": 1440,
+          "height": 900,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "rtl-overlapping-suit-copies-remain-independently-usable",
+          "mode": "rtl",
+          "width": 390,
+          "height": 844,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "rtl-overlapping-suit-copies-remain-independently-usable",
+          "mode": "rtl-text200",
+          "width": 390,
+          "height": 844,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "rtl-overlapping-suit-copies-remain-independently-usable",
+          "mode": "rtl-text200",
+          "width": 768,
+          "height": 1024,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "rtl-overlapping-suit-copies-remain-independently-usable",
+          "mode": "rtl-text200",
+          "width": 1440,
+          "height": 1200,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "rtl-overlapping-suit-copies-remain-independently-usable",
+          "mode": "rtl-text200",
+          "width": 390,
+          "height": 844,
+          "pass": true,
+          "commandPosts": 0
+        }
+      ],
+      "errors": 0,
+      "expectedFaults": 0,
+      "expectedAuthenticationChallenges": 0
+    },
+    {
+      "report": "client/.browser-tools/artifacts/direct-drop-verified-firefox-geometry/firefox-390-report.json",
+      "reportSha256": "f3508289e1492fd1d687b534fde4a09f5f68a83b83a125a0c504d807bcdc2db4",
+      "status": "passed",
+      "engine": "firefox",
+      "version": "155.0",
+      "startedAt": "2026-10-04T19:48:10.391Z",
+      "assetSha256": "b051251fd6c280c29e6b2bb20821b2f74fe15b015482cd48b7f5e6e7b8156baa",
+      "harnessSha256": {
+        "browser_acceptance.cjs": "c8bcc60c2efedd66d6403b6328b8e23f200181666927b9f7834edb0845b26def",
+        "browser_faults.cjs": "334439124fbdf5a2ba5056adb3655b53ffaa256797ffa7c6c9bccd705f5ea479",
+        "reconnect_browser_acceptance.cjs": "56ad0f877d7061711f61e38a8962862ef0e2e4e09d6592d7573a22c0f130bbf2"
+      },
+      "passedCases": 17,
+      "cases": [
+        {
+          "case": "draw-pile-safe-spacing-and-hit-test",
+          "width": 1041,
+          "height": 948,
+          "pass": true
+        },
+        {
+          "case": "draw-pile-safe-spacing-and-hit-test",
+          "width": 319,
+          "height": 948,
+          "pass": true
+        },
+        {
+          "case": "draw-pile-safe-spacing-and-hit-test",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "draw-pile-safe-spacing-and-hit-test",
+          "width": 599,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "draw-pile-safe-spacing-and-hit-test",
+          "width": 600,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "draw-pile-safe-spacing-and-hit-test",
+          "width": 599,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "draw-pile-safe-spacing-and-hit-test",
+          "width": 1049,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "draw-pile-safe-spacing-and-hit-test",
+          "width": 1050,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "draw-pile-safe-spacing-and-hit-test",
+          "width": 1049,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "draw-pile-safe-spacing-and-hit-test",
+          "width": 768,
+          "height": 1024,
+          "pass": true
+        },
+        {
+          "case": "draw-pile-safe-spacing-and-hit-test",
+          "width": 1024,
+          "height": 768,
+          "pass": true
+        },
+        {
+          "case": "draw-pile-safe-spacing-and-hit-test",
+          "width": 844,
+          "height": 390,
+          "pass": true
+        },
+        {
+          "case": "draw-pile-safe-spacing-and-hit-test",
+          "width": 1280,
+          "height": 600,
+          "pass": true
+        },
+        {
+          "case": "draw-pile-safe-spacing-and-hit-test",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "draw-pile-safe-spacing-rtl-text200",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "draw-pile-safe-spacing-rtl-text200",
+          "width": 1041,
+          "height": 948,
+          "pass": true
+        },
+        {
+          "case": "draw-pile-safe-spacing-rtl-text200",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        }
+      ],
+      "errors": 0,
+      "expectedFaults": 0,
+      "expectedAuthenticationChallenges": 0
+    },
+    {
+      "report": "client/.browser-tools/artifacts/direct-drop-verified-firefox-keyboard/firefox-390-report.json",
+      "reportSha256": "814bce02c5179d30d2e072b51e82c98f26c736f097d04542c4faa6445e442632",
+      "status": "passed",
+      "engine": "firefox",
+      "version": "155.0",
+      "startedAt": "2026-10-04T19:48:18.102Z",
+      "assetSha256": "b051251fd6c280c29e6b2bb20821b2f74fe15b015482cd48b7f5e6e7b8156baa",
+      "harnessSha256": {
+        "browser_acceptance.cjs": "c8bcc60c2efedd66d6403b6328b8e23f200181666927b9f7834edb0845b26def",
+        "browser_faults.cjs": "334439124fbdf5a2ba5056adb3655b53ffaa256797ffa7c6c9bccd705f5ea479",
+        "reconnect_browser_acceptance.cjs": "56ad0f877d7061711f61e38a8962862ef0e2e4e09d6592d7573a22c0f130bbf2"
+      },
+      "passedCases": 48,
+      "cases": [
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "normal",
+          "width": 320,
+          "height": 800,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "normal",
+          "width": 360,
+          "height": 800,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "normal",
+          "width": 390,
+          "height": 844,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "normal",
+          "width": 599,
+          "height": 900,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "normal",
+          "width": 600,
+          "height": 900,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "normal",
+          "width": 768,
+          "height": 1024,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "normal",
+          "width": 1049,
+          "height": 900,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "normal",
+          "width": 1050,
+          "height": 900,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "normal",
+          "width": 1440,
+          "height": 900,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "normal",
+          "width": 844,
+          "height": 390,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "text200",
+          "width": 320,
+          "height": 800,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "text200",
+          "width": 390,
+          "height": 844,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "text200",
+          "width": 768,
+          "height": 1024,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "text200",
+          "width": 1440,
+          "height": 1200,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "rtl",
+          "width": 320,
+          "height": 800,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "rtl",
+          "width": 360,
+          "height": 800,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "rtl",
+          "width": 390,
+          "height": 844,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "rtl",
+          "width": 599,
+          "height": 900,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "rtl",
+          "width": 600,
+          "height": 900,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "rtl",
+          "width": 768,
+          "height": 1024,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "rtl",
+          "width": 1049,
+          "height": 900,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "rtl",
+          "width": 1050,
+          "height": 900,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "rtl",
+          "width": 1440,
+          "height": 900,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "rtl",
+          "width": 844,
+          "height": 390,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Table",
+          "mode": "normal",
+          "width": 320,
+          "height": 800,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Table",
+          "mode": "normal",
+          "width": 360,
+          "height": 800,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Table",
+          "mode": "normal",
+          "width": 390,
+          "height": 844,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Table",
+          "mode": "normal",
+          "width": 599,
+          "height": 900,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Table",
+          "mode": "normal",
+          "width": 600,
+          "height": 900,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Table",
+          "mode": "normal",
+          "width": 768,
+          "height": 1024,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Table",
+          "mode": "normal",
+          "width": 1049,
+          "height": 900,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Table",
+          "mode": "normal",
+          "width": 1050,
+          "height": 900,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Table",
+          "mode": "normal",
+          "width": 1440,
+          "height": 900,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Table",
+          "mode": "normal",
+          "width": 844,
+          "height": 390,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Table",
+          "mode": "text200",
+          "width": 320,
+          "height": 800,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Table",
+          "mode": "text200",
+          "width": 390,
+          "height": 844,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Table",
+          "mode": "text200",
+          "width": 768,
+          "height": 1024,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Table",
+          "mode": "text200",
+          "width": 1440,
+          "height": 1200,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Table",
+          "mode": "rtl",
+          "width": 320,
+          "height": 800,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Table",
+          "mode": "rtl",
+          "width": 360,
+          "height": 800,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Table",
+          "mode": "rtl",
+          "width": 390,
+          "height": 844,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Table",
+          "mode": "rtl",
+          "width": 599,
+          "height": 900,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Table",
+          "mode": "rtl",
+          "width": 600,
+          "height": 900,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Table",
+          "mode": "rtl",
+          "width": 768,
+          "height": 1024,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Table",
+          "mode": "rtl",
+          "width": 1049,
+          "height": 900,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Table",
+          "mode": "rtl",
+          "width": 1050,
+          "height": 900,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Table",
+          "mode": "rtl",
+          "width": 1440,
+          "height": 900,
+          "pass": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "long-sequence-forward-keyboard-inspection",
+          "surface": "Table",
+          "mode": "rtl",
+          "width": 844,
+          "height": 390,
+          "pass": true,
+          "commandPosts": 0
+        }
+      ],
+      "errors": 0,
+      "expectedFaults": 0,
+      "expectedAuthenticationChallenges": 0
+    },
+    {
+      "report": "client/.browser-tools/artifacts/direct-drop-verified-webkit-geometry/webkit-390-report.json",
+      "reportSha256": "61686e39beb3be6d87929535b98f3e7400dd3760db05b7d798e613eca226f09a",
+      "status": "passed",
+      "engine": "webkit",
+      "version": "26.6",
+      "startedAt": "2026-10-04T19:48:48.963Z",
+      "assetSha256": "b051251fd6c280c29e6b2bb20821b2f74fe15b015482cd48b7f5e6e7b8156baa",
+      "harnessSha256": {
+        "browser_acceptance.cjs": "c8bcc60c2efedd66d6403b6328b8e23f200181666927b9f7834edb0845b26def",
+        "browser_faults.cjs": "334439124fbdf5a2ba5056adb3655b53ffaa256797ffa7c6c9bccd705f5ea479",
+        "reconnect_browser_acceptance.cjs": "56ad0f877d7061711f61e38a8962862ef0e2e4e09d6592d7573a22c0f130bbf2"
+      },
+      "passedCases": 17,
+      "cases": [
+        {
+          "case": "draw-pile-safe-spacing-and-hit-test",
+          "width": 1041,
+          "height": 948,
+          "pass": true
+        },
+        {
+          "case": "draw-pile-safe-spacing-and-hit-test",
+          "width": 319,
+          "height": 948,
+          "pass": true
+        },
+        {
+          "case": "draw-pile-safe-spacing-and-hit-test",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "draw-pile-safe-spacing-and-hit-test",
+          "width": 599,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "draw-pile-safe-spacing-and-hit-test",
+          "width": 600,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "draw-pile-safe-spacing-and-hit-test",
+          "width": 599,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "draw-pile-safe-spacing-and-hit-test",
+          "width": 1049,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "draw-pile-safe-spacing-and-hit-test",
+          "width": 1050,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "draw-pile-safe-spacing-and-hit-test",
+          "width": 1049,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "draw-pile-safe-spacing-and-hit-test",
+          "width": 768,
+          "height": 1024,
+          "pass": true
+        },
+        {
+          "case": "draw-pile-safe-spacing-and-hit-test",
+          "width": 1024,
+          "height": 768,
+          "pass": true
+        },
+        {
+          "case": "draw-pile-safe-spacing-and-hit-test",
+          "width": 844,
+          "height": 390,
+          "pass": true
+        },
+        {
+          "case": "draw-pile-safe-spacing-and-hit-test",
+          "width": 1280,
+          "height": 600,
+          "pass": true
+        },
+        {
+          "case": "draw-pile-safe-spacing-and-hit-test",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "draw-pile-safe-spacing-rtl-text200",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "draw-pile-safe-spacing-rtl-text200",
+          "width": 1041,
+          "height": 948,
+          "pass": true
+        },
+        {
+          "case": "draw-pile-safe-spacing-rtl-text200",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        }
+      ],
+      "errors": 0,
+      "expectedFaults": 0,
+      "expectedAuthenticationChallenges": 0
+    }
+  ],
+  "curatedCaptures": [
+    {
+      "path": "client/.browser-tools/artifacts/direct-drop-verified-geometry/chromium-390-pile-separated-1041x948.png",
+      "purpose": "Pile spacing at reported viewport",
+      "bytes": 176331,
+      "sha256": "bfefe530a257c7bd28b3a427222d3235755656bf5849c60acbd90c64ab9373e1"
+    },
+    {
+      "path": "client/.browser-tools/artifacts/direct-drop-verified-geometry/chromium-390-pile-separated-rtl200-1041.png",
+      "purpose": "Pile spacing RTL at 200% text",
+      "bytes": 400574,
+      "sha256": "aa6d1d06a9d4ed35f9d9231c02550ac1df7e668e323bef12b0b4bb66750bf3a3"
+    },
+    {
+      "path": "client/.browser-tools/artifacts/direct-drop-verified-draw/chromium-turn-draw-ace-glow.png",
+      "purpose": "Authoritative concealed-Ace acquisition glow",
+      "bytes": 56065,
+      "sha256": "798fe80c2fa1fae7c5e4211f6c8a98239486faa0d5d04161c0fb1ccc18412043"
+    },
+    {
+      "path": "client/.browser-tools/artifacts/direct-drop-verified-draw/chromium-turn-draw-diamond-quiet.png",
+      "purpose": "Ordinary Diamond enters hand with reduced-motion quiet highlight",
+      "bytes": 56776,
+      "sha256": "c8e29ab92aac764396f25fc40f61cf658e89b4e30f651fb4a7a5299cdc25b308"
+    },
+    {
+      "path": "client/.browser-tools/artifacts/direct-drop-verified-interactions/chromium-390-direct-opening-exact-preview.png",
+      "purpose": "Exact opening hover before release",
+      "bytes": 62416,
+      "sha256": "ce4968aa531b86c242e8b05fad88b0c71482ea3af1af8e45af23d5127acbd724"
+    },
+    {
+      "path": "client/.browser-tools/artifacts/direct-drop-verified-interactions/chromium-390-direct-opening-accepted.png",
+      "purpose": "Direct opening accepted once",
+      "bytes": 57273,
+      "sha256": "7500421dee89642d15799ef74fb7c89f6e83787e0760339596808de829b93f11"
+    },
+    {
+      "path": "client/.browser-tools/artifacts/direct-drop-verified-interactions/chromium-390-direct-confinement-pending-actor-preview.png",
+      "purpose": "Ace response identifies exact pending actor",
+      "bytes": 172029,
+      "sha256": "e5e14055461d51d0cb5467720ccca4a26fabab12baeebee00d53467e3dae2c2a"
+    },
+    {
+      "path": "client/.browser-tools/artifacts/direct-drop-verified-interactions/chromium-390-direct-loan-exact-members-preview.png",
+      "purpose": "Intact formation and recipient preview",
+      "bytes": 121958,
+      "sha256": "92f2301419b311808d451a9d11418943e62787a7f9f380a39303501647ed5282"
+    },
+    {
+      "path": "client/.browser-tools/artifacts/direct-drop-verified-interactions/chromium-390-direct-loan-private-proposal.png",
+      "purpose": "Private revisioned proposal",
+      "bytes": 130823,
+      "sha256": "46b3d10be67392b66ad56fa8181ef616bd8356ebb73cf46e9699f15c37be1cbc"
+    },
+    {
+      "path": "client/.browser-tools/artifacts/direct-drop-verified-interactions/chromium-390-direct-loan-accepted-pending-responses.png",
+      "purpose": "Acceptance begins responses without early transfer",
+      "bytes": 131726,
+      "sha256": "dc0a681798d288a871016408eccb95c14261d852ef1a2bee6174a9c4226f4ca3"
+    },
+    {
+      "path": "client/.browser-tools/artifacts/direct-drop-verified-interactions/chromium-390-direct-loan-alliance-resolved.png",
+      "purpose": "Atomic alliance after response resolution",
+      "bytes": 110479,
+      "sha256": "2765c367c346b763ded209e7d1a699c9fd0080f4ff529b5b995629d9b6f19b31"
+    },
+    {
+      "path": "client/.browser-tools/artifacts/direct-drop-verified-interactions/chromium-390-large-opening-preview-844x390-text200.png",
+      "purpose": "All 18 physical cards readable in short viewport at 200% text",
+      "bytes": 45592,
+      "sha256": "6e97c3ae297e5db5a98bea19d98ec567e4c6670f6679259fbee674ef166d153f"
+    },
+    {
+      "path": "client/.browser-tools/artifacts/direct-drop-verified-bots/online-bots-chromium-beginner-natural-match-settlement-complete.png",
+      "purpose": "Normally dealt one-human three-bot 13-round settlement",
+      "bytes": 135857,
+      "sha256": "842b2c4bff96d4fbcdc3d900f8b708d864f2d8c525c05ebe67f317eaa5d69ea5"
+    },
+    {
+      "path": "client/.browser-tools/artifacts/direct-drop-verified-journeys/chromium-390-final-standings.png",
+      "purpose": "Authorized deterministic final standings",
+      "bytes": 47805,
+      "sha256": "e996d779c0a8ffd867a1fb7c5cfd7bcca0713abea8b8fcb247f08a7b2198f206"
+    }
+  ],
+  "limitations": [
+    "No physical Android/iOS, native Safari or external screen-reader acceptance.",
+    "Rare flows beyond listed deterministic browser journeys use widget/domain evidence, not claims of natural-deal coverage.",
+    "The preserved pre-existing lockfile contains older-SDK resolutions; this task tested the repository-pinned SDK dependency cache.",
+    "Chromium covers full listed gameplay journeys; Firefox/WebKit results are limited to the separately listed executed geometry/keyboard gates.",
+    "Pre-existing round-limit Results popup uses departure acknowledgement wording; Finish Settlement remains usable through Game options. Recorded as a nonblocking tracking note, with no unavailable settlement action."
+  ],
+  "commit": "not attempted",
+  "push": "not attempted",
+  "recoveryNotes": [
+    {
+      "failure": "Reported pile overlap reproduced at1041x948 before fix",
+      "resolution": "Dedicated row spacing, minimum48px target, final-build geometry and pointer tests."
+    },
+    {
+      "failure": "Browser second tap hit a newly inserted48px inspection row instead of its original card",
+      "resolution": "Stable existing hand heading now contains inspection; unchanged physical rect and same-coordinate tap toggle regression."
+    },
+    {
+      "failure": "Long exact preview could leave a short viewport at200% text",
+      "resolution": "Safe viewport placement and compact exact rank/suit/copy groups;18-card opening and8-member loan tested without truncation or smaller text."
+    },
+    {
+      "failure": "Returned bound kings lacked client-visible fixed role metadata",
+      "resolution": "Private own_bindings with existing opaque handles, full role/pair filters, privacy and strict journal compatibility regressions."
+    },
+    {
+      "failure": "Browser helper could not reveal an offscreen nested hand viewport",
+      "resolution": "Real keyboard reveal and held-drag outer wheel scrolling; all six final interaction cases pass."
+    },
+    {
+      "failure": "Firefox keyboard setup began inspection before delayed single-tap selection completed on directly visible public card",
+      "resolution": "Harness now waits for the exact selected physical identity before resize/inspection;48 Firefox keyboard cases pass without changing application or weakening retention assertions."
+    },
+    {
+      "failure": "Visual review found an unsupported Unicode arrow in hover feedback",
+      "resolution": "Both preview separators use an ASCII slash; exact card and destination assertions and all10 focused preview tests pass. Final served build and browser captures are refreshed."
+    },
+    {
+      "failure": "A naturally dealt bot match reached round13 settlement, but the harness opened options while the client post-command refresh still held the busy state; the popup retained a disabled Finish Settlement item.",
+      "resolution": "Shared readiness wait observes complete response where available, then rendered busy completion before opening the static popup. Two new async/error regressions and all 49 Node support tests pass; both the fresh 11-case bot suite and all 44 deterministic journeys complete, including settlement, without command retries.",
+      "failedReport": "client/.browser-tools/artifacts/direct-drop-release-bots/chromium-bots-report.json",
+      "relatedFailedReport": "client/.browser-tools/artifacts/direct-drop-release-journeys/chromium-390-report.json"
+    }
+  ],
+  "retention": "Final captures remain in ignored client/.browser-tools/artifacts/direct-drop-verified-*; compact report and narrative are staged. Earlier direct-drop-final-* and direct-drop-release-* runs remain intermediate/recovery evidence. Original cgmsart-phone.png and all artwork remain unchanged.",
+  "naturalBotMatch": {
+    "status": "passed",
+    "players": 4,
+    "humanSeats": 1,
+    "botSeats": 3,
+    "difficultyCompleted": "beginner",
+    "ending": "round-limit",
+    "rounds": 13,
+    "completedGames": 1,
+    "finalVersion": 711,
+    "turnsEnded": 12,
+    "otherDifficultyScope": "standard and advanced opening, responses, reconnect, privacy and return to human control; no full settlement claim",
+    "report": "client/.browser-tools/artifacts/direct-drop-verified-bots/chromium-bots-report.json"
+  },
+  "visualReview": [
+    "1041x948 pile clears all four public quadrants and text",
+    "Quiet draw highlight and Ace glow use unchanged face-down artwork",
+    "18-card compact preview remains legible at200percent text in short viewport",
+    "Exact exposed formation loan preview identifies all members and recipient"
+  ],
+  "harnessRevisionNote": "Final reports use frozen harnesses with exact physical selection readiness and complete command-presentation readiness; main gameplay reports include the shared helper hash. No application command is retried by these waits.",
+  "browserTotals": {
+    "reports": 10,
+    "passedCases": 176,
+    "applicationErrors": 0,
+    "engines": [
+      "Chromium 153.0.8010.12",
+      "Firefox 155.0",
+      "WebKit 26.6"
+    ],
+    "scope": {
+      "Chromium": "44 gameplay journeys, 6 direct/large-preview cases, 2 draw cases, 2 reconnect cases, 12 RTL physical-copy cases, 17 layout cases and 11 bot-room cases",
+      "Firefox": "17 layout cases and 48 long-lived hand/public-card keyboard-selection cases",
+      "WebKit": "17 layout cases"
+    }
+  },
+  "caseDetail": "Compact case names and dimensions below; linked hashed local reports retain complete measured rectangles, authority versions and assertions.",
+  "ordinaryPreviewVerification": {
+    "origin": "http://localhost:8080",
+    "verifiedAt": "2026-10-04T19:50:22.968302+00:00",
+    "sha256": {
+      "index.html": "0cb17fca2f4289e6b33ac9c7e847cdfa8a763169f841d6a7140cb6f83a595c50",
+      "keyboard_bridge.js": "1a244bc7bc3e3f3802e715315bc6e4d0f36809a4d99754ac28ee54227583c261",
+      "flutter_bootstrap.js": "19b719bd1d7d66199e311d25aced68e53628d137c5858caafd0acba17989afbe",
+      "main.dart.js": "b051251fd6c280c29e6b2bb20821b2f74fe15b015482cd48b7f5e6e7b8156baa"
+    },
+    "backendRefreshLog": "/tmp/agent-runs/direct-drop-final-preview-backend--20261004T185536Z-159574.log",
+    "webRefreshLog": "/tmp/agent-runs/direct-drop-release-preview-web--20261004T192050Z-214805.log",
+    "volumes": "retained",
+    "existingMatchCommands": 0
+  },
+  "sourceLogExitCodes": [
+    {
+      "log": "/tmp/agent-runs/direct-drop-final-authority-race--20261004T185428Z-155457.log",
+      "exit": "0"
+    },
+    {
+      "log": "/tmp/agent-runs/direct-drop-final-persistence--20261004T185512Z-157854.log",
+      "exit": "0"
+    },
+    {
+      "log": "/tmp/agent-runs/direct-drop-art-assets--20261004T184627Z-132763.log",
+      "exit": "0"
+    },
+    {
+      "log": "/tmp/agent-runs/direct-drop-release-build--20261004T192019Z-212572.log",
+      "exit": "0"
+    },
+    {
+      "log": "/tmp/agent-runs/owner-refreshed-host-tests--20261004T192027Z-212922.log",
+      "exit": "0"
+    },
+    {
+      "log": "/tmp/agent-runs/owner-refreshed-shared-tests--20261004T192027Z-212954.log",
+      "exit": "0"
+    },
+    {
+      "log": "/tmp/agent-runs/owner-refreshed-host-analyze--20261004T192046Z-214316.log",
+      "exit": "0"
+    },
+    {
+      "log": "/tmp/agent-runs/owner-refreshed-shared-analyze--20261004T192046Z-214293.log",
+      "exit": "0"
+    },
+    {
+      "log": "/tmp/agent-runs/direct-drop-verified-browser-support--20261004T193501Z-245111.log",
+      "exit": "0"
+    }
+  ],
+  "stagingReview": {
+    "prospectiveFiles": 41,
+    "highConfidenceCredentialPatternFlags": [],
+    "preservedPreexistingLockSha256": "b20bfbe8a6891e1c37084cab3e932532869cdf9d1b0027639018553af6285b6f",
+    "diffCheck": "passed"
+  },
+  "browserLogs": [
+    {
+      "log": "/tmp/agent-runs/direct-drop-verified-bots--20261004T193538Z-246720.log",
+      "exit": 0
+    },
+    {
+      "log": "/tmp/agent-runs/direct-drop-verified-draw--20261004T194525Z-266885.log",
+      "exit": 0
+    },
+    {
+      "log": "/tmp/agent-runs/direct-drop-verified-firefox-geometry--20261004T194810Z-272445.log",
+      "exit": 0
+    },
+    {
+      "log": "/tmp/agent-runs/direct-drop-verified-firefox-keyboard--20261004T194817Z-272940.log",
+      "exit": 0
+    },
+    {
+      "log": "/tmp/agent-runs/direct-drop-verified-geometry--20261004T194516Z-266561.log",
+      "exit": 0
+    },
+    {
+      "log": "/tmp/agent-runs/direct-drop-verified-interactions--20261004T193500Z-244933.log",
+      "exit": 0
+    },
+    {
+      "log": "/tmp/agent-runs/direct-drop-verified-journeys--20261004T194232Z-260802.log",
+      "exit": 0
+    },
+    {
+      "log": "/tmp/agent-runs/direct-drop-verified-reconnect--20261004T194550Z-267772.log",
+      "exit": 0
+    },
+    {
+      "log": "/tmp/agent-runs/direct-drop-verified-rtl--20261004T194642Z-269405.log",
+      "exit": 0
+    },
+    {
+      "log": "/tmp/agent-runs/direct-drop-verified-webkit-geometry--20261004T194848Z-274096.log",
+      "exit": 0
+    }
+  ],
+  "disposableAuthorityCleanup": {
+    "status": "passed",
+    "gracefulExit": 0,
+    "log": "/tmp/agent-runs/direct-drop-final-authority--20261004T185427Z-155073.log",
+    "ownedContainerRemoved": true,
+    "ordinaryPreviewStillServesFinalAssets": true,
+    "ordinaryVolumes": "retained"
+  },
+  "stagedRunId": "direct-drop-revision-20261004",
+  "totalSourceTestExecutions": 603
+}

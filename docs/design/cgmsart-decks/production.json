@@ -1,0 +1,342 @@
+{
+  "editions": [
+    {
+      "id": "first-light",
+      "name": "First Light",
+      "variation": "Original balance"
+    },
+    {
+      "id": "ember-glaze",
+      "name": "Ember Glaze",
+      "variation": "Small warm reflected-light accents"
+    },
+    {
+      "id": "rain-glaze",
+      "name": "Rain Glaze",
+      "variation": "Small cool reflected-light accents"
+    },
+    {
+      "id": "drypoint",
+      "name": "Drypoint",
+      "variation": "Sparse dry-pigment marks"
+    }
+  ],
+  "suits": [
+    "hearts",
+    "diamonds",
+    "clubs",
+    "spades"
+  ],
+  "ranks": [
+    "A",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "J",
+    "Q",
+    "K"
+  ],
+  "subjects": {
+    "hearts": [
+      "one monumental pair of bent shelter roofs enclosing a warm heart-shaped rose window",
+      "two small leaning shelter canopies bridged by a rose seam above wet steps",
+      "close oblique view of a fractured rose window between two folded roof planes",
+      "low wide shelter roof across flooded pavement with a single rose-lit door",
+      "nested shelter eaves receding around a warm empty courtyard",
+      "two asymmetrical overlapping roof sheets above a slanting stair",
+      "vertical pink-lit window reflected in a rain barrel beneath bent roofs",
+      "side view of two peaked shelters reflected in still rose-black water",
+      "roofless courtyard framed by two leaning gables and a distant warm window",
+      "an overhead tangle of ten dark roof planes enclosing one small rose opening",
+      "Jack: wiry young adult man with short black hair, worn burgundy high-collar coat, restless diagonal pose, rose-lit shelter behind",
+      "Queen: same-character anchor, adult woman with angular oval face, olive skin, dark bob, long oblique rose light, plain wine-red coat with a tiny square enamel brooch, bent shelter silhouette behind",
+      "King: broad older man, dark brown skin, gray cropped hair and beard, weathered crimson coat, restrained metal circlet, heavy frontal silhouette, distant warm roof light"
+    ],
+    "diamonds": [
+      "single fractured amber beacon with diamond-shaped negative space in wet scaffolding",
+      "two leaning amber window shards and crossed scaffold poles",
+      "low oblique glowing fractured beacon above a puddle",
+      "close tall broken amber window inset in black scaffolding",
+      "a cluster of faceted glass shards around a dark diamond aperture",
+      "receding scaffold corridor ending at an amber broken window",
+      "a fallen beacon prism tilted over wet concrete",
+      "a narrow angular amber tower interrupted by three dark scaffold bars",
+      "an off-center fractured glass canopy throwing sharp golden reflections",
+      "a broad beacon lattice cut by a single black diagonal, small amber aperture",
+      "Jack: lean adult woman, brown skin, tightly cropped curly hair, charcoal ochre workcoat, angular shoulder, amber scaffold light",
+      "Queen: adult woman, pale freckled skin, swept copper hair, long oblique amber light, mustard collar and small square brooch, broken-window background",
+      "King: broad older man, olive skin, black swept hair threaded with gray, short dark beard, ochre coat and plain thin brass circlet, amber fractured beacon behind"
+    ],
+    "clubs": [
+      "monumental three tar-dark batons under one severed cyan tram wire, club-like clustered canopy silhouette",
+      "two leaning rain-dark batons on wet tracks below a sagging cyan wire",
+      "close oblique three dark baton heads beneath a cyan cable",
+      "one low horizontal fallen baton with two upright reeds under a cut cyan wire",
+      "a fan of slender dark reeds reflected in a cyan puddle, tram wire above",
+      "three batons bound with plain cord leaning left under a broken turquoise cable",
+      "rain-dark posts at a tram-wire junction, one tiny coral nick",
+      "three rain-dark batons crossing beneath a severed cyan tram cable, iris shadow and one coral nick",
+      "deep perspective of dark reeds down an abandoned cyan-lit tram line",
+      "a dense black reed silhouette cut by two cyan cable diagonals",
+      "Jack: lean adult man, medium brown skin, unruly dark hair, petrol coat and plain narrow scarf, cyan tram-wire light, restless diagonal pose",
+      "Queen: older adult woman, dark brown skin, gray swept-back hair, teal workcoat with small square brooch, oblique cyan edge light, batons behind",
+      "King: broad older man, pale weathered skin, charcoal hair and heavy moustache, deep teal collar and plain iron circlet, cyan cable light"
+    ],
+    "spades": [
+      "single imposing ferry bow rising into a pointed spade canopy with narrow keel stem, violet reflection",
+      "two oblique ferry prows passing in empty indigo water, no occupants",
+      "a close-up inverted coin-press plate with pointed canopy and narrow stem, no monetary marks",
+      "low frontal ferry bow and a long violet keel reflection",
+      "a lone angular ferry bow under a fractured violet sky",
+      "abandoned press lever slanting over a spade-shaped dark plate",
+      "high oblique empty ferry deck and pointed prow over purple-black water",
+      "side view of a press housing and violet-edged stem silhouette",
+      "a distant sharp ferry prow bisecting long violet reflections",
+      "tight overhead ferry bow composed of ten abstract dark facets, violet seam",
+      "Jack: young adult woman, light olive skin, short asymmetrical black hair, indigo coat, violet ferry-window reflection, restless narrow diagonal pose",
+      "Queen: adult woman, warm brown skin, long black hair tied low, indigo mantle and tiny square brooch, long oblique violet light, ferry bow silhouette behind",
+      "King: broad older man, dark skin, gray beard, midnight-violet coat and modest flat iron circlet, heavy frontal silhouette, press canopy behind"
+    ]
+  },
+  "palettes": {
+    "hearts": "Hearts: rose #F5A4BE / carmine highlights and petrol shadows; two bent shelter roofs around a warm window are the motif.",
+    "diamonds": "Diamonds: amber #FFD275 and burnt gold light, petrol shadows; fractured beacon/window and wet scaffolding.",
+    "clubs": "Clubs: turquoise #83DCD3 and cyan impact flecks, tar-dark batons/reeds and cut tram cables.",
+    "spades": "Spades: iris #B6B2FF and violet reflection, midnight shadows; angular ferry bow/upturned press with narrow stem."
+  },
+  "sources": {
+    "hearts": "sources/first-light/hearts.png",
+    "diamonds": "sources/first-light/diamonds.png",
+    "clubs": "sources/first-light/clubs.png",
+    "spades": "sources/first-light/spades.png"
+  },
+  "generations": {
+    "ember-glaze/hearts": {
+      "source": "sources/ember-glaze/hearts.png",
+      "output_id": "exec-133bb05a-6602-4e56-9636-92686aee9f17",
+      "method": "built-in image_gen.imagegen",
+      "prompt": "Use case: lighting-weather. This supplied hearts atlas is the EDIT TARGET. Make the sibling 'Ember Glaze' edition. Keep 90-95 percent of the visual language identical: SAME 13 paintings in SAME 5-column 3-row grid, SAME pixel dimensions, subjects, original characters' facial identity, posture, costume, framing, silhouette, object count, exact geometry, deep petrol shadows and Hearts: rose #F5A4BE / carmine highlights and petrol shadows; two bent shelter roofs around a warm window are the motif.. Preserve the last two empty cells. No rearrangement, reimagining, text, frames, symbols, numbering, new props or people. Change ONLY one secondary element: lay a tiny warm rose-amber reflected-light brushstroke on a pre-existing lit edge in EACH of the 13 occupied tiles (a roof edge, glass bevel, baton edge, ferry seam, royal collar fold). Warm trace occupies roughly 3-5% of each painting; do NOT tint the whole painting or change the suit's dominant color. Keep faces untouched and visibly same. Gently noticeable beside original, essentially the same artwork in play. Exact original canvas and grid lines.",
+      "reference": "sources/first-light/hearts.png",
+      "sha256": "f5af312bf3addc74b56c37726a1677cb200000ab16f1c64179eca03ca71db4ff",
+      "size": [
+        1448,
+        1086
+      ],
+      "shipping_approval": "exploration only; not accepted production art"
+    },
+    "ember-glaze/diamonds": {
+      "source": "sources/ember-glaze/diamonds.png",
+      "output_id": "exec-7a452bde-14e0-4639-9473-6eeb6379e92d",
+      "method": "built-in image_gen.imagegen",
+      "prompt": "Use case: lighting-weather. This supplied diamonds atlas is the EDIT TARGET. Make the sibling 'Ember Glaze' edition. Keep 90-95 percent of the visual language identical: SAME 13 paintings in SAME 5-column 3-row grid, SAME pixel dimensions, subjects, original characters' facial identity, posture, costume, framing, silhouette, object count, exact geometry, deep petrol shadows and Diamonds: amber #FFD275 and burnt gold light, petrol shadows; fractured beacon/window and wet scaffolding.. Preserve the last two empty cells. No rearrangement, reimagining, text, frames, symbols, numbering, new props or people. Change ONLY one secondary element: lay a tiny warm rose-amber reflected-light brushstroke on a pre-existing lit edge in EACH of the 13 occupied tiles (a roof edge, glass bevel, baton edge, ferry seam, royal collar fold). Warm trace occupies roughly 3-5% of each painting; do NOT tint the whole painting or change the suit's dominant color. Keep faces untouched and visibly same. Gently noticeable beside original, essentially the same artwork in play. Exact original canvas and grid lines.",
+      "reference": "sources/first-light/diamonds.png",
+      "sha256": "75d690abff2d45725efd1d47d1792e05baf42ea143db2a677c0df525c24a0809",
+      "size": [
+        1448,
+        1086
+      ],
+      "shipping_approval": "exploration only; not accepted production art"
+    },
+    "ember-glaze/clubs": {
+      "source": "sources/ember-glaze/clubs.png",
+      "output_id": "exec-a5be9ed4-eede-482c-8e88-d7e3a3d2c876",
+      "method": "built-in image_gen.imagegen",
+      "prompt": "Use case: lighting-weather. This supplied clubs atlas is the EDIT TARGET. Make the sibling 'Ember Glaze' edition. Keep 90-95 percent of the visual language identical: SAME 13 paintings in SAME 5-column 3-row grid, SAME pixel dimensions, subjects, original characters' facial identity, posture, costume, framing, silhouette, object count, exact geometry, deep petrol shadows and Clubs: turquoise #83DCD3 and cyan impact flecks, tar-dark batons/reeds and cut tram cables.. Preserve the last two empty cells. No rearrangement, reimagining, text, frames, symbols, numbering, new props or people. Change ONLY one secondary element: lay a tiny warm rose-amber reflected-light brushstroke on a pre-existing lit edge in EACH of the 13 occupied tiles (a roof edge, glass bevel, baton edge, ferry seam, royal collar fold). Warm trace occupies roughly 3-5% of each painting; do NOT tint the whole painting or change the suit's dominant color. Keep faces untouched and visibly same. Gently noticeable beside original, essentially the same artwork in play. Exact original canvas and grid lines.",
+      "reference": "sources/first-light/clubs.png",
+      "sha256": "13885d7a3a930cf9dc56f8bb2cc50a96ebcc7d131c1a3487f9f33bff5c8103f0",
+      "size": [
+        1448,
+        1086
+      ],
+      "shipping_approval": "exploration only; not accepted production art"
+    },
+    "ember-glaze/spades": {
+      "source": "sources/ember-glaze/spades.png",
+      "output_id": "exec-4959e0c1-a639-455c-b618-a8f599af69ef",
+      "method": "built-in image_gen.imagegen",
+      "prompt": "Use case: lighting-weather. This supplied spades atlas is the EDIT TARGET. Make the sibling 'Ember Glaze' edition. Keep 90-95 percent of the visual language identical: SAME 13 paintings in SAME 5-column 3-row grid, SAME pixel dimensions, subjects, original characters' facial identity, posture, costume, framing, silhouette, object count, exact geometry, deep petrol shadows and Spades: iris #B6B2FF and violet reflection, midnight shadows; angular ferry bow/upturned press with narrow stem.. Preserve the last two empty cells. No rearrangement, reimagining, text, frames, symbols, numbering, new props or people. Change ONLY one secondary element: lay a tiny warm rose-amber reflected-light brushstroke on a pre-existing lit edge in EACH of the 13 occupied tiles (a roof edge, glass bevel, baton edge, ferry seam, royal collar fold). Warm trace occupies roughly 3-5% of each painting; do NOT tint the whole painting or change the suit's dominant color. Keep faces untouched and visibly same. Gently noticeable beside original, essentially the same artwork in play. Exact original canvas and grid lines.",
+      "reference": "sources/first-light/spades.png",
+      "sha256": "a11db658789252c37822ad8adffaba127fa82f3065274f63487d8708b10e2778",
+      "size": [
+        1448,
+        1086
+      ],
+      "shipping_approval": "exploration only; not accepted production art"
+    },
+    "rain-glaze/hearts": {
+      "source": "sources/rain-glaze/hearts.png",
+      "output_id": "exec-966eefd2-29b9-4c8b-b085-d1fff5a1ae6e",
+      "method": "built-in image_gen.imagegen",
+      "prompt": "Use case: lighting-weather. Supplied hearts atlas is the EDIT TARGET. Create 'Rain Glaze', a very subtle sibling print. Retain SAME exact 13 paintings, original faces and their identities, objects, locations, poses, wardrobe, every composition and exact 5x3 grid boundaries and pixel dimensions. Last two cells stay dark empty. Retain 90-95% artistic design language and this suit palette: Hearts: rose #F5A4BE / carmine highlights and petrol shadows; two bent shelter roofs around a warm window are the motif.. Change ONLY a minor cool reflected-light detail: add a short, thin muted pale-cyan/lavender wet-pigment highlight to one existing shadow-edge per painting, including only a coat seam on each royal (not face). Highlight coverage only 3-5% per painting. Preserve all warm lights, material, expressions and dominant color. No overall color grading, no relighting faces, no fresh scenes or props, no text or labels, no suit pips, no card borders. Essentially identical at small playing size; subtle cool pigment trace visible side by side. Keep original image geometry.",
+      "reference": "sources/first-light/hearts.png",
+      "sha256": "feec8e511c800e33d5eaca62f6370ba450009e0c61aeed1fc0c431733ca430d8",
+      "size": [
+        1448,
+        1086
+      ],
+      "shipping_approval": "exploration only; not accepted production art"
+    },
+    "rain-glaze/diamonds": {
+      "source": "sources/rain-glaze/diamonds.png",
+      "output_id": "exec-953dcf56-2c2a-4bce-a77a-15d6c2de5283",
+      "method": "built-in image_gen.imagegen",
+      "prompt": "Use case: lighting-weather. Supplied diamonds atlas is the EDIT TARGET. Create 'Rain Glaze', a very subtle sibling print. Retain SAME exact 13 paintings, original faces and their identities, objects, locations, poses, wardrobe, every composition and exact 5x3 grid boundaries and pixel dimensions. Last two cells stay dark empty. Retain 90-95% artistic design language and this suit palette: Diamonds: amber #FFD275 and burnt gold light, petrol shadows; fractured beacon/window and wet scaffolding.. Change ONLY a minor cool reflected-light detail: add a short, thin muted pale-cyan/lavender wet-pigment highlight to one existing shadow-edge per painting, including only a coat seam on each royal (not face). Highlight coverage only 3-5% per painting. Preserve all warm lights, material, expressions and dominant color. No overall color grading, no relighting faces, no fresh scenes or props, no text or labels, no suit pips, no card borders. Essentially identical at small playing size; subtle cool pigment trace visible side by side. Keep original image geometry.",
+      "reference": "sources/first-light/diamonds.png",
+      "sha256": "359f497c376c507c956e05bc4c9715875632fb8bd8a625658bf3463e2d89e28b",
+      "size": [
+        1448,
+        1086
+      ],
+      "shipping_approval": "exploration only; not accepted production art"
+    },
+    "rain-glaze/clubs": {
+      "source": "sources/rain-glaze/clubs.png",
+      "output_id": "exec-f449a41a-b4b3-469c-8aa2-1f8b9354627c",
+      "method": "built-in image_gen.imagegen",
+      "prompt": "Use case: lighting-weather. Supplied clubs atlas is the EDIT TARGET. Create 'Rain Glaze', a very subtle sibling print. Retain SAME exact 13 paintings, original faces and their identities, objects, locations, poses, wardrobe, every composition and exact 5x3 grid boundaries and pixel dimensions. Last two cells stay dark empty. Retain 90-95% artistic design language and this suit palette: Clubs: turquoise #83DCD3 and cyan impact flecks, tar-dark batons/reeds and cut tram cables.. Change ONLY a minor cool reflected-light detail: add a short, thin muted pale-cyan/lavender wet-pigment highlight to one existing shadow-edge per painting, including only a coat seam on each royal (not face). Highlight coverage only 3-5% per painting. Preserve all warm lights, material, expressions and dominant color. No overall color grading, no relighting faces, no fresh scenes or props, no text or labels, no suit pips, no card borders. Essentially identical at small playing size; subtle cool pigment trace visible side by side. Keep original image geometry.",
+      "reference": "sources/first-light/clubs.png",
+      "sha256": "73e97279a142703f89947cda912b90d3b6e37958115cd000dcdc64161d7860de",
+      "size": [
+        1448,
+        1086
+      ],
+      "shipping_approval": "exploration only; not accepted production art"
+    },
+    "rain-glaze/spades": {
+      "source": "sources/rain-glaze/spades.png",
+      "output_id": "exec-f24dc5b8-3cb0-47ee-97a3-7465234dadef",
+      "method": "built-in image_gen.imagegen",
+      "prompt": "Use case: lighting-weather. Supplied spades atlas is the EDIT TARGET. Create 'Rain Glaze', a very subtle sibling print. Retain SAME exact 13 paintings, original faces and their identities, objects, locations, poses, wardrobe, every composition and exact 5x3 grid boundaries and pixel dimensions. Last two cells stay dark empty. Retain 90-95% artistic design language and this suit palette: Spades: iris #B6B2FF and violet reflection, midnight shadows; angular ferry bow/upturned press with narrow stem.. Change ONLY a minor cool reflected-light detail: add a short, thin muted pale-cyan/lavender wet-pigment highlight to one existing shadow-edge per painting, including only a coat seam on each royal (not face). Highlight coverage only 3-5% per painting. Preserve all warm lights, material, expressions and dominant color. No overall color grading, no relighting faces, no fresh scenes or props, no text or labels, no suit pips, no card borders. Essentially identical at small playing size; subtle cool pigment trace visible side by side. Keep original image geometry.",
+      "reference": "sources/first-light/spades.png",
+      "sha256": "39cf57b4047b4ef079bc2f66210b39c7dd022b6ffa9cb8745f1aba17dccedb70",
+      "size": [
+        1448,
+        1086
+      ],
+      "shipping_approval": "exploration only; not accepted production art"
+    },
+    "shared-back": {
+      "source": "sources/shared-back.png",
+      "output_id": "exec-cb6501bc-23bc-413d-bcaa-2abd87c75780",
+      "method": "built-in image_gen.imagegen",
+      "prompt": "Use case: stylized-concept. Asset: single shared cgmsart playing-card BACK artwork. The supplied CGMS concept is style reference: reuse the visual IDEA of the two indigo concealed-card backs pictured near bottom-right, while drawing a clean original high-resolution standalone back. Render ONE flat front-on full-bleed portrait rectangle in 5:7 aspect ratio, approximately 1024x1434. Rich ink-blue/indigo dyed-paper texture, subtle worn geometric impressions, a refined centrally placed ABSTRACT SPLIT APERTURE made of two slim iris arcs bisected by a narrow vertical slit with a small restrained aged-copper crossbar, a delicate concentric double circle echoing the original back. Absolutely NO letters, numbers, ranks, suit emblems, humans, portraits, edition identifiers, stars, badges or power marks. Not a scene, not a card on a table; no external background or drop shadow, NO frame or border (we add shared exact frame separately). Elegant 180-degree rotationally balanced abstract composition, matte painterly grain very subtle, quiet indigo field. Faint iris and aged copper only, never heart pink/club cyan/diamond gold motif. Identical art to be used on every hidden card in every edition. Keep all shapes comfortably inside central two-thirds; perimeter plain deep #1D2335.",
+      "reference": "sources/cgmsart-concept.png",
+      "sha256": "875fad59f1839419367e6276484b3f31e0d08b2ff63ecfbc478c1ab91284f31d",
+      "size": [
+        1060,
+        1484
+      ],
+      "shipping_approval": "exploration only; not accepted production art"
+    },
+    "first-light/hearts": {
+      "source": "sources/first-light/hearts.png",
+      "output_id": "exec-d4f59614-6db0-47d0-a663-98b7cd6a0269",
+      "method": "built-in image_gen.imagegen",
+      "prompt": "Use case: stylized-concept. Create an original CGMS cgmsart playing-card ILLUSTRATION ATLAS, not a finished deck and no UI. Reference supplied is style/material guidance only, use original compositions. EXACT CANVAS 3200x2400 pixels, 5 columns by 3 rows of edge-to-edge equal 640x800 rectangular illustration tiles. Straight perfect grid; no gaps, margins, frames, rounded corners, labels, numbers, letters, typography, suit pips, captions or watermarks. Each tile is an independent portrait painting with main subject centrally placed, generous dark breathing room at edges, no subject crossing tile boundaries. Thirteen unique paintings occupy first 13 cells in row-major order; last two cells are plain flat dark #101322. DO NOT compress the last row or center it. Every tile same exact width/height.\nOriginal expressive oil/gouache + woodcut/dry-brush mixed medium; broad angular pigment facets, scraped edges, tactile material, weary atmospheric beauty, substantial painterly abstraction rather than glossy fantasy realism. Deep petrol/indigo ground, rich focused foreground color and restrained luminous edges. Strong readable central silhouettes at tiny mobile scale. The first ten tiles contain ONLY objects/environments/abstract motifs: no people, faces, hands, statues or figures. Final three occupied tiles (row3 col1,col2,col3) are Jack, Queen, King portraits: original psychologically expressive adults in worn modern ceremonial coats, no elaborate fantasy armor; royal headwear may be modest, unique faces. Never repeating one painting just recolored. Same motif family but ranks individually composed.\nHearts: rose #F5A4BE / carmine highlights and petrol shadows; two bent shelter roofs around a warm window are the motif.\nExact tile sequence (A,2,3,4,5 / 6,7,8,9,10 / J,Q,K,blank,blank); these are instructions, NOT text to draw:\n1. one monumental pair of bent shelter roofs enclosing a warm heart-shaped rose window\n2. two small leaning shelter canopies bridged by a rose seam above wet steps\n3. close oblique view of a fractured rose window between two folded roof planes\n4. low wide shelter roof across flooded pavement with a single rose-lit door\n5. nested shelter eaves receding around a warm empty courtyard\n6. two asymmetrical overlapping roof sheets above a slanting stair\n7. vertical pink-lit window reflected in a rain barrel beneath bent roofs\n8. side view of two peaked shelters reflected in still rose-black water\n9. roofless courtyard framed by two leaning gables and a distant warm window\n10. an overhead tangle of ten dark roof planes enclosing one small rose opening\n11. Jack: wiry young adult man with short black hair, worn burgundy high-collar coat, restless diagonal pose, rose-lit shelter behind\n12. Queen: same-character anchor, adult woman with angular oval face, olive skin, dark bob, long oblique rose light, plain wine-red coat with a tiny square enamel brooch, bent shelter silhouette behind\n13. King: broad older man, dark brown skin, gray cropped hair and beard, weathered crimson coat, restrained metal circlet, heavy frontal silhouette, distant warm roof light",
+      "reference": "sources/cgmsart-concept.png",
+      "sha256": "0fce006dae1fdac235ce9b99df4933bc80edca3d7530ef838a69d90209426e4b",
+      "size": [
+        1448,
+        1086
+      ],
+      "shipping_approval": "exploration only; not accepted production art"
+    },
+    "first-light/diamonds": {
+      "source": "sources/first-light/diamonds.png",
+      "output_id": "exec-6eee4822-1e21-4bf7-9062-aa5c5ba9f175",
+      "method": "built-in image_gen.imagegen",
+      "prompt": "Use case: stylized-concept. Create an original CGMS cgmsart playing-card ILLUSTRATION ATLAS, not a finished deck and no UI. Reference supplied is style/material guidance only, use original compositions. EXACT CANVAS 3200x2400 pixels, 5 columns by 3 rows of edge-to-edge equal 640x800 rectangular illustration tiles. Straight perfect grid; no gaps, margins, frames, rounded corners, labels, numbers, letters, typography, suit pips, captions or watermarks. Each tile is an independent portrait painting with main subject centrally placed, generous dark breathing room at edges, no subject crossing tile boundaries. Thirteen unique paintings occupy first 13 cells in row-major order; last two cells are plain flat dark #101322. DO NOT compress the last row or center it. Every tile same exact width/height.\nOriginal expressive oil/gouache + woodcut/dry-brush mixed medium; broad angular pigment facets, scraped edges, tactile material, weary atmospheric beauty, substantial painterly abstraction rather than glossy fantasy realism. Deep petrol/indigo ground, rich focused foreground color and restrained luminous edges. Strong readable central silhouettes at tiny mobile scale. The first ten tiles contain ONLY objects/environments/abstract motifs: no people, faces, hands, statues or figures. Final three occupied tiles (row3 col1,col2,col3) are Jack, Queen, King portraits: original psychologically expressive adults in worn modern ceremonial coats, no elaborate fantasy armor; royal headwear may be modest, unique faces. Never repeating one painting just recolored. Same motif family but ranks individually composed.\nDiamonds: amber #FFD275 and burnt gold light, petrol shadows; fractured beacon/window and wet scaffolding.\nExact tile sequence (A,2,3,4,5 / 6,7,8,9,10 / J,Q,K,blank,blank); these are instructions, NOT text to draw:\n1. single fractured amber beacon with diamond-shaped negative space in wet scaffolding\n2. two leaning amber window shards and crossed scaffold poles\n3. low oblique glowing fractured beacon above a puddle\n4. close tall broken amber window inset in black scaffolding\n5. a cluster of faceted glass shards around a dark diamond aperture\n6. receding scaffold corridor ending at an amber broken window\n7. a fallen beacon prism tilted over wet concrete\n8. a narrow angular amber tower interrupted by three dark scaffold bars\n9. an off-center fractured glass canopy throwing sharp golden reflections\n10. a broad beacon lattice cut by a single black diagonal, small amber aperture\n11. Jack: lean adult woman, brown skin, tightly cropped curly hair, charcoal ochre workcoat, angular shoulder, amber scaffold light\n12. Queen: adult woman, pale freckled skin, swept copper hair, long oblique amber light, mustard collar and small square brooch, broken-window background\n13. King: broad older man, olive skin, black swept hair threaded with gray, short dark beard, ochre coat and plain thin brass circlet, amber fractured beacon behind",
+      "reference": "sources/cgmsart-concept.png",
+      "sha256": "813d365c44d7bf94ffe2390fd465e33a659b002b6adf99bab78db91cbcb5d5f5",
+      "size": [
+        1448,
+        1086
+      ],
+      "shipping_approval": "exploration only; not accepted production art"
+    },
+    "first-light/clubs": {
+      "source": "sources/first-light/clubs.png",
+      "output_id": "exec-8d8be858-2c79-4c4d-863c-86764fa76de4",
+      "method": "built-in image_gen.imagegen",
+      "prompt": "Use case: stylized-concept. Create an original CGMS cgmsart playing-card ILLUSTRATION ATLAS, not a finished deck and no UI. Reference supplied is style/material guidance only, use original compositions. EXACT CANVAS 3200x2400 pixels, 5 columns by 3 rows of edge-to-edge equal 640x800 rectangular illustration tiles. Straight perfect grid; no gaps, margins, frames, rounded corners, labels, numbers, letters, typography, suit pips, captions or watermarks. Each tile is an independent portrait painting with main subject centrally placed, generous dark breathing room at edges, no subject crossing tile boundaries. Thirteen unique paintings occupy first 13 cells in row-major order; last two cells are plain flat dark #101322. DO NOT compress the last row or center it. Every tile same exact width/height.\nOriginal expressive oil/gouache + woodcut/dry-brush mixed medium; broad angular pigment facets, scraped edges, tactile material, weary atmospheric beauty, substantial painterly abstraction rather than glossy fantasy realism. Deep petrol/indigo ground, rich focused foreground color and restrained luminous edges. Strong readable central silhouettes at tiny mobile scale. The first ten tiles contain ONLY objects/environments/abstract motifs: no people, faces, hands, statues or figures. Final three occupied tiles (row3 col1,col2,col3) are Jack, Queen, King portraits: original psychologically expressive adults in worn modern ceremonial coats, no elaborate fantasy armor; royal headwear may be modest, unique faces. Never repeating one painting just recolored. Same motif family but ranks individually composed.\nClubs: turquoise #83DCD3 and cyan impact flecks, tar-dark batons/reeds and cut tram cables.\nExact tile sequence (A,2,3,4,5 / 6,7,8,9,10 / J,Q,K,blank,blank); these are instructions, NOT text to draw:\n1. monumental three tar-dark batons under one severed cyan tram wire, club-like clustered canopy silhouette\n2. two leaning rain-dark batons on wet tracks below a sagging cyan wire\n3. close oblique three dark baton heads beneath a cyan cable\n4. one low horizontal fallen baton with two upright reeds under a cut cyan wire\n5. a fan of slender dark reeds reflected in a cyan puddle, tram wire above\n6. three batons bound with plain cord leaning left under a broken turquoise cable\n7. rain-dark posts at a tram-wire junction, one tiny coral nick\n8. three rain-dark batons crossing beneath a severed cyan tram cable, iris shadow and one coral nick\n9. deep perspective of dark reeds down an abandoned cyan-lit tram line\n10. a dense black reed silhouette cut by two cyan cable diagonals\n11. Jack: lean adult man, medium brown skin, unruly dark hair, petrol coat and plain narrow scarf, cyan tram-wire light, restless diagonal pose\n12. Queen: older adult woman, dark brown skin, gray swept-back hair, teal workcoat with small square brooch, oblique cyan edge light, batons behind\n13. King: broad older man, pale weathered skin, charcoal hair and heavy moustache, deep teal collar and plain iron circlet, cyan cable light",
+      "reference": "sources/cgmsart-concept.png",
+      "sha256": "e98aa56c8465420136566dcd45befccd12a11f63212aae335a0aaff2b366d7cf",
+      "size": [
+        1448,
+        1086
+      ],
+      "shipping_approval": "exploration only; not accepted production art"
+    },
+    "first-light/spades": {
+      "source": "sources/first-light/spades.png",
+      "output_id": "exec-e3c64933-6e90-4a4b-84f6-45a4e1bb34ec",
+      "method": "built-in image_gen.imagegen",
+      "prompt": "Use case: stylized-concept. Create an original CGMS cgmsart playing-card ILLUSTRATION ATLAS, not a finished deck and no UI. Reference supplied is style/material guidance only, use original compositions. EXACT CANVAS 3200x2400 pixels, 5 columns by 3 rows of edge-to-edge equal 640x800 rectangular illustration tiles. Straight perfect grid; no gaps, margins, frames, rounded corners, labels, numbers, letters, typography, suit pips, captions or watermarks. Each tile is an independent portrait painting with main subject centrally placed, generous dark breathing room at edges, no subject crossing tile boundaries. Thirteen unique paintings occupy first 13 cells in row-major order; last two cells are plain flat dark #101322. DO NOT compress the last row or center it. Every tile same exact width/height.\nOriginal expressive oil/gouache + woodcut/dry-brush mixed medium; broad angular pigment facets, scraped edges, tactile material, weary atmospheric beauty, substantial painterly abstraction rather than glossy fantasy realism. Deep petrol/indigo ground, rich focused foreground color and restrained luminous edges. Strong readable central silhouettes at tiny mobile scale. The first ten tiles contain ONLY objects/environments/abstract motifs: no people, faces, hands, statues or figures. Final three occupied tiles (row3 col1,col2,col3) are Jack, Queen, King portraits: original psychologically expressive adults in worn modern ceremonial coats, no elaborate fantasy armor; royal headwear may be modest, unique faces. Never repeating one painting just recolored. Same motif family but ranks individually composed.\nSpades: iris #B6B2FF and violet reflection, midnight shadows; angular ferry bow/upturned press with narrow stem.\nExact tile sequence (A,2,3,4,5 / 6,7,8,9,10 / J,Q,K,blank,blank); these are instructions, NOT text to draw:\n1. single imposing ferry bow rising into a pointed spade canopy with narrow keel stem, violet reflection\n2. two oblique ferry prows passing in empty indigo water, no occupants\n3. a close-up inverted coin-press plate with pointed canopy and narrow stem, no monetary marks\n4. low frontal ferry bow and a long violet keel reflection\n5. a lone angular ferry bow under a fractured violet sky\n6. abandoned press lever slanting over a spade-shaped dark plate\n7. high oblique empty ferry deck and pointed prow over purple-black water\n8. side view of a press housing and violet-edged stem silhouette\n9. a distant sharp ferry prow bisecting long violet reflections\n10. tight overhead ferry bow composed of ten abstract dark facets, violet seam\n11. Jack: young adult woman, light olive skin, short asymmetrical black hair, indigo coat, violet ferry-window reflection, restless narrow diagonal pose\n12. Queen: adult woman, warm brown skin, long black hair tied low, indigo mantle and tiny square brooch, long oblique violet light, ferry bow silhouette behind\n13. King: broad older man, dark skin, gray beard, midnight-violet coat and modest flat iron circlet, heavy frontal silhouette, press canopy behind",
+      "reference": "sources/cgmsart-concept.png",
+      "sha256": "191e56c425bbc703e69f17cf8021df9dc71ab9b6566721724e726810877b56f3",
+      "size": [
+        1448,
+        1086
+      ],
+      "shipping_approval": "exploration only; not accepted production art"
+    },
+    "drypoint/hearts": {
+      "source": "sources/drypoint/hearts.png",
+      "output_id": "exec-e57a5a62-e965-430f-9c42-92fbbffe2123",
+      "method": "built-in image_gen.imagegen",
+      "prompt": "Use case: precise-object-edit. Supplied hearts atlas is the EDIT TARGET. Create 'Drypoint' edition through ONE tiny texture alteration per occupied painting. SAME 13 original paintings, SAME faces with identical identity, expression and pose, SAME costumes/props, compositions, motifs, suit colors, lighting and exact 5-column3-row grid dimensions. Last two cells remain empty. Keep 90-95% artistic design language unchanged. ONLY add a sparse cluster of 3-5 tiny matte dry-brush hatch marks in the EXISTING suit pigment to a quiet interior edge of each painting: lower object edge/roof edge/ferry seam and outer shoulder fabric on each of3 royals. Each cluster covers at most3-5% of a tile, a subtle physical ink/tooth variation. No etching across faces, eyes, important silhouettes or main light. These are painterly texture marks, never symbols or text. DO NOT make the entire image rougher, faded or monochrome. Preserve rich original paint and all objects exactly. No changed ornament, new people, labels, pips, card frames, watermarks. Original canvas geometry. Hearts: rose #F5A4BE / carmine highlights and petrol shadows; two bent shelter roofs around a warm window are the motif.",
+      "reference": "sources/first-light/hearts.png",
+      "sha256": "76ff7d7d2c152c48b003d29446e3f7d958dff7b5ce2707dee595d095f0a42106",
+      "size": [
+        1448,
+        1086
+      ],
+      "shipping_approval": "exploration only; not accepted production art"
+    },
+    "drypoint/diamonds": {
+      "source": "sources/drypoint/diamonds.png",
+      "output_id": "exec-2bee1f8b-e9eb-4408-b2b9-499ef1754117",
+      "method": "built-in image_gen.imagegen",
+      "prompt": "Use case: precise-object-edit. Supplied diamonds atlas is the EDIT TARGET. Create 'Drypoint' edition through ONE tiny texture alteration per occupied painting. SAME 13 original paintings, SAME faces with identical identity, expression and pose, SAME costumes/props, compositions, motifs, suit colors, lighting and exact 5-column3-row grid dimensions. Last two cells remain empty. Keep 90-95% artistic design language unchanged. ONLY add a sparse cluster of 3-5 tiny matte dry-brush hatch marks in the EXISTING suit pigment to a quiet interior edge of each painting: lower object edge/roof edge/ferry seam and outer shoulder fabric on each of3 royals. Each cluster covers at most3-5% of a tile, a subtle physical ink/tooth variation. No etching across faces, eyes, important silhouettes or main light. These are painterly texture marks, never symbols or text. DO NOT make the entire image rougher, faded or monochrome. Preserve rich original paint and all objects exactly. No changed ornament, new people, labels, pips, card frames, watermarks. Original canvas geometry. Diamonds: amber #FFD275 and burnt gold light, petrol shadows; fractured beacon/window and wet scaffolding.",
+      "reference": "sources/first-light/diamonds.png",
+      "sha256": "78363e53f66d9eef2175d64132b3be962e4bf931e6b4d4227738c766a6d5117a",
+      "size": [
+        1448,
+        1086
+      ],
+      "shipping_approval": "exploration only; not accepted production art"
+    },
+    "drypoint/clubs": {
+      "source": "sources/drypoint/clubs.png",
+      "output_id": "exec-6539663d-6859-4d38-a814-5d50258777fd",
+      "method": "built-in image_gen.imagegen",
+      "prompt": "Use case: precise-object-edit. Supplied clubs atlas is the EDIT TARGET. Create 'Drypoint' edition through ONE tiny texture alteration per occupied painting. SAME 13 original paintings, SAME faces with identical identity, expression and pose, SAME costumes/props, compositions, motifs, suit colors, lighting and exact 5-column3-row grid dimensions. Last two cells remain empty. Keep 90-95% artistic design language unchanged. ONLY add a sparse cluster of 3-5 tiny matte dry-brush hatch marks in the EXISTING suit pigment to a quiet interior edge of each painting: lower object edge/roof edge/ferry seam and outer shoulder fabric on each of3 royals. Each cluster covers at most3-5% of a tile, a subtle physical ink/tooth variation. No etching across faces, eyes, important silhouettes or main light. These are painterly texture marks, never symbols or text. DO NOT make the entire image rougher, faded or monochrome. Preserve rich original paint and all objects exactly. No changed ornament, new people, labels, pips, card frames, watermarks. Original canvas geometry. Clubs: turquoise #83DCD3 and cyan impact flecks, tar-dark batons/reeds and cut tram cables.",
+      "reference": "sources/first-light/clubs.png",
+      "sha256": "0a0cc121cf869fec7ac1d4f00523cc363399e6025bcf8e6f8ad2f2efb5002cfc",
+      "size": [
+        1448,
+        1086
+      ],
+      "shipping_approval": "exploration only; not accepted production art"
+    },
+    "drypoint/spades": {
+      "source": "sources/drypoint/spades.png",
+      "output_id": "exec-14e82a9c-4827-4603-9291-ac65acf2fa87",
+      "method": "built-in image_gen.imagegen",
+      "prompt": "Use case: precise-object-edit. Supplied spades atlas is the EDIT TARGET. Create 'Drypoint' edition through ONE tiny texture alteration per occupied painting. SAME 13 original paintings, SAME faces with identical identity, expression and pose, SAME costumes/props, compositions, motifs, suit colors, lighting and exact 5-column3-row grid dimensions. Last two cells remain empty. Keep 90-95% artistic design language unchanged. ONLY add a sparse cluster of 3-5 tiny matte dry-brush hatch marks in the EXISTING suit pigment to a quiet interior edge of each painting: lower object edge/roof edge/ferry seam and outer shoulder fabric on each of3 royals. Each cluster covers at most3-5% of a tile, a subtle physical ink/tooth variation. No etching across faces, eyes, important silhouettes or main light. These are painterly texture marks, never symbols or text. DO NOT make the entire image rougher, faded or monochrome. Preserve rich original paint and all objects exactly. No changed ornament, new people, labels, pips, card frames, watermarks. Original canvas geometry. Spades: iris #B6B2FF and violet reflection, midnight shadows; angular ferry bow/upturned press with narrow stem.",
+      "reference": "sources/first-light/spades.png",
+      "sha256": "0bb09dcc55000ad74bfd379f617e9d6c3bb922723231c5843d46c8ef2257a0ce",
+      "size": [
+        1448,
+        1086
+      ],
+      "shipping_approval": "exploration only; not accepted production art"
+    }
+  }
+}

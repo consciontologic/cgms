@@ -1,0 +1,3744 @@
+{
+  "runId": "compact-header-20261002",
+  "status": "verified",
+  "scope": "Compact header follow-up; preserves the previous staged responsive bars and shared vertical board. No backend, rules, artwork or footer redesign.",
+  "rootCause": "The shared header switched to a vertical Flex when innerWidth was below560, forcing status above trailing tools. Full-size compact selector padding and device glyph consumed phone width.",
+  "fix": "Header Flex permanently horizontal. Header-only base font12px at319 grows to18px at1050; icons18 to26 within unchanged48+ targets. Compact Auto selector retains full label and arrow, removes redundant device glyph, uses2px horizontal padding while retaining12px vertical padding. Desktop visuals and footer unchanged. Status text naturally wraps when enlarged, while status and tools remain vertically centered side by side.",
+  "red": {
+    "log": "/tmp/agent-runs/compact-header-layout-red--20261002T194007Z-2289760.log",
+    "evidence": "At 319px status centerY15.5 versus tool centerY53:37.5px separation before change."
+  },
+  "browserRed": {
+    "log": "/tmp/agent-runs/header-row-browser-red--20261002T194026Z-2290550.log",
+    "build": "e9011d03f7a3b1343d4607e3369b68d38231ea6323ea79a9a74779882f61ccec",
+    "evidence": "560px status y5.0303 h24; tools y31.0303 h50.046875. Center alignment assertion fails before the fix."
+  },
+  "inspectedFailures": [
+    {
+      "log": "/tmp/agent-runs/compact-header-red--20261002T193931Z-2288518.log",
+      "diagnosis": "New test finder selected RawTooltip rather than IconButton. Corrected to explicit IconButton tooltip predicate before actual RED; no production changed at that stage."
+    },
+    {
+      "log": "/tmp/agent-runs/compact-header-focused--20261002T194136Z-2293785.log",
+      "diagnosis": "157 passed, one failed. New interpolated header font16.3px at844x390 exceeded previous short15px and enlarged header gap; at200% Ahem status wrapped and reduced initial hand to11px. Retained previous short15px font cap and4px gap; original>=48px hand assertion unchanged.",
+      "targetedGreen": "/tmp/agent-runs/compact-header-short--20261002T194234Z-2296116.log"
+    }
+  ],
+  "finalMainSha256": "9f70471ed4fbf895a9f72b0459d82370498cea4fdf8faa5d3059866eefbd39d5",
+  "buildIdentity": {
+    "local": "9f70471ed4fbf895a9f72b0459d82370498cea4fdf8faa5d3059866eefbd39d5",
+    "8080": "9f70471ed4fbf895a9f72b0459d82370498cea4fdf8faa5d3059866eefbd39d5",
+    "8081": "9f70471ed4fbf895a9f72b0459d82370498cea4fdf8faa5d3059866eefbd39d5"
+  },
+  "sourceHashes": {
+    "client/lib/approved_flow.dart": "42c6c06a033c784a22064d5d4abd2e431b09f44b9e87ef2b496f5ccefec870dc",
+    "client/lib/main.dart": "b5332c8ae31b4ee8df818eed0ea375c11dfc333a03b6e779959b28d34434b1a3",
+    "client/packages/cgms_ui/lib/src/adaptive_table.dart": "0680a1eede22571cd976dd37c8b30615b9ff4852c358cee106932f6532e91905",
+    "client/test/approved_flow_test.dart": "e14b1f3d695bfe2b9537bcdfcb7747f531b043721104c447b56c6472b931d632",
+    "client/tool/adaptive_entry_browser_acceptance.cjs": "3ddbd98e07d495c8848e61b5117e8d19cd6fd16ba1b36ff47c101fd37d17e290",
+    "client/tool/browser_acceptance.cjs": "281014ebcc086d629252fa08fdaa4f021cf8325c09833b0ec58856ed7a204975"
+  },
+  "sourceChecks": {
+    "build": {
+      "log": "/tmp/agent-runs/header-row-build--20261002T194432Z-2300249.log",
+      "sha256": "844d9b91941a2b00e9e0428542efd5543e1bc5cd679afd04c4ddbaea19f873c5",
+      "exit": 0
+    },
+    "host-tests": {
+      "log": "/tmp/agent-runs/header-row-host-tests--20261002T194432Z-2300326.log",
+      "sha256": "dd38d9c318c7f8fca743bf92fe4052afa8b31ebca0ee88fe31218ab8ad5e1905",
+      "exit": 0,
+      "tests": 277
+    },
+    "package-tests": {
+      "log": "/tmp/agent-runs/header-row-package-tests--20261002T194432Z-2300428.log",
+      "sha256": "ff0817589475b0038f9545f3fcab6c1e72de96bac5dadea8514db0323d0806cf",
+      "exit": 0,
+      "tests": 76
+    },
+    "node-support": {
+      "log": "/tmp/agent-runs/header-row-node-support--20261002T194432Z-2300680.log",
+      "sha256": "38a84f9fdbdae1c60819e852f7d614bee5a0f7d08c73fd494d8e556b5a4cea3c",
+      "exit": 0,
+      "tests": 31
+    },
+    "host-analyze": {
+      "log": "/tmp/agent-runs/header-row-host-analyze--20261002T194432Z-2300284.log",
+      "sha256": "b9167e30648b0b2f088e95a4af73651509685a9d7eb04ab6cc7e00a75ef6814f",
+      "exit": 0
+    },
+    "package-analyze": {
+      "log": "/tmp/agent-runs/header-row-package-analyze--20261002T194432Z-2300559.log",
+      "sha256": "2124d7e3970ecd7d77fa2da10f98439497dd9d75203264ec17bc95b0609f8751",
+      "exit": 0
+    },
+    "format": {
+      "log": "/tmp/agent-runs/header-row-format--20261002T194544Z-2304632.log",
+      "sha256": "46c069c184457754f6db9a1454ddd46e0f33a2aef0253baf6e1b3c85610863ab",
+      "exit": 0
+    }
+  },
+  "sourceTestsTotal": 384,
+  "browserChecks": {
+    "total": 357,
+    "suites": [
+      {
+        "lane": "normal",
+        "engine": "chromium",
+        "version": "153.0.8010.12",
+        "reportAtCapture": "client/.browser-tools/artifacts/header-row-verified-normal-chromium/report.json",
+        "reportSha256": "c24fec4c2efab1294bbf421b237c9d574b2a6fd06de34bc15e6a0a514770d20f",
+        "run": {
+          "log": "/tmp/agent-runs/header-row-normal-chromium--20261002T200437Z-2350687.log",
+          "sha256": "aac2145aaae472dfa1f3527f8725b51cddcada45b127a9754c261ffa5da3a6ea",
+          "exit": 0
+        },
+        "caseCount": 104,
+        "errors": [],
+        "cases": [
+          {
+            "case": "trusted-native-tab-bridge-handled-reverse-outside-and-exit",
+            "passed": 1
+          },
+          {
+            "case": "responsive-bars-distribution-sizing-focus-and-reverse-resize",
+            "passed": 1
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "passed": 63
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "passed": 11
+          },
+          {
+            "case": "live-full-width-public-table-and-preview-composition-grow-at-fixed-height",
+            "passed": 1
+          },
+          {
+            "case": "narrow-public-chooser-and-actions-preserve-visible-hand",
+            "passed": 2
+          },
+          {
+            "case": "fresh-normal-entry",
+            "passed": 2
+          },
+          {
+            "case": "uniform-hand-cards-in-horizontal-suit-stacks",
+            "passed": 2
+          },
+          {
+            "case": "horizontal-suit-scroll-preserves-selection",
+            "passed": 2
+          },
+          {
+            "case": "normal-entry-keyboard-inspect-and-escape",
+            "passed": 2
+          },
+          {
+            "case": "suit-stack-physical-card-touch-and-keyboard",
+            "passed": 6
+          },
+          {
+            "case": "normal-entry-text200-touch-navigation",
+            "passed": 8
+          },
+          {
+            "case": "offscreen-card-after-pointer-short-text200-and-modal-reverse-tab",
+            "passed": 1
+          },
+          {
+            "case": "hand-interactions-without-command-posts",
+            "passed": 2
+          }
+        ],
+        "commandPostMeasurements": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "draftRetentionCases": 0,
+        "harnessSha256": "3ddbd98e07d495c8848e61b5117e8d19cd6fd16ba1b36ff47c101fd37d17e290",
+        "headerMeasurements": [
+          {
+            "width": 1440,
+            "height": 948,
+            "status": {
+              "x": 20,
+              "y": 23,
+              "width": 1168.765625,
+              "height": 26
+            },
+            "tools": {
+              "x": 1200.7662353515625,
+              "y": 8,
+              "width": 219.21875,
+              "height": 56
+            },
+            "minimumTarget": 50
+          },
+          {
+            "width": 1050,
+            "height": 948,
+            "status": {
+              "x": 20,
+              "y": 23,
+              "width": 778.765625,
+              "height": 26
+            },
+            "tools": {
+              "x": 810.7662353515625,
+              "y": 8,
+              "width": 219.21875,
+              "height": 56
+            },
+            "minimumTarget": 50
+          },
+          {
+            "width": 1049,
+            "height": 948,
+            "status": {
+              "x": 19.987878799438477,
+              "y": 22.987878799438477,
+              "width": 827.8437252044678,
+              "height": 25.999998092651367
+            },
+            "tools": {
+              "x": 859.833984375,
+              "y": 7.993939399719238,
+              "width": 169.171875,
+              "height": 55.984374046325684
+            },
+            "minimumTarget": 49.99999809265137
+          },
+          {
+            "width": 821,
+            "height": 948,
+            "status": {
+              "x": 17.2242431640625,
+              "y": 21.7242431640625,
+              "width": 617.171875,
+              "height": 23
+            },
+            "tools": {
+              "x": 643.8992309570312,
+              "y": 6.612121105194092,
+              "width": 159.875,
+              "height": 53.21875047683716
+            },
+            "minimumTarget": 48.000000953674316
+          },
+          {
+            "width": 600,
+            "height": 948,
+            "status": {
+              "x": 14.545454025268555,
+              "y": 20.045454025268555,
+              "width": 412.95311164855957,
+              "height": 21.000001907348633
+            },
+            "tools": {
+              "x": 434.5845031738281,
+              "y": 5.2727274894714355,
+              "width": 150.85934448242188,
+              "height": 50.53125047683716
+            },
+            "minimumTarget": 48.000000953674316
+          },
+          {
+            "width": 599,
+            "height": 948,
+            "status": {
+              "x": 14.533332824707031,
+              "y": 20.03333282470703,
+              "width": 412.01561737060547,
+              "height": 21
+            },
+            "tools": {
+              "x": 433.6206359863281,
+              "y": 5.266666889190674,
+              "width": 150.84371948242188,
+              "height": 50.53124952316284
+            },
+            "minimumTarget": 47.999999046325684
+          },
+          {
+            "width": 560,
+            "height": 948,
+            "status": {
+              "x": 14.060606002807617,
+              "y": 20.060606002807617,
+              "width": 376.00000190734863,
+              "height": 20.000001907348633
+            },
+            "tools": {
+              "x": 396.6994323730469,
+              "y": 5.030303001403809,
+              "width": 149.23440551757812,
+              "height": 50.046875953674316
+            },
+            "minimumTarget": 48.00000190734863
+          },
+          {
+            "width": 559,
+            "height": 948,
+            "status": {
+              "x": 14.048484802246094,
+              "y": 20.048484802246094,
+              "width": 375.04688262939453,
+              "height": 20
+            },
+            "tools": {
+              "x": 395.7355651855469,
+              "y": 5.024242401123047,
+              "width": 149.20315551757812,
+              "height": 50.046875
+            },
+            "minimumTarget": 48
+          },
+          {
+            "width": 500,
+            "height": 948,
+            "status": {
+              "x": 13.333333969116211,
+              "y": 19.33333396911621,
+              "width": 320.53125953674316,
+              "height": 20.000001907348633
+            },
+            "tools": {
+              "x": 339.85577392578125,
+              "y": 4.666666507720947,
+              "width": 146.796875,
+              "height": 49.328126430511475
+            },
+            "minimumTarget": 48.00000286102295
+          },
+          {
+            "width": 390,
+            "height": 948,
+            "status": {
+              "x": 12,
+              "y": 19,
+              "width": 217.21875,
+              "height": 18
+            },
+            "tools": {
+              "x": 234,
+              "y": 4,
+              "width": 144,
+              "height": 48
+            },
+            "minimumTarget": 48
+          },
+          {
+            "width": 320,
+            "height": 948,
+            "status": {
+              "x": 12,
+              "y": 19.5,
+              "width": 147.984375,
+              "height": 17
+            },
+            "tools": {
+              "x": 164,
+              "y": 4,
+              "width": 144,
+              "height": 48
+            },
+            "minimumTarget": 48
+          },
+          {
+            "width": 319,
+            "height": 948,
+            "status": {
+              "x": 12,
+              "y": 19.5,
+              "width": 147,
+              "height": 17
+            },
+            "tools": {
+              "x": 163,
+              "y": 4,
+              "width": 144,
+              "height": 48
+            },
+            "minimumTarget": 48
+          },
+          {
+            "width": 320,
+            "height": 948,
+            "status": {
+              "x": 12,
+              "y": 19.5,
+              "width": 147.984375,
+              "height": 17
+            },
+            "tools": {
+              "x": 164,
+              "y": 4,
+              "width": 144,
+              "height": 48
+            },
+            "minimumTarget": 48
+          },
+          {
+            "width": 390,
+            "height": 948,
+            "status": {
+              "x": 12,
+              "y": 19,
+              "width": 217.21875,
+              "height": 18
+            },
+            "tools": {
+              "x": 234,
+              "y": 4,
+              "width": 144,
+              "height": 48
+            },
+            "minimumTarget": 48
+          },
+          {
+            "width": 500,
+            "height": 948,
+            "status": {
+              "x": 13.333333969116211,
+              "y": 19.33333396911621,
+              "width": 320.53125953674316,
+              "height": 20.000001907348633
+            },
+            "tools": {
+              "x": 339.85577392578125,
+              "y": 4.666666507720947,
+              "width": 146.796875,
+              "height": 49.328126430511475
+            },
+            "minimumTarget": 48.00000286102295
+          },
+          {
+            "width": 559,
+            "height": 948,
+            "status": {
+              "x": 14.048484802246094,
+              "y": 20.048484802246094,
+              "width": 375.04688262939453,
+              "height": 20
+            },
+            "tools": {
+              "x": 395.7355651855469,
+              "y": 5.024242401123047,
+              "width": 149.20315551757812,
+              "height": 50.046875
+            },
+            "minimumTarget": 48
+          },
+          {
+            "width": 560,
+            "height": 948,
+            "status": {
+              "x": 14.060606002807617,
+              "y": 20.060606002807617,
+              "width": 376.00000190734863,
+              "height": 20.000001907348633
+            },
+            "tools": {
+              "x": 396.6994323730469,
+              "y": 5.030303001403809,
+              "width": 149.23440551757812,
+              "height": 50.046875953674316
+            },
+            "minimumTarget": 48.00000190734863
+          },
+          {
+            "width": 599,
+            "height": 948,
+            "status": {
+              "x": 14.533332824707031,
+              "y": 20.03333282470703,
+              "width": 412.01561737060547,
+              "height": 21
+            },
+            "tools": {
+              "x": 433.6206359863281,
+              "y": 5.266666889190674,
+              "width": 150.84371948242188,
+              "height": 50.53124952316284
+            },
+            "minimumTarget": 47.999999046325684
+          },
+          {
+            "width": 600,
+            "height": 948,
+            "status": {
+              "x": 14.545454025268555,
+              "y": 20.045454025268555,
+              "width": 412.95311164855957,
+              "height": 21.000001907348633
+            },
+            "tools": {
+              "x": 434.5845031738281,
+              "y": 5.2727274894714355,
+              "width": 150.85934448242188,
+              "height": 50.53125047683716
+            },
+            "minimumTarget": 48.000000953674316
+          },
+          {
+            "width": 821,
+            "height": 948,
+            "status": {
+              "x": 17.2242431640625,
+              "y": 21.7242431640625,
+              "width": 617.171875,
+              "height": 23
+            },
+            "tools": {
+              "x": 643.8992309570312,
+              "y": 6.612121105194092,
+              "width": 159.875,
+              "height": 53.21875047683716
+            },
+            "minimumTarget": 48.000000953674316
+          },
+          {
+            "width": 1049,
+            "height": 948,
+            "status": {
+              "x": 19.987878799438477,
+              "y": 22.987878799438477,
+              "width": 827.8437252044678,
+              "height": 25.999998092651367
+            },
+            "tools": {
+              "x": 859.833984375,
+              "y": 7.993939399719238,
+              "width": 169.171875,
+              "height": 55.984374046325684
+            },
+            "minimumTarget": 49.99999809265137
+          },
+          {
+            "width": 1050,
+            "height": 948,
+            "status": {
+              "x": 20,
+              "y": 23,
+              "width": 778.765625,
+              "height": 26
+            },
+            "tools": {
+              "x": 810.7662353515625,
+              "y": 8,
+              "width": 219.21875,
+              "height": 56
+            },
+            "minimumTarget": 50
+          },
+          {
+            "width": 1440,
+            "height": 948,
+            "status": {
+              "x": 20,
+              "y": 23,
+              "width": 1168.765625,
+              "height": 26
+            },
+            "tools": {
+              "x": 1200.7662353515625,
+              "y": 8,
+              "width": 219.21875,
+              "height": 56
+            },
+            "minimumTarget": 50
+          }
+        ]
+      },
+      {
+        "lane": "normal",
+        "engine": "firefox",
+        "version": "155.0",
+        "reportAtCapture": "client/.browser-tools/artifacts/header-row-verified-normal-firefox/report.json",
+        "reportSha256": "5e042741c3178369d39d5ef0da35e2e6bf083f87afbc2b26765c18406e998031",
+        "run": {
+          "log": "/tmp/agent-runs/header-row-normal-firefox--20261002T200438Z-2350883.log",
+          "sha256": "0fe8054ca4435612b9601ab1d753f9fc966ba701bd73e8aa59b2d329e05da588",
+          "exit": 0
+        },
+        "caseCount": 104,
+        "errors": [],
+        "cases": [
+          {
+            "case": "trusted-native-tab-bridge-handled-reverse-outside-and-exit",
+            "passed": 1
+          },
+          {
+            "case": "responsive-bars-distribution-sizing-focus-and-reverse-resize",
+            "passed": 1
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "passed": 63
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "passed": 11
+          },
+          {
+            "case": "live-full-width-public-table-and-preview-composition-grow-at-fixed-height",
+            "passed": 1
+          },
+          {
+            "case": "narrow-public-chooser-and-actions-preserve-visible-hand",
+            "passed": 2
+          },
+          {
+            "case": "fresh-normal-entry",
+            "passed": 2
+          },
+          {
+            "case": "uniform-hand-cards-in-horizontal-suit-stacks",
+            "passed": 2
+          },
+          {
+            "case": "horizontal-suit-scroll-preserves-selection",
+            "passed": 2
+          },
+          {
+            "case": "normal-entry-keyboard-inspect-and-escape",
+            "passed": 2
+          },
+          {
+            "case": "suit-stack-physical-card-touch-and-keyboard",
+            "passed": 6
+          },
+          {
+            "case": "normal-entry-text200-touch-navigation",
+            "passed": 8
+          },
+          {
+            "case": "offscreen-card-after-pointer-short-text200-and-modal-reverse-tab",
+            "passed": 1
+          },
+          {
+            "case": "hand-interactions-without-command-posts",
+            "passed": 2
+          }
+        ],
+        "commandPostMeasurements": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "draftRetentionCases": 0,
+        "harnessSha256": "3ddbd98e07d495c8848e61b5117e8d19cd6fd16ba1b36ff47c101fd37d17e290",
+        "headerMeasurements": [
+          {
+            "width": 1440,
+            "height": 948,
+            "status": {
+              "x": 20,
+              "y": 23,
+              "width": 1168.7667236328125,
+              "height": 26
+            },
+            "tools": {
+              "x": 1200.7662353515625,
+              "y": 8,
+              "width": 219.2332763671875,
+              "height": 56
+            },
+            "minimumTarget": 50
+          },
+          {
+            "width": 1050,
+            "height": 948,
+            "status": {
+              "x": 20,
+              "y": 23,
+              "width": 778.7666625976562,
+              "height": 26
+            },
+            "tools": {
+              "x": 810.7662353515625,
+              "y": 8,
+              "width": 219.2332763671875,
+              "height": 56
+            },
+            "minimumTarget": 50
+          },
+          {
+            "width": 1049,
+            "height": 948,
+            "status": {
+              "x": 19.987878799438477,
+              "y": 22.987878799438477,
+              "width": 827.8499507904053,
+              "height": 25.999998092651367
+            },
+            "tools": {
+              "x": 859.833984375,
+              "y": 7.993939399719238,
+              "width": 169.183349609375,
+              "height": 55.98333263397217
+            },
+            "minimumTarget": 49.99999809265137
+          },
+          {
+            "width": 821,
+            "height": 948,
+            "status": {
+              "x": 17.2242431640625,
+              "y": 21.7242431640625,
+              "width": 617.183349609375,
+              "height": 23
+            },
+            "tools": {
+              "x": 643.8992309570312,
+              "y": 6.612121105194092,
+              "width": 159.88336181640625,
+              "height": 53.21666765213013
+            },
+            "minimumTarget": 48.000000953674316
+          },
+          {
+            "width": 600,
+            "height": 948,
+            "status": {
+              "x": 14.545454025268555,
+              "y": 20.045454025268555,
+              "width": 412.96666145324707,
+              "height": 21.000001907348633
+            },
+            "tools": {
+              "x": 434.5845031738281,
+              "y": 5.2727274894714355,
+              "width": 150.86666870117188,
+              "height": 50.549999713897705
+            },
+            "minimumTarget": 48.000000953674316
+          },
+          {
+            "width": 599,
+            "height": 948,
+            "status": {
+              "x": 14.533332824707031,
+              "y": 20.03333282470703,
+              "width": 412.0166549682617,
+              "height": 21
+            },
+            "tools": {
+              "x": 433.6206359863281,
+              "y": 5.266666889190674,
+              "width": 150.85000610351562,
+              "height": 50.53333234786987
+            },
+            "minimumTarget": 47.999999046325684
+          },
+          {
+            "width": 560,
+            "height": 948,
+            "status": {
+              "x": 14.060606002807617,
+              "y": 20.060606002807617,
+              "width": 376.00000190734863,
+              "height": 20.000001907348633
+            },
+            "tools": {
+              "x": 396.6994323730469,
+              "y": 5.030303001403809,
+              "width": 149.23330688476562,
+              "height": 50.06666660308838
+            },
+            "minimumTarget": 48.00000190734863
+          },
+          {
+            "width": 559,
+            "height": 948,
+            "status": {
+              "x": 14.048484802246094,
+              "y": 20.048484802246094,
+              "width": 375.06668853759766,
+              "height": 20
+            },
+            "tools": {
+              "x": 395.7355651855469,
+              "y": 5.024242401123047,
+              "width": 149.21664428710938,
+              "height": 50.04999923706055
+            },
+            "minimumTarget": 48
+          },
+          {
+            "width": 500,
+            "height": 948,
+            "status": {
+              "x": 13.333333969116211,
+              "y": 19.33333396911621,
+              "width": 320.53333473205566,
+              "height": 20.000001907348633
+            },
+            "tools": {
+              "x": 339.85577392578125,
+              "y": 4.666666507720947,
+              "width": 146.816650390625,
+              "height": 49.33333349227905
+            },
+            "minimumTarget": 47.999999046325684
+          },
+          {
+            "width": 390,
+            "height": 948,
+            "status": {
+              "x": 12,
+              "y": 19,
+              "width": 217.21665954589844,
+              "height": 18
+            },
+            "tools": {
+              "x": 234,
+              "y": 4,
+              "width": 144,
+              "height": 48
+            },
+            "minimumTarget": 48
+          },
+          {
+            "width": 320,
+            "height": 948,
+            "status": {
+              "x": 12,
+              "y": 19.5,
+              "width": 147.98333740234375,
+              "height": 17
+            },
+            "tools": {
+              "x": 164,
+              "y": 4,
+              "width": 144,
+              "height": 48
+            },
+            "minimumTarget": 48
+          },
+          {
+            "width": 319,
+            "height": 948,
+            "status": {
+              "x": 12,
+              "y": 19.5,
+              "width": 147,
+              "height": 17
+            },
+            "tools": {
+              "x": 163,
+              "y": 4,
+              "width": 144,
+              "height": 48
+            },
+            "minimumTarget": 48
+          },
+          {
+            "width": 320,
+            "height": 948,
+            "status": {
+              "x": 12,
+              "y": 19.5,
+              "width": 147.98333740234375,
+              "height": 17
+            },
+            "tools": {
+              "x": 164,
+              "y": 4,
+              "width": 144,
+              "height": 48
+            },
+            "minimumTarget": 48
+          },
+          {
+            "width": 390,
+            "height": 948,
+            "status": {
+              "x": 12,
+              "y": 19,
+              "width": 217.21665954589844,
+              "height": 18
+            },
+            "tools": {
+              "x": 234,
+              "y": 4,
+              "width": 144,
+              "height": 48
+            },
+            "minimumTarget": 48
+          },
+          {
+            "width": 500,
+            "height": 948,
+            "status": {
+              "x": 13.333333969116211,
+              "y": 19.33333396911621,
+              "width": 320.53333473205566,
+              "height": 20.000001907348633
+            },
+            "tools": {
+              "x": 339.85577392578125,
+              "y": 4.666666507720947,
+              "width": 146.816650390625,
+              "height": 49.33333349227905
+            },
+            "minimumTarget": 47.999999046325684
+          },
+          {
+            "width": 559,
+            "height": 948,
+            "status": {
+              "x": 14.048484802246094,
+              "y": 20.048484802246094,
+              "width": 375.06668853759766,
+              "height": 20
+            },
+            "tools": {
+              "x": 395.7355651855469,
+              "y": 5.024242401123047,
+              "width": 149.21664428710938,
+              "height": 50.04999923706055
+            },
+            "minimumTarget": 48
+          },
+          {
+            "width": 560,
+            "height": 948,
+            "status": {
+              "x": 14.060606002807617,
+              "y": 20.060606002807617,
+              "width": 376.00000190734863,
+              "height": 20.000001907348633
+            },
+            "tools": {
+              "x": 396.6994323730469,
+              "y": 5.030303001403809,
+              "width": 149.23330688476562,
+              "height": 50.06666660308838
+            },
+            "minimumTarget": 48.00000190734863
+          },
+          {
+            "width": 599,
+            "height": 948,
+            "status": {
+              "x": 14.533332824707031,
+              "y": 20.03333282470703,
+              "width": 412.0166549682617,
+              "height": 21
+            },
+            "tools": {
+              "x": 433.6206359863281,
+              "y": 5.266666889190674,
+              "width": 150.85000610351562,
+              "height": 50.53333234786987
+            },
+            "minimumTarget": 47.999999046325684
+          },
+          {
+            "width": 600,
+            "height": 948,
+            "status": {
+              "x": 14.545454025268555,
+              "y": 20.045454025268555,
+              "width": 412.96666145324707,
+              "height": 21.000001907348633
+            },
+            "tools": {
+              "x": 434.5845031738281,
+              "y": 5.2727274894714355,
+              "width": 150.86666870117188,
+              "height": 50.549999713897705
+            },
+            "minimumTarget": 48.000000953674316
+          },
+          {
+            "width": 821,
+            "height": 948,
+            "status": {
+              "x": 17.2242431640625,
+              "y": 21.7242431640625,
+              "width": 617.183349609375,
+              "height": 23
+            },
+            "tools": {
+              "x": 643.8992309570312,
+              "y": 6.612121105194092,
+              "width": 159.88336181640625,
+              "height": 53.21666765213013
+            },
+            "minimumTarget": 48.000000953674316
+          },
+          {
+            "width": 1049,
+            "height": 948,
+            "status": {
+              "x": 19.987878799438477,
+              "y": 22.987878799438477,
+              "width": 827.8499507904053,
+              "height": 25.999998092651367
+            },
+            "tools": {
+              "x": 859.833984375,
+              "y": 7.993939399719238,
+              "width": 169.183349609375,
+              "height": 55.98333263397217
+            },
+            "minimumTarget": 49.99999809265137
+          },
+          {
+            "width": 1050,
+            "height": 948,
+            "status": {
+              "x": 20,
+              "y": 23,
+              "width": 778.7666625976562,
+              "height": 26
+            },
+            "tools": {
+              "x": 810.7662353515625,
+              "y": 8,
+              "width": 219.2332763671875,
+              "height": 56
+            },
+            "minimumTarget": 50
+          },
+          {
+            "width": 1440,
+            "height": 948,
+            "status": {
+              "x": 20,
+              "y": 23,
+              "width": 1168.7667236328125,
+              "height": 26
+            },
+            "tools": {
+              "x": 1200.7662353515625,
+              "y": 8,
+              "width": 219.2332763671875,
+              "height": 56
+            },
+            "minimumTarget": 50
+          }
+        ]
+      },
+      {
+        "lane": "normal",
+        "engine": "webkit",
+        "version": "26.6",
+        "reportAtCapture": "client/.browser-tools/artifacts/header-row-verified-normal-webkit/report.json",
+        "reportSha256": "7bc6c78a18b78a4c5d05cd2a5e75630570c90c350a821422bbb4c8ce555a49d0",
+        "run": {
+          "log": "/tmp/agent-runs/header-row-normal-webkit--20261002T200439Z-2351170.log",
+          "sha256": "3a242b1b8dc658c30dd94da8f2feb9466e92fa5778b8f34d6b01fb732e00c607",
+          "exit": 0
+        },
+        "caseCount": 104,
+        "errors": [],
+        "cases": [
+          {
+            "case": "trusted-native-tab-bridge-handled-reverse-outside-and-exit",
+            "passed": 1
+          },
+          {
+            "case": "responsive-bars-distribution-sizing-focus-and-reverse-resize",
+            "passed": 1
+          },
+          {
+            "case": "full-width-equal-public-quadrants-with-adjacent-visible-hand",
+            "passed": 63
+          },
+          {
+            "case": "hand-visible-on-initial-paint-without-page-scroll",
+            "passed": 11
+          },
+          {
+            "case": "live-full-width-public-table-and-preview-composition-grow-at-fixed-height",
+            "passed": 1
+          },
+          {
+            "case": "narrow-public-chooser-and-actions-preserve-visible-hand",
+            "passed": 2
+          },
+          {
+            "case": "fresh-normal-entry",
+            "passed": 2
+          },
+          {
+            "case": "uniform-hand-cards-in-horizontal-suit-stacks",
+            "passed": 2
+          },
+          {
+            "case": "horizontal-suit-scroll-preserves-selection",
+            "passed": 2
+          },
+          {
+            "case": "normal-entry-keyboard-inspect-and-escape",
+            "passed": 2
+          },
+          {
+            "case": "suit-stack-physical-card-touch-and-keyboard",
+            "passed": 6
+          },
+          {
+            "case": "normal-entry-text200-touch-navigation",
+            "passed": 8
+          },
+          {
+            "case": "offscreen-card-after-pointer-short-text200-and-modal-reverse-tab",
+            "passed": 1
+          },
+          {
+            "case": "hand-interactions-without-command-posts",
+            "passed": 2
+          }
+        ],
+        "commandPostMeasurements": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "draftRetentionCases": 0,
+        "harnessSha256": "3ddbd98e07d495c8848e61b5117e8d19cd6fd16ba1b36ff47c101fd37d17e290",
+        "headerMeasurements": [
+          {
+            "width": 1440,
+            "height": 948,
+            "status": {
+              "x": 20,
+              "y": 23,
+              "width": 1168.765625,
+              "height": 26
+            },
+            "tools": {
+              "x": 1200.7662353515625,
+              "y": 8,
+              "width": 219.21875,
+              "height": 56
+            },
+            "minimumTarget": 50
+          },
+          {
+            "width": 1050,
+            "height": 948,
+            "status": {
+              "x": 20,
+              "y": 23,
+              "width": 778.765625,
+              "height": 26
+            },
+            "tools": {
+              "x": 810.7662353515625,
+              "y": 8,
+              "width": 219.21875,
+              "height": 56
+            },
+            "minimumTarget": 50
+          },
+          {
+            "width": 1049,
+            "height": 948,
+            "status": {
+              "x": 19.987878799438477,
+              "y": 22.987878799438477,
+              "width": 827.8437252044678,
+              "height": 25.999998092651367
+            },
+            "tools": {
+              "x": 859.833984375,
+              "y": 7.993939399719238,
+              "width": 169.171875,
+              "height": 55.984374046325684
+            },
+            "minimumTarget": 49.99999809265137
+          },
+          {
+            "width": 821,
+            "height": 948,
+            "status": {
+              "x": 17.2242431640625,
+              "y": 21.7242431640625,
+              "width": 617.171875,
+              "height": 23
+            },
+            "tools": {
+              "x": 643.8992309570312,
+              "y": 6.612121105194092,
+              "width": 159.875,
+              "height": 53.21875047683716
+            },
+            "minimumTarget": 48.000000953674316
+          },
+          {
+            "width": 600,
+            "height": 948,
+            "status": {
+              "x": 14.545454025268555,
+              "y": 20.045454025268555,
+              "width": 412.95311164855957,
+              "height": 21.000001907348633
+            },
+            "tools": {
+              "x": 434.5845031738281,
+              "y": 5.2727274894714355,
+              "width": 150.85934448242188,
+              "height": 50.53125047683716
+            },
+            "minimumTarget": 48.000000953674316
+          },
+          {
+            "width": 599,
+            "height": 948,
+            "status": {
+              "x": 14.533332824707031,
+              "y": 20.03333282470703,
+              "width": 412.01561737060547,
+              "height": 21
+            },
+            "tools": {
+              "x": 433.6206359863281,
+              "y": 5.266666889190674,
+              "width": 150.84371948242188,
+              "height": 50.53124952316284
+            },
+            "minimumTarget": 47.999999046325684
+          },
+          {
+            "width": 560,
+            "height": 948,
+            "status": {
+              "x": 14.060606002807617,
+              "y": 20.060606002807617,
+              "width": 376.00000190734863,
+              "height": 20.000001907348633
+            },
+            "tools": {
+              "x": 396.6994323730469,
+              "y": 5.030303001403809,
+              "width": 149.23440551757812,
+              "height": 50.046875953674316
+            },
+            "minimumTarget": 48.00000190734863
+          },
+          {
+            "width": 559,
+            "height": 948,
+            "status": {
+              "x": 14.048484802246094,
+              "y": 20.048484802246094,
+              "width": 375.04688262939453,
+              "height": 20
+            },
+            "tools": {
+              "x": 395.7355651855469,
+              "y": 5.024242401123047,
+              "width": 149.20315551757812,
+              "height": 50.046875
+            },
+            "minimumTarget": 48
+          },
+          {
+            "width": 500,
+            "height": 948,
+            "status": {
+              "x": 13.333333969116211,
+              "y": 19.33333396911621,
+              "width": 320.53125953674316,
+              "height": 20.000001907348633
+            },
+            "tools": {
+              "x": 339.85577392578125,
+              "y": 4.666666507720947,
+              "width": 146.796875,
+              "height": 49.328126430511475
+            },
+            "minimumTarget": 47.999999046325684
+          },
+          {
+            "width": 390,
+            "height": 948,
+            "status": {
+              "x": 12,
+              "y": 19,
+              "width": 217.21875,
+              "height": 18
+            },
+            "tools": {
+              "x": 234,
+              "y": 4,
+              "width": 144,
+              "height": 48
+            },
+            "minimumTarget": 48
+          },
+          {
+            "width": 320,
+            "height": 948,
+            "status": {
+              "x": 12,
+              "y": 19.5,
+              "width": 147.984375,
+              "height": 17
+            },
+            "tools": {
+              "x": 164,
+              "y": 4,
+              "width": 144,
+              "height": 48
+            },
+            "minimumTarget": 48
+          },
+          {
+            "width": 319,
+            "height": 948,
+            "status": {
+              "x": 12,
+              "y": 19.5,
+              "width": 147,
+              "height": 17
+            },
+            "tools": {
+              "x": 163,
+              "y": 4,
+              "width": 144,
+              "height": 48
+            },
+            "minimumTarget": 48
+          },
+          {
+            "width": 320,
+            "height": 948,
+            "status": {
+              "x": 12,
+              "y": 19.5,
+              "width": 147.984375,
+              "height": 17
+            },
+            "tools": {
+              "x": 164,
+              "y": 4,
+              "width": 144,
+              "height": 48
+            },
+            "minimumTarget": 48
+          },
+          {
+            "width": 390,
+            "height": 948,
+            "status": {
+              "x": 12,
+              "y": 19,
+              "width": 217.21875,
+              "height": 18
+            },
+            "tools": {
+              "x": 234,
+              "y": 4,
+              "width": 144,
+              "height": 48
+            },
+            "minimumTarget": 48
+          },
+          {
+            "width": 500,
+            "height": 948,
+            "status": {
+              "x": 13.333333969116211,
+              "y": 19.33333396911621,
+              "width": 320.53125953674316,
+              "height": 20.000001907348633
+            },
+            "tools": {
+              "x": 339.85577392578125,
+              "y": 4.666666507720947,
+              "width": 146.796875,
+              "height": 49.328126430511475
+            },
+            "minimumTarget": 47.999999046325684
+          },
+          {
+            "width": 559,
+            "height": 948,
+            "status": {
+              "x": 14.048484802246094,
+              "y": 20.048484802246094,
+              "width": 375.04688262939453,
+              "height": 20
+            },
+            "tools": {
+              "x": 395.7355651855469,
+              "y": 5.024242401123047,
+              "width": 149.20315551757812,
+              "height": 50.046875
+            },
+            "minimumTarget": 48
+          },
+          {
+            "width": 560,
+            "height": 948,
+            "status": {
+              "x": 14.060606002807617,
+              "y": 20.060606002807617,
+              "width": 376.00000190734863,
+              "height": 20.000001907348633
+            },
+            "tools": {
+              "x": 396.6994323730469,
+              "y": 5.030303001403809,
+              "width": 149.23440551757812,
+              "height": 50.046875953674316
+            },
+            "minimumTarget": 48.00000190734863
+          },
+          {
+            "width": 599,
+            "height": 948,
+            "status": {
+              "x": 14.533332824707031,
+              "y": 20.03333282470703,
+              "width": 412.01561737060547,
+              "height": 21
+            },
+            "tools": {
+              "x": 433.6206359863281,
+              "y": 5.266666889190674,
+              "width": 150.84371948242188,
+              "height": 50.53124952316284
+            },
+            "minimumTarget": 47.999999046325684
+          },
+          {
+            "width": 600,
+            "height": 948,
+            "status": {
+              "x": 14.545454025268555,
+              "y": 20.045454025268555,
+              "width": 412.95311164855957,
+              "height": 21.000001907348633
+            },
+            "tools": {
+              "x": 434.5845031738281,
+              "y": 5.2727274894714355,
+              "width": 150.85934448242188,
+              "height": 50.53125047683716
+            },
+            "minimumTarget": 48.000000953674316
+          },
+          {
+            "width": 821,
+            "height": 948,
+            "status": {
+              "x": 17.2242431640625,
+              "y": 21.7242431640625,
+              "width": 617.171875,
+              "height": 23
+            },
+            "tools": {
+              "x": 643.8992309570312,
+              "y": 6.612121105194092,
+              "width": 159.875,
+              "height": 53.21875047683716
+            },
+            "minimumTarget": 48.000000953674316
+          },
+          {
+            "width": 1049,
+            "height": 948,
+            "status": {
+              "x": 19.987878799438477,
+              "y": 22.987878799438477,
+              "width": 827.8437252044678,
+              "height": 25.999998092651367
+            },
+            "tools": {
+              "x": 859.833984375,
+              "y": 7.993939399719238,
+              "width": 169.171875,
+              "height": 55.984374046325684
+            },
+            "minimumTarget": 49.99999809265137
+          },
+          {
+            "width": 1050,
+            "height": 948,
+            "status": {
+              "x": 20,
+              "y": 23,
+              "width": 778.765625,
+              "height": 26
+            },
+            "tools": {
+              "x": 810.7662353515625,
+              "y": 8,
+              "width": 219.21875,
+              "height": 56
+            },
+            "minimumTarget": 50
+          },
+          {
+            "width": 1440,
+            "height": 948,
+            "status": {
+              "x": 20,
+              "y": 23,
+              "width": 1168.765625,
+              "height": 26
+            },
+            "tools": {
+              "x": 1200.7662353515625,
+              "y": 8,
+              "width": 219.21875,
+              "height": 56
+            },
+            "minimumTarget": 50
+          }
+        ]
+      },
+      {
+        "lane": "online",
+        "engine": "chromium",
+        "version": "153.0.8010.12",
+        "reportAtCapture": "client/.browser-tools/artifacts/header-row-final-online-chromium/chromium-quadrants-report.json",
+        "reportSha256": "25c0b2a2560d161caecfc00fb669bfd3ce3109c23650e095059ead925d1db459",
+        "run": {
+          "log": "/tmp/agent-runs/header-row-online-chromium--20261002T194616Z-2305787.log",
+          "sha256": "35abb3ecb6f5b7e93ef7acd9561085a19051607f8cb2820defd927c86cc73455",
+          "exit": 0
+        },
+        "caseCount": 15,
+        "errors": [],
+        "cases": [
+          {
+            "case": "online-full-width-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "passed": 13
+          },
+          {
+            "case": "online-live-full-width-public-table-and-preview-composition-grow-at-fixed-height",
+            "passed": 1
+          },
+          {
+            "case": "online-responsive-header-footer-live-boundaries-preserve-keyboard-focus-and-action-authority",
+            "passed": 1
+          }
+        ],
+        "commandPostMeasurements": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "draftRetentionCases": 13,
+        "harnessSha256": {
+          "browser_acceptance.cjs": "281014ebcc086d629252fa08fdaa4f021cf8325c09833b0ec58856ed7a204975",
+          "browser_faults.cjs": "334439124fbdf5a2ba5056adb3655b53ffaa256797ffa7c6c9bccd705f5ea479"
+        },
+        "headerMeasurements": [
+          {
+            "width": 319,
+            "height": 948,
+            "mode": "normal",
+            "textScale": 1,
+            "status": {
+              "x": 12,
+              "y": 75.5,
+              "width": 243,
+              "height": 17
+            },
+            "tools": {
+              "x": 259,
+              "y": 60,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "width": 320,
+            "height": 568,
+            "mode": "normal",
+            "textScale": 1,
+            "status": {
+              "x": 12,
+              "y": 75.5,
+              "width": 243.984375,
+              "height": 17
+            },
+            "tools": {
+              "x": 260,
+              "y": 60,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "width": 390,
+            "height": 844,
+            "mode": "normal",
+            "textScale": 1,
+            "status": {
+              "x": 12,
+              "y": 75,
+              "width": 313.21875,
+              "height": 18
+            },
+            "tools": {
+              "x": 330,
+              "y": 60,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "width": 768,
+            "height": 1024,
+            "mode": "normal",
+            "textScale": 1,
+            "status": {
+              "x": 16.581817626953125,
+              "y": 77.08181762695312,
+              "width": 673.3281555175781,
+              "height": 23
+            },
+            "tools": {
+              "x": 698.8363647460938,
+              "y": 62.29090881347656,
+              "width": 52.578125,
+              "height": 52.578125
+            }
+          },
+          {
+            "width": 1440,
+            "height": 900,
+            "mode": "normal",
+            "textScale": 1,
+            "status": {
+              "x": 20,
+              "y": 79,
+              "width": 1332,
+              "height": 26
+            },
+            "tools": {
+              "x": 1364,
+              "y": 64,
+              "width": 56,
+              "height": 56
+            }
+          },
+          {
+            "width": 844,
+            "height": 390,
+            "mode": "normal",
+            "textScale": 1,
+            "status": {
+              "x": 12,
+              "y": 69,
+              "width": 768,
+              "height": 22
+            },
+            "tools": {
+              "x": 784,
+              "y": 56,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "width": 319,
+            "height": 948,
+            "mode": "rtl-text200",
+            "textScale": 2,
+            "status": {
+              "x": 64,
+              "y": 60,
+              "width": 243,
+              "height": 74
+            },
+            "tools": {
+              "x": 12,
+              "y": 73,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "width": 320,
+            "height": 568,
+            "mode": "rtl-text200",
+            "textScale": 2,
+            "status": {
+              "x": 64.01094055175781,
+              "y": 60,
+              "width": 243.98439025878906,
+              "height": 74
+            },
+            "tools": {
+              "x": 12,
+              "y": 73,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "width": 390,
+            "height": 844,
+            "mode": "rtl-text200",
+            "textScale": 2,
+            "status": {
+              "x": 64.77702331542969,
+              "y": 66,
+              "width": 313.21873474121094,
+              "height": 36
+            },
+            "tools": {
+              "x": 12,
+              "y": 60,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "width": 768,
+            "height": 1024,
+            "mode": "rtl-text200",
+            "textScale": 2,
+            "status": {
+              "x": 78.07745361328125,
+              "y": 66.08181762695312,
+              "width": 673.328125,
+              "height": 45
+            },
+            "tools": {
+              "x": 16.581817626953125,
+              "y": 62.29090881347656,
+              "width": 52.578125,
+              "height": 52.578125
+            }
+          },
+          {
+            "width": 1440,
+            "height": 900,
+            "mode": "rtl-text200",
+            "textScale": 2,
+            "status": {
+              "x": 88,
+              "y": 66,
+              "width": 1332,
+              "height": 52
+            },
+            "tools": {
+              "x": 20,
+              "y": 64,
+              "width": 56,
+              "height": 56
+            }
+          },
+          {
+            "width": 1440,
+            "height": 1200,
+            "mode": "rtl-text200",
+            "textScale": 2,
+            "status": {
+              "x": 88,
+              "y": 66,
+              "width": 1332,
+              "height": 52
+            },
+            "tools": {
+              "x": 20,
+              "y": 64,
+              "width": 56,
+              "height": 56
+            }
+          },
+          {
+            "width": 844,
+            "height": 390,
+            "mode": "rtl-text200",
+            "textScale": 2,
+            "status": {
+              "x": 64,
+              "y": 58,
+              "width": 768,
+              "height": 44
+            },
+            "tools": {
+              "x": 12,
+              "y": 56,
+              "width": 48,
+              "height": 48
+            }
+          }
+        ],
+        "liveHeaderMeasurements": [
+          {
+            "width": 319,
+            "status": {
+              "x": 12,
+              "y": 75.5,
+              "width": 243,
+              "height": 17
+            },
+            "tools": {
+              "x": 259,
+              "y": 60,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "width": 390,
+            "status": {
+              "x": 12,
+              "y": 75,
+              "width": 313.21875,
+              "height": 18
+            },
+            "tools": {
+              "x": 330,
+              "y": 60,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "width": 500,
+            "status": {
+              "x": 13.333333969116211,
+              "y": 75.33333587646484,
+              "width": 418.01563453674316,
+              "height": 20
+            },
+            "tools": {
+              "x": 437.3333435058594,
+              "y": 60.66666793823242,
+              "width": 49.328125,
+              "height": 49.328128814697266
+            }
+          },
+          {
+            "width": 559,
+            "status": {
+              "x": 14.048484802246094,
+              "y": 76.0484848022461,
+              "width": 474.21875762939453,
+              "height": 20
+            },
+            "tools": {
+              "x": 494.90301513671875,
+              "y": 61.02424240112305,
+              "width": 50.046875,
+              "height": 50.046878814697266
+            }
+          },
+          {
+            "width": 560,
+            "status": {
+              "x": 14.060606002807617,
+              "y": 76.06060791015625,
+              "width": 475.17187690734863,
+              "height": 20
+            },
+            "tools": {
+              "x": 495.8787841796875,
+              "y": 61.030303955078125,
+              "width": 50.046875,
+              "height": 50.046875
+            }
+          },
+          {
+            "width": 600,
+            "status": {
+              "x": 14.545454025268555,
+              "y": 76.04545593261719,
+              "width": 513.2812671661377,
+              "height": 21
+            },
+            "tools": {
+              "x": 534.9091186523438,
+              "y": 61.272727966308594,
+              "width": 50.53125,
+              "height": 50.53125
+            }
+          },
+          {
+            "width": 821,
+            "status": {
+              "x": 17.2242431640625,
+              "y": 77.7242431640625,
+              "width": 723.828125,
+              "height": 23
+            },
+            "tools": {
+              "x": 750.551513671875,
+              "y": 62.61212158203125,
+              "width": 53.21875,
+              "height": 53.21875
+            }
+          },
+          {
+            "width": 1050,
+            "status": {
+              "x": 20,
+              "y": 79,
+              "width": 942,
+              "height": 26
+            },
+            "tools": {
+              "x": 974,
+              "y": 64,
+              "width": 56,
+              "height": 56
+            }
+          },
+          {
+            "width": 1440,
+            "status": {
+              "x": 20,
+              "y": 79,
+              "width": 1332,
+              "height": 26
+            },
+            "tools": {
+              "x": 1364,
+              "y": 64,
+              "width": 56,
+              "height": 56
+            }
+          },
+          {
+            "width": 1050,
+            "status": {
+              "x": 20,
+              "y": 79,
+              "width": 942,
+              "height": 26
+            },
+            "tools": {
+              "x": 974,
+              "y": 64,
+              "width": 56,
+              "height": 56
+            }
+          },
+          {
+            "width": 821,
+            "status": {
+              "x": 17.2242431640625,
+              "y": 77.7242431640625,
+              "width": 723.828125,
+              "height": 23
+            },
+            "tools": {
+              "x": 750.551513671875,
+              "y": 62.61212158203125,
+              "width": 53.21875,
+              "height": 53.21875
+            }
+          },
+          {
+            "width": 600,
+            "status": {
+              "x": 14.545454025268555,
+              "y": 76.04545593261719,
+              "width": 513.2812671661377,
+              "height": 21
+            },
+            "tools": {
+              "x": 534.9091186523438,
+              "y": 61.272727966308594,
+              "width": 50.53125,
+              "height": 50.53125
+            }
+          },
+          {
+            "width": 560,
+            "status": {
+              "x": 14.060606002807617,
+              "y": 76.06060791015625,
+              "width": 475.17187690734863,
+              "height": 20
+            },
+            "tools": {
+              "x": 495.8787841796875,
+              "y": 61.030303955078125,
+              "width": 50.046875,
+              "height": 50.046875
+            }
+          },
+          {
+            "width": 559,
+            "status": {
+              "x": 14.048484802246094,
+              "y": 76.0484848022461,
+              "width": 474.21875762939453,
+              "height": 20
+            },
+            "tools": {
+              "x": 494.90301513671875,
+              "y": 61.02424240112305,
+              "width": 50.046875,
+              "height": 50.046878814697266
+            }
+          },
+          {
+            "width": 500,
+            "status": {
+              "x": 13.333333969116211,
+              "y": 75.33333587646484,
+              "width": 418.01563453674316,
+              "height": 20
+            },
+            "tools": {
+              "x": 437.3333435058594,
+              "y": 60.66666793823242,
+              "width": 49.328125,
+              "height": 49.328128814697266
+            }
+          },
+          {
+            "width": 390,
+            "status": {
+              "x": 12,
+              "y": 75,
+              "width": 313.21875,
+              "height": 18
+            },
+            "tools": {
+              "x": 330,
+              "y": 60,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "width": 319,
+            "status": {
+              "x": 12,
+              "y": 75.5,
+              "width": 243,
+              "height": 17
+            },
+            "tools": {
+              "x": 259,
+              "y": 60,
+              "width": 48,
+              "height": 48
+            }
+          }
+        ],
+        "focusBoundaryHeaderMeasurements": [
+          {
+            "width": 599,
+            "status": {
+              "x": 14.533332824707031,
+              "y": 76.03333282470703,
+              "width": 512.3281173706055,
+              "height": 21
+            },
+            "tools": {
+              "x": 533.933349609375,
+              "y": 61.266666412353516,
+              "width": 50.53125,
+              "height": 50.531246185302734
+            }
+          },
+          {
+            "width": 600,
+            "status": {
+              "x": 14.545454025268555,
+              "y": 76.04545593261719,
+              "width": 513.2812671661377,
+              "height": 21
+            },
+            "tools": {
+              "x": 534.9091186523438,
+              "y": 61.272727966308594,
+              "width": 50.53125,
+              "height": 50.53125
+            }
+          },
+          {
+            "width": 1049,
+            "status": {
+              "x": 19.987878799438477,
+              "y": 78.98787689208984,
+              "width": 941.0468502044678,
+              "height": 26
+            },
+            "tools": {
+              "x": 973.0242309570312,
+              "y": 63.99393844604492,
+              "width": 55.98431396484375,
+              "height": 55.984378814697266
+            }
+          },
+          {
+            "width": 1050,
+            "status": {
+              "x": 20,
+              "y": 79,
+              "width": 942,
+              "height": 26
+            },
+            "tools": {
+              "x": 974,
+              "y": 64,
+              "width": 56,
+              "height": 56
+            }
+          },
+          {
+            "width": 1049,
+            "status": {
+              "x": 19.987878799438477,
+              "y": 78.98787689208984,
+              "width": 941.0468502044678,
+              "height": 26
+            },
+            "tools": {
+              "x": 973.0242309570312,
+              "y": 63.99393844604492,
+              "width": 55.98431396484375,
+              "height": 55.984378814697266
+            }
+          },
+          {
+            "width": 600,
+            "status": {
+              "x": 14.545454025268555,
+              "y": 76.04545593261719,
+              "width": 513.2812671661377,
+              "height": 21
+            },
+            "tools": {
+              "x": 534.9091186523438,
+              "y": 61.272727966308594,
+              "width": 50.53125,
+              "height": 50.53125
+            }
+          },
+          {
+            "width": 599,
+            "status": {
+              "x": 14.533332824707031,
+              "y": 76.03333282470703,
+              "width": 512.3281173706055,
+              "height": 21
+            },
+            "tools": {
+              "x": 533.933349609375,
+              "y": 61.266666412353516,
+              "width": 50.53125,
+              "height": 50.531246185302734
+            }
+          }
+        ]
+      },
+      {
+        "lane": "online",
+        "engine": "firefox",
+        "version": "155.0",
+        "reportAtCapture": "client/.browser-tools/artifacts/header-row-final-online-firefox/firefox-quadrants-report.json",
+        "reportSha256": "dd67223715f8f25f2a6d9764747c084db2aa7fa480de86dd07b2891be2b45f73",
+        "run": {
+          "log": "/tmp/agent-runs/header-row-online-firefox--20261002T194911Z-2313316.log",
+          "sha256": "850c168f0c82ab42b3ad07af290cb9570d7303dbc09701fc075f50abc8ce2b84",
+          "exit": 0
+        },
+        "caseCount": 15,
+        "errors": [],
+        "cases": [
+          {
+            "case": "online-full-width-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "passed": 13
+          },
+          {
+            "case": "online-live-full-width-public-table-and-preview-composition-grow-at-fixed-height",
+            "passed": 1
+          },
+          {
+            "case": "online-responsive-header-footer-live-boundaries-preserve-keyboard-focus-and-action-authority",
+            "passed": 1
+          }
+        ],
+        "commandPostMeasurements": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "draftRetentionCases": 13,
+        "harnessSha256": {
+          "browser_acceptance.cjs": "281014ebcc086d629252fa08fdaa4f021cf8325c09833b0ec58856ed7a204975",
+          "browser_faults.cjs": "334439124fbdf5a2ba5056adb3655b53ffaa256797ffa7c6c9bccd705f5ea479"
+        },
+        "headerMeasurements": [
+          {
+            "width": 319,
+            "height": 948,
+            "mode": "normal",
+            "textScale": 1,
+            "status": {
+              "x": 12,
+              "y": 75.5,
+              "width": 243,
+              "height": 17
+            },
+            "tools": {
+              "x": 259,
+              "y": 60,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "width": 320,
+            "height": 568,
+            "mode": "normal",
+            "textScale": 1,
+            "status": {
+              "x": 12,
+              "y": 75.5,
+              "width": 243.98333740234375,
+              "height": 17
+            },
+            "tools": {
+              "x": 260,
+              "y": 60,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "width": 390,
+            "height": 844,
+            "mode": "normal",
+            "textScale": 1,
+            "status": {
+              "x": 12,
+              "y": 75,
+              "width": 313.2166748046875,
+              "height": 18
+            },
+            "tools": {
+              "x": 330,
+              "y": 60,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "width": 768,
+            "height": 1024,
+            "mode": "normal",
+            "textScale": 1,
+            "status": {
+              "x": 16.581817626953125,
+              "y": 77.08181762695312,
+              "width": 673.3333435058594,
+              "height": 23
+            },
+            "tools": {
+              "x": 698.8363647460938,
+              "y": 62.29090881347656,
+              "width": 52.58331298828125,
+              "height": 52.58332824707031
+            }
+          },
+          {
+            "width": 1440,
+            "height": 900,
+            "mode": "normal",
+            "textScale": 1,
+            "status": {
+              "x": 20,
+              "y": 79,
+              "width": 1332,
+              "height": 26
+            },
+            "tools": {
+              "x": 1364,
+              "y": 64,
+              "width": 56,
+              "height": 56
+            }
+          },
+          {
+            "width": 844,
+            "height": 390,
+            "mode": "normal",
+            "textScale": 1,
+            "status": {
+              "x": 12,
+              "y": 69,
+              "width": 768,
+              "height": 22
+            },
+            "tools": {
+              "x": 784,
+              "y": 56,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "width": 319,
+            "height": 948,
+            "mode": "rtl-text200",
+            "textScale": 2,
+            "status": {
+              "x": 64,
+              "y": 60,
+              "width": 243,
+              "height": 74
+            },
+            "tools": {
+              "x": 12,
+              "y": 73,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "width": 320,
+            "height": 568,
+            "mode": "rtl-text200",
+            "textScale": 2,
+            "status": {
+              "x": 64.01094055175781,
+              "y": 60,
+              "width": 243.9833221435547,
+              "height": 74
+            },
+            "tools": {
+              "x": 12,
+              "y": 73,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "width": 390,
+            "height": 844,
+            "mode": "rtl-text200",
+            "textScale": 2,
+            "status": {
+              "x": 64.77702331542969,
+              "y": 66,
+              "width": 313.21669006347656,
+              "height": 36
+            },
+            "tools": {
+              "x": 12,
+              "y": 60,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "width": 768,
+            "height": 1024,
+            "mode": "rtl-text200",
+            "textScale": 2,
+            "status": {
+              "x": 78.07745361328125,
+              "y": 66.08181762695312,
+              "width": 673.3333129882812,
+              "height": 45
+            },
+            "tools": {
+              "x": 16.581817626953125,
+              "y": 62.29090881347656,
+              "width": 52.58332824707031,
+              "height": 52.58332824707031
+            }
+          },
+          {
+            "width": 1440,
+            "height": 900,
+            "mode": "rtl-text200",
+            "textScale": 2,
+            "status": {
+              "x": 88,
+              "y": 66,
+              "width": 1332,
+              "height": 52
+            },
+            "tools": {
+              "x": 20,
+              "y": 64,
+              "width": 56,
+              "height": 56
+            }
+          },
+          {
+            "width": 1440,
+            "height": 1200,
+            "mode": "rtl-text200",
+            "textScale": 2,
+            "status": {
+              "x": 88,
+              "y": 66,
+              "width": 1332,
+              "height": 52
+            },
+            "tools": {
+              "x": 20,
+              "y": 64,
+              "width": 56,
+              "height": 56
+            }
+          },
+          {
+            "width": 844,
+            "height": 390,
+            "mode": "rtl-text200",
+            "textScale": 2,
+            "status": {
+              "x": 64,
+              "y": 58,
+              "width": 768,
+              "height": 44
+            },
+            "tools": {
+              "x": 12,
+              "y": 56,
+              "width": 48,
+              "height": 48
+            }
+          }
+        ],
+        "liveHeaderMeasurements": [
+          {
+            "width": 319,
+            "status": {
+              "x": 12,
+              "y": 75.5,
+              "width": 243,
+              "height": 17
+            },
+            "tools": {
+              "x": 259,
+              "y": 60,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "width": 390,
+            "status": {
+              "x": 12,
+              "y": 75,
+              "width": 313.2166748046875,
+              "height": 18
+            },
+            "tools": {
+              "x": 330,
+              "y": 60,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "width": 500,
+            "status": {
+              "x": 13.333333969116211,
+              "y": 75.33333587646484,
+              "width": 418.0166721343994,
+              "height": 20
+            },
+            "tools": {
+              "x": 437.3333435058594,
+              "y": 60.66666793823242,
+              "width": 49.333343505859375,
+              "height": 49.33333206176758
+            }
+          },
+          {
+            "width": 559,
+            "status": {
+              "x": 14.048484802246094,
+              "y": 76.0484848022461,
+              "width": 474.2333450317383,
+              "height": 20
+            },
+            "tools": {
+              "x": 494.90301513671875,
+              "y": 61.02424240112305,
+              "width": 50.04998779296875,
+              "height": 50.04999923706055
+            }
+          },
+          {
+            "width": 560,
+            "status": {
+              "x": 14.060606002807617,
+              "y": 76.06060791015625,
+              "width": 475.1833209991455,
+              "height": 20
+            },
+            "tools": {
+              "x": 495.8787841796875,
+              "y": 61.030303955078125,
+              "width": 50.066650390625,
+              "height": 50.06666564941406
+            }
+          },
+          {
+            "width": 600,
+            "status": {
+              "x": 14.545454025268555,
+              "y": 76.04545593261719,
+              "width": 513.2833423614502,
+              "height": 21
+            },
+            "tools": {
+              "x": 534.9091186523438,
+              "y": 61.272727966308594,
+              "width": 50.54998779296875,
+              "height": 50.54999542236328
+            }
+          },
+          {
+            "width": 821,
+            "status": {
+              "x": 17.2242431640625,
+              "y": 77.7242431640625,
+              "width": 723.8333129882812,
+              "height": 23
+            },
+            "tools": {
+              "x": 750.551513671875,
+              "y": 62.61212158203125,
+              "width": 53.2166748046875,
+              "height": 53.21666717529297
+            }
+          },
+          {
+            "width": 1050,
+            "status": {
+              "x": 20,
+              "y": 79,
+              "width": 942,
+              "height": 26
+            },
+            "tools": {
+              "x": 974,
+              "y": 64,
+              "width": 56,
+              "height": 56
+            }
+          },
+          {
+            "width": 1440,
+            "status": {
+              "x": 20,
+              "y": 79,
+              "width": 1332,
+              "height": 26
+            },
+            "tools": {
+              "x": 1364,
+              "y": 64,
+              "width": 56,
+              "height": 56
+            }
+          },
+          {
+            "width": 1050,
+            "status": {
+              "x": 20,
+              "y": 79,
+              "width": 942,
+              "height": 26
+            },
+            "tools": {
+              "x": 974,
+              "y": 64,
+              "width": 56,
+              "height": 56
+            }
+          },
+          {
+            "width": 821,
+            "status": {
+              "x": 17.2242431640625,
+              "y": 77.7242431640625,
+              "width": 723.8333129882812,
+              "height": 23
+            },
+            "tools": {
+              "x": 750.551513671875,
+              "y": 62.61212158203125,
+              "width": 53.2166748046875,
+              "height": 53.21666717529297
+            }
+          },
+          {
+            "width": 600,
+            "status": {
+              "x": 14.545454025268555,
+              "y": 76.04545593261719,
+              "width": 513.2833423614502,
+              "height": 21
+            },
+            "tools": {
+              "x": 534.9091186523438,
+              "y": 61.272727966308594,
+              "width": 50.54998779296875,
+              "height": 50.54999542236328
+            }
+          },
+          {
+            "width": 560,
+            "status": {
+              "x": 14.060606002807617,
+              "y": 76.06060791015625,
+              "width": 475.1833209991455,
+              "height": 20
+            },
+            "tools": {
+              "x": 495.8787841796875,
+              "y": 61.030303955078125,
+              "width": 50.066650390625,
+              "height": 50.06666564941406
+            }
+          },
+          {
+            "width": 559,
+            "status": {
+              "x": 14.048484802246094,
+              "y": 76.0484848022461,
+              "width": 474.2333450317383,
+              "height": 20
+            },
+            "tools": {
+              "x": 494.90301513671875,
+              "y": 61.02424240112305,
+              "width": 50.04998779296875,
+              "height": 50.04999923706055
+            }
+          },
+          {
+            "width": 500,
+            "status": {
+              "x": 13.333333969116211,
+              "y": 75.33333587646484,
+              "width": 418.0166721343994,
+              "height": 20
+            },
+            "tools": {
+              "x": 437.3333435058594,
+              "y": 60.66666793823242,
+              "width": 49.333343505859375,
+              "height": 49.33333206176758
+            }
+          },
+          {
+            "width": 390,
+            "status": {
+              "x": 12,
+              "y": 75,
+              "width": 313.2166748046875,
+              "height": 18
+            },
+            "tools": {
+              "x": 330,
+              "y": 60,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "width": 319,
+            "status": {
+              "x": 12,
+              "y": 75.5,
+              "width": 243,
+              "height": 17
+            },
+            "tools": {
+              "x": 259,
+              "y": 60,
+              "width": 48,
+              "height": 48
+            }
+          }
+        ],
+        "focusBoundaryHeaderMeasurements": [
+          {
+            "width": 599,
+            "status": {
+              "x": 14.533332824707031,
+              "y": 76.03333282470703,
+              "width": 512.3333053588867,
+              "height": 21
+            },
+            "tools": {
+              "x": 533.933349609375,
+              "y": 61.266666412353516,
+              "width": 50.5333251953125,
+              "height": 50.5333366394043
+            }
+          },
+          {
+            "width": 600,
+            "status": {
+              "x": 14.545454025268555,
+              "y": 76.04545593261719,
+              "width": 513.2833423614502,
+              "height": 21
+            },
+            "tools": {
+              "x": 534.9091186523438,
+              "y": 61.272727966308594,
+              "width": 50.54998779296875,
+              "height": 50.54999542236328
+            }
+          },
+          {
+            "width": 1049,
+            "status": {
+              "x": 19.987878799438477,
+              "y": 78.98787689208984,
+              "width": 941.0499629974365,
+              "height": 26
+            },
+            "tools": {
+              "x": 973.0242309570312,
+              "y": 63.99393844604492,
+              "width": 55.98333740234375,
+              "height": 55.983333587646484
+            }
+          },
+          {
+            "width": 1050,
+            "status": {
+              "x": 20,
+              "y": 79,
+              "width": 942,
+              "height": 26
+            },
+            "tools": {
+              "x": 974,
+              "y": 64,
+              "width": 56,
+              "height": 56
+            }
+          },
+          {
+            "width": 1049,
+            "status": {
+              "x": 19.987878799438477,
+              "y": 78.98787689208984,
+              "width": 941.0499629974365,
+              "height": 26
+            },
+            "tools": {
+              "x": 973.0242309570312,
+              "y": 63.99393844604492,
+              "width": 55.98333740234375,
+              "height": 55.983333587646484
+            }
+          },
+          {
+            "width": 600,
+            "status": {
+              "x": 14.545454025268555,
+              "y": 76.04545593261719,
+              "width": 513.2833423614502,
+              "height": 21
+            },
+            "tools": {
+              "x": 534.9091186523438,
+              "y": 61.272727966308594,
+              "width": 50.54998779296875,
+              "height": 50.54999542236328
+            }
+          },
+          {
+            "width": 599,
+            "status": {
+              "x": 14.533332824707031,
+              "y": 76.03333282470703,
+              "width": 512.3333053588867,
+              "height": 21
+            },
+            "tools": {
+              "x": 533.933349609375,
+              "y": 61.266666412353516,
+              "width": 50.5333251953125,
+              "height": 50.5333366394043
+            }
+          }
+        ]
+      },
+      {
+        "lane": "online",
+        "engine": "webkit",
+        "version": "26.6",
+        "reportAtCapture": "client/.browser-tools/artifacts/header-row-final-online-webkit/webkit-quadrants-report.json",
+        "reportSha256": "bc121c121f9b5e609d7d9043cbdf215dec324ce7918abbad9ad502f747cf1cb2",
+        "run": {
+          "log": "/tmp/agent-runs/header-row-online-webkit--20261002T195200Z-2319570.log",
+          "sha256": "788a727397d9afbfe472094532c77599835aab993ca959d3ad7afe843e0528a6",
+          "exit": 0
+        },
+        "caseCount": 15,
+        "errors": [],
+        "cases": [
+          {
+            "case": "online-full-width-four-equal-quadrants-adjacent-hand-and-bounded-action-draft",
+            "passed": 13
+          },
+          {
+            "case": "online-live-full-width-public-table-and-preview-composition-grow-at-fixed-height",
+            "passed": 1
+          },
+          {
+            "case": "online-responsive-header-footer-live-boundaries-preserve-keyboard-focus-and-action-authority",
+            "passed": 1
+          }
+        ],
+        "commandPostMeasurements": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "draftRetentionCases": 13,
+        "harnessSha256": {
+          "browser_acceptance.cjs": "281014ebcc086d629252fa08fdaa4f021cf8325c09833b0ec58856ed7a204975",
+          "browser_faults.cjs": "334439124fbdf5a2ba5056adb3655b53ffaa256797ffa7c6c9bccd705f5ea479"
+        },
+        "headerMeasurements": [
+          {
+            "width": 319,
+            "height": 948,
+            "mode": "normal",
+            "textScale": 1,
+            "status": {
+              "x": 12,
+              "y": 75.5,
+              "width": 243,
+              "height": 17
+            },
+            "tools": {
+              "x": 259,
+              "y": 60,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "width": 320,
+            "height": 568,
+            "mode": "normal",
+            "textScale": 1,
+            "status": {
+              "x": 12,
+              "y": 75.5,
+              "width": 243.984375,
+              "height": 17
+            },
+            "tools": {
+              "x": 260,
+              "y": 60,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "width": 390,
+            "height": 844,
+            "mode": "normal",
+            "textScale": 1,
+            "status": {
+              "x": 12,
+              "y": 75,
+              "width": 313.21875,
+              "height": 18
+            },
+            "tools": {
+              "x": 330,
+              "y": 60,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "width": 768,
+            "height": 1024,
+            "mode": "normal",
+            "textScale": 1,
+            "status": {
+              "x": 16.581817626953125,
+              "y": 77.08181762695312,
+              "width": 673.3280944824219,
+              "height": 23
+            },
+            "tools": {
+              "x": 698.8363647460938,
+              "y": 62.29090881347656,
+              "width": 52.578125,
+              "height": 52.578125
+            }
+          },
+          {
+            "width": 1440,
+            "height": 900,
+            "mode": "normal",
+            "textScale": 1,
+            "status": {
+              "x": 20,
+              "y": 79,
+              "width": 1332,
+              "height": 26
+            },
+            "tools": {
+              "x": 1364,
+              "y": 64,
+              "width": 56,
+              "height": 56
+            }
+          },
+          {
+            "width": 844,
+            "height": 390,
+            "mode": "normal",
+            "textScale": 1,
+            "status": {
+              "x": 12,
+              "y": 69,
+              "width": 768,
+              "height": 22
+            },
+            "tools": {
+              "x": 784,
+              "y": 56,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "width": 319,
+            "height": 948,
+            "mode": "rtl-text200",
+            "textScale": 2,
+            "status": {
+              "x": 64,
+              "y": 60,
+              "width": 243,
+              "height": 74
+            },
+            "tools": {
+              "x": 12,
+              "y": 73,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "width": 320,
+            "height": 568,
+            "mode": "rtl-text200",
+            "textScale": 2,
+            "status": {
+              "x": 64.01094055175781,
+              "y": 60,
+              "width": 243.98435974121094,
+              "height": 74
+            },
+            "tools": {
+              "x": 12,
+              "y": 73,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "width": 390,
+            "height": 844,
+            "mode": "rtl-text200",
+            "textScale": 2,
+            "status": {
+              "x": 64.77702331542969,
+              "y": 66,
+              "width": 313.21876525878906,
+              "height": 36
+            },
+            "tools": {
+              "x": 12,
+              "y": 60,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "width": 768,
+            "height": 1024,
+            "mode": "rtl-text200",
+            "textScale": 2,
+            "status": {
+              "x": 78.07745361328125,
+              "y": 66.08181762695312,
+              "width": 673.328125,
+              "height": 45
+            },
+            "tools": {
+              "x": 16.581817626953125,
+              "y": 62.29090881347656,
+              "width": 52.578125,
+              "height": 52.578125
+            }
+          },
+          {
+            "width": 1440,
+            "height": 900,
+            "mode": "rtl-text200",
+            "textScale": 2,
+            "status": {
+              "x": 88,
+              "y": 66,
+              "width": 1332,
+              "height": 52
+            },
+            "tools": {
+              "x": 20,
+              "y": 64,
+              "width": 56,
+              "height": 56
+            }
+          },
+          {
+            "width": 1440,
+            "height": 1200,
+            "mode": "rtl-text200",
+            "textScale": 2,
+            "status": {
+              "x": 88,
+              "y": 66,
+              "width": 1332,
+              "height": 52
+            },
+            "tools": {
+              "x": 20,
+              "y": 64,
+              "width": 56,
+              "height": 56
+            }
+          },
+          {
+            "width": 844,
+            "height": 390,
+            "mode": "rtl-text200",
+            "textScale": 2,
+            "status": {
+              "x": 64,
+              "y": 58,
+              "width": 768,
+              "height": 44
+            },
+            "tools": {
+              "x": 12,
+              "y": 56,
+              "width": 48,
+              "height": 48
+            }
+          }
+        ],
+        "liveHeaderMeasurements": [
+          {
+            "width": 319,
+            "status": {
+              "x": 12,
+              "y": 75.5,
+              "width": 243,
+              "height": 17
+            },
+            "tools": {
+              "x": 259,
+              "y": 60,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "width": 390,
+            "status": {
+              "x": 12,
+              "y": 75,
+              "width": 313.21875,
+              "height": 18
+            },
+            "tools": {
+              "x": 330,
+              "y": 60,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "width": 500,
+            "status": {
+              "x": 13.333333969116211,
+              "y": 75.33333587646484,
+              "width": 418.01563453674316,
+              "height": 20
+            },
+            "tools": {
+              "x": 437.3333435058594,
+              "y": 60.66666793823242,
+              "width": 49.328125,
+              "height": 49.328128814697266
+            }
+          },
+          {
+            "width": 559,
+            "status": {
+              "x": 14.048484802246094,
+              "y": 76.0484848022461,
+              "width": 474.21875762939453,
+              "height": 20
+            },
+            "tools": {
+              "x": 494.90301513671875,
+              "y": 61.02424240112305,
+              "width": 50.046875,
+              "height": 50.046878814697266
+            }
+          },
+          {
+            "width": 560,
+            "status": {
+              "x": 14.060606002807617,
+              "y": 76.06060791015625,
+              "width": 475.17187690734863,
+              "height": 20
+            },
+            "tools": {
+              "x": 495.8787841796875,
+              "y": 61.030303955078125,
+              "width": 50.046875,
+              "height": 50.046875
+            }
+          },
+          {
+            "width": 600,
+            "status": {
+              "x": 14.545454025268555,
+              "y": 76.04545593261719,
+              "width": 513.2812671661377,
+              "height": 21
+            },
+            "tools": {
+              "x": 534.9091186523438,
+              "y": 61.272727966308594,
+              "width": 50.53125,
+              "height": 50.53125
+            }
+          },
+          {
+            "width": 821,
+            "status": {
+              "x": 17.2242431640625,
+              "y": 77.7242431640625,
+              "width": 723.828125,
+              "height": 23
+            },
+            "tools": {
+              "x": 750.551513671875,
+              "y": 62.61212158203125,
+              "width": 53.21875,
+              "height": 53.21875
+            }
+          },
+          {
+            "width": 1050,
+            "status": {
+              "x": 20,
+              "y": 79,
+              "width": 942,
+              "height": 26
+            },
+            "tools": {
+              "x": 974,
+              "y": 64,
+              "width": 56,
+              "height": 56
+            }
+          },
+          {
+            "width": 1440,
+            "status": {
+              "x": 20,
+              "y": 79,
+              "width": 1332,
+              "height": 26
+            },
+            "tools": {
+              "x": 1364,
+              "y": 64,
+              "width": 56,
+              "height": 56
+            }
+          },
+          {
+            "width": 1050,
+            "status": {
+              "x": 20,
+              "y": 79,
+              "width": 942,
+              "height": 26
+            },
+            "tools": {
+              "x": 974,
+              "y": 64,
+              "width": 56,
+              "height": 56
+            }
+          },
+          {
+            "width": 821,
+            "status": {
+              "x": 17.2242431640625,
+              "y": 77.7242431640625,
+              "width": 723.828125,
+              "height": 23
+            },
+            "tools": {
+              "x": 750.551513671875,
+              "y": 62.61212158203125,
+              "width": 53.21875,
+              "height": 53.21875
+            }
+          },
+          {
+            "width": 600,
+            "status": {
+              "x": 14.545454025268555,
+              "y": 76.04545593261719,
+              "width": 513.2812671661377,
+              "height": 21
+            },
+            "tools": {
+              "x": 534.9091186523438,
+              "y": 61.272727966308594,
+              "width": 50.53125,
+              "height": 50.53125
+            }
+          },
+          {
+            "width": 560,
+            "status": {
+              "x": 14.060606002807617,
+              "y": 76.06060791015625,
+              "width": 475.17187690734863,
+              "height": 20
+            },
+            "tools": {
+              "x": 495.8787841796875,
+              "y": 61.030303955078125,
+              "width": 50.046875,
+              "height": 50.046875
+            }
+          },
+          {
+            "width": 559,
+            "status": {
+              "x": 14.048484802246094,
+              "y": 76.0484848022461,
+              "width": 474.21875762939453,
+              "height": 20
+            },
+            "tools": {
+              "x": 494.90301513671875,
+              "y": 61.02424240112305,
+              "width": 50.046875,
+              "height": 50.046878814697266
+            }
+          },
+          {
+            "width": 500,
+            "status": {
+              "x": 13.333333969116211,
+              "y": 75.33333587646484,
+              "width": 418.01563453674316,
+              "height": 20
+            },
+            "tools": {
+              "x": 437.3333435058594,
+              "y": 60.66666793823242,
+              "width": 49.328125,
+              "height": 49.328128814697266
+            }
+          },
+          {
+            "width": 390,
+            "status": {
+              "x": 12,
+              "y": 75,
+              "width": 313.21875,
+              "height": 18
+            },
+            "tools": {
+              "x": 330,
+              "y": 60,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "width": 319,
+            "status": {
+              "x": 12,
+              "y": 75.5,
+              "width": 243,
+              "height": 17
+            },
+            "tools": {
+              "x": 259,
+              "y": 60,
+              "width": 48,
+              "height": 48
+            }
+          }
+        ],
+        "focusBoundaryHeaderMeasurements": [
+          {
+            "width": 599,
+            "status": {
+              "x": 14.533332824707031,
+              "y": 76.03333282470703,
+              "width": 512.3281173706055,
+              "height": 21
+            },
+            "tools": {
+              "x": 533.933349609375,
+              "y": 61.266666412353516,
+              "width": 50.53125,
+              "height": 50.531246185302734
+            }
+          },
+          {
+            "width": 600,
+            "status": {
+              "x": 14.545454025268555,
+              "y": 76.04545593261719,
+              "width": 513.2812671661377,
+              "height": 21
+            },
+            "tools": {
+              "x": 534.9091186523438,
+              "y": 61.272727966308594,
+              "width": 50.53125,
+              "height": 50.53125
+            }
+          },
+          {
+            "width": 1049,
+            "status": {
+              "x": 19.987878799438477,
+              "y": 78.98787689208984,
+              "width": 941.0468502044678,
+              "height": 26
+            },
+            "tools": {
+              "x": 973.0242309570312,
+              "y": 63.99393844604492,
+              "width": 55.98431396484375,
+              "height": 55.984378814697266
+            }
+          },
+          {
+            "width": 1050,
+            "status": {
+              "x": 20,
+              "y": 79,
+              "width": 942,
+              "height": 26
+            },
+            "tools": {
+              "x": 974,
+              "y": 64,
+              "width": 56,
+              "height": 56
+            }
+          },
+          {
+            "width": 1049,
+            "status": {
+              "x": 19.987878799438477,
+              "y": 78.98787689208984,
+              "width": 941.0468502044678,
+              "height": 26
+            },
+            "tools": {
+              "x": 973.0242309570312,
+              "y": 63.99393844604492,
+              "width": 55.98431396484375,
+              "height": 55.984378814697266
+            }
+          },
+          {
+            "width": 600,
+            "status": {
+              "x": 14.545454025268555,
+              "y": 76.04545593261719,
+              "width": 513.2812671661377,
+              "height": 21
+            },
+            "tools": {
+              "x": 534.9091186523438,
+              "y": 61.272727966308594,
+              "width": 50.53125,
+              "height": 50.53125
+            }
+          },
+          {
+            "width": 599,
+            "status": {
+              "x": 14.533332824707031,
+              "y": 76.03333282470703,
+              "width": 512.3281173706055,
+              "height": 21
+            },
+            "tools": {
+              "x": 533.933349609375,
+              "y": 61.266666412353516,
+              "width": 50.53125,
+              "height": 50.531246185302734
+            }
+          }
+        ]
+      }
+    ],
+    "coverage": "Normal and online fresh contexts;319px through1440px;live500/559/560 and599/600,1049/1050 both directions;rotation,short viewports,RTL,200%text,keyboard,touch,focus,selection anddraft preservation. No duplicate command posts or reload during resize."
+  },
+  "visualReview": {
+    "normal": [
+      "319x948",
+      "500x948",
+      "1440x948",
+      "390x844 at200%"
+    ],
+    "preview": "Existing IAB tab3 reloaded to9f70471; natural319px preview shows full normal-size status and Auto/menu/action controls in one centered band. User game tab2 preserved.",
+    "online": "Chromium319 and559 normal plus WebKit319x948 and844x390 RTL200 visually reviewed. Short public previews are tiny within height constraints; no claim that their text is fully readable."
+  },
+  "cleanup": {
+    "removedCaptures": 511,
+    "removedBytes": 186065672,
+    "plan": "/tmp/agent-runs/header-row-capture-removal-plan.json",
+    "planSha256": "3d899079bd523fd218bb5ee1e2c89d523df1f019342984b4b67482d1f6d021fd",
+    "inventory": "docs/reports/2026-10-02-screenshot-inventory.csv",
+    "inventoryRows": 6386,
+    "protectedOutsideHashes": 1248,
+    "remainingCapturesInArtifacts": 0,
+    "soleScreenshot": "client/screenshots/cgmsart-phone.png",
+    "phoneBytes": 273544,
+    "phoneSha256": "2c116c49cc67e707d7dd6d45e12aa2063aa014c5edc3aa3416a8a36eea18bc8b"
+  },
+  "qaShutdown": {
+    "gracefulChildSIGTERM": 2292899,
+    "fixtureLog": "/tmp/agent-runs/header-row-fixture--20261002T194114Z-2292319.log",
+    "fixtureExit": 0,
+    "remainingDisposableContainers": [],
+    "remainingDisposableVolumes": [],
+    "remainingDisposableNetworks": [],
+    "port8081": "closed",
+    "ordinaryServices": {
+      "web": "healthy",
+      "backend": "healthy",
+      "postgres": "healthy",
+      "redis": "healthy"
+    },
+    "port8080MainSha256": "9f70471ed4fbf895a9f72b0459d82370498cea4fdf8faa5d3059866eefbd39d5"
+  },
+  "review": "Independent reviewer found no production blockers; full diff, recovery logs, source gates and browser evidence reviewed before staging.",
+  "limits": [
+    "Local Flutter web only; not native or deployment acceptance.",
+    "Earlier cold-start and screenshot/history reports remain evidence for their own recorded builds. No new push was attempted and the previously unconfirmed push obstruction is not claimed resolved."
+  ],
+  "browserRecovery": {
+    "status": "diagnosed-and-bounded-wait-verified",
+    "scope": "Normal-entry WebKit composition transition from phone decisions to tablet table; no production change",
+    "failedRun": "header-row-normal-webkit--20261002T194621Z-2306060",
+    "diagnosticRun": "header-webkit-close-probe--20261002T195407Z-2325401",
+    "diagnosticScript": "/tmp/agent-runs/header-webkit-close-probe.cjs",
+    "diagnosticLog": "/tmp/agent-runs/header-webkit-close-probe--20261002T195407Z-2325401.log",
+    "diagnosticReport": "/tmp/agent-runs/header-webkit-close-probe/report.json",
+    "servedMainDartJsSha256": "9f70471ed4fbf895a9f72b0459d82370498cea4fdf8faa5d3059866eefbd39d5",
+    "evidence": {
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "target": "flt-semantic-node-62: Close actions",
+      "pointer": {
+        "x": 736,
+        "y": 90
+      },
+      "pointerDownPerformanceMs": 23087,
+      "pointerUpPerformanceMs": 23107,
+      "afterTwoFramesPerformanceMs": 23166,
+      "publicCountAfterTwoFrames": 0,
+      "closeFocusOutPerformanceMs": 23320,
+      "publicPresentAndHeaderFocusRestoredPerformanceMs": 23342,
+      "domClickForThisClose": false,
+      "pointerUpToPublicObservedMs": 235,
+      "singleCloseActionToOldFailureCheckMs": 341,
+      "singleCloseActionToBoundedWaitCompletionMs": 588,
+      "repeatClicks": 0,
+      "reloadsAdded": 0
+    },
+    "cause": "The harness assumed two JavaScript animation frames imply Flutter interaction completion. In this hasTouch WebKit context the correct Close target received pointerdown/up but no DOM click. Flutter's installed ClickDebouncer queues tappable pointer events and flushes them after its 200ms deadline when no click arrives. The public board returned automatically after that engine processing; the earlier assertion observed a valid pending input, not a stuck application or incorrect target.",
+    "sdkEvidence": ".local/toolchains/flutter-3.47.5/flutter/bin/cache/flutter_web_sdk/lib/_engine/engine/pointer_binding.dart:203-455; _maybeStartDebouncing, _doStartDebouncing, _onTimerExpired and _flush",
+    "recommendedHarnessChange": "In composition(), after exactly one close.click(), await close.waitFor({state:'hidden',timeout:3000}), then publicHeading(page).waitFor({timeout:3000}), then frame(page). Preserve all existing count, geometry, state and command assertions. No arbitrary sleep or repeat click.",
+    "diagnosticResult": {
+      "cases": 104,
+      "status": "passed",
+      "errors": [],
+      "exitCode": 0
+    },
+    "remaining": "None for these harness defects: final normal Chromium, Firefox and WebKit each passed104 cases on9f70471 with the reviewed final harness3ddbd98e.",
+    "geometryDiagnosis": {
+      "status": "mixed-frame measurement defect reproduced; atomic quarters verified",
+      "failedRun": "header-row-normal-webkit--20261002T195618Z-2331747",
+      "diagnosticRun": "header-webkit-resize-sampler--20261002T200316Z-2347894",
+      "diagnosticScript": "/tmp/agent-runs/header-webkit-resize-sampler.cjs",
+      "diagnosticLog": "/tmp/agent-runs/header-webkit-resize-sampler--20261002T200316Z-2347894.log",
+      "rawEvidence": "/tmp/agent-runs/header-webkit-resize-sampler/samples.json",
+      "servedMainDartJsSha256": "9f70471ed4fbf895a9f72b0459d82370498cea4fdf8faa5d3059866eefbd39d5",
+      "conditions": {
+        "browser": "WebKit",
+        "hasTouch": true,
+        "textScale": 2,
+        "from": {
+          "width": 1440,
+          "height": 900
+        },
+        "to": {
+          "width": 844,
+          "height": 390
+        },
+        "boundedResizePairs": 20,
+        "framesPerPair": 24
+      },
+      "originalSeparateReadFailures": 19,
+      "changingGeometryTransitions": 20,
+      "atomicFramesChecked": 480,
+      "atomicQuarterFailures": 0,
+      "retainedToleranceCssPx": 0.015625,
+      "sample": {
+        "iteration": 1,
+        "separateTableHeight": 140,
+        "separateCellHeights": [
+          70.5,
+          70.5,
+          70.5,
+          70.5
+        ],
+        "atomicTimePerformanceMs": 5453,
+        "atomicTableHeight": 141,
+        "atomicCellHeights": [
+          70.5,
+          70.5,
+          70.5,
+          70.5
+        ],
+        "atomicRawStyles": {
+          "table": "position: absolute; overflow: visible; pointer-events: none; z-index: 2; width: 828px; height: 141px; transform-origin: 0px 0px; transform: matrix(1, 0, 0, 1, 0, 69);",
+          "cells": [
+            "position: absolute; overflow: visible; pointer-events: all; z-index: 1; width: 414px; height: 70.5px;",
+            "position: absolute; overflow: visible; pointer-events: all; z-index: 2; width: 414px; height: 70.5px; transform-origin: 0px 0px; transform: matrix(1, 0, 0, 1, 414, 0);",
+            "position: absolute; overflow: visible; pointer-events: all; z-index: 3; width: 414px; height: 70.5px; transform-origin: 0px 0px; transform: matrix(1, 0, 0, 1, 0, 70.5);",
+            "position: absolute; overflow: visible; pointer-events: all; z-index: 4; width: 414px; height: 70.5px; transform-origin: 0px 0px; transform: matrix(1, 0, 0, 1, 414, 70.5);"
+          ]
+        },
+        "animation": [
+          {
+            "time": 5256,
+            "tableHeight": 133,
+            "footerHeight": 59,
+            "cellHeights": [
+              66.5,
+              66.5,
+              66.5,
+              66.5
+            ]
+          },
+          {
+            "time": 5284,
+            "tableHeight": 135,
+            "footerHeight": 57,
+            "cellHeights": [
+              67.5,
+              67.5,
+              67.5,
+              67.5
+            ]
+          },
+          {
+            "time": 5305,
+            "tableHeight": 136,
+            "footerHeight": 56,
+            "cellHeights": [
+              68,
+              68,
+              68,
+              68
+            ]
+          },
+          {
+            "time": 5334,
+            "tableHeight": 137,
+            "footerHeight": 55,
+            "cellHeights": [
+              68.5,
+              68.5,
+              68.5,
+              68.5
+            ]
+          },
+          {
+            "time": 5358,
+            "tableHeight": 138,
+            "footerHeight": 54,
+            "cellHeights": [
+              69,
+              69,
+              69,
+              69
+            ]
+          },
+          {
+            "time": 5378,
+            "tableHeight": 139,
+            "footerHeight": 53,
+            "cellHeights": [
+              69.5,
+              69.5,
+              69.5,
+              69.5
+            ]
+          },
+          {
+            "time": 5397,
+            "tableHeight": 140,
+            "footerHeight": 52,
+            "cellHeights": [
+              70,
+              70,
+              70,
+              70
+            ]
+          },
+          {
+            "time": 5411,
+            "tableHeight": 140,
+            "footerHeight": 52,
+            "cellHeights": [
+              70,
+              70,
+              70,
+              70
+            ]
+          },
+          {
+            "time": 5435,
+            "tableHeight": 141,
+            "footerHeight": 51,
+            "cellHeights": [
+              70.5,
+              70.5,
+              70.5,
+              70.5
+            ]
+          },
+          {
+            "time": 5448,
+            "tableHeight": 141,
+            "footerHeight": 51,
+            "cellHeights": [
+              70.5,
+              70.5,
+              70.5,
+              70.5
+            ]
+          }
+        ]
+      },
+      "cause": "composition() measured table, hand, board, and cells in separate browser round trips during a responsive Material text-style animation. The footer height changes during that animation, reallocating public-table height. Individually coherent frames became an incoherent combined assertion. The first diagnostic full run passed without reproducing; the subsequent fixed 20-transition sampler deliberately captured the evolving layout and reproduced 19 inconsistent combined reads.",
+      "sdkEvidence": [
+        ".local/toolchains/flutter-3.47.5/flutter/packages/flutter/lib/src/material/button_style_button.dart:597-607 passes responsive textStyle to Material",
+        ".local/toolchains/flutter-3.47.5/flutter/packages/flutter/lib/src/material/material.dart:476-480 animates that style via AnimatedDefaultTextStyle"
+      ],
+      "recommendedChange": "Read table, hand, board and all four quadrant rectangles atomically in one page.evaluate() call; keep existing assertions and numeric tolerances. Include geometry in assertion messages. No sleep, retry-until-green, reload, or production change.",
+      "remaining": "Parent applies atomic harness read and runs final browser acceptance."
+    },
+    "diagnosticCaptureCleanup": {
+      "status": "removed reviewer-owned temporary PNGs only",
+      "inventoryFile": "/tmp/agent-runs/header-webkit-capture-inventory.json",
+      "inventorySha256": "d32a8c0692892d812b83a03a822772192cf6cff793ea41f61db6eee90e47584b",
+      "count": 90,
+      "bytes": 39646741,
+      "roots": [
+        "/tmp/agent-runs/header-webkit-close-probe",
+        "/tmp/agent-runs/header-webkit-atomic-geometry-probe"
+      ],
+      "retained": "JSON reports, frame data, scripts, logs and exit files"
+    },
+    "finalAcceptedHarnessSha256": "3ddbd98e07d495c8848e61b5117e8d19cd6fd16ba1b36ff47c101fd37d17e290"
+  },
+  "finalAudit": {
+    "baseCommit": "62ae99d26520790210f24fd83ca479325184afc7",
+    "status": "passed",
+    "followupPathsBeforeTracking": 14,
+    "prospectiveStagedPaths": 19,
+    "changedMarkdownLinksChecked": 142,
+    "secretPatternScan": "all prospective added textual lines",
+    "inventoryRows": 6386,
+    "sourceHashesVerified": 6,
+    "initialIndex": "17 preexisting staged files preserved exactly before final git add",
+    "independentReview": "no material findings"
+  }
+}

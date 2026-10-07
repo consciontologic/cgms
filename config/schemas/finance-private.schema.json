@@ -1,0 +1,378 @@
+{
+  "$defs": {
+    "Amount": {
+      "additionalProperties": false,
+      "description": "Reduced exact rational; canonicality and domain sign validated by Go.",
+      "properties": {
+        "denominator": {
+          "pattern": "^[1-9][0-9]*$",
+          "type": "string"
+        },
+        "numerator": {
+          "pattern": "^(0|-[1-9][0-9]*|[1-9][0-9]*)$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "numerator",
+        "denominator"
+      ],
+      "type": "object"
+    },
+    "FinancialCharge": {
+      "additionalProperties": false,
+      "properties": {
+        "amount": {
+          "$ref": "#/$defs/Amount"
+        },
+        "creditor": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "debtor": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "game_id": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "creditor",
+        "id",
+        "game_id",
+        "debtor",
+        "amount"
+      ],
+      "type": "object"
+    },
+    "FinancialCorrection": {
+      "additionalProperties": false,
+      "properties": {
+        "amount": {
+          "$ref": "#/$defs/Amount"
+        },
+        "charge_id": {
+          "type": "string"
+        },
+        "debt_id": {
+          "type": "string"
+        },
+        "debtor": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "game_id": {
+          "type": "string"
+        },
+        "match_level": {
+          "type": "boolean"
+        },
+        "operation_id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "operation_id",
+        "debt_id",
+        "charge_id",
+        "game_id",
+        "debtor",
+        "amount",
+        "match_level"
+      ],
+      "type": "object"
+    },
+    "FinancialDebt": {
+      "additionalProperties": false,
+      "properties": {
+        "charge_id": {
+          "type": "string"
+        },
+        "creditor": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "debtor": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "game_id": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "remaining": {
+          "$ref": "#/$defs/Amount"
+        },
+        "sequence": {
+          "maximum": 9007199254740991,
+          "minimum": 0,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "charge_id",
+        "game_id",
+        "debtor",
+        "creditor",
+        "remaining",
+        "sequence"
+      ],
+      "type": "object"
+    },
+    "FinancialLedger": {
+      "additionalProperties": false,
+      "properties": {
+        "cash": {
+          "items": {
+            "$ref": "#/$defs/Amount"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "charges": {
+          "items": {
+            "$ref": "#/$defs/FinancialCharge"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "completed": {
+          "items": {
+            "$ref": "#/$defs/FinancialResult"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "corrections": {
+          "items": {
+            "$ref": "#/$defs/FinancialCorrection"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "debts": {
+          "items": {
+            "$ref": "#/$defs/FinancialDebt"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "departed": {
+          "items": {
+            "type": "boolean"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "finished": {
+          "items": {
+            "type": "boolean"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "game_id": {
+          "type": "string"
+        },
+        "next_sequence": {
+          "maximum": 9007199254740991,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "operations": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "phase": {
+          "type": "string"
+        },
+        "scores": {
+          "items": {
+            "$ref": "#/$defs/Amount"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "game_id",
+        "phase",
+        "scores",
+        "cash",
+        "debts",
+        "charges",
+        "corrections",
+        "completed",
+        "departed",
+        "finished",
+        "operations",
+        "next_sequence"
+      ],
+      "type": "object"
+    },
+    "FinancialResult": {
+      "additionalProperties": false,
+      "properties": {
+        "game_id": {
+          "type": "string"
+        },
+        "scores": {
+          "items": {
+            "$ref": "#/$defs/Amount"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "game_id",
+        "scores"
+      ],
+      "type": "object"
+    },
+    "GameplayPrivateFinance": {
+      "additionalProperties": false,
+      "properties": {
+        "max_bytes": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "observer": {
+          "const": "omniscient"
+        },
+        "omitted_snapshots": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "privacy": {
+          "const": "restricted"
+        },
+        "reason": {
+          "type": "string"
+        },
+        "schema": {
+          "const": "cgms-gameplay-finance-private-v2"
+        },
+        "snapshots": {
+          "items": {
+            "$ref": "#/$defs/GameplayPrivateFinanceSnapshot"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "status": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "status",
+        "reason",
+        "omitted_snapshots",
+        "max_bytes",
+        "schema",
+        "privacy",
+        "observer",
+        "snapshots"
+      ],
+      "type": "object"
+    },
+    "GameplayPrivateFinanceSnapshot": {
+      "additionalProperties": false,
+      "properties": {
+        "available_total": {
+          "$ref": "#/$defs/Amount"
+        },
+        "boundary": {
+          "type": "string"
+        },
+        "ledger": {
+          "$ref": "#/$defs/FinancialLedger"
+        },
+        "recorded_total": {
+          "$ref": "#/$defs/Amount"
+        },
+        "round": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "slot": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "unpaid_total": {
+          "$ref": "#/$defs/Amount"
+        }
+      },
+      "required": [
+        "boundary",
+        "slot",
+        "round",
+        "recorded_total",
+        "available_total",
+        "unpaid_total",
+        "ledger"
+      ],
+      "type": "object"
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "allOf": [
+    {
+      "$ref": "#/$defs/GameplayPrivateFinance"
+    }
+  ],
+  "description": "Closed offline runtime shape. Go additionally validates physical conservation, lineage, compatibility and exact rational canonicality.",
+  "title": "CGMS finance-private v1"
+}

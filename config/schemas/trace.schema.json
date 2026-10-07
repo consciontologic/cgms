@@ -1,0 +1,433 @@
+{
+  "$defs": {
+    "Command": {
+      "additionalProperties": false,
+      "properties": {
+        "ace_id": {
+          "type": "string"
+        },
+        "actor": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "cards": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "decision_id": {
+          "type": "string"
+        },
+        "exile": {
+          "type": "boolean"
+        },
+        "formation": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/FormationSpec"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "formation_id": {
+          "type": "string"
+        },
+        "game_id": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "infiltrator": {
+          "type": "boolean"
+        },
+        "kind": {
+          "type": "string"
+        },
+        "offer_id": {
+          "type": "string"
+        },
+        "price": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "random_words": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "revision": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "suit": {
+          "type": "string"
+        },
+        "target_seat": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "targets": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "terms": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ProposalTerms"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "value": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "window_id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "game_id",
+        "id",
+        "kind",
+        "actor",
+        "window_id",
+        "decision_id",
+        "cards",
+        "targets",
+        "ace_id",
+        "value"
+      ],
+      "type": "object"
+    },
+    "Decision": {
+      "additionalProperties": false,
+      "properties": {
+        "command": {
+          "$ref": "#/$defs/Command"
+        },
+        "menu_version": {
+          "type": "string"
+        },
+        "operations": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "policy": {
+          "type": "string"
+        },
+        "reasons": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "command",
+        "reasons",
+        "operations",
+        "policy",
+        "menu_version"
+      ],
+      "type": "object"
+    },
+    "FormationProtection": {
+      "additionalProperties": false,
+      "properties": {
+        "formation": {
+          "type": "string"
+        },
+        "series": {
+          "type": "string"
+        }
+      },
+      "required": [],
+      "type": "object"
+    },
+    "FormationSlot": {
+      "additionalProperties": false,
+      "properties": {
+        "rank": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "suit": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "rank",
+        "suit"
+      ],
+      "type": "object"
+    },
+    "FormationSpec": {
+      "additionalProperties": false,
+      "properties": {
+        "cards": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "kind": {
+          "type": "string"
+        },
+        "protection": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/FormationProtection"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "substitute": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/FormationSubstitution"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "kind",
+        "cards"
+      ],
+      "type": "object"
+    },
+    "FormationSubstitution": {
+      "additionalProperties": false,
+      "properties": {
+        "kings": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "slot": {
+          "$ref": "#/$defs/FormationSlot"
+        }
+      },
+      "required": [
+        "kings",
+        "slot"
+      ],
+      "type": "object"
+    },
+    "ProposalTerms": {
+      "additionalProperties": false,
+      "properties": {
+        "give": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "loan": {
+          "type": "boolean"
+        },
+        "receive": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "to": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "to",
+        "give",
+        "receive",
+        "loan"
+      ],
+      "type": "object"
+    },
+    "Snapshot": {
+      "additionalProperties": false,
+      "properties": {
+        "algorithm": {
+          "type": "string"
+        },
+        "counter": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "algorithm",
+        "state",
+        "counter"
+      ],
+      "type": "object"
+    },
+    "Trace": {
+      "additionalProperties": false,
+      "properties": {
+        "bot_decision": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Decision"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "bot_random_after": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Snapshot"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "bot_random_before": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Snapshot"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "command": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Command"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "events": {
+          "type": "string"
+        },
+        "game_id": {
+          "type": "string"
+        },
+        "index": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "kind": {
+          "enum": [
+            "command",
+            "deal",
+            "settlement",
+            "gameplay-v1"
+          ]
+        },
+        "post": {
+          "type": "string"
+        },
+        "pre": {
+          "type": "string"
+        },
+        "random_after": {
+          "type": "string"
+        },
+        "random_before": {
+          "type": "string"
+        },
+        "schema_version": {
+          "const": "cgms-trace-v1"
+        },
+        "shuffle": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "schema_version",
+        "index",
+        "game_id",
+        "kind",
+        "random_before",
+        "random_after",
+        "pre",
+        "post",
+        "events"
+      ],
+      "type": "object"
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "allOf": [
+    {
+      "$ref": "#/$defs/Trace"
+    }
+  ],
+  "description": "Closed offline runtime shape. Go additionally validates physical conservation, lineage, compatibility and exact rational canonicality.",
+  "title": "CGMS trace v1"
+}

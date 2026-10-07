@@ -1,0 +1,3300 @@
+{
+  "schema": "cgms-hand-suit-verification-v1",
+  "run_id": "hand-suits-20261002",
+  "status": "passed",
+  "mainSha256": "2af8cae7ed3fd7f24d01f4c1f2d5b7294523ab2dc681874a3d723a4885b4b607",
+  "sourceChecks": {
+    "hostTests": {
+      "status": "passed",
+      "count": 261,
+      "log": "/tmp/agent-runs/hand-stable-order-host--20261002T063016Z-787588.log",
+      "logSha256": "287f6088e2faf889ec1bcdb52408e4b6647f167fdadbd37c9e8ef0c3c86cc4f8",
+      "exitCode": 0
+    },
+    "packageTests": {
+      "status": "passed",
+      "count": 76,
+      "log": "/tmp/agent-runs/hand-stable-order-package--20261002T063016Z-787577.log",
+      "logSha256": "ec50764b94fa3cfa110262298069d736e1d48d1fc1367f2f74ba6e9f0dcda01b",
+      "exitCode": 0
+    },
+    "nodeSupportTests": {
+      "status": "passed",
+      "count": 29,
+      "log": "/tmp/agent-runs/hand-suits-support-verifier--20261002T062035Z-764175.log",
+      "logSha256": "72967dd3348fe44e37c70982445e88734d63e624b7a216d8e695b5ad024e24c1",
+      "exitCode": 0
+    },
+    "hostAnalysis": {
+      "status": "passed",
+      "count": null,
+      "log": "/tmp/agent-runs/hand-stable-host-analyze--20261002T063051Z-790120.log",
+      "logSha256": "4f2187ff6d52bbee6c380ec8468a63558d5317c5abb0bb668f19e4cb8945cefd",
+      "exitCode": 0
+    },
+    "packageAnalysis": {
+      "status": "passed",
+      "count": null,
+      "log": "/tmp/agent-runs/hand-stable-package-analyze--20261002T063051Z-790104.log",
+      "logSha256": "f7f61dbed1d80d48ad6611d2d394d3fd0dedfb79f46572458b116d397d9c9432",
+      "exitCode": 0
+    },
+    "format": {
+      "status": "passed",
+      "count": 5,
+      "log": "/tmp/agent-runs/hand-stable-format-check--20261002T063114Z-790903.log",
+      "logSha256": "a222e7c8eb15f9ba7436b4c3de009ba317001248477883d3e469429f62b7df59",
+      "exitCode": 0
+    },
+    "artworkVerification": {
+      "status": "passed",
+      "count": 208,
+      "log": "/tmp/agent-runs/hand-suits-assets-verifier--20261002T062035Z-764146.log",
+      "logSha256": "03951cfb249e2602173275827784a6bc2d7543f09472b49624df5dfebfc09f28",
+      "exitCode": 0
+    },
+    "releaseBuild": {
+      "status": "passed",
+      "count": null,
+      "log": "/tmp/agent-runs/hand-suits-final-build--20261002T063019Z-787917.log",
+      "logSha256": "844d9b91941a2b00e9e0428542efd5543e1bc5cd679afd04c4ddbaea19f873c5",
+      "exitCode": 0
+    }
+  },
+  "browserCaseCount": 258,
+  "browserReports": [
+    {
+      "scope": "normal entry, Auto and overlapping 18-card hand",
+      "engine": "chromium",
+      "version": "153.0.8010.12",
+      "status": "passed",
+      "sourceReport": "client/.browser-tools/artifacts/hand-suits-accepted-chromium/report.json",
+      "sourceReportSha256": "04bd058b9308db5e36624b8ff5c5dc7d76f5fa122575369968006a9c285316de",
+      "webAssetsSha256": {
+        "index.html": "0cb17fca2f4289e6b33ac9c7e847cdfa8a763169f841d6a7140cb6f83a595c50",
+        "keyboard_bridge.js": "1a244bc7bc3e3f3802e715315bc6e4d0f36809a4d99754ac28ee54227583c261",
+        "flutter_bootstrap.js": "296c7f1058ee874c18daf4e1619bb32f6386430b643865b47fda9badd45df1eb",
+        "main.dart.js": "2af8cae7ed3fd7f24d01f4c1f2d5b7294523ab2dc681874a3d723a4885b4b607"
+      },
+      "cases": [
+        {
+          "case": "trusted-native-tab-bridge-handled-reverse-outside-and-exit",
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "fresh-normal-entry",
+          "initialWidth": 390,
+          "usableMs": 988,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 768,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "uniform-hand-cards-in-horizontal-suit-stacks",
+          "initialWidth": 390,
+          "measurements": [
+            {
+              "width": 390,
+              "cardWidth": 72,
+              "cardHeight": 90
+            },
+            {
+              "width": 768,
+              "cardWidth": 141.78125,
+              "cardHeight": 177.21875
+            },
+            {
+              "width": 1440,
+              "cardWidth": 172.796875,
+              "cardHeight": 216
+            }
+          ],
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "horizontal-suit-scroll-preserves-selection",
+          "initialWidth": 390,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 360,
+          "height": 800,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 599,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 600,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 599,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 600,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1049,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1050,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1049,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1050,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1280,
+          "height": 720,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1280,
+          "height": 600,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 844,
+          "height": 390,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 768,
+          "height": 1024,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1024,
+          "height": 768,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 768,
+          "height": 1024,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-keyboard-inspect-and-escape",
+          "initialWidth": 390,
+          "pass": true
+        },
+        {
+          "case": "suit-stack-physical-card-touch-and-keyboard",
+          "rank": "2",
+          "initialWidth": 390,
+          "pass": true
+        },
+        {
+          "case": "suit-stack-physical-card-touch-and-keyboard",
+          "rank": "5",
+          "initialWidth": 390,
+          "pass": true
+        },
+        {
+          "case": "suit-stack-physical-card-touch-and-keyboard",
+          "rank": "10",
+          "initialWidth": 390,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-text200-touch-navigation",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 768,
+          "height": 1024,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-text200-touch-navigation",
+          "width": 768,
+          "height": 1024,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-text200-touch-navigation",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 844,
+          "height": 390,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-text200-touch-navigation",
+          "width": 844,
+          "height": 390,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 844,
+          "height": 390,
+          "pass": true
+        },
+        {
+          "case": "offscreen-card-after-pointer-short-text200-and-modal-reverse-tab",
+          "width": 844,
+          "height": 390,
+          "before": {
+            "x": 17.312820434570312,
+            "y": 5554.24658203125,
+            "width": 311.62498474121094,
+            "height": 389.53125
+          },
+          "after": {
+            "x": 17.312820434570312,
+            "y": 0.46142578125,
+            "width": 311.62498474121094,
+            "height": 389.53125
+          },
+          "pass": true
+        },
+        {
+          "case": "hand-interactions-without-command-posts",
+          "initialWidth": 390,
+          "commandPosts": 0,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "fresh-normal-entry",
+          "initialWidth": 1440,
+          "usableMs": 904,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 768,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "uniform-hand-cards-in-horizontal-suit-stacks",
+          "initialWidth": 1440,
+          "measurements": [
+            {
+              "width": 390,
+              "cardWidth": 72,
+              "cardHeight": 90
+            },
+            {
+              "width": 768,
+              "cardWidth": 141.78125,
+              "cardHeight": 177.21875
+            },
+            {
+              "width": 1440,
+              "cardWidth": 172.796875,
+              "cardHeight": 216
+            }
+          ],
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "horizontal-suit-scroll-preserves-selection",
+          "initialWidth": 1440,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 768,
+          "height": 1024,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-keyboard-inspect-and-escape",
+          "initialWidth": 1440,
+          "pass": true
+        },
+        {
+          "case": "suit-stack-physical-card-touch-and-keyboard",
+          "rank": "2",
+          "initialWidth": 1440,
+          "pass": true
+        },
+        {
+          "case": "suit-stack-physical-card-touch-and-keyboard",
+          "rank": "5",
+          "initialWidth": 1440,
+          "pass": true
+        },
+        {
+          "case": "suit-stack-physical-card-touch-and-keyboard",
+          "rank": "10",
+          "initialWidth": 1440,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-text200-touch-navigation",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 768,
+          "height": 1024,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-text200-touch-navigation",
+          "width": 768,
+          "height": 1024,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-text200-touch-navigation",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 844,
+          "height": 390,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-text200-touch-navigation",
+          "width": 844,
+          "height": 390,
+          "pass": true
+        },
+        {
+          "case": "hand-interactions-without-command-posts",
+          "initialWidth": 1440,
+          "commandPosts": 0,
+          "pass": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "scope": "normal entry, Auto and overlapping 18-card hand",
+      "engine": "firefox",
+      "version": "155.0",
+      "status": "passed",
+      "sourceReport": "client/.browser-tools/artifacts/hand-suits-accepted-firefox/report.json",
+      "sourceReportSha256": "e9bb75d30209c6677bd01629d33bc579e50a05f4903cdf948a16ea28a0f89ec2",
+      "webAssetsSha256": {
+        "index.html": "0cb17fca2f4289e6b33ac9c7e847cdfa8a763169f841d6a7140cb6f83a595c50",
+        "keyboard_bridge.js": "1a244bc7bc3e3f3802e715315bc6e4d0f36809a4d99754ac28ee54227583c261",
+        "flutter_bootstrap.js": "296c7f1058ee874c18daf4e1619bb32f6386430b643865b47fda9badd45df1eb",
+        "main.dart.js": "2af8cae7ed3fd7f24d01f4c1f2d5b7294523ab2dc681874a3d723a4885b4b607"
+      },
+      "cases": [
+        {
+          "case": "trusted-native-tab-bridge-handled-reverse-outside-and-exit",
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "fresh-normal-entry",
+          "initialWidth": 390,
+          "usableMs": 760,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 768,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "uniform-hand-cards-in-horizontal-suit-stacks",
+          "initialWidth": 390,
+          "measurements": [
+            {
+              "width": 390,
+              "cardWidth": 72,
+              "cardHeight": 90
+            },
+            {
+              "width": 768,
+              "cardWidth": 141.78334045410156,
+              "cardHeight": 177.23333740234375
+            },
+            {
+              "width": 1440,
+              "cardWidth": 172.8000030517578,
+              "cardHeight": 216
+            }
+          ],
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "horizontal-suit-scroll-preserves-selection",
+          "initialWidth": 390,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 360,
+          "height": 800,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 599,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 600,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 599,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 600,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1049,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1050,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1049,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1050,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1280,
+          "height": 720,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1280,
+          "height": 600,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 844,
+          "height": 390,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 768,
+          "height": 1024,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1024,
+          "height": 768,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 768,
+          "height": 1024,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-keyboard-inspect-and-escape",
+          "initialWidth": 390,
+          "pass": true
+        },
+        {
+          "case": "suit-stack-physical-card-touch-and-keyboard",
+          "rank": "2",
+          "initialWidth": 390,
+          "pass": true
+        },
+        {
+          "case": "suit-stack-physical-card-touch-and-keyboard",
+          "rank": "5",
+          "initialWidth": 390,
+          "pass": true
+        },
+        {
+          "case": "suit-stack-physical-card-touch-and-keyboard",
+          "rank": "10",
+          "initialWidth": 390,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-text200-touch-navigation",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 768,
+          "height": 1024,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-text200-touch-navigation",
+          "width": 768,
+          "height": 1024,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-text200-touch-navigation",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 844,
+          "height": 390,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-text200-touch-navigation",
+          "width": 844,
+          "height": 390,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 844,
+          "height": 390,
+          "pass": true
+        },
+        {
+          "case": "offscreen-card-after-pointer-short-text200-and-modal-reverse-tab",
+          "width": 844,
+          "height": 390,
+          "before": {
+            "x": 17.312820434570312,
+            "y": 5554.24658203125,
+            "width": 311.6333465576172,
+            "height": 389.533203125
+          },
+          "after": {
+            "x": 17.312820434570312,
+            "y": 0.46142578125,
+            "width": 311.6333465576172,
+            "height": 389.5333251953125
+          },
+          "pass": true
+        },
+        {
+          "case": "hand-interactions-without-command-posts",
+          "initialWidth": 390,
+          "commandPosts": 0,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "fresh-normal-entry",
+          "initialWidth": 1440,
+          "usableMs": 748,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 768,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "uniform-hand-cards-in-horizontal-suit-stacks",
+          "initialWidth": 1440,
+          "measurements": [
+            {
+              "width": 390,
+              "cardWidth": 72,
+              "cardHeight": 90
+            },
+            {
+              "width": 768,
+              "cardWidth": 141.78334045410156,
+              "cardHeight": 177.23333740234375
+            },
+            {
+              "width": 1440,
+              "cardWidth": 172.8000030517578,
+              "cardHeight": 216
+            }
+          ],
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "horizontal-suit-scroll-preserves-selection",
+          "initialWidth": 1440,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 768,
+          "height": 1024,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-keyboard-inspect-and-escape",
+          "initialWidth": 1440,
+          "pass": true
+        },
+        {
+          "case": "suit-stack-physical-card-touch-and-keyboard",
+          "rank": "2",
+          "initialWidth": 1440,
+          "pass": true
+        },
+        {
+          "case": "suit-stack-physical-card-touch-and-keyboard",
+          "rank": "5",
+          "initialWidth": 1440,
+          "pass": true
+        },
+        {
+          "case": "suit-stack-physical-card-touch-and-keyboard",
+          "rank": "10",
+          "initialWidth": 1440,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-text200-touch-navigation",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 768,
+          "height": 1024,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-text200-touch-navigation",
+          "width": 768,
+          "height": 1024,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-text200-touch-navigation",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 844,
+          "height": 390,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-text200-touch-navigation",
+          "width": 844,
+          "height": 390,
+          "pass": true
+        },
+        {
+          "case": "hand-interactions-without-command-posts",
+          "initialWidth": 1440,
+          "commandPosts": 0,
+          "pass": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "scope": "normal entry, Auto and overlapping 18-card hand",
+      "engine": "webkit",
+      "version": "26.6",
+      "status": "passed",
+      "sourceReport": "client/.browser-tools/artifacts/hand-suits-accepted-webkit/report.json",
+      "sourceReportSha256": "b33f98dfb220965e65256c21335e4ad3ea53fae12f3952a22e522881bda39378",
+      "webAssetsSha256": {
+        "index.html": "0cb17fca2f4289e6b33ac9c7e847cdfa8a763169f841d6a7140cb6f83a595c50",
+        "keyboard_bridge.js": "1a244bc7bc3e3f3802e715315bc6e4d0f36809a4d99754ac28ee54227583c261",
+        "flutter_bootstrap.js": "296c7f1058ee874c18daf4e1619bb32f6386430b643865b47fda9badd45df1eb",
+        "main.dart.js": "2af8cae7ed3fd7f24d01f4c1f2d5b7294523ab2dc681874a3d723a4885b4b607"
+      },
+      "cases": [
+        {
+          "case": "trusted-native-tab-bridge-handled-reverse-outside-and-exit",
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "fresh-normal-entry",
+          "initialWidth": 390,
+          "usableMs": 1367,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 768,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "uniform-hand-cards-in-horizontal-suit-stacks",
+          "initialWidth": 390,
+          "measurements": [
+            {
+              "width": 390,
+              "cardWidth": 72,
+              "cardHeight": 90
+            },
+            {
+              "width": 768,
+              "cardWidth": 141.78125,
+              "cardHeight": 177.21875
+            },
+            {
+              "width": 1440,
+              "cardWidth": 172.796875,
+              "cardHeight": 216
+            }
+          ],
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "horizontal-suit-scroll-preserves-selection",
+          "initialWidth": 390,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 360,
+          "height": 800,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 599,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 600,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 599,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 600,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1049,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1050,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1049,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1050,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1280,
+          "height": 720,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1280,
+          "height": 600,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 844,
+          "height": 390,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 768,
+          "height": 1024,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1024,
+          "height": 768,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 768,
+          "height": 1024,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-keyboard-inspect-and-escape",
+          "initialWidth": 390,
+          "pass": true
+        },
+        {
+          "case": "suit-stack-physical-card-touch-and-keyboard",
+          "rank": "2",
+          "initialWidth": 390,
+          "pass": true
+        },
+        {
+          "case": "suit-stack-physical-card-touch-and-keyboard",
+          "rank": "5",
+          "initialWidth": 390,
+          "pass": true
+        },
+        {
+          "case": "suit-stack-physical-card-touch-and-keyboard",
+          "rank": "10",
+          "initialWidth": 390,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-text200-touch-navigation",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 768,
+          "height": 1024,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-text200-touch-navigation",
+          "width": 768,
+          "height": 1024,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-text200-touch-navigation",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 844,
+          "height": 390,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-text200-touch-navigation",
+          "width": 844,
+          "height": 390,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 844,
+          "height": 390,
+          "pass": true
+        },
+        {
+          "case": "offscreen-card-after-pointer-short-text200-and-modal-reverse-tab",
+          "width": 844,
+          "height": 390,
+          "before": {
+            "x": 17.312820434570312,
+            "y": 5554.24658203125,
+            "width": 311.62498474121094,
+            "height": 389.53125
+          },
+          "after": {
+            "x": 17.312820434570312,
+            "y": 0.46142578125,
+            "width": 311.62498474121094,
+            "height": 389.53125
+          },
+          "pass": true
+        },
+        {
+          "case": "hand-interactions-without-command-posts",
+          "initialWidth": 390,
+          "commandPosts": 0,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "fresh-normal-entry",
+          "initialWidth": 1440,
+          "usableMs": 1043,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 768,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "uniform-hand-cards-in-horizontal-suit-stacks",
+          "initialWidth": 1440,
+          "measurements": [
+            {
+              "width": 390,
+              "cardWidth": 72,
+              "cardHeight": 90
+            },
+            {
+              "width": 768,
+              "cardWidth": 141.78125,
+              "cardHeight": 177.21875
+            },
+            {
+              "width": 1440,
+              "cardWidth": 172.796875,
+              "cardHeight": 216
+            }
+          ],
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "horizontal-suit-scroll-preserves-selection",
+          "initialWidth": 1440,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 768,
+          "height": 1024,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-keyboard-inspect-and-escape",
+          "initialWidth": 1440,
+          "pass": true
+        },
+        {
+          "case": "suit-stack-physical-card-touch-and-keyboard",
+          "rank": "2",
+          "initialWidth": 1440,
+          "pass": true
+        },
+        {
+          "case": "suit-stack-physical-card-touch-and-keyboard",
+          "rank": "5",
+          "initialWidth": 1440,
+          "pass": true
+        },
+        {
+          "case": "suit-stack-physical-card-touch-and-keyboard",
+          "rank": "10",
+          "initialWidth": 1440,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-text200-touch-navigation",
+          "width": 390,
+          "height": 844,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 768,
+          "height": 1024,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-text200-touch-navigation",
+          "width": 768,
+          "height": 1024,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-text200-touch-navigation",
+          "width": 1440,
+          "height": 900,
+          "pass": true
+        },
+        {
+          "case": "shared-vertical-auto-composition",
+          "width": 844,
+          "height": 390,
+          "pass": true
+        },
+        {
+          "case": "normal-entry-text200-touch-navigation",
+          "width": 844,
+          "height": 390,
+          "pass": true
+        },
+        {
+          "case": "hand-interactions-without-command-posts",
+          "initialWidth": 1440,
+          "commandPosts": 0,
+          "pass": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "scope": "online hand/public-card inspection; RTL hand fixture contains one card",
+      "engine": "chromium",
+      "version": "153.0.8010.12",
+      "status": "passed",
+      "sourceReport": "client/.browser-tools/artifacts/hand-suits-final-inspection/chromium-card-sizes-report.json",
+      "sourceReportSha256": "0930cb97b7303cce5c3f6474e07b72ccb122f7c98cabea38ae7a0871bf1daeb0",
+      "webAssetsSha256": {
+        "index.html": "0cb17fca2f4289e6b33ac9c7e847cdfa8a763169f841d6a7140cb6f83a595c50",
+        "keyboard_bridge.js": "1a244bc7bc3e3f3802e715315bc6e4d0f36809a4d99754ac28ee54227583c261",
+        "flutter_bootstrap.js": "296c7f1058ee874c18daf4e1619bb32f6386430b643865b47fda9badd45df1eb",
+        "main.dart.js": "2af8cae7ed3fd7f24d01f4c1f2d5b7294523ab2dc681874a3d723a4885b4b607"
+      },
+      "harnessSha256": {
+        "browser_acceptance.cjs": "964519630e94cb1dee770da80eeaf0d238ebae9a535c2719b0264b38e90d79e5",
+        "browser_faults.cjs": "334439124fbdf5a2ba5056adb3655b53ffaa256797ffa7c6c9bccd705f5ea479"
+      },
+      "cases": [
+        {
+          "case": "reference-card-selection-double-tap-and-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "normal",
+          "width": 320,
+          "height": 800,
+          "pass": true,
+          "face": {
+            "width": 72,
+            "height": 90
+          },
+          "artwork": {
+            "asset": "clubs-4.png",
+            "width": 285,
+            "height": 355,
+            "aspectRatio": 0.8028169014084507
+          },
+          "corner": null,
+          "selectionRetained": true,
+          "keyboardI": true,
+          "measurement": "fully exposed card semantics including header; native artwork fit requires widget tests plus visual review",
+          "commandPosts": 0
+        },
+        {
+          "case": "reference-card-selection-double-tap-and-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "normal",
+          "width": 390,
+          "height": 844,
+          "pass": true,
+          "face": {
+            "width": 72,
+            "height": 90
+          },
+          "artwork": {
+            "asset": "clubs-4.png",
+            "width": 285,
+            "height": 355,
+            "aspectRatio": 0.8028169014084507
+          },
+          "corner": null,
+          "selectionRetained": true,
+          "keyboardI": true,
+          "measurement": "fully exposed card semantics including header; native artwork fit requires widget tests plus visual review",
+          "commandPosts": 0
+        },
+        {
+          "case": "reference-card-selection-double-tap-and-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "normal",
+          "width": 768,
+          "height": 1024,
+          "pass": true,
+          "face": {
+            "width": 141.78125,
+            "height": 177.21875
+          },
+          "artwork": {
+            "asset": "clubs-4.png",
+            "width": 285,
+            "height": 355,
+            "aspectRatio": 0.8028169014084507
+          },
+          "corner": null,
+          "selectionRetained": true,
+          "keyboardI": true,
+          "measurement": "fully exposed card semantics including header; native artwork fit requires widget tests plus visual review",
+          "commandPosts": 0
+        },
+        {
+          "case": "reference-card-selection-double-tap-and-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "normal",
+          "width": 1440,
+          "height": 900,
+          "pass": true,
+          "face": {
+            "width": 172.796875,
+            "height": 216
+          },
+          "artwork": {
+            "asset": "clubs-4.png",
+            "width": 285,
+            "height": 355,
+            "aspectRatio": 0.8028169014084507
+          },
+          "corner": null,
+          "selectionRetained": true,
+          "keyboardI": true,
+          "measurement": "fully exposed card semantics including header; native artwork fit requires widget tests plus visual review",
+          "commandPosts": 0
+        },
+        {
+          "case": "reference-card-selection-double-tap-and-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "text200",
+          "width": 390,
+          "height": 844,
+          "pass": true,
+          "face": {
+            "width": 144,
+            "height": 180
+          },
+          "artwork": {
+            "asset": "clubs-4.png",
+            "width": 285,
+            "height": 355,
+            "aspectRatio": 0.8028169014084507
+          },
+          "corner": null,
+          "selectionRetained": true,
+          "keyboardI": true,
+          "measurement": "fully exposed card semantics including header; native artwork fit requires widget tests plus visual review",
+          "commandPosts": 0
+        },
+        {
+          "case": "reference-card-selection-double-tap-and-keyboard-inspection",
+          "surface": "Hand",
+          "mode": "rtl",
+          "width": 390,
+          "height": 844,
+          "pass": true,
+          "face": {
+            "width": 72,
+            "height": 90
+          },
+          "artwork": {
+            "asset": "clubs-4.png",
+            "width": 285,
+            "height": 355,
+            "aspectRatio": 0.8028169014084507
+          },
+          "corner": null,
+          "selectionRetained": true,
+          "keyboardI": true,
+          "measurement": "fully exposed card semantics including header; native artwork fit requires widget tests plus visual review",
+          "commandPosts": 0
+        },
+        {
+          "case": "reference-card-selection-double-tap-and-keyboard-inspection",
+          "surface": "Table",
+          "mode": "normal",
+          "width": 320,
+          "height": 800,
+          "pass": true,
+          "face": {
+            "width": 120,
+            "height": 177.6875
+          },
+          "artwork": {
+            "asset": "clubs-8.png",
+            "width": 284,
+            "height": 359,
+            "aspectRatio": 0.7910863509749304
+          },
+          "corner": {
+            "width": 48,
+            "height": 48
+          },
+          "selectionRetained": true,
+          "keyboardI": true,
+          "measurement": "fully exposed card semantics including header; native artwork fit requires widget tests plus visual review",
+          "commandPosts": 0
+        },
+        {
+          "case": "reference-card-selection-double-tap-and-keyboard-inspection",
+          "surface": "Table",
+          "mode": "normal",
+          "width": 390,
+          "height": 844,
+          "pass": true,
+          "face": {
+            "width": 120,
+            "height": 177.6875
+          },
+          "artwork": {
+            "asset": "clubs-8.png",
+            "width": 284,
+            "height": 359,
+            "aspectRatio": 0.7910863509749304
+          },
+          "corner": {
+            "width": 48,
+            "height": 48
+          },
+          "selectionRetained": true,
+          "keyboardI": true,
+          "measurement": "fully exposed card semantics including header; native artwork fit requires widget tests plus visual review",
+          "commandPosts": 0
+        },
+        {
+          "case": "reference-card-selection-double-tap-and-keyboard-inspection",
+          "surface": "Table",
+          "mode": "normal",
+          "width": 768,
+          "height": 1024,
+          "pass": true,
+          "face": {
+            "width": 120,
+            "height": 177.68746948242188
+          },
+          "artwork": {
+            "asset": "clubs-8.png",
+            "width": 284,
+            "height": 359,
+            "aspectRatio": 0.7910863509749304
+          },
+          "corner": {
+            "width": 48,
+            "height": 48
+          },
+          "selectionRetained": true,
+          "keyboardI": true,
+          "measurement": "fully exposed card semantics including header; native artwork fit requires widget tests plus visual review",
+          "commandPosts": 0
+        },
+        {
+          "case": "reference-card-selection-double-tap-and-keyboard-inspection",
+          "surface": "Table",
+          "mode": "normal",
+          "width": 1440,
+          "height": 900,
+          "pass": true,
+          "face": {
+            "width": 120,
+            "height": 177.68746948242188
+          },
+          "artwork": {
+            "asset": "clubs-8.png",
+            "width": 284,
+            "height": 359,
+            "aspectRatio": 0.7910863509749304
+          },
+          "corner": {
+            "width": 48,
+            "height": 48
+          },
+          "selectionRetained": true,
+          "keyboardI": true,
+          "measurement": "fully exposed card semantics including header; native artwork fit requires widget tests plus visual review",
+          "commandPosts": 0
+        },
+        {
+          "case": "reference-card-selection-double-tap-and-keyboard-inspection",
+          "surface": "Table",
+          "mode": "text200",
+          "width": 390,
+          "height": 844,
+          "pass": true,
+          "face": {
+            "width": 120,
+            "height": 197.6875
+          },
+          "artwork": {
+            "asset": "clubs-8.png",
+            "width": 284,
+            "height": 359,
+            "aspectRatio": 0.7910863509749304
+          },
+          "corner": {
+            "width": 48,
+            "height": 47.999969482421875
+          },
+          "selectionRetained": true,
+          "keyboardI": true,
+          "measurement": "fully exposed card semantics including header; native artwork fit requires widget tests plus visual review",
+          "commandPosts": 0
+        },
+        {
+          "case": "reference-card-selection-double-tap-and-keyboard-inspection",
+          "surface": "Table",
+          "mode": "rtl",
+          "width": 390,
+          "height": 844,
+          "pass": true,
+          "face": {
+            "width": 120,
+            "height": 177.6875
+          },
+          "artwork": {
+            "asset": "clubs-8.png",
+            "width": 284,
+            "height": 359,
+            "aspectRatio": 0.7910863509749304
+          },
+          "corner": {
+            "width": 48,
+            "height": 48
+          },
+          "selectionRetained": true,
+          "keyboardI": true,
+          "measurement": "fully exposed card semantics including header; native artwork fit requires widget tests plus visual review",
+          "commandPosts": 0
+        }
+      ],
+      "errors": []
+    },
+    {
+      "scope": "RTL four-card hand with two overlapping copies per suit, independent touch and keyboard inspection, live widths and200%text",
+      "engine": "chromium",
+      "version": "153.0.8010.12",
+      "status": "passed",
+      "sourceReport": "client/.browser-tools/artifacts/hand-suits-rtl-overlap/chromium/chromium-390-report.json",
+      "sourceReportSha256": "f48807bfa7ba97dc2cd59e62e75ae08079ca6d9bf7d9b7b3a4c0aeb29033a142",
+      "webAssetsSha256": {
+        "index.html": "0cb17fca2f4289e6b33ac9c7e847cdfa8a763169f841d6a7140cb6f83a595c50",
+        "keyboard_bridge.js": "1a244bc7bc3e3f3802e715315bc6e4d0f36809a4d99754ac28ee54227583c261",
+        "flutter_bootstrap.js": "296c7f1058ee874c18daf4e1619bb32f6386430b643865b47fda9badd45df1eb",
+        "main.dart.js": "2af8cae7ed3fd7f24d01f4c1f2d5b7294523ab2dc681874a3d723a4885b4b607"
+      },
+      "harnessSha256": {
+        "browser_acceptance.cjs": "98eee8162fc08c551b6caacda5fc9e9b2b4e53953632961bcceff6fe59c4f3f6",
+        "browser_faults.cjs": "334439124fbdf5a2ba5056adb3655b53ffaa256797ffa7c6c9bccd705f5ea479"
+      },
+      "cases": [
+        {
+          "case": "rtl-overlapping-suit-copies-remain-independently-usable",
+          "mode": "rtl",
+          "width": 390,
+          "height": 844,
+          "pass": true,
+          "physicalCopies": [
+            "Q of Hearts, copy 1",
+            "Q of Hearts, copy 2",
+            "Q of Diamonds, copy 1",
+            "Q of Diamonds, copy 2"
+          ],
+          "measured": [
+            {
+              "identity": "Q of Hearts, copy 1",
+              "width": 72,
+              "height": 90
+            },
+            {
+              "identity": "Q of Hearts, copy 2",
+              "width": 72,
+              "height": 90
+            },
+            {
+              "identity": "Q of Diamonds, copy 1",
+              "width": 72,
+              "height": 90
+            },
+            {
+              "identity": "Q of Diamonds, copy 2",
+              "width": 72,
+              "height": 90
+            }
+          ],
+          "overlaps": [
+            {
+              "suit": "Hearts",
+              "step": 48,
+              "cardWidth": 72
+            },
+            {
+              "suit": "Diamonds",
+              "step": 48,
+              "cardWidth": 72
+            }
+          ],
+          "keyboardI": true,
+          "touchSelection": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "rtl-overlapping-suit-copies-remain-independently-usable",
+          "mode": "rtl",
+          "width": 599,
+          "height": 900,
+          "pass": true,
+          "physicalCopies": [
+            "Q of Hearts, copy 1",
+            "Q of Hearts, copy 2",
+            "Q of Diamonds, copy 1",
+            "Q of Diamonds, copy 2"
+          ],
+          "measured": [
+            {
+              "identity": "Q of Hearts, copy 1",
+              "width": 110.57809448242188,
+              "height": 138.21875
+            },
+            {
+              "identity": "Q of Hearts, copy 2",
+              "width": 110.57815551757812,
+              "height": 138.21875
+            },
+            {
+              "identity": "Q of Diamonds, copy 1",
+              "width": 110.57810974121094,
+              "height": 138.21875
+            },
+            {
+              "identity": "Q of Diamonds, copy 2",
+              "width": 110.57814025878906,
+              "height": 138.21875
+            }
+          ],
+          "overlaps": [
+            {
+              "suit": "Hearts",
+              "step": 55.292236328125,
+              "cardWidth": 110.57809448242188
+            },
+            {
+              "suit": "Diamonds",
+              "step": 55.29228210449219,
+              "cardWidth": 110.57810974121094
+            }
+          ],
+          "keyboardI": true,
+          "touchSelection": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "rtl-overlapping-suit-copies-remain-independently-usable",
+          "mode": "rtl",
+          "width": 600,
+          "height": 900,
+          "pass": true,
+          "physicalCopies": [
+            "Q of Hearts, copy 1",
+            "Q of Hearts, copy 2",
+            "Q of Diamonds, copy 1",
+            "Q of Diamonds, copy 2"
+          ],
+          "measured": [
+            {
+              "identity": "Q of Hearts, copy 1",
+              "width": 110.765625,
+              "height": 138.453125
+            },
+            {
+              "identity": "Q of Hearts, copy 2",
+              "width": 110.765625,
+              "height": 138.453125
+            },
+            {
+              "identity": "Q of Diamonds, copy 1",
+              "width": 110.765625,
+              "height": 138.453125
+            },
+            {
+              "identity": "Q of Diamonds, copy 2",
+              "width": 110.765625,
+              "height": 138.453125
+            }
+          ],
+          "overlaps": [
+            {
+              "suit": "Hearts",
+              "step": 55.3846435546875,
+              "cardWidth": 110.765625
+            },
+            {
+              "suit": "Diamonds",
+              "step": 55.38462829589844,
+              "cardWidth": 110.765625
+            }
+          ],
+          "keyboardI": true,
+          "touchSelection": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "rtl-overlapping-suit-copies-remain-independently-usable",
+          "mode": "rtl",
+          "width": 768,
+          "height": 1024,
+          "pass": true,
+          "physicalCopies": [
+            "Q of Hearts, copy 1",
+            "Q of Hearts, copy 2",
+            "Q of Diamonds, copy 1",
+            "Q of Diamonds, copy 2"
+          ],
+          "measured": [
+            {
+              "identity": "Q of Hearts, copy 1",
+              "width": 141.78125,
+              "height": 177.21875
+            },
+            {
+              "identity": "Q of Hearts, copy 2",
+              "width": 141.78125,
+              "height": 177.21875
+            },
+            {
+              "identity": "Q of Diamonds, copy 1",
+              "width": 141.78126525878906,
+              "height": 177.21875
+            },
+            {
+              "identity": "Q of Diamonds, copy 2",
+              "width": 141.78123474121094,
+              "height": 177.21875
+            }
+          ],
+          "overlaps": [
+            {
+              "suit": "Hearts",
+              "step": 70.892333984375,
+              "cardWidth": 141.78125
+            },
+            {
+              "suit": "Diamonds",
+              "step": 70.892333984375,
+              "cardWidth": 141.78126525878906
+            }
+          ],
+          "keyboardI": true,
+          "touchSelection": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "rtl-overlapping-suit-copies-remain-independently-usable",
+          "mode": "rtl",
+          "width": 1049,
+          "height": 900,
+          "pass": true,
+          "physicalCopies": [
+            "Q of Hearts, copy 1",
+            "Q of Hearts, copy 2",
+            "Q of Diamonds, copy 1",
+            "Q of Diamonds, copy 2"
+          ],
+          "measured": [
+            {
+              "identity": "Q of Hearts, copy 1",
+              "width": 172.796875,
+              "height": 216
+            },
+            {
+              "identity": "Q of Hearts, copy 2",
+              "width": 172.796875,
+              "height": 216
+            },
+            {
+              "identity": "Q of Diamonds, copy 1",
+              "width": 172.796875,
+              "height": 216
+            },
+            {
+              "identity": "Q of Diamonds, copy 2",
+              "width": 172.796875,
+              "height": 216
+            }
+          ],
+          "overlaps": [
+            {
+              "suit": "Hearts",
+              "step": 86.4000244140625,
+              "cardWidth": 172.796875
+            },
+            {
+              "suit": "Diamonds",
+              "step": 86.39999389648438,
+              "cardWidth": 172.796875
+            }
+          ],
+          "keyboardI": true,
+          "touchSelection": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "rtl-overlapping-suit-copies-remain-independently-usable",
+          "mode": "rtl",
+          "width": 1050,
+          "height": 900,
+          "pass": true,
+          "physicalCopies": [
+            "Q of Hearts, copy 1",
+            "Q of Hearts, copy 2",
+            "Q of Diamonds, copy 1",
+            "Q of Diamonds, copy 2"
+          ],
+          "measured": [
+            {
+              "identity": "Q of Hearts, copy 1",
+              "width": 172.796875,
+              "height": 216
+            },
+            {
+              "identity": "Q of Hearts, copy 2",
+              "width": 172.796875,
+              "height": 216
+            },
+            {
+              "identity": "Q of Diamonds, copy 1",
+              "width": 172.796875,
+              "height": 216
+            },
+            {
+              "identity": "Q of Diamonds, copy 2",
+              "width": 172.796875,
+              "height": 216
+            }
+          ],
+          "overlaps": [
+            {
+              "suit": "Hearts",
+              "step": 86.4000244140625,
+              "cardWidth": 172.796875
+            },
+            {
+              "suit": "Diamonds",
+              "step": 86.39999389648438,
+              "cardWidth": 172.796875
+            }
+          ],
+          "keyboardI": true,
+          "touchSelection": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "rtl-overlapping-suit-copies-remain-independently-usable",
+          "mode": "rtl",
+          "width": 1440,
+          "height": 900,
+          "pass": true,
+          "physicalCopies": [
+            "Q of Hearts, copy 1",
+            "Q of Hearts, copy 2",
+            "Q of Diamonds, copy 1",
+            "Q of Diamonds, copy 2"
+          ],
+          "measured": [
+            {
+              "identity": "Q of Hearts, copy 1",
+              "width": 172.796875,
+              "height": 216
+            },
+            {
+              "identity": "Q of Hearts, copy 2",
+              "width": 172.796875,
+              "height": 216
+            },
+            {
+              "identity": "Q of Diamonds, copy 1",
+              "width": 172.796875,
+              "height": 216
+            },
+            {
+              "identity": "Q of Diamonds, copy 2",
+              "width": 172.79684448242188,
+              "height": 216
+            }
+          ],
+          "overlaps": [
+            {
+              "suit": "Hearts",
+              "step": 86.4000244140625,
+              "cardWidth": 172.796875
+            },
+            {
+              "suit": "Diamonds",
+              "step": 86.4000244140625,
+              "cardWidth": 172.796875
+            }
+          ],
+          "keyboardI": true,
+          "touchSelection": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "rtl-overlapping-suit-copies-remain-independently-usable",
+          "mode": "rtl",
+          "width": 390,
+          "height": 844,
+          "pass": true,
+          "physicalCopies": [
+            "Q of Hearts, copy 1",
+            "Q of Hearts, copy 2",
+            "Q of Diamonds, copy 1",
+            "Q of Diamonds, copy 2"
+          ],
+          "measured": [
+            {
+              "identity": "Q of Hearts, copy 1",
+              "width": 72,
+              "height": 90
+            },
+            {
+              "identity": "Q of Hearts, copy 2",
+              "width": 72,
+              "height": 90
+            },
+            {
+              "identity": "Q of Diamonds, copy 1",
+              "width": 72,
+              "height": 90
+            },
+            {
+              "identity": "Q of Diamonds, copy 2",
+              "width": 72,
+              "height": 90
+            }
+          ],
+          "overlaps": [
+            {
+              "suit": "Hearts",
+              "step": 48,
+              "cardWidth": 72
+            },
+            {
+              "suit": "Diamonds",
+              "step": 48,
+              "cardWidth": 72
+            }
+          ],
+          "keyboardI": true,
+          "touchSelection": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "rtl-overlapping-suit-copies-remain-independently-usable",
+          "mode": "rtl-text200",
+          "width": 390,
+          "height": 844,
+          "pass": true,
+          "physicalCopies": [
+            "Q of Hearts, copy 1",
+            "Q of Hearts, copy 2",
+            "Q of Diamonds, copy 1",
+            "Q of Diamonds, copy 2"
+          ],
+          "measured": [
+            {
+              "identity": "Q of Hearts, copy 1",
+              "width": 144,
+              "height": 180
+            },
+            {
+              "identity": "Q of Hearts, copy 2",
+              "width": 144,
+              "height": 180
+            },
+            {
+              "identity": "Q of Diamonds, copy 1",
+              "width": 144,
+              "height": 180
+            },
+            {
+              "identity": "Q of Diamonds, copy 2",
+              "width": 144,
+              "height": 180
+            }
+          ],
+          "overlaps": [
+            {
+              "suit": "Hearts",
+              "step": 72,
+              "cardWidth": 144
+            },
+            {
+              "suit": "Diamonds",
+              "step": 72,
+              "cardWidth": 144
+            }
+          ],
+          "keyboardI": true,
+          "touchSelection": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "rtl-overlapping-suit-copies-remain-independently-usable",
+          "mode": "rtl-text200",
+          "width": 768,
+          "height": 1024,
+          "pass": true,
+          "physicalCopies": [
+            "Q of Hearts, copy 1",
+            "Q of Hearts, copy 2",
+            "Q of Diamonds, copy 1",
+            "Q of Diamonds, copy 2"
+          ],
+          "measured": [
+            {
+              "identity": "Q of Hearts, copy 1",
+              "width": 283.5625305175781,
+              "height": 354.453125
+            },
+            {
+              "identity": "Q of Hearts, copy 2",
+              "width": 283.5624694824219,
+              "height": 354.453125
+            },
+            {
+              "identity": "Q of Diamonds, copy 1",
+              "width": 283.5625305175781,
+              "height": 354.453125
+            },
+            {
+              "identity": "Q of Diamonds, copy 2",
+              "width": 283.5624694824219,
+              "height": 354.453125
+            }
+          ],
+          "overlaps": [
+            {
+              "suit": "Hearts",
+              "step": 141.78466796875,
+              "cardWidth": 283.5625305175781
+            },
+            {
+              "suit": "Diamonds",
+              "step": 141.78466796875,
+              "cardWidth": 283.5625305175781
+            }
+          ],
+          "keyboardI": true,
+          "touchSelection": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "rtl-overlapping-suit-copies-remain-independently-usable",
+          "mode": "rtl-text200",
+          "width": 1440,
+          "height": 1200,
+          "pass": true,
+          "physicalCopies": [
+            "Q of Hearts, copy 1",
+            "Q of Hearts, copy 2",
+            "Q of Diamonds, copy 1",
+            "Q of Diamonds, copy 2"
+          ],
+          "measured": [
+            {
+              "identity": "Q of Hearts, copy 1",
+              "width": 345.59375,
+              "height": 432
+            },
+            {
+              "identity": "Q of Hearts, copy 2",
+              "width": 345.59375,
+              "height": 432
+            },
+            {
+              "identity": "Q of Diamonds, copy 1",
+              "width": 345.59375,
+              "height": 432
+            },
+            {
+              "identity": "Q of Diamonds, copy 2",
+              "width": 345.59381103515625,
+              "height": 432
+            }
+          ],
+          "overlaps": [
+            {
+              "suit": "Hearts",
+              "step": 172.7999267578125,
+              "cardWidth": 345.59375
+            },
+            {
+              "suit": "Diamonds",
+              "step": 172.7999725341797,
+              "cardWidth": 345.59375
+            }
+          ],
+          "keyboardI": true,
+          "touchSelection": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "rtl-overlapping-suit-copies-remain-independently-usable",
+          "mode": "rtl-text200",
+          "width": 390,
+          "height": 844,
+          "pass": true,
+          "physicalCopies": [
+            "Q of Hearts, copy 1",
+            "Q of Hearts, copy 2",
+            "Q of Diamonds, copy 1",
+            "Q of Diamonds, copy 2"
+          ],
+          "measured": [
+            {
+              "identity": "Q of Hearts, copy 1",
+              "width": 144,
+              "height": 180
+            },
+            {
+              "identity": "Q of Hearts, copy 2",
+              "width": 144,
+              "height": 180
+            },
+            {
+              "identity": "Q of Diamonds, copy 1",
+              "width": 144,
+              "height": 180
+            },
+            {
+              "identity": "Q of Diamonds, copy 2",
+              "width": 144,
+              "height": 180
+            }
+          ],
+          "overlaps": [
+            {
+              "suit": "Hearts",
+              "step": 72,
+              "cardWidth": 144
+            },
+            {
+              "suit": "Diamonds",
+              "step": 72,
+              "cardWidth": 144
+            }
+          ],
+          "keyboardI": true,
+          "touchSelection": true,
+          "commandPosts": 0
+        }
+      ],
+      "errors": [],
+      "log": "/tmp/agent-runs/hand-rtl-overlap-final-chromium--20261002T065642Z-843897.log"
+    },
+    {
+      "scope": "RTL four-card hand with two overlapping copies per suit, independent touch and keyboard inspection, live widths and200%text",
+      "engine": "firefox",
+      "version": "155.0",
+      "status": "passed",
+      "sourceReport": "client/.browser-tools/artifacts/hand-suits-rtl-overlap/firefox-fixed/firefox-390-report.json",
+      "sourceReportSha256": "5e736e1599aa0c2b61180d1d51eac3c1367d8d0405c7e3d31bceb18ecc12d2db",
+      "webAssetsSha256": {
+        "index.html": "0cb17fca2f4289e6b33ac9c7e847cdfa8a763169f841d6a7140cb6f83a595c50",
+        "keyboard_bridge.js": "1a244bc7bc3e3f3802e715315bc6e4d0f36809a4d99754ac28ee54227583c261",
+        "flutter_bootstrap.js": "296c7f1058ee874c18daf4e1619bb32f6386430b643865b47fda9badd45df1eb",
+        "main.dart.js": "2af8cae7ed3fd7f24d01f4c1f2d5b7294523ab2dc681874a3d723a4885b4b607"
+      },
+      "harnessSha256": {
+        "browser_acceptance.cjs": "98eee8162fc08c551b6caacda5fc9e9b2b4e53953632961bcceff6fe59c4f3f6",
+        "browser_faults.cjs": "334439124fbdf5a2ba5056adb3655b53ffaa256797ffa7c6c9bccd705f5ea479"
+      },
+      "cases": [
+        {
+          "case": "rtl-overlapping-suit-copies-remain-independently-usable",
+          "mode": "rtl",
+          "width": 390,
+          "height": 844,
+          "pass": true,
+          "physicalCopies": [
+            "Q of Hearts, copy 1",
+            "Q of Hearts, copy 2",
+            "Q of Diamonds, copy 1",
+            "Q of Diamonds, copy 2"
+          ],
+          "measured": [
+            {
+              "identity": "Q of Hearts, copy 1",
+              "width": 72,
+              "height": 90
+            },
+            {
+              "identity": "Q of Hearts, copy 2",
+              "width": 72,
+              "height": 90
+            },
+            {
+              "identity": "Q of Diamonds, copy 1",
+              "width": 72,
+              "height": 90
+            },
+            {
+              "identity": "Q of Diamonds, copy 2",
+              "width": 72,
+              "height": 90
+            }
+          ],
+          "overlaps": [
+            {
+              "suit": "Hearts",
+              "step": 48,
+              "cardWidth": 72
+            },
+            {
+              "suit": "Diamonds",
+              "step": 48,
+              "cardWidth": 72
+            }
+          ],
+          "keyboardI": true,
+          "touchSelection": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "rtl-overlapping-suit-copies-remain-independently-usable",
+          "mode": "rtl",
+          "width": 599,
+          "height": 900,
+          "pass": true,
+          "physicalCopies": [
+            "Q of Hearts, copy 1",
+            "Q of Hearts, copy 2",
+            "Q of Diamonds, copy 1",
+            "Q of Diamonds, copy 2"
+          ],
+          "measured": [
+            {
+              "identity": "Q of Hearts, copy 1",
+              "width": 110.58332824707031,
+              "height": 138.23333740234375
+            },
+            {
+              "identity": "Q of Hearts, copy 2",
+              "width": 110.58334350585938,
+              "height": 138.23333740234375
+            },
+            {
+              "identity": "Q of Diamonds, copy 1",
+              "width": 110.58332824707031,
+              "height": 138.2333221435547
+            },
+            {
+              "identity": "Q of Diamonds, copy 2",
+              "width": 110.58332824707031,
+              "height": 138.2333221435547
+            }
+          ],
+          "overlaps": [
+            {
+              "suit": "Hearts",
+              "step": 55.30000305175781,
+              "cardWidth": 110.58332824707031
+            },
+            {
+              "suit": "Diamonds",
+              "step": 55.30000305175781,
+              "cardWidth": 110.58332824707031
+            }
+          ],
+          "keyboardI": true,
+          "touchSelection": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "rtl-overlapping-suit-copies-remain-independently-usable",
+          "mode": "rtl",
+          "width": 600,
+          "height": 900,
+          "pass": true,
+          "physicalCopies": [
+            "Q of Hearts, copy 1",
+            "Q of Hearts, copy 2",
+            "Q of Diamonds, copy 1",
+            "Q of Diamonds, copy 2"
+          ],
+          "measured": [
+            {
+              "identity": "Q of Hearts, copy 1",
+              "width": 110.76666259765625,
+              "height": 138.46665954589844
+            },
+            {
+              "identity": "Q of Hearts, copy 2",
+              "width": 110.76666259765625,
+              "height": 138.46665954589844
+            },
+            {
+              "identity": "Q of Diamonds, copy 1",
+              "width": 110.76666259765625,
+              "height": 138.46665954589844
+            },
+            {
+              "identity": "Q of Diamonds, copy 2",
+              "width": 110.76666259765625,
+              "height": 138.46665954589844
+            }
+          ],
+          "overlaps": [
+            {
+              "suit": "Hearts",
+              "step": 55.38336181640625,
+              "cardWidth": 110.76666259765625
+            },
+            {
+              "suit": "Diamonds",
+              "step": 55.383331298828125,
+              "cardWidth": 110.76666259765625
+            }
+          ],
+          "keyboardI": true,
+          "touchSelection": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "rtl-overlapping-suit-copies-remain-independently-usable",
+          "mode": "rtl",
+          "width": 768,
+          "height": 1024,
+          "pass": true,
+          "physicalCopies": [
+            "Q of Hearts, copy 1",
+            "Q of Hearts, copy 2",
+            "Q of Diamonds, copy 1",
+            "Q of Diamonds, copy 2"
+          ],
+          "measured": [
+            {
+              "identity": "Q of Hearts, copy 1",
+              "width": 141.78334045410156,
+              "height": 177.23333740234375
+            },
+            {
+              "identity": "Q of Hearts, copy 2",
+              "width": 141.78334045410156,
+              "height": 177.23333740234375
+            },
+            {
+              "identity": "Q of Diamonds, copy 1",
+              "width": 141.78334045410156,
+              "height": 177.23333740234375
+            },
+            {
+              "identity": "Q of Diamonds, copy 2",
+              "width": 141.78334045410156,
+              "height": 177.23333740234375
+            }
+          ],
+          "overlaps": [
+            {
+              "suit": "Hearts",
+              "step": 70.9000244140625,
+              "cardWidth": 141.78334045410156
+            },
+            {
+              "suit": "Diamonds",
+              "step": 70.89999389648438,
+              "cardWidth": 141.78334045410156
+            }
+          ],
+          "keyboardI": true,
+          "touchSelection": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "rtl-overlapping-suit-copies-remain-independently-usable",
+          "mode": "rtl",
+          "width": 1049,
+          "height": 900,
+          "pass": true,
+          "physicalCopies": [
+            "Q of Hearts, copy 1",
+            "Q of Hearts, copy 2",
+            "Q of Diamonds, copy 1",
+            "Q of Diamonds, copy 2"
+          ],
+          "measured": [
+            {
+              "identity": "Q of Hearts, copy 1",
+              "width": 172.8000030517578,
+              "height": 216
+            },
+            {
+              "identity": "Q of Hearts, copy 2",
+              "width": 172.79998779296875,
+              "height": 216
+            },
+            {
+              "identity": "Q of Diamonds, copy 1",
+              "width": 172.8000030517578,
+              "height": 216
+            },
+            {
+              "identity": "Q of Diamonds, copy 2",
+              "width": 172.8000030517578,
+              "height": 216
+            }
+          ],
+          "overlaps": [
+            {
+              "suit": "Hearts",
+              "step": 86.40003967285156,
+              "cardWidth": 172.8000030517578
+            },
+            {
+              "suit": "Diamonds",
+              "step": 86.4000244140625,
+              "cardWidth": 172.8000030517578
+            }
+          ],
+          "keyboardI": true,
+          "touchSelection": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "rtl-overlapping-suit-copies-remain-independently-usable",
+          "mode": "rtl",
+          "width": 1050,
+          "height": 900,
+          "pass": true,
+          "physicalCopies": [
+            "Q of Hearts, copy 1",
+            "Q of Hearts, copy 2",
+            "Q of Diamonds, copy 1",
+            "Q of Diamonds, copy 2"
+          ],
+          "measured": [
+            {
+              "identity": "Q of Hearts, copy 1",
+              "width": 172.8000030517578,
+              "height": 216
+            },
+            {
+              "identity": "Q of Hearts, copy 2",
+              "width": 172.79998779296875,
+              "height": 216
+            },
+            {
+              "identity": "Q of Diamonds, copy 1",
+              "width": 172.8000030517578,
+              "height": 216
+            },
+            {
+              "identity": "Q of Diamonds, copy 2",
+              "width": 172.8000030517578,
+              "height": 216
+            }
+          ],
+          "overlaps": [
+            {
+              "suit": "Hearts",
+              "step": 86.40003967285156,
+              "cardWidth": 172.8000030517578
+            },
+            {
+              "suit": "Diamonds",
+              "step": 86.4000244140625,
+              "cardWidth": 172.8000030517578
+            }
+          ],
+          "keyboardI": true,
+          "touchSelection": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "rtl-overlapping-suit-copies-remain-independently-usable",
+          "mode": "rtl",
+          "width": 1440,
+          "height": 900,
+          "pass": true,
+          "physicalCopies": [
+            "Q of Hearts, copy 1",
+            "Q of Hearts, copy 2",
+            "Q of Diamonds, copy 1",
+            "Q of Diamonds, copy 2"
+          ],
+          "measured": [
+            {
+              "identity": "Q of Hearts, copy 1",
+              "width": 172.8000030517578,
+              "height": 216
+            },
+            {
+              "identity": "Q of Hearts, copy 2",
+              "width": 172.79998779296875,
+              "height": 216
+            },
+            {
+              "identity": "Q of Diamonds, copy 1",
+              "width": 172.8000030517578,
+              "height": 216
+            },
+            {
+              "identity": "Q of Diamonds, copy 2",
+              "width": 172.8000030517578,
+              "height": 216
+            }
+          ],
+          "overlaps": [
+            {
+              "suit": "Hearts",
+              "step": 86.40003967285156,
+              "cardWidth": 172.8000030517578
+            },
+            {
+              "suit": "Diamonds",
+              "step": 86.4000244140625,
+              "cardWidth": 172.8000030517578
+            }
+          ],
+          "keyboardI": true,
+          "touchSelection": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "rtl-overlapping-suit-copies-remain-independently-usable",
+          "mode": "rtl",
+          "width": 390,
+          "height": 844,
+          "pass": true,
+          "physicalCopies": [
+            "Q of Hearts, copy 1",
+            "Q of Hearts, copy 2",
+            "Q of Diamonds, copy 1",
+            "Q of Diamonds, copy 2"
+          ],
+          "measured": [
+            {
+              "identity": "Q of Hearts, copy 1",
+              "width": 72,
+              "height": 90
+            },
+            {
+              "identity": "Q of Hearts, copy 2",
+              "width": 72,
+              "height": 90
+            },
+            {
+              "identity": "Q of Diamonds, copy 1",
+              "width": 72,
+              "height": 90
+            },
+            {
+              "identity": "Q of Diamonds, copy 2",
+              "width": 72,
+              "height": 90
+            }
+          ],
+          "overlaps": [
+            {
+              "suit": "Hearts",
+              "step": 48,
+              "cardWidth": 72
+            },
+            {
+              "suit": "Diamonds",
+              "step": 48,
+              "cardWidth": 72
+            }
+          ],
+          "keyboardI": true,
+          "touchSelection": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "rtl-overlapping-suit-copies-remain-independently-usable",
+          "mode": "rtl-text200",
+          "width": 390,
+          "height": 844,
+          "pass": true,
+          "physicalCopies": [
+            "Q of Hearts, copy 1",
+            "Q of Hearts, copy 2",
+            "Q of Diamonds, copy 1",
+            "Q of Diamonds, copy 2"
+          ],
+          "measured": [
+            {
+              "identity": "Q of Hearts, copy 1",
+              "width": 144,
+              "height": 180
+            },
+            {
+              "identity": "Q of Hearts, copy 2",
+              "width": 144,
+              "height": 180
+            },
+            {
+              "identity": "Q of Diamonds, copy 1",
+              "width": 144,
+              "height": 180
+            },
+            {
+              "identity": "Q of Diamonds, copy 2",
+              "width": 144,
+              "height": 180
+            }
+          ],
+          "overlaps": [
+            {
+              "suit": "Hearts",
+              "step": 72,
+              "cardWidth": 144
+            },
+            {
+              "suit": "Diamonds",
+              "step": 72,
+              "cardWidth": 144
+            }
+          ],
+          "keyboardI": true,
+          "touchSelection": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "rtl-overlapping-suit-copies-remain-independently-usable",
+          "mode": "rtl-text200",
+          "width": 768,
+          "height": 1024,
+          "pass": true,
+          "physicalCopies": [
+            "Q of Hearts, copy 1",
+            "Q of Hearts, copy 2",
+            "Q of Diamonds, copy 1",
+            "Q of Diamonds, copy 2"
+          ],
+          "measured": [
+            {
+              "identity": "Q of Hearts, copy 1",
+              "width": 283.566650390625,
+              "height": 354.4666748046875
+            },
+            {
+              "identity": "Q of Hearts, copy 2",
+              "width": 283.566650390625,
+              "height": 354.4666748046875
+            },
+            {
+              "identity": "Q of Diamonds, copy 1",
+              "width": 283.566650390625,
+              "height": 354.4666748046875
+            },
+            {
+              "identity": "Q of Diamonds, copy 2",
+              "width": 283.566650390625,
+              "height": 354.4666748046875
+            }
+          ],
+          "overlaps": [
+            {
+              "suit": "Hearts",
+              "step": 141.78335571289062,
+              "cardWidth": 283.566650390625
+            },
+            {
+              "suit": "Diamonds",
+              "step": 141.78335571289062,
+              "cardWidth": 283.566650390625
+            }
+          ],
+          "keyboardI": true,
+          "touchSelection": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "rtl-overlapping-suit-copies-remain-independently-usable",
+          "mode": "rtl-text200",
+          "width": 1440,
+          "height": 1200,
+          "pass": true,
+          "physicalCopies": [
+            "Q of Hearts, copy 1",
+            "Q of Hearts, copy 2",
+            "Q of Diamonds, copy 1",
+            "Q of Diamonds, copy 2"
+          ],
+          "measured": [
+            {
+              "identity": "Q of Hearts, copy 1",
+              "width": 345.6000061035156,
+              "height": 432
+            },
+            {
+              "identity": "Q of Hearts, copy 2",
+              "width": 345.6000061035156,
+              "height": 432
+            },
+            {
+              "identity": "Q of Diamonds, copy 1",
+              "width": 345.6000061035156,
+              "height": 432
+            },
+            {
+              "identity": "Q of Diamonds, copy 2",
+              "width": 345.5999755859375,
+              "height": 432
+            }
+          ],
+          "overlaps": [
+            {
+              "suit": "Hearts",
+              "step": 172.7999267578125,
+              "cardWidth": 345.6000061035156
+            },
+            {
+              "suit": "Diamonds",
+              "step": 172.80001831054688,
+              "cardWidth": 345.6000061035156
+            }
+          ],
+          "keyboardI": true,
+          "touchSelection": true,
+          "commandPosts": 0
+        },
+        {
+          "case": "rtl-overlapping-suit-copies-remain-independently-usable",
+          "mode": "rtl-text200",
+          "width": 390,
+          "height": 844,
+          "pass": true,
+          "physicalCopies": [
+            "Q of Hearts, copy 1",
+            "Q of Hearts, copy 2",
+            "Q of Diamonds, copy 1",
+            "Q of Diamonds, copy 2"
+          ],
+          "measured": [
+            {
+              "identity": "Q of Hearts, copy 1",
+              "width": 144,
+              "height": 180
+            },
+            {
+              "identity": "Q of Hearts, copy 2",
+              "width": 144,
+              "height": 180
+            },
+            {
+              "identity": "Q of Diamonds, copy 1",
+              "width": 144,
+              "height": 180
+            },
+            {
+              "identity": "Q of Diamonds, copy 2",
+              "width": 144,
+              "height": 180
+            }
+          ],
+          "overlaps": [
+            {
+              "suit": "Hearts",
+              "step": 72,
+              "cardWidth": 144
+            },
+            {
+              "suit": "Diamonds",
+              "step": 72,
+              "cardWidth": 144
+            }
+          ],
+          "keyboardI": true,
+          "touchSelection": true,
+          "commandPosts": 0
+        }
+      ],
+      "errors": [],
+      "log": "/tmp/agent-runs/hand-suits-rtl-firefox-fixed-verifier--20261002T065654Z-844406.log"
+    }
+  ],
+  "rootCauses": [
+    "Hand height followed each native artwork aspect ratio: at390px prior cards were59px wide but70.20-79.42px tall.",
+    "Geometric semantics reordering of horizontally clipped cards removed/reinserted a focused browser node; explicit ordinal card order prevents DOM focus loss.",
+    "Retained focus needed a guarded post-layout reveal after suit viewport resizing."
+  ],
+  "redEvidence": [
+    "/tmp/agent-runs/hand-suits-browser-red--20261002T060914Z-737036.log",
+    "/tmp/agent-runs/hand-suit-stacks-red--20261002T061104Z-740719.log",
+    "/tmp/agent-runs/hand-focus-resize-red--20261002T061832Z-759304.log",
+    "/tmp/agent-runs/hand-semantic-order-red--20261002T062807Z-782583.log"
+  ],
+  "diagnosis": {
+    "domFocusProbe": "client/.browser-tools/artifacts/hand-suits-focus-probe/probe.json",
+    "domMutationProbe": "client/.browser-tools/artifacts/hand-suits-focus-probe/probe-mutations.json",
+    "harnessCorrections": [
+      "Measure after real keyboard traversal reveals the full card; retain nested clipping assertions.",
+      "Expose at least48px of painted vertical headroom before wheel input; a30px semantic sliver placed the wheel outside the viewport.",
+      "The RTL inspector exposes exact text with the existing hand suffix, not a separately labelled identity node.",
+      "Firefox fixture setup used a painted upward wheel and touch to reach Open Formation; forward Tab had scrolled the virtualized menu away before any hand case began. Hand keyboard assertions are unchanged."
+    ]
+  },
+  "screenshots": {
+    "status": "all temporary captures removed after review; only selected phone screenshot retained",
+    "retained": {
+      "path": "client/screenshots/cgmsart-phone.png",
+      "bytes": 273544,
+      "sha256": "2c116c49cc67e707d7dd6d45e12aa2063aa014c5edc3aa3416a8a36eea18bc8b"
+    },
+    "temporaryDirectories": [
+      {
+        "directory": "client/.browser-tools/artifacts/hand-suits-accepted-chromium",
+        "count": 29,
+        "bytes": 11660113,
+        "inventorySha256": "9da1a8c33c51bb0bcf65147a112d233a6a8df115e964a0c667b465f5c6dd4998"
+      },
+      {
+        "directory": "client/.browser-tools/artifacts/hand-suits-accepted-firefox",
+        "count": 29,
+        "bytes": 15307598,
+        "inventorySha256": "13fede1749be5f31bc39457d480d1acc4c9646131bac9ca662382d1cc6c513b0"
+      },
+      {
+        "directory": "client/.browser-tools/artifacts/hand-suits-accepted-webkit",
+        "count": 29,
+        "bytes": 14354754,
+        "inventorySha256": "cc2d279e2b68804c9b250f248d79b2e616fd7c87a1bcbabd400622c26e10764c"
+      },
+      {
+        "directory": "client/.browser-tools/artifacts/hand-suits-chromium",
+        "count": 2,
+        "bytes": 481254,
+        "inventorySha256": "eba914afa193f32dbfadb46038cf26dd6ffdccc522b3ebcdea49fcb0f4c24734"
+      },
+      {
+        "directory": "client/.browser-tools/artifacts/hand-suits-final-chromium",
+        "count": 17,
+        "bytes": 6757222,
+        "inventorySha256": "07d3055f56f8b9669f2530a0c1555a3383ef3fa9b242c61c749260500f7ada86"
+      },
+      {
+        "directory": "client/.browser-tools/artifacts/hand-suits-final-chromium-painted",
+        "count": 17,
+        "bytes": 7751342,
+        "inventorySha256": "7d02cd12ead6af2572e4ed96adb2d3570df5d632b56dc71c6683039691ab631e"
+      },
+      {
+        "directory": "client/.browser-tools/artifacts/hand-suits-final-firefox",
+        "count": 17,
+        "bytes": 8147943,
+        "inventorySha256": "d3374aec83084694d85350d2b52b920e0f87c35b098dc9acdc57937664da91bf"
+      },
+      {
+        "directory": "client/.browser-tools/artifacts/hand-suits-final-firefox-painted",
+        "count": 17,
+        "bytes": 8151238,
+        "inventorySha256": "acf7be559a347dca73ccec6b87d3501202d48d33ed35b08b3f30de63f886c724"
+      },
+      {
+        "directory": "client/.browser-tools/artifacts/hand-suits-final-inspection",
+        "count": 14,
+        "bytes": 1948028,
+        "inventorySha256": "b2a3b4389db3feea0f1c0f187bfc6206a59620d05e57c8d25ef30bda9af302f9"
+      },
+      {
+        "directory": "client/.browser-tools/artifacts/hand-suits-final-webkit",
+        "count": 17,
+        "bytes": 8719563,
+        "inventorySha256": "71d63c9b68031c6304024a56d7dab425f6b127da209bc713832707e06685b340"
+      },
+      {
+        "directory": "client/.browser-tools/artifacts/hand-suits-final-webkit-painted",
+        "count": 17,
+        "bytes": 7615968,
+        "inventorySha256": "29458aa00205d00b5c44dec99e4e15a91fbf999bd25fec8f356ad204f8b1fdb9"
+      },
+      {
+        "directory": "client/.browser-tools/artifacts/hand-suits-firefox-diagnostic",
+        "count": 2,
+        "bytes": 944488,
+        "inventorySha256": "2f3d6577e3e6d7854c0ab931f37a90c68df93c99305b2cfd5e8778369c50ba50"
+      },
+      {
+        "directory": "client/.browser-tools/artifacts/hand-suits-focus-browser",
+        "count": 2,
+        "bytes": 807233,
+        "inventorySha256": "e44e3e39f9939db74d8d315615845ba7b0c9f19e048936807f8ac796cf3bc7c6"
+      },
+      {
+        "directory": "client/.browser-tools/artifacts/hand-suits-focus-diagnostic",
+        "count": 2,
+        "bytes": 789785,
+        "inventorySha256": "f5b50cb964ef09f1fb36ebdf2443d458c1266fde091603c9e06e48f2b0c4706a"
+      },
+      {
+        "directory": "client/.browser-tools/artifacts/hand-suits-inspection",
+        "count": 14,
+        "bytes": 1949886,
+        "inventorySha256": "5cab97d9e7c83098d37d23187fcb2df3fdc43c7932add4747e0656722a96ef35"
+      },
+      {
+        "directory": "client/.browser-tools/artifacts/hand-suits-red",
+        "count": 2,
+        "bytes": 636090,
+        "inventorySha256": "42911805d706ffabfb749e2e4bd3cf88cefbfe607b20caca1941b72668675533"
+      },
+      {
+        "directory": "client/.browser-tools/artifacts/hand-suits-revealed",
+        "count": 2,
+        "bytes": 807238,
+        "inventorySha256": "b06b95abbccfc7c88da35f7a18c7eae09ab11948bbf74f9c8de9bd3055b63716"
+      },
+      {
+        "directory": "client/.browser-tools/artifacts/hand-suits-rtl-overlap",
+        "count": 6,
+        "bytes": 859858,
+        "inventorySha256": "e53e2d34bed929968d1befb6a98e230e9f75de06afd3e010c6294949d95870c2"
+      }
+    ],
+    "removedTemporaryCount": 235,
+    "removedBytes": 97689601,
+    "cleanupLog": "/tmp/agent-runs/hand-suits-capture-cleanup--20261002T065200Z-834043.log"
+  },
+  "boundaries": [
+    "No backend/startup behavior changes in this follow-up; preceding records retain those executed gates.",
+    "Native-device and real screen-reader certification remain separate roadmap work.",
+    "No commit, push or history rewrite. Previously unconfirmed push obstacle remains unconfirmed.",
+    "RTL overlap uses two cards per suit; dense RTL overflow is covered in widgets, not claimed as browser evidence. Dense LTR scrolling is browser-verified with18cards."
+  ],
+  "review": {
+    "source": "No blocking findings in independent review of uniform frames, physical identity, guarded focus reveal and stable semantics ordering.",
+    "evidence": "All 258 recorded cases match their six original reports; hashes and exit codes verified. Dense normal hand and both browsers RTL normal/200% captures visually reviewed.",
+    "stagingInspection": "Prior 1724 staged paths preserved; current frontend/doc changes reviewed; high-confidence added-line secret scan found 0 matches.",
+    "reviewedScreenshotExamples": [
+      "normal 390px, 18-card hand",
+      "normal 1440px, 18-card hand",
+      "live 757px IAB, 18-card hand",
+      "online 390px LTR and RTL single card",
+      "online 1440px single card",
+      "Chromium four-card RTL at normal and200%text",
+      "Firefox four-card RTL at normal and200%text"
+    ]
+  },
+  "verifiedAt": "2026-10-02T07:01:29.754189+00:00",
+  "preview": "http://127.0.0.1:8080/#/play",
+  "qaFixtureShutdown": {
+    "intentional": true,
+    "signal": "SIGTERM to verified owned Python runner",
+    "exitCode": 1,
+    "reason": "Existing signal handler raises InterruptedError and retains default result1; finally terminates child and removes disposable resources.",
+    "log": "/tmp/agent-runs/hand-suits-fixture--20261002T061259Z-744741.log",
+    "cleanupVerified": true,
+    "remainingDisposableContainers": 0,
+    "remainingDisposableVolumes": 0,
+    "remainingDisposableNetworks": 0,
+    "port8081": "closed",
+    "ordinaryComposeServices": "web, backend, postgres and redis healthy;8080 remains listening"
+  }
+}

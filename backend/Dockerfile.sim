@@ -1,0 +1,8 @@
+# The build helper verifies Go 1.27.1 and emits a static, reproducible Linux binary.
+# Context is the selected private sims/artifacts/build/<build-id>/ directory.
+# scratch has no mutable upstream tag, OS packages, shell, or service dependency.
+FROM scratch
+COPY --chown=65532:65532 --chmod=0555 sim /sim
+USER 65532:65532
+WORKDIR /workspace
+ENTRYPOINT ["/sim"]

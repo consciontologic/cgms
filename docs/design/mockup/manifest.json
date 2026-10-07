@@ -1,0 +1,146 @@
+{
+  "identity": "cgmsart",
+  "approved": "2026-09-29",
+  "screens": [
+    {
+      "id": "01",
+      "title": "Room and match setup",
+      "file": "01-room-and-match-setup.png",
+      "generation_id": "exec-6da50f4a-ca56-4eb4-a690-a5eb0a9aa97a",
+      "sha256": "238906c93c521ff5b8d891dd989327583b4bad268c58c4244c4c68584e9e4977"
+    },
+    {
+      "id": "02",
+      "title": "Initial deal and turn order",
+      "file": "02-initial-deal-and-turn-order.png",
+      "generation_id": "exec-04b84a86-5155-475e-a637-851876a978be",
+      "sha256": "5152d95f78ed3889f080cd00b8671871a59f5fb613144706f0b49db9062d3dc3"
+    },
+    {
+      "id": "03",
+      "title": "Compact main board",
+      "file": "03-compact-main-board.png",
+      "generation_id": "exec-2b5f4823-3ac5-41ae-b8dd-82072f8c4927",
+      "sha256": "18717644d8fa319c690f0178862bd2bf69141da02f59e9a18d4d378742e04fe6"
+    },
+    {
+      "id": "04",
+      "title": "Inspect Underground",
+      "file": "04-inspect-underground.png",
+      "generation_id": "exec-fcf7a1be-e19f-4f1d-8cea-16107b1a9818",
+      "sha256": "161b57ed425a605f7a5a55fbb606ddd44a6021c99690661a6ec4625805d64128"
+    },
+    {
+      "id": "05",
+      "title": "Select Hearts to open",
+      "file": "05-select-hearts-to-open.png",
+      "generation_id": "exec-26e88f9c-c6d3-4925-af6b-351a37f62de7",
+      "sha256": "77aab0f54c262d1e12e1a1f12992d79d6a742a2e0be3b61f57ef2a1c29459e31"
+    },
+    {
+      "id": "06",
+      "title": "Hearts opened",
+      "file": "06-hearts-opened.png",
+      "generation_id": "exec-d8be0db1-2485-42b6-9bb9-89d6a5c167c3",
+      "sha256": "78ed1e98e0f4f9d525e2852f4b34e88f9f10abecea4394efd4097f9ab5f2af2e"
+    },
+    {
+      "id": "07",
+      "title": "Select an exact attack",
+      "file": "07-select-an-exact-attack.png",
+      "generation_id": "exec-880ad218-4e9f-4ba4-ad8a-e84bde93fe47",
+      "sha256": "aceb5ee4e4ec61f937f48a1752a11814ef470fde1d60eb4e39f9b633c283756d"
+    },
+    {
+      "id": "08",
+      "title": "Wait for attack responses",
+      "file": "08-wait-for-attack-responses.png",
+      "generation_id": "exec-0f418479-fa6f-4667-9144-16fe50c1ccfe",
+      "sha256": "5fef7ebce506ca91129e0dcf5cce617197449f6ef7bfecaba957900956fd724e"
+    },
+    {
+      "id": "09",
+      "title": "Attack resolved",
+      "file": "09-attack-resolved.png",
+      "generation_id": "exec-e885eb49-7505-4173-b5fd-356d3b4ddbd6",
+      "sha256": "8614881765f360aa1bdb9da7f294fb8620f383e17e723b492869a37c9da92abe"
+    },
+    {
+      "id": "10",
+      "title": "Draft a private trade",
+      "file": "10-draft-a-private-trade.png",
+      "generation_id": "exec-00f8f66d-cfdf-47ba-bb4b-47e22dec3fba",
+      "sha256": "9b3a5131898a4a84442749518493869f876e2821dc196c04da336721d22a4129"
+    },
+    {
+      "id": "11",
+      "title": "Offer pending during play",
+      "file": "11-offer-pending-during-play.png",
+      "generation_id": "exec-82778dbc-d8ca-484d-88cf-16c4ee33bb0d",
+      "sha256": "996856cac7ab742042a1535597d85f3efa7f024d2660f3f479859c4e5f639c6e"
+    },
+    {
+      "id": "12",
+      "title": "Trade completed",
+      "file": "12-trade-completed.png",
+      "generation_id": "exec-a3ca57a0-2d90-4238-b787-3a5a415e4c76",
+      "sha256": "7ad9cf994318726bd66fef0a552781ae6f3259590d724c7d770539f6ff6f7729"
+    },
+    {
+      "id": "13",
+      "title": "Choose a card purchase",
+      "file": "13-choose-a-card-purchase.png",
+      "generation_id": "exec-05767cd7-df52-4723-afb2-3d4174d5d877",
+      "sha256": "7916c54ae928a8b739d72c9c18e14160afa8ce292d64f28a81bb632dd3d713ec"
+    },
+    {
+      "id": "14",
+      "title": "Purchase resolved",
+      "file": "14-purchase-resolved.png",
+      "generation_id": "exec-72c8634c-adc0-4f26-943f-f255c9c0a83a",
+      "sha256": "883861326f08372de626a007790d46089fc050eef0071dcb20166e64675c0550"
+    },
+    {
+      "id": "15",
+      "title": "Successful combo loan and alliance",
+      "file": "15-successful-combo-loan-and-alliance.png",
+      "generation_id": "exec-68885dd0-67c8-461e-be81-7f2834e582c4",
+      "sha256": "7d761a85013219400c52f46023a1b7b52a93419aab6ceb2952d1ba36f4d272a2"
+    },
+    {
+      "id": "16",
+      "title": "Use Confinement to stop Ponzi",
+      "file": "16-use-confinement-to-stop-ponzi.png",
+      "generation_id": "exec-1b9491d3-5dc6-43a2-b3a3-8f6f666d40ac",
+      "sha256": "f175a3635fe3c58cd6734ca4f112b8d7bea174ac44572c96370158fce559a9f4"
+    },
+    {
+      "id": "17",
+      "title": "Immediate Coup declaration",
+      "file": "17-immediate-coup-declaration.png",
+      "generation_id": "exec-9cf44844-7259-4ef4-af88-438c5895f616",
+      "sha256": "c4a240eed5e4f9619229cd92b26ca1f03c5ad958674b081f4c1a95f0783ea346"
+    },
+    {
+      "id": "18",
+      "title": "Coup result and settlement",
+      "file": "18-coup-result-and-settlement.png",
+      "generation_id": "exec-48ab645d-984d-4397-b471-c127e93fd22c",
+      "sha256": "4ab540bfd5b2dd0c247e1eff2169205a6a8bea3dcfebad47cb61fc6525fcbb8c"
+    },
+    {
+      "id": "19",
+      "title": "Finalized game and match standings",
+      "file": "19-finalized-game-and-match-standings.png",
+      "generation_id": "exec-d3b7dfcf-7ea2-4004-8b5a-53d90d8e0221",
+      "sha256": "f3973b29e8abe38a3dfccfef4b8ec56ef5d311ab690540451836ea57191babd4"
+    },
+    {
+      "id": "20",
+      "title": "Reconnect without replaying an action",
+      "file": "20-reconnect-without-replaying-an-action.png",
+      "generation_id": "exec-924381fe-dd6b-4628-991d-2fbb5525af3f",
+      "sha256": "a332da58038cb82f15081655c6ca5b2069cfa98c01353213aee8278e20fc948d"
+    }
+  ]
+}

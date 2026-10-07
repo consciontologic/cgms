@@ -1,0 +1,1544 @@
+{
+  "run_bots": true,
+  "schema_version": "cgms-scenario-v1",
+  "id": "synthetic-narrow-combat-3p",
+  "kind": "transition-sequence",
+  "purpose": "Synthetic accepted-rule ordinary combat: fair bots choose one exact Club attack and eligible responses, then stop explicitly at unsupported post-action progression. This is not a dealt or complete game and provides no balance or strength evidence.",
+  "players": 3,
+  "rule_refs": [
+    "GAME_RULES §§1.7, 2.5, 2.8, 2.9, 2.13",
+    "Q01",
+    "F10",
+    "N01",
+    "N03",
+    "S04",
+    "S06",
+    "S08"
+  ],
+  "state": {
+    "loans": null,
+    "decisions": null,
+    "version": 0,
+    "commands": {},
+    "needs_shuffle": false,
+    "draw_queue": null,
+    "schema": "cgms-state-v1",
+    "game_id": "synthetic-narrow-combat-3p",
+    "round": 1,
+    "turn": 1,
+    "active": 1,
+    "phase": "playing",
+    "cards": [
+      {
+        "card": {
+          "id": "deck-1-hearts-01",
+          "deck": 1,
+          "suit": "hearts",
+          "rank": 1
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-1-hearts-02",
+          "deck": 1,
+          "suit": "hearts",
+          "rank": 2
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-1-hearts-03",
+          "deck": 1,
+          "suit": "hearts",
+          "rank": 3
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-1-hearts-04",
+          "deck": 1,
+          "suit": "hearts",
+          "rank": 4
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-1-hearts-05",
+          "deck": 1,
+          "suit": "hearts",
+          "rank": 5
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-1-hearts-06",
+          "deck": 1,
+          "suit": "hearts",
+          "rank": 6
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-1-hearts-07",
+          "deck": 1,
+          "suit": "hearts",
+          "rank": 7
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-1-hearts-08",
+          "deck": 1,
+          "suit": "hearts",
+          "rank": 8
+        },
+        "zone": "series",
+        "controller": 2,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-1-hearts-09",
+          "deck": 1,
+          "suit": "hearts",
+          "rank": 9
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-1-hearts-10",
+          "deck": 1,
+          "suit": "hearts",
+          "rank": 10
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-1-hearts-11",
+          "deck": 1,
+          "suit": "hearts",
+          "rank": 11
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-1-hearts-12",
+          "deck": 1,
+          "suit": "hearts",
+          "rank": 12
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-1-hearts-13",
+          "deck": 1,
+          "suit": "hearts",
+          "rank": 13
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-1-clubs-01",
+          "deck": 1,
+          "suit": "clubs",
+          "rank": 1
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-1-clubs-02",
+          "deck": 1,
+          "suit": "clubs",
+          "rank": 2
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-1-clubs-03",
+          "deck": 1,
+          "suit": "clubs",
+          "rank": 3
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-1-clubs-04",
+          "deck": 1,
+          "suit": "clubs",
+          "rank": 4
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-1-clubs-05",
+          "deck": 1,
+          "suit": "clubs",
+          "rank": 5
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-1-clubs-06",
+          "deck": 1,
+          "suit": "clubs",
+          "rank": 6
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-1-clubs-07",
+          "deck": 1,
+          "suit": "clubs",
+          "rank": 7
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-1-clubs-08",
+          "deck": 1,
+          "suit": "clubs",
+          "rank": 8
+        },
+        "zone": "series",
+        "controller": 1,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-1-clubs-09",
+          "deck": 1,
+          "suit": "clubs",
+          "rank": 9
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-1-clubs-10",
+          "deck": 1,
+          "suit": "clubs",
+          "rank": 10
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-1-clubs-11",
+          "deck": 1,
+          "suit": "clubs",
+          "rank": 11
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-1-clubs-12",
+          "deck": 1,
+          "suit": "clubs",
+          "rank": 12
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-1-clubs-13",
+          "deck": 1,
+          "suit": "clubs",
+          "rank": 13
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-1-spades-01",
+          "deck": 1,
+          "suit": "spades",
+          "rank": 1
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-1-spades-02",
+          "deck": 1,
+          "suit": "spades",
+          "rank": 2
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-1-spades-03",
+          "deck": 1,
+          "suit": "spades",
+          "rank": 3
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-1-spades-04",
+          "deck": 1,
+          "suit": "spades",
+          "rank": 4
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-1-spades-05",
+          "deck": 1,
+          "suit": "spades",
+          "rank": 5
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-1-spades-06",
+          "deck": 1,
+          "suit": "spades",
+          "rank": 6
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-1-spades-07",
+          "deck": 1,
+          "suit": "spades",
+          "rank": 7
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-1-spades-08",
+          "deck": 1,
+          "suit": "spades",
+          "rank": 8
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-1-spades-09",
+          "deck": 1,
+          "suit": "spades",
+          "rank": 9
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-1-spades-10",
+          "deck": 1,
+          "suit": "spades",
+          "rank": 10
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-1-spades-11",
+          "deck": 1,
+          "suit": "spades",
+          "rank": 11
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-1-spades-12",
+          "deck": 1,
+          "suit": "spades",
+          "rank": 12
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-1-spades-13",
+          "deck": 1,
+          "suit": "spades",
+          "rank": 13
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-1-diamonds-01",
+          "deck": 1,
+          "suit": "diamonds",
+          "rank": 1
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-1-diamonds-02",
+          "deck": 1,
+          "suit": "diamonds",
+          "rank": 2
+        },
+        "zone": "series",
+        "controller": 1,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-1-diamonds-03",
+          "deck": 1,
+          "suit": "diamonds",
+          "rank": 3
+        },
+        "zone": "series",
+        "controller": 2,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-1-diamonds-04",
+          "deck": 1,
+          "suit": "diamonds",
+          "rank": 4
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-1-diamonds-05",
+          "deck": 1,
+          "suit": "diamonds",
+          "rank": 5
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-1-diamonds-06",
+          "deck": 1,
+          "suit": "diamonds",
+          "rank": 6
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-1-diamonds-07",
+          "deck": 1,
+          "suit": "diamonds",
+          "rank": 7
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-1-diamonds-08",
+          "deck": 1,
+          "suit": "diamonds",
+          "rank": 8
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-1-diamonds-09",
+          "deck": 1,
+          "suit": "diamonds",
+          "rank": 9
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-1-diamonds-10",
+          "deck": 1,
+          "suit": "diamonds",
+          "rank": 10
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-1-diamonds-11",
+          "deck": 1,
+          "suit": "diamonds",
+          "rank": 11
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-1-diamonds-12",
+          "deck": 1,
+          "suit": "diamonds",
+          "rank": 12
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-1-diamonds-13",
+          "deck": 1,
+          "suit": "diamonds",
+          "rank": 13
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-2-hearts-01",
+          "deck": 2,
+          "suit": "hearts",
+          "rank": 1
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-2-hearts-02",
+          "deck": 2,
+          "suit": "hearts",
+          "rank": 2
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-2-hearts-03",
+          "deck": 2,
+          "suit": "hearts",
+          "rank": 3
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-2-hearts-04",
+          "deck": 2,
+          "suit": "hearts",
+          "rank": 4
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-2-hearts-05",
+          "deck": 2,
+          "suit": "hearts",
+          "rank": 5
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-2-hearts-06",
+          "deck": 2,
+          "suit": "hearts",
+          "rank": 6
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-2-hearts-07",
+          "deck": 2,
+          "suit": "hearts",
+          "rank": 7
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-2-hearts-08",
+          "deck": 2,
+          "suit": "hearts",
+          "rank": 8
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-2-hearts-09",
+          "deck": 2,
+          "suit": "hearts",
+          "rank": 9
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-2-hearts-10",
+          "deck": 2,
+          "suit": "hearts",
+          "rank": 10
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-2-hearts-11",
+          "deck": 2,
+          "suit": "hearts",
+          "rank": 11
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-2-hearts-12",
+          "deck": 2,
+          "suit": "hearts",
+          "rank": 12
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-2-hearts-13",
+          "deck": 2,
+          "suit": "hearts",
+          "rank": 13
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-2-clubs-01",
+          "deck": 2,
+          "suit": "clubs",
+          "rank": 1
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-2-clubs-02",
+          "deck": 2,
+          "suit": "clubs",
+          "rank": 2
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-2-clubs-03",
+          "deck": 2,
+          "suit": "clubs",
+          "rank": 3
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-2-clubs-04",
+          "deck": 2,
+          "suit": "clubs",
+          "rank": 4
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-2-clubs-05",
+          "deck": 2,
+          "suit": "clubs",
+          "rank": 5
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-2-clubs-06",
+          "deck": 2,
+          "suit": "clubs",
+          "rank": 6
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-2-clubs-07",
+          "deck": 2,
+          "suit": "clubs",
+          "rank": 7
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-2-clubs-08",
+          "deck": 2,
+          "suit": "clubs",
+          "rank": 8
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-2-clubs-09",
+          "deck": 2,
+          "suit": "clubs",
+          "rank": 9
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-2-clubs-10",
+          "deck": 2,
+          "suit": "clubs",
+          "rank": 10
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-2-clubs-11",
+          "deck": 2,
+          "suit": "clubs",
+          "rank": 11
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-2-clubs-12",
+          "deck": 2,
+          "suit": "clubs",
+          "rank": 12
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-2-clubs-13",
+          "deck": 2,
+          "suit": "clubs",
+          "rank": 13
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-2-spades-01",
+          "deck": 2,
+          "suit": "spades",
+          "rank": 1
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-2-spades-02",
+          "deck": 2,
+          "suit": "spades",
+          "rank": 2
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-2-spades-03",
+          "deck": 2,
+          "suit": "spades",
+          "rank": 3
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-2-spades-04",
+          "deck": 2,
+          "suit": "spades",
+          "rank": 4
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-2-spades-05",
+          "deck": 2,
+          "suit": "spades",
+          "rank": 5
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-2-spades-06",
+          "deck": 2,
+          "suit": "spades",
+          "rank": 6
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-2-spades-07",
+          "deck": 2,
+          "suit": "spades",
+          "rank": 7
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-2-spades-08",
+          "deck": 2,
+          "suit": "spades",
+          "rank": 8
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-2-spades-09",
+          "deck": 2,
+          "suit": "spades",
+          "rank": 9
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-2-spades-10",
+          "deck": 2,
+          "suit": "spades",
+          "rank": 10
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-2-spades-11",
+          "deck": 2,
+          "suit": "spades",
+          "rank": 11
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-2-spades-12",
+          "deck": 2,
+          "suit": "spades",
+          "rank": 12
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-2-spades-13",
+          "deck": 2,
+          "suit": "spades",
+          "rank": 13
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-2-diamonds-01",
+          "deck": 2,
+          "suit": "diamonds",
+          "rank": 1
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-2-diamonds-02",
+          "deck": 2,
+          "suit": "diamonds",
+          "rank": 2
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-2-diamonds-03",
+          "deck": 2,
+          "suit": "diamonds",
+          "rank": 3
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-2-diamonds-04",
+          "deck": 2,
+          "suit": "diamonds",
+          "rank": 4
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-2-diamonds-05",
+          "deck": 2,
+          "suit": "diamonds",
+          "rank": 5
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-2-diamonds-06",
+          "deck": 2,
+          "suit": "diamonds",
+          "rank": 6
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-2-diamonds-07",
+          "deck": 2,
+          "suit": "diamonds",
+          "rank": 7
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-2-diamonds-08",
+          "deck": 2,
+          "suit": "diamonds",
+          "rank": 8
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-2-diamonds-09",
+          "deck": 2,
+          "suit": "diamonds",
+          "rank": 9
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-2-diamonds-10",
+          "deck": 2,
+          "suit": "diamonds",
+          "rank": 10
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-2-diamonds-11",
+          "deck": 2,
+          "suit": "diamonds",
+          "rank": 11
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-2-diamonds-12",
+          "deck": 2,
+          "suit": "diamonds",
+          "rank": 12
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      },
+      {
+        "card": {
+          "id": "deck-2-diamonds-13",
+          "deck": 2,
+          "suit": "diamonds",
+          "rank": 13
+        },
+        "zone": "draw",
+        "controller": 0,
+        "available_from_round": 0,
+        "allocation": "",
+        "used_turn": 0
+      }
+    ],
+    "players": [
+      {
+        "seat": 1,
+        "history": [
+          "clubs",
+          "diamonds"
+        ],
+        "opening_used": false,
+        "departed": false,
+        "confined": false,
+        "connected": true,
+        "underground": false,
+        "ally": 0,
+        "ace_round": 0,
+        "compensation_used": false,
+        "quotas": {}
+      },
+      {
+        "seat": 2,
+        "history": [
+          "hearts",
+          "diamonds"
+        ],
+        "opening_used": false,
+        "departed": false,
+        "confined": false,
+        "connected": true,
+        "underground": false,
+        "ally": 0,
+        "ace_round": 0,
+        "compensation_used": false,
+        "quotas": {}
+      },
+      {
+        "seat": 3,
+        "history": null,
+        "opening_used": false,
+        "departed": false,
+        "confined": false,
+        "connected": true,
+        "underground": false,
+        "ally": 0,
+        "ace_round": 0,
+        "compensation_used": false,
+        "quotas": {}
+      }
+    ],
+    "draw_order": [
+      "deck-1-hearts-01",
+      "deck-1-hearts-02",
+      "deck-1-hearts-03",
+      "deck-1-hearts-04",
+      "deck-1-hearts-05",
+      "deck-1-hearts-06",
+      "deck-1-hearts-07",
+      "deck-1-hearts-09",
+      "deck-1-hearts-10",
+      "deck-1-hearts-11",
+      "deck-1-hearts-12",
+      "deck-1-hearts-13",
+      "deck-1-clubs-01",
+      "deck-1-clubs-02",
+      "deck-1-clubs-03",
+      "deck-1-clubs-04",
+      "deck-1-clubs-05",
+      "deck-1-clubs-06",
+      "deck-1-clubs-07",
+      "deck-1-clubs-09",
+      "deck-1-clubs-10",
+      "deck-1-clubs-11",
+      "deck-1-clubs-12",
+      "deck-1-clubs-13",
+      "deck-1-spades-01",
+      "deck-1-spades-02",
+      "deck-1-spades-03",
+      "deck-1-spades-04",
+      "deck-1-spades-05",
+      "deck-1-spades-06",
+      "deck-1-spades-07",
+      "deck-1-spades-08",
+      "deck-1-spades-09",
+      "deck-1-spades-10",
+      "deck-1-spades-11",
+      "deck-1-spades-12",
+      "deck-1-spades-13",
+      "deck-1-diamonds-01",
+      "deck-1-diamonds-04",
+      "deck-1-diamonds-05",
+      "deck-1-diamonds-06",
+      "deck-1-diamonds-07",
+      "deck-1-diamonds-08",
+      "deck-1-diamonds-09",
+      "deck-1-diamonds-10",
+      "deck-1-diamonds-11",
+      "deck-1-diamonds-12",
+      "deck-1-diamonds-13",
+      "deck-2-hearts-01",
+      "deck-2-hearts-02",
+      "deck-2-hearts-03",
+      "deck-2-hearts-04",
+      "deck-2-hearts-05",
+      "deck-2-hearts-06",
+      "deck-2-hearts-07",
+      "deck-2-hearts-08",
+      "deck-2-hearts-09",
+      "deck-2-hearts-10",
+      "deck-2-hearts-11",
+      "deck-2-hearts-12",
+      "deck-2-hearts-13",
+      "deck-2-clubs-01",
+      "deck-2-clubs-02",
+      "deck-2-clubs-03",
+      "deck-2-clubs-04",
+      "deck-2-clubs-05",
+      "deck-2-clubs-06",
+      "deck-2-clubs-07",
+      "deck-2-clubs-08",
+      "deck-2-clubs-09",
+      "deck-2-clubs-10",
+      "deck-2-clubs-11",
+      "deck-2-clubs-12",
+      "deck-2-clubs-13",
+      "deck-2-spades-01",
+      "deck-2-spades-02",
+      "deck-2-spades-03",
+      "deck-2-spades-04",
+      "deck-2-spades-05",
+      "deck-2-spades-06",
+      "deck-2-spades-07",
+      "deck-2-spades-08",
+      "deck-2-spades-09",
+      "deck-2-spades-10",
+      "deck-2-spades-11",
+      "deck-2-spades-12",
+      "deck-2-spades-13",
+      "deck-2-diamonds-01",
+      "deck-2-diamonds-02",
+      "deck-2-diamonds-03",
+      "deck-2-diamonds-04",
+      "deck-2-diamonds-05",
+      "deck-2-diamonds-06",
+      "deck-2-diamonds-07",
+      "deck-2-diamonds-08",
+      "deck-2-diamonds-09",
+      "deck-2-diamonds-10",
+      "deck-2-diamonds-11",
+      "deck-2-diamonds-12",
+      "deck-2-diamonds-13"
+    ],
+    "bindings": null,
+    "effects": null,
+    "order": null,
+    "public_history": [
+      "deck-1-clubs-08",
+      "deck-1-diamonds-02",
+      "deck-1-hearts-08",
+      "deck-1-diamonds-03"
+    ]
+  }
+}

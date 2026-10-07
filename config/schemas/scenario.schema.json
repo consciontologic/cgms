@@ -1,0 +1,2859 @@
+{
+  "$defs": {
+    "AbilityIntent": {
+      "additionalProperties": false,
+      "properties": {
+        "ace_id": {
+          "type": "string"
+        },
+        "cards": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "diamond_bonus": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "formation_id": {
+          "type": "string"
+        },
+        "kind": {
+          "type": "string"
+        },
+        "prevent_checked": {
+          "type": "boolean"
+        },
+        "purchase_price": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "target_seat": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "targets": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "kind",
+        "cards",
+        "targets"
+      ],
+      "type": "object"
+    },
+    "AceEffect": {
+      "additionalProperties": false,
+      "properties": {
+        "card_id": {
+          "type": "string"
+        },
+        "custodian": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "expiry": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "kind": {
+          "type": "string"
+        },
+        "losses": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "source": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "target": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "card_id",
+        "kind",
+        "source",
+        "target",
+        "custodian",
+        "expiry",
+        "losses"
+      ],
+      "type": "object"
+    },
+    "Amount": {
+      "additionalProperties": false,
+      "description": "Reduced exact rational; canonicality and domain sign validated by Go.",
+      "properties": {
+        "denominator": {
+          "pattern": "^[1-9][0-9]*$",
+          "type": "string"
+        },
+        "numerator": {
+          "pattern": "^(0|-[1-9][0-9]*|[1-9][0-9]*)$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "numerator",
+        "denominator"
+      ],
+      "type": "object"
+    },
+    "Binding": {
+      "additionalProperties": false,
+      "properties": {
+        "formation": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "kings": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "slot": {
+          "type": "string"
+        },
+        "supported": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "id",
+        "kings",
+        "slot",
+        "formation",
+        "supported"
+      ],
+      "type": "object"
+    },
+    "Card": {
+      "additionalProperties": false,
+      "properties": {
+        "deck": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "id": {
+          "type": "string"
+        },
+        "rank": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "suit": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "deck",
+        "suit",
+        "rank"
+      ],
+      "type": "object"
+    },
+    "CodeSettings": {
+      "additionalProperties": false,
+      "properties": {
+        "declarer": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "diamond_bonus": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "formation": {
+          "type": "string"
+        },
+        "purchase_price": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "declarer",
+        "formation",
+        "diamond_bonus",
+        "purchase_price"
+      ],
+      "type": "object"
+    },
+    "Command": {
+      "additionalProperties": false,
+      "properties": {
+        "ace_id": {
+          "type": "string"
+        },
+        "actor": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "cards": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "decision_id": {
+          "type": "string"
+        },
+        "exile": {
+          "type": "boolean"
+        },
+        "formation": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/FormationSpec"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "formation_id": {
+          "type": "string"
+        },
+        "game_id": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "infiltrator": {
+          "type": "boolean"
+        },
+        "kind": {
+          "type": "string"
+        },
+        "offer_id": {
+          "type": "string"
+        },
+        "price": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "random_words": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "revision": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "suit": {
+          "type": "string"
+        },
+        "target_seat": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "targets": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "terms": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ProposalTerms"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "value": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "window_id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "game_id",
+        "id",
+        "kind",
+        "actor",
+        "window_id",
+        "decision_id",
+        "cards",
+        "targets",
+        "ace_id",
+        "value"
+      ],
+      "type": "object"
+    },
+    "Decision": {
+      "additionalProperties": false,
+      "properties": {
+        "command": {
+          "$ref": "#/$defs/Command"
+        },
+        "menu_version": {
+          "type": "string"
+        },
+        "operations": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "policy": {
+          "type": "string"
+        },
+        "reasons": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "command",
+        "reasons",
+        "operations",
+        "policy",
+        "menu_version"
+      ],
+      "type": "object"
+    },
+    "DecisionReceipt": {
+      "additionalProperties": false,
+      "properties": {
+        "command_id": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "command_id"
+      ],
+      "type": "object"
+    },
+    "DepartureChoice": {
+      "additionalProperties": false,
+      "properties": {
+        "leave": {
+          "type": "boolean"
+        },
+        "seat": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "seat",
+        "leave"
+      ],
+      "type": "object"
+    },
+    "DrawEntitlement": {
+      "additionalProperties": false,
+      "properties": {
+        "remaining": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "seat": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "seat",
+        "remaining"
+      ],
+      "type": "object"
+    },
+    "EffectDecision": {
+      "additionalProperties": false,
+      "properties": {
+        "ace_actor": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "ace_id": {
+          "type": "string"
+        },
+        "actor": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "choices": {
+          "items": {
+            "items": {
+              "type": "string"
+            },
+            "maxItems": 100000,
+            "type": [
+              "array",
+              "null"
+            ]
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "cursor": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "effect_id": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "kind": {
+          "type": "string"
+        },
+        "opponents": {
+          "items": {
+            "maximum": 9007199254740991,
+            "minimum": -9007199254740991,
+            "type": "integer"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "queen_id": {
+          "type": "string"
+        },
+        "reserved": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "selected": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "stage": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "opponents",
+        "cursor",
+        "reserved",
+        "queen_id",
+        "id",
+        "effect_id",
+        "actor",
+        "kind",
+        "stage",
+        "choices",
+        "selected",
+        "ace_id",
+        "ace_actor"
+      ],
+      "type": "object"
+    },
+    "FinancialCharge": {
+      "additionalProperties": false,
+      "properties": {
+        "amount": {
+          "$ref": "#/$defs/Amount"
+        },
+        "creditor": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "debtor": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "game_id": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "creditor",
+        "id",
+        "game_id",
+        "debtor",
+        "amount"
+      ],
+      "type": "object"
+    },
+    "FinancialCorrection": {
+      "additionalProperties": false,
+      "properties": {
+        "amount": {
+          "$ref": "#/$defs/Amount"
+        },
+        "charge_id": {
+          "type": "string"
+        },
+        "debt_id": {
+          "type": "string"
+        },
+        "debtor": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "game_id": {
+          "type": "string"
+        },
+        "match_level": {
+          "type": "boolean"
+        },
+        "operation_id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "operation_id",
+        "debt_id",
+        "charge_id",
+        "game_id",
+        "debtor",
+        "amount",
+        "match_level"
+      ],
+      "type": "object"
+    },
+    "FinancialDebt": {
+      "additionalProperties": false,
+      "properties": {
+        "charge_id": {
+          "type": "string"
+        },
+        "creditor": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "debtor": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "game_id": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "remaining": {
+          "$ref": "#/$defs/Amount"
+        },
+        "sequence": {
+          "maximum": 9007199254740991,
+          "minimum": 0,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "charge_id",
+        "game_id",
+        "debtor",
+        "creditor",
+        "remaining",
+        "sequence"
+      ],
+      "type": "object"
+    },
+    "FinancialLedger": {
+      "additionalProperties": false,
+      "properties": {
+        "cash": {
+          "items": {
+            "$ref": "#/$defs/Amount"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "charges": {
+          "items": {
+            "$ref": "#/$defs/FinancialCharge"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "completed": {
+          "items": {
+            "$ref": "#/$defs/FinancialResult"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "corrections": {
+          "items": {
+            "$ref": "#/$defs/FinancialCorrection"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "debts": {
+          "items": {
+            "$ref": "#/$defs/FinancialDebt"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "departed": {
+          "items": {
+            "type": "boolean"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "finished": {
+          "items": {
+            "type": "boolean"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "game_id": {
+          "type": "string"
+        },
+        "next_sequence": {
+          "maximum": 9007199254740991,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "operations": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "phase": {
+          "type": "string"
+        },
+        "scores": {
+          "items": {
+            "$ref": "#/$defs/Amount"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "game_id",
+        "phase",
+        "scores",
+        "cash",
+        "debts",
+        "charges",
+        "corrections",
+        "completed",
+        "departed",
+        "finished",
+        "operations",
+        "next_sequence"
+      ],
+      "type": "object"
+    },
+    "FinancialReceipt": {
+      "additionalProperties": false,
+      "properties": {
+        "amount": {
+          "$ref": "#/$defs/Amount"
+        },
+        "seat": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "seat",
+        "amount"
+      ],
+      "type": "object"
+    },
+    "FinancialResult": {
+      "additionalProperties": false,
+      "properties": {
+        "game_id": {
+          "type": "string"
+        },
+        "scores": {
+          "items": {
+            "$ref": "#/$defs/Amount"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "game_id",
+        "scores"
+      ],
+      "type": "object"
+    },
+    "ForgivenessConsent": {
+      "additionalProperties": false,
+      "properties": {
+        "amount": {
+          "$ref": "#/$defs/Amount"
+        },
+        "debt_id": {
+          "type": "string"
+        },
+        "seats": {
+          "items": {
+            "maximum": 9007199254740991,
+            "minimum": -9007199254740991,
+            "type": "integer"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "debt_id",
+        "amount",
+        "seats"
+      ],
+      "type": "object"
+    },
+    "FormationLoan": {
+      "additionalProperties": false,
+      "properties": {
+        "allocation": {
+          "type": "string"
+        },
+        "cards": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "from": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "to": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "cards",
+        "from",
+        "to",
+        "allocation"
+      ],
+      "type": "object"
+    },
+    "FormationProtection": {
+      "additionalProperties": false,
+      "properties": {
+        "formation": {
+          "type": "string"
+        },
+        "series": {
+          "type": "string"
+        }
+      },
+      "required": [],
+      "type": "object"
+    },
+    "FormationRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "controller": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "id": {
+          "type": "string"
+        },
+        "spec": {
+          "$ref": "#/$defs/FormationSpec"
+        }
+      },
+      "required": [
+        "id",
+        "controller",
+        "spec"
+      ],
+      "type": "object"
+    },
+    "FormationSlot": {
+      "additionalProperties": false,
+      "properties": {
+        "rank": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "suit": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "rank",
+        "suit"
+      ],
+      "type": "object"
+    },
+    "FormationSpec": {
+      "additionalProperties": false,
+      "properties": {
+        "cards": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "kind": {
+          "type": "string"
+        },
+        "protection": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/FormationProtection"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "substitute": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/FormationSubstitution"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "kind",
+        "cards"
+      ],
+      "type": "object"
+    },
+    "FormationSubstitution": {
+      "additionalProperties": false,
+      "properties": {
+        "kings": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "slot": {
+          "$ref": "#/$defs/FormationSlot"
+        }
+      },
+      "required": [
+        "kings",
+        "slot"
+      ],
+      "type": "object"
+    },
+    "GameplayFinanceDecision": {
+      "additionalProperties": false,
+      "properties": {
+        "menu_version": {
+          "type": "string"
+        },
+        "operation": {
+          "$ref": "#/$defs/LifecycleOperation"
+        },
+        "operations": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "policy": {
+          "type": "string"
+        },
+        "reasons": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "operation",
+        "reasons",
+        "operations",
+        "policy",
+        "menu_version"
+      ],
+      "type": "object"
+    },
+    "GameplayRandom": {
+      "additionalProperties": false,
+      "properties": {
+        "after": {
+          "$ref": "#/$defs/Snapshot"
+        },
+        "before": {
+          "$ref": "#/$defs/Snapshot"
+        },
+        "input": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "kind": {
+          "type": "string"
+        },
+        "output": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "stream": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "stream",
+        "kind",
+        "input",
+        "output",
+        "before",
+        "after"
+      ],
+      "type": "object"
+    },
+    "GameplayRun": {
+      "additionalProperties": false,
+      "properties": {
+        "artifact_profile": {
+          "type": "string"
+        },
+        "checkpoint": {
+          "$ref": "#/$defs/MatchLifecycle"
+        },
+        "exit_code": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "initial": {
+          "$ref": "#/$defs/MatchLifecycle"
+        },
+        "job": {
+          "$ref": "#/$defs/Job"
+        },
+        "pairing": {
+          "type": "string"
+        },
+        "policy_override": {
+          "type": "string"
+        },
+        "reason": {
+          "type": "string"
+        },
+        "redeals": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "root": {
+          "type": "string"
+        },
+        "schema": {
+          "type": "string"
+        },
+        "streams": {
+          "additionalProperties": {
+            "$ref": "#/$defs/Snapshot"
+          },
+          "propertyNames": {
+            "pattern": "^[\\x00-\\x7f]*$"
+          },
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "trace": {
+          "items": {
+            "$ref": "#/$defs/GameplayStep"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "schema",
+        "job",
+        "root",
+        "pairing",
+        "initial",
+        "checkpoint",
+        "trace",
+        "exit_code",
+        "reason",
+        "redeals",
+        "streams"
+      ],
+      "type": "object"
+    },
+    "GameplayStep": {
+      "additionalProperties": false,
+      "properties": {
+        "bot_after": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Snapshot"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "bot_before": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Snapshot"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "command": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Command"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "decision": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Decision"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "events": {
+          "type": "string"
+        },
+        "finance_decision": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/GameplayFinanceDecision"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "game_id": {
+          "type": "string"
+        },
+        "index": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "kind": {
+          "type": "string"
+        },
+        "next_id": {
+          "type": "string"
+        },
+        "operation": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/LifecycleOperation"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "opportunity_key": {
+          "type": "string"
+        },
+        "post": {
+          "type": "string"
+        },
+        "pre": {
+          "type": "string"
+        },
+        "random": {
+          "items": {
+            "$ref": "#/$defs/GameplayRandom"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "recycle": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "shuffle": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "index",
+        "kind",
+        "game_id",
+        "pre",
+        "post",
+        "events",
+        "random"
+      ],
+      "type": "object"
+    },
+    "Job": {
+      "additionalProperties": false,
+      "properties": {
+        "block": {
+          "type": "string"
+        },
+        "focal_participant_id": {
+          "type": "string"
+        },
+        "games": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "index": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "match_index": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "parameters": {
+          "additionalProperties": {
+            "maximum": 9007199254740991,
+            "minimum": -9007199254740991,
+            "type": "integer"
+          },
+          "propertyNames": {
+            "pattern": "^[\\x00-\\x7f]*$"
+          },
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "policies": {
+          "items": {
+            "$ref": "#/$defs/Policy"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "population": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "rotation": {
+          "$ref": "#/$defs/Rotation"
+        },
+        "treatment": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "match_index",
+        "focal_participant_id",
+        "index",
+        "population",
+        "block",
+        "rotation",
+        "treatment",
+        "parameters",
+        "games",
+        "policies"
+      ],
+      "type": "object"
+    },
+    "Lifecycle": {
+      "additionalProperties": false,
+      "properties": {
+        "automatic": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SettlementCursor"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "automatic_purpose": {
+          "type": "string"
+        },
+        "board": {
+          "$ref": "#/$defs/State"
+        },
+        "code_cursor": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "commands": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "propertyNames": {
+            "pattern": "^[\\x00-\\x7f]*$"
+          },
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "declarer": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "departure_choices": {
+          "items": {
+            "$ref": "#/$defs/DepartureChoice"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "departures_resolved": {
+          "type": "boolean"
+        },
+        "end_turn_pending": {
+          "type": "boolean"
+        },
+        "ending": {
+          "type": "string"
+        },
+        "forgiveness_consents": {
+          "items": {
+            "$ref": "#/$defs/ForgivenessConsent"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "ledger": {
+          "$ref": "#/$defs/FinancialLedger"
+        },
+        "payment_prior": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/FinancialLedger"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "pending_receipts": {
+          "items": {
+            "$ref": "#/$defs/FinancialReceipt"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "promise_payment": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/PromisePaymentCursor"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "promises": {
+          "$ref": "#/$defs/PromiseBook"
+        },
+        "round_closed": {
+          "type": "boolean"
+        },
+        "schema": {
+          "type": "string"
+        },
+        "turn_index": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "turn_started": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "commands",
+        "schema",
+        "board",
+        "ledger",
+        "promises",
+        "turn_index",
+        "turn_started",
+        "round_closed",
+        "ending",
+        "declarer",
+        "code_cursor"
+      ],
+      "type": "object"
+    },
+    "LifecycleOperation": {
+      "additionalProperties": false,
+      "properties": {
+        "accept": {
+          "type": "boolean"
+        },
+        "actor": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "amount": {
+          "$ref": "#/$defs/Amount"
+        },
+        "award_id": {
+          "type": "string"
+        },
+        "budget": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "debt_id": {
+          "type": "string"
+        },
+        "game_id": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "initiative_draws": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "kind": {
+          "type": "string"
+        },
+        "mode": {
+          "type": "string"
+        },
+        "promise_id": {
+          "type": "string"
+        },
+        "recipient": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "recycle": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "return_order": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "seats": {
+          "items": {
+            "maximum": 9007199254740991,
+            "minimum": -9007199254740991,
+            "type": "integer"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "threshold": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "amount",
+        "id",
+        "game_id",
+        "kind",
+        "actor"
+      ],
+      "type": "object"
+    },
+    "LifecycleReceiptSet": {
+      "additionalProperties": false,
+      "properties": {
+        "card_commands": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "propertyNames": {
+            "pattern": "^[\\x00-\\x7f]*$"
+          },
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "game_id": {
+          "type": "string"
+        },
+        "lifecycle_commands": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "propertyNames": {
+            "pattern": "^[\\x00-\\x7f]*$"
+          },
+          "type": [
+            "object",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "game_id",
+        "card_commands",
+        "lifecycle_commands"
+      ],
+      "type": "object"
+    },
+    "MatchLifecycle": {
+      "additionalProperties": false,
+      "properties": {
+        "command_history": {
+          "items": {
+            "$ref": "#/$defs/LifecycleReceiptSet"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "game": {
+          "$ref": "#/$defs/Lifecycle"
+        },
+        "game_limit": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "instances": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "nullification_consents": {
+          "items": {
+            "maximum": 9007199254740991,
+            "minimum": -9007199254740991,
+            "type": "integer"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "start_ledger": {
+          "$ref": "#/$defs/FinancialLedger"
+        }
+      },
+      "required": [
+        "command_history",
+        "game_limit",
+        "game",
+        "instances",
+        "start_ledger"
+      ],
+      "type": "object"
+    },
+    "OpeningIntent": {
+      "additionalProperties": false,
+      "properties": {
+        "card_id": {
+          "type": "string"
+        },
+        "formation": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/FormationSpec"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "formation_id": {
+          "type": "string"
+        },
+        "kind": {
+          "type": "string"
+        },
+        "prior_used": {
+          "type": "boolean"
+        },
+        "suit": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "kind",
+        "prior_used"
+      ],
+      "type": "object"
+    },
+    "Payment": {
+      "additionalProperties": false,
+      "properties": {
+        "amount": {
+          "$ref": "#/$defs/Amount"
+        },
+        "creditor": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "debt_id": {
+          "type": "string"
+        },
+        "debtor": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "debt_id",
+        "debtor",
+        "creditor",
+        "amount"
+      ],
+      "type": "object"
+    },
+    "PendingAction": {
+      "additionalProperties": false,
+      "properties": {
+        "ability": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/AbilityIntent"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "aces": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "actor": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "attack_modifier": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "baron": {
+          "type": "boolean"
+        },
+        "bomb": {
+          "type": "boolean"
+        },
+        "clubs": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "cursor": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "decision": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/EffectDecision"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "defender": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "defense_modifier": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "exile": {
+          "type": "boolean"
+        },
+        "id": {
+          "type": "string"
+        },
+        "infiltrator": {
+          "type": "boolean"
+        },
+        "justice_queen": {
+          "type": "string"
+        },
+        "kind": {
+          "type": "string"
+        },
+        "opening": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/OpeningIntent"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "proposal_id": {
+          "type": "string"
+        },
+        "quantity": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "responders": {
+          "items": {
+            "maximum": 9007199254740991,
+            "minimum": -9007199254740991,
+            "type": "integer"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "target_suit": {
+          "type": "string"
+        },
+        "targets": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "justice_queen",
+        "kind",
+        "id",
+        "actor",
+        "defender",
+        "clubs",
+        "targets",
+        "responders",
+        "cursor",
+        "attack_modifier",
+        "defense_modifier",
+        "aces",
+        "decision"
+      ],
+      "type": "object"
+    },
+    "PlacedCard": {
+      "additionalProperties": false,
+      "properties": {
+        "allocation": {
+          "type": "string"
+        },
+        "available_from_round": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "card": {
+          "$ref": "#/$defs/Card"
+        },
+        "controller": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "used_turn": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "zone": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "card",
+        "zone",
+        "controller",
+        "available_from_round",
+        "allocation",
+        "used_turn"
+      ],
+      "type": "object"
+    },
+    "Player": {
+      "additionalProperties": false,
+      "properties": {
+        "ace_round": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "ally": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "compensation_used": {
+          "type": "boolean"
+        },
+        "confined": {
+          "type": "boolean"
+        },
+        "connected": {
+          "type": "boolean"
+        },
+        "departed": {
+          "type": "boolean"
+        },
+        "history": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "opening_used": {
+          "type": "boolean"
+        },
+        "quotas": {
+          "additionalProperties": {
+            "maximum": 9007199254740991,
+            "minimum": -9007199254740991,
+            "type": "integer"
+          },
+          "propertyNames": {
+            "pattern": "^[\\x00-\\x7f]*$"
+          },
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "seat": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "underground": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "seat",
+        "history",
+        "opening_used",
+        "departed",
+        "confined",
+        "connected",
+        "underground",
+        "ally",
+        "ace_round",
+        "compensation_used",
+        "quotas"
+      ],
+      "type": "object"
+    },
+    "Policy": {
+      "additionalProperties": false,
+      "properties": {
+        "features": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "information": {
+          "type": "string"
+        },
+        "participant_id": {
+          "type": "string"
+        },
+        "policy": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        },
+        "weights": {
+          "items": {
+            "maximum": 9007199254740991,
+            "minimum": -9007199254740991,
+            "type": "integer"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "participant_id",
+        "policy",
+        "version",
+        "information",
+        "features",
+        "weights"
+      ],
+      "type": "object"
+    },
+    "Promise": {
+      "additionalProperties": false,
+      "properties": {
+        "amount": {
+          "$ref": "#/$defs/Amount"
+        },
+        "award_id": {
+          "type": "string"
+        },
+        "final": {
+          "$ref": "#/$defs/Amount"
+        },
+        "id": {
+          "type": "string"
+        },
+        "mode": {
+          "type": "string"
+        },
+        "paid": {
+          "$ref": "#/$defs/Amount"
+        },
+        "payer": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "promised": {
+          "$ref": "#/$defs/Amount"
+        },
+        "recipient": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "status": {
+          "type": "string"
+        },
+        "triggered": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "id",
+        "payer",
+        "recipient",
+        "award_id",
+        "mode",
+        "amount",
+        "status",
+        "triggered",
+        "promised",
+        "paid",
+        "final"
+      ],
+      "type": "object"
+    },
+    "PromiseAward": {
+      "additionalProperties": false,
+      "properties": {
+        "amount": {
+          "$ref": "#/$defs/Amount"
+        },
+        "id": {
+          "type": "string"
+        },
+        "payer": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "payer",
+        "amount"
+      ],
+      "type": "object"
+    },
+    "PromiseBook": {
+      "additionalProperties": false,
+      "properties": {
+        "awards": {
+          "items": {
+            "$ref": "#/$defs/PromiseAward"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "finished": {
+          "items": {
+            "type": "boolean"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "game_id": {
+          "type": "string"
+        },
+        "payments": {
+          "items": {
+            "$ref": "#/$defs/PromisePayment"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "phase": {
+          "type": "string"
+        },
+        "promises": {
+          "items": {
+            "$ref": "#/$defs/Promise"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "seats": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "game_id",
+        "seats",
+        "phase",
+        "promises",
+        "awards",
+        "payments",
+        "finished"
+      ],
+      "type": "object"
+    },
+    "PromisePayment": {
+      "additionalProperties": false,
+      "properties": {
+        "amount": {
+          "$ref": "#/$defs/Amount"
+        },
+        "id": {
+          "type": "string"
+        },
+        "ledger_after": {
+          "type": "string"
+        },
+        "promise_id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "promise_id",
+        "amount",
+        "ledger_after"
+      ],
+      "type": "object"
+    },
+    "PromisePaymentCursor": {
+      "additionalProperties": false,
+      "properties": {
+        "amount": {
+          "$ref": "#/$defs/Amount"
+        },
+        "book_before": {
+          "type": "string"
+        },
+        "game_id": {
+          "type": "string"
+        },
+        "ledger_before": {
+          "type": "string"
+        },
+        "operation": {
+          "type": "string"
+        },
+        "promise_id": {
+          "type": "string"
+        },
+        "settlement": {
+          "$ref": "#/$defs/SettlementCursor"
+        }
+      },
+      "required": [
+        "game_id",
+        "promise_id",
+        "operation",
+        "amount",
+        "book_before",
+        "ledger_before",
+        "settlement"
+      ],
+      "type": "object"
+    },
+    "Proposal": {
+      "additionalProperties": false,
+      "properties": {
+        "from": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "game_id": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "revision": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "status": {
+          "type": "string"
+        },
+        "terms": {
+          "$ref": "#/$defs/ProposalTerms"
+        },
+        "turn": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "revision",
+        "game_id",
+        "turn",
+        "from",
+        "terms",
+        "status"
+      ],
+      "type": "object"
+    },
+    "ProposalTerms": {
+      "additionalProperties": false,
+      "properties": {
+        "give": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "loan": {
+          "type": "boolean"
+        },
+        "receive": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "to": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "to",
+        "give",
+        "receive",
+        "loan"
+      ],
+      "type": "object"
+    },
+    "Rotation": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "seats": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "seats"
+      ],
+      "type": "object"
+    },
+    "Scenario": {
+      "additionalProperties": false,
+      "properties": {
+        "checkpoint": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SettlementCursor"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "commands": {
+          "items": {
+            "$ref": "#/$defs/Command"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "expected_digests": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "expected_scores": {
+          "items": {
+            "$ref": "#/$defs/Amount"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "gameplay": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/GameplayRun"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "id": {
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "accounting-only",
+            "transition-sequence",
+            "settlement-checkpoint",
+            "gameplay-checkpoint"
+          ]
+        },
+        "ledger": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/FinancialLedger"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "parent": {
+          "type": "string"
+        },
+        "players": {
+          "enum": [
+            3,
+            4
+          ]
+        },
+        "purpose": {
+          "type": "string"
+        },
+        "receipts": {
+          "items": {
+            "$ref": "#/$defs/FinancialReceipt"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "rule_refs": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "run_bots": {
+          "type": "boolean"
+        },
+        "schema_version": {
+          "const": "cgms-scenario-v1"
+        },
+        "state": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/State"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "schema_version",
+        "id",
+        "kind",
+        "purpose",
+        "players",
+        "rule_refs"
+      ],
+      "type": "object"
+    },
+    "SettlementAudit": {
+      "additionalProperties": false,
+      "properties": {
+        "after": {
+          "type": "string"
+        },
+        "algorithm": {
+          "type": "string"
+        },
+        "before": {
+          "type": "string"
+        },
+        "payments": {
+          "items": {
+            "$ref": "#/$defs/Payment"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "previous": {
+          "type": "string"
+        },
+        "receipts": {
+          "items": {
+            "$ref": "#/$defs/FinancialReceipt"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "repeats": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "algorithm",
+        "before",
+        "after",
+        "previous",
+        "payments",
+        "receipts",
+        "repeats"
+      ],
+      "type": "object"
+    },
+    "SettlementCursor": {
+      "additionalProperties": false,
+      "properties": {
+        "audit": {
+          "items": {
+            "$ref": "#/$defs/SettlementAudit"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "committed": {
+          "$ref": "#/$defs/FinancialLedger"
+        },
+        "digest": {
+          "type": "string"
+        },
+        "done": {
+          "type": "boolean"
+        },
+        "head_credited": {
+          "type": "boolean"
+        },
+        "ledger": {
+          "$ref": "#/$defs/FinancialLedger"
+        },
+        "operations": {
+          "maximum": 9007199254740991,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "queue": {
+          "items": {
+            "$ref": "#/$defs/FinancialReceipt"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "version": {
+          "const": "cgms-fifo-v1"
+        }
+      },
+      "required": [
+        "head_credited",
+        "version",
+        "committed",
+        "ledger",
+        "queue",
+        "audit",
+        "operations",
+        "done",
+        "digest"
+      ],
+      "type": "object"
+    },
+    "Snapshot": {
+      "additionalProperties": false,
+      "properties": {
+        "algorithm": {
+          "type": "string"
+        },
+        "counter": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "algorithm",
+        "state",
+        "counter"
+      ],
+      "type": "object"
+    },
+    "State": {
+      "additionalProperties": false,
+      "properties": {
+        "active": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "bindings": {
+          "items": {
+            "$ref": "#/$defs/Binding"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "cards": {
+          "items": {
+            "$ref": "#/$defs/PlacedCard"
+          },
+          "maxItems": 104,
+          "minItems": 104,
+          "type": "array"
+        },
+        "code": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/CodeSettings"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "commands": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "propertyNames": {
+            "pattern": "^[\\x00-\\x7f]*$"
+          },
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "decisions": {
+          "items": {
+            "$ref": "#/$defs/DecisionReceipt"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "draw_order": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "draw_queue": {
+          "items": {
+            "$ref": "#/$defs/DrawEntitlement"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "effects": {
+          "items": {
+            "$ref": "#/$defs/AceEffect"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "formations": {
+          "items": {
+            "$ref": "#/$defs/FormationRecord"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "game_id": {
+          "type": "string"
+        },
+        "loans": {
+          "items": {
+            "$ref": "#/$defs/FormationLoan"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "needs_shuffle": {
+          "type": "boolean"
+        },
+        "order": {
+          "items": {
+            "maximum": 9007199254740991,
+            "minimum": -9007199254740991,
+            "type": "integer"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "pending": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/PendingAction"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "phase": {
+          "type": "string"
+        },
+        "players": {
+          "items": {
+            "$ref": "#/$defs/Player"
+          },
+          "maxItems": 4,
+          "minItems": 3,
+          "type": "array"
+        },
+        "proposals": {
+          "items": {
+            "$ref": "#/$defs/Proposal"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "public_history": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 100000,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "round": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "schema": {
+          "const": "cgms-state-v1"
+        },
+        "turn": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        },
+        "version": {
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "loans",
+        "decisions",
+        "version",
+        "commands",
+        "needs_shuffle",
+        "draw_queue",
+        "schema",
+        "game_id",
+        "round",
+        "turn",
+        "active",
+        "phase",
+        "cards",
+        "players",
+        "draw_order",
+        "bindings",
+        "effects",
+        "order",
+        "public_history"
+      ],
+      "type": "object"
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "allOf": [
+    {
+      "$ref": "#/$defs/Scenario"
+    }
+  ],
+  "description": "Closed offline runtime shape. Go additionally validates physical conservation, lineage, compatibility and exact rational canonicality.",
+  "title": "CGMS scenario v1"
+}

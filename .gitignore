@@ -1,0 +1,25 @@
+# local state
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+
+# scaffold output / per-project agent runtime
+docs/tracking/state/*
+!docs/tracking/state/.gitkeep
+
+# editor noise
+.idea/
+*.swp
+*.swo
+
+# user-local overrides
+.env
+.env.local
+
+# private generated simulation output (curated inputs stay tracked)
+/sims/artifacts/
+
+# Local deployment binaries and private service credentials
+/.local/

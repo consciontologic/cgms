@@ -1,0 +1,2816 @@
+{
+  "runId": "online-bots-20261002",
+  "status": "verified",
+  "scope": "Normal Flutter online lobby: one human against two or three server-owned bots. Existing rules, privacy, economy and shared vertical UI retained.",
+  "rootCauses": [
+    "Online room creation required human members; existing bot policies were wired only into the offline host.",
+    "The client did not expose round departure choices, so an authoritative human wait appeared as a stuck bot turn.",
+    "Online scheduling initially considered only active/required seats and omitted the rules immediate out-of-turn Coup exception.",
+    "Pre-upgrade persisted projections lacked new round flags; immutable historical receipts needed narrowly compatible replay verification.",
+    "Bot departure votes advanced the optimistic version while the human clicked Stay, causing a real 409 conflict.",
+    "Pinned Flutter 3.47.5 web semantics retains its previous scroll adjustment when the persistent action viewport becomes non-scrollable; Firefox round-choice hitboxes remained 269 or 314 pixels below their painted buttons.",
+    "A dealt initial projection still exposed provisional active seat1 before initiative and begin-turn. The old financial automatic_pending flag did not describe those server transitions, briefly enabling ordinary human controls too early.",
+    "A real Advanced bot turn repeatedly alternated purchase and open-series. With empty draw/discard piles it paid13cards and redrew the same13; exact card placement alternated between two states. Opportunity scoring repeatedly selected this zero-growth purchase.",
+    "Online planning eagerly applied every candidate through the lifecycle before scoring. In a deterministic dense fixture it consumed3.878s of the shared2s runtime context, leaving no live deadline for durable submission. The earlier randomv15 failure lacked sufficient diagnostics to attribute conclusively."
+  ],
+  "fixes": [
+    "Optional room difficulty atomically creates durable server-owned bot seats; credential restrictions and human-only benefits enforced.",
+    "Reuse fair beginner/standard/advanced policy observations through authoritative validated idempotent commands and existing dispatcher.",
+    "Expose real bot setup, public labels, immutable pending-room recovery and explicit human round choices with duplicate guards and preserved drafts.",
+    "Check bounded own-inventory Coup eligibility at each actor boundary and validate through the same authority.",
+    "Round bot votes wait for the human choice, preserving first-click version validity without retries or relaxed admission.",
+    "Derive missing legacy snapshot flags from the same committed checkpoint and tolerate only absent new flags in immutable historical journal projections.",
+    "Recreate only the decision scroll viewport on meaningful game/round/workspace changes, keeping the globally keyed form subtree, draft state and ordinary-resize identity stable.",
+    "Add server_pending from the persisted lifecycle planner; disable ordinary commands and show Preparing the next move until false, preserving immediate Coup admission. Enrich legacy authorized views and allow only absent new derived metadata in immutable receipt compatibility.",
+    "Filter online suggestions to purchases drawing strictly more cards than the physical payment count. This breaks the proven empty-deck acquisition cycle using only authorized candidate inputs, without changing authority legality, human choices, required responses, immediate Coup or frozen offline/evaluation policies. This is not a general game-termination proof.",
+    "Rank online candidates before expensive lifecycle validation. Preserve the exact v1 key fallback for ambiguous choices and eager validation of financial operations. Honour cancellation during menu construction and discard partial cancelled results. Original background-context APIs, offline policies and the two-second worker deadline stay unchanged."
+  ],
+  "boundaries": [
+    "Web play requires the online backend.",
+    "Difficulty names identify existing policies; no measured strength or balance claim.",
+    "No native/store/production acceptance or P03 allocation implied.",
+    "No persistent data deleted. No commit, push or history rewrite attempted."
+  ],
+  "sourceChecks": {
+    "hostTests": {
+      "log": "/tmp/agent-runs/online-bots-ready-host--20261002T221506Z-2634149.log",
+      "sha256": "07034b9d934775dc419ffd84af4fbbf05bf4ade217ba400d0f7895baa03d865f",
+      "exit": 0,
+      "tests": 292
+    },
+    "uiTests": {
+      "log": "/tmp/agent-runs/online-bots-ready-ui--20261002T221528Z-2635474.log",
+      "sha256": "1f1af90c138540ffae6a2620d235c88c87ec5d4e1c14d27d408c705ae63ef841",
+      "exit": 0,
+      "tests": 76
+    },
+    "hostAnalyze": {
+      "log": "/tmp/agent-runs/online-bots-ready-analyze--20261002T221506Z-2634263.log",
+      "sha256": "b62a2e7d9016baf862185c4b3c07bf3c0a27318fde7b45e63e167dba869ac2f1",
+      "exit": 0
+    },
+    "uiAnalyze": {
+      "log": "/tmp/agent-runs/online-bots-ready-ui-analyze--20261002T221619Z-2640766.log",
+      "sha256": "3a48d58fbfee848e8f90874fbc3830fe60363f1a2dfd5b90cf18aeea15873788",
+      "exit": 0
+    },
+    "format": {
+      "log": "/tmp/agent-runs/online-bots-stable-format--20261002T222338Z-2654536.log",
+      "sha256": "e79b4f400a42a6b30c7915c7b4fd9ff348fd399d6e3992bf2ecb65b68d3626b8",
+      "exit": 0,
+      "files": 11
+    },
+    "webBuild": {
+      "log": "/tmp/agent-runs/online-bots-ready-web--20261002T221506Z-2634184.log",
+      "sha256": "844d9b91941a2b00e9e0428542efd5543e1bc5cd679afd04c4ddbaea19f873c5",
+      "exit": 0
+    },
+    "postgresRedisRaceInitial": {
+      "log": "/tmp/agent-runs/online-bots-postgres-race-serial--20261002T205846Z-2473013.log",
+      "sha256": "e7dcd05678a342e36ad0c38973066039cf35443631e73b519baa256c061364b9",
+      "exit": 0
+    },
+    "legacyProjectionRace": {
+      "log": "/tmp/agent-runs/bots-legacy-round-green--20261002T212451Z-2543219.log",
+      "sha256": "bd0dcfddcbf5c1893723e1b00472e1fd284e71b013a2e2dd1f055dc489a6ef57",
+      "exit": 0
+    },
+    "goUnit": {
+      "log": "/tmp/agent-runs/online-bots-final-go--20261002T231931Z-2746291.log",
+      "sha256": "c8b0a7a21ad59ed8234359ab4cfcc90229492d010cecc1e4b30d88ac62d88778",
+      "exit": 0
+    },
+    "goVet": {
+      "log": "/tmp/agent-runs/online-bots-final-vet--20261002T231931Z-2746388.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "exit": 0
+    },
+    "backendBuild": {
+      "log": "/tmp/agent-runs/online-bots-final-backend--20261002T231931Z-2746317.log",
+      "sha256": "844d9b91941a2b00e9e0428542efd5543e1bc5cd679afd04c4ddbaea19f873c5",
+      "exit": 0
+    },
+    "nodeSupport": {
+      "log": "/tmp/agent-runs/online-bots-receipts-support--20261002T224527Z-2685873.log",
+      "sha256": "8b3c0fcd74293223efb51b08384b5befe4b40626682031aac32b9473d516895b",
+      "exit": 0,
+      "tests": 43
+    },
+    "roundChoiceRace": {
+      "log": "/tmp/agent-runs/bots-round-order-final--20261002T213100Z-2555980.log",
+      "sha256": "25b1e9d217c5116c4e1dd3bdb7780e445e1abf42d081b894544a60d6e9a71983",
+      "exit": 0
+    },
+    "integrity": {
+      "log": "/tmp/agent-runs/online-bots-final-source-audit--20261002T232554Z-2760017.log",
+      "sha256": "6a66efd35c8088bc765c5c571dd3d29bce83f8583124ea61cebba744807ad26a",
+      "exit": 0
+    },
+    "documentLinks": {
+      "log": "/tmp/agent-runs/online-bots-final-doc-links--20261002T232401Z-2756905.log",
+      "sha256": "6185f8c01cac0b17a218a4fbec16c50a713f285cf876997514aa608b89908bb5",
+      "exit": 0
+    },
+    "postgresRedisRaceFinal": {
+      "log": "/tmp/agent-runs/online-bots-final-postgres-race--20261002T232129Z-2751796.log",
+      "sha256": "583ccb6115fb60cac68e692481c08df1ff4dab6ef9171b8702613ac44baef7ff",
+      "exit": 0,
+      "packages": [
+        "identity",
+        "rooms",
+        "matchstore",
+        "transport",
+        "delivery",
+        "presence",
+        "economy"
+      ],
+      "serialized": true,
+      "transportSeconds": 194.837
+    },
+    "phoneRoundTouch": {
+      "log": "/tmp/agent-runs/online-bots-round-touch--20261002T214118Z-2575792.log",
+      "sha256": "856c3e64e737d9fbae8d251f9602254266eca5b6c7846a4d9f3b296681bf904c",
+      "exit": 0,
+      "tests": 2
+    },
+    "testFormat": {
+      "log": "/tmp/agent-runs/online-bots-test-format--20261002T214152Z-2576986.log",
+      "sha256": "f9082f332e17ad0a9982a05eb4167ae95b672938df06a6158ab88d20c6d76fb6",
+      "exit": 0
+    },
+    "actionWorkspaceRegression": {
+      "log": "/tmp/agent-runs/action-workspace-green-clean--20261002T220604Z-2617024.log",
+      "sha256": "d2036a94b90a1fc0cf4784fc6ee468aae676cf751453f301bd108063ff770698",
+      "exit": 0,
+      "tests": 2
+    },
+    "readinessWidget": {
+      "log": "/tmp/agent-runs/online-bots-readiness-ui-green--20261002T221333Z-2630328.log",
+      "sha256": "7a032b14dbdf9780cb66159ae3f0195e15067efda99e7310e2cd699d72b57a9a",
+      "exit": 0,
+      "tests": 1
+    },
+    "readinessBackend": {
+      "log": "/tmp/agent-runs/server-readiness-green--20261002T221347Z-2631114.log",
+      "sha256": "5b2476ca7a6c778c2ec6e9e09939ec5544b21df93321078a01ea7140e630531c",
+      "exit": 0
+    },
+    "readinessPostgresRace": {
+      "log": "/tmp/agent-runs/server-readiness-postgres-final--20261002T221556Z-2638177.log",
+      "sha256": "ace102718048289a15809562124d4c7930d9aff76d920c2f580b986c5392d4a0",
+      "exit": 0
+    },
+    "browserBudgetUnit": {
+      "log": "/tmp/agent-runs/online-bots-progress-budget-tests--20261002T223154Z-2666024.log",
+      "sha256": "3ea61f2a9f345edbb060a243a6f6d5973290b01a98204edf6bb9cf76ea0b9736",
+      "exit": 0,
+      "tests": 12
+    },
+    "onlinePurchaseProgress": {
+      "log": "/tmp/agent-runs/bot-purchase-progress-green--20261002T225115Z-2694725.log",
+      "sha256": "c0acca8c75aa9aa5f10056b88b018aceca63ab450abb7870c6f3ff3f94c2ce7d",
+      "exit": 0
+    },
+    "onlinePurchaseRuntimeRace": {
+      "log": "/tmp/agent-runs/bot-purchase-progress-runtime-final--20261002T225352Z-2702185.log",
+      "sha256": "8d2bc107396c240b897dbeee58c0a17f5630c0ba0885a98809edc4f030a3e09b",
+      "exit": 0,
+      "packageSeconds": 19.313,
+      "regressionSeconds": 12.32
+    },
+    "onlinePurchaseUnitFinal": {
+      "log": "/tmp/agent-runs/bot-purchase-progress-unit-final--20261002T225544Z-2707212.log",
+      "sha256": "f10d70889c89e40e77203e4d55ba012d48cf21487487c90bb5dd416b1445a831",
+      "exit": 0
+    },
+    "boundedBotTransaction": {
+      "log": "/tmp/agent-runs/bot-deadline-green--20261002T231312Z-2734633.log",
+      "sha256": "a3169e2d21131d9cb648f3806d294292548430ad8ca410ec97fa6dc516bf23bb",
+      "exit": 0,
+      "runtimeDeadlineSeconds": 2,
+      "planningSeconds": 1.627236055,
+      "fullAutomaticTransactionSeconds": 1.74183975,
+      "raceDetector": true
+    },
+    "botPlanningCompatibility": {
+      "log": "/tmp/agent-runs/bot-planning-compatibility--20261002T231541Z-2739646.log",
+      "exit": 0,
+      "raceDetector": true,
+      "botplaySeconds": 89.597,
+      "botsSeconds": 1.061,
+      "gameSeconds": 20.032,
+      "sha256": "07718fbf875aef275bbd5813283af46c430e4ac64fec97535b1e1da7e9d732d7"
+    },
+    "actualV1TieParity": {
+      "log": "/tmp/agent-runs/bot-planning-tie-final--20261002T231820Z-2744394.log",
+      "exit": 0,
+      "raceDetector": true,
+      "seconds": 1.653,
+      "sha256": "34243d549fddac3aee70f28d9c42cd2da2d03b4039316266fcd86fbecb80a030"
+    },
+    "ordinaryServiceHealth": {
+      "log": "/tmp/agent-runs/online-bots-final-services--20261002T232130Z-2752195.log",
+      "sha256": "175006857542ebaa742ae47919263480de4aa4230814d296ecc8464191012e13",
+      "exit": 0
+    },
+    "finalPrestageAudit": {
+      "log": "/tmp/agent-runs/online-bots-prestage-audit--20261002T233835Z-2777776.log",
+      "sha256": "a5904e95b0097b08d0b858185c957e338166608a1c3333f9e2274359f2e6ab85",
+      "exit": 0,
+      "sourceHashesMatch": 42,
+      "removedCaptureInventoryRows": 97,
+      "secretPatterns": "none",
+      "diffWhitespace": "clean"
+    }
+  },
+  "browserChecks": {
+    "suites": [
+      {
+        "engine": "firefox",
+        "version": "155.0",
+        "status": "passed",
+        "reportAtCapture": "client/.browser-tools/artifacts/online-bots-policy-firefox/firefox-bots-report.json",
+        "reportSha256": "c37259f109295862046942a0babff2dd3b4622641da799d6cdda0cc9b1711d6c",
+        "harnessHashesAtRun": {
+          "bot_browser_acceptance.cjs": "19756f492d73ae9bc5455975447d830a353dfb73a1ad4dce3abd6889747e883d",
+          "browser_faults.cjs": "334439124fbdf5a2ba5056adb3655b53ffaa256797ffa7c6c9bccd705f5ea479",
+          "reconnect_browser_acceptance.cjs": "32f545216d730a15e112fbc88235607cdb7f6510a54ec69b6072c2f6928f5058"
+        },
+        "mainSha256": "210401b46cfe9c7df944dd1d88a403d50739ce32a3ce2d716624210392a58234",
+        "caseCount": 9,
+        "cases": [
+          {
+            "case": "beginner-live-boundaries-and-stream-reconnect-retain-draft-selection-and-private-hand",
+            "pass": true,
+            "handDigest": "2ad572169b9e0d8ce1e29e00115c32fd32728d35d18372062cd00ffcf59ccfac"
+          },
+          {
+            "case": "beginner-3p-human-opening-and-automatic-bot-responses",
+            "pass": true,
+            "outcome": "opened",
+            "responseVersionAdvance": 3,
+            "selectedCardCount": 5
+          },
+          {
+            "case": "beginner-3p-bots-play-return-control-and-privacy",
+            "pass": true,
+            "humanResponses": 8,
+            "humanCommandCount": 10,
+            "botVersionAdvance": 28,
+            "elapsedMs": 14340
+          },
+          {
+            "case": "standard-live-boundaries-and-stream-reconnect-retain-draft-selection-and-private-hand",
+            "pass": true,
+            "handDigest": "6c5a14f920ac76b5a592b372186c5fded3be390fa2c5316882caacb385879921"
+          },
+          {
+            "case": "standard-4p-human-opening-and-automatic-bot-responses",
+            "pass": true,
+            "outcome": "opened",
+            "responseVersionAdvance": 4,
+            "selectedCardCount": 2
+          },
+          {
+            "case": "standard-4p-bots-play-return-control-and-privacy",
+            "pass": true,
+            "humanResponses": 19,
+            "humanCommandCount": 21,
+            "botVersionAdvance": 83,
+            "elapsedMs": 40926
+          },
+          {
+            "case": "advanced-live-boundaries-and-stream-reconnect-retain-draft-selection-and-private-hand",
+            "pass": true,
+            "handDigest": "6b29d74e2b03290ae6a434a7a527daba0d8023b632095852e4ad75c60bfeb717"
+          },
+          {
+            "case": "advanced-4p-human-opening-and-automatic-bot-responses",
+            "pass": true,
+            "outcome": "opened",
+            "responseVersionAdvance": 3,
+            "selectedCardCount": 3
+          },
+          {
+            "case": "advanced-4p-bots-play-return-control-and-privacy",
+            "pass": true,
+            "humanResponses": 10,
+            "humanCommandCount": 12,
+            "botVersionAdvance": 33,
+            "elapsedMs": 16661
+          }
+        ],
+        "errors": [],
+        "matches": [
+          {
+            "difficulty": "beginner",
+            "players": 3,
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "timings": {
+              "guestReadyMs": 1558,
+              "roomReadyMs": 3335,
+              "playableMs": 5561,
+              "reconnectMs": 385,
+              "botResponsesMs": 873,
+              "botTurnCycleMs": 14340
+            },
+            "projectionsChecked": 58,
+            "initialHumanResponses": 0,
+            "humanResponses": 8,
+            "stayChoices": 1,
+            "humanInterventions": 9,
+            "progressBudgets": {
+              "random starter reaches first human turn": {
+                "elapsedMs": 1025,
+                "humanInteractionMs": 0,
+                "unattendedMs": 1025,
+                "noProgressMs": 514,
+                "interventions": 0,
+                "version": 3
+              },
+              "human-opening": {
+                "elapsedMs": 873,
+                "humanInteractionMs": 364,
+                "unattendedMs": 509,
+                "noProgressMs": 0,
+                "interventions": 1,
+                "version": 6
+              },
+              "human-turn-cycle": {
+                "elapsedMs": 14339,
+                "humanInteractionMs": 9241,
+                "unattendedMs": 5098,
+                "noProgressMs": 0,
+                "interventions": 10,
+                "version": 44
+              }
+            },
+            "initialServerPendingObserved": true,
+            "readinessCleared": true,
+            "commandCounts": {
+              "open-series": 1,
+              "end-turn": 1,
+              "pass": 8,
+              "departure-choice": 1
+            },
+            "allCommandReceiptsAdvance": true,
+            "commandIdsUnique": true,
+            "finalState": {
+              "version": 44,
+              "round": 2,
+              "turn": 4,
+              "active": 1,
+              "requiredActor": 0,
+              "phase": "playing",
+              "window": false,
+              "decision": false,
+              "automaticPending": false,
+              "serverPending": false,
+              "roundClosed": false,
+              "departureChoicePending": false,
+              "ending": null,
+              "financialPhase": "playing",
+              "completedGames": 0,
+              "botSeats": [
+                2,
+                3
+              ],
+              "difficulty": "beginner",
+              "privacy": {
+                "visibleCards": 36,
+                "ownPrivateCards": 12
+              }
+            },
+            "stayTouchTargets": [
+              {
+                "rect": {
+                  "x": 8,
+                  "y": 314,
+                  "width": 374,
+                  "height": 49,
+                  "top": 314,
+                  "right": 382,
+                  "bottom": 363,
+                  "left": 8
+                },
+                "clip": {
+                  "left": 0,
+                  "top": 0,
+                  "right": 390,
+                  "bottom": 844
+                }
+              }
+            ],
+            "fontManifestRequests": [
+              {
+                "phase": "entry",
+                "startedAtMs": 753,
+                "status": 200,
+                "responseAtMs": 754,
+                "finishedAtMs": 754
+              },
+              {
+                "phase": "room-reload",
+                "startedAtMs": 3611,
+                "status": 200,
+                "responseAtMs": 3618,
+                "finishedAtMs": 3618
+              },
+              {
+                "phase": "match-reload",
+                "startedAtMs": 12878,
+                "status": 200,
+                "responseAtMs": 12885,
+                "finishedAtMs": 12886
+              }
+            ],
+            "reloads": [
+              {
+                "phase": "room-reload",
+                "startedAtMs": 3335
+              },
+              {
+                "phase": "match-reload",
+                "startedAtMs": 12566
+              }
+            ]
+          },
+          {
+            "difficulty": "standard",
+            "players": 4,
+            "viewport": {
+              "width": 1440,
+              "height": 900
+            },
+            "timings": {
+              "guestReadyMs": 1288,
+              "roomReadyMs": 3011,
+              "playableMs": 60555,
+              "reconnectMs": 388,
+              "botResponsesMs": 864,
+              "botTurnCycleMs": 40926
+            },
+            "projectionsChecked": 235,
+            "initialHumanResponses": 31,
+            "humanResponses": 19,
+            "stayChoices": 1,
+            "humanInterventions": 20,
+            "progressBudgets": {
+              "random starter reaches first human turn": {
+                "elapsedMs": 56284,
+                "humanInteractionMs": 38967,
+                "unattendedMs": 17317,
+                "noProgressMs": 0,
+                "interventions": 31,
+                "version": 142
+              },
+              "human-opening": {
+                "elapsedMs": 864,
+                "humanInteractionMs": 354,
+                "unattendedMs": 510,
+                "noProgressMs": 0,
+                "interventions": 1,
+                "version": 146
+              },
+              "human-turn-cycle": {
+                "elapsedMs": 40925,
+                "humanInteractionMs": 26168,
+                "unattendedMs": 14757,
+                "noProgressMs": 0,
+                "interventions": 21,
+                "version": 250
+              }
+            },
+            "initialServerPendingObserved": true,
+            "readinessCleared": true,
+            "commandCounts": {
+              "pass": 50,
+              "open-series": 1,
+              "end-turn": 1,
+              "departure-choice": 1
+            },
+            "allCommandReceiptsAdvance": true,
+            "commandIdsUnique": true,
+            "finalState": {
+              "version": 250,
+              "round": 2,
+              "turn": 8,
+              "active": 1,
+              "requiredActor": 0,
+              "phase": "playing",
+              "window": false,
+              "decision": false,
+              "automaticPending": false,
+              "serverPending": false,
+              "roundClosed": false,
+              "departureChoicePending": false,
+              "ending": null,
+              "financialPhase": "playing",
+              "completedGames": 0,
+              "botSeats": [
+                2,
+                3,
+                4
+              ],
+              "difficulty": "standard",
+              "privacy": {
+                "visibleCards": 58,
+                "ownPrivateCards": 19
+              }
+            },
+            "stayTouchTargets": [
+              {
+                "rect": {
+                  "x": 8,
+                  "y": 294,
+                  "width": 1424,
+                  "height": 53,
+                  "top": 294,
+                  "right": 1432,
+                  "bottom": 347,
+                  "left": 8
+                },
+                "clip": {
+                  "left": 0,
+                  "top": 0,
+                  "right": 1440,
+                  "bottom": 900
+                }
+              }
+            ],
+            "fontManifestRequests": [
+              {
+                "phase": "entry",
+                "startedAtMs": 532,
+                "status": 200,
+                "responseAtMs": 532,
+                "finishedAtMs": 533
+              },
+              {
+                "phase": "room-reload",
+                "startedAtMs": 3311,
+                "status": 200,
+                "responseAtMs": 3313,
+                "finishedAtMs": 3314
+              },
+              {
+                "phase": "match-reload",
+                "startedAtMs": 68085,
+                "status": 200,
+                "responseAtMs": 68091,
+                "finishedAtMs": 68091
+              }
+            ],
+            "reloads": [
+              {
+                "phase": "room-reload",
+                "startedAtMs": 3011
+              },
+              {
+                "phase": "match-reload",
+                "startedAtMs": 67804
+              }
+            ]
+          },
+          {
+            "difficulty": "advanced",
+            "players": 4,
+            "viewport": {
+              "width": 600,
+              "height": 900
+            },
+            "timings": {
+              "guestReadyMs": 1148,
+              "roomReadyMs": 2870,
+              "playableMs": 30465,
+              "reconnectMs": 408,
+              "botResponsesMs": 478,
+              "botTurnCycleMs": 16661
+            },
+            "projectionsChecked": 121,
+            "initialHumanResponses": 14,
+            "humanResponses": 10,
+            "stayChoices": 1,
+            "humanInterventions": 11,
+            "progressBudgets": {
+              "random starter reaches first human turn": {
+                "elapsedMs": 26362,
+                "humanInteractionMs": 18209,
+                "unattendedMs": 8153,
+                "noProgressMs": 0,
+                "interventions": 14,
+                "version": 63
+              },
+              "human-opening": {
+                "elapsedMs": 478,
+                "humanInteractionMs": 473,
+                "unattendedMs": 5,
+                "noProgressMs": 0,
+                "interventions": 1,
+                "version": 66
+              },
+              "human-turn-cycle": {
+                "elapsedMs": 16661,
+                "humanInteractionMs": 10542,
+                "unattendedMs": 6119,
+                "noProgressMs": 0,
+                "interventions": 12,
+                "version": 111
+              }
+            },
+            "initialServerPendingObserved": true,
+            "readinessCleared": true,
+            "commandCounts": {
+              "pass": 24,
+              "open-series": 1,
+              "end-turn": 1,
+              "departure-choice": 1
+            },
+            "allCommandReceiptsAdvance": true,
+            "commandIdsUnique": true,
+            "finalState": {
+              "version": 111,
+              "round": 2,
+              "turn": 8,
+              "active": 1,
+              "requiredActor": 0,
+              "phase": "playing",
+              "window": false,
+              "decision": false,
+              "automaticPending": false,
+              "serverPending": false,
+              "roundClosed": false,
+              "departureChoicePending": false,
+              "ending": null,
+              "financialPhase": "playing",
+              "completedGames": 0,
+              "botSeats": [
+                2,
+                3,
+                4
+              ],
+              "difficulty": "advanced",
+              "privacy": {
+                "visibleCards": 55,
+                "ownPrivateCards": 18
+              }
+            },
+            "stayTouchTargets": [
+              {
+                "rect": {
+                  "x": 8,
+                  "y": 309.08331298828125,
+                  "width": 584,
+                  "height": 53,
+                  "top": 309.08331298828125,
+                  "right": 592,
+                  "bottom": 362.08331298828125,
+                  "left": 8
+                },
+                "clip": {
+                  "left": 0,
+                  "top": 0,
+                  "right": 600,
+                  "bottom": 900
+                }
+              }
+            ],
+            "fontManifestRequests": [
+              {
+                "phase": "entry",
+                "startedAtMs": 441,
+                "status": 200,
+                "responseAtMs": 442,
+                "finishedAtMs": 442
+              },
+              {
+                "phase": "room-reload",
+                "startedAtMs": 3154,
+                "status": 200,
+                "responseAtMs": 3156,
+                "finishedAtMs": 3156
+              },
+              {
+                "phase": "match-reload",
+                "startedAtMs": 36994,
+                "status": 200,
+                "responseAtMs": 36994,
+                "finishedAtMs": 36994
+              }
+            ],
+            "reloads": [
+              {
+                "phase": "room-reload",
+                "startedAtMs": 2870
+              },
+              {
+                "phase": "match-reload",
+                "startedAtMs": 36710
+              }
+            ]
+          }
+        ],
+        "backendImageAtRun": "sha256:e15618f911af0ff6b0a3027a2b4c99851c7de6453681fdce0b03c08164a06538"
+      },
+      {
+        "engine": "chromium",
+        "version": "153.0.8010.12",
+        "status": "passed",
+        "reportAtCapture": "client/.browser-tools/artifacts/online-bots-policy-chromium/chromium-bots-report.json",
+        "reportSha256": "8bc3c7cccb12f0a0a2b7d0240d4d88381013e7160106e195ea64b9b37c29c601",
+        "harnessHashesAtRun": {
+          "bot_browser_acceptance.cjs": "19756f492d73ae9bc5455975447d830a353dfb73a1ad4dce3abd6889747e883d",
+          "browser_faults.cjs": "334439124fbdf5a2ba5056adb3655b53ffaa256797ffa7c6c9bccd705f5ea479",
+          "reconnect_browser_acceptance.cjs": "32f545216d730a15e112fbc88235607cdb7f6510a54ec69b6072c2f6928f5058"
+        },
+        "mainSha256": "210401b46cfe9c7df944dd1d88a403d50739ce32a3ce2d716624210392a58234",
+        "caseCount": 9,
+        "cases": [
+          {
+            "case": "beginner-live-boundaries-and-stream-reconnect-retain-draft-selection-and-private-hand",
+            "pass": true,
+            "handDigest": "4fdb64c628cfb7c87354b6694b1db29f090779067314c401f36347cf857a7de1"
+          },
+          {
+            "case": "beginner-3p-human-opening-and-automatic-bot-responses",
+            "pass": true,
+            "outcome": "opened",
+            "responseVersionAdvance": 3,
+            "selectedCardCount": 3
+          },
+          {
+            "case": "beginner-3p-bots-play-return-control-and-privacy",
+            "pass": true,
+            "humanResponses": 20,
+            "humanCommandCount": 22,
+            "botVersionAdvance": 55,
+            "elapsedMs": 41980
+          },
+          {
+            "case": "standard-live-boundaries-and-stream-reconnect-retain-draft-selection-and-private-hand",
+            "pass": true,
+            "handDigest": "c63620c68051a99b8d67de2df6e74db93351b18d9c157369cc79f67a57b3aed8"
+          },
+          {
+            "case": "standard-4p-human-opening-and-automatic-bot-responses",
+            "pass": true,
+            "outcome": "opened",
+            "responseVersionAdvance": 3,
+            "selectedCardCount": 4
+          },
+          {
+            "case": "standard-4p-bots-play-return-control-and-privacy",
+            "pass": true,
+            "humanResponses": 28,
+            "humanCommandCount": 30,
+            "botVersionAdvance": 100,
+            "elapsedMs": 60159
+          },
+          {
+            "case": "advanced-live-boundaries-and-stream-reconnect-retain-draft-selection-and-private-hand",
+            "pass": true,
+            "handDigest": "c243040e8aa7de17451ad35420455c785eb3abffae4c4f641b9596ab5f5455a6"
+          },
+          {
+            "case": "advanced-4p-human-opening-and-automatic-bot-responses",
+            "pass": true,
+            "outcome": "opened",
+            "responseVersionAdvance": 3,
+            "selectedCardCount": 6
+          },
+          {
+            "case": "advanced-4p-bots-play-return-control-and-privacy",
+            "pass": true,
+            "humanResponses": 24,
+            "humanCommandCount": 26,
+            "botVersionAdvance": 78,
+            "elapsedMs": 56529
+          }
+        ],
+        "errors": [],
+        "matches": [
+          {
+            "difficulty": "beginner",
+            "players": 3,
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "timings": {
+              "guestReadyMs": 1461,
+              "roomReadyMs": 3454,
+              "playableMs": 5806,
+              "reconnectMs": 465,
+              "botResponsesMs": 1104,
+              "botTurnCycleMs": 41980
+            },
+            "projectionsChecked": 106,
+            "initialHumanResponses": 0,
+            "humanResponses": 20,
+            "stayChoices": 1,
+            "humanInterventions": 21,
+            "progressBudgets": {
+              "random starter reaches first human turn": {
+                "elapsedMs": 1022,
+                "humanInteractionMs": 0,
+                "unattendedMs": 1022,
+                "noProgressMs": 510,
+                "interventions": 0,
+                "version": 3
+              },
+              "human-opening": {
+                "elapsedMs": 1103,
+                "humanInteractionMs": 595,
+                "unattendedMs": 508,
+                "noProgressMs": 0,
+                "interventions": 1,
+                "version": 6
+              },
+              "human-turn-cycle": {
+                "elapsedMs": 41980,
+                "humanInteractionMs": 30746,
+                "unattendedMs": 11234,
+                "noProgressMs": 0,
+                "interventions": 22,
+                "version": 83
+              }
+            },
+            "initialServerPendingObserved": true,
+            "readinessCleared": true,
+            "commandCounts": {
+              "open-series": 1,
+              "end-turn": 1,
+              "pass": 20,
+              "departure-choice": 1
+            },
+            "allCommandReceiptsAdvance": true,
+            "commandIdsUnique": true,
+            "finalState": {
+              "version": 83,
+              "round": 2,
+              "turn": 5,
+              "active": 1,
+              "requiredActor": 0,
+              "phase": "playing",
+              "window": false,
+              "decision": false,
+              "automaticPending": false,
+              "serverPending": false,
+              "roundClosed": false,
+              "departureChoicePending": false,
+              "ending": null,
+              "financialPhase": "playing",
+              "completedGames": 0,
+              "botSeats": [
+                2,
+                3
+              ],
+              "difficulty": "beginner",
+              "privacy": {
+                "visibleCards": 46,
+                "ownPrivateCards": 17
+              }
+            },
+            "stayTouchTargets": [
+              {
+                "rect": {
+                  "x": 8,
+                  "y": 314,
+                  "width": 374,
+                  "height": 49,
+                  "top": 314,
+                  "right": 382,
+                  "bottom": 363,
+                  "left": 8
+                },
+                "clip": {
+                  "left": 0,
+                  "top": 0,
+                  "right": 390,
+                  "bottom": 844
+                }
+              }
+            ],
+            "fontManifestRequests": [
+              {
+                "phase": "entry",
+                "startedAtMs": 353,
+                "status": 200,
+                "responseAtMs": 355,
+                "finishedAtMs": 357
+              },
+              {
+                "phase": "room-reload",
+                "startedAtMs": 3612,
+                "status": 200,
+                "responseAtMs": 3615,
+                "finishedAtMs": 3617
+              },
+              {
+                "phase": "match-reload",
+                "startedAtMs": 17006,
+                "status": 200,
+                "responseAtMs": 17011,
+                "finishedAtMs": 17013
+              }
+            ],
+            "reloads": [
+              {
+                "phase": "room-reload",
+                "startedAtMs": 3454
+              },
+              {
+                "phase": "match-reload",
+                "startedAtMs": 16850
+              }
+            ]
+          },
+          {
+            "difficulty": "standard",
+            "players": 4,
+            "viewport": {
+              "width": 1440,
+              "height": 900
+            },
+            "timings": {
+              "guestReadyMs": 1718,
+              "roomReadyMs": 4807,
+              "playableMs": 22067,
+              "reconnectMs": 544,
+              "botResponsesMs": 1220,
+              "botTurnCycleMs": 60159
+            },
+            "projectionsChecked": 164,
+            "initialHumanResponses": 6,
+            "humanResponses": 28,
+            "stayChoices": 1,
+            "humanInterventions": 29,
+            "progressBudgets": {
+              "random starter reaches first human turn": {
+                "elapsedMs": 15172,
+                "humanInteractionMs": 11091,
+                "unattendedMs": 4081,
+                "noProgressMs": 0,
+                "interventions": 6,
+                "version": 31
+              },
+              "human-opening": {
+                "elapsedMs": 1220,
+                "humanInteractionMs": 1214,
+                "unattendedMs": 6,
+                "noProgressMs": 0,
+                "interventions": 1,
+                "version": 34
+              },
+              "human-turn-cycle": {
+                "elapsedMs": 60159,
+                "humanInteractionMs": 43345,
+                "unattendedMs": 16814,
+                "noProgressMs": 0,
+                "interventions": 30,
+                "version": 164
+              }
+            },
+            "initialServerPendingObserved": true,
+            "readinessCleared": true,
+            "commandCounts": {
+              "pass": 34,
+              "open-series": 1,
+              "end-turn": 1,
+              "departure-choice": 1
+            },
+            "allCommandReceiptsAdvance": true,
+            "commandIdsUnique": true,
+            "finalState": {
+              "version": 164,
+              "round": 2,
+              "turn": 8,
+              "active": 1,
+              "requiredActor": 0,
+              "phase": "playing",
+              "window": false,
+              "decision": false,
+              "automaticPending": false,
+              "serverPending": false,
+              "roundClosed": false,
+              "departureChoicePending": false,
+              "ending": null,
+              "financialPhase": "playing",
+              "completedGames": 0,
+              "botSeats": [
+                2,
+                3,
+                4
+              ],
+              "difficulty": "standard",
+              "privacy": {
+                "visibleCards": 53,
+                "ownPrivateCards": 15
+              }
+            },
+            "stayTouchTargets": [
+              {
+                "rect": {
+                  "x": 8,
+                  "y": 294,
+                  "width": 1424,
+                  "height": 53,
+                  "top": 294,
+                  "right": 1432,
+                  "bottom": 347,
+                  "left": 8
+                },
+                "clip": {
+                  "left": 0,
+                  "top": 0,
+                  "right": 1440,
+                  "bottom": 900
+                }
+              }
+            ],
+            "fontManifestRequests": [
+              {
+                "phase": "entry",
+                "startedAtMs": 338,
+                "status": 200,
+                "responseAtMs": 339,
+                "finishedAtMs": 343
+              },
+              {
+                "phase": "room-reload",
+                "startedAtMs": 4945,
+                "status": 200,
+                "responseAtMs": 4948,
+                "finishedAtMs": 4950
+              },
+              {
+                "phase": "match-reload",
+                "startedAtMs": 42061,
+                "status": 200,
+                "responseAtMs": 42068,
+                "finishedAtMs": 42073
+              }
+            ],
+            "reloads": [
+              {
+                "phase": "room-reload",
+                "startedAtMs": 4807
+              },
+              {
+                "phase": "match-reload",
+                "startedAtMs": 41914
+              }
+            ]
+          },
+          {
+            "difficulty": "advanced",
+            "players": 4,
+            "viewport": {
+              "width": 600,
+              "height": 900
+            },
+            "timings": {
+              "guestReadyMs": 1373,
+              "roomReadyMs": 3854,
+              "playableMs": 18610,
+              "reconnectMs": 506,
+              "botResponsesMs": 926,
+              "botTurnCycleMs": 56529
+            },
+            "projectionsChecked": 145,
+            "initialHumanResponses": 5,
+            "humanResponses": 24,
+            "stayChoices": 1,
+            "humanInterventions": 25,
+            "progressBudgets": {
+              "random starter reaches first human turn": {
+                "elapsedMs": 13405,
+                "humanInteractionMs": 8823,
+                "unattendedMs": 4582,
+                "noProgressMs": 1016,
+                "interventions": 5,
+                "version": 29
+              },
+              "human-opening": {
+                "elapsedMs": 926,
+                "humanInteractionMs": 920,
+                "unattendedMs": 6,
+                "noProgressMs": 0,
+                "interventions": 1,
+                "version": 32
+              },
+              "human-turn-cycle": {
+                "elapsedMs": 56529,
+                "humanInteractionMs": 42269,
+                "unattendedMs": 14260,
+                "noProgressMs": 0,
+                "interventions": 26,
+                "version": 136
+              }
+            },
+            "initialServerPendingObserved": true,
+            "readinessCleared": true,
+            "commandCounts": {
+              "pass": 29,
+              "open-series": 1,
+              "end-turn": 1,
+              "departure-choice": 1
+            },
+            "allCommandReceiptsAdvance": true,
+            "commandIdsUnique": true,
+            "finalState": {
+              "version": 136,
+              "round": 2,
+              "turn": 8,
+              "active": 1,
+              "requiredActor": 0,
+              "phase": "playing",
+              "window": false,
+              "decision": false,
+              "automaticPending": false,
+              "serverPending": false,
+              "roundClosed": false,
+              "departureChoicePending": false,
+              "ending": null,
+              "financialPhase": "playing",
+              "completedGames": 0,
+              "botSeats": [
+                2,
+                3,
+                4
+              ],
+              "difficulty": "advanced",
+              "privacy": {
+                "visibleCards": 61,
+                "ownPrivateCards": 14
+              }
+            },
+            "stayTouchTargets": [
+              {
+                "rect": {
+                  "x": 8,
+                  "y": 309.0909118652344,
+                  "width": 584,
+                  "height": 53,
+                  "top": 309.0909118652344,
+                  "right": 592,
+                  "bottom": 362.0909118652344,
+                  "left": 8
+                },
+                "clip": {
+                  "left": 0,
+                  "top": 0,
+                  "right": 600,
+                  "bottom": 900
+                }
+              }
+            ],
+            "fontManifestRequests": [
+              {
+                "phase": "entry",
+                "startedAtMs": 316,
+                "status": 200,
+                "responseAtMs": 317,
+                "finishedAtMs": 322
+              },
+              {
+                "phase": "room-reload",
+                "startedAtMs": 4001,
+                "status": 200,
+                "responseAtMs": 4003,
+                "finishedAtMs": 4007
+              },
+              {
+                "phase": "match-reload",
+                "startedAtMs": 31500,
+                "status": 200,
+                "responseAtMs": 31505,
+                "finishedAtMs": 31509
+              }
+            ],
+            "reloads": [
+              {
+                "phase": "room-reload",
+                "startedAtMs": 3854
+              },
+              {
+                "phase": "match-reload",
+                "startedAtMs": 31350
+              }
+            ]
+          }
+        ],
+        "backendImageAtRun": "sha256:e15618f911af0ff6b0a3027a2b4c99851c7de6453681fdce0b03c08164a06538"
+      },
+      {
+        "engine": "webkit",
+        "version": "26.6",
+        "status": "passed",
+        "reportAtCapture": "client/.browser-tools/artifacts/online-bots-policy-webkit/webkit-bots-report.json",
+        "reportSha256": "6a271199c52d3db9d782810db878708ac914220b0e441b3c66fb325d5bc2fc97",
+        "harnessHashesAtRun": {
+          "bot_browser_acceptance.cjs": "19756f492d73ae9bc5455975447d830a353dfb73a1ad4dce3abd6889747e883d",
+          "browser_faults.cjs": "334439124fbdf5a2ba5056adb3655b53ffaa256797ffa7c6c9bccd705f5ea479",
+          "reconnect_browser_acceptance.cjs": "32f545216d730a15e112fbc88235607cdb7f6510a54ec69b6072c2f6928f5058"
+        },
+        "mainSha256": "210401b46cfe9c7df944dd1d88a403d50739ce32a3ce2d716624210392a58234",
+        "backendImageAtRun": "sha256:05b2156a1859bd205277d21cced0b48e635128863fab198162c22437925d9c6d",
+        "caseCount": 9,
+        "cases": [
+          {
+            "case": "beginner-live-boundaries-and-stream-reconnect-retain-draft-selection-and-private-hand",
+            "pass": true,
+            "handDigest": "2f69c106b8abf4481849b58684081ed2ef79140ffab748dd472d893bc38b8411"
+          },
+          {
+            "case": "beginner-3p-human-opening-and-automatic-bot-responses",
+            "pass": true,
+            "outcome": "opened",
+            "responseVersionAdvance": 3,
+            "selectedCardCount": 3
+          },
+          {
+            "case": "beginner-3p-bots-play-return-control-and-privacy",
+            "pass": true,
+            "humanResponses": 5,
+            "humanCommandCount": 7,
+            "botVersionAdvance": 15,
+            "elapsedMs": 10465
+          },
+          {
+            "case": "standard-live-boundaries-and-stream-reconnect-retain-draft-selection-and-private-hand",
+            "pass": true,
+            "handDigest": "455d86fd71ed22cb0997537276445e57df43926aa5bc981460aa1b6d4388a03f"
+          },
+          {
+            "case": "standard-4p-human-opening-and-automatic-bot-responses",
+            "pass": true,
+            "outcome": "opened",
+            "responseVersionAdvance": 4,
+            "selectedCardCount": 5
+          },
+          {
+            "case": "standard-4p-bots-play-return-control-and-privacy",
+            "pass": true,
+            "humanResponses": 18,
+            "humanCommandCount": 20,
+            "botVersionAdvance": 71,
+            "elapsedMs": 31247
+          },
+          {
+            "case": "advanced-live-boundaries-and-stream-reconnect-retain-draft-selection-and-private-hand",
+            "pass": true,
+            "handDigest": "27cb42b9ddeec60ddeb424bec07e0858f7eb15503bf40fd9b5c7d1fb0c29c240"
+          },
+          {
+            "case": "advanced-4p-human-opening-and-automatic-bot-responses",
+            "pass": true,
+            "outcome": "opened",
+            "responseVersionAdvance": 4,
+            "selectedCardCount": 5
+          },
+          {
+            "case": "advanced-4p-bots-play-return-control-and-privacy",
+            "pass": true,
+            "humanResponses": 10,
+            "humanCommandCount": 12,
+            "botVersionAdvance": 35,
+            "elapsedMs": 18236
+          }
+        ],
+        "errors": [],
+        "matches": [
+          {
+            "difficulty": "beginner",
+            "players": 3,
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "timings": {
+              "guestReadyMs": 2806,
+              "roomReadyMs": 5463,
+              "playableMs": 36678,
+              "reconnectMs": 495,
+              "botResponsesMs": 1011,
+              "botTurnCycleMs": 10465
+            },
+            "projectionsChecked": 111,
+            "initialHumanResponses": 17,
+            "humanResponses": 5,
+            "stayChoices": 1,
+            "humanInterventions": 6,
+            "progressBudgets": {
+              "random starter reaches first human turn": {
+                "elapsedMs": 30123,
+                "humanInteractionMs": 20938,
+                "unattendedMs": 9185,
+                "noProgressMs": 511,
+                "interventions": 17,
+                "version": 61
+              },
+              "human-opening": {
+                "elapsedMs": 1011,
+                "humanInteractionMs": 499,
+                "unattendedMs": 512,
+                "noProgressMs": 0,
+                "interventions": 1,
+                "version": 64
+              },
+              "human-turn-cycle": {
+                "elapsedMs": 10465,
+                "humanInteractionMs": 7915,
+                "unattendedMs": 2550,
+                "noProgressMs": 0,
+                "interventions": 7,
+                "version": 86
+              }
+            },
+            "initialServerPendingObserved": true,
+            "readinessCleared": true,
+            "commandCounts": {
+              "pass": 22,
+              "open-series": 1,
+              "end-turn": 1,
+              "departure-choice": 1
+            },
+            "allCommandReceiptsAdvance": true,
+            "commandIdsUnique": true,
+            "finalState": {
+              "version": 86,
+              "round": 2,
+              "turn": 6,
+              "active": 1,
+              "requiredActor": 0,
+              "phase": "playing",
+              "window": false,
+              "decision": false,
+              "automaticPending": false,
+              "serverPending": false,
+              "roundClosed": false,
+              "departureChoicePending": false,
+              "ending": null,
+              "financialPhase": "playing",
+              "completedGames": 0,
+              "botSeats": [
+                2,
+                3
+              ],
+              "difficulty": "beginner",
+              "privacy": {
+                "visibleCards": 46,
+                "ownPrivateCards": 16
+              }
+            },
+            "stayTouchTargets": [
+              {
+                "rect": {
+                  "x": 8,
+                  "y": 314,
+                  "width": 374,
+                  "height": 49,
+                  "top": 314,
+                  "right": 382,
+                  "bottom": 363,
+                  "left": 8
+                },
+                "clip": {
+                  "left": 0,
+                  "top": 0,
+                  "right": 390,
+                  "bottom": 844
+                }
+              }
+            ],
+            "fontManifestRequests": [
+              {
+                "phase": "entry",
+                "startedAtMs": 1151,
+                "status": 200,
+                "responseAtMs": 1152,
+                "finishedAtMs": 1153
+              },
+              {
+                "phase": "room-reload",
+                "startedAtMs": 5581,
+                "status": 200,
+                "responseAtMs": 5597,
+                "finishedAtMs": 5597
+              },
+              {
+                "phase": "match-reload",
+                "startedAtMs": 45730,
+                "status": 200,
+                "responseAtMs": 45731,
+                "finishedAtMs": 45731
+              }
+            ],
+            "reloads": [
+              {
+                "phase": "room-reload",
+                "startedAtMs": 5463
+              },
+              {
+                "phase": "match-reload",
+                "startedAtMs": 45552
+              }
+            ]
+          },
+          {
+            "difficulty": "standard",
+            "players": 4,
+            "viewport": {
+              "width": 1440,
+              "height": 900
+            },
+            "timings": {
+              "guestReadyMs": 1346,
+              "roomReadyMs": 3297,
+              "playableMs": 45791,
+              "reconnectMs": 451,
+              "botResponsesMs": 1180,
+              "botTurnCycleMs": 31247
+            },
+            "projectionsChecked": 189,
+            "initialHumanResponses": 22,
+            "humanResponses": 18,
+            "stayChoices": 1,
+            "humanInterventions": 19,
+            "progressBudgets": {
+              "random starter reaches first human turn": {
+                "elapsedMs": 41406,
+                "humanInteractionMs": 28691,
+                "unattendedMs": 12715,
+                "noProgressMs": 1018,
+                "interventions": 22,
+                "version": 105
+              },
+              "human-opening": {
+                "elapsedMs": 1180,
+                "humanInteractionMs": 668,
+                "unattendedMs": 512,
+                "noProgressMs": 0,
+                "interventions": 1,
+                "version": 109
+              },
+              "human-turn-cycle": {
+                "elapsedMs": 31247,
+                "humanInteractionMs": 20053,
+                "unattendedMs": 11194,
+                "noProgressMs": 0,
+                "interventions": 20,
+                "version": 200
+              }
+            },
+            "initialServerPendingObserved": true,
+            "readinessCleared": true,
+            "commandCounts": {
+              "pass": 40,
+              "open-series": 1,
+              "end-turn": 1,
+              "departure-choice": 1
+            },
+            "allCommandReceiptsAdvance": true,
+            "commandIdsUnique": true,
+            "finalState": {
+              "version": 200,
+              "round": 2,
+              "turn": 8,
+              "active": 1,
+              "requiredActor": 0,
+              "phase": "playing",
+              "window": false,
+              "decision": false,
+              "automaticPending": false,
+              "serverPending": false,
+              "roundClosed": false,
+              "departureChoicePending": false,
+              "ending": null,
+              "financialPhase": "playing",
+              "completedGames": 0,
+              "botSeats": [
+                2,
+                3,
+                4
+              ],
+              "difficulty": "standard",
+              "privacy": {
+                "visibleCards": 60,
+                "ownPrivateCards": 16
+              }
+            },
+            "stayTouchTargets": [
+              {
+                "rect": {
+                  "x": 8,
+                  "y": 294,
+                  "width": 1424,
+                  "height": 53,
+                  "top": 294,
+                  "right": 1432,
+                  "bottom": 347,
+                  "left": 8
+                },
+                "clip": {
+                  "left": 0,
+                  "top": 0,
+                  "right": 1440,
+                  "bottom": 900
+                }
+              }
+            ],
+            "fontManifestRequests": [
+              {
+                "phase": "entry",
+                "startedAtMs": 356,
+                "status": 200,
+                "responseAtMs": 357,
+                "finishedAtMs": 357
+              },
+              {
+                "phase": "room-reload",
+                "startedAtMs": 3428,
+                "status": 200,
+                "responseAtMs": 3433,
+                "finishedAtMs": 3434
+              },
+              {
+                "phase": "match-reload",
+                "startedAtMs": 54601,
+                "status": 200,
+                "responseAtMs": 54605,
+                "finishedAtMs": 54605
+              }
+            ],
+            "reloads": [
+              {
+                "phase": "room-reload",
+                "startedAtMs": 3297
+              },
+              {
+                "phase": "match-reload",
+                "startedAtMs": 54460
+              }
+            ]
+          },
+          {
+            "difficulty": "advanced",
+            "players": 4,
+            "viewport": {
+              "width": 600,
+              "height": 900
+            },
+            "timings": {
+              "guestReadyMs": 1155,
+              "roomReadyMs": 2913,
+              "playableMs": 5019,
+              "reconnectMs": 443,
+              "botResponsesMs": 1050,
+              "botTurnCycleMs": 18236
+            },
+            "projectionsChecked": 66,
+            "initialHumanResponses": 0,
+            "humanResponses": 10,
+            "stayChoices": 1,
+            "humanInterventions": 11,
+            "progressBudgets": {
+              "random starter reaches first human turn": {
+                "elapsedMs": 1019,
+                "humanInteractionMs": 0,
+                "unattendedMs": 1019,
+                "noProgressMs": 509,
+                "interventions": 0,
+                "version": 3
+              },
+              "human-opening": {
+                "elapsedMs": 1050,
+                "humanInteractionMs": 541,
+                "unattendedMs": 509,
+                "noProgressMs": 0,
+                "interventions": 1,
+                "version": 7
+              },
+              "human-turn-cycle": {
+                "elapsedMs": 18236,
+                "humanInteractionMs": 12136,
+                "unattendedMs": 6100,
+                "noProgressMs": 0,
+                "interventions": 12,
+                "version": 54
+              }
+            },
+            "initialServerPendingObserved": true,
+            "readinessCleared": true,
+            "commandCounts": {
+              "open-series": 1,
+              "end-turn": 1,
+              "pass": 10,
+              "departure-choice": 1
+            },
+            "allCommandReceiptsAdvance": true,
+            "commandIdsUnique": true,
+            "finalState": {
+              "version": 54,
+              "round": 2,
+              "turn": 5,
+              "active": 1,
+              "requiredActor": 0,
+              "phase": "playing",
+              "window": false,
+              "decision": false,
+              "automaticPending": false,
+              "serverPending": false,
+              "roundClosed": false,
+              "departureChoicePending": false,
+              "ending": null,
+              "financialPhase": "playing",
+              "completedGames": 0,
+              "botSeats": [
+                2,
+                3,
+                4
+              ],
+              "difficulty": "advanced",
+              "privacy": {
+                "visibleCards": 40,
+                "ownPrivateCards": 13
+              }
+            },
+            "stayTouchTargets": [
+              {
+                "rect": {
+                  "x": 8,
+                  "y": 309.0909118652344,
+                  "width": 584,
+                  "height": 53,
+                  "top": 309.0909118652344,
+                  "right": 592,
+                  "bottom": 362.0909118652344,
+                  "left": 8
+                },
+                "clip": {
+                  "left": 0,
+                  "top": 0,
+                  "right": 600,
+                  "bottom": 900
+                }
+              }
+            ],
+            "fontManifestRequests": [
+              {
+                "phase": "entry",
+                "startedAtMs": 363,
+                "status": 200,
+                "responseAtMs": 364,
+                "finishedAtMs": 364
+              },
+              {
+                "phase": "room-reload",
+                "startedAtMs": 3066,
+                "status": 200,
+                "responseAtMs": 3070,
+                "finishedAtMs": 3070
+              },
+              {
+                "phase": "match-reload",
+                "startedAtMs": 13657,
+                "status": 200,
+                "responseAtMs": 13662,
+                "finishedAtMs": 13662
+              }
+            ],
+            "reloads": [
+              {
+                "phase": "room-reload",
+                "startedAtMs": 2914
+              },
+              {
+                "phase": "match-reload",
+                "startedAtMs": 13532
+              }
+            ]
+          }
+        ],
+        "log": "/tmp/agent-runs/online-bots-policy-webkit--20261002T232630Z-2760805.log"
+      }
+    ],
+    "totalCases": 27,
+    "aggregate": {
+      "matches": 9,
+      "privacyProjections": 1195,
+      "acknowledgedHumanCommands": 264,
+      "commandCounts": {
+        "open-series": 9,
+        "end-turn": 9,
+        "pass": 237,
+        "departure-choice": 9
+      },
+      "strictStayTouchProofs": 9,
+      "completedFontManifestRequests": 27,
+      "errors": []
+    }
+  },
+  "inspectedFailures": [
+    {
+      "log": "/tmp/agent-runs/online-bots-postgres-race--20261002T205745Z-2467632.log",
+      "diagnosis": "Existing crash-recovery test terminates a shared disposable PostgreSQL instance while other packages run. Run existing integration packages serially with -p1; README corrected; no assertion disabled."
+    },
+    {
+      "log": "/tmp/agent-runs/bots-round-prompt-green--20261002T211525Z-2519938.log",
+      "diagnosis": "New draft test searched for TextFormField where actual control is TextField. Corrected finder, preserved quantity and no-command assertions; all287 host tests passed."
+    },
+    {
+      "log": "/tmp/agent-runs/online-bots-candidate5-chromium--20261002T210203Z-2482466.log",
+      "diagnosis": "Real round1 wait: bots had stayed, human decision was absent from UI. Fixed explicit observer-only round prompt and saved-view compatibility."
+    },
+    {
+      "log": "/tmp/agent-runs/online-bots-final-chromium--20261002T212146Z-2537100.log",
+      "diagnosis": "Harness reconnect locator also matched transient aria-live announcement. Scoped to actual Flutter semantic host; visible notice must still clear."
+    },
+    {
+      "log": "/tmp/agent-runs/online-bots-final2-chromium--20261002T212235Z-2538778.log",
+      "diagnosis": "Real human Stay409 caused by bot votes advancing version; scheduler now waits for human first. Harness additionally now correlates each human action with its own200 receipt and waits for streamed controls to become enabled."
+    },
+    {
+      "log": "/tmp/agent-runs/online-bots-final3-chromium--20261002T213325Z-2563486.log",
+      "diagnosis": "Initial API snapshot can precede turn initialization. Harness now requires both own authoritative boundary and actual enabled End Turn control, otherwise continues handling real human responses."
+    },
+    {
+      "log": "/tmp/agent-runs/online-bots-final4-chromium--20261002T213747Z-2570773.log",
+      "diagnosis": "Generic wheel-only test exposure could not expose Stay, despite a visibly painted prompt. Actual phone tap regressions pass at100/200 percent text. Bot harness now uses real keyboard reveal, full rectangle visibility,48px minimum and touch, with exact single200 response. The original generic helper is unchanged."
+    },
+    {
+      "log": "/tmp/agent-runs/online-bots-final-firefox--20261002T214818Z-2587104.log",
+      "diagnosis": "Real product defect: long-to-short action content retained stale Flutter web semantic scroll offset314; strict touch geometry rejected.",
+      "resolvedBy": "Actions viewport identity and documented fixture corrections; all292host/76sharedUI tests pass, with strict real-browser Stay geometry and acknowledgement checks in Firefox/Chromium."
+    },
+    {
+      "log": "/tmp/agent-runs/online-bots-firefox-semantics-probe--20261002T215652Z-2600062.log",
+      "diagnosis": "Instrumented confirmation: offset269 before and after keyboard focus, native scrollTop0; painted Stay294..347 versus DOM563..616.",
+      "resolvedBy": "Actions viewport identity and documented fixture corrections; all292host/76sharedUI tests pass, with strict real-browser Stay geometry and acknowledgement checks in Firefox/Chromium."
+    },
+    {
+      "log": "/tmp/agent-runs/action-workspace-red--20261002T220243Z-2609399.log",
+      "diagnosis": "Regression RED: new action meaning reused old viewport at314px; ordinary resize/draft test passed.",
+      "resolvedBy": "Actions viewport identity and documented fixture corrections; all292host/76sharedUI tests pass, with strict real-browser Stay geometry and acknowledgement checks in Firefox/Chromium."
+    },
+    {
+      "log": "/tmp/agent-runs/online-bots-workspace-host--20261002T220447Z-2613278.log",
+      "diagnosis": "Fixture issues diagnosed: new semantic comparison used physical DPR3 instead of browser DPR1; old test finder depended on constant scroll key. DPR1 and semantic ancestor locator corrected without weakening assertions.",
+      "resolvedBy": "Actions viewport identity and documented fixture corrections; all292host/76sharedUI tests pass, with strict real-browser Stay geometry and acknowledgement checks in Firefox/Chromium."
+    },
+    {
+      "log": "/tmp/agent-runs/online-bots-final-format-check--20261002T220707Z-2619523.log",
+      "diagnosis": "New ancestor locator needed formatter layout; formatted the test.",
+      "resolvedBy": "Actions viewport identity and documented fixture corrections; all292host/76sharedUI tests pass, with strict real-browser Stay geometry and acknowledgement checks in Firefox/Chromium."
+    },
+    {
+      "log": "/tmp/agent-runs/online-bots-semantic-fix-firefox--20261002T220643Z-2618525.log",
+      "diagnosis": "Real startup readiness defect: v1 active1/no window/automatic_pending false, UI EndTurn enabled; server later chose active2 atv5 with required human response, zero human commands. Harness failed on disabled opening after reload. An orphan response wait obscured the primary log but report preserved it.",
+      "resolvedBy": "Authoritative server_pending and client readiness guards; frontend/backend RED then GREEN, with pending-to-ready transitions observed in every final Firefox/Chromium match."
+    },
+    {
+      "log": "/tmp/agent-runs/online-bots-ready-chromium--20261002T222129Z-2651391.log",
+      "diagnosis": "Harness total-cycle 90s budget included 42 explicit human Pass interactions and a round Stay. Authority continuously advanced v44 to v250, turns2 to7/round2, including12versions in final10s; no console/network errors or stalled server observed.",
+      "resolvedBy": "Measured acknowledged-human time separated from unattended wait. Original90s unattended limit retained, with15s no-progress/300s wall/128intervention limits;43support tests pass. This stricter gate subsequently exposed the real purchase loop."
+    },
+    {
+      "command": "docker compose ps --format table (read-only final status probe)",
+      "diagnosis": "Root-directory invocation omitted the project compose path and returned no configuration file provided. Inspected the full tool output; xops uses deploy/compose/compose.yaml. A subsequent read-only docker ps status check confirmed all four ordinary services healthy. No service mutation or application failure occurred.",
+      "resolvedBy": "/tmp/agent-runs/online-bots-final-service-status--20261002T224115Z-2679462.log"
+    },
+    {
+      "log": "/tmp/agent-runs/online-bots-budget-chromium--20261002T223305Z-2667751.log",
+      "diagnosis": "Advanced bot2 remained on round2/turn6 while visible cards oscillated52/65 through repeated windows;239170ms phase included148757ms acknowledged-human work and90413ms unattended,82interventions,version347. The preserved90s cumulative unattended limit failed. This is a demonstrated policy-progress defect under investigation; no budget increase or blind retry. Standard also retained an explicitly aborted FontManifest request during reload for separate investigation.",
+      "resolvedBy": "Exact purchase/reopen cycle fixed with online-only acquisition progress guard; deterministic tests and final Firefox/Chromium pass. Historical FontManifest abort remains unattributed because its request timing was not retained; all18 final requests in these two engines completed200, and no cancellation allowlist was added."
+    },
+    {
+      "log": "/tmp/agent-runs/bot-purchase-progress-red--20261002T224949Z-2692181.log",
+      "diagnosis": "Advanced regression reproduced two exact material-state cycles before the online-only guard. Initial new fixture also incorrectly assumed the frozen Beginner/Standard policy would select the same zero-growth purchase, and its productive-purchase fixture did not persuade Beginner. Those fixture expectations were corrected; all three online EndTurn and genuine productive-purchase assertions retained.",
+      "resolvedBy": "bot-purchase-progress-green--20261002T225115Z-2694725"
+    },
+    {
+      "log": "/tmp/agent-runs/online-bots-progress-go--20261002T225321Z-2700452.log",
+      "diagnosis": "New response fixture confused clockwise seat response order with turn initiative. Corrected fixture explicitly verifies Bot3 pass, human1 wait (bot cannot answer), then human pass and server continuation; all assertions retained. Production source unchanged.",
+      "resolvedBy": "/tmp/agent-runs/bot-purchase-progress-unit-final--20261002T225544Z-2707212.log"
+    },
+    {
+      "log": "/tmp/agent-runs/online-bots-progress-postgres-race--20261002T225445Z-2704258.log",
+      "diagnosis": "Full serialized PostgreSQL/Redis race suite: Standard bot supervisor restart fixture stayed atversion15/active2/pendingnil with six automatic-transition-deferred warnings roughly2s apart; testfailed19.01s. Other6packages passed. Full log inspected; investigating actual deferral cause before retry or acceptance.",
+      "resolvedBy": "Two independent defects were demonstrated and corrected: dense planning exceeding the original2s deadline, and a test helper missing the human departure boundary. The original lost randomv15 state cannot be attributed conclusively. Complete final serialized7-package PostgreSQL/Redis race gate passes."
+    },
+    {
+      "log": "/tmp/agent-runs/bot-deadline-diagnostic--20261002T230635Z-2724088.log",
+      "diagnosis": "Independent deterministic production-path RED: same13-Spade dense fixture ran botIntent under unchanged2s runtime context, took3.878s and failed with context deadline exceeded.403engine candidates cost1.523s;407 eagerly lifecycle-validated Actions cost3.757s;SuggestOnline3.719s under-race. RandomStandard journey passed diagnostic run, so this does not conclusively attribute lost originalv15 state.",
+      "resolvedBy": "Online lazy lifecycle validation with legacy tie parity and cancellation; full transaction1.742s under unchanged2s deadline. Compatibility/golden/cancellation regressions and complete final Go/vet/PostgreSQL race gates pass."
+    }
+  ],
+  "remaining": [],
+  "finalMainSha256": "210401b46cfe9c7df944dd1d88a403d50739ce32a3ce2d716624210392a58234",
+  "backendRegressionRuns": [
+    {
+      "log": "/tmp/agent-runs/bots-api-red--20261002T204522Z-2427453.log",
+      "exit_code": 1,
+      "status": "expected_red",
+      "scope": "Before implementation, HTTP bot_difficulty rejected as unknown request field for 3 and 4 seats."
+    },
+    {
+      "log": "/tmp/agent-runs/bots-api-green--20261002T205300Z-2451029.log",
+      "exit_code": 0,
+      "status": "pass",
+      "scope": "Server-owned 3/4-seat roster, no bot credentials or sessions, create and start replay stable, changed tier conflict.",
+      "package_seconds": 0.425
+    },
+    {
+      "log": "/tmp/agent-runs/bots-runtime-first--20261002T205504Z-2458256.log",
+      "exit_code": 0,
+      "status": "pass",
+      "scope": "Three tiers, fresh Server instance and autonomous supervisor restart, human waits, snapshot privacy, receipts and journal.",
+      "package_seconds": 5.697
+    },
+    {
+      "log": "/tmp/agent-runs/bots-security-first--20261002T205746Z-2468231.log",
+      "exit_code": 0,
+      "status": "pass",
+      "scope": "Immutable 001 upgrade and repeated migration, bot auth denial, guest preservation, human allowance and reward invariants."
+    },
+    {
+      "log": "/tmp/agent-runs/bots-coup-behavior-red--20261002T210338Z-2487754.log",
+      "exit_code": 1,
+      "status": "expected_red",
+      "scope": "Legal bot Coup missed while human owns active turn or pending Negotiator decision; no-Coup controls remain stable."
+    },
+    {
+      "log": "/tmp/agent-runs/bots-coup-green--20261002T210456Z-2491271.log",
+      "exit_code": 0,
+      "status": "pass",
+      "scope": "Coup exception and existing three-tier human waits.",
+      "package_seconds": 5.854
+    },
+    {
+      "log": "/tmp/agent-runs/bots-departure-red--20261002T211049Z-2506016.log",
+      "exit_code": 1,
+      "status": "expected_red",
+      "scope": "Own round-choice prompt absent from authoritative projection."
+    },
+    {
+      "log": "/tmp/agent-runs/bots-departure-green--20261002T211116Z-2507111.log",
+      "exit_code": 0,
+      "status": "pass",
+      "scope": "Own-only round prompt and no opponent choice disclosure."
+    },
+    {
+      "log": "/tmp/agent-runs/bots-settlement-first--20261002T211117Z-2507371.log",
+      "exit_code": 0,
+      "status": "pass",
+      "scope": "3/4-seat automated bot settlement, human explicit finish, automatic game 2, one human charge per game and reward only to human.",
+      "package_seconds": 1.773
+    },
+    {
+      "log": "/tmp/agent-runs/bots-final-targeted-race--20261002T211306Z-2512019.log",
+      "exit_code": 1,
+      "status": "resolved_failure",
+      "scope": "Identity/rooms/economy/matchstore and bot fault cases passed. Runtime 4-seat next-game hit repeated 2-second worker deadline under race plus concurrent offline unit load; redundant complete-menu Coup scan removed."
+    },
+    {
+      "log": "/tmp/agent-runs/bots-bounded-race--20261002T211457Z-2518186.log",
+      "exit_code": 0,
+      "status": "pass",
+      "scope": "Fixed-deck authorized own-queen Coup precheck, three tiers restart/human waits, legal Coup exceptions, 3/4-seat settlement/game2.",
+      "package_seconds": 14.774
+    },
+    {
+      "log": "/tmp/agent-runs/bots-final-unit--20261002T211331Z-2513961.log",
+      "exit_code": 0,
+      "status": "pass",
+      "scope": "Complete offline extraction regression, bots, matchstore, transport, identity, economy and rooms unit packages. Offline package 59.239 seconds while concurrent race gate ran."
+    },
+    {
+      "log": "/tmp/agent-runs/bots-room-atomic-race--20261002T211734Z-2527830.log",
+      "exit_code": 0,
+      "status": "pass",
+      "scope": "Migration checksum/repeat and failure after first bot insert rolls back identities, room and receipt; same request recovers; bots cannot own human rooms.",
+      "package_seconds": 1.512
+    },
+    {
+      "log": "/tmp/agent-runs/bots-legacy-round-red--20261002T212305Z-2539722.log",
+      "exit_code": 1,
+      "status": "expected_red",
+      "scope": "Persisted pre-upgrade round wait still lacked prompt after fresh repository instance."
+    },
+    {
+      "log": "/tmp/agent-runs/bots-legacy-round-green--20261002T212451Z-2543219.log",
+      "exit_code": 0,
+      "status": "pass",
+      "scope": "Single-query snapshot enrichment, historical journal/receipt bytes preserved; wrong present metadata and unrelated mutation rejected. Five bot fault stages and existing atomic/privacy regressions.",
+      "package_seconds": 3.696
+    },
+    {
+      "log": "/tmp/agent-runs/bots-round-order-red--20261002T212913Z-2551036.log",
+      "exit_code": 1,
+      "status": "expected_red",
+      "scope": "Background bot departure votes advanced version 0 to 2 before human first Stay/Leave choice."
+    },
+    {
+      "log": "/tmp/agent-runs/bots-round-order-green--20261002T212959Z-2552971.log",
+      "exit_code": 1,
+      "status": "resolved_test_decoder_failure",
+      "scope": "Production human-first round sequencing passed first POST and next round; restart/Coup/settlement/close regressions passed. Stream assertion mistakenly decoded raw Projection as HTTP View; fixed to fresh direct Projection and seat assertion."
+    },
+    {
+      "log": "/tmp/agent-runs/bots-round-order-final--20261002T213100Z-2555980.log",
+      "exit_code": 0,
+      "status": "pass",
+      "scope": "Repeated scans keep human prompt version stable; Stay and Leave accepted first attempt; bots then respond, next round resumes, stream hides simultaneous choices, receipts replay once.",
+      "package_seconds": 1.945
+    },
+    {
+      "log": "/tmp/agent-runs/bots-latest-unit--20261002T213018Z-2554185.log",
+      "exit_code": 0,
+      "status": "pass",
+      "scope": "Latest matchstore, transport and botplay compile/unit check after compatibility and sequencing changes."
+    },
+    {
+      "log": "/tmp/agent-runs/bots-latest-vet--20261002T213018Z-2554211.log",
+      "exit_code": 0,
+      "status": "pass",
+      "scope": "Latest go vet ./... after compatibility and sequencing changes."
+    },
+    {
+      "log": "/tmp/agent-runs/server-readiness-red--20261002T221243Z-2628438.log",
+      "exit_code": 1,
+      "status": "expected-red",
+      "scope": "Provisional initialization lacked server_pending; old receipt formats rejected additive readiness field."
+    },
+    {
+      "log": "/tmp/agent-runs/server-readiness-green--20261002T221347Z-2631114.log",
+      "exit_code": 0,
+      "status": "pass",
+      "scope": "Real deal, initiative, begin-turn and human-wait readiness; six narrow compatibility cases; existing human-boundary and round projection tests."
+    },
+    {
+      "log": "/tmp/agent-runs/server-readiness-postgres--20261002T221355Z-2631569.log",
+      "exit_code": 1,
+      "status": "diagnosed-test-fixture",
+      "scope": "New test queried actor command_results after only a server operation. Corrected by preserving initial cached deal check, then creating a genuine actor EndTurn receipt; no production/assertion change."
+    },
+    {
+      "log": "/tmp/agent-runs/server-readiness-postgres-final--20261002T221556Z-2638177.log",
+      "exit_code": 0,
+      "status": "pass",
+      "scope": "PostgreSQL race 7.103s: persisted initial-deal enrichment; both historical formats; real EndTurn immutable receipt; wrong metadata/unrelated tamper rejection; five bot fault stages; existing journal and competing-version privacy."
+    },
+    {
+      "log": "/tmp/agent-runs/bot-loop-command-metadata-fixed--20261002T224358Z-2683547.log",
+      "exit_code": 0,
+      "status": "diagnostic",
+      "scope": "Read-only redacted durable command metadata: last70 versions repeat purchase/pass/chance/open-series. No private card IDs or credentials emitted."
+    },
+    {
+      "log": "/tmp/agent-runs/bot-loop-progress-metadata--20261002T224452Z-2685032.log",
+      "exit_code": 0,
+      "status": "diagnostic",
+      "scope": "Read-only exact material-cycle proof: empty supply; purchase13/payment13; ownhand9/22 and series25/12; exact recurring material fingerprints."
+    },
+    {
+      "log": "/tmp/agent-runs/bot-purchase-progress-red--20261002T224949Z-2692181.log",
+      "exit_code": 1,
+      "status": "expected-red-with-fixture-correction",
+      "scope": "Advanced confirmed exact two repeated13-for13 material cycles and failed online EndTurn expectation. Initial beginner/standard equality assumptions were inaccurate because frozen tiers can choose losing exchanges; corrected to all-tier online ending without claiming exact-cycle RED for those tiers."
+    },
+    {
+      "log": "/tmp/agent-runs/bot-purchase-progress-green--20261002T225115Z-2694725.log",
+      "exit_code": 0,
+      "status": "pass",
+      "scope": "All tiers end on empty supply; unchanged Advanced Suggest reproduces exact prior cycle; productive purchases retained; human Actions unchanged."
+    },
+    {
+      "log": "/tmp/agent-runs/bot-purchase-progress-runtime--20261002T225259Z-2699161.log",
+      "exit_code": 1,
+      "status": "diagnosed-test-fixture",
+      "scope": "New runtime fixture cleanup omitted existing Close(context) argument; corrected to bounded2s checked close, no production or assertion relaxation."
+    },
+    {
+      "log": "/tmp/agent-runs/bot-purchase-progress-runtime-final--20261002T225352Z-2702185.log",
+      "exit_code": 0,
+      "status": "pass",
+      "scope": "PG/Redis race19.313s: restored runtime replans sameEndTurn identity, returns usable humanturn, idempotent oldreceipt replay leaves versionstable, onebot/nohumancommands, journalvalid. Existing Coup, settlementnextgame, Stay/Leave also pass."
+    },
+    {
+      "log": "/tmp/agent-runs/online-bots-progress-go--20261002T225321Z-2700452.log",
+      "exit_code": 1,
+      "status": "diagnosed-test-fixture",
+      "scope": "Parent fullGo found new required-response fixture assumed initiative order; game responses are clockwise. Corrected test to Bot3 then human1. All otherpackages passed includingoffline33.653s."
+    },
+    {
+      "log": "/tmp/agent-runs/bot-purchase-progress-unit-final--20261002T225544Z-2707212.log",
+      "exit_code": 0,
+      "status": "pass",
+      "scope": "Final complete botplay tests6.589s, including exact Advanced cycle, alltier progress guard, productive acquisition and unchanged requiredbotresponse/explicit humanwait."
+    },
+    {
+      "log": "/tmp/agent-runs/online-bots-progress-postgres-race--20261002T225445Z-2704258.log",
+      "exit_code": 1,
+      "status": "diagnosed-with-attribution-limit",
+      "scope": "Original parent full seven-package PostgreSQL/Redis race failed random Standard supervisor at version15/active2/pendingnil, with repeated unclassified two-second warnings. Exact discarded fixture state was not retained, so its particular cause remains unattributed; six other packages passed."
+    },
+    {
+      "log": "/tmp/agent-runs/bot-deadline-diagnostic--20261002T230635Z-2724088.log",
+      "exit_code": 1,
+      "status": "expected-red",
+      "scope": "Same Standard supervisor passed7.07s. Deterministic 13-Spade fixture botIntent under unchanged runtime two-second context failed after3.878s with context deadline exceeded. Establishes an independent concrete production deadline defect, not a recreation of lost version15 state."
+    },
+    {
+      "log": "/tmp/agent-runs/bot-planning-profile--20261002T230658Z-2725401.log",
+      "exit_code": 0,
+      "status": "diagnostic",
+      "scope": "Race profile:403 engine menu candidates1.523s;407 eagerly lifecycle-validated Actions3.757s; full online suggestion3.719s. Temporary timing-only source test removed after diagnosis; log retained."
+    },
+    {
+      "log": "/tmp/agent-runs/bot-deadline-green--20261002T231312Z-2734633.log",
+      "exit_code": 0,
+      "status": "pass",
+      "scope": "Race test after online lazy validation: deterministic planning1.627s and actual Restore/plan/durable Submit1.742s under unchanged two-second context. Restart/receipt replay/control return and Standard supervisor passed; no deadline or menu-budget increase."
+    },
+    {
+      "log": "/tmp/agent-runs/bot-round-helper-red--20261002T231431Z-2737432.log",
+      "exit_code": 1,
+      "status": "expected-red",
+      "scope": "Test helper omitted the already-supported explicit human round departure choice. Deterministic closed-round fixture failed immediately before helper correction; not evidence that original random version15 was this boundary."
+    },
+    {
+      "log": "/tmp/agent-runs/bot-round-helper-green--20261002T231630Z-2741397.log",
+      "exit_code": 0,
+      "status": "pass",
+      "scope": "Required round-choice recognition and bounded private-error category tests pass. Journey now explicitly submits human Stay when authority requires it; already-answered/resolved choices are excluded."
+    },
+    {
+      "log": "/tmp/agent-runs/bot-planning-compatibility--20261002T231541Z-2739646.log",
+      "exit_code": 0,
+      "status": "pass",
+      "scope": "Race botplay89.597s/bots1.061s/game20.032s: eager/lazy policy choices, highest-scored rejected candidate fallback, no-request cancellation, old cycle/required responses, original menu goldens, dense menu, and deterministic in-progress candidate cancellation without partial menu or mutation. Initial real-tie comparison was subsequently strengthened to exclude two no-decisions; see final tie log."
+    },
+    {
+      "log": "/tmp/agent-runs/bot-planning-tie-final--20261002T231820Z-2744394.log",
+      "exit_code": 0,
+      "status": "pass",
+      "scope": "Real v1 reconfiguration collision fixture has explicit actionable Round2/order, no NextServer transition, nil errors, and requires actual open-formation choice. Exact eager/lazy command equality across all three tiers, race1.653s."
+    }
+  ],
+  "frontendRed": [
+    {
+      "log": "/tmp/agent-runs/bots-frontend-red--20261002T204349Z-2423940.log",
+      "evidence": "Existing setup lacked Play against bots button."
+    },
+    {
+      "log": "/tmp/agent-runs/bots-client-contract-red--20261002T204454Z-2426210.log",
+      "evidence": "New optional createRoom difficulty contract absent; reflected calls failed with missing named argument before adding API. Final tests use static typed calls."
+    },
+    {
+      "log": "/tmp/agent-runs/bots-projection-red--20261002T204743Z-2433895.log",
+      "evidence": "Public bot seat fixture projected Seat2/Seat3 instead of Bot2/Bot3."
+    },
+    {
+      "log": "/tmp/agent-runs/bots-reload-red--20261002T205127Z-2445246.log",
+      "evidence": "Reloading uncertain bot creation did not restore pending operation because existing stored-room allowlist rejected bot_difficulty. Added enum-validated allowlist support."
+    },
+    {
+      "log": "/tmp/agent-runs/bots-round-prompt-red-valid--20261002T211331Z-2514315.log",
+      "evidence": "Human round choice did not open before the fix."
+    },
+    {
+      "log": "/tmp/agent-runs/online-bots-readiness-ui-red--20261002T221223Z-2627707.log",
+      "expectedFailure": "Provisional initial EndTurn was enabled while server_pending true."
+    }
+  ],
+  "sourceHashes": {
+    "backend/internal/botplay/policy.go": "5291543edad58cda2a948a3c6b3865d3ac9f8b2301ee0941795dcf297d22bee2",
+    "backend/internal/botplay/policy_test.go": "99f5ca45d155cbaa76230fa4021a90119e8825092c920a734de7db06126a59b3",
+    "backend/internal/bots/gameplay_policy.go": "efaca55f0227ff901b1628859079346cffd78ddb090f96930b9338383fc48588",
+    "backend/internal/economy/admission.go": "5abaff8e5a7246db382d6a118f401dcb5d951a5e7cabbebe656c1396f28f1d46",
+    "backend/internal/economy/bots_integration_test.go": "8ab08848cf746f3245cb487158bf37f452a9dc8a57059f5188ca5678508b5a7f",
+    "backend/internal/economy/provider_store.go": "3959376c2c3e90e0ef4a0845554565783318f67cfca4f0829a31252d4eb16d31",
+    "backend/internal/economy/store.go": "f4413eef3f2ee8e1af3194ebbb91bec8750d993f51737dfea303b1de934131ee",
+    "backend/internal/game/gameplay_menu.go": "7e7c4b37edae6606c16fc7fd3392347ae60edc27b626a27919ba5aca7ef4fdc7",
+    "backend/internal/game/gameplay_menu_test.go": "688f7a78ec0e76492e16795a8899550437ebbed36ada6c53e290abe5dbdb0e75",
+    "backend/internal/identity/identity.go": "c63186d1c0811f5f1e7fc83628e140fc347587d84225a59920dd35a3455742dc",
+    "backend/internal/identity/identity_integration_test.go": "0fd2d074df4261a665c8767953ea10241e42e12769cbf6e96c4629a38b5c64da",
+    "backend/internal/identity/migrations/002_bots.sql": "957b74fdc86d954857be054d97c970e73871cda9fdec3ecb4bf786b0c4eeabb1",
+    "backend/internal/matchstore/economy_integration_test.go": "4199045fadb321f01a4d1ff6ccbc7ebd5a6655279910f3bcb787fb54d1d38e61",
+    "backend/internal/matchstore/engine.go": "209c9075875110ca3c29d791c9b5db53a7b9a12a6aae66e71dfdde7448139626",
+    "backend/internal/matchstore/journal.go": "421ee67b400a07bc530a0ac74344e4025a69677117b1a942e6f14fa8158ba09e",
+    "backend/internal/matchstore/online_projection.go": "4d28b200c3086c1b18f87b77930b6efe4554facfcf24bb66362693120065f4dc",
+    "backend/internal/matchstore/online_projection_test.go": "0ff50d7897615164f66a009c8355c6e6c2a9e535c7006933ae2a563a46209bac",
+    "backend/internal/matchstore/store.go": "9ecc3ffeb6b7cd027b29b65bd20c27fb881699535a75b72995835eb79a878725",
+    "backend/internal/offline/runtime.go": "52dda45bee57ac45c5410d0be82ec2ea9282a85a762023726357d05f8778b467",
+    "backend/internal/rooms/migrations/002_bots.sql": "cdb42c4024dcf8ca1912736e303b2a91d1aa809b71562e2b159647a33ffff5ea",
+    "backend/internal/rooms/rooms.go": "f708b83b890c02da77625385b9254fe30078a989f403f6124d846c8c094090ee",
+    "backend/internal/rooms/rooms_integration_test.go": "6d867b2d0abaa11e7c5288861780411ba9fffea71cd3219fff238378376df433",
+    "backend/internal/transport/bots.go": "8ad1cabe6018898e943c37a7251f2f7ab0b9836bdc796e15a5afba54ef30346e",
+    "backend/internal/transport/bots_integration_test.go": "68a2dcb3a89c90914627b1ccc647a4cf2152be5a631bd96dadc00e0c0af69ba3",
+    "backend/internal/transport/http.go": "a9547a02adec33363703e43096bfab753664581b1223857f59bb15000ea1e98e",
+    "backend/internal/transport/runtime.go": "94c813832a01fbcee13497f1b9741697ea4915ab17c3b4ba40c888e75a150931",
+    "backend/internal/transport/runtime_test.go": "ec36c143260f233cbf683980b8376bbe6dd4e2bef32fbc2053f5226dba3ebdc9",
+    "client/lib/online/command_contract.dart": "ad92ea4914a26cabf0d4226e75398d14d6aeada5824e35e8e24eb315faf28c70",
+    "client/lib/online/online_client.dart": "1cbcabd75e1207b333cee8e5af8b21e57e057b7dccd1021e5fdfb75fdc9e3a3e",
+    "client/lib/online/online_screen.dart": "959c3170619078af33ee8b8270ebf2277878a485964f3cc860563ba99f6a89e1",
+    "client/lib/online/projection.dart": "27534a46bdf1f7ae269ba70f2af07d6132d241d37c17b2c03597102b8ea8d5d8",
+    "client/packages/cgms_ui/lib/src/adaptive_table.dart": "245d6991981c7ef07ca7182db1872f34c1ca9aae5e147ed13c6d6df0c65eea3e",
+    "client/packages/cgms_ui/lib/src/l10n/cgms_en.arb": "28ce591ad23311f9657d77145aa879a3c2a263157310ffd411be506e25a9bad6",
+    "client/packages/cgms_ui/lib/src/l10n/cgms_localizations.dart": "33c4b77d9a68c5dd0b0471545ab0ec287add3898b88d200d8342726a15117344",
+    "client/packages/cgms_ui/lib/src/l10n/cgms_localizations_en.dart": "13fd533a637ec3e6df847ae2e9ef14cf1bc9bdad66848ac8c28c703084e1e347",
+    "client/test/adaptive_table_test.dart": "cf138c6814217da627c256a8e1d13e2167453d6dadaabf37199c5ca739c47f55",
+    "client/test/online/online_client_test.dart": "f3b2bdf97452067b650f02bdca1ba59a53d0ccc8f7d0a9eead3d6ee8fa5a1766",
+    "client/test/online_projection_test.dart": "8e22d2bed191e345bbf4aaf53f9a1036a80e83e2aa22bdf51875ea38127d0786",
+    "client/test/online_screen_test.dart": "e9cd7d9a354e0ac77f0c0e9c085886853d3fc736f3e41c58d6e7720aa314f0b3",
+    "client/tool/bot_browser_acceptance.cjs": "19756f492d73ae9bc5455975447d830a353dfb73a1ad4dce3abd6889747e883d",
+    "client/tool/bot_browser_acceptance.test.cjs": "f8a160fcd8b21fbfa1f8920f70ff176813e1ce6409dfa605137182355acae974",
+    "docs/api/online.openapi.json": "cacdfe783efc3acfe1eed6fca526db3f3557f3baf4ba247e20e29a8bf4a1aafb"
+  },
+  "sourceTestsTotalExcludingGo": 411,
+  "harnessCorrections": [
+    "Respect ordinary five-request/second API limit using two snapshot samples per second and serial engines.",
+    "Use Flutter semantic field bounds and real keyboard reveal for random two-axis private-card positions.",
+    "Wait for required action auto-expansion instead of toggling it closed.",
+    "Accept only proven authoritative opening, confinement or early ending outcomes; explicitly activate all human responses/effects/Stay/settlement.",
+    "Await privacy inspection on every normal and early completion path; redact private card labels and capability identifiers from all retained diagnostics.",
+    "Each phase preserves a cumulative90s unattended budget, adds15s without authoritative version progress, an absolute300s wall limit and128 acknowledged-human-intervention cap. Only measured exact200-acknowledged human helper time is excluded; no-op polls are never excluded. The observed aggregate90s browser failure is retained as RED; the five pure budget regressions were added alongside the helper and first ran GREEN, not claimed as separate preimplementation RED."
+  ],
+  "preservation": {
+    "soleScreenshot": "client/screenshots/cgmsart-phone.png",
+    "sha256": "2c116c49cc67e707d7dd6d45e12aa2063aa014c5edc3aa3416a8a36eea18bc8b",
+    "bytes": 273544,
+    "protectedArtworkAndDesignFilesUnchanged": 1248,
+    "immutableOriginalMigrations": true,
+    "persistentDataDeleted": false,
+    "finalIntegrityLog": "/tmp/agent-runs/online-bots-final-source-audit--20261002T232554Z-2760017.log",
+    "temporaryCapturesRemoved": {
+      "count": 97,
+      "bytes": 25248462,
+      "inventory": "docs/reports/2026-10-02-screenshot-inventory.csv",
+      "rawReportsRetainedIgnored": true
+    }
+  },
+  "review": "Independent full-diff review and focused final reviews found no remaining source findings. Verified privacy, durable receipts, same-statement legacy enrichment, semantic viewport identity, setup readiness and immediate Coup. Final online purchase guard and clockwise-response/restart/idempotence tests approved. Harness19756f49 strictly validates200 plus advancing receipt, one expected command before measured-human-time credit; cumulative90s unattended,15s no-progress,300s wall and128interaction caps are per phase and unchanged after exposing the actual policy loop. Final source review approved unchanged v1 ordering fallback, eager financial operations and mid-menu cancellation. Complete Go/vet and seven-package PostgreSQL/Redis race gates pass on frozen optimized sources.",
+  "browserTimingInterpretation": "Guest/playable timings include lobby input and any explicit human responses before the first ordinary turn. Bot turn-cycle elapsed time includes browser-driven human Pass/effect/Stay actions and UI animation waits; it is not a per-bot compute benchmark.",
+  "browserVisualReview": "Parent inspected final390px phone,600px tablet and1440px desktop returned-turn captures: equal table quadrants, nearby suit-stacked hand and visible bottom actions. User preview automatically reconnected after backend rebuilds with its original match and pending human choice preserved; no human command was issued in that preview. Parent also inspected final optimized-backend WebKit600px returned-turn capture; all quadrants, adjacent hand and bottom controls remain visible.",
+  "openFindings": [
+    {
+      "scope": "historical randomized restart failure attribution",
+      "status": "attribution_limit_not_an_open_gate_failure",
+      "evidence": "The original random version15 state was not retained with phase/error details. Its exact cause cannot be conclusively attributed. Separate deterministic tests reproduced and fixed expensive planning exceeding the unchanged2s deadline and a helper that omitted explicit human round choices. The complete final serialized7-package race suite now passes; historical logs remain recorded."
+    }
+  ],
+  "supersededBrowserChecks": {
+    "suites": [
+      {
+        "engine": "chromium",
+        "version": "153.0.8010.12",
+        "reportAtCapture": "client/.browser-tools/artifacts/online-bots-final5-chromium/chromium-bots-report.json",
+        "reportSha256": "e68537acbc947094a88307a502e7aa1fa601dab3f2fee4bb3b0255b17686d21f",
+        "harnessHashesAtRun": {
+          "bot_browser_acceptance.cjs": "68ab2c0afc29988736f7e9b8a09a505a82c6d176c288b488dd24639895aaa6f2",
+          "browser_faults.cjs": "334439124fbdf5a2ba5056adb3655b53ffaa256797ffa7c6c9bccd705f5ea479",
+          "reconnect_browser_acceptance.cjs": "32f545216d730a15e112fbc88235607cdb7f6510a54ec69b6072c2f6928f5058"
+        },
+        "mainSha256": "e22d5678407387724b7f2fb788c4a4d0001fa07b0535af967235dc669b22478d",
+        "caseCount": 9,
+        "cases": [
+          {
+            "case": "beginner-live-boundaries-and-stream-reconnect-retain-draft-selection-and-private-hand",
+            "pass": true,
+            "handDigest": "bf3b8af64f0fbd2a1e8da17a8c00e10db7dd1c530d2f831c5c494dac0cb439c4"
+          },
+          {
+            "case": "beginner-3p-human-opening-and-automatic-bot-responses",
+            "pass": true,
+            "outcome": "opened",
+            "responseVersionAdvance": 3,
+            "selectedCardCount": 2
+          },
+          {
+            "case": "beginner-3p-bots-play-return-control-and-privacy",
+            "pass": true,
+            "humanResponses": 24,
+            "humanCommandCount": 26,
+            "botVersionAdvance": 65,
+            "elapsedMs": 48640
+          },
+          {
+            "case": "standard-live-boundaries-and-stream-reconnect-retain-draft-selection-and-private-hand",
+            "pass": true,
+            "handDigest": "8d737165cc1721360ad9a3dd4ab92233d7b837c0903d62c181459bfcc95f0e86"
+          },
+          {
+            "case": "standard-4p-human-opening-and-automatic-bot-responses",
+            "pass": true,
+            "outcome": "confined",
+            "responseVersionAdvance": 7,
+            "selectedCardCount": 5
+          },
+          {
+            "case": "standard-4p-bots-play-return-control-and-privacy",
+            "pass": true,
+            "humanResponses": 5,
+            "humanCommandCount": 7,
+            "botVersionAdvance": 26,
+            "elapsedMs": 19606
+          },
+          {
+            "case": "advanced-live-boundaries-and-stream-reconnect-retain-draft-selection-and-private-hand",
+            "pass": true,
+            "handDigest": "20ffb3ae035656a9b8abba1c0fc063cc38001610b12234e57c3cd9fe609a3fde"
+          },
+          {
+            "case": "advanced-4p-human-opening-and-automatic-bot-responses",
+            "pass": true,
+            "outcome": "opened",
+            "responseVersionAdvance": 4,
+            "selectedCardCount": 4
+          },
+          {
+            "case": "advanced-4p-bots-play-return-control-and-privacy",
+            "pass": true,
+            "humanResponses": 20,
+            "humanCommandCount": 22,
+            "botVersionAdvance": 67,
+            "elapsedMs": 47211
+          }
+        ],
+        "unexpectedErrors": [],
+        "authorizedProjectionsChecked": 459,
+        "matches": [
+          {
+            "difficulty": "beginner",
+            "players": 3,
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "timings": {
+              "guestReadyMs": 1419,
+              "roomReadyMs": 3418,
+              "playableMs": 16902,
+              "reconnectMs": 580,
+              "botResponsesMs": 826,
+              "botTurnCycleMs": 48640
+            },
+            "initialExplicitHumanResponses": 6,
+            "stayChoices": 1,
+            "lastRound": 2,
+            "humanCommands": 33,
+            "touchGeometry": {
+              "rect": {
+                "x": 8,
+                "y": 379,
+                "width": 374,
+                "height": 49,
+                "top": 379,
+                "right": 382,
+                "bottom": 428,
+                "left": 8
+              },
+              "clip": {
+                "left": 8,
+                "top": 161,
+                "right": 382,
+                "bottom": 485
+              },
+              "ancestors": [
+                {
+                  "role": "group",
+                  "rect": {
+                    "x": 8,
+                    "y": 161,
+                    "width": 374,
+                    "height": 324,
+                    "top": 161,
+                    "right": 382,
+                    "bottom": 485,
+                    "left": 8
+                  }
+                },
+                {
+                  "role": null,
+                  "rect": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 390,
+                    "height": 844,
+                    "top": 0,
+                    "right": 390,
+                    "bottom": 844,
+                    "left": 0
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "difficulty": "standard",
+            "players": 4,
+            "viewport": {
+              "width": 1440,
+              "height": 900
+            },
+            "timings": {
+              "guestReadyMs": 1454,
+              "roomReadyMs": 4279,
+              "playableMs": 26380,
+              "reconnectMs": 521,
+              "botResponsesMs": 1625,
+              "botTurnCycleMs": 19606
+            },
+            "initialExplicitHumanResponses": 10,
+            "stayChoices": 2,
+            "lastRound": 3,
+            "humanCommands": 19,
+            "touchGeometry": {
+              "rect": {
+                "x": 8,
+                "y": 464,
+                "width": 1424,
+                "height": 53,
+                "top": 464,
+                "right": 1432,
+                "bottom": 517,
+                "left": 8
+              },
+              "clip": {
+                "left": 8,
+                "top": 177,
+                "right": 1432,
+                "bottom": 575.046875
+              },
+              "ancestors": [
+                {
+                  "role": "group",
+                  "rect": {
+                    "x": 8,
+                    "y": 177,
+                    "width": 1424,
+                    "height": 398.046875,
+                    "top": 177,
+                    "right": 1432,
+                    "bottom": 575.046875,
+                    "left": 8
+                  }
+                },
+                {
+                  "role": null,
+                  "rect": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 1440,
+                    "height": 900,
+                    "top": 0,
+                    "right": 1440,
+                    "bottom": 900,
+                    "left": 0
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "difficulty": "advanced",
+            "players": 4,
+            "viewport": {
+              "width": 600,
+              "height": 900
+            },
+            "timings": {
+              "guestReadyMs": 1354,
+              "roomReadyMs": 3669,
+              "playableMs": 48459,
+              "reconnectMs": 507,
+              "botResponsesMs": 1469,
+              "botTurnCycleMs": 47211
+            },
+            "initialExplicitHumanResponses": 21,
+            "stayChoices": 1,
+            "lastRound": 2,
+            "humanCommands": 44,
+            "touchGeometry": {
+              "rect": {
+                "x": 8,
+                "y": 453.0909118652344,
+                "width": 584,
+                "height": 53,
+                "top": 453.0909118652344,
+                "right": 592,
+                "bottom": 506.0909118652344,
+                "left": 8
+              },
+              "clip": {
+                "left": 8,
+                "top": 166.09091186523438,
+                "right": 592,
+                "bottom": 564.1378173828125
+              },
+              "ancestors": [
+                {
+                  "role": "group",
+                  "rect": {
+                    "x": 8,
+                    "y": 166.09091186523438,
+                    "width": 584,
+                    "height": 398.0469055175781,
+                    "top": 166.09091186523438,
+                    "right": 592,
+                    "bottom": 564.1378173828125,
+                    "left": 8
+                  }
+                },
+                {
+                  "role": null,
+                  "rect": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 600,
+                    "height": 900,
+                    "top": 0,
+                    "right": 600,
+                    "bottom": 900,
+                    "left": 0
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "chromiumPredicatePostvalidation": {
+      "scope": "Three latest retained Stay touch geometries passed final full-rectangle-containment, center and48px predicate after execution. Standard had two Stay activations and only its latest geometry was retained by this historical harness. Firefox/WebKit use strict predicate and per-activation retention.",
+      "log": "/tmp/agent-runs/online-bots-chromium-strict-touch-postva-20261002T214739Z-2586170.log",
+      "rectangles": [
+        [
+          374,
+          49
+        ],
+        [
+          1424,
+          53
+        ],
+        [
+          584,
+          53
+        ]
+      ]
+    },
+    "finalBeforePurchaseGuard": {
+      "suites": [
+        {
+          "engine": "firefox",
+          "version": "155.0",
+          "status": "passed",
+          "reportAtCapture": "client/.browser-tools/artifacts/online-bots-ready-firefox/firefox-bots-report.json",
+          "reportSha256": "2fe6b22efb9dec7b1e1f5544a4a8169e738fecb4bcfaa9e2d2a1fb34a09cd8c8",
+          "harnessHashesAtRun": {
+            "bot_browser_acceptance.cjs": "6898b7dc6e4f76ff9a7e9db6587de71964c57e1df6509eef67305198800f6273",
+            "browser_faults.cjs": "334439124fbdf5a2ba5056adb3655b53ffaa256797ffa7c6c9bccd705f5ea479",
+            "reconnect_browser_acceptance.cjs": "32f545216d730a15e112fbc88235607cdb7f6510a54ec69b6072c2f6928f5058"
+          },
+          "mainSha256": "210401b46cfe9c7df944dd1d88a403d50739ce32a3ce2d716624210392a58234",
+          "caseCount": 9,
+          "cases": [
+            {
+              "case": "beginner-live-boundaries-and-stream-reconnect-retain-draft-selection-and-private-hand",
+              "pass": true,
+              "handDigest": "68be67706d909f7592772e83c7771d2cc34ff036dcf6eec0bef9fd0f0b361b5b"
+            },
+            {
+              "case": "beginner-3p-human-opening-and-automatic-bot-responses",
+              "pass": true,
+              "outcome": "confined",
+              "responseVersionAdvance": 6,
+              "selectedCardCount": 3
+            },
+            {
+              "case": "beginner-3p-bots-play-return-control-and-privacy",
+              "pass": true,
+              "humanResponses": 7,
+              "humanCommandCount": 9,
+              "botVersionAdvance": 25,
+              "elapsedMs": 11620
+            },
+            {
+              "case": "standard-live-boundaries-and-stream-reconnect-retain-draft-selection-and-private-hand",
+              "pass": true,
+              "handDigest": "4974d62f0c2af76842b3417a1dde868ca27bcd1b24f5a4894ec39f89141300ad"
+            },
+            {
+              "case": "standard-4p-human-opening-and-automatic-bot-responses",
+              "pass": true,
+              "outcome": "opened",
+              "responseVersionAdvance": 4,
+              "selectedCardCount": 4
+            },
+            {
+              "case": "standard-4p-bots-play-return-control-and-privacy",
+              "pass": true,
+              "humanResponses": 38,
+              "humanCommandCount": 40,
+              "botVersionAdvance": 146,
+              "elapsedMs": 67816
+            },
+            {
+              "case": "advanced-live-boundaries-and-stream-reconnect-retain-draft-selection-and-private-hand",
+              "pass": true,
+              "handDigest": "e8abf4ab937a33d0312129f4cfcffdce914030fca9ecc2bb26710021359fc283"
+            },
+            {
+              "case": "advanced-4p-human-opening-and-automatic-bot-responses",
+              "pass": true,
+              "outcome": "opened",
+              "responseVersionAdvance": 3,
+              "selectedCardCount": 4
+            },
+            {
+              "case": "advanced-4p-bots-play-return-control-and-privacy",
+              "pass": true,
+              "humanResponses": 34,
+              "humanCommandCount": 36,
+              "botVersionAdvance": 106,
+              "elapsedMs": 59955
+            }
+          ],
+          "errors": [],
+          "matches": [
+            {
+              "difficulty": "beginner",
+              "players": 3,
+              "viewport": {
+                "width": 390,
+                "height": 844
+              },
+              "timings": {
+                "guestReadyMs": 1650,
+                "roomReadyMs": 3355,
+                "playableMs": 19975,
+                "reconnectMs": 401,
+                "botResponsesMs": 835,
+                "botTurnCycleMs": 11620
+              },
+              "projectionsChecked": 108,
+              "initialHumanResponses": 9,
+              "humanResponses": 7,
+              "stayChoices": 2,
+              "humanInterventions": 8,
+              "initialServerPendingObserved": true,
+              "readinessCleared": true,
+              "commandCounts": {
+                "pass": 16,
+                "open-series": 1,
+                "departure-choice": 2,
+                "end-turn": 1
+              },
+              "finalState": {
+                "version": 111,
+                "round": 3,
+                "turn": 8,
+                "active": 1,
+                "requiredActor": 0,
+                "phase": "playing",
+                "window": false,
+                "decision": false,
+                "automaticPending": false,
+                "serverPending": false,
+                "roundClosed": false,
+                "departureChoicePending": false,
+                "ending": null,
+                "financialPhase": "playing",
+                "completedGames": 0,
+                "botSeats": [
+                  2,
+                  3
+                ],
+                "difficulty": "beginner",
+                "privacy": {
+                  "visibleCards": 53,
+                  "ownPrivateCards": 19
+                }
+              },
+              "stayTouchTargets": [
+                {
+                  "rect": {
+                    "x": 8,
+                    "y": 314,
+                    "width": 374,
+                    "height": 49,
+                    "top": 314,
+                    "right": 382,
+                    "bottom": 363,
+                    "left": 8
+                  },
+                  "clip": {
+                    "left": 0,
+                    "top": 0,
+                    "right": 390,
+                    "bottom": 844
+                  }
+                },
+                {
+                  "rect": {
+                    "x": 8,
+                    "y": 314,
+                    "width": 374,
+                    "height": 49,
+                    "top": 314,
+                    "right": 382,
+                    "bottom": 363,
+                    "left": 8
+                  },
+                  "clip": {
+                    "left": 0,
+                    "top": 0,
+                    "right": 390,
+                    "bottom": 844
+                  }
+                }
+              ]
+            },
+            {
+              "difficulty": "standard",
+              "players": 4,
+              "viewport": {
+                "width": 1440,
+                "height": 900
+              },
+              "timings": {
+                "guestReadyMs": 1187,
+                "roomReadyMs": 2880,
+                "playableMs": 19202,
+                "reconnectMs": 410,
+                "botResponsesMs": 543,
+                "botTurnCycleMs": 67816
+              },
+              "projectionsChecked": 213,
+              "initialHumanResponses": 8,
+              "humanResponses": 38,
+              "stayChoices": 1,
+              "humanInterventions": 39,
+              "initialServerPendingObserved": true,
+              "readinessCleared": true,
+              "commandCounts": {
+                "pass": 46,
+                "open-series": 1,
+                "end-turn": 1,
+                "departure-choice": 1
+              },
+              "finalState": {
+                "version": 230,
+                "round": 2,
+                "turn": 8,
+                "active": 1,
+                "requiredActor": 0,
+                "phase": "playing",
+                "window": false,
+                "decision": false,
+                "automaticPending": false,
+                "serverPending": false,
+                "roundClosed": false,
+                "departureChoicePending": false,
+                "ending": null,
+                "financialPhase": "playing",
+                "completedGames": 0,
+                "botSeats": [
+                  2,
+                  3,
+                  4
+                ],
+                "difficulty": "standard",
+                "privacy": {
+                  "visibleCards": 63,
+                  "ownPrivateCards": 14
+                }
+              },
+              "stayTouchTargets": [
+                {
+                  "rect": {
+                    "x": 8,
+                    "y": 294,
+                    "width": 1424,
+                    "height": 53,
+                    "top": 294,
+                    "right": 1432,
+                    "bottom": 347,
+                    "left": 8
+                  },
+                  "clip": {
+                    "left": 0,
+                    "top": 0,
+                    "right": 1440,
+                    "bottom": 900
+                  }
+                }
+              ]
+            },
+            {
+              "difficulty": "advanced",
+              "players": 4,
+              "viewport": {
+                "width": 600,
+                "height": 900
+              },
+              "timings": {
+                "guestReadyMs": 1209,
+                "roomReadyMs": 3041,
+                "playableMs": 14741,
+                "reconnectMs": 384,
+                "botResponsesMs": 668,
+                "botTurnCycleMs": 59955
+              },
+              "projectionsChecked": 186,
+              "initialHumanResponses": 5,
+              "humanResponses": 34,
+              "stayChoices": 1,
+              "humanInterventions": 35,
+              "initialServerPendingObserved": true,
+              "readinessCleared": true,
+              "commandCounts": {
+                "pass": 39,
+                "open-series": 1,
+                "end-turn": 1,
+                "departure-choice": 1
+              },
+              "finalState": {
+                "version": 171,
+                "round": 2,
+                "turn": 8,
+                "active": 1,
+                "requiredActor": 0,
+                "phase": "playing",
+                "window": false,
+                "decision": false,
+                "automaticPending": false,
+                "serverPending": false,
+                "roundClosed": false,
+                "departureChoicePending": false,
+                "ending": null,
+                "financialPhase": "playing",
+                "completedGames": 0,
+                "botSeats": [
+                  2,
+                  3,
+                  4
+                ],
+                "difficulty": "advanced",
+                "privacy": {
+                  "visibleCards": 51,
+                  "ownPrivateCards": 16
+                }
+              },
+              "stayTouchTargets": [
+                {
+                  "rect": {
+                    "x": 8,
+                    "y": 309.08331298828125,
+                    "width": 584,
+                    "height": 53,
+                    "top": 309.08331298828125,
+                    "right": 592,
+                    "bottom": 362.08331298828125,
+                    "left": 8
+                  },
+                  "clip": {
+                    "left": 0,
+                    "top": 0,
+                    "right": 600,
+                    "bottom": 900
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "totalCases": 9
+    }
+  },
+  "finalBackend": {
+    "image": "sha256:05b2156a1859bd205277d21cced0b48e635128863fab198162c22437925d9c6d",
+    "startedAt": "2026-10-02T23:19:37.635746325Z",
+    "policySha256": "5291543edad58cda2a948a3c6b3865d3ac9f8b2301ee0941795dcf297d22bee2",
+    "runtimeBotsSha256": "8ad1cabe6018898e943c37a7251f2f7ab0b9836bdc796e15a5afba54ef30346e",
+    "menuSha256": "7e7c4b37edae6606c16fc7fd3392347ae60edc27b626a27919ba5aca7ef4fdc7"
+  },
+  "browserBackendProvenance": "Firefox and Chromium passed18 functional cases on backend image e15618f9 after the purchase-loop fix. WebKit passed9 cases on final optimized image05b2156a. All used unchanged frontend210401 and harness19756. Exact selected-command parity, historical tie, cancellation and bounded transaction regressions verify the optimization; do not interpret these as three suites on one backend image.",
+  "resolvedFindings": [
+    "Round-choice semantic offset corrected; source and Firefox/Chromium touch checks pass",
+    "Provisional starter readiness corrected; source and real browser initial/ready transitions pass",
+    "Exact zero-growth purchase/reopen cycle corrected; alltiers, restart and receipt replay regressions pass",
+    "Dense planning deadline corrected with unchanged2s budget; full automatic transaction1.742s under race",
+    "Restart helper recognizes actual human Stay boundary; explicit human choice and nonautomatic-answer assertions retained"
+  ],
+  "completion": {
+    "runId": "online-bots-20261002",
+    "gates": "passed",
+    "trackingRecord": "docs/tracking/tracking.csv: online-bots-20261002 completed commit row; commit_sha=pending",
+    "commitOrPushAttempted": false
+  }
+}

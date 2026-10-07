@@ -1,0 +1,1265 @@
+{
+  "editions": [
+    "first-light",
+    "ember-glaze",
+    "rain-glaze",
+    "drypoint"
+  ],
+  "source": "docs/design/cgmsart-decks/manifest.json",
+  "artwork": [
+    {
+      "edition": "first-light",
+      "path": "assets/art/hearts-A.png",
+      "source": "cards/first-light/hearts-A/artwork.png",
+      "sha256": "ef5265137d94dd3afdf80d4d15f36e507f538f86b31aa6a76e4c5825e547edf6"
+    },
+    {
+      "edition": "first-light",
+      "path": "assets/art/hearts-2.png",
+      "source": "cards/first-light/hearts-2/artwork.png",
+      "sha256": "bb06e22f2b6ea0c07f06a06e59dd340dc35bc5e020818d6ba5c3fbe1c5602af5"
+    },
+    {
+      "edition": "first-light",
+      "path": "assets/art/hearts-3.png",
+      "source": "cards/first-light/hearts-3/artwork.png",
+      "sha256": "d82f5f4333232ca867abe0e5df45fcdea7fe81f21165e6a835504c84eec72cc4"
+    },
+    {
+      "edition": "first-light",
+      "path": "assets/art/hearts-4.png",
+      "source": "cards/first-light/hearts-4/artwork.png",
+      "sha256": "205698fafa7426185a4e6e762afef0e36a95e4c1e710ba5425b0e16ce453bdcf"
+    },
+    {
+      "edition": "first-light",
+      "path": "assets/art/hearts-5.png",
+      "source": "cards/first-light/hearts-5/artwork.png",
+      "sha256": "6b7b27c04170797acaa6cd3329fd6258bf9db98b62770432f847a185b44463e2"
+    },
+    {
+      "edition": "first-light",
+      "path": "assets/art/hearts-6.png",
+      "source": "cards/first-light/hearts-6/artwork.png",
+      "sha256": "a0b0b53fe549ae2f75a0d9593fcf7db37b509522bb384a4b2e53ca4eb56740e3"
+    },
+    {
+      "edition": "first-light",
+      "path": "assets/art/hearts-7.png",
+      "source": "cards/first-light/hearts-7/artwork.png",
+      "sha256": "b09e71943e518427ed9ca30924ed6da3671e5729333539b0ac94ba73036e2c71"
+    },
+    {
+      "edition": "first-light",
+      "path": "assets/art/hearts-8.png",
+      "source": "cards/first-light/hearts-8/artwork.png",
+      "sha256": "75a6753dcda9da86f41328e02d12680fa22528cd2ef9bb1284e558ab35a87129"
+    },
+    {
+      "edition": "first-light",
+      "path": "assets/art/hearts-9.png",
+      "source": "cards/first-light/hearts-9/artwork.png",
+      "sha256": "4549489e6e2b4fbdb1e801112d2b06340c32c3e585c5a2552306896e8ff93829"
+    },
+    {
+      "edition": "first-light",
+      "path": "assets/art/hearts-10.png",
+      "source": "cards/first-light/hearts-10/artwork.png",
+      "sha256": "3965a2de6828e430557af807a1915db063d95012c1d28ff103257a32fb9fce47"
+    },
+    {
+      "edition": "first-light",
+      "path": "assets/art/hearts-J.png",
+      "source": "cards/first-light/hearts-J/artwork.png",
+      "sha256": "bb8bc73e03eae4683a6fbab50b8d8c7a63c0beee1dad60fc8e4c7c3d05539c9c"
+    },
+    {
+      "edition": "first-light",
+      "path": "assets/art/hearts-Q.png",
+      "source": "cards/first-light/hearts-Q/artwork.png",
+      "sha256": "281a851db2ed8eab33aed71704285d3a073d9cf9abf9f065e0446bd491e89fe3"
+    },
+    {
+      "edition": "first-light",
+      "path": "assets/art/hearts-K.png",
+      "source": "cards/first-light/hearts-K/artwork.png",
+      "sha256": "32d6406b6cccbf7a5e925bf25416e4b888ec279c0b23faaa5d9628ca4855f275"
+    },
+    {
+      "edition": "first-light",
+      "path": "assets/art/diamonds-A.png",
+      "source": "cards/first-light/diamonds-A/artwork.png",
+      "sha256": "6d75102899f873dd73728cf0ee2bbb812d7347ea83e8c93f304a2a607164fa8d"
+    },
+    {
+      "edition": "first-light",
+      "path": "assets/art/diamonds-2.png",
+      "source": "cards/first-light/diamonds-2/artwork.png",
+      "sha256": "2eb9e8933dfde511ea7c20d5c24e2d81f540c14206ba86edd16dfc4ad9211fc3"
+    },
+    {
+      "edition": "first-light",
+      "path": "assets/art/diamonds-3.png",
+      "source": "cards/first-light/diamonds-3/artwork.png",
+      "sha256": "3ac226286d1bca2196eb61d3fd3b745ed8d32846e841b037c60637be5a5d5f7a"
+    },
+    {
+      "edition": "first-light",
+      "path": "assets/art/diamonds-4.png",
+      "source": "cards/first-light/diamonds-4/artwork.png",
+      "sha256": "4a5282d71873ab5001ff51d194de2eb7a34336dc8f9fa4aaac11b07b8cecb5f5"
+    },
+    {
+      "edition": "first-light",
+      "path": "assets/art/diamonds-5.png",
+      "source": "cards/first-light/diamonds-5/artwork.png",
+      "sha256": "d6c8e6fcea0153d44863ff0a80e681475dc31134160ca16d6ef5af027d5b9467"
+    },
+    {
+      "edition": "first-light",
+      "path": "assets/art/diamonds-6.png",
+      "source": "cards/first-light/diamonds-6/artwork.png",
+      "sha256": "d9b6229842635876c6c5d5a859213ef1ba65c28e00d87869d2cd175ff8347217"
+    },
+    {
+      "edition": "first-light",
+      "path": "assets/art/diamonds-7.png",
+      "source": "cards/first-light/diamonds-7/artwork.png",
+      "sha256": "6fd40fb2ced47e52cd3aee783cbabc80c3b9e7f39347783d38526c2bc42c0bdf"
+    },
+    {
+      "edition": "first-light",
+      "path": "assets/art/diamonds-8.png",
+      "source": "cards/first-light/diamonds-8/artwork.png",
+      "sha256": "aec79b5d4ef1298d5cee0bac141cad1b9a27f0d96f5e9430c21d948543e29a09"
+    },
+    {
+      "edition": "first-light",
+      "path": "assets/art/diamonds-9.png",
+      "source": "cards/first-light/diamonds-9/artwork.png",
+      "sha256": "f6928a185c40b5915512862b43b3c72c751c4b9586f706cd72e161bfa1b7f05f"
+    },
+    {
+      "edition": "first-light",
+      "path": "assets/art/diamonds-10.png",
+      "source": "cards/first-light/diamonds-10/artwork.png",
+      "sha256": "685f5917eca71093a6a3052fdbd58c54d09152dc213cc728ed52825f3a32c854"
+    },
+    {
+      "edition": "first-light",
+      "path": "assets/art/diamonds-J.png",
+      "source": "cards/first-light/diamonds-J/artwork.png",
+      "sha256": "9e8aa8769a57590910d3d6c7587618c0a5efae01884e9fb50909fc3f5b3fb65e"
+    },
+    {
+      "edition": "first-light",
+      "path": "assets/art/diamonds-Q.png",
+      "source": "cards/first-light/diamonds-Q/artwork.png",
+      "sha256": "fadb4b6a456045d71811661024deff3ab69e97f4b4aa8f82629e6cae24acc6fd"
+    },
+    {
+      "edition": "first-light",
+      "path": "assets/art/diamonds-K.png",
+      "source": "cards/first-light/diamonds-K/artwork.png",
+      "sha256": "f137c0d08a6ba79e57c8c6ab479ccc8976b52e687b8462ac2038c8b69aff7be4"
+    },
+    {
+      "edition": "first-light",
+      "path": "assets/art/clubs-A.png",
+      "source": "cards/first-light/clubs-A/artwork.png",
+      "sha256": "12902d6cf751331f8646f40f4512b20100541cf3da5a761b24f39c73b6f9c800"
+    },
+    {
+      "edition": "first-light",
+      "path": "assets/art/clubs-2.png",
+      "source": "cards/first-light/clubs-2/artwork.png",
+      "sha256": "db4a260c53605517880ac774c44235ed26453929528977fa84276cd7ba631e84"
+    },
+    {
+      "edition": "first-light",
+      "path": "assets/art/clubs-3.png",
+      "source": "cards/first-light/clubs-3/artwork.png",
+      "sha256": "0b7168f3653dba3422dc688e1bed60f35135dfddea836579d0fcbcf0829e6a8a"
+    },
+    {
+      "edition": "first-light",
+      "path": "assets/art/clubs-4.png",
+      "source": "cards/first-light/clubs-4/artwork.png",
+      "sha256": "86733f0152890cd9a5088bf2495c1359159a70cdd436d6c0ca0a39c64aa9721c"
+    },
+    {
+      "edition": "first-light",
+      "path": "assets/art/clubs-5.png",
+      "source": "cards/first-light/clubs-5/artwork.png",
+      "sha256": "baa6cdc0148919190485b6edca2a5adc2b3c048731f93f09d3dda5b2374e8a6b"
+    },
+    {
+      "edition": "first-light",
+      "path": "assets/art/clubs-6.png",
+      "source": "cards/first-light/clubs-6/artwork.png",
+      "sha256": "7fd41152ce69bcd54bba17e4dfc7d15937f702a0457323d22ec8734089370f5a"
+    },
+    {
+      "edition": "first-light",
+      "path": "assets/art/clubs-7.png",
+      "source": "cards/first-light/clubs-7/artwork.png",
+      "sha256": "a7329b823eaa791e46cb6105edb7c36863ef3f2d56022dbcd2b663a9d67e0912"
+    },
+    {
+      "edition": "first-light",
+      "path": "assets/art/clubs-8.png",
+      "source": "cards/first-light/clubs-8/artwork.png",
+      "sha256": "52f8bea6d1f2bff8cce585f7a9e0a7135b35dcc0c15e1dc6a1ad5057e987af9f"
+    },
+    {
+      "edition": "first-light",
+      "path": "assets/art/clubs-9.png",
+      "source": "cards/first-light/clubs-9/artwork.png",
+      "sha256": "26e526c385d336f48793b34108b200d795784e2f8654fb5aad580ccc35654fd4"
+    },
+    {
+      "edition": "first-light",
+      "path": "assets/art/clubs-10.png",
+      "source": "cards/first-light/clubs-10/artwork.png",
+      "sha256": "747b723908599f2db19897667ce7ed3cb8ff9ff3140e163df60b8784836bdda8"
+    },
+    {
+      "edition": "first-light",
+      "path": "assets/art/clubs-J.png",
+      "source": "cards/first-light/clubs-J/artwork.png",
+      "sha256": "973299544e076cecb0895f7922ba66f188e810dacfeca7c39a9539bec1be91a5"
+    },
+    {
+      "edition": "first-light",
+      "path": "assets/art/clubs-Q.png",
+      "source": "cards/first-light/clubs-Q/artwork.png",
+      "sha256": "c0235aa5c5d34acd42592c81e80c6384f17f23d3f161911a95396c25fc12cdc7"
+    },
+    {
+      "edition": "first-light",
+      "path": "assets/art/clubs-K.png",
+      "source": "cards/first-light/clubs-K/artwork.png",
+      "sha256": "18e18edf787fa4cfcdf4275b0dcf68c99d28ba50686291ee60ee2d4777fcada1"
+    },
+    {
+      "edition": "first-light",
+      "path": "assets/art/spades-A.png",
+      "source": "cards/first-light/spades-A/artwork.png",
+      "sha256": "36a51a1b139dd22a2a8edea7f5fb5bbeb82b8899b7c0c79531ed8b1c4357411a"
+    },
+    {
+      "edition": "first-light",
+      "path": "assets/art/spades-2.png",
+      "source": "cards/first-light/spades-2/artwork.png",
+      "sha256": "ece73165af5070ed38dca732bd2e637606a47b032330d8737efbcef076bb4aef"
+    },
+    {
+      "edition": "first-light",
+      "path": "assets/art/spades-3.png",
+      "source": "cards/first-light/spades-3/artwork.png",
+      "sha256": "f1aa4fbd4419d6907391aae4cd19c96714f35bc3b54f0266407a81341eddc592"
+    },
+    {
+      "edition": "first-light",
+      "path": "assets/art/spades-4.png",
+      "source": "cards/first-light/spades-4/artwork.png",
+      "sha256": "68742185450b5455ff55f8e9511f2b09d758422e550e5a98bd22fee028501b3a"
+    },
+    {
+      "edition": "first-light",
+      "path": "assets/art/spades-5.png",
+      "source": "cards/first-light/spades-5/artwork.png",
+      "sha256": "6d32530968d22db14ad42815b269758510f68b62d4423c21e107b43bb8a88b6a"
+    },
+    {
+      "edition": "first-light",
+      "path": "assets/art/spades-6.png",
+      "source": "cards/first-light/spades-6/artwork.png",
+      "sha256": "064a604ae3868153e742c241260b83db99c10b12417a441c4e01ccc0257a2ed4"
+    },
+    {
+      "edition": "first-light",
+      "path": "assets/art/spades-7.png",
+      "source": "cards/first-light/spades-7/artwork.png",
+      "sha256": "d70f6351606888784594bcd72bc67192721fa3bcd996730d23a4f1131c6f0ef5"
+    },
+    {
+      "edition": "first-light",
+      "path": "assets/art/spades-8.png",
+      "source": "cards/first-light/spades-8/artwork.png",
+      "sha256": "f745688556aafe5d867040a89102668be2395003fedfdbcf2cfd97e1180c3751"
+    },
+    {
+      "edition": "first-light",
+      "path": "assets/art/spades-9.png",
+      "source": "cards/first-light/spades-9/artwork.png",
+      "sha256": "e22babe6d0d919825060265abb5936d2952afbd839ef387941de5fab23c8cd9a"
+    },
+    {
+      "edition": "first-light",
+      "path": "assets/art/spades-10.png",
+      "source": "cards/first-light/spades-10/artwork.png",
+      "sha256": "8c765e50e2ea3d63825eaa28d2e505508d3b3703d4fc1b52dabd462310ea8964"
+    },
+    {
+      "edition": "first-light",
+      "path": "assets/art/spades-J.png",
+      "source": "cards/first-light/spades-J/artwork.png",
+      "sha256": "249f867aa6c63382187c710deca0b1f5068cb218a6c72d3fd0029e219837341b"
+    },
+    {
+      "edition": "first-light",
+      "path": "assets/art/spades-Q.png",
+      "source": "cards/first-light/spades-Q/artwork.png",
+      "sha256": "c28c81977aa80b3b5e9517315a50f695d40b3cadae64e72092b96a65db0b319d"
+    },
+    {
+      "edition": "first-light",
+      "path": "assets/art/spades-K.png",
+      "source": "cards/first-light/spades-K/artwork.png",
+      "sha256": "21c8b1932213d811f0243158790ef741b09b603f295347130436a416ce3c736a"
+    },
+    {
+      "edition": "ember-glaze",
+      "path": "assets/art/ember-glaze/hearts-A.png",
+      "source": "cards/ember-glaze/hearts-A/artwork.png",
+      "sha256": "0aa788ab82a025a0ecbf0843f4625cc0af97f41749136230f3e535b07aa7a80c"
+    },
+    {
+      "edition": "ember-glaze",
+      "path": "assets/art/ember-glaze/hearts-2.png",
+      "source": "cards/ember-glaze/hearts-2/artwork.png",
+      "sha256": "ec080db06270751ae12c6457eea4b41f16540c9049005e1e16a1b5f33e27654c"
+    },
+    {
+      "edition": "ember-glaze",
+      "path": "assets/art/ember-glaze/hearts-3.png",
+      "source": "cards/ember-glaze/hearts-3/artwork.png",
+      "sha256": "4a0fdafce641b78eab10080276f16ff15479d90d8df43cbc0e011e04f885b153"
+    },
+    {
+      "edition": "ember-glaze",
+      "path": "assets/art/ember-glaze/hearts-4.png",
+      "source": "cards/ember-glaze/hearts-4/artwork.png",
+      "sha256": "4ce054df276e9b2f96455d8884fd44aa3ce30815f78c4b2aaca1adc8c367157f"
+    },
+    {
+      "edition": "ember-glaze",
+      "path": "assets/art/ember-glaze/hearts-5.png",
+      "source": "cards/ember-glaze/hearts-5/artwork.png",
+      "sha256": "b1887bbcc7fa7a1c714fb7acaf13ff2b433fff651d78b3eeb08be76e1187f6b8"
+    },
+    {
+      "edition": "ember-glaze",
+      "path": "assets/art/ember-glaze/hearts-6.png",
+      "source": "cards/ember-glaze/hearts-6/artwork.png",
+      "sha256": "f30f7277ab463443222f01a32de155385b68e8ee59bb3a69adcf17de03885744"
+    },
+    {
+      "edition": "ember-glaze",
+      "path": "assets/art/ember-glaze/hearts-7.png",
+      "source": "cards/ember-glaze/hearts-7/artwork.png",
+      "sha256": "5a808822fe261f86a2d040fdc02ae9290effbf2ebca9eaa56da03f4a91c2b5cb"
+    },
+    {
+      "edition": "ember-glaze",
+      "path": "assets/art/ember-glaze/hearts-8.png",
+      "source": "cards/ember-glaze/hearts-8/artwork.png",
+      "sha256": "48f04d7bb7ed60763323dc73cd466190d95d00c800599c05aa581109a48fff92"
+    },
+    {
+      "edition": "ember-glaze",
+      "path": "assets/art/ember-glaze/hearts-9.png",
+      "source": "cards/ember-glaze/hearts-9/artwork.png",
+      "sha256": "fc67ce4744b3ffa634f84a5f2d9aed5666824769e2bf0e8d354f6e84046ce835"
+    },
+    {
+      "edition": "ember-glaze",
+      "path": "assets/art/ember-glaze/hearts-10.png",
+      "source": "cards/ember-glaze/hearts-10/artwork.png",
+      "sha256": "3ebd598ee4d24f1eceba842e3ab4e16df6086786644499aa73228304d66adec2"
+    },
+    {
+      "edition": "ember-glaze",
+      "path": "assets/art/ember-glaze/hearts-J.png",
+      "source": "cards/ember-glaze/hearts-J/artwork.png",
+      "sha256": "e42edcdfc7d51659e1f509f0bfe52c1a10e258052ccf49ffb3f9145d06873754"
+    },
+    {
+      "edition": "ember-glaze",
+      "path": "assets/art/ember-glaze/hearts-Q.png",
+      "source": "cards/ember-glaze/hearts-Q/artwork.png",
+      "sha256": "3fe9b173da54b9dadb71068f97c66467b5e97a61578f0caafd48bf40b0eec048"
+    },
+    {
+      "edition": "ember-glaze",
+      "path": "assets/art/ember-glaze/hearts-K.png",
+      "source": "cards/ember-glaze/hearts-K/artwork.png",
+      "sha256": "5a332ca2503b6d35aaa1ec647e57a478939ff4f78ade153caa32557961770ec4"
+    },
+    {
+      "edition": "ember-glaze",
+      "path": "assets/art/ember-glaze/diamonds-A.png",
+      "source": "cards/ember-glaze/diamonds-A/artwork.png",
+      "sha256": "7127ade53de2ffb41e39dde9ffb46c9e6df31b3929eb3f740b75ab8a8d2fe112"
+    },
+    {
+      "edition": "ember-glaze",
+      "path": "assets/art/ember-glaze/diamonds-2.png",
+      "source": "cards/ember-glaze/diamonds-2/artwork.png",
+      "sha256": "ddaa222ff818d976693bed21515f40746b3d085c91afaf492ccb773771723b67"
+    },
+    {
+      "edition": "ember-glaze",
+      "path": "assets/art/ember-glaze/diamonds-3.png",
+      "source": "cards/ember-glaze/diamonds-3/artwork.png",
+      "sha256": "b177abe347f505380b5a087f63cddb75de6406cdecd4f5330377dbebade7e37e"
+    },
+    {
+      "edition": "ember-glaze",
+      "path": "assets/art/ember-glaze/diamonds-4.png",
+      "source": "cards/ember-glaze/diamonds-4/artwork.png",
+      "sha256": "87af7e42b741bb6705decf7b346fcb72a76c7343fbb957e46bbfe68dfb86aadb"
+    },
+    {
+      "edition": "ember-glaze",
+      "path": "assets/art/ember-glaze/diamonds-5.png",
+      "source": "cards/ember-glaze/diamonds-5/artwork.png",
+      "sha256": "7540f27528403e6f3501f7367222b2635304b9bc64ab0d5c3a587046291e55c0"
+    },
+    {
+      "edition": "ember-glaze",
+      "path": "assets/art/ember-glaze/diamonds-6.png",
+      "source": "cards/ember-glaze/diamonds-6/artwork.png",
+      "sha256": "e95e75e0a270bea5d08a779de468f0186da9ee26df1a738a432d747542fad61e"
+    },
+    {
+      "edition": "ember-glaze",
+      "path": "assets/art/ember-glaze/diamonds-7.png",
+      "source": "cards/ember-glaze/diamonds-7/artwork.png",
+      "sha256": "f7ff342c84b14a7b181d45e75f9247ae129025a5e00fe59471adc2b34ccedc9b"
+    },
+    {
+      "edition": "ember-glaze",
+      "path": "assets/art/ember-glaze/diamonds-8.png",
+      "source": "cards/ember-glaze/diamonds-8/artwork.png",
+      "sha256": "5ab5bb0309e8cd7d2bb69a5073ade2e42ccf7d2c0e82cd9f981384d2e4cf4abb"
+    },
+    {
+      "edition": "ember-glaze",
+      "path": "assets/art/ember-glaze/diamonds-9.png",
+      "source": "cards/ember-glaze/diamonds-9/artwork.png",
+      "sha256": "d58134d666f296051353707e0ed8b1a10a857ae2666ceca8ba95697f04e86e19"
+    },
+    {
+      "edition": "ember-glaze",
+      "path": "assets/art/ember-glaze/diamonds-10.png",
+      "source": "cards/ember-glaze/diamonds-10/artwork.png",
+      "sha256": "b3427f035e8413ad6a3155874bd6af3211b2b4c972bd46cb6b8967627fc6b914"
+    },
+    {
+      "edition": "ember-glaze",
+      "path": "assets/art/ember-glaze/diamonds-J.png",
+      "source": "cards/ember-glaze/diamonds-J/artwork.png",
+      "sha256": "71f2b123aae8da3783c58b3eed420b81d2b617e5d732136aa15b36c7ba8c2e2a"
+    },
+    {
+      "edition": "ember-glaze",
+      "path": "assets/art/ember-glaze/diamonds-Q.png",
+      "source": "cards/ember-glaze/diamonds-Q/artwork.png",
+      "sha256": "21476111fdd68537309200263d5f49d3ddad9fc87062a42404f4f4a780cfc309"
+    },
+    {
+      "edition": "ember-glaze",
+      "path": "assets/art/ember-glaze/diamonds-K.png",
+      "source": "cards/ember-glaze/diamonds-K/artwork.png",
+      "sha256": "2c2c20a35ebb19900dba2c8385018d0566f48087cd6f73b3443aaa8c63b16881"
+    },
+    {
+      "edition": "ember-glaze",
+      "path": "assets/art/ember-glaze/clubs-A.png",
+      "source": "cards/ember-glaze/clubs-A/artwork.png",
+      "sha256": "14d1c95259274470f7cb7e9855d068248333fd9ae17460c631391d4df39ead34"
+    },
+    {
+      "edition": "ember-glaze",
+      "path": "assets/art/ember-glaze/clubs-2.png",
+      "source": "cards/ember-glaze/clubs-2/artwork.png",
+      "sha256": "5a743a4524e1bc954ff1f63fa6504273694251fa485aba8bf5c5d2bd48a4a859"
+    },
+    {
+      "edition": "ember-glaze",
+      "path": "assets/art/ember-glaze/clubs-3.png",
+      "source": "cards/ember-glaze/clubs-3/artwork.png",
+      "sha256": "953dc33d842e170edb2905a39b2a9d507480e9cb54895afc99ab64f99fa1f07d"
+    },
+    {
+      "edition": "ember-glaze",
+      "path": "assets/art/ember-glaze/clubs-4.png",
+      "source": "cards/ember-glaze/clubs-4/artwork.png",
+      "sha256": "1327b129a61a416c823e4db05e271b40fe1fc9eabf5e9327a0248f361cd1ee70"
+    },
+    {
+      "edition": "ember-glaze",
+      "path": "assets/art/ember-glaze/clubs-5.png",
+      "source": "cards/ember-glaze/clubs-5/artwork.png",
+      "sha256": "a0e3aab19dcc82d47cccd9fdee70cdd391ea88465aff094cf2a777a4a54c6f5d"
+    },
+    {
+      "edition": "ember-glaze",
+      "path": "assets/art/ember-glaze/clubs-6.png",
+      "source": "cards/ember-glaze/clubs-6/artwork.png",
+      "sha256": "7084b6b157a96c8fdde708103417d7b80c82ff1a40d140399243f05ee7d59520"
+    },
+    {
+      "edition": "ember-glaze",
+      "path": "assets/art/ember-glaze/clubs-7.png",
+      "source": "cards/ember-glaze/clubs-7/artwork.png",
+      "sha256": "ea7cab94b2878f382569ef8cbc3a834c1e4c546b5b3e1e17786eb18cc9899ea0"
+    },
+    {
+      "edition": "ember-glaze",
+      "path": "assets/art/ember-glaze/clubs-8.png",
+      "source": "cards/ember-glaze/clubs-8/artwork.png",
+      "sha256": "a2feb920878ba913029cc6750354070cd764604463d6a17662b9f7c1ecdfda28"
+    },
+    {
+      "edition": "ember-glaze",
+      "path": "assets/art/ember-glaze/clubs-9.png",
+      "source": "cards/ember-glaze/clubs-9/artwork.png",
+      "sha256": "72ba5ca6390ef9c037102969a921096259c2be88219d9b15c0c36b4adbcf48f6"
+    },
+    {
+      "edition": "ember-glaze",
+      "path": "assets/art/ember-glaze/clubs-10.png",
+      "source": "cards/ember-glaze/clubs-10/artwork.png",
+      "sha256": "d32eae4c104d8cf042874f915120718f5f24303a35e3932051a2443a4a6aec69"
+    },
+    {
+      "edition": "ember-glaze",
+      "path": "assets/art/ember-glaze/clubs-J.png",
+      "source": "cards/ember-glaze/clubs-J/artwork.png",
+      "sha256": "f1823211d65c463ff8fadaa52504c43f6672b1857e731722be1c9287084937e5"
+    },
+    {
+      "edition": "ember-glaze",
+      "path": "assets/art/ember-glaze/clubs-Q.png",
+      "source": "cards/ember-glaze/clubs-Q/artwork.png",
+      "sha256": "2ddba9d110557cc7b535362f71452563d6f39a1f9850548a8bb16772ece41c23"
+    },
+    {
+      "edition": "ember-glaze",
+      "path": "assets/art/ember-glaze/clubs-K.png",
+      "source": "cards/ember-glaze/clubs-K/artwork.png",
+      "sha256": "29634efb66b381c34856e9f84102a2f90112295796f5f5b72e659c1258ee3bf5"
+    },
+    {
+      "edition": "ember-glaze",
+      "path": "assets/art/ember-glaze/spades-A.png",
+      "source": "cards/ember-glaze/spades-A/artwork.png",
+      "sha256": "986b018b4dd6e25c934fb892d1e10f5b64cbc0df07e44325766a814971572732"
+    },
+    {
+      "edition": "ember-glaze",
+      "path": "assets/art/ember-glaze/spades-2.png",
+      "source": "cards/ember-glaze/spades-2/artwork.png",
+      "sha256": "f5bd00a47e22eef7bc13312888e44c24975a123dd1e4548cf93bf87afcc9b227"
+    },
+    {
+      "edition": "ember-glaze",
+      "path": "assets/art/ember-glaze/spades-3.png",
+      "source": "cards/ember-glaze/spades-3/artwork.png",
+      "sha256": "cf12de568dc0e894f8057a55a199766b5b996f85104b98482be3f8b227c65553"
+    },
+    {
+      "edition": "ember-glaze",
+      "path": "assets/art/ember-glaze/spades-4.png",
+      "source": "cards/ember-glaze/spades-4/artwork.png",
+      "sha256": "ead7951f095bd58a0509d706e463b85c9491a9ca79c82e895edbca55d041bb6c"
+    },
+    {
+      "edition": "ember-glaze",
+      "path": "assets/art/ember-glaze/spades-5.png",
+      "source": "cards/ember-glaze/spades-5/artwork.png",
+      "sha256": "6800b7196406af6bb6cb5f583d8482b7a924864ea34da4d81811ea68b475db49"
+    },
+    {
+      "edition": "ember-glaze",
+      "path": "assets/art/ember-glaze/spades-6.png",
+      "source": "cards/ember-glaze/spades-6/artwork.png",
+      "sha256": "64d340df42074c2b5a2198def2ef853677dfc4ea1c9df37e24594c162699115b"
+    },
+    {
+      "edition": "ember-glaze",
+      "path": "assets/art/ember-glaze/spades-7.png",
+      "source": "cards/ember-glaze/spades-7/artwork.png",
+      "sha256": "2095051051831df1b13ee327b6ba958033bb3f677eaef74869a8f580c5a04d87"
+    },
+    {
+      "edition": "ember-glaze",
+      "path": "assets/art/ember-glaze/spades-8.png",
+      "source": "cards/ember-glaze/spades-8/artwork.png",
+      "sha256": "18d78b8eab450a9769bcfe458c71ac27bf3eb574b3fe6276b12137359cc899e7"
+    },
+    {
+      "edition": "ember-glaze",
+      "path": "assets/art/ember-glaze/spades-9.png",
+      "source": "cards/ember-glaze/spades-9/artwork.png",
+      "sha256": "a6a6b6cacbb3231ff4e8298b6d06299a1686fc3d5d953243dce2d3f584535608"
+    },
+    {
+      "edition": "ember-glaze",
+      "path": "assets/art/ember-glaze/spades-10.png",
+      "source": "cards/ember-glaze/spades-10/artwork.png",
+      "sha256": "ec39b543a97db6659b6ebd29bba865104ce14ee85110acdf49a19cbec7c0c531"
+    },
+    {
+      "edition": "ember-glaze",
+      "path": "assets/art/ember-glaze/spades-J.png",
+      "source": "cards/ember-glaze/spades-J/artwork.png",
+      "sha256": "91915ab1a729a040dcd6fa2bf4fbb28503d704c1063f85170c23aabbe77a8ab4"
+    },
+    {
+      "edition": "ember-glaze",
+      "path": "assets/art/ember-glaze/spades-Q.png",
+      "source": "cards/ember-glaze/spades-Q/artwork.png",
+      "sha256": "46d25fb13fc20333773133405f97f5a408a763a8a7ad1f42da9aadd9a12dff8b"
+    },
+    {
+      "edition": "ember-glaze",
+      "path": "assets/art/ember-glaze/spades-K.png",
+      "source": "cards/ember-glaze/spades-K/artwork.png",
+      "sha256": "fd44c3a0194859ff2f45a412348d5fc8edb186447cb57a8c9689081734036b3f"
+    },
+    {
+      "edition": "rain-glaze",
+      "path": "assets/art/rain-glaze/hearts-A.png",
+      "source": "cards/rain-glaze/hearts-A/artwork.png",
+      "sha256": "3bcf4fd93743ec75ccaad56b9b219743c5c5e06db26a2d39457be6ff81560079"
+    },
+    {
+      "edition": "rain-glaze",
+      "path": "assets/art/rain-glaze/hearts-2.png",
+      "source": "cards/rain-glaze/hearts-2/artwork.png",
+      "sha256": "18dce05d76bb9b7d17c7aec6c4d539fdd219215fb7b1e51caeda5e05e265e744"
+    },
+    {
+      "edition": "rain-glaze",
+      "path": "assets/art/rain-glaze/hearts-3.png",
+      "source": "cards/rain-glaze/hearts-3/artwork.png",
+      "sha256": "f924e1a6836a626b7511477f79352943d39ed636943870343bd35a91750d29dd"
+    },
+    {
+      "edition": "rain-glaze",
+      "path": "assets/art/rain-glaze/hearts-4.png",
+      "source": "cards/rain-glaze/hearts-4/artwork.png",
+      "sha256": "8db18eda61e2bd427ccc972e5a4d888adf92051e5cc7df4a4e5e91dbb139928e"
+    },
+    {
+      "edition": "rain-glaze",
+      "path": "assets/art/rain-glaze/hearts-5.png",
+      "source": "cards/rain-glaze/hearts-5/artwork.png",
+      "sha256": "2f54c89b0d4773785d0b87e7d170523e9a9ff49dfc94c5e6447d0ab935169d1a"
+    },
+    {
+      "edition": "rain-glaze",
+      "path": "assets/art/rain-glaze/hearts-6.png",
+      "source": "cards/rain-glaze/hearts-6/artwork.png",
+      "sha256": "69466bbc35dd27646f02444f7c726c0413ae132a34ad27f469a11375eb8af9a5"
+    },
+    {
+      "edition": "rain-glaze",
+      "path": "assets/art/rain-glaze/hearts-7.png",
+      "source": "cards/rain-glaze/hearts-7/artwork.png",
+      "sha256": "674bcbc8462581c011609a17542af64fe023053dc2c20ff7a6d1118016ee77f7"
+    },
+    {
+      "edition": "rain-glaze",
+      "path": "assets/art/rain-glaze/hearts-8.png",
+      "source": "cards/rain-glaze/hearts-8/artwork.png",
+      "sha256": "905cd3740def827626be15c4255246f9963e75ba4f596c7e2ee27e957984386f"
+    },
+    {
+      "edition": "rain-glaze",
+      "path": "assets/art/rain-glaze/hearts-9.png",
+      "source": "cards/rain-glaze/hearts-9/artwork.png",
+      "sha256": "c4a49894dac7b7dcc9d5b34514b3ec68e50c311ff5ddcb237e0e6c7ee8b455db"
+    },
+    {
+      "edition": "rain-glaze",
+      "path": "assets/art/rain-glaze/hearts-10.png",
+      "source": "cards/rain-glaze/hearts-10/artwork.png",
+      "sha256": "5e35b1ce34256828a6e44460ba4c3015b77317165b0ca89b43d5a914f852308e"
+    },
+    {
+      "edition": "rain-glaze",
+      "path": "assets/art/rain-glaze/hearts-J.png",
+      "source": "cards/rain-glaze/hearts-J/artwork.png",
+      "sha256": "73db68e328b43d1a3dc118e8d9c4748b8773408ea527195e01c0de7c631e36a0"
+    },
+    {
+      "edition": "rain-glaze",
+      "path": "assets/art/rain-glaze/hearts-Q.png",
+      "source": "cards/rain-glaze/hearts-Q/artwork.png",
+      "sha256": "d9f6c84642862efff8fbcbf7e022f301a1cc79070df7fc11655f31f2b99999bf"
+    },
+    {
+      "edition": "rain-glaze",
+      "path": "assets/art/rain-glaze/hearts-K.png",
+      "source": "cards/rain-glaze/hearts-K/artwork.png",
+      "sha256": "9bee3a07e66c578ebc8155e5fb7e30555bed20687648f0282dcdf65599a71617"
+    },
+    {
+      "edition": "rain-glaze",
+      "path": "assets/art/rain-glaze/diamonds-A.png",
+      "source": "cards/rain-glaze/diamonds-A/artwork.png",
+      "sha256": "9f3fbf272874bea1fee6f2d0c0c501b6df0a60351abf8bd877ebec96902d6d6e"
+    },
+    {
+      "edition": "rain-glaze",
+      "path": "assets/art/rain-glaze/diamonds-2.png",
+      "source": "cards/rain-glaze/diamonds-2/artwork.png",
+      "sha256": "fa947d7600dc023b889cb286cdfbfd1bcf059c1d9077056ad2639571af2fb4d2"
+    },
+    {
+      "edition": "rain-glaze",
+      "path": "assets/art/rain-glaze/diamonds-3.png",
+      "source": "cards/rain-glaze/diamonds-3/artwork.png",
+      "sha256": "2af3096f7c55b1f8a086919772b5378df580cde04143f6c2ba6bacdbf30da2a2"
+    },
+    {
+      "edition": "rain-glaze",
+      "path": "assets/art/rain-glaze/diamonds-4.png",
+      "source": "cards/rain-glaze/diamonds-4/artwork.png",
+      "sha256": "82f792931ec60731bbd49085b2c56978b290eff1b30ec5dd65e5aa563959fa25"
+    },
+    {
+      "edition": "rain-glaze",
+      "path": "assets/art/rain-glaze/diamonds-5.png",
+      "source": "cards/rain-glaze/diamonds-5/artwork.png",
+      "sha256": "a0b02971738642613ef092ef19d4cf97c8a4973955ae40e9e8edd27d99a2e18c"
+    },
+    {
+      "edition": "rain-glaze",
+      "path": "assets/art/rain-glaze/diamonds-6.png",
+      "source": "cards/rain-glaze/diamonds-6/artwork.png",
+      "sha256": "df5b08ec11a684a4ff63844d8374c554174ec295e0ea23cccf14b8c5b093e509"
+    },
+    {
+      "edition": "rain-glaze",
+      "path": "assets/art/rain-glaze/diamonds-7.png",
+      "source": "cards/rain-glaze/diamonds-7/artwork.png",
+      "sha256": "9f587f4b8b87a1fd79eabfcf2e32689263dc557693e42df1d81379e3f43ca9a8"
+    },
+    {
+      "edition": "rain-glaze",
+      "path": "assets/art/rain-glaze/diamonds-8.png",
+      "source": "cards/rain-glaze/diamonds-8/artwork.png",
+      "sha256": "2e65f1ea83d2aac0125734e52bb034fa5af82494db8c461b1dd93e8bb4bd7f81"
+    },
+    {
+      "edition": "rain-glaze",
+      "path": "assets/art/rain-glaze/diamonds-9.png",
+      "source": "cards/rain-glaze/diamonds-9/artwork.png",
+      "sha256": "2a2b37ccf70b7efce475cc5bde051e17d7812524ee6c4d2da9441e9c5109a644"
+    },
+    {
+      "edition": "rain-glaze",
+      "path": "assets/art/rain-glaze/diamonds-10.png",
+      "source": "cards/rain-glaze/diamonds-10/artwork.png",
+      "sha256": "a35e96bb4d16228ad5d9d39503e71489dcf505d2eed271a10ac0cb2983e4bacd"
+    },
+    {
+      "edition": "rain-glaze",
+      "path": "assets/art/rain-glaze/diamonds-J.png",
+      "source": "cards/rain-glaze/diamonds-J/artwork.png",
+      "sha256": "9e044c24fa9234fc3b3b21acec3a1bdcebdf4d00c870f3cbfb7b82bbfce0c4ed"
+    },
+    {
+      "edition": "rain-glaze",
+      "path": "assets/art/rain-glaze/diamonds-Q.png",
+      "source": "cards/rain-glaze/diamonds-Q/artwork.png",
+      "sha256": "8bb6d00a807f8e2cdcfc933b5d21e4b7253f033d0108a58f7a50dd531e9dd4a4"
+    },
+    {
+      "edition": "rain-glaze",
+      "path": "assets/art/rain-glaze/diamonds-K.png",
+      "source": "cards/rain-glaze/diamonds-K/artwork.png",
+      "sha256": "29bcb15e4f4f40d3ef3e268d54918aefb2e97cb608b00d6b6a113329c35ef201"
+    },
+    {
+      "edition": "rain-glaze",
+      "path": "assets/art/rain-glaze/clubs-A.png",
+      "source": "cards/rain-glaze/clubs-A/artwork.png",
+      "sha256": "49e8ba0432c11144d9571077fb81cc77dc11e1329222ab4668a36f7570bc476c"
+    },
+    {
+      "edition": "rain-glaze",
+      "path": "assets/art/rain-glaze/clubs-2.png",
+      "source": "cards/rain-glaze/clubs-2/artwork.png",
+      "sha256": "7e58caf96726f1f22100c9709103d8b63266d5777fd3897e052600ddb0643d7d"
+    },
+    {
+      "edition": "rain-glaze",
+      "path": "assets/art/rain-glaze/clubs-3.png",
+      "source": "cards/rain-glaze/clubs-3/artwork.png",
+      "sha256": "367fd621e9f7681dd2114f6a6af710480cc0cf8f648c482ca2f2e93b5f36e4a6"
+    },
+    {
+      "edition": "rain-glaze",
+      "path": "assets/art/rain-glaze/clubs-4.png",
+      "source": "cards/rain-glaze/clubs-4/artwork.png",
+      "sha256": "a9462b53ec582040201d3e4b28fd07f4ffaae4034595a07d5eb761e721593960"
+    },
+    {
+      "edition": "rain-glaze",
+      "path": "assets/art/rain-glaze/clubs-5.png",
+      "source": "cards/rain-glaze/clubs-5/artwork.png",
+      "sha256": "4a2ebaabacf5bd5186ded18c4cdca57cf85ecdbda028cc0c3b4a934f83fb9039"
+    },
+    {
+      "edition": "rain-glaze",
+      "path": "assets/art/rain-glaze/clubs-6.png",
+      "source": "cards/rain-glaze/clubs-6/artwork.png",
+      "sha256": "42a5fea01fd2155f500c463c86592701916fc9f1413e6fefcf83dc0575198460"
+    },
+    {
+      "edition": "rain-glaze",
+      "path": "assets/art/rain-glaze/clubs-7.png",
+      "source": "cards/rain-glaze/clubs-7/artwork.png",
+      "sha256": "e0e2b8aec6c4a8285e6d5b9b769622d099a8083af7593a07a9c762afaa6ab7f7"
+    },
+    {
+      "edition": "rain-glaze",
+      "path": "assets/art/rain-glaze/clubs-8.png",
+      "source": "cards/rain-glaze/clubs-8/artwork.png",
+      "sha256": "9e0e36f3fbbd42f675958b234f8101b11a6deea26a6746ffc1fd4f0ab169034c"
+    },
+    {
+      "edition": "rain-glaze",
+      "path": "assets/art/rain-glaze/clubs-9.png",
+      "source": "cards/rain-glaze/clubs-9/artwork.png",
+      "sha256": "669e822039b7dd06db3b0396ed3eb7c2699f345d2c4b65a48cf531722b1e38a9"
+    },
+    {
+      "edition": "rain-glaze",
+      "path": "assets/art/rain-glaze/clubs-10.png",
+      "source": "cards/rain-glaze/clubs-10/artwork.png",
+      "sha256": "2537436f4e7edb84a0f7dafd1cfdecb2a1d52fdb74bcac978eb6797be16789bc"
+    },
+    {
+      "edition": "rain-glaze",
+      "path": "assets/art/rain-glaze/clubs-J.png",
+      "source": "cards/rain-glaze/clubs-J/artwork.png",
+      "sha256": "52ca2f1e97630944aec74e222184b02f353d40df9c44eec5066675f40e1cbb51"
+    },
+    {
+      "edition": "rain-glaze",
+      "path": "assets/art/rain-glaze/clubs-Q.png",
+      "source": "cards/rain-glaze/clubs-Q/artwork.png",
+      "sha256": "980753d4514e24a5778fccc78af36116320b28e7e7e4700b8e26db8204a2c018"
+    },
+    {
+      "edition": "rain-glaze",
+      "path": "assets/art/rain-glaze/clubs-K.png",
+      "source": "cards/rain-glaze/clubs-K/artwork.png",
+      "sha256": "0e426883310f69afe475d77303bd77e2a7ab285500f98ff702fd4fe4ddf90be0"
+    },
+    {
+      "edition": "rain-glaze",
+      "path": "assets/art/rain-glaze/spades-A.png",
+      "source": "cards/rain-glaze/spades-A/artwork.png",
+      "sha256": "fa58ecee8693258ea0e32e31602bb70897feeb628f8e808f472580248ac213c0"
+    },
+    {
+      "edition": "rain-glaze",
+      "path": "assets/art/rain-glaze/spades-2.png",
+      "source": "cards/rain-glaze/spades-2/artwork.png",
+      "sha256": "d9c88fee2810bfbdbe496216983722b6b4ef3e2c3f388f101a95c2210fb2eefd"
+    },
+    {
+      "edition": "rain-glaze",
+      "path": "assets/art/rain-glaze/spades-3.png",
+      "source": "cards/rain-glaze/spades-3/artwork.png",
+      "sha256": "9b8093e1249c7dd8d8a094e3c198cb735aade0cfe57fab3f66f25b9a78c893d3"
+    },
+    {
+      "edition": "rain-glaze",
+      "path": "assets/art/rain-glaze/spades-4.png",
+      "source": "cards/rain-glaze/spades-4/artwork.png",
+      "sha256": "83c5dce387084e7ad9abb02f9fd8a0262aeb54dcb63a041892f0608a2be41f71"
+    },
+    {
+      "edition": "rain-glaze",
+      "path": "assets/art/rain-glaze/spades-5.png",
+      "source": "cards/rain-glaze/spades-5/artwork.png",
+      "sha256": "50d187e1a38b18ad341aa0b9114bfcb78ca71b96dca1950f908af453b9d8197f"
+    },
+    {
+      "edition": "rain-glaze",
+      "path": "assets/art/rain-glaze/spades-6.png",
+      "source": "cards/rain-glaze/spades-6/artwork.png",
+      "sha256": "8521debbdc26205044419228794dcb1b0384b34319b601a628f1fc57c136ae3b"
+    },
+    {
+      "edition": "rain-glaze",
+      "path": "assets/art/rain-glaze/spades-7.png",
+      "source": "cards/rain-glaze/spades-7/artwork.png",
+      "sha256": "d993a6679e65fa4313cf174a8f891b291326c0570d163a83f90b0343344b4023"
+    },
+    {
+      "edition": "rain-glaze",
+      "path": "assets/art/rain-glaze/spades-8.png",
+      "source": "cards/rain-glaze/spades-8/artwork.png",
+      "sha256": "0bf4c07ce3b7c264bfb1b1ba5d77a16e9c0b7915f565558caec2dd4eedc28d42"
+    },
+    {
+      "edition": "rain-glaze",
+      "path": "assets/art/rain-glaze/spades-9.png",
+      "source": "cards/rain-glaze/spades-9/artwork.png",
+      "sha256": "21b865dc56a91ac965c22ff3ea54a719e6a04cc51fd98369f0f50a562981fa90"
+    },
+    {
+      "edition": "rain-glaze",
+      "path": "assets/art/rain-glaze/spades-10.png",
+      "source": "cards/rain-glaze/spades-10/artwork.png",
+      "sha256": "960ba27398ea45aa6722406f12d495491d6158b0d2a556bf21e6a64029587675"
+    },
+    {
+      "edition": "rain-glaze",
+      "path": "assets/art/rain-glaze/spades-J.png",
+      "source": "cards/rain-glaze/spades-J/artwork.png",
+      "sha256": "730a1a5c1886534678f0a79ee8eac2117062ae960e7bd560eb04de5f15001f5e"
+    },
+    {
+      "edition": "rain-glaze",
+      "path": "assets/art/rain-glaze/spades-Q.png",
+      "source": "cards/rain-glaze/spades-Q/artwork.png",
+      "sha256": "b8b607a5ca166488f4103fb1fe25e5a14d0f9e8bac40e33f83490536ada8a8d3"
+    },
+    {
+      "edition": "rain-glaze",
+      "path": "assets/art/rain-glaze/spades-K.png",
+      "source": "cards/rain-glaze/spades-K/artwork.png",
+      "sha256": "9c6ae9ec906c3c9dd24f8cf6b254cb41844acccf474f6234af4ff2c438d33e5e"
+    },
+    {
+      "edition": "drypoint",
+      "path": "assets/art/drypoint/hearts-A.png",
+      "source": "cards/drypoint/hearts-A/artwork.png",
+      "sha256": "bc797545fff09195deb84e41555ae5ba2eaf861068acf8bef68061f0087ee79d"
+    },
+    {
+      "edition": "drypoint",
+      "path": "assets/art/drypoint/hearts-2.png",
+      "source": "cards/drypoint/hearts-2/artwork.png",
+      "sha256": "b5a26a7c8e421b70efee0f4c3018825943feefac910d2444681d6452c7fbdd72"
+    },
+    {
+      "edition": "drypoint",
+      "path": "assets/art/drypoint/hearts-3.png",
+      "source": "cards/drypoint/hearts-3/artwork.png",
+      "sha256": "366553032feb35355c77a58bdcaca1c9efbf8c16346e8ceb63768b5ad5b68a49"
+    },
+    {
+      "edition": "drypoint",
+      "path": "assets/art/drypoint/hearts-4.png",
+      "source": "cards/drypoint/hearts-4/artwork.png",
+      "sha256": "a522a25deea65a0de436322902c3fe73e721ff4fb98f4f3e92ba31c670bef216"
+    },
+    {
+      "edition": "drypoint",
+      "path": "assets/art/drypoint/hearts-5.png",
+      "source": "cards/drypoint/hearts-5/artwork.png",
+      "sha256": "a3c03a34186d211445872dd0e657ad47c3cb8520982a9f4c145159fcde295f6c"
+    },
+    {
+      "edition": "drypoint",
+      "path": "assets/art/drypoint/hearts-6.png",
+      "source": "cards/drypoint/hearts-6/artwork.png",
+      "sha256": "961830363326012d00377a8d883bd8672da989884c9d0a022ce06ed38458fa82"
+    },
+    {
+      "edition": "drypoint",
+      "path": "assets/art/drypoint/hearts-7.png",
+      "source": "cards/drypoint/hearts-7/artwork.png",
+      "sha256": "cdc07fb05670d8a003dc5c29a0a24cc9d70d8e411e5bcbfb2d5c87efee1e766e"
+    },
+    {
+      "edition": "drypoint",
+      "path": "assets/art/drypoint/hearts-8.png",
+      "source": "cards/drypoint/hearts-8/artwork.png",
+      "sha256": "9ebc7ed64b99d17b40f653f9c44ff1007c061ac62d1ad08dfedda3f28894ab43"
+    },
+    {
+      "edition": "drypoint",
+      "path": "assets/art/drypoint/hearts-9.png",
+      "source": "cards/drypoint/hearts-9/artwork.png",
+      "sha256": "67f6a401a9d8f05decfa0400dc2763848f276991b0bccd77abae270eac39f3fd"
+    },
+    {
+      "edition": "drypoint",
+      "path": "assets/art/drypoint/hearts-10.png",
+      "source": "cards/drypoint/hearts-10/artwork.png",
+      "sha256": "b6abfb192a128b71ccc5500c1465a692cdda7f3ad85013b0ed1bfe2a99f63da1"
+    },
+    {
+      "edition": "drypoint",
+      "path": "assets/art/drypoint/hearts-J.png",
+      "source": "cards/drypoint/hearts-J/artwork.png",
+      "sha256": "ef67e6c94f5ceb9c04037dfd08b0e08831e41157add9ad80a659ce47a4a4b846"
+    },
+    {
+      "edition": "drypoint",
+      "path": "assets/art/drypoint/hearts-Q.png",
+      "source": "cards/drypoint/hearts-Q/artwork.png",
+      "sha256": "8c578c2d18f81bf67ea34a0d12bf91070966189d5126a81360d0c517a33aba66"
+    },
+    {
+      "edition": "drypoint",
+      "path": "assets/art/drypoint/hearts-K.png",
+      "source": "cards/drypoint/hearts-K/artwork.png",
+      "sha256": "d74ea1829f91d19388b97ccf3c15e802bc1ef41c4ca422b54999c97a9cd068d8"
+    },
+    {
+      "edition": "drypoint",
+      "path": "assets/art/drypoint/diamonds-A.png",
+      "source": "cards/drypoint/diamonds-A/artwork.png",
+      "sha256": "952e0717fa7531ac5253f49a581f2ea4683250c99cfcfab5732d6346f21eb388"
+    },
+    {
+      "edition": "drypoint",
+      "path": "assets/art/drypoint/diamonds-2.png",
+      "source": "cards/drypoint/diamonds-2/artwork.png",
+      "sha256": "13fa7e9a73793eee00367a41dfd9067f501b71585a67bf8bce71aa031c2141ba"
+    },
+    {
+      "edition": "drypoint",
+      "path": "assets/art/drypoint/diamonds-3.png",
+      "source": "cards/drypoint/diamonds-3/artwork.png",
+      "sha256": "53f8fa1d3f8eed18a211781dc7d656e77dce8481121f3d64c1979fb501e4f5a9"
+    },
+    {
+      "edition": "drypoint",
+      "path": "assets/art/drypoint/diamonds-4.png",
+      "source": "cards/drypoint/diamonds-4/artwork.png",
+      "sha256": "f10574f9910ed99036b4a8e7b3b8782d157d9e081cf6dfb9bf0d8dc87a7749e8"
+    },
+    {
+      "edition": "drypoint",
+      "path": "assets/art/drypoint/diamonds-5.png",
+      "source": "cards/drypoint/diamonds-5/artwork.png",
+      "sha256": "12ebb4f09c2fe8739aada48852ee752b95e85737368ca63981a220e5f5f44902"
+    },
+    {
+      "edition": "drypoint",
+      "path": "assets/art/drypoint/diamonds-6.png",
+      "source": "cards/drypoint/diamonds-6/artwork.png",
+      "sha256": "0cfbecd454df4b6816afc18c43d58e9aa465c8fd471ed2b21627384df22adf27"
+    },
+    {
+      "edition": "drypoint",
+      "path": "assets/art/drypoint/diamonds-7.png",
+      "source": "cards/drypoint/diamonds-7/artwork.png",
+      "sha256": "a1677a8ddbc1bfe48323ec7e450996c6821059a08b3280e18d99673cbe448024"
+    },
+    {
+      "edition": "drypoint",
+      "path": "assets/art/drypoint/diamonds-8.png",
+      "source": "cards/drypoint/diamonds-8/artwork.png",
+      "sha256": "81aa3f6a539f51a32b72573986e50afc35fb3a92f363df890dacd415348afc4a"
+    },
+    {
+      "edition": "drypoint",
+      "path": "assets/art/drypoint/diamonds-9.png",
+      "source": "cards/drypoint/diamonds-9/artwork.png",
+      "sha256": "33768365be5382e394802582a92afacfefd064b54f55526c6f84768694321df1"
+    },
+    {
+      "edition": "drypoint",
+      "path": "assets/art/drypoint/diamonds-10.png",
+      "source": "cards/drypoint/diamonds-10/artwork.png",
+      "sha256": "32b737c79040ae7a00a994210cb60a731e19ec2aee442291af6f424a9df29361"
+    },
+    {
+      "edition": "drypoint",
+      "path": "assets/art/drypoint/diamonds-J.png",
+      "source": "cards/drypoint/diamonds-J/artwork.png",
+      "sha256": "1055dcb287edf85425aaa2031f720fd3703055f8dca929a9e3eeacc4d0742c9e"
+    },
+    {
+      "edition": "drypoint",
+      "path": "assets/art/drypoint/diamonds-Q.png",
+      "source": "cards/drypoint/diamonds-Q/artwork.png",
+      "sha256": "fa658630e1724f3afe0d0815755c68dc2214858f6e94fd66daeb5d6217ce63b4"
+    },
+    {
+      "edition": "drypoint",
+      "path": "assets/art/drypoint/diamonds-K.png",
+      "source": "cards/drypoint/diamonds-K/artwork.png",
+      "sha256": "0451d8d9597234a9f9f92997e363e92e851710490a94d5a413f3094bad5ed725"
+    },
+    {
+      "edition": "drypoint",
+      "path": "assets/art/drypoint/clubs-A.png",
+      "source": "cards/drypoint/clubs-A/artwork.png",
+      "sha256": "50b177dcb1604fe9952e4677481439ed4a1e3c223750cba9b5bce939cd7da456"
+    },
+    {
+      "edition": "drypoint",
+      "path": "assets/art/drypoint/clubs-2.png",
+      "source": "cards/drypoint/clubs-2/artwork.png",
+      "sha256": "ac1bc74b7f90dbc5cec0783fe6b6e888fcc059e352694cb8d4766cd3ca1febf4"
+    },
+    {
+      "edition": "drypoint",
+      "path": "assets/art/drypoint/clubs-3.png",
+      "source": "cards/drypoint/clubs-3/artwork.png",
+      "sha256": "fe6eeefc59ee3c692145f9e7235b17cb2d4ccc2d14a0fdc9706189a9ba33fcc2"
+    },
+    {
+      "edition": "drypoint",
+      "path": "assets/art/drypoint/clubs-4.png",
+      "source": "cards/drypoint/clubs-4/artwork.png",
+      "sha256": "7884c7bffc60c0e679e1a31df98b0bdbb33d93dfbb66a184f99c8aa00e024195"
+    },
+    {
+      "edition": "drypoint",
+      "path": "assets/art/drypoint/clubs-5.png",
+      "source": "cards/drypoint/clubs-5/artwork.png",
+      "sha256": "5ad05d09a5274525582fa9a80ee0995fd74735b82d14461fba94c5c1b0111598"
+    },
+    {
+      "edition": "drypoint",
+      "path": "assets/art/drypoint/clubs-6.png",
+      "source": "cards/drypoint/clubs-6/artwork.png",
+      "sha256": "d0425edf11e4fab1d2baa9400ff00ecc527c7bccd496dba12825b845a4163ea5"
+    },
+    {
+      "edition": "drypoint",
+      "path": "assets/art/drypoint/clubs-7.png",
+      "source": "cards/drypoint/clubs-7/artwork.png",
+      "sha256": "7aac55e081dad5be082720edcab88e994c5083874dadcb91de7b80dca54857a5"
+    },
+    {
+      "edition": "drypoint",
+      "path": "assets/art/drypoint/clubs-8.png",
+      "source": "cards/drypoint/clubs-8/artwork.png",
+      "sha256": "bf9bb3c4d0d3060d7c8be1b12d1879bdfd6a66bd0b32450ac25a421359cb4743"
+    },
+    {
+      "edition": "drypoint",
+      "path": "assets/art/drypoint/clubs-9.png",
+      "source": "cards/drypoint/clubs-9/artwork.png",
+      "sha256": "36118c94120a6879184b73742f31fd4e65bc3c4125774f2f2e07161685354e25"
+    },
+    {
+      "edition": "drypoint",
+      "path": "assets/art/drypoint/clubs-10.png",
+      "source": "cards/drypoint/clubs-10/artwork.png",
+      "sha256": "fe5eab4dfa982bbd5f64dd3eea7ee089c78502c5a2e7e58cacbc7cf4e5f4945a"
+    },
+    {
+      "edition": "drypoint",
+      "path": "assets/art/drypoint/clubs-J.png",
+      "source": "cards/drypoint/clubs-J/artwork.png",
+      "sha256": "5c9d055e4b32e075c9e804b3d3a24258c1f518d6ae152aae6f5951052127de74"
+    },
+    {
+      "edition": "drypoint",
+      "path": "assets/art/drypoint/clubs-Q.png",
+      "source": "cards/drypoint/clubs-Q/artwork.png",
+      "sha256": "b5d725ed8708e60fc354dc9f3390d260e8590988b49c8cf6bf05dbc3a84be8a0"
+    },
+    {
+      "edition": "drypoint",
+      "path": "assets/art/drypoint/clubs-K.png",
+      "source": "cards/drypoint/clubs-K/artwork.png",
+      "sha256": "6c977c5e0d66505d73a1d24893f9420d887431f97df05b10b3e7c8ba87fa4f89"
+    },
+    {
+      "edition": "drypoint",
+      "path": "assets/art/drypoint/spades-A.png",
+      "source": "cards/drypoint/spades-A/artwork.png",
+      "sha256": "893c82c29200a7072a22cdfe3969ab145ee4763c4a13604ca484432f412b36cc"
+    },
+    {
+      "edition": "drypoint",
+      "path": "assets/art/drypoint/spades-2.png",
+      "source": "cards/drypoint/spades-2/artwork.png",
+      "sha256": "da1f27188869f9f7af4b3a77581ed9e3c95a99d0d9ea8eaaba34ede2bc7c1a69"
+    },
+    {
+      "edition": "drypoint",
+      "path": "assets/art/drypoint/spades-3.png",
+      "source": "cards/drypoint/spades-3/artwork.png",
+      "sha256": "38ae0d7c3602ec438d416bb3c753fe9c8d142127c12be0f6edb64a1a0de8472b"
+    },
+    {
+      "edition": "drypoint",
+      "path": "assets/art/drypoint/spades-4.png",
+      "source": "cards/drypoint/spades-4/artwork.png",
+      "sha256": "8f4c05b3dbbb1a9cfcede0cfa4a02fca77d98df3ce3df3efbc5577bb846e57fb"
+    },
+    {
+      "edition": "drypoint",
+      "path": "assets/art/drypoint/spades-5.png",
+      "source": "cards/drypoint/spades-5/artwork.png",
+      "sha256": "4d726ca872172fbca12012a857cbc70950adec20280b48ccc2c731e2c054dde1"
+    },
+    {
+      "edition": "drypoint",
+      "path": "assets/art/drypoint/spades-6.png",
+      "source": "cards/drypoint/spades-6/artwork.png",
+      "sha256": "817e107e6353cfbbb1b33fd70c7a39b88d1be88d981a0e2579cc8d41aa1c7b8e"
+    },
+    {
+      "edition": "drypoint",
+      "path": "assets/art/drypoint/spades-7.png",
+      "source": "cards/drypoint/spades-7/artwork.png",
+      "sha256": "eacb4ce1d4130900d0645f470afc225119743a0fca8a56b6997e88a6d0b50195"
+    },
+    {
+      "edition": "drypoint",
+      "path": "assets/art/drypoint/spades-8.png",
+      "source": "cards/drypoint/spades-8/artwork.png",
+      "sha256": "e51db77e7c7b8579bd234c9f38c288c5626b73cf7110dffcdf996161b12ba566"
+    },
+    {
+      "edition": "drypoint",
+      "path": "assets/art/drypoint/spades-9.png",
+      "source": "cards/drypoint/spades-9/artwork.png",
+      "sha256": "6daaee85e1861d1f360cbe592ad81cf21be7c4137106de5aa05707592daad22e"
+    },
+    {
+      "edition": "drypoint",
+      "path": "assets/art/drypoint/spades-10.png",
+      "source": "cards/drypoint/spades-10/artwork.png",
+      "sha256": "6725a9e3135209f34e7b3cf8f6bca2fb590ad2381f129402e51b4df78071dd0e"
+    },
+    {
+      "edition": "drypoint",
+      "path": "assets/art/drypoint/spades-J.png",
+      "source": "cards/drypoint/spades-J/artwork.png",
+      "sha256": "606474cb67a04d5ec31c66e4b9de819bac2695301231b531868cf90b732a6063"
+    },
+    {
+      "edition": "drypoint",
+      "path": "assets/art/drypoint/spades-Q.png",
+      "source": "cards/drypoint/spades-Q/artwork.png",
+      "sha256": "e9605bdd09b5ed183efa3b764c7f3449e0cd0e0b1ad409d0e92b3f7678066acc"
+    },
+    {
+      "edition": "drypoint",
+      "path": "assets/art/drypoint/spades-K.png",
+      "source": "cards/drypoint/spades-K/artwork.png",
+      "sha256": "511cd6d340d4e634fdbe3ac9d1e8576ff513f5ac07394899baf3ea64437ce1bd"
+    }
+  ],
+  "back": {
+    "path": "assets/back.png",
+    "source": "shared/back.png",
+    "sha256": "2ab9e73b400dbf28c6d959073bc27bb779f78ea353ac255ccf19f8a402f31565"
+  },
+  "approval": "Owner-authorized shared match styles, 2026-10-01; source generation provenance and rights status unchanged"
+}

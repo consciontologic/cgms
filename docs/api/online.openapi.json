@@ -1,0 +1,3489 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "CGMS online authority",
+    "version": "1.0.0",
+    "description": "Internal v1 contract. JSON requests are bounded to16KiB. Browser cookies require configured Origin and X-CSRF-Token on mutations. Bearer credentials cannot be combined with cookies. Command retries retain exactly the same body and immutable game ID. A named award-occurrence condition is required on promise-offer. purchase uses positive quantity and authorized payment handles. Actor, random words and scheduler budgets are never wire fields."
+  },
+  "paths": {
+    "/v1/guests": {
+      "post": {
+        "responses": {
+          "200": {
+            "description": "Authorized result"
+          },
+          "400": {
+            "description": "Malformed or invalid input",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Invalid or expired session"
+          },
+          "403": {
+            "description": "Unauthorized membership, origin or CSRF"
+          },
+          "409": {
+            "description": "Conflict or cursor requires resnapshot"
+          },
+          "429": {
+            "description": "Explicit bounded overload"
+          },
+          "503": {
+            "description": "Unavailable or outcome unknown; reconcile original identity"
+          }
+        }
+      }
+    },
+    "/v1/register": {
+      "post": {
+        "responses": {
+          "200": {
+            "description": "Authorized result"
+          },
+          "400": {
+            "description": "Malformed or invalid input",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Invalid or expired session"
+          },
+          "403": {
+            "description": "Unauthorized membership, origin or CSRF"
+          },
+          "409": {
+            "description": "Conflict or cursor requires resnapshot"
+          },
+          "429": {
+            "description": "Explicit bounded overload"
+          },
+          "503": {
+            "description": "Unavailable or outcome unknown; reconcile original identity"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Credentials"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/login": {
+      "post": {
+        "responses": {
+          "200": {
+            "description": "Authorized result"
+          },
+          "400": {
+            "description": "Malformed or invalid input",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Invalid or expired session"
+          },
+          "403": {
+            "description": "Unauthorized membership, origin or CSRF"
+          },
+          "409": {
+            "description": "Conflict or cursor requires resnapshot"
+          },
+          "429": {
+            "description": "Explicit bounded overload"
+          },
+          "503": {
+            "description": "Unavailable or outcome unknown; reconcile original identity"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Credentials"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/upgrade": {
+      "post": {
+        "responses": {
+          "200": {
+            "description": "Authorized result"
+          },
+          "400": {
+            "description": "Malformed or invalid input",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Invalid or expired session"
+          },
+          "403": {
+            "description": "Unauthorized membership, origin or CSRF"
+          },
+          "409": {
+            "description": "Conflict or cursor requires resnapshot"
+          },
+          "429": {
+            "description": "Explicit bounded overload"
+          },
+          "503": {
+            "description": "Unavailable or outcome unknown; reconcile original identity"
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          },
+          {
+            "cookie": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Credentials"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/logout": {
+      "post": {
+        "responses": {
+          "200": {
+            "description": "Authorized result"
+          },
+          "400": {
+            "description": "Malformed or invalid input",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Invalid or expired session"
+          },
+          "403": {
+            "description": "Unauthorized membership, origin or CSRF"
+          },
+          "409": {
+            "description": "Conflict or cursor requires resnapshot"
+          },
+          "429": {
+            "description": "Explicit bounded overload"
+          },
+          "503": {
+            "description": "Unavailable or outcome unknown; reconcile original identity"
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          },
+          {
+            "cookie": []
+          }
+        ]
+      }
+    },
+    "/v1/account": {
+      "delete": {
+        "responses": {
+          "200": {
+            "description": "Authorized result"
+          },
+          "400": {
+            "description": "Malformed or invalid input",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Invalid or expired session"
+          },
+          "403": {
+            "description": "Unauthorized membership, origin or CSRF"
+          },
+          "409": {
+            "description": "Conflict or cursor requires resnapshot"
+          },
+          "429": {
+            "description": "Explicit bounded overload"
+          },
+          "503": {
+            "description": "Unavailable or outcome unknown; reconcile original identity"
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          },
+          {
+            "cookie": []
+          }
+        ]
+      }
+    },
+    "/v1/rooms": {
+      "post": {
+        "responses": {
+          "200": {
+            "description": "Authorized result"
+          },
+          "400": {
+            "description": "Malformed or invalid input",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Invalid or expired session"
+          },
+          "403": {
+            "description": "Unauthorized membership, origin or CSRF"
+          },
+          "409": {
+            "description": "Conflict or cursor requires resnapshot"
+          },
+          "429": {
+            "description": "Explicit bounded overload"
+          },
+          "503": {
+            "description": "Unavailable or outcome unknown; reconcile original identity"
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          },
+          {
+            "cookie": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RoomCreate"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/rooms/{room}": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Authorized result"
+          },
+          "400": {
+            "description": "Malformed or invalid input",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Invalid or expired session"
+          },
+          "403": {
+            "description": "Unauthorized membership, origin or CSRF"
+          },
+          "409": {
+            "description": "Conflict or cursor requires resnapshot"
+          },
+          "429": {
+            "description": "Explicit bounded overload"
+          },
+          "503": {
+            "description": "Unavailable or outcome unknown; reconcile original identity"
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          },
+          {
+            "cookie": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "room",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/v1/rooms/{room}/invitations": {
+      "post": {
+        "responses": {
+          "200": {
+            "description": "Authorized result"
+          },
+          "400": {
+            "description": "Malformed or invalid input",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Invalid or expired session"
+          },
+          "403": {
+            "description": "Unauthorized membership, origin or CSRF"
+          },
+          "409": {
+            "description": "Conflict or cursor requires resnapshot"
+          },
+          "429": {
+            "description": "Explicit bounded overload"
+          },
+          "503": {
+            "description": "Unavailable or outcome unknown; reconcile original identity"
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          },
+          {
+            "cookie": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "room",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/v1/rooms/{room}/join": {
+      "post": {
+        "responses": {
+          "200": {
+            "description": "Authorized result"
+          },
+          "400": {
+            "description": "Malformed or invalid input",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Invalid or expired session"
+          },
+          "403": {
+            "description": "Unauthorized membership, origin or CSRF"
+          },
+          "409": {
+            "description": "Conflict or cursor requires resnapshot"
+          },
+          "429": {
+            "description": "Explicit bounded overload"
+          },
+          "503": {
+            "description": "Unavailable or outcome unknown; reconcile original identity"
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          },
+          {
+            "cookie": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "room",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RoomJoin"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/rooms/{room}/matches": {
+      "post": {
+        "responses": {
+          "200": {
+            "description": "Authorized result"
+          },
+          "400": {
+            "description": "Malformed or invalid input",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Invalid or expired session"
+          },
+          "403": {
+            "description": "Unauthorized membership, origin or CSRF"
+          },
+          "409": {
+            "description": "Conflict or cursor requires resnapshot"
+          },
+          "429": {
+            "description": "Explicit bounded overload"
+          },
+          "503": {
+            "description": "Unavailable or outcome unknown; reconcile original identity"
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          },
+          {
+            "cookie": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "room",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RoomStart"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/matches/{match}": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Authorized result",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SeatView"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Malformed or invalid input",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Invalid or expired session"
+          },
+          "403": {
+            "description": "Unauthorized membership, origin or CSRF"
+          },
+          "409": {
+            "description": "Conflict or cursor requires resnapshot"
+          },
+          "429": {
+            "description": "Explicit bounded overload"
+          },
+          "503": {
+            "description": "Unavailable or outcome unknown; reconcile original identity"
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          },
+          {
+            "cookie": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "match",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/v1/matches/{match}/commands": {
+      "post": {
+        "responses": {
+          "200": {
+            "description": "Authorized result",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CommandResult"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Malformed or invalid input",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Invalid or expired session"
+          },
+          "403": {
+            "description": "Unauthorized membership, origin or CSRF"
+          },
+          "409": {
+            "description": "Conflict or cursor requires resnapshot"
+          },
+          "429": {
+            "description": "Explicit bounded overload"
+          },
+          "503": {
+            "description": "Unavailable or outcome unknown; reconcile original identity"
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          },
+          {
+            "cookie": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "match",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Command"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/matches/{match}/commands/{command}": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Authorized result",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CommandResult"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Malformed or invalid input",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Invalid or expired session"
+          },
+          "403": {
+            "description": "Unauthorized membership, origin or CSRF"
+          },
+          "409": {
+            "description": "Conflict or cursor requires resnapshot"
+          },
+          "429": {
+            "description": "Explicit bounded overload"
+          },
+          "503": {
+            "description": "Unavailable or outcome unknown; reconcile original identity"
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          },
+          {
+            "cookie": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "match",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "command",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/v1/matches/{match}/events": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Authorized result"
+          },
+          "400": {
+            "description": "Malformed or invalid input",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Invalid or expired session"
+          },
+          "403": {
+            "description": "Unauthorized membership, origin or CSRF"
+          },
+          "409": {
+            "description": "Conflict or cursor requires resnapshot"
+          },
+          "429": {
+            "description": "Explicit bounded overload"
+          },
+          "503": {
+            "description": "Unavailable or outcome unknown; reconcile original identity"
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          },
+          {
+            "cookie": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "match",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "after",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        ]
+      }
+    },
+    "/v1/matches/{match}/stream": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Authorized result"
+          },
+          "400": {
+            "description": "Malformed or invalid input",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Invalid or expired session"
+          },
+          "403": {
+            "description": "Unauthorized membership, origin or CSRF"
+          },
+          "409": {
+            "description": "Conflict or cursor requires resnapshot"
+          },
+          "429": {
+            "description": "Explicit bounded overload"
+          },
+          "503": {
+            "description": "Unavailable or outcome unknown; reconcile original identity"
+          },
+          "101": {
+            "description": "WebSocket established"
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          },
+          {
+            "cookie": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "match",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "after",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        ],
+        "description": "Authenticated WebSocket upgrade. Each text message is StreamEvent; replay then live committed cursors. Reconnect with last applied cursor. Duplicate cursors are ignored; expired cursors require a new snapshot. Transport disconnection never submits a game action.",
+        "x-websocket-message": {
+          "$ref": "#/components/schemas/StreamEvent"
+        }
+      }
+    },
+    "/v1/economy": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Authenticated account or immutable pass receipt",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EconomyAccount"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Malformed request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Authentication required",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Origin, CSRF or account rejected",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "Economy disabled, insufficient dirt or immutable operation conflict",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "Bounded admission overloaded",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Unavailable or outcome unknown; retain operation identity",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          },
+          {
+            "cookie": []
+          }
+        ]
+      }
+    },
+    "/v1/economy/passes": {
+      "post": {
+        "responses": {
+          "200": {
+            "description": "Authenticated account or immutable pass receipt",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PassReceipt"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Malformed request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Authentication required",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Origin, CSRF or account rejected",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "Economy disabled, insufficient dirt, retired product unavailable or immutable operation conflict",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "Bounded admission overloaded",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Unavailable or outcome unknown; retain operation identity",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          },
+          {
+            "cookie": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PassPurchase"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/economy/passes/{operation}": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Authenticated account or immutable pass receipt",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PassReceipt"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Malformed request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Authentication required",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Origin, CSRF or account rejected",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "Economy disabled, insufficient dirt, retired product unavailable or immutable operation conflict",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "Bounded admission overloaded",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Unavailable or outcome unknown; retain operation identity",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Receipt absent; absence does not disprove an in-flight commit",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          },
+          {
+            "cookie": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "operation",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 256
+            }
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "bearer": {
+        "type": "http",
+        "scheme": "bearer"
+      },
+      "cookie": {
+        "type": "apiKey",
+        "in": "cookie",
+        "name": "cgms_session"
+      }
+    },
+    "schemas": {
+      "Amount": {
+        "type": "object",
+        "properties": {
+          "numerator": {
+            "type": "string",
+            "pattern": "^-?(0|[1-9][0-9]*)$"
+          },
+          "denominator": {
+            "type": "string",
+            "pattern": "^[1-9][0-9]*$"
+          }
+        },
+        "required": [
+          "numerator",
+          "denominator"
+        ],
+        "additionalProperties": false
+      },
+      "Condition": {
+        "type": "object",
+        "properties": {
+          "kind": {
+            "const": "award-occurrence"
+          },
+          "game_id": {
+            "type": "string"
+          },
+          "award_id": {
+            "type": "string"
+          },
+          "payer": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 4
+          }
+        },
+        "required": [
+          "kind",
+          "game_id",
+          "award_id",
+          "payer"
+        ],
+        "additionalProperties": false
+      },
+      "ProposalTerms": {
+        "type": "object",
+        "properties": {
+          "to": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 4
+          },
+          "give": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CardHandle"
+            }
+          },
+          "receive": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CardHandle"
+            }
+          },
+          "loan": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "to"
+        ],
+        "additionalProperties": false
+      },
+      "CardHandle": {
+        "type": "string",
+        "pattern": "^h_[A-Za-z0-9_-]{43}$",
+        "description": "Opaque actor/game/current-view capability. History handles preserve knowledge but cannot authorize current selection."
+      },
+      "OwnBindingContext": {
+        "type": "object",
+        "description": "Fixed Doppelganger role for currently controlled own kings only. A separated partner is omitted, so one king may be present. This context is not a formation command and cannot authorize changing the pair or slot.",
+        "properties": {
+          "kings": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 2,
+            "uniqueItems": true,
+            "items": {"$ref": "#/components/schemas/CardHandle"}
+          },
+          "slot": {
+            "type": "object",
+            "properties": {
+              "rank": {"type": "integer", "minimum": 11, "maximum": 13},
+              "suit": {"enum": ["hearts", "diamonds", "clubs", "spades"]}
+            },
+            "required": ["rank", "suit"],
+            "additionalProperties": false
+          }
+        },
+        "required": ["kings", "slot"],
+        "additionalProperties": false
+      },
+      "Formation": {
+        "type": "object",
+        "properties": {
+          "kind": {
+            "type": "string"
+          },
+          "cards": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CardHandle"
+            }
+          },
+          "substitute": {
+            "type": "object",
+            "properties": {
+              "kings": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/CardHandle"
+                }
+              },
+              "slot": {
+                "type": "object",
+                "properties": {
+                  "rank": {
+                    "type": "integer"
+                  },
+                  "suit": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "rank",
+                  "suit"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "kings",
+              "slot"
+            ],
+            "additionalProperties": false
+          },
+          "protection": {
+            "type": "object",
+            "properties": {
+              "series": {
+                "type": "string"
+              },
+              "formation": {
+                "type": "string"
+              }
+            },
+            "required": [],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "kind",
+          "cards"
+        ],
+        "additionalProperties": false
+      },
+      "Command": {
+        "type": "object",
+        "properties": {
+          "command_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 256
+          },
+          "game_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "expected_version": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "end-turn",
+              "declare-ordinary",
+              "coup",
+              "departure-choice",
+              "finish-settlement",
+              "promise-offer",
+              "promise-accept",
+              "promise-final-offer",
+              "promise-final-answer",
+              "promise-pay",
+              "promise-refuse",
+              "voluntary-transfer",
+              "forgive",
+              "nullify",
+              "open-series",
+              "open-formation",
+              "take-back",
+              "attach",
+              "ringleader",
+              "richer-sacrifice",
+              "barricade-sacrifice",
+              "dexter-assassination",
+              "fate",
+              "code",
+              "compensation",
+              "main-inflation",
+              "kidnapper",
+              "kidnapper-outcome",
+              "offer",
+              "withdraw-offer",
+              "decline-offer",
+              "accept-offer",
+              "purchase",
+              "ponzi",
+              "attack",
+              "infiltrator-attack",
+              "baron-attack",
+              "bomb-attack",
+              "baron-bomb-attack",
+              "justice",
+              "decision-closed",
+              "pass",
+              "compensation-response",
+              "numerical-defense",
+              "advancement-defense",
+              "confinement",
+              "inflation",
+              "negotiate",
+              "decision",
+              "return-loan",
+              "expose-unused-ace"
+            ]
+          },
+          "payload": {
+            "$ref": "#/components/schemas/Payload"
+          }
+        },
+        "required": [
+          "command_id",
+          "game_id",
+          "expected_version",
+          "type",
+          "payload"
+        ],
+        "additionalProperties": false,
+        "oneOf": [
+          {
+            "properties": {
+              "type": {
+                "const": "end-turn"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {},
+                "additionalProperties": false
+              }
+            },
+            "x-allowed-phases": [
+              "playing"
+            ]
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "coup"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {},
+                "additionalProperties": false
+              }
+            },
+            "x-allowed-phases": [
+              "playing"
+            ]
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "nullify"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {},
+                "additionalProperties": false
+              }
+            },
+            "x-allowed-phases": [
+              "playing",
+              "board_closed_settlement"
+            ]
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "finish-settlement"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {},
+                "additionalProperties": false
+              }
+            },
+            "x-allowed-phases": [
+              "board_closed_settlement"
+            ]
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "declare-ordinary"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {
+                  "threshold": {
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "x-allowed-phases": [
+              "playing"
+            ]
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "departure-choice"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {
+                  "accept": {
+                    "type": "boolean"
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "x-allowed-phases": [
+              "playing"
+            ]
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "promise-offer"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {
+                  "promise_id": {
+                    "type": "string"
+                  },
+                  "recipient": {
+                    "type": "integer"
+                  },
+                  "award_id": {
+                    "type": "string"
+                  },
+                  "mode": {
+                    "type": "string"
+                  },
+                  "amount": {
+                    "$ref": "#/components/schemas/Amount"
+                  },
+                  "condition": {
+                    "$ref": "#/components/schemas/Condition"
+                  }
+                },
+                "additionalProperties": false,
+                "required": [
+                  "condition",
+                  "promise_id",
+                  "recipient",
+                  "award_id",
+                  "mode",
+                  "amount"
+                ]
+              }
+            },
+            "x-allowed-phases": [
+              "playing"
+            ]
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "promise-accept"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {
+                  "promise_id": {
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "x-allowed-phases": [
+              "playing"
+            ]
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "promise-final-offer"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {
+                  "promise_id": {
+                    "type": "string"
+                  },
+                  "amount": {
+                    "$ref": "#/components/schemas/Amount"
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "x-allowed-phases": [
+              "playing",
+              "board_closed_settlement"
+            ]
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "promise-final-answer"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {
+                  "promise_id": {
+                    "type": "string"
+                  },
+                  "accept": {
+                    "type": "boolean"
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "x-allowed-phases": [
+              "playing",
+              "board_closed_settlement"
+            ]
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "promise-pay"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {
+                  "promise_id": {
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "x-allowed-phases": [
+              "playing",
+              "board_closed_settlement"
+            ]
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "promise-refuse"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {
+                  "promise_id": {
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "x-allowed-phases": [
+              "playing",
+              "board_closed_settlement"
+            ]
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "voluntary-transfer"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {
+                  "recipient": {
+                    "type": "integer"
+                  },
+                  "amount": {
+                    "$ref": "#/components/schemas/Amount"
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "x-allowed-phases": [
+              "playing",
+              "board_closed_settlement"
+            ]
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "forgive"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {
+                  "debt_id": {
+                    "type": "string"
+                  },
+                  "amount": {
+                    "$ref": "#/components/schemas/Amount"
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "x-allowed-phases": [
+              "playing",
+              "board_closed_settlement"
+            ]
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "open-series"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {
+                  "suit": {
+                    "type": "string"
+                  },
+                  "selection": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "x-allowed-phases": [
+              "playing"
+            ]
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "open-formation"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {
+                  "formation": {
+                    "$ref": "#/components/schemas/Formation"
+                  },
+                  "formation_id": {
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "x-allowed-phases": [
+              "playing"
+            ]
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "take-back"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {
+                  "selection": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "formation_id": {
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "x-allowed-phases": [
+              "playing"
+            ]
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "attach"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {
+                  "selection": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "suit": {
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "x-allowed-phases": [
+              "playing"
+            ]
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "ringleader"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {
+                  "selection": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "ace": {
+                    "type": "string"
+                  },
+                  "value": {
+                    "type": "integer"
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "x-allowed-phases": [
+              "playing"
+            ]
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "richer-sacrifice"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {
+                  "selection": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "x-allowed-phases": [
+              "playing"
+            ]
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "barricade-sacrifice"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {
+                  "selection": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "x-allowed-phases": [
+              "playing"
+            ]
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "dexter-assassination"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {
+                  "selection": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "targets": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "x-allowed-phases": [
+              "playing"
+            ]
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "fate"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {
+                  "selection": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "target_seat": {
+                    "type": "integer"
+                  },
+                  "formation_id": {
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "x-allowed-phases": [
+              "playing"
+            ]
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "code"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {
+                  "formation_id": {
+                    "type": "string"
+                  },
+                  "value": {
+                    "type": "integer"
+                  },
+                  "price": {
+                    "type": "integer"
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "x-allowed-phases": [
+              "playing"
+            ]
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "compensation"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {
+                  "ace": {
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "x-allowed-phases": [
+              "playing"
+            ]
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "main-inflation"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {
+                  "ace": {
+                    "type": "string"
+                  },
+                  "target_seat": {
+                    "type": "integer"
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "x-allowed-phases": [
+              "playing"
+            ]
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "kidnapper"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {
+                  "formation_id": {
+                    "type": "string"
+                  },
+                  "target_seat": {
+                    "type": "integer"
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "x-allowed-phases": [
+              "playing"
+            ]
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "kidnapper-outcome"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {
+                  "selection": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "pending_action_id": {
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "x-allowed-phases": [
+              "playing"
+            ]
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "offer"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {
+                  "offer_id": {
+                    "type": "string"
+                  },
+                  "revision": {
+                    "type": "integer"
+                  },
+                  "terms": {
+                    "$ref": "#/components/schemas/ProposalTerms"
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "x-allowed-phases": [
+              "playing"
+            ]
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "withdraw-offer"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {
+                  "offer_id": {
+                    "type": "string"
+                  },
+                  "revision": {
+                    "type": "integer"
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "x-allowed-phases": [
+              "playing"
+            ]
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "decline-offer"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {
+                  "offer_id": {
+                    "type": "string"
+                  },
+                  "revision": {
+                    "type": "integer"
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "x-allowed-phases": [
+              "playing"
+            ]
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "accept-offer"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {
+                  "offer_id": {
+                    "type": "string"
+                  },
+                  "revision": {
+                    "type": "integer"
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "x-allowed-phases": [
+              "playing"
+            ]
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "purchase"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {
+                  "quantity": {
+                    "type": "integer",
+                    "minimum": 1
+                  },
+                  "payment": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                      "$ref": "#/components/schemas/CardHandle"
+                    }
+                  }
+                },
+                "additionalProperties": false,
+                "required": [
+                  "quantity",
+                  "payment"
+                ]
+              }
+            },
+            "x-allowed-phases": [
+              "playing"
+            ]
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "ponzi"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {
+                  "value": {
+                    "type": "integer"
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "x-allowed-phases": [
+              "playing"
+            ]
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "attack"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {
+                  "selection": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "targets": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "ace": {
+                    "type": "string"
+                  },
+                  "value": {
+                    "type": "integer"
+                  },
+                  "suit": {
+                    "type": "string"
+                  },
+                  "exile": {
+                    "type": "boolean"
+                  },
+                  "infiltrator": {
+                    "type": "boolean"
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "x-allowed-phases": [
+              "playing"
+            ]
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "infiltrator-attack"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {
+                  "selection": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "targets": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "ace": {
+                    "type": "string"
+                  },
+                  "value": {
+                    "type": "integer"
+                  },
+                  "suit": {
+                    "type": "string"
+                  },
+                  "exile": {
+                    "type": "boolean"
+                  },
+                  "infiltrator": {
+                    "type": "boolean"
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "x-allowed-phases": [
+              "playing"
+            ]
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "baron-attack"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {
+                  "selection": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "targets": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "ace": {
+                    "type": "string"
+                  },
+                  "value": {
+                    "type": "integer"
+                  },
+                  "suit": {
+                    "type": "string"
+                  },
+                  "exile": {
+                    "type": "boolean"
+                  },
+                  "infiltrator": {
+                    "type": "boolean"
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "x-allowed-phases": [
+              "playing"
+            ]
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "bomb-attack"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {
+                  "selection": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "targets": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "ace": {
+                    "type": "string"
+                  },
+                  "value": {
+                    "type": "integer"
+                  },
+                  "suit": {
+                    "type": "string"
+                  },
+                  "exile": {
+                    "type": "boolean"
+                  },
+                  "infiltrator": {
+                    "type": "boolean"
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "x-allowed-phases": [
+              "playing"
+            ]
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "baron-bomb-attack"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {
+                  "selection": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "targets": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "ace": {
+                    "type": "string"
+                  },
+                  "value": {
+                    "type": "integer"
+                  },
+                  "suit": {
+                    "type": "string"
+                  },
+                  "exile": {
+                    "type": "boolean"
+                  },
+                  "infiltrator": {
+                    "type": "boolean"
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "x-allowed-phases": [
+              "playing"
+            ]
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "justice"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {
+                  "ace": {
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "x-allowed-phases": [
+              "playing"
+            ]
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "decision-closed"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {
+                  "pending_action_id": {
+                    "type": "string"
+                  },
+                  "decision_id": {
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "x-allowed-phases": [
+              "playing"
+            ]
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "pass"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {
+                  "pending_action_id": {
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "x-allowed-phases": [
+              "playing"
+            ]
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "compensation-response"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {
+                  "pending_action_id": {
+                    "type": "string"
+                  },
+                  "ace": {
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "x-allowed-phases": [
+              "playing"
+            ]
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "numerical-defense"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {
+                  "pending_action_id": {
+                    "type": "string"
+                  },
+                  "ace": {
+                    "type": "string"
+                  },
+                  "value": {
+                    "type": "integer"
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "x-allowed-phases": [
+              "playing"
+            ]
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "advancement-defense"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {
+                  "pending_action_id": {
+                    "type": "string"
+                  },
+                  "ace": {
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "x-allowed-phases": [
+              "playing"
+            ]
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "confinement"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {
+                  "pending_action_id": {
+                    "type": "string"
+                  },
+                  "ace": {
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "x-allowed-phases": [
+              "playing"
+            ]
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "inflation"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {
+                  "pending_action_id": {
+                    "type": "string"
+                  },
+                  "ace": {
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "x-allowed-phases": [
+              "playing"
+            ]
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "negotiate"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {
+                  "pending_action_id": {
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "x-allowed-phases": [
+              "playing"
+            ]
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "decision"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {
+                  "pending_action_id": {
+                    "type": "string"
+                  },
+                  "decision_id": {
+                    "type": "string"
+                  },
+                  "selection": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "ace": {
+                    "type": "string"
+                  },
+                  "value": {
+                    "type": "integer"
+                  },
+                  "suit": {
+                    "type": "string"
+                  },
+                  "target_seat": {
+                    "type": "integer"
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "x-allowed-phases": [
+              "playing"
+            ]
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "return-loan"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {
+                  "selection": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "target_seat": {
+                    "type": "integer"
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "x-allowed-phases": [
+              "playing"
+            ]
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "expose-unused-ace"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {
+                  "ace": {
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "x-allowed-phases": [
+              "playing"
+            ]
+          }
+        ]
+      },
+      "Payload": {
+        "type": "object",
+        "properties": {
+          "pending_action_id": {
+            "type": "string"
+          },
+          "decision_id": {
+            "type": "string"
+          },
+          "selection": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "targets": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "ace": {
+            "type": "string"
+          },
+          "value": {
+            "type": "integer"
+          },
+          "quantity": {
+            "type": "integer"
+          },
+          "payment": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "suit": {
+            "type": "string"
+          },
+          "formation": {
+            "$ref": "#/components/schemas/Formation"
+          },
+          "formation_id": {
+            "type": "string"
+          },
+          "offer_id": {
+            "type": "string"
+          },
+          "revision": {
+            "type": "integer"
+          },
+          "terms": {
+            "$ref": "#/components/schemas/ProposalTerms"
+          },
+          "target_seat": {
+            "type": "integer"
+          },
+          "price": {
+            "type": "integer"
+          },
+          "exile": {
+            "type": "boolean"
+          },
+          "infiltrator": {
+            "type": "boolean"
+          },
+          "promise_id": {
+            "type": "string"
+          },
+          "recipient": {
+            "type": "integer"
+          },
+          "award_id": {
+            "type": "string"
+          },
+          "mode": {
+            "type": "string"
+          },
+          "amount": {
+            "$ref": "#/components/schemas/Amount"
+          },
+          "accept": {
+            "type": "boolean"
+          },
+          "debt_id": {
+            "type": "string"
+          },
+          "threshold": {
+            "type": "string"
+          },
+          "condition": {
+            "$ref": "#/components/schemas/Condition"
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "Credentials": {
+        "type": "object",
+        "properties": {
+          "username": {
+            "type": "string"
+          },
+          "password": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "username",
+          "password"
+        ],
+        "additionalProperties": false
+      },
+      "RoomCreate": {
+        "type": "object",
+        "properties": {
+          "command_id": {
+            "type": "string"
+          },
+          "capacity": {
+            "enum": [
+              3,
+              4
+            ]
+          },
+          "games_per_match": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 100,
+            "default": 3
+          },
+          "bot_difficulty": {
+            "enum": ["beginner", "standard", "advanced"],
+            "description": "Optional server-owned opponents for seats 2 through capacity; omitted creates the existing human room. The authenticated owner is seat 1 and explicitly starts the match."
+          }
+        },
+        "required": [
+          "command_id",
+          "capacity"
+        ],
+        "additionalProperties": false
+      },
+      "RoomJoin": {
+        "type": "object",
+        "properties": {
+          "invitation": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "invitation"
+        ],
+        "additionalProperties": false
+      },
+      "RoomStart": {
+        "type": "object",
+        "properties": {
+          "command_id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "command_id"
+        ],
+        "additionalProperties": false
+      },
+      "Error": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string"
+          },
+          "args": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          },
+          "request_id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "code",
+          "args",
+          "request_id"
+        ],
+        "additionalProperties": false
+      },
+      "SeatView": {
+        "type": "object",
+        "properties": {
+          "version": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "cursor": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "projection": {
+            "$ref": "#/components/schemas/Projection"
+          },
+          "admission_waiting": {
+            "type": "boolean",
+            "description": "Snapshot-only current admission wait; does not identify the ineligible seat or change the durable event cursor."
+          }
+        },
+        "required": [
+          "version",
+          "cursor",
+          "projection"
+        ],
+        "additionalProperties": false
+      },
+      "CommandResult": {
+        "type": "object",
+        "properties": {
+          "version": {
+            "type": "integer"
+          },
+          "game_id": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "projection": {
+            "$ref": "#/components/schemas/Projection"
+          }
+        },
+        "required": [
+          "version",
+          "game_id",
+          "status"
+        ],
+        "additionalProperties": false,
+        "description": "version is the committed event cursor; there is no separate cursor field in command results. Reconciliation returns this original result."
+      },
+      "StreamEvent": {
+        "type": "object",
+        "properties": {
+          "cursor": {
+            "type": "integer"
+          },
+          "data": {
+            "$ref": "#/components/schemas/SeatView"
+          }
+        },
+        "required": [
+          "cursor",
+          "data"
+        ],
+        "additionalProperties": false
+      },
+      "OnlineDetails": {
+        "type": "object",
+        "properties": {
+          "bot_seats": {
+            "type": "array",
+            "items": {"type": "integer", "minimum": 2, "maximum": 4},
+            "uniqueItems": true,
+            "description": "Public server-owned seat labels; omitted for a human-only match."
+          },
+          "bot_difficulty": {
+            "enum": ["beginner", "standard", "advanced"]
+          },
+          "round_closed": {
+            "type": "boolean"
+          },
+          "departure_pending": {
+            "type": "boolean",
+            "description": "This viewer must explicitly choose stay or leave at the round boundary; other participants' choices are not disclosed."
+          },
+          "games_per_match": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "completed_games": {
+            "type": "integer"
+          },
+          "financial_phase": {
+            "enum": [
+              "playing",
+              "settlement",
+              "finalized",
+              "void"
+            ]
+          },
+          "ending": {
+            "type": "string"
+          },
+          "declarer": {
+            "type": "integer"
+          },
+          "automatic_pending": {
+            "type": "boolean"
+          },
+          "server_pending": {
+            "type": "boolean",
+            "description": "A server-owned lifecycle transition is ready to run. Ordinary human commands wait while true; immediate Coup retains its authoritative timing exception. This derived flag does not replace automatic_pending."
+          },
+          "turn_started": {
+            "type": "boolean",
+            "description": "The server has completed this scheduled turn's automatic draw attempt after Confinement expiry. Only a contiguous live false-to-true boundary with an actual public hand or concealed-Ace count increment confirms a draw for presentation; exhaustion may produce no card. Absent on historical projections. Never a client command or a deck count."
+          },
+          "finished": {
+            "type": "boolean"
+          },
+          "decision_stage": {
+            "type": "string"
+          },
+          "draw_queue": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "seat": {
+                  "type": "integer"
+                },
+                "remaining": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "seat",
+                "remaining"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "alliances": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "integer"
+            }
+          },
+          "results": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "game_id": {
+                  "type": "string"
+                },
+                "scores": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Amount"
+                  }
+                }
+              },
+              "required": [
+                "game_id",
+                "scores"
+              ]
+            }
+          },
+          "own_match_score": {
+            "$ref": "#/components/schemas/Amount"
+          },
+          "ranks": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "type": "integer"
+            }
+          },
+          "reputation": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "corrections": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "description": "Own-debtor exact correction: operation/debt/charge/origin game identity, amount, and match-level flag."
+            }
+          },
+          "rules_context": {
+            "$ref": "#/components/schemas/RulesContext"
+          }
+        },
+        "required": [
+          "games_per_match",
+          "completed_games",
+          "financial_phase",
+          "automatic_pending",
+          "finished",
+          "alliances",
+          "own_match_score",
+          "rules_context"
+        ],
+        "additionalProperties": false
+      },
+      "Projection": {
+        "type": "object",
+        "properties": {
+          "online": {
+            "$ref": "#/components/schemas/OnlineDetails"
+          },
+          "board": {
+            "type": "object",
+            "description": "Authorized engine observation with opaque card IDs and public history handles; waiting actor/kind, authorized choices, public formations/effects, private own binding context, named-party loans/proposals. No raw state, global binding map, random seed or unselected hidden candidates.",
+            "properties": {
+              "own_bindings": {
+                "type": "array",
+                "items": {"$ref": "#/components/schemas/OwnBindingContext"},
+                "description": "Optional additive context, omitted with no current own binding or on older projections. Every king is already in this viewer's own authorized current cards; no concealed counterpart handle, face, location or binding identifier is disclosed. Present historical values remain exact during journal verification."
+              },
+              "players": {
+                "type": "array",
+                "minItems": 3,
+                "maxItems": 4,
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "seat": {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 4
+                    },
+                    "card_style": {
+                      "type": "string",
+                      "enum": [
+                        "first-light",
+                        "rain-glaze",
+                        "ember-glaze",
+                        "drypoint"
+                      ],
+                      "description": "Public match-long distinct seat assignment. Render authorized visible cards using current controller; never style concealed backs."
+                    }
+                  },
+                  "required": [
+                    "seat",
+                    "card_style"
+                  ]
+                }
+              }
+            }
+          },
+          "cash": {
+            "$ref": "#/components/schemas/Amount"
+          },
+          "score": {
+            "$ref": "#/components/schemas/Amount"
+          },
+          "debts": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "type": "object"
+            }
+          },
+          "promises": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "type": "object"
+            }
+          },
+          "known_faces": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "handle": {
+                  "$ref": "#/components/schemas/CardHandle"
+                },
+                "suit": {
+                  "type": "string"
+                },
+                "rank": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "handle",
+                "suit",
+                "rank"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "online",
+          "board",
+          "cash",
+          "score",
+          "debts",
+          "promises",
+          "known_faces"
+        ],
+        "additionalProperties": false
+      },
+      "CombatCalculation": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "actor": {
+            "type": "integer"
+          },
+          "defender": {
+            "type": "integer"
+          },
+          "attack_cards": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CardHandle"
+            },
+            "description": "Frozen attacking Club cards, using the viewer's current board card handles. Only already-public operands are included."
+          },
+          "target_cards": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CardHandle"
+            },
+            "description": "Frozen public target cards, using the viewer's current board card handles. No concealed identities or alternative choices are disclosed."
+          },
+          "attack_modifier": {
+            "type": "integer"
+          },
+          "defense_modifier": {
+            "type": "integer"
+          },
+          "physical_attack": {
+            "$ref": "#/components/schemas/Amount"
+          },
+          "attack": {
+            "$ref": "#/components/schemas/Amount"
+          },
+          "physical_defense": {
+            "$ref": "#/components/schemas/Amount"
+          },
+          "defense": {
+            "$ref": "#/components/schemas/Amount"
+          },
+          "comparison": {
+            "type": "string",
+            "enum": [
+              "equal",
+              "greater",
+              "at_least"
+            ]
+          }
+        },
+        "required": [
+          "actor",
+          "defender",
+          "physical_attack",
+          "attack_modifier",
+          "attack",
+          "physical_defense",
+          "defense_modifier",
+          "defense",
+          "comparison"
+        ]
+      },
+      "RulesContext": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "opening_used": {
+            "type": "boolean"
+          },
+          "ace_used_this_round": {
+            "type": "boolean"
+          },
+          "compensation_used": {
+            "type": "boolean"
+          },
+          "underground": {
+            "type": "boolean"
+          },
+          "inflation": {
+            "type": "boolean"
+          },
+          "quotas": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "additionalProperties": {
+              "type": "integer"
+            }
+          },
+          "purchase_unit_price": {
+            "type": "integer"
+          },
+          "combat": {
+            "$ref": "#/components/schemas/CombatCalculation"
+          },
+          "pending": {
+            "$ref": "#/components/schemas/PendingContext"
+          },
+          "quota_used": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "boolean"
+            },
+            "description": "Own ability quota consumption for its current round, own-turn cycle or game interval; false does not establish full action legality."
+          }
+        },
+        "required": [
+          "opening_used",
+          "ace_used_this_round",
+          "compensation_used",
+          "underground",
+          "inflation",
+          "quotas",
+          "purchase_unit_price",
+          "quota_used"
+        ]
+      },
+      "PendingContext": {
+        "type": "object",
+        "additionalProperties": false,
+        "description": "Declared public action without card identities, costs or private offer terms. Response categories apply only to the current observing responder and express public timing/target plus own support/quota prerequisites; they do not establish full command legality or disclose Ace holdings. Omitted when no action is pending and may be absent on older projections.",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["action", "attack", "infiltrator-attack", "baron-attack", "bomb-attack", "baron-bomb-attack", "ponzi", "justice", "purchase", "transfer", "loan-return", "open-series", "open-formation", "take-back", "attach", "fate", "kidnapper", "main-inflation", "ringleader", "richer-sacrifice", "barricade-sacrifice", "code", "compensation", "dexter-assassination"]
+          },
+          "actor": { "type": "integer", "minimum": 1, "maximum": 4 },
+          "target_seat": {
+            "type": "integer", "minimum": 1, "maximum": 4,
+            "description": "Only a publicly declared target seat; absent for untargeted or global actions and private offer recipients."
+          },
+          "response_types": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "enum": ["confinement", "compensation-response", "inflation", "numerical-defense", "advancement-defense", "negotiate"]
+            }
+          }
+        },
+        "required": ["type", "actor", "response_types"]
+      },
+      "EconomyBenefits": {
+        "type": "object",
+        "properties": {
+          "dirt": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "pass_until": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "premium_until": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Paid unlimited-online-access expiry. Standalone Ad-free does not extend it."
+          },
+          "unlimited": {
+            "type": "boolean"
+          },
+          "no_ads": {
+            "type": "boolean",
+            "description": "Independent of unlimited access. New currency-earned Daily/Weekly access retains ads."
+          },
+          "cosmetics": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Historical entitlements only; new cosmetic grants and purchases are unavailable. Card styles require no entitlement."
+          },
+          "legacy_ad_free_until": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Original pre-revision earned-pass ad-free expiry. New dirt redemptions never extend it."
+          },
+          "ad_free_until": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Effective ad-free expiry from separate verified paid or grandfathered benefits. Never extended by earned Daily/Weekly access; epoch when none. Private to the authenticated account."
+          }
+        },
+        "required": [
+          "dirt",
+          "pass_until",
+          "premium_until",
+          "unlimited",
+          "no_ads",
+          "cosmetics",
+          "legacy_ad_free_until",
+          "ad_free_until"
+        ],
+        "additionalProperties": false
+      },
+      "EconomyAccount": {
+        "oneOf": [
+          {
+            "type": "object",
+            "properties": {
+              "enabled": {
+                "const": false
+              }
+            },
+            "required": [
+              "enabled"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "enabled": {
+                "const": true
+              },
+              "benefits": {
+                "$ref": "#/components/schemas/EconomyBenefits"
+              },
+              "free_starts_remaining": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 3
+              },
+              "resets_at": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "reward": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "pass_day_price": {
+                "type": "integer",
+                "minimum": 1
+              }
+            },
+            "required": [
+              "enabled",
+              "benefits",
+              "free_starts_remaining",
+              "resets_at",
+              "reward",
+              "pass_day_price"
+            ],
+            "additionalProperties": false
+          }
+        ]
+      },
+      "PassPurchase": {
+        "type": "object",
+        "properties": {
+          "operation_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 256
+          },
+          "days": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 7,
+            "description": "New purchases accept only 1 (Daily) or 7 (Weekly). Values2\u20136 are accepted only for recovery of an existing identical receipt; otherwise PRODUCT_UNAVAILABLE."
+          }
+        },
+        "required": [
+          "operation_id",
+          "days"
+        ],
+        "additionalProperties": false
+      },
+      "PassReceipt": {
+        "type": "object",
+        "properties": {
+          "operation_id": {
+            "type": "string"
+          },
+          "days": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 7
+          },
+          "cost": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "expires_at": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "required": [
+          "operation_id",
+          "days",
+          "cost",
+          "expires_at"
+        ],
+        "additionalProperties": false
+      }
+    }
+  }
+}

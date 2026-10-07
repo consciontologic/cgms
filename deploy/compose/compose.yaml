@@ -1,0 +1,112 @@
+name: cgms
+services:
+  postgres:
+    image: postgres@sha256:20edbde7749f822887a1a022ad526fde0a47d6b2be9a8364433605cf65099416
+    command: [postgres, -c, config_file=/etc/postgresql/postgresql.conf]
+    env_file: ../../config/postgres/service.env
+    secrets: [database_password]
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ../../config/postgres/postgresql.conf:/etc/postgresql/postgresql.conf:ro
+    networks: [private]
+    healthcheck:
+      test: [CMD-SHELL, 'pg_isready -U cgms -d cgms']
+      interval: 2s
+      timeout: 2s
+      retries: 20
+  redis:
+    image: redis@sha256:8b81dd37ff027bec4e516d41acfbe9fe2460070dc6d4a4570a2ac5b9d59df065
+    user: '${CGMS_UID:-1000}:${CGMS_GID:-1000}'
+    command: [redis-server, /etc/redis/redis.conf]
+    volumes: ['../../config/redis/redis.conf:/etc/redis/redis.conf:ro']
+    secrets: [redis_config]
+    networks: [private]
+    mem_limit: 128m
+    healthcheck:
+      test: [CMD-SHELL, 'export REDISCLI_AUTH=$$(cut -d " " -f 2 /run/secrets/redis_config); redis-cli ping | grep -q PONG']
+      interval: 5s
+      timeout: 2s
+      retries: 6
+  backend:
+    build:
+      context: ../..
+      dockerfile: deploy/containers/backend.Dockerfile
+    user: '${CGMS_UID:-1000}:${CGMS_GID:-1000}'
+    environment:
+      CGMS_CONFIG: /app/config/backend.json
+    secrets: [database_url, redis_url]
+    volumes:
+      - '${CGMS_CONFIG_FILE:-../../config/backend/local.json}:/app/config/backend.json:ro'
+      - ../../config/rules:/app/config/rules:ro
+    networks: [private]
+    depends_on:
+      postgres:
+        condition: service_healthy
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    restart: unless-stopped
+  web:
+    image: nginx@sha256:0985e772fb9f729e6fa0980da05fca5d9c468e870eed43071545afa9d2e27d94
+    ports: ['127.0.0.1:8080:8080']
+    volumes:
+      - ../../config/nginx/local.conf:/etc/nginx/nginx.conf:ro
+      - ../../client/build/web:/usr/share/nginx/html:ro
+    networks: [private, edge]
+    depends_on:
+      backend:
+        condition: service_healthy
+    healthcheck:
+      test: [CMD-SHELL, 'wget -q -O /dev/null http://127.0.0.1:8080/health/ready']
+      interval: 5s
+      timeout: 2s
+      retries: 6
+  collector:
+    image: otel/opentelemetry-collector@sha256:b6d2b9a85b1029d05b5ad913150c1f014eed4ae99be81a1813ca5ade4a191913
+    profiles: [telemetry]
+    command: ['--config=/etc/otelcol/config.yaml']
+    volumes: ['../../config/observability/collector.yaml:/etc/otelcol/config.yaml:ro']
+    networks: [private]
+    mem_limit: 128m
+  tempo:
+    image: grafana/tempo@sha256:cac9de2ac9f6da8efca5b64b690a7cb8c786a0c49cac7b4517dd1b0089a6c703
+    profiles: [telemetry]
+    command: ['-config.file=/etc/tempo.yaml']
+    volumes: ['../../config/observability/tempo.yaml:/etc/tempo.yaml:ro', 'tempo_data:/var/tempo']
+    networks: [private]
+    mem_limit: 256m
+  prometheus:
+    image: prom/prometheus@sha256:4a61322ac1103a0e3aea2a61ef1718422a48fa046441f299d71e660a3bc71ae9
+    profiles: [telemetry]
+    volumes: ['../../config/observability/prometheus.yaml:/etc/prometheus/prometheus.yml:ro', 'prometheus_data:/prometheus']
+    networks: [private]
+    mem_limit: 256m
+  grafana:
+    image: grafana/grafana@sha256:e932bd6ed0e026595b08483cd0141e5103e1ab7ff8604839ff899b8dc54cabcb
+    profiles: [telemetry]
+    group_add: ['${CGMS_GID:-1000}']
+    secrets: [grafana_password]
+    ports: ['127.0.0.1:3000:3000']
+    volumes: ['../../config/observability/datasources.yaml:/etc/grafana/provisioning/datasources/cgms.yaml:ro', '../../config/observability/grafana.ini:/etc/grafana/grafana.ini:ro', 'grafana_data:/var/lib/grafana']
+    networks: [private, edge]
+    mem_limit: 256m
+networks:
+  private:
+    internal: true
+  edge: {}
+volumes:
+  postgres_data: {}
+  tempo_data: {}
+  prometheus_data: {}
+  grafana_data: {}
+secrets:
+  database_password:
+    file: ../../.local/secrets/database_password
+  database_url:
+    file: ../../.local/secrets/database_url
+  grafana_password:
+    file: ../../.local/secrets/grafana_password
+  redis_config:
+    file: ../../.local/secrets/redis_config
+  redis_url:
+    file: ../../.local/secrets/redis_url

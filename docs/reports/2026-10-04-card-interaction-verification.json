@@ -1,0 +1,1164 @@
+{
+  "schema": "cgms-card-interaction-verification-v1",
+  "run_id": "card-interface-20261004",
+  "status": "passed",
+  "recordedAt": "2026-10-04T12:53:10.034670+00:00",
+  "ownerRevision": "Physical cards and concrete targets replace the permanent gameplay action area. Accepted game rules and server authority unchanged.",
+  "preview": "http://localhost:8080/#/online",
+  "toolchain": "Repository-pinned Flutter3.47.5; no runtime dependency added or SDK patch",
+  "finalMainSha256": "6329b9b8b42ad72702d1250db3ed65d5c62b06df32ed02768a3d23e04df5e7f0",
+  "commandCoverage": {
+    "commandCount": 51,
+    "matrix": "docs/reports/2026-10-04-card-interaction-redesign.md",
+    "scope": "All command families mapped; matrix distinguishes passive work, widget/domain coverage and executed browser journeys"
+  },
+  "sourceChecks": {
+    "hostTests": {
+      "status": "passed",
+      "count": 437,
+      "run": {
+        "log": "/tmp/agent-runs/card-owner-entry-final-host--20261004T123129Z-457853.log",
+        "sha256": "65584ccfeb9bfcd457b4d6f805ff8bcad02d1302da2b2f19a31b6e47f3806539",
+        "exit": 0
+      }
+    },
+    "sharedTests": {
+      "status": "passed",
+      "count": 76,
+      "run": {
+        "log": "/tmp/agent-runs/card-owner-entry-final-package--20261004T123129Z-457870.log",
+        "sha256": "76359cc515cd7300642f2d6adf25f43cc41bae9a6b2c34aaf5613a5f2eada216",
+        "exit": 0
+      }
+    },
+    "browserSupportTests": {
+      "status": "passed",
+      "count": 47,
+      "run": {
+        "log": "/tmp/agent-runs/card-interface-final-browser-support--20261004T122242Z-440024.log",
+        "sha256": "b89bec91e51289222009c78ce5d938970d7f1618d4a0a42ced5e3153d72efe10",
+        "exit": 0
+      }
+    },
+    "hostAnalyzer": {
+      "status": "passed",
+      "run": {
+        "log": "/tmp/agent-runs/card-owner-entry-host-analyze--20261004T123157Z-459326.log",
+        "sha256": "93406d78865f674cdd8ecc7b4cb405e2b47ac3600927af2ad969a080dcd9834c",
+        "exit": 0
+      }
+    },
+    "sharedAnalyzer": {
+      "status": "passed",
+      "run": {
+        "log": "/tmp/agent-runs/card-owner-entry-package-analyze--20261004T123157Z-459340.log",
+        "sha256": "6ba9de0838173fc55a5d5fb1088f6ba93a689957ebfe6542dd0a4573c1f51c93",
+        "exit": 0
+      }
+    },
+    "format": {
+      "status": "passed",
+      "count": 17,
+      "run": {
+        "log": "/tmp/agent-runs/card-owner-entry-final-format--20261004T123142Z-458706.log",
+        "sha256": "5c38047fe674fcd9b4a64464186a7fe9886849d3319064df9e2d399eed2f5327",
+        "exit": 0
+      }
+    },
+    "gameAndWireTests": {
+      "status": "passed",
+      "run": {
+        "log": "/tmp/agent-runs/card-interface-rules-privacy--20261004T102249Z-118916.log",
+        "sha256": "fbb1f717440f673eae3a9aaa388b57e60741fafb5d9f1f1ad759dc32c4d7298c",
+        "exit": 0
+      }
+    },
+    "postgresRecoveryPrivacyAdmission": {
+      "status": "passed",
+      "count": 6,
+      "run": {
+        "log": "/tmp/agent-runs/card-interface-persistence--20261004T102249Z-118913.log",
+        "sha256": "c671b44e8c1da71b604818a58e6741156b3a79aa2d9786c731df7aea521bce9e",
+        "exit": 0
+      }
+    },
+    "webBuild": {
+      "status": "passed",
+      "run": {
+        "log": "/tmp/agent-runs/card-owner-final-build--20261004T123300Z-461575.log",
+        "sha256": "8bc4184061d657f99b96aecd16d41feebca74b8318a2961b2efb1faf3e4a1c1a",
+        "exit": 0
+      }
+    }
+  },
+  "verifiedClientSourceSha256": {
+    "client/README.md": "20de9155767f01f948c23d9695b1bca9cd9946d76c9a6e8861d04b476a959528",
+    "client/lib/main.dart": "c4b43cd0595e8abd5d4d644e6b1f15807d00c56203cb5790300dad1a85c2443a",
+    "client/lib/online/card_intents.dart": "abbdce5ee7fd2887adc2632572001e93f622e0b67933e13933d25e08cbca34d8",
+    "client/lib/online/card_play_choices.dart": "f813ff51e95decc9ee98955d6a67d1f884c805b3a5a7458500cfda469f7d84fc",
+    "client/lib/online/command_contract.dart": "7ba6fa5b055750dec7f3fb0a36b5d69b56a84761a3869e7eb38f3e2a1b49a550",
+    "client/lib/online/online_screen.dart": "4401ed35fd0dd868349602541c4a5734278f02c34b6e843fe10df01c24657fa5",
+    "client/lib/online/projection.dart": "bebdbd8b0926b5c944553e0a0aba7261f4339a50117bededc3fd9bae94ab7f5f",
+    "client/packages/cgms_ui/README.md": "4ef7b08939943a43c7dec0c28a0f4b093f5890411c5d664daebe43bd342893f0",
+    "client/packages/cgms_ui/lib/src/adaptive_table.dart": "d722f094c55ac5e858634d2e8368c98d58ea044b5de2f61d647be91bb5c9d379",
+    "client/packages/cgms_ui/lib/src/components.dart": "e6e9a5022b438154b1a370ead5ea52fde45291f6fddd96f6ad3a12f94e8e6269",
+    "client/packages/cgms_ui/lib/src/l10n/cgms_en.arb": "1698cbbc27bf40a48192b7168c353fb6f64be7d14bf34ea3700d416e50567db3",
+    "client/packages/cgms_ui/lib/src/l10n/cgms_localizations.dart": "0838de0e9737b19a35e3fe2bcb0317125b8feafb99395d0adf637c597301d6d2",
+    "client/packages/cgms_ui/lib/src/l10n/cgms_localizations_en.dart": "e3604b7426910f1e8e29fb80ca413f56de758bd8b47516639393077133b8fbab",
+    "client/packages/cgms_ui/lib/src/models.dart": "2ef0efa6f9ef67d8317523fcfa8355ce5299c91e654ce9a7905f04614cbcc27b",
+    "client/pubspec.lock": "7af98d8ac4ef97c094deb235e876b53cb4e779f8a34bfdf9b0e7f0634153b8e9",
+    "client/test/adaptive_table_test.dart": "9c40d36888e926b65be2330aeb104f113fc854f6e2da11f738f7dab76c5892f5",
+    "client/test/card_intents_test.dart": "5231a993b63fa4cf924d19ab50df5dd9a1a82dd9b114c42caa70e5a04bedec4a",
+    "client/test/card_play_screen_test.dart": "bfbb10cd39c44af0008f3294daeabe36a8f5857c89b110c7705c453258c276cc",
+    "client/test/demo_app_test.dart": "301c414fdd43a3d796217f0b91802377333abb8b880ab45cf3fb33e524d75bbb",
+    "client/test/online_projection_test.dart": "dd59f19a27809f802ed5033cb0c473a95e7226578b9da40cfc2ca9b8e32d4d30",
+    "client/test/online_screen_test.dart": "f5b11f287e62f3b6d1b322f574c0fc51225f0b4cb9ba8cf201cd9797efa76f80",
+    "client/tool/bot_browser_acceptance.cjs": "332ffc1269d218020686ca283429bb1f4c84f5d3a19c6773b2b62f90f74e1a86",
+    "client/tool/bot_browser_acceptance.test.cjs": "dda3040c3a9f15af722048f9b70bc72d3d77f2b1891cab7629b5640eefdd4cc8",
+    "client/tool/browser_acceptance.cjs": "f553a38f3d853b3e448be1eb178fe05ef301af1abedcf890b941ec8e70a6765f",
+    "client/tool/reconnect_browser_acceptance.cjs": "f345ea1acdb483d1212e748a809b0d87fa2fef08fb104f4e470486738e94854e",
+    "client/tool/reconnect_browser_acceptance.test.cjs": "248ae7b9b694abc0dbaa58e02557c98769ac5220a37eef00ccacd828b753d336"
+  },
+  "servedAssets": {
+    "manifest": "client/.browser-tools/artifacts/card-owner-final-main/served-assets.json",
+    "manifestSha256": "4dc472d3414f6afe38f9abf9782031d533aeed050ec353343e974bfbf0b13c09",
+    "verifiedAt": "2026-10-04T12:33:37.280266+00:00",
+    "local": {
+      "index.html": "0cb17fca2f4289e6b33ac9c7e847cdfa8a763169f841d6a7140cb6f83a595c50",
+      "keyboard_bridge.js": "1a244bc7bc3e3f3802e715315bc6e4d0f36809a4d99754ac28ee54227583c261",
+      "flutter_bootstrap.js": "296c7f1058ee874c18daf4e1619bb32f6386430b643865b47fda9badd45df1eb",
+      "main.dart.js": "6329b9b8b42ad72702d1250db3ed65d5c62b06df32ed02768a3d23e04df5e7f0"
+    },
+    "served": {
+      "http://127.0.0.1:8080": {
+        "index.html": "0cb17fca2f4289e6b33ac9c7e847cdfa8a763169f841d6a7140cb6f83a595c50",
+        "keyboard_bridge.js": "1a244bc7bc3e3f3802e715315bc6e4d0f36809a4d99754ac28ee54227583c261",
+        "flutter_bootstrap.js": "296c7f1058ee874c18daf4e1619bb32f6386430b643865b47fda9badd45df1eb",
+        "main.dart.js": "6329b9b8b42ad72702d1250db3ed65d5c62b06df32ed02768a3d23e04df5e7f0"
+      },
+      "http://127.0.0.1:8081": {
+        "index.html": "0cb17fca2f4289e6b33ac9c7e847cdfa8a763169f841d6a7140cb6f83a595c50",
+        "keyboard_bridge.js": "1a244bc7bc3e3f3802e715315bc6e4d0f36809a4d99754ac28ee54227583c261",
+        "flutter_bootstrap.js": "296c7f1058ee874c18daf4e1619bb32f6386430b643865b47fda9badd45df1eb",
+        "main.dart.js": "6329b9b8b42ad72702d1250db3ed65d5c62b06df32ed02768a3d23e04df5e7f0"
+      }
+    }
+  },
+  "browserChecks": {
+    "groupedCaseCount": 124,
+    "status": "passed",
+    "suites": [
+      {
+        "scope": "gameplay",
+        "engine": "chromium",
+        "version": "153.0.8010.12",
+        "status": "passed",
+        "report": "client/.browser-tools/artifacts/card-owner-final-main/chromium-390-report.json",
+        "reportSha256": "92e6ca7d13d11655ac7bb947159bb284f496821447bb4c79809527a4d828de66",
+        "run": {
+          "log": "/tmp/agent-runs/card-owner-final-main--20261004T123325Z-462523.log",
+          "sha256": "29c2edcb59f024afadd826c71c59e5e044a2de732e33f35ed84e5e710a379459",
+          "exit": 0
+        },
+        "assetSha256": "6329b9b8b42ad72702d1250db3ed65d5c62b06df32ed02768a3d23e04df5e7f0",
+        "harnessSha256": {
+          "browser_acceptance.cjs": "f553a38f3d853b3e448be1eb178fe05ef301af1abedcf890b941ec8e70a6765f",
+          "browser_faults.cjs": "334439124fbdf5a2ba5056adb3655b53ffaa256797ffa7c6c9bccd705f5ea479"
+        },
+        "caseCount": 69,
+        "cases": [
+          {
+            "case": "action-switch-routes-cards-to-visible-selection",
+            "pass": true
+          },
+          {
+            "case": "keyboard-card-inspection-preserves-selection",
+            "pass": true
+          },
+          {
+            "case": "adaptive-selection",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "adaptive-selection",
+            "width": 360,
+            "height": 800,
+            "pass": true
+          },
+          {
+            "case": "adaptive-selection",
+            "width": 599,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "adaptive-selection",
+            "width": 600,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "adaptive-selection",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "adaptive-selection",
+            "width": 1024,
+            "height": 768,
+            "pass": true
+          },
+          {
+            "case": "adaptive-selection",
+            "width": 1049,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "adaptive-selection",
+            "width": 1050,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "adaptive-selection",
+            "width": 1280,
+            "height": 720,
+            "pass": true
+          },
+          {
+            "case": "adaptive-selection",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "adaptive-selection",
+            "width": 1280,
+            "height": 600,
+            "pass": true
+          },
+          {
+            "case": "adaptive-selection",
+            "width": 599,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "adaptive-selection",
+            "width": 600,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "adaptive-selection",
+            "width": 599,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "adaptive-selection",
+            "width": 1049,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "adaptive-selection",
+            "width": 1050,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "adaptive-selection",
+            "width": 1049,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "adaptive-selection",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "adaptive-selection",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "adaptive-selection",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "adaptive-selection",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "adaptive-selection",
+            "width": 1024,
+            "height": 768,
+            "pass": true
+          },
+          {
+            "case": "rtl-200-placeholder-selection",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "rtl-200-placeholder-selection",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "rtl-200-placeholder-selection",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "browser-back-forward-retains-match-and-draft",
+            "pass": true
+          },
+          {
+            "case": "keyboard-tab-traversal",
+            "pass": true
+          },
+          {
+            "case": "primary-touch-targets-at-least-48",
+            "pass": true
+          },
+          {
+            "case": "selected-opening-cost-and-timing-guidance",
+            "pass": true
+          },
+          {
+            "case": "physical-opening-preserves-exact-suit-and-all-held-card-cost",
+            "pass": true
+          },
+          {
+            "case": "ordinary-action-disabled-during-response",
+            "pass": true
+          },
+          {
+            "case": "opening-ordered-responses",
+            "pass": true
+          },
+          {
+            "case": "actual-double-tap-pointer-drag-invalid-drop-Escape-and-equivalent-tap-destination",
+            "pass": true
+          },
+          {
+            "case": "purchase-explicit-quantity-payment-responses",
+            "pass": true
+          },
+          {
+            "case": "focused-physical-trade-draft-survives-boundary",
+            "width": 599,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "focused-physical-trade-draft-survives-boundary",
+            "width": 600,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "focused-physical-trade-draft-survives-boundary",
+            "width": 1049,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "focused-physical-trade-draft-survives-boundary",
+            "width": 1050,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "focused-physical-trade-draft-survives-boundary",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "focused-physical-trade-draft-survives-boundary",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "private-offer-semantics-boundary",
+            "pass": true
+          },
+          {
+            "case": "private-trade-acceptance",
+            "pass": true
+          },
+          {
+            "case": "pending-original-operation-retained-across-boundary",
+            "width": 599,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "pending-original-operation-retained-across-boundary",
+            "width": 600,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "pending-original-operation-retained-across-boundary",
+            "width": 1049,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "pending-original-operation-retained-across-boundary",
+            "width": 1050,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "pending-original-operation-retained-across-boundary",
+            "width": 1049,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "pending-original-operation-retained-across-boundary",
+            "width": 599,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "short-rotated-large-text-recovery-control",
+            "pass": true,
+            "viewport": {
+              "width": 844,
+              "height": 390
+            },
+            "textScale": 2
+          },
+          {
+            "case": "lost-reply-reload-original-operation-reconciliation",
+            "pass": true
+          },
+          {
+            "case": "intact-loan-alliance-underground",
+            "pass": true
+          },
+          {
+            "case": "selected-attack-declaration-cancellation-and-resolution-costs",
+            "pass": true
+          },
+          {
+            "case": "physical-attack-ordered-response-exchange",
+            "pass": true
+          },
+          {
+            "case": "compensation-return-shuffle-two-recipients-resume",
+            "pass": true
+          },
+          {
+            "case": "confinement-cancels-hostile-action",
+            "pass": true
+          },
+          {
+            "case": "effect-input-is-not-response-pass",
+            "pass": true
+          },
+          {
+            "case": "justice-staged-distinct-card-selections",
+            "pass": true
+          },
+          {
+            "case": "immediate-coup",
+            "pass": true
+          },
+          {
+            "case": "promise-payment-settlement-next-game-reload",
+            "pass": true
+          },
+          {
+            "case": "final-match-shared-ranks",
+            "pass": true
+          },
+          {
+            "case": "owner-lobby-reload-restores-authorized-room",
+            "pass": true
+          },
+          {
+            "case": "clipboard-denial-retains-code-and-specific-recovery-guidance",
+            "pass": true
+          },
+          {
+            "case": "member-lobby-reload-preserves-role-without-invitation",
+            "pass": true
+          },
+          {
+            "case": "room-capacity-and-owner-affordances",
+            "pass": true
+          },
+          {
+            "case": "accessible-static-room-invitation-and-copy-feedback",
+            "pass": true
+          },
+          {
+            "case": "lost-start-reply-lobby-original-operation-recovery",
+            "pass": true
+          },
+          {
+            "case": "normal-guest-room-deal-entry-reload",
+            "pass": true
+          }
+        ],
+        "unexpectedErrors": 0,
+        "expectedInjectedFaults": 6,
+        "expectedAnonymousChallenges": 4,
+        "captureCount": 28
+      },
+      {
+        "scope": "reconnect",
+        "engine": "chromium",
+        "version": "153.0.8010.12",
+        "status": "passed",
+        "report": "client/.browser-tools/artifacts/card-owner-final-reconnect/chromium-reconnect-report.json",
+        "reportSha256": "0663a4e9ad8e612421de166435cef8292cc127cc40f8858c4cadfafc95d560fb",
+        "run": {
+          "log": "/tmp/agent-runs/card-owner-final-reconnect--20261004T123648Z-469678.log",
+          "sha256": "5b635a139a2435d9a10a881f699f2cce238ac87c86593646fb9d95f2db358d6b",
+          "exit": 0
+        },
+        "assetSha256": "6329b9b8b42ad72702d1250db3ed65d5c62b06df32ed02768a3d23e04df5e7f0",
+        "harnessSha256": {
+          "reconnect_browser_acceptance.cjs": "f345ea1acdb483d1212e748a809b0d87fa2fef08fb104f4e470486738e94854e",
+          "browser_faults.cjs": "334439124fbdf5a2ba5056adb3655b53ffaa256797ffa7c6c9bccd705f5ea479"
+        },
+        "caseCount": 2,
+        "cases": [
+          {
+            "case": "purchase-bounded-offline-retry-restores-draft-selection-and-authority-scope",
+            "pass": true
+          },
+          {
+            "case": "justice-bounded-offline-retry-restores-draft-selection-and-authority-scope",
+            "pass": true
+          }
+        ],
+        "unexpectedErrors": 0,
+        "expectedInjectedFaults": 18,
+        "expectedAnonymousChallenges": 0,
+        "captureCount": 6
+      },
+      {
+        "scope": "firefox-geometry",
+        "engine": "firefox",
+        "version": "155.0",
+        "status": "passed",
+        "report": "client/.browser-tools/artifacts/card-owner-final-firefox/firefox-quadrants-report.json",
+        "reportSha256": "f40863b713bf71f3cd0705c63cf725b0ec96a65bf0ecda85e1c708b5c8a11ac5",
+        "run": {
+          "log": "/tmp/agent-runs/card-owner-final-firefox--20261004T123748Z-471684.log",
+          "sha256": "f5ec97394b09987d0212e0553b828237a4b5bf7f3a3f3282aaee77e6ca270933",
+          "exit": 0
+        },
+        "assetSha256": "6329b9b8b42ad72702d1250db3ed65d5c62b06df32ed02768a3d23e04df5e7f0",
+        "harnessSha256": {
+          "browser_acceptance.cjs": "f553a38f3d853b3e448be1eb178fe05ef301af1abedcf890b941ec8e70a6765f",
+          "browser_faults.cjs": "334439124fbdf5a2ba5056adb3655b53ffaa256797ffa7c6c9bccd705f5ea479"
+        },
+        "caseCount": 15,
+        "cases": [
+          {
+            "case": "online-card-board-responsive-geometry-and-contextual-draft",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "online-card-board-responsive-geometry-and-contextual-draft",
+            "width": 320,
+            "height": 568,
+            "pass": true
+          },
+          {
+            "case": "online-card-board-responsive-geometry-and-contextual-draft",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "online-card-board-responsive-geometry-and-contextual-draft",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "online-card-board-responsive-geometry-and-contextual-draft",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "online-card-board-responsive-geometry-and-contextual-draft",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "online-card-board-responsive-geometry-and-contextual-draft",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "online-card-board-responsive-geometry-and-contextual-draft",
+            "width": 320,
+            "height": 568,
+            "pass": true
+          },
+          {
+            "case": "online-card-board-responsive-geometry-and-contextual-draft",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "online-card-board-responsive-geometry-and-contextual-draft",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "online-card-board-responsive-geometry-and-contextual-draft",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "online-card-board-responsive-geometry-and-contextual-draft",
+            "width": 1440,
+            "height": 1200,
+            "pass": true
+          },
+          {
+            "case": "online-card-board-responsive-geometry-and-contextual-draft",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "online-live-full-width-public-table-and-preview-composition-grow-at-fixed-height",
+            "pass": true
+          },
+          {
+            "case": "online-live-boundaries-preserve-physical-card-focus-and-action-authority",
+            "pass": true
+          }
+        ],
+        "unexpectedErrors": 0,
+        "expectedInjectedFaults": 0,
+        "expectedAnonymousChallenges": 0,
+        "captureCount": 43
+      },
+      {
+        "scope": "webkit-linux-geometry",
+        "engine": "webkit",
+        "version": "26.6",
+        "status": "passed",
+        "report": "client/.browser-tools/artifacts/card-owner-final-webkit/webkit-quadrants-report.json",
+        "reportSha256": "ca5a8eb0b38a6fd634aa684933109e7471ae7f301f2aefcbb01dd9382af5dc9d",
+        "run": {
+          "log": "/tmp/agent-runs/card-owner-final-webkit--20261004T123911Z-475081.log",
+          "sha256": "7a8e95f1a4dda2226310ccf2791880c1fd09cfad1edd7f5305d8f3da959f8d6a",
+          "exit": 0
+        },
+        "assetSha256": "6329b9b8b42ad72702d1250db3ed65d5c62b06df32ed02768a3d23e04df5e7f0",
+        "harnessSha256": {
+          "browser_acceptance.cjs": "f553a38f3d853b3e448be1eb178fe05ef301af1abedcf890b941ec8e70a6765f",
+          "browser_faults.cjs": "334439124fbdf5a2ba5056adb3655b53ffaa256797ffa7c6c9bccd705f5ea479"
+        },
+        "caseCount": 15,
+        "cases": [
+          {
+            "case": "online-card-board-responsive-geometry-and-contextual-draft",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "online-card-board-responsive-geometry-and-contextual-draft",
+            "width": 320,
+            "height": 568,
+            "pass": true
+          },
+          {
+            "case": "online-card-board-responsive-geometry-and-contextual-draft",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "online-card-board-responsive-geometry-and-contextual-draft",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "online-card-board-responsive-geometry-and-contextual-draft",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "online-card-board-responsive-geometry-and-contextual-draft",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "online-card-board-responsive-geometry-and-contextual-draft",
+            "width": 319,
+            "height": 948,
+            "pass": true
+          },
+          {
+            "case": "online-card-board-responsive-geometry-and-contextual-draft",
+            "width": 320,
+            "height": 568,
+            "pass": true
+          },
+          {
+            "case": "online-card-board-responsive-geometry-and-contextual-draft",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "online-card-board-responsive-geometry-and-contextual-draft",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "online-card-board-responsive-geometry-and-contextual-draft",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "online-card-board-responsive-geometry-and-contextual-draft",
+            "width": 1440,
+            "height": 1200,
+            "pass": true
+          },
+          {
+            "case": "online-card-board-responsive-geometry-and-contextual-draft",
+            "width": 844,
+            "height": 390,
+            "pass": true
+          },
+          {
+            "case": "online-live-full-width-public-table-and-preview-composition-grow-at-fixed-height",
+            "pass": true
+          },
+          {
+            "case": "online-live-boundaries-preserve-physical-card-focus-and-action-authority",
+            "pass": true
+          }
+        ],
+        "unexpectedErrors": 0,
+        "expectedInjectedFaults": 0,
+        "expectedAnonymousChallenges": 0,
+        "captureCount": 43
+      },
+      {
+        "scope": "natural-bots",
+        "engine": "chromium",
+        "version": "153.0.8010.12",
+        "status": "passed",
+        "report": "client/.browser-tools/artifacts/card-owner-final-bots/chromium-bots-report.json",
+        "reportSha256": "bc6b54b630ae6f9af84319322e6269d1ebc4756071b1e496b08a1e0e8c07080e",
+        "run": {
+          "log": "/tmp/agent-runs/card-owner-final-bots--20261004T124047Z-479492.log",
+          "sha256": "76a6f69cf7850d0bbd3b7e034b56a65a2bb49ab93ba8e2db9601dee473301a0c",
+          "exit": 0
+        },
+        "assetSha256": "6329b9b8b42ad72702d1250db3ed65d5c62b06df32ed02768a3d23e04df5e7f0",
+        "harnessSha256": {
+          "bot_browser_acceptance.cjs": "332ffc1269d218020686ca283429bb1f4c84f5d3a19c6773b2b62f90f74e1a86",
+          "browser_faults.cjs": "334439124fbdf5a2ba5056adb3655b53ffaa256797ffa7c6c9bccd705f5ea479",
+          "reconnect_browser_acceptance.cjs": "f345ea1acdb483d1212e748a809b0d87fa2fef08fb104f4e470486738e94854e"
+        },
+        "caseCount": 11,
+        "cases": [
+          {
+            "case": "beginner-live-boundaries-and-stream-reconnect-retain-draft-selection-and-private-hand",
+            "pass": true
+          },
+          {
+            "case": "beginner-4p-human-opening-and-automatic-bot-responses",
+            "pass": true,
+            "outcome": "opened"
+          },
+          {
+            "case": "beginner-4p-bots-play-return-control-and-privacy",
+            "pass": true
+          },
+          {
+            "case": "beginner-authoritative-early-ending-settles-and-shows-standings",
+            "pass": true,
+            "ending": "round-limit"
+          },
+          {
+            "case": "one-human-three-bots-natural-board-closure-and-complete-settlement",
+            "pass": true,
+            "turnsEnded": 12,
+            "ending": "round-limit",
+            "completedGames": 1,
+            "finalVersion": 728
+          },
+          {
+            "case": "standard-live-boundaries-and-stream-reconnect-retain-draft-selection-and-private-hand",
+            "pass": true
+          },
+          {
+            "case": "standard-4p-human-opening-and-automatic-bot-responses",
+            "pass": true,
+            "outcome": "opened"
+          },
+          {
+            "case": "standard-4p-bots-play-return-control-and-privacy",
+            "pass": true
+          },
+          {
+            "case": "advanced-live-boundaries-and-stream-reconnect-retain-draft-selection-and-private-hand",
+            "pass": true
+          },
+          {
+            "case": "advanced-4p-human-opening-and-automatic-bot-responses",
+            "pass": true,
+            "outcome": "confined"
+          },
+          {
+            "case": "advanced-4p-bots-play-return-control-and-privacy",
+            "pass": true
+          }
+        ],
+        "unexpectedErrors": 0,
+        "expectedInjectedFaults": 0,
+        "expectedAnonymousChallenges": 3,
+        "captureCount": 10
+      },
+      {
+        "scope": "rtl-physical-copies",
+        "engine": "chromium",
+        "version": "153.0.8010.12",
+        "status": "passed",
+        "report": "client/.browser-tools/artifacts/card-owner-final-rtl/chromium-390-report.json",
+        "reportSha256": "6d7eb0319d0f7b11f5810cb251868f89bce3b9b03478cd9eca5aa7d2ad223f29",
+        "run": {
+          "log": "/tmp/agent-runs/card-owner-final-rtl--20261004T124902Z-494252.log",
+          "sha256": "863f74f9af9be6922d49f094f71d07a500b6f187806d9d5ec781a9d371d2e742",
+          "exit": 0
+        },
+        "assetSha256": "6329b9b8b42ad72702d1250db3ed65d5c62b06df32ed02768a3d23e04df5e7f0",
+        "harnessSha256": {
+          "browser_acceptance.cjs": "f553a38f3d853b3e448be1eb178fe05ef301af1abedcf890b941ec8e70a6765f",
+          "browser_faults.cjs": "334439124fbdf5a2ba5056adb3655b53ffaa256797ffa7c6c9bccd705f5ea479"
+        },
+        "caseCount": 12,
+        "cases": [
+          {
+            "case": "rtl-overlapping-suit-copies-remain-independently-usable",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "rtl-overlapping-suit-copies-remain-independently-usable",
+            "width": 599,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "rtl-overlapping-suit-copies-remain-independently-usable",
+            "width": 600,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "rtl-overlapping-suit-copies-remain-independently-usable",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "rtl-overlapping-suit-copies-remain-independently-usable",
+            "width": 1049,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "rtl-overlapping-suit-copies-remain-independently-usable",
+            "width": 1050,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "rtl-overlapping-suit-copies-remain-independently-usable",
+            "width": 1440,
+            "height": 900,
+            "pass": true
+          },
+          {
+            "case": "rtl-overlapping-suit-copies-remain-independently-usable",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "rtl-overlapping-suit-copies-remain-independently-usable",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          },
+          {
+            "case": "rtl-overlapping-suit-copies-remain-independently-usable",
+            "width": 768,
+            "height": 1024,
+            "pass": true
+          },
+          {
+            "case": "rtl-overlapping-suit-copies-remain-independently-usable",
+            "width": 1440,
+            "height": 1200,
+            "pass": true
+          },
+          {
+            "case": "rtl-overlapping-suit-copies-remain-independently-usable",
+            "width": 390,
+            "height": 844,
+            "pass": true
+          }
+        ],
+        "unexpectedErrors": 0,
+        "expectedInjectedFaults": 0,
+        "expectedAnonymousChallenges": 0,
+        "captureCount": 2
+      }
+    ],
+    "naturalMatches": [
+      {
+        "difficulty": "beginner",
+        "players": 4,
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "projectionsChecked": 541
+      },
+      {
+        "difficulty": "standard",
+        "players": 4,
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "projectionsChecked": 119
+      },
+      {
+        "difficulty": "advanced",
+        "players": 4,
+        "viewport": {
+          "width": 600,
+          "height": 900
+        },
+        "projectionsChecked": 175
+      }
+    ],
+    "naturalCompletion": {
+      "difficulty": "beginner",
+      "humanSeats": 1,
+      "botSeats": 3,
+      "ending": "round-limit",
+      "additionalHumanTurns": 12,
+      "completedGames": 1,
+      "finalVersion": 728,
+      "financialState": "finalized",
+      "ranks": 4
+    },
+    "totalManifestCaptures": 132
+  },
+  "curatedCaptures": [
+    {
+      "purpose": "idle phone, public cards",
+      "path": "client/.browser-tools/artifacts/card-owner-final-main/chromium-390-unobstructed-public-cards-idle-390x844.png",
+      "sha256": "118ba5a455520f8ba552f5442c156654634d12b9cc7a4030e5d98203978435ce",
+      "bytes": 88626,
+      "width": 390,
+      "height": 844
+    },
+    {
+      "purpose": "idle tablet, public cards",
+      "path": "client/.browser-tools/artifacts/card-owner-final-main/chromium-390-unobstructed-public-cards-idle-768x1024.png",
+      "sha256": "4d716fe9d52b1f20779094e5150ebdd42c8bb45c035e16e72265a3237da126eb",
+      "bytes": 147613,
+      "width": 768,
+      "height": 1024
+    },
+    {
+      "purpose": "idle desktop, public cards",
+      "path": "client/.browser-tools/artifacts/card-owner-final-main/chromium-390-unobstructed-public-cards-idle-1440x900.png",
+      "sha256": "a562996f28635c256a93a82b9553d485dad6d0a93f472fa7b313b8046cecb7b9",
+      "bytes": 120591,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "purpose": "selected card contextual choices",
+      "path": "client/.browser-tools/artifacts/card-owner-final-main/chromium-390-card-double-tap-contextual-choices.png",
+      "sha256": "63e749178d6e39180b0359790aff8e6b2dda0d95b3f3599e7b2fcb44f109c8f3",
+      "bytes": 33192,
+      "width": 390,
+      "height": 844
+    },
+    {
+      "purpose": "neutral drag feedback and destinations before cancellation",
+      "path": "client/.browser-tools/artifacts/card-owner-final-main/chromium-390-drag-destinations-cancel.png",
+      "sha256": "727733944ba5631a43401332e141dc62341161cc3ae3a06029087bad8bd68396",
+      "bytes": 45854,
+      "width": 390,
+      "height": 844
+    },
+    {
+      "purpose": "artwork card touch drag over draw pile",
+      "path": "client/.browser-tools/artifacts/card-owner-final-main/chromium-390-touch-drag-over-pile.png",
+      "sha256": "f33e7bbf195fc493e37efab8822cf721b360bbd959fbc9f65fcb19801f4dff6a",
+      "bytes": 45463,
+      "width": 390,
+      "height": 844
+    },
+    {
+      "purpose": "attack exact source and target",
+      "path": "client/.browser-tools/artifacts/card-owner-final-main/chromium-390-attack-exact-target-confirmation.png",
+      "sha256": "804d6c74b47372df3aca88efa98a4d747f15e60489592c5340c753a5ac61f3de",
+      "bytes": 111636,
+      "width": 390,
+      "height": 844
+    },
+    {
+      "purpose": "defence pending actor and frozen target",
+      "path": "client/.browser-tools/artifacts/card-owner-final-main/chromium-390-defence-confinement-context.png",
+      "sha256": "bf1dc638ba61a5d8fece18aa3455f449a2ea9bc7f97e9c80afbe36d925e82c64",
+      "bytes": 119956,
+      "width": 390,
+      "height": 844
+    },
+    {
+      "purpose": "Justice ordered decision",
+      "path": "client/.browser-tools/artifacts/card-owner-final-main/chromium-390-effect-decision.png",
+      "sha256": "c5c9e28fe8b29a955cd901bbddc30fa739577a54d7b2eff13167add69574fee5",
+      "bytes": 111864,
+      "width": 390,
+      "height": 844
+    },
+    {
+      "purpose": "purchase draft after real reconnect",
+      "path": "client/.browser-tools/artifacts/card-owner-final-reconnect/chromium-390-reconnect-purchase-restored-draft.png",
+      "sha256": "16a5d38e9175f7697adf0d2512bcc9b2292e3f09b4f740cf803512ae8274c32a",
+      "bytes": 49108,
+      "width": 390,
+      "height": 844
+    },
+    {
+      "purpose": "Firefox desktop hand placement",
+      "path": "client/.browser-tools/artifacts/card-owner-final-firefox/firefox-390-quadrants-online-1440x900-normal.png",
+      "sha256": "7ca27f80710f068ab03151d7de428ea584cdf1af7ab3833fde7cfe1b6eea4f6e",
+      "bytes": 64024,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "purpose": "WebKit RTL 200 percent hand revealed by scrolling",
+      "path": "client/.browser-tools/artifacts/card-owner-final-webkit/webkit-390-quadrants-online-390x844-rtl-text200.png",
+      "sha256": "ba1208627960b036901379bce9993ae8779628e32a52957113665e80edd7a78f",
+      "bytes": 92245,
+      "width": 390,
+      "height": 844
+    },
+    {
+      "purpose": "physical duplicate copies at RTL 200 percent",
+      "path": "client/.browser-tools/artifacts/card-owner-final-rtl/chromium-390-overlapping-hand-rtl-text200.png",
+      "sha256": "6b695d748ff55bf20b6d9e78d1e956c714895da97677d912313d251e8b319962",
+      "bytes": 102467,
+      "width": 390,
+      "height": 844
+    },
+    {
+      "purpose": "natural phone match with17-card hand",
+      "path": "client/.browser-tools/artifacts/card-owner-final-bots/online-bots-chromium-beginner-human-opening-resolved.png",
+      "sha256": "004809ece9597bb704c5ae3e78fc3ba264087ef5a1373afd71bed8c6365a05cd",
+      "bytes": 294459,
+      "width": 390,
+      "height": 844
+    },
+    {
+      "purpose": "natural desktop match with centered15-card hand",
+      "path": "client/.browser-tools/artifacts/card-owner-final-bots/online-bots-chromium-standard-human-opening-resolved.png",
+      "sha256": "d61552b0e93ede65c40f3738d886b71592ee7172b1eb824862e5525ed369b686",
+      "bytes": 420776,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "purpose": "natural round-limit ending and completed settlement",
+      "path": "client/.browser-tools/artifacts/card-owner-final-bots/online-bots-chromium-beginner-natural-match-settlement-complete.png",
+      "sha256": "076dadec86558a0c07bc9f93c86bb31405835def777e3b335d5811eb2d3d7f34",
+      "bytes": 147201,
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "reconnectInvariant": "Purchase and Justice preserve game/version, physical selection, native focus and draft; zero command posts; exact card-to-hand offset88px before/restored/dismissed in390px fixture. Invalid quantity3 stays disabled until explicitly corrected to2.",
+  "layoutScope": "Shared vertical phone/tablet/desktop composition; live599/600 and1049/1050 transitions, rotation, short windows, dense holdings, keyboard, emulated touch, RTL and200percent text.",
+  "limitations": [
+    "Chromium runs the full listed gameplay journeys; Firefox and Linux-container WebKit cover geometry, contexts and keyboard only.",
+    "No physical Android/iOS device, native Safari or external screen-reader acceptance is claimed.",
+    "Rare combo/modifier and Negotiator flows beyond listed browser cases use widget/domain tests; not every matrix row was browser-playtested or naturally dealt.",
+    "Standard and advanced bot journeys cover opening, responses, recovery and returned control; only beginner completes the full natural match and settlement.",
+    "The horizontal scroll-collapse diagnostic passed on the preceding04ff build; final6329 rechecks RTL physical copies and live widths without claiming a reproduced native horizontal offset."
+  ],
+  "retention": "Final PNGs and raw reports remain in ignored client/.browser-tools/artifacts; this compact record is staged with the implementation. No session credentials or full private snapshots copied here.",
+  "cleanup": {
+    "evidence": "client/.browser-tools/artifacts/card-owner-final-main/cleanup.json",
+    "sha256": "92f77af117da6cc6543ea97f7c360a853bd2bfc713b8399adc419b9d3b12a8c6",
+    "status": "verified",
+    "qaPortClosed": true,
+    "ownedResourcesRemaining": 0,
+    "normalPreviewAssetsUnchanged": true,
+    "intentionalSupervisorInterruption": true
+  },
+  "evidenceAudit": {
+    "status": "passed",
+    "candidateFilesBeforeTracking": 32,
+    "filesystemLinks": 154,
+    "commands": 51,
+    "frozenClientFiles": 26,
+    "commonSecretPatterns": "none in additions",
+    "log": "/tmp/agent-runs/card-interface-final-evidence-audit--20261004T125439Z-504494.log",
+    "sha256": "fcd89f400758d01ec55a960d168677900f0e6340aca48c5aeee1925601c8ca6a",
+    "exit": 0
+  }
+}

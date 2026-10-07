@@ -1,0 +1,509 @@
+{
+  "schema": "cgms-adaptive-startup-verification-v1",
+  "runId": "adaptive-startup-20261002",
+  "webAssetsSha256": {
+    "index.html": "0cb17fca2f4289e6b33ac9c7e847cdfa8a763169f841d6a7140cb6f83a595c50",
+    "keyboard_bridge.js": "1a244bc7bc3e3f3802e715315bc6e4d0f36809a4d99754ac28ee54227583c261",
+    "flutter_bootstrap.js": "296c7f1058ee874c18daf4e1619bb32f6386430b643865b47fda9badd45df1eb",
+    "main.dart.js": "51a4a4c90cdeaa699ffb30ec9812cfa09bbe821b1517cdbbb63c19ccfb7baf8b"
+  },
+  "browserRuns": [
+    {
+      "scope": "normal-entry-chromium",
+      "engine": "chromium",
+      "version": "153.0.8010.12",
+      "status": "passed",
+      "caseCount": 52,
+      "unexpectedErrors": 0,
+      "caseGroups": {
+        "trusted-native-tab-bridge-handled-reverse-outside-and-exit": 1,
+        "fresh-normal-entry": 2,
+        "normal-entry-auto-composition": 38,
+        "normal-entry-keyboard-inspect-and-escape": 2,
+        "normal-entry-text200-touch-navigation": 8,
+        "offscreen-card-after-pointer-short-text200-and-modal-reverse-tab": 1
+      },
+      "viewportSizes": [
+        "1024x768",
+        "1049x900",
+        "1050x900",
+        "1280x600",
+        "1280x720",
+        "1440x900",
+        "360x800",
+        "390x844",
+        "599x900",
+        "600x900",
+        "768x1024",
+        "844x390"
+      ],
+      "ignoredRawReport": "client/.browser-tools/artifacts/adaptive-modal-entry-chromium/report.json",
+      "rawReportSha256": "dd4d2bccbfbd3cbc886a814c00cf8b8a9c766c1166380a6e61703754f0a1de67",
+      "safeRunId": "adaptive-modal-entry-chromium--20261001T222535Z-4058624",
+      "expectedFaults": 0,
+      "expectedAuthenticationChallenges": 0
+    },
+    {
+      "scope": "normal-entry-firefox",
+      "engine": "firefox",
+      "version": "155.0",
+      "status": "passed",
+      "caseCount": 52,
+      "unexpectedErrors": 0,
+      "caseGroups": {
+        "trusted-native-tab-bridge-handled-reverse-outside-and-exit": 1,
+        "fresh-normal-entry": 2,
+        "normal-entry-auto-composition": 38,
+        "normal-entry-keyboard-inspect-and-escape": 2,
+        "normal-entry-text200-touch-navigation": 8,
+        "offscreen-card-after-pointer-short-text200-and-modal-reverse-tab": 1
+      },
+      "viewportSizes": [
+        "1024x768",
+        "1049x900",
+        "1050x900",
+        "1280x600",
+        "1280x720",
+        "1440x900",
+        "360x800",
+        "390x844",
+        "599x900",
+        "600x900",
+        "768x1024",
+        "844x390"
+      ],
+      "ignoredRawReport": "client/.browser-tools/artifacts/adaptive-modal-entry-firefox/report.json",
+      "rawReportSha256": "490bf6169d208a96c6956f573f144f4c9259e64170d5420a8f2ea7c05abaeac5",
+      "safeRunId": "adaptive-modal-entry-firefox--20261001T222535Z-4058636",
+      "expectedFaults": 0,
+      "expectedAuthenticationChallenges": 0
+    },
+    {
+      "scope": "normal-entry-webkit",
+      "engine": "webkit",
+      "version": "26.6",
+      "status": "passed",
+      "caseCount": 52,
+      "unexpectedErrors": 0,
+      "caseGroups": {
+        "trusted-native-tab-bridge-handled-reverse-outside-and-exit": 1,
+        "fresh-normal-entry": 2,
+        "normal-entry-auto-composition": 38,
+        "normal-entry-keyboard-inspect-and-escape": 2,
+        "normal-entry-text200-touch-navigation": 8,
+        "offscreen-card-after-pointer-short-text200-and-modal-reverse-tab": 1
+      },
+      "viewportSizes": [
+        "1024x768",
+        "1049x900",
+        "1050x900",
+        "1280x600",
+        "1280x720",
+        "1440x900",
+        "360x800",
+        "390x844",
+        "599x900",
+        "600x900",
+        "768x1024",
+        "844x390"
+      ],
+      "ignoredRawReport": "client/.browser-tools/artifacts/final-modal-entry-webkit/report.json",
+      "rawReportSha256": "6e62603c030575861b13c03695cb1903be80f07a9de300a5662e887d4149bf54",
+      "safeRunId": "final-modal-entry-webkit--20261001T222541Z-4060045",
+      "expectedFaults": 0,
+      "expectedAuthenticationChallenges": 0
+    },
+    {
+      "scope": "online-full-chromium",
+      "engine": "chromium",
+      "version": "153.0.8010.12",
+      "status": "passed",
+      "caseCount": 67,
+      "unexpectedErrors": 0,
+      "caseGroups": {
+        "selected-opening-cost-and-timing-guidance": 1,
+        "action-switch-routes-cards-to-visible-selection": 1,
+        "keyboard-card-inspection-preserves-selection": 1,
+        "adaptive-selection": 22,
+        "rtl-200-placeholder-selection": 3,
+        "browser-back-forward-retains-match-and-draft": 1,
+        "keyboard-tab-traversal": 1,
+        "primary-touch-targets-at-least-48": 1,
+        "ordinary-action-disabled-during-response": 1,
+        "opening-ordered-responses": 1,
+        "purchase-explicit-quantity-payment-responses": 1,
+        "focused-draft-editing-selection-survives-boundary": 6,
+        "private-offer-semantics-boundary": 1,
+        "private-trade-acceptance": 1,
+        "pending-original-operation-retained-across-boundary": 6,
+        "short-rotated-large-text-recovery-control": 1,
+        "lost-reply-reload-original-operation-reconciliation": 1,
+        "intact-loan-alliance-underground": 1,
+        "selected-attack-declaration-cancellation-and-resolution-costs": 1,
+        "physical-attack-ordered-response-exchange": 1,
+        "compensation-return-shuffle-two-recipients-resume": 1,
+        "confinement-cancels-hostile-action": 1,
+        "effect-input-is-not-response-pass": 1,
+        "justice-staged-distinct-card-selections": 1,
+        "immediate-coup": 1,
+        "promise-payment-settlement-next-game-reload": 1,
+        "final-match-shared-ranks": 1,
+        "owner-lobby-reload-restores-authorized-room": 1,
+        "clipboard-denial-retains-code-and-specific-recovery-guidance": 1,
+        "member-lobby-reload-preserves-role-without-invitation": 1,
+        "room-capacity-and-owner-affordances": 1,
+        "accessible-static-room-invitation-and-copy-feedback": 1,
+        "lost-start-reply-lobby-original-operation-recovery": 1,
+        "normal-guest-room-deal-entry-reload": 1
+      },
+      "viewportSizes": [
+        "1024x768",
+        "1049x900",
+        "1050x900",
+        "1280x600",
+        "1280x720",
+        "1440x900",
+        "360x800",
+        "390x844",
+        "599x900",
+        "600x900",
+        "768x1024",
+        "844x390"
+      ],
+      "ignoredRawReport": "client/.browser-tools/artifacts/final-modal-full-chromium/chromium-390-report.json",
+      "rawReportSha256": "613f7a8bead78cce20b8b25bb757a1863a97a70b6b15e35b479a02ad12957a5b",
+      "safeRunId": "final-modal-full-chromium--20261001T222542Z-4060335",
+      "expectedFaults": 6,
+      "expectedAuthenticationChallenges": 4,
+      "executionHarnessSha256": {
+        "browser_acceptance.cjs": "2c65d41dcd3add437b9842c68de9adc9d1713744bb7e6690e1d4715c40bb6faa",
+        "browser_faults.cjs": "334439124fbdf5a2ba5056adb3655b53ffaa256797ffa7c6c9bccd705f5ea479"
+      }
+    },
+    {
+      "scope": "online-matrix-firefox",
+      "engine": "firefox",
+      "version": "155.0",
+      "status": "passed",
+      "caseCount": 33,
+      "unexpectedErrors": 0,
+      "caseGroups": {
+        "selected-opening-cost-and-timing-guidance": 1,
+        "action-switch-routes-cards-to-visible-selection": 1,
+        "keyboard-card-inspection-preserves-selection": 1,
+        "adaptive-selection": 22,
+        "rtl-200-placeholder-selection": 3,
+        "browser-back-forward-retains-match-and-draft": 1,
+        "keyboard-tab-traversal": 1,
+        "primary-touch-targets-at-least-48": 1,
+        "ordinary-action-disabled-during-response": 1,
+        "opening-ordered-responses": 1
+      },
+      "viewportSizes": [
+        "1024x768",
+        "1049x900",
+        "1050x900",
+        "1280x600",
+        "1280x720",
+        "1440x900",
+        "360x800",
+        "390x844",
+        "599x900",
+        "600x900",
+        "768x1024",
+        "844x390"
+      ],
+      "ignoredRawReport": "client/.browser-tools/artifacts/final-modal-matrix-firefox/firefox-matrix-report.json",
+      "rawReportSha256": "a5ecd313d588d6385f1a8406cb2e6188561b2b65a0e71dbf7fd466773122b790",
+      "safeRunId": "final-modal-matrix-firefox--20261001T222832Z-4072580",
+      "expectedFaults": 0,
+      "expectedAuthenticationChallenges": 0,
+      "executionHarnessSha256": {
+        "browser_acceptance.cjs": "2c65d41dcd3add437b9842c68de9adc9d1713744bb7e6690e1d4715c40bb6faa",
+        "browser_faults.cjs": "334439124fbdf5a2ba5056adb3655b53ffaa256797ffa7c6c9bccd705f5ea479"
+      }
+    },
+    {
+      "scope": "online-matrix-webkit",
+      "engine": "webkit",
+      "version": "26.6",
+      "status": "passed",
+      "caseCount": 33,
+      "unexpectedErrors": 0,
+      "caseGroups": {
+        "selected-opening-cost-and-timing-guidance": 1,
+        "action-switch-routes-cards-to-visible-selection": 1,
+        "keyboard-card-inspection-preserves-selection": 1,
+        "adaptive-selection": 22,
+        "rtl-200-placeholder-selection": 3,
+        "browser-back-forward-retains-match-and-draft": 1,
+        "keyboard-tab-traversal": 1,
+        "primary-touch-targets-at-least-48": 1,
+        "ordinary-action-disabled-during-response": 1,
+        "opening-ordered-responses": 1
+      },
+      "viewportSizes": [
+        "1024x768",
+        "1049x900",
+        "1050x900",
+        "1280x600",
+        "1280x720",
+        "1440x900",
+        "360x800",
+        "390x844",
+        "599x900",
+        "600x900",
+        "768x1024",
+        "844x390"
+      ],
+      "ignoredRawReport": "client/.browser-tools/artifacts/final-modal-matrix-webkit/webkit-matrix-report.json",
+      "rawReportSha256": "56a7b5db6c845348dd01775332b3e424f56213d0480e72f611eba16f3da84b48",
+      "safeRunId": "final-modal-matrix-webkit--20261001T222902Z-4072579",
+      "expectedFaults": 0,
+      "expectedAuthenticationChallenges": 0,
+      "executionHarnessSha256": {
+        "browser_acceptance.cjs": "2c65d41dcd3add437b9842c68de9adc9d1713744bb7e6690e1d4715c40bb6faa",
+        "browser_faults.cjs": "334439124fbdf5a2ba5056adb3655b53ffaa256797ffa7c6c9bccd705f5ea479"
+      }
+    },
+    {
+      "scope": "historical-forward-keyboard-firefox",
+      "engine": "firefox",
+      "version": "155.0",
+      "status": "passed",
+      "caseCount": 48,
+      "unexpectedErrors": 0,
+      "caseGroups": {
+        "long-sequence-forward-keyboard-inspection": 48
+      },
+      "viewportSizes": [
+        "1049x900",
+        "1050x900",
+        "1440x1200",
+        "1440x900",
+        "320x800",
+        "360x800",
+        "390x844",
+        "599x900",
+        "600x900",
+        "768x1024",
+        "844x390"
+      ],
+      "ignoredRawReport": "client/.browser-tools/artifacts/adaptive-modal-final-firefox/firefox-390-report.json",
+      "rawReportSha256": "d7c8a42d2ab2477554caa98bfaf6bcc361597e3c262d3a7573866c2b75caf59d",
+      "safeRunId": "adaptive-modal-final-firefox--20261001T222535Z-4058658",
+      "expectedFaults": 0,
+      "expectedAuthenticationChallenges": 0,
+      "executionHarnessSha256": {
+        "browser_acceptance.cjs": "2c65d41dcd3add437b9842c68de9adc9d1713744bb7e6690e1d4715c40bb6faa",
+        "browser_faults.cjs": "334439124fbdf5a2ba5056adb3655b53ffaa256797ffa7c6c9bccd705f5ea479"
+      }
+    }
+  ],
+  "startup": {
+    "status": "passed",
+    "caseCount": 8,
+    "browser": "153.0.8010.12",
+    "conditions": "Local Compose, retained PostgreSQL volume, fresh Chromium contexts; stopped backend for delayed readiness and established-stream recovery. No cache deletion, manual reload recovery or restart recovery by user.",
+    "cases": [
+      {
+        "case": "cold-launch-1",
+        "pass": true,
+        "serviceStartedAt": "2026-10-01T22:25:40.336Z",
+        "serviceCommandMs": 16489,
+        "healthReadyMs": 11335,
+        "normalEntryMs": 939,
+        "onlineUsableMs": 1607,
+        "guestPosts": 1
+      },
+      {
+        "case": "cold-launch-2",
+        "pass": true,
+        "serviceStartedAt": "2026-10-01T22:25:59.352Z",
+        "serviceCommandMs": 15856,
+        "healthReadyMs": 10593,
+        "normalEntryMs": 770,
+        "onlineUsableMs": 1209,
+        "guestPosts": 1
+      },
+      {
+        "case": "cold-launch-3",
+        "pass": true,
+        "serviceStartedAt": "2026-10-01T22:26:17.149Z",
+        "serviceCommandMs": 15053,
+        "healthReadyMs": 9968,
+        "normalEntryMs": 724,
+        "onlineUsableMs": 1201,
+        "guestPosts": 1
+      },
+      {
+        "case": "delayed-backend-session-readiness",
+        "pass": true,
+        "failedAtMs": 2356,
+        "readyAtMs": 3374,
+        "usableAtMs": 3728,
+        "automaticReadAttempts": 2
+      },
+      {
+        "case": "reload-during-backend-outage",
+        "pass": true,
+        "failedAtMs": 2196,
+        "readyAtMs": 2925,
+        "usableAtMs": 3058,
+        "automaticReadAttempts": 4
+      },
+      {
+        "case": "established-match-reconnect-without-refresh-or-replayed-command",
+        "pass": true,
+        "readyAtMs": 1228,
+        "usableAtMs": 1511,
+        "persistedGamePreserved": true,
+        "commandPosts": 0,
+        "successfulSocketHandshakes": 2
+      },
+      {
+        "case": "503-html-proxy-response-recovers",
+        "pass": true,
+        "reads": 2
+      },
+      {
+        "case": "malformed-200-response-is-terminal",
+        "pass": true,
+        "reads": 1
+      }
+    ],
+    "persistentVolumeIdentityUnchanged": true,
+    "unexpectedDiagnostics": 0,
+    "uncaughtPageErrors": 0,
+    "expectedDiagnostics": {
+      "anonymous401": 3,
+      "deliberate502": 1,
+      "deliberate503": 1,
+      "abortedOutageReads": 2
+    },
+    "ignoredRawReport": "client/.browser-tools/evidence/startup-20261002/final-modal/startup-browser-report.json",
+    "rawReportSha256": "da12401652d8623575ca3c76442d63970988179dbed9d48e88df7d1f81bbfb61",
+    "safeRunId": "startup-browser-final-modal--20261001T222539Z-4059483",
+    "harnessProvenance": "Successful eight-case browser run preceded a separately regression-tested finally/diagnostic cleanup patch. No application source or build changed after that run; the runner execution hash was not recorded.",
+    "finalRunnerSha256": "444e2f427405e38bfe9a656d3c976614114541db86c85318b0056a2dabd29ee7",
+    "cleanupRegression": {
+      "passed": 9,
+      "red": "startup-cleanup-fault-red--20261001T222902Z-4074188",
+      "green": "startup-cleanup-final--20261001T223132Z-4079670",
+      "independentReview": "passed"
+    }
+  },
+  "sourceGates": [
+    {
+      "gate": "host tests",
+      "passed": 244,
+      "log": "adaptive-modal-full-host--20261001T222443Z-4055815"
+    },
+    {
+      "gate": "host analyzer",
+      "status": "passed",
+      "log": "adaptive-modal-analyze--20261001T222443Z-4055743"
+    },
+    {
+      "gate": "UI package tests and analyzer",
+      "passed": 75,
+      "log": "final-pane-package--20261001T221519Z-4028796"
+    },
+    {
+      "gate": "backend go test ./... and go vet ./...",
+      "status": "passed",
+      "log": "backend-regression--20261001T211821Z-3858009"
+    },
+    {
+      "gate": "service operations Python",
+      "passed": 8,
+      "log": "service-ops-regression--20261001T212852Z-3887041"
+    },
+    {
+      "gate": "208 artwork hashes/native dimensions/fonts/import boundaries",
+      "status": "passed",
+      "log": "assets-regression--20261001T212236Z-3870160"
+    },
+    {
+      "gate": "final web build",
+      "status": "passed",
+      "log": "adaptive-modal-final-build--20261001T222443Z-4055714"
+    },
+    {
+      "gate": "format and roadmap check",
+      "status": "passed",
+      "log": "final-format-docs--20261001T223011Z-4076868"
+    },
+    {
+      "gate": "browser support, keyboard bridge, diagnostic and cleanup tests; runner syntax",
+      "passed": 24,
+      "log": "final-browser-support--20261001T223232Z-4081712"
+    }
+  ],
+  "regressionEvidence": {
+    "offscreenKeyboard": {
+      "red": "adaptive-offscreen-red--20261001T221318Z-4022203",
+      "green": "adaptive-offscreen-green--20261001T221340Z-4023122"
+    },
+    "singletonModal": {
+      "red": "adaptive-modal-loop-reproducer--20261001T222136Z-4049220",
+      "green": "adaptive-modal-full-host--20261001T222443Z-4055815"
+    },
+    "sessionEnvelope": {
+      "red": "startup-envelope-regression-red--20261001T214445Z-3934923",
+      "green": "startup-envelope-regression-green--20261001T214546Z-3937344"
+    }
+  },
+  "retention": {
+    "retainedScreenshotHashes": 1544,
+    "retiredGeneratedScreenshots": 262,
+    "retiredBytes": 31627881,
+    "protectedEvidenceDesignArtworkHashes": 1907,
+    "verificationLog": "final-retention-review--20261001T222833Z-4072889",
+    "pushAttempted": false,
+    "pushObstacleEstablished": false,
+    "historyRewritten": false,
+    "historicalBlobsAtLeast50MiB": 0,
+    "retiredPathsStillInCommits": [
+      "0775248",
+      "6248bb5",
+      "90eef62"
+    ]
+  },
+  "limits": [
+    "Local Flutter web, not native-device or public-deployment acceptance.",
+    "Cold timing measured under concurrent local QA, not a benchmark.",
+    "Intentional fault observations are distinct from unexpected errors.",
+    "No successful-push claim; retain actual human-run rejection for further diagnosis.",
+    "Raw captures were later removed under the owner screenshot policy; ignored diagnostics and these compact results remain."
+  ],
+  "review": {
+    "status": "passed",
+    "findingsResolved": [
+      "Singleton modal closed-loop traversal",
+      "Failure-path browser-runner cleanup"
+    ],
+    "protectedAuthorities": "GAME_RULES.md, cgmsart-decks/README.md and all mockups unchanged",
+    "temporaryQaFixture": "Stopped intentionally after acceptance. InterruptedError and schema cleanup warning inspected; port 8081 closed and no disposable integration containers, networks or volumes remain. Ordinary services remain healthy.",
+    "prospectiveAudit": {
+      "paths": 622,
+      "textFiles": 172,
+      "relativeMarkdownLinks": 236,
+      "highConfidenceSecrets": 0,
+      "newDisposableImages": 0,
+      "log": "final-prospective-audit--20261001T223332Z-4083580"
+    },
+    "ordinaryServices": "backend, PostgreSQL, Redis and web healthy; all four served assets still match final local build"
+  },
+  "staging": {
+    "status": "staged",
+    "runId": "adaptive-startup-20261002",
+    "paths": 622,
+    "preservedPriorStagingWindowPaths": 408,
+    "newDisposableCaptures": 0,
+    "commit": "not attempted",
+    "push": "not attempted",
+    "workingTreeAfterStaging": "no unstaged or untracked changes",
+    "review": "complete prospective text, retention hashes, ignore rules, links and secrets reviewed; cached whitespace check passed"
+  }
+}

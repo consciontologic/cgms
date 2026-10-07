@@ -1,0 +1,5 @@
+services:
+  web:
+    extra_hosts: ['flutter:host-gateway']
+    volumes:
+      - ../../config/nginx/development.conf:/etc/nginx/nginx.conf:ro

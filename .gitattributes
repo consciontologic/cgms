@@ -1,0 +1,11 @@
+* text=auto eol=lf
+*.sh   text eol=lf
+*.py   text eol=lf
+*.md   text eol=lf
+*.csv  text eol=lf
+*.json text eol=lf
+
+# Preserve exact upstream font notice bytes recorded in font provenance.
+docs/design/cgmsart-decks/fonts/AtkinsonHyperlegibleNext-OFL.txt whitespace=-blank-at-eol
+docs/design/cgmsart-decks/fonts/Barlow-OFL.txt whitespace=-blank-at-eol
+docs/design/cgmsart-decks/fonts/Barlow-AUTHORS.txt whitespace=-blank-at-eol

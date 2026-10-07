@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="1008" viewBox="0 0 720 1008">
+<title>cgmsart card template: fixed geometry; insert art and a separate identity overlay</title>
+<defs><clipPath id="card"><path d="M0 0H690L719 30V1007H0Z"/></clipPath></defs>
+<g clip-path="url(#card)"><path d="M0 0H690L719 30V1007H0Z" fill="#1D2335" stroke="#8595B0" stroke-width="5"/><path d="M12 12H685L707 36V995H12Z" fill="none" stroke="#414B65" stroke-width="2"/>
+<rect id="artwork-slot" x="24" y="24" width="672" height="960" fill="none"/>
+<g id="identity-overlay-slot"/></g></svg>

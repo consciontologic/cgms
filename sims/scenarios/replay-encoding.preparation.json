@@ -1,0 +1,32 @@
+{
+  "status": "preparation-only",
+  "runtime_validated": false,
+  "schema_version": "cgms-preparation-v1",
+  "id": "encoding-seed-vector",
+  "kind": "replay-vector",
+  "scope": "encoding-and-derivation-only",
+  "canonicalization": "cgms-canonical-v1",
+  "vectors": [
+    {
+      "label": "key-order-a",
+      "input_json": "{ \"b\":2, \"a\":1 }",
+      "canonical_utf8": "{\"a\":1,\"b\":2}",
+      "sha256": "43258cff783fe7036d8a43033f830adfc60ec037382473548ac742b888292777"
+    },
+    {
+      "label": "key-order-b",
+      "input_json": "{\"a\":1,\"b\":2}",
+      "canonical_utf8": "{\"a\":1,\"b\":2}",
+      "sha256": "43258cff783fe7036d8a43033f830adfc60ec037382473548ac742b888292777"
+    },
+    {
+      "label": "canonical-rational",
+      "input_json": "{\"denominator\":\"3\",\"numerator\":\"1\"}",
+      "canonical_utf8": "{\"denominator\":\"3\",\"numerator\":\"1\"}",
+      "sha256": "0910a5f4d247f6e935e9517d51de077b109fba5771033c77ce4beb8c042ecf50"
+    }
+  ],
+  "seed_tuple_json": "[\"cgms-seed-v1\",\"42\",3,\"pilot-3p\",\"dev-000\",\"r0\",0,0,0,\"deal\",0]",
+  "derived_seed_hex": "a639efa27dd3c8af295e7928f17d4fb493e15347a126caadf2d353d4c6a1b9a3",
+  "prng_words_validated": false
+}

@@ -275,12 +275,9 @@ checks do not replace R06N native screen-reader and device acceptance.
 
 ## Run
 
-The verified SDK is the project-local Flutter 3.47.5 toolchain under
-`.local/toolchains/flutter-3.47.5/flutter` (repository root). Select that toolchain
-for these manual commands. From the repository root:
+Use the Flutter SDK on `PATH`. From the repository root:
 
 ```bash
-export PATH="$PWD/.local/toolchains/flutter-3.47.5/flutter/bin:$PATH"
 cd client
 flutter pub get
 flutter run -d web-server --web-hostname=127.0.0.1 --web-port=7357

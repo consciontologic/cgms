@@ -8,8 +8,6 @@ Nothing installs OS packages or changes the workstation configuration.
 ## First start and service configuration
 
 ```
-python3 xops/install_flutter_local.py  # Linux x64; verified 3.47.5 archive
-export PATH="$PWD/.local/toolchains/flutter-3.47.5/flutter/bin:$PATH"
 make up
 ```
 
